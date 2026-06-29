@@ -1,940 +1,4 @@
 {
-  "QQ_Timmy": {
-    "handle": "QQ_Timmy",
-    "tweet_count": 493,
-    "date_from": "2025-11-11",
-    "date_to": "2026-06-24",
-    "best_hours": [
-      {
-        "hour": 23,
-        "avg_interaction": 8043.71
-      },
-      {
-        "hour": 3,
-        "avg_interaction": 359.0
-      },
-      {
-        "hour": 19,
-        "avg_interaction": 175.82
-      },
-      {
-        "hour": 15,
-        "avg_interaction": 165.86
-      },
-      {
-        "hour": 13,
-        "avg_interaction": 135.07
-      }
-    ],
-    "all_hours": [
-      {
-        "hour": 0,
-        "avg_interaction": 78.88,
-        "tweet_count": 65
-      },
-      {
-        "hour": 1,
-        "avg_interaction": 84.44,
-        "tweet_count": 36
-      },
-      {
-        "hour": 2,
-        "avg_interaction": 37.0,
-        "tweet_count": 1
-      },
-      {
-        "hour": 3,
-        "avg_interaction": 359.0,
-        "tweet_count": 1
-      },
-      {
-        "hour": 8,
-        "avg_interaction": 53.62,
-        "tweet_count": 68
-      },
-      {
-        "hour": 9,
-        "avg_interaction": 102.93,
-        "tweet_count": 27
-      },
-      {
-        "hour": 10,
-        "avg_interaction": 107.9,
-        "tweet_count": 30
-      },
-      {
-        "hour": 11,
-        "avg_interaction": 96.07,
-        "tweet_count": 14
-      },
-      {
-        "hour": 12,
-        "avg_interaction": 104.0,
-        "tweet_count": 9
-      },
-      {
-        "hour": 13,
-        "avg_interaction": 135.07,
-        "tweet_count": 28
-      },
-      {
-        "hour": 14,
-        "avg_interaction": 58.15,
-        "tweet_count": 33
-      },
-      {
-        "hour": 15,
-        "avg_interaction": 165.86,
-        "tweet_count": 36
-      },
-      {
-        "hour": 16,
-        "avg_interaction": 76.17,
-        "tweet_count": 35
-      },
-      {
-        "hour": 17,
-        "avg_interaction": 66.39,
-        "tweet_count": 23
-      },
-      {
-        "hour": 18,
-        "avg_interaction": 100.5,
-        "tweet_count": 22
-      },
-      {
-        "hour": 19,
-        "avg_interaction": 175.82,
-        "tweet_count": 11
-      },
-      {
-        "hour": 20,
-        "avg_interaction": 78.73,
-        "tweet_count": 15
-      },
-      {
-        "hour": 21,
-        "avg_interaction": 96.47,
-        "tweet_count": 19
-      },
-      {
-        "hour": 22,
-        "avg_interaction": 74.69,
-        "tweet_count": 13
-      },
-      {
-        "hour": 23,
-        "avg_interaction": 8043.71,
-        "tweet_count": 7
-      }
-    ],
-    "best_days": [
-      {
-        "day": "Sunday",
-        "avg_interaction": 1406.26
-      },
-      {
-        "day": "Wednesday",
-        "avg_interaction": 123.29
-      },
-      {
-        "day": "Thursday",
-        "avg_interaction": 109.25
-      },
-      {
-        "day": "Monday",
-        "avg_interaction": 99.6
-      },
-      {
-        "day": "Saturday",
-        "avg_interaction": 81.64
-      },
-      {
-        "day": "Tuesday",
-        "avg_interaction": 71.07
-      },
-      {
-        "day": "Friday",
-        "avg_interaction": 59.88
-      }
-    ],
-    "images": {
-      "with_image": {
-        "avg_interaction": 0,
-        "count": 0
-      },
-      "without_image": {
-        "avg_interaction": 204.48,
-        "count": 493
-      },
-      "winner": "no images",
-      "pct_difference": 100.0
-    },
-    "top_keywords": [
-      {
-        "keyword": "apple",
-        "avg_interaction": 235.14,
-        "tweet_count": 7
-      },
-      {
-        "keyword": "cowos",
-        "avg_interaction": 228.0,
-        "tweet_count": 5
-      },
-      {
-        "keyword": "semianalysis",
-        "avg_interaction": 172.4,
-        "tweet_count": 10
-      },
-      {
-        "keyword": "supply chain",
-        "avg_interaction": 156.63,
-        "tweet_count": 27
-      },
-      {
-        "keyword": "chip",
-        "avg_interaction": 153.33,
-        "tweet_count": 60
-      },
-      {
-        "keyword": "nvidia",
-        "avg_interaction": 142.14,
-        "tweet_count": 57
-      },
-      {
-        "keyword": "ics",
-        "avg_interaction": 134.16,
-        "tweet_count": 51
-      },
-      {
-        "keyword": "packaging",
-        "avg_interaction": 124.85,
-        "tweet_count": 27
-      },
-      {
-        "keyword": "shortage",
-        "avg_interaction": 116.11,
-        "tweet_count": 19
-      },
-      {
-        "keyword": "mediatek",
-        "avg_interaction": 109.56,
-        "tweet_count": 18
-      },
-      {
-        "keyword": "ml",
-        "avg_interaction": 106.32,
-        "tweet_count": 28
-      },
-      {
-        "keyword": "gpu",
-        "avg_interaction": 105.72,
-        "tweet_count": 18
-      },
-      {
-        "keyword": "tsmc",
-        "avg_interaction": 104.72,
-        "tweet_count": 32
-      },
-      {
-        "keyword": "panel",
-        "avg_interaction": 103.82,
-        "tweet_count": 11
-      },
-      {
-        "keyword": "ai server",
-        "avg_interaction": 98.89,
-        "tweet_count": 18
-      }
-    ],
-    "top_tweets": [
-      {
-        "rank": 1,
-        "interaction": 55800,
-        "likes": 41000,
-        "retweets": 12000,
-        "replies": 2800,
-        "views": 0,
-        "text": "",
-        "url": "https://x.com/satyanadella/status/2066182223213293753",
-        "timestamp": "2026-06-14T15:33:24.000Z",
-        "keywords": [],
-        "has_images": false
-      },
-      {
-        "rank": 2,
-        "interaction": 2908,
-        "likes": 2300,
-        "retweets": 312,
-        "replies": 296,
-        "views": 0,
-        "text": "$XFAB (photonics + power semis) is an interesting long idea at $1.28B MC, that I took positions in.  Given EU CHIPS act 2 is today as the catalyst for European photonics players.  > 800 VDC power semi exposure to  $NVDA  push through  $NVTS  +  $POWI   > Silicon Photonics / CPO",
-        "url": "https://x.com/aleabitoreddit/status/2059537337324085541",
-        "timestamp": "2026-05-27T07:29:00.000Z",
-        "keywords": [
-          "chip",
-          "ics"
-        ],
-        "has_images": false
-      },
-      {
-        "rank": 3,
-        "interaction": 1204,
-        "likes": 940,
-        "retweets": 223,
-        "replies": 41,
-        "views": 0,
-        "text": "Sheesh.   $NVDA  VR200 Bom Analysis from MS.",
-        "url": "https://x.com/Aaronwei3n/status/2057279855784546352",
-        "timestamp": "2026-05-21T01:58:34.000Z",
-        "keywords": [],
-        "has_images": false
-      },
-      {
-        "rank": 4,
-        "interaction": 849,
-        "likes": 717,
-        "retweets": 94,
-        "replies": 38,
-        "views": 0,
-        "text": "Several key points about TSMC's next-generation advanced packaging CoPoS (technical details that can be looked up are omitted):  1. Expected to enter mass production in 2H28, aiming to improve the mass production economy of packages with mask sizes over 9.5 times larger. Nvidia's",
-        "url": "https://x.com/mingchikuo/status/2064896061051928623",
-        "timestamp": "2026-06-11T02:22:39.000Z",
-        "keywords": [
-          "tsmc",
-          "nvidia",
-          "packaging",
-          "ai"
-        ],
-        "has_images": false
-      },
-      {
-        "rank": 5,
-        "interaction": 841,
-        "likes": 699,
-        "retweets": 125,
-        "replies": 17,
-        "views": 0,
-        "text": "\u91cd\u9ede\u89e3\u8b80\u53f0\u7a4d\u96fb\u7684\u73bb\u7483\u6838\u5fc3\u8f09\u677f\u6295\u5f71\u7247  \u53f0\u7a4d\u96fb\u5728 6 \u6708 11 \u65e5\u7684\u65e5\u672c JPCA Show 2026\uff0c\u9032\u884c\u4e3b\u984c\u70ba\u300cAI\u306e\u9032\u5316\u306b\u4e0d\u53ef\u6b20\u306a\u5148\u7aef\u30d1\u30c3\u30b1\u30fc\u30b8\u30f3\u30b0\u6280\u8853\u300d\u7684\u7c21\u5831\uff0c\u8a72\u4efd\u7c21\u5831\u7d0440\u9801\uff0c\u7576\u4e2d\u67d0\u5f35\u6a19\u984c\u70ba\u300cGlass Substrate Development for CoWoS\u300d\u7684\u6295\u5f71\u7247\u6d41\u51fa\uff0c\u5f15\u767c\u5ee3\u6cdb\u95dc\u6ce8\u3002",
-        "url": "https://x.com/mingchikuo/status/2067438598836965616",
-        "timestamp": "2026-06-18T02:45:47.000Z",
-        "keywords": [
-          "cowos",
-          "ai"
-        ],
-        "has_images": false
-      },
-      {
-        "rank": 6,
-        "interaction": 767,
-        "likes": 600,
-        "retweets": 92,
-        "replies": 75,
-        "views": 0,
-        "text": "Many people are looking forward to the N1X / Windows PC processor that Nvidia may soon release. Supply chain investigation and key analysis:  \u258cSupply chain investigation shows that devices equipped with N1X will ship approximately 10M units over the next two years  Still a",
-        "url": "https://x.com/mingchikuo/status/2060952159576014909",
-        "timestamp": "2026-05-31T05:11:00.000Z",
-        "keywords": [
-          "nvidia",
-          "supply chain",
-          "ai"
-        ],
-        "has_images": false
-      },
-      {
-        "rank": 7,
-        "interaction": 742,
-        "likes": 582,
-        "retweets": 137,
-        "replies": 23,
-        "views": 0,
-        "text": "Rosenblatt InP lasers checks: According to our checks, NVIDIA, which is the driving force behind scale up CPO, asked the supply chain to increase InP laser capacity by ~20x from 2025-2030. The vendors appear to have taken a more conservative stance, agreeing to an ~12x increase (",
-        "url": "https://x.com/sean_________/status/2059952331001663593",
-        "timestamp": "2026-05-28T10:58:02.000Z",
-        "keywords": [
-          "nvidia",
-          "supply chain",
-          "capacity",
-          "ai"
-        ],
-        "has_images": false
-      },
-      {
-        "rank": 8,
-        "interaction": 610,
-        "likes": 531,
-        "retweets": 62,
-        "replies": 17,
-        "views": 0,
-        "text": "",
-        "url": "https://x.com/mingchikuo/status/2059797563331785048",
-        "timestamp": "2026-05-28T00:43:02.000Z",
-        "keywords": [],
-        "has_images": false
-      },
-      {
-        "rank": 9,
-        "interaction": 545,
-        "likes": 455,
-        "retweets": 68,
-        "replies": 22,
-        "views": 0,
-        "text": "Here are a few thoughts I have on NVIDIA RTX Spark (without diving into spec details yet): On-device AI agent narratives, realization inspections, and Apple WWDC  1. At its core is NVIDIA CEO Jensen Huang's slogan of \"reinventing the PC,\" along with a conceptual demonstration of",
-        "url": "https://x.com/mingchikuo/status/2061869580964991273",
-        "timestamp": "2026-06-02T17:56:30.000Z",
-        "keywords": [
-          "nvidia",
-          "apple",
-          "ai"
-        ],
-        "has_images": false
-      },
-      {
-        "rank": 10,
-        "interaction": 544,
-        "likes": 492,
-        "retweets": 36,
-        "replies": 16,
-        "views": 0,
-        "text": "Contrary to recent market rumors, my latest industry survey indicates that Google currently has no clear plans to procure memory chips from CXMT.",
-        "url": "https://x.com/mingchikuo/status/2069017336913527007",
-        "timestamp": "2026-06-22T11:19:08.000Z",
-        "keywords": [
-          "chip",
-          "memory"
-        ],
-        "has_images": false
-      }
-    ],
-    "top_hashtags_by_interaction": [
-      {
-        "hashtag": "#daily",
-        "avg_interaction": 27.63,
-        "tweet_count": 19,
-        "avg_views": 0
-      },
-      {
-        "hashtag": "#economic",
-        "avg_interaction": 27.63,
-        "tweet_count": 19,
-        "avg_views": 0
-      }
-    ],
-    "top_hashtags_by_usage": [
-      {
-        "hashtag": "#daily",
-        "tweet_count": 19,
-        "avg_interaction": 27.63
-      },
-      {
-        "hashtag": "#economic",
-        "tweet_count": 19,
-        "avg_interaction": 27.63
-      },
-      {
-        "hashtag": "#20260624",
-        "tweet_count": 1,
-        "avg_interaction": 0
-      },
-      {
-        "hashtag": "#20260618",
-        "tweet_count": 1,
-        "avg_interaction": 0
-      },
-      {
-        "hashtag": "#20260617",
-        "tweet_count": 1,
-        "avg_interaction": 0
-      },
-      {
-        "hashtag": "#20260616",
-        "tweet_count": 1,
-        "avg_interaction": 0
-      },
-      {
-        "hashtag": "#20260612",
-        "tweet_count": 1,
-        "avg_interaction": 0
-      },
-      {
-        "hashtag": "#20260610",
-        "tweet_count": 1,
-        "avg_interaction": 0
-      },
-      {
-        "hashtag": "#20260609",
-        "tweet_count": 1,
-        "avg_interaction": 0
-      },
-      {
-        "hashtag": "#20260608",
-        "tweet_count": 1,
-        "avg_interaction": 0
-      },
-      {
-        "hashtag": "#20260605",
-        "tweet_count": 1,
-        "avg_interaction": 0
-      },
-      {
-        "hashtag": "#20260603",
-        "tweet_count": 1,
-        "avg_interaction": 0
-      },
-      {
-        "hashtag": "#20260602",
-        "tweet_count": 1,
-        "avg_interaction": 0
-      },
-      {
-        "hashtag": "#20260601",
-        "tweet_count": 1,
-        "avg_interaction": 0
-      },
-      {
-        "hashtag": "#20260529",
-        "tweet_count": 1,
-        "avg_interaction": 0
-      }
-    ],
-    "summary": {
-      "avg_interaction": 204.48,
-      "median_interaction": 56,
-      "max_interaction": 55800,
-      "avg_views": 0.0,
-      "max_views": 0
-    }
-  },
-  "jukan05": {
-    "handle": "jukan05",
-    "tweet_count": 221,
-    "date_from": "2026-04-22",
-    "date_to": "2026-06-24",
-    "best_hours": [
-      {
-        "hour": 4,
-        "avg_interaction": 3067.67
-      },
-      {
-        "hour": 20,
-        "avg_interaction": 2030.67
-      },
-      {
-        "hour": 10,
-        "avg_interaction": 1287.54
-      },
-      {
-        "hour": 18,
-        "avg_interaction": 1033.5
-      },
-      {
-        "hour": 2,
-        "avg_interaction": 888.0
-      }
-    ],
-    "all_hours": [
-      {
-        "hour": 0,
-        "avg_interaction": 309.0,
-        "tweet_count": 1
-      },
-      {
-        "hour": 2,
-        "avg_interaction": 888.0,
-        "tweet_count": 1
-      },
-      {
-        "hour": 4,
-        "avg_interaction": 3067.67,
-        "tweet_count": 3
-      },
-      {
-        "hour": 6,
-        "avg_interaction": 615.32,
-        "tweet_count": 19
-      },
-      {
-        "hour": 7,
-        "avg_interaction": 398.09,
-        "tweet_count": 22
-      },
-      {
-        "hour": 8,
-        "avg_interaction": 337.88,
-        "tweet_count": 16
-      },
-      {
-        "hour": 9,
-        "avg_interaction": 688.52,
-        "tweet_count": 23
-      },
-      {
-        "hour": 10,
-        "avg_interaction": 1287.54,
-        "tweet_count": 13
-      },
-      {
-        "hour": 11,
-        "avg_interaction": 777.32,
-        "tweet_count": 19
-      },
-      {
-        "hour": 12,
-        "avg_interaction": 471.43,
-        "tweet_count": 21
-      },
-      {
-        "hour": 13,
-        "avg_interaction": 642.75,
-        "tweet_count": 20
-      },
-      {
-        "hour": 14,
-        "avg_interaction": 566.4,
-        "tweet_count": 5
-      },
-      {
-        "hour": 15,
-        "avg_interaction": 397.11,
-        "tweet_count": 9
-      },
-      {
-        "hour": 16,
-        "avg_interaction": 577.6,
-        "tweet_count": 15
-      },
-      {
-        "hour": 17,
-        "avg_interaction": 247.5,
-        "tweet_count": 4
-      },
-      {
-        "hour": 18,
-        "avg_interaction": 1033.5,
-        "tweet_count": 4
-      },
-      {
-        "hour": 19,
-        "avg_interaction": 401.38,
-        "tweet_count": 8
-      },
-      {
-        "hour": 20,
-        "avg_interaction": 2030.67,
-        "tweet_count": 9
-      },
-      {
-        "hour": 21,
-        "avg_interaction": 696.0,
-        "tweet_count": 6
-      },
-      {
-        "hour": 22,
-        "avg_interaction": 310.0,
-        "tweet_count": 1
-      },
-      {
-        "hour": 23,
-        "avg_interaction": 244.5,
-        "tweet_count": 2
-      }
-    ],
-    "best_days": [
-      {
-        "day": "Wednesday",
-        "avg_interaction": 1074.0
-      },
-      {
-        "day": "Saturday",
-        "avg_interaction": 813.88
-      },
-      {
-        "day": "Monday",
-        "avg_interaction": 672.73
-      },
-      {
-        "day": "Sunday",
-        "avg_interaction": 605.05
-      },
-      {
-        "day": "Tuesday",
-        "avg_interaction": 595.53
-      },
-      {
-        "day": "Thursday",
-        "avg_interaction": 501.79
-      },
-      {
-        "day": "Friday",
-        "avg_interaction": 473.5
-      }
-    ],
-    "images": {
-      "with_image": {
-        "avg_interaction": 0,
-        "count": 0
-      },
-      "without_image": {
-        "avg_interaction": 692.35,
-        "count": 221
-      },
-      "winner": "no images",
-      "pct_difference": 100.0
-    },
-    "top_keywords": [
-      {
-        "keyword": "micron",
-        "avg_interaction": 1621.2,
-        "tweet_count": 5
-      },
-      {
-        "keyword": "cpu",
-        "avg_interaction": 1106.33,
-        "tweet_count": 3
-      },
-      {
-        "keyword": "semianalysis",
-        "avg_interaction": 1100.0,
-        "tweet_count": 4
-      },
-      {
-        "keyword": "apple",
-        "avg_interaction": 882.75,
-        "tweet_count": 4
-      },
-      {
-        "keyword": "memory",
-        "avg_interaction": 769.69,
-        "tweet_count": 26
-      },
-      {
-        "keyword": "amd",
-        "avg_interaction": 751.5,
-        "tweet_count": 4
-      },
-      {
-        "keyword": "data center",
-        "avg_interaction": 725.25,
-        "tweet_count": 4
-      },
-      {
-        "keyword": "sk hynix",
-        "avg_interaction": 674.56,
-        "tweet_count": 18
-      },
-      {
-        "keyword": "ai",
-        "avg_interaction": 669.09,
-        "tweet_count": 68
-      },
-      {
-        "keyword": "dram",
-        "avg_interaction": 664.7,
-        "tweet_count": 10
-      },
-      {
-        "keyword": "intel",
-        "avg_interaction": 648.33,
-        "tweet_count": 6
-      },
-      {
-        "keyword": "price",
-        "avg_interaction": 626.32,
-        "tweet_count": 22
-      },
-      {
-        "keyword": "samsung",
-        "avg_interaction": 613.71,
-        "tweet_count": 17
-      },
-      {
-        "keyword": "chip",
-        "avg_interaction": 613.43,
-        "tweet_count": 14
-      },
-      {
-        "keyword": "nand",
-        "avg_interaction": 607.6,
-        "tweet_count": 5
-      }
-    ],
-    "top_tweets": [
-      {
-        "rank": 1,
-        "interaction": 14633,
-        "likes": 12000,
-        "retweets": 2400,
-        "replies": 233,
-        "views": 0,
-        "text": "",
-        "url": "https://x.com/itsreallyvivek/status/2064686372737454155",
-        "timestamp": "2026-06-10T12:29:25.000Z",
-        "keywords": [],
-        "has_images": false
-      },
-      {
-        "rank": 2,
-        "interaction": 8744,
-        "likes": 7600,
-        "retweets": 882,
-        "replies": 262,
-        "views": 0,
-        "text": "this is my personal singularity moment  this post may sound like a paid ad. I only wish. I'm concerned, more so than happy. the world is changing, and, among the scenarios where AI goes terribly wrong, inequality is the most realistic, yet, the one Anthropic seems to be the least",
-        "url": "https://x.com/VictorTaelin/status/2064448425936994742",
-        "timestamp": "2026-06-09T20:43:54.000Z",
-        "keywords": [
-          "ai"
-        ],
-        "has_images": false
-      },
-      {
-        "rank": 3,
-        "interaction": 6170,
-        "likes": 5600,
-        "retweets": 298,
-        "replies": 272,
-        "views": 0,
-        "text": "I think we\u2019ve reached the point where normal people can\u2019t really determine whether new models are better than previous ones. Like Fable doesn\u2019t seem that much better to me, but every 150 IQ person I know is like \u201cwow the singularity came sooner than I thought\u201d.",
-        "url": "https://x.com/citrini/status/2064480613852201336",
-        "timestamp": "2026-06-09T22:51:49.000Z",
-        "keywords": [],
-        "has_images": false
-      },
-      {
-        "rank": 4,
-        "interaction": 5787,
-        "likes": 5000,
-        "retweets": 507,
-        "replies": 280,
-        "views": 0,
-        "text": "SOURCES: ANTHROPIC WILL RELEASE THE PUBLIC VERSION OF MYTHOS TOMORROW",
-        "url": "https://x.com/jukan05/status/2064170300452098183",
-        "timestamp": "2026-06-09T02:18:44.000Z",
-        "keywords": [],
-        "has_images": false
-      },
-      {
-        "rank": 5,
-        "interaction": 5421,
-        "likes": 4200,
-        "retweets": 962,
-        "replies": 259,
-        "views": 0,
-        "text": "",
-        "url": "https://x.com/AndrewCurran_/status/2066332670817456584",
-        "timestamp": "2026-06-15T01:31:13.000Z",
-        "keywords": [],
-        "has_images": false
-      },
-      {
-        "rank": 6,
-        "interaction": 3615,
-        "likes": 3300,
-        "retweets": 243,
-        "replies": 72,
-        "views": 0,
-        "text": "Shared without comment.",
-        "url": "https://x.com/jukan05/status/2066369086842605996",
-        "timestamp": "2026-06-15T03:55:56.000Z",
-        "keywords": [],
-        "has_images": false
-      },
-      {
-        "rank": 7,
-        "interaction": 3577,
-        "likes": 3000,
-        "retweets": 453,
-        "replies": 124,
-        "views": 0,
-        "text": "Why did the KOSPI fall today?  1. Korean leverage trading has climbed to excessively high levels. 2. Ahead of Micron's earnings, profit taking is underway, with talk that buyside expectations have become too elevated. 3. Korean lawmakers are discussing imposing taxes on",
-        "url": "https://x.com/jukan05/status/2069368311146815885",
-        "timestamp": "2026-06-23T10:33:47.000Z",
-        "keywords": [
-          "micron"
-        ],
-        "has_images": false
-      },
-      {
-        "rank": 8,
-        "interaction": 2528,
-        "likes": 2200,
-        "retweets": 187,
-        "replies": 141,
-        "views": 0,
-        "text": "Mr. President, since the U.S. has imposed export controls on Fable 5 exports to Korea, Korea should impose memory export controls on the U.S.  @Jaemyung_Lee",
-        "url": "https://x.com/jukan05/status/2065619139671331291",
-        "timestamp": "2026-06-13T02:15:54.000Z",
-        "keywords": [
-          "memory"
-        ],
-        "has_images": false
-      },
-      {
-        "rank": 9,
-        "interaction": 2026,
-        "likes": 1900,
-        "retweets": 52,
-        "replies": 74,
-        "views": 0,
-        "text": "\u2026..I didn\u2019t expect this to become a meme.",
-        "url": "https://x.com/jukan05/status/2065300245798588668",
-        "timestamp": "2026-06-12T05:08:44.000Z",
-        "keywords": [],
-        "has_images": false
-      },
-      {
-        "rank": 10,
-        "interaction": 1869,
-        "likes": 1600,
-        "retweets": 193,
-        "replies": 76,
-        "views": 0,
-        "text": "Breaking: President Donald Trump says Apple is working with Intel.",
-        "url": "https://x.com/jukan05/status/2067471416140964199",
-        "timestamp": "2026-06-18T04:56:12.000Z",
-        "keywords": [
-          "intel",
-          "apple"
-        ],
-        "has_images": false
-      }
-    ],
-    "top_hashtags_by_interaction": [],
-    "top_hashtags_by_usage": [
-      {
-        "hashtag": "#hbm4e",
-        "tweet_count": 1,
-        "avg_interaction": 0
-      },
-      {
-        "hashtag": "#ai",
-        "tweet_count": 1,
-        "avg_interaction": 0
-      },
-      {
-        "hashtag": "#skhynix",
-        "tweet_count": 1,
-        "avg_interaction": 0
-      },
-      {
-        "hashtag": "#hbm",
-        "tweet_count": 1,
-        "avg_interaction": 0
-      },
-      {
-        "hashtag": "#aimemory",
-        "tweet_count": 1,
-        "avg_interaction": 0
-      }
-    ],
-    "summary": {
-      "avg_interaction": 692.35,
-      "median_interaction": 411,
-      "max_interaction": 14633,
-      "avg_views": 0.0,
-      "max_views": 0
-    }
-  },
   "TrendForce": {
     "handle": "TrendForce",
     "tweet_count": 487,
@@ -1629,1558 +693,1188 @@
       "max_views": 339041
     }
   },
-  "dylan522p": {
-    "handle": "dylan522p",
-    "tweet_count": 586,
-    "date_from": "2020-09-03",
-    "date_to": "2026-06-20",
+  "technews_tw": {
+    "handle": "technews_tw",
+    "tweet_count": 850,
+    "date_from": "2026-06-03",
+    "date_to": "2026-06-23",
     "best_hours": [
       {
-        "hour": 12,
-        "avg_interaction": 1166.14
+        "hour": 8,
+        "avg_interaction": 13.5
       },
       {
         "hour": 7,
-        "avg_interaction": 1000.66
+        "avg_interaction": 9.5
       },
       {
-        "hour": 6,
-        "avg_interaction": 757.78
+        "hour": 10,
+        "avg_interaction": 7.1
       },
       {
-        "hour": 9,
-        "avg_interaction": 716.81
+        "hour": 14,
+        "avg_interaction": 5.46
       },
       {
-        "hour": 23,
-        "avg_interaction": 676.81
+        "hour": 11,
+        "avg_interaction": 5.38
       }
     ],
     "all_hours": [
       {
-        "hour": 0,
-        "avg_interaction": 343.23,
-        "tweet_count": 35
-      },
-      {
-        "hour": 1,
-        "avg_interaction": 617.33,
-        "tweet_count": 30
-      },
-      {
-        "hour": 2,
-        "avg_interaction": 608.44,
-        "tweet_count": 36
-      },
-      {
-        "hour": 3,
-        "avg_interaction": 468.6,
-        "tweet_count": 35
-      },
-      {
-        "hour": 4,
-        "avg_interaction": 438.66,
-        "tweet_count": 32
-      },
-      {
-        "hour": 5,
-        "avg_interaction": 453.61,
-        "tweet_count": 44
-      },
-      {
-        "hour": 6,
-        "avg_interaction": 757.78,
-        "tweet_count": 49
-      },
-      {
         "hour": 7,
-        "avg_interaction": 1000.66,
-        "tweet_count": 50
+        "avg_interaction": 9.5,
+        "tweet_count": 16
       },
       {
         "hour": 8,
-        "avg_interaction": 391.5,
-        "tweet_count": 34
+        "avg_interaction": 13.5,
+        "tweet_count": 26
       },
       {
         "hour": 9,
-        "avg_interaction": 716.81,
-        "tweet_count": 36
+        "avg_interaction": 3.02,
+        "tweet_count": 45
       },
       {
         "hour": 10,
-        "avg_interaction": 666.52,
-        "tweet_count": 33
+        "avg_interaction": 7.1,
+        "tweet_count": 69
       },
       {
         "hour": 11,
-        "avg_interaction": 525.57,
-        "tweet_count": 28
+        "avg_interaction": 5.38,
+        "tweet_count": 71
       },
       {
         "hour": 12,
-        "avg_interaction": 1166.14,
-        "tweet_count": 28
+        "avg_interaction": 3.98,
+        "tweet_count": 59
       },
       {
         "hour": 13,
-        "avg_interaction": 427.55,
-        "tweet_count": 22
+        "avg_interaction": 2.79,
+        "tweet_count": 68
       },
       {
         "hour": 14,
-        "avg_interaction": 455.69,
-        "tweet_count": 13
+        "avg_interaction": 5.46,
+        "tweet_count": 59
       },
       {
         "hour": 15,
-        "avg_interaction": 321.08,
-        "tweet_count": 12
+        "avg_interaction": 4.15,
+        "tweet_count": 61
       },
       {
         "hour": 16,
-        "avg_interaction": 273.14,
-        "tweet_count": 7
-      },
-      {
-        "hour": 17,
-        "avg_interaction": 323.12,
-        "tweet_count": 8
-      },
-      {
-        "hour": 18,
-        "avg_interaction": 510.29,
-        "tweet_count": 7
-      },
-      {
-        "hour": 19,
-        "avg_interaction": 226.86,
-        "tweet_count": 7
-      },
-      {
-        "hour": 20,
-        "avg_interaction": 369.67,
-        "tweet_count": 6
-      },
-      {
-        "hour": 21,
-        "avg_interaction": 192.88,
-        "tweet_count": 8
-      },
-      {
-        "hour": 22,
-        "avg_interaction": 514.0,
-        "tweet_count": 10
-      },
-      {
-        "hour": 23,
-        "avg_interaction": 676.81,
-        "tweet_count": 16
-      }
-    ],
-    "best_days": [
-      {
-        "day": "Thursday",
-        "avg_interaction": 893.08
-      },
-      {
-        "day": "Sunday",
-        "avg_interaction": 702.37
-      },
-      {
-        "day": "Tuesday",
-        "avg_interaction": 591.41
-      },
-      {
-        "day": "Monday",
-        "avg_interaction": 566.21
-      },
-      {
-        "day": "Friday",
-        "avg_interaction": 556.67
-      },
-      {
-        "day": "Wednesday",
-        "avg_interaction": 448.4
-      },
-      {
-        "day": "Saturday",
-        "avg_interaction": 424.96
-      }
-    ],
-    "images": {
-      "with_image": {
-        "avg_interaction": 588.8,
-        "count": 299
-      },
-      "without_image": {
-        "avg_interaction": 595.8,
-        "count": 287
-      },
-      "winner": "no images",
-      "pct_difference": 1.2
-    },
-    "top_keywords": [
-      {
-        "keyword": "capex",
-        "avg_interaction": 1681.75,
-        "tweet_count": 4
-      },
-      {
-        "keyword": "claude code",
-        "avg_interaction": 1662.4,
-        "tweet_count": 5
-      },
-      {
-        "keyword": "qualcomm",
-        "avg_interaction": 1409.25,
-        "tweet_count": 8
-      },
-      {
-        "keyword": "microsoft",
-        "avg_interaction": 1376.33,
-        "tweet_count": 3
-      },
-      {
-        "keyword": "tsmc",
-        "avg_interaction": 992.17,
-        "tweet_count": 12
-      },
-      {
-        "keyword": "intel",
-        "avg_interaction": 893.78,
-        "tweet_count": 23
-      },
-      {
-        "keyword": "amd",
-        "avg_interaction": 724.65,
-        "tweet_count": 20
-      },
-      {
-        "keyword": "ai",
-        "avg_interaction": 653.56,
-        "tweet_count": 224
-      },
-      {
-        "keyword": "chips",
-        "avg_interaction": 644.73,
-        "tweet_count": 11
-      },
-      {
-        "keyword": "semiconductor",
-        "avg_interaction": 628.25,
-        "tweet_count": 16
-      },
-      {
-        "keyword": "nvidia",
-        "avg_interaction": 624.16,
-        "tweet_count": 43
-      },
-      {
-        "keyword": "llm",
-        "avg_interaction": 616.38,
-        "tweet_count": 13
-      },
-      {
-        "keyword": "openai",
-        "avg_interaction": 593.5,
-        "tweet_count": 4
-      },
-      {
-        "keyword": "inference",
-        "avg_interaction": 588.57,
-        "tweet_count": 21
-      },
-      {
-        "keyword": "supply chain",
-        "avg_interaction": 584.5,
-        "tweet_count": 8
-      }
-    ],
-    "top_tweets": [
-      {
-        "rank": 1,
-        "interaction": 26372,
-        "likes": 24000,
-        "retweets": 2300,
-        "replies": 72,
-        "views": 2219969,
-        "text": "In Korea, found this Tteokbokki spot ran by 2 elder ladies I asked if they took card She shook her head, spoke some Korean, walked out, waved me to follow We went to a 7/11 She pointed at some cigarettes, which I bought for her, 3500 won, $2.46 Went back and got served this meal",
-        "url": "https://x.com/dylan522p/status/1917719768066363629",
-        "timestamp": "2025-04-30T23:16:36.000Z",
-        "keywords": [
-          "korea tteokbokki",
-          "cigarettes bought",
-          "went 11",
-          "served meal",
-          "elder ladies"
-        ],
-        "has_images": true
-      },
-      {
-        "rank": 2,
-        "interaction": 10797,
-        "likes": 10000,
-        "retweets": 767,
-        "replies": 30,
-        "views": 772473,
-        "text": "The most hilarious part of the study isn't that all the Whole Foods Organic veggies & meat are plastic ridden Its that Sour Patch Kids + microwavable Kraft Mac & Cheese were among the least plastic containing foods 6 year old kid diets are totally vindicated vs Whole Foods Maxies",
-        "url": "https://x.com/dylan522p/status/1873227889610735667",
-        "timestamp": "2024-12-29T04:41:46.000Z",
-        "keywords": [
-          "ai",
-          "kid diets",
-          "vs foods",
-          "cheese plastic",
-          "hilarious study",
-          "totally vindicated"
-        ],
-        "has_images": false
-      },
-      {
-        "rank": 3,
-        "interaction": 8900,
-        "likes": 6100,
-        "retweets": 1500,
-        "replies": 1300,
-        "views": 6654201,
-        "text": "My caste (Leuva Patidar Samaj) volleyball tournament in Dallas is unreal 8,000 people here out of ~40,000 people in the US Everyone from a part of Gujarat and same way of life in the US Literally everyone here owns a motel or gas station in rural America",
-        "url": "https://x.com/dylan522p/status/1895971158169882830",
-        "timestamp": "2025-03-01T22:55:24.000Z",
-        "keywords": [
-          "volleyball tournament",
-          "caste",
-          "people gujarat",
-          "dallas unreal",
-          "rural america"
-        ],
-        "has_images": true
-      },
-      {
-        "rank": 4,
-        "interaction": 7520,
-        "likes": 6700,
-        "retweets": 572,
-        "replies": 248,
-        "views": 1046171,
-        "text": "Elon's jet is in Florida. Global Foundries jet is in Florida. Qualcomm's jet is in Florida. In case anyone was wondering what's going on with Intel... They are at Mar-a-Lago. Make America Great Again can only be true if Intel is saved.",
-        "url": "https://x.com/dylan522p/status/1880379652054901175",
-        "timestamp": "2025-01-17T22:20:19.000Z",
-        "keywords": [
-          "intel",
-          "qualcomm",
-          "ai",
-          "elon jet",
-          "florida qualcomm",
-          "intel saved",
-          "global foundries"
-        ],
-        "has_images": false
-      },
-      {
-        "rank": 5,
-        "interaction": 5905,
-        "likes": 5200,
-        "retweets": 412,
-        "replies": 293,
-        "views": 1893618,
-        "text": "Being in SF is like being in Wuhan right before the pandemic  Something is happening, it's gonna hit everywhere but so few people know it",
-        "url": "https://x.com/dylan522p/status/2030850153117327542",
-        "timestamp": "2026-03-09T03:36:22.000Z",
-        "keywords": [
-          "pandemic happening",
-          "sf like",
-          "hit people"
-        ],
-        "has_images": false
-      },
-      {
-        "rank": 6,
-        "interaction": 5716,
-        "likes": 5100,
-        "retweets": 492,
-        "replies": 124,
-        "views": 364917,
-        "text": "Yo I heard if u press Up, Up, Down, Down, Left, Right, Left, Right, B, A in Sam Fransisco there's an infinite money glitch",
-        "url": "https://x.com/dylan522p/status/1970346183827783756",
-        "timestamp": "2025-09-23T04:35:12.000Z",
-        "keywords": [
-          "money glitch",
-          "press left",
-          "sam fransisco",
-          "infinite",
-          "yo heard"
-        ],
-        "has_images": true
-      },
-      {
-        "rank": 7,
-        "interaction": 5664,
-        "likes": 5200,
-        "retweets": 235,
-        "replies": 229,
-        "views": 658366,
-        "text": "Can I short myself?",
-        "url": "https://x.com/dylan522p/status/2039463905786048795",
-        "timestamp": "2026-04-01T22:04:21.000Z",
-        "keywords": [
-          "short"
-        ],
-        "has_images": true
-      },
-      {
-        "rank": 8,
-        "interaction": 4855,
-        "likes": 3900,
-        "retweets": 751,
-        "replies": 204,
-        "views": 1139962,
-        "text": "4% of GitHub public commits are being authored by Claude Code right now. At the current trajectory, we believe that Claude Code will be 20%+ of all daily commits by the end of 2026. While you blinked, AI consumed all of software development. Read more   https:// newsletter.semianalysis.com/p/claude-code- is-the-inflection-point \u2026",
-        "url": "https://x.com/dylan522p/status/2019490550911766763",
-        "timestamp": "2026-02-05T19:17:22.000Z",
-        "keywords": [
-          "semianalysis",
-          "ai",
-          "public commits",
-          "claude code",
-          "software development",
-          "2026",
-          "newsletter semianalysis"
-        ],
-        "has_images": true
-      },
-      {
-        "rank": 9,
-        "interaction": 4742,
-        "likes": 4300,
-        "retweets": 333,
-        "replies": 109,
-        "views": 645123,
-        "text": "Microsoft might be investing in Anthropic's new round at $59B. Microsoft wants to have Claude in their pocket to push back against OpenAI who is increasingly rambunctious with Microsoft. Very uncomfortable partnership between the two.",
-        "url": "https://x.com/dylan522p/status/1869455045873528847",
-        "timestamp": "2024-12-18T18:49:50.000Z",
-        "keywords": [
-          "ai",
-          "microsoft investing",
-          "openai increasingly",
-          "round 59b",
-          "uncomfortable partnership",
-          "wants claude"
-        ],
-        "has_images": false
-      },
-      {
-        "rank": 10,
-        "interaction": 4728,
-        "likes": 4000,
-        "retweets": 533,
-        "replies": 195,
-        "views": 633989,
-        "text": "Deepseek V3 and R1 discourse boils down to this. Shifting the curve means you build more and scale more dummies",
-        "url": "https://x.com/dylan522p/status/1883569162100080875",
-        "timestamp": "2025-01-26T17:34:17.000Z",
-        "keywords": [
-          "deepseek v3",
-          "shifting curve",
-          "scale dummies",
-          "r1 discourse",
-          "means build"
-        ],
-        "has_images": true
-      }
-    ],
-    "best_image_keywords": [
-      {
-        "keyword": "volleyball tournament",
-        "avg_interaction": 4935.0
-      },
-      {
-        "keyword": "newsletter semianalysis",
-        "avg_interaction": 2992.5
-      },
-      {
-        "keyword": "deepseek v3",
-        "avg_interaction": 2445.0
-      },
-      {
-        "keyword": "claude code",
-        "avg_interaction": 1762.0
-      },
-      {
-        "keyword": "jensen",
-        "avg_interaction": 1465.0
-      }
-    ],
-    "top_hashtags_by_interaction": [
-      {
-        "hashtag": "#tech",
-        "avg_interaction": 227.0,
-        "tweet_count": 2,
-        "avg_views": 95833.0
-      }
-    ],
-    "top_hashtags_by_usage": [
-      {
-        "hashtag": "#tech",
-        "tweet_count": 2,
-        "avg_interaction": 227.0
-      },
-      {
-        "hashtag": "#microsoft",
-        "tweet_count": 1,
-        "avg_interaction": 0
-      },
-      {
-        "hashtag": "#nvidia",
-        "tweet_count": 1,
-        "avg_interaction": 0
-      },
-      {
-        "hashtag": "#cost",
-        "tweet_count": 1,
-        "avg_interaction": 0
-      },
-      {
-        "hashtag": "#t",
-        "tweet_count": 1,
-        "avg_interaction": 0
-      },
-      {
-        "hashtag": "#istandwithintel",
-        "tweet_count": 1,
-        "avg_interaction": 0
-      }
-    ],
-    "summary": {
-      "avg_interaction": 592.23,
-      "median_interaction": 285,
-      "max_interaction": 26372,
-      "avg_views": 110819.54,
-      "max_views": 6654201
-    }
-  },
-  "SemiAnalysis_": {
-    "handle": "SemiAnalysis_",
-    "tweet_count": 697,
-    "date_from": "2026-02-17",
-    "date_to": "2026-06-24",
-    "best_hours": [
-      {
-        "hour": 17,
-        "avg_interaction": 748.0
-      },
-      {
-        "hour": 14,
-        "avg_interaction": 648.0
-      },
-      {
-        "hour": 2,
-        "avg_interaction": 541.25
-      },
-      {
-        "hour": 20,
-        "avg_interaction": 382.0
-      },
-      {
-        "hour": 0,
-        "avg_interaction": 368.08
-      }
-    ],
-    "all_hours": [
-      {
-        "hour": 0,
-        "avg_interaction": 368.08,
-        "tweet_count": 12
-      },
-      {
-        "hour": 1,
-        "avg_interaction": 361.53,
-        "tweet_count": 123
-      },
-      {
-        "hour": 2,
-        "avg_interaction": 541.25,
-        "tweet_count": 32
-      },
-      {
-        "hour": 3,
-        "avg_interaction": 245.53,
-        "tweet_count": 34
-      },
-      {
-        "hour": 4,
-        "avg_interaction": 365.56,
-        "tweet_count": 25
-      },
-      {
-        "hour": 5,
-        "avg_interaction": 272.2,
-        "tweet_count": 96
-      },
-      {
-        "hour": 6,
-        "avg_interaction": 170.54,
-        "tweet_count": 41
-      },
-      {
-        "hour": 7,
-        "avg_interaction": 348.32,
-        "tweet_count": 34
-      },
-      {
-        "hour": 8,
-        "avg_interaction": 157.25,
-        "tweet_count": 20
-      },
-      {
-        "hour": 9,
-        "avg_interaction": 195.09,
+        "avg_interaction": 3.85,
         "tweet_count": 74
       },
       {
-        "hour": 10,
-        "avg_interaction": 293.24,
-        "tweet_count": 41
-      },
-      {
-        "hour": 11,
-        "avg_interaction": 332.95,
-        "tweet_count": 19
-      },
-      {
-        "hour": 12,
-        "avg_interaction": 318.41,
-        "tweet_count": 27
-      },
-      {
-        "hour": 13,
-        "avg_interaction": 224.2,
-        "tweet_count": 5
-      },
-      {
-        "hour": 14,
-        "avg_interaction": 648.0,
-        "tweet_count": 2
-      },
-      {
-        "hour": 15,
-        "avg_interaction": 223.0,
-        "tweet_count": 1
-      },
-      {
         "hour": 17,
-        "avg_interaction": 748.0,
-        "tweet_count": 1
+        "avg_interaction": 3.63,
+        "tweet_count": 78
+      },
+      {
+        "hour": 18,
+        "avg_interaction": 2.93,
+        "tweet_count": 70
       },
       {
         "hour": 19,
-        "avg_interaction": 59.0,
-        "tweet_count": 2
+        "avg_interaction": 2.57,
+        "tweet_count": 56
       },
       {
         "hour": 20,
-        "avg_interaction": 382.0,
-        "tweet_count": 3
+        "avg_interaction": 3.32,
+        "tweet_count": 37
       },
       {
         "hour": 21,
-        "avg_interaction": 125.41,
-        "tweet_count": 58
+        "avg_interaction": 3.97,
+        "tweet_count": 34
       },
       {
         "hour": 22,
-        "avg_interaction": 115.18,
-        "tweet_count": 38
+        "avg_interaction": 1.22,
+        "tweet_count": 18
       },
       {
         "hour": 23,
-        "avg_interaction": 221.67,
+        "avg_interaction": 3.89,
         "tweet_count": 9
       }
     ],
     "best_days": [
       {
-        "day": "Sunday",
-        "avg_interaction": 390.73
-      },
-      {
-        "day": "Thursday",
-        "avg_interaction": 311.24
-      },
-      {
-        "day": "Saturday",
-        "avg_interaction": 287.81
-      },
-      {
         "day": "Wednesday",
-        "avg_interaction": 282.55
+        "avg_interaction": 6.39
+      },
+      {
+        "day": "Sunday",
+        "avg_interaction": 5.49
       },
       {
         "day": "Tuesday",
-        "avg_interaction": 242.21
-      },
-      {
-        "day": "Friday",
-        "avg_interaction": 226.35
+        "avg_interaction": 4.47
       },
       {
         "day": "Monday",
-        "avg_interaction": 205.33
+        "avg_interaction": 4.41
+      },
+      {
+        "day": "Saturday",
+        "avg_interaction": 4.35
+      },
+      {
+        "day": "Thursday",
+        "avg_interaction": 3.94
+      },
+      {
+        "day": "Friday",
+        "avg_interaction": 2.84
       }
     ],
     "images": {
       "with_image": {
-        "avg_interaction": 341.77,
-        "count": 482
+        "avg_interaction": 21.17,
+        "count": 76
       },
       "without_image": {
-        "avg_interaction": 124.43,
-        "count": 215
+        "avg_interaction": 2.76,
+        "count": 774
       },
       "winner": "images",
-      "pct_difference": 174.7
+      "pct_difference": 667.0
     },
     "top_keywords": [
       {
-        "keyword": "image",
-        "avg_interaction": 3322.2,
-        "tweet_count": 5
+        "keyword": "optical communication",
+        "avg_interaction": 53.67,
+        "tweet_count": 3
       },
       {
-        "keyword": "smartphone",
-        "avg_interaction": 1304.25,
+        "keyword": "data center",
+        "avg_interaction": 43.0,
+        "tweet_count": 8
+      },
+      {
+        "keyword": "advanced packaging",
+        "avg_interaction": 39.75,
         "tweet_count": 4
       },
       {
-        "keyword": "apple",
-        "avg_interaction": 1174.8,
-        "tweet_count": 5
-      },
-      {
-        "keyword": "2026",
-        "avg_interaction": 1037.2,
-        "tweet_count": 5
-      },
-      {
-        "keyword": "ai chip",
-        "avg_interaction": 1001.0,
+        "keyword": "glass substrates",
+        "avg_interaction": 37.67,
         "tweet_count": 3
       },
       {
-        "keyword": "fab",
-        "avg_interaction": 818.79,
-        "tweet_count": 19
+        "keyword": "capacity",
+        "avg_interaction": 35.11,
+        "tweet_count": 9
       },
       {
-        "keyword": "dominate global",
-        "avg_interaction": 770.67,
+        "keyword": "packaging",
+        "avg_interaction": 34.5,
+        "tweet_count": 6
+      },
+      {
+        "keyword": "demand",
+        "avg_interaction": 33.91,
+        "tweet_count": 11
+      },
+      {
+        "keyword": "supply chain",
+        "avg_interaction": 27.93,
+        "tweet_count": 15
+      },
+      {
+        "keyword": "#jpmorgan",
+        "avg_interaction": 27.33,
         "tweet_count": 3
       },
       {
-        "keyword": "claude code",
-        "avg_interaction": 714.43,
-        "tweet_count": 7
+        "keyword": "chips",
+        "avg_interaction": 26.0,
+        "tweet_count": 9
       },
       {
-        "keyword": "gb200 nvl72",
-        "avg_interaction": 527.75,
-        "tweet_count": 4
-      },
-      {
-        "keyword": "micron",
-        "avg_interaction": 513.92,
-        "tweet_count": 13
-      },
-      {
-        "keyword": "gpu clusters",
-        "avg_interaction": 494.67,
-        "tweet_count": 3
-      },
-      {
-        "keyword": "cost",
-        "avg_interaction": 492.67,
+        "keyword": "shortage",
+        "avg_interaction": 25.0,
         "tweet_count": 3
       },
       {
         "keyword": "ai server",
-        "avg_interaction": 482.67,
-        "tweet_count": 3
+        "avg_interaction": 23.0,
+        "tweet_count": 6
       },
       {
-        "keyword": "cuda moat",
-        "avg_interaction": 464.25,
+        "keyword": "ai infrastructure",
+        "avg_interaction": 20.25,
         "tweet_count": 4
       },
       {
-        "keyword": "gpu",
-        "avg_interaction": 408.0,
-        "tweet_count": 49
+        "keyword": "server",
+        "avg_interaction": 18.58,
+        "tweet_count": 12
+      },
+      {
+        "keyword": "chip",
+        "avg_interaction": 17.05,
+        "tweet_count": 19
       }
     ],
     "top_tweets": [
       {
         "rank": 1,
-        "interaction": 14697,
-        "likes": 14000,
-        "retweets": 605,
-        "replies": 92,
-        "views": 351117,
-        "text": "Elon rn",
-        "url": "https://x.com/SemiAnalysis_/status/2052085238856093973",
-        "timestamp": "2026-05-06T17:57:01.000Z",
+        "interaction": 148,
+        "likes": 125,
+        "retweets": 19,
+        "replies": 4,
+        "views": 10008,
+        "text": "Indium Phosphide Substrate Capacity to Expand 10-Fold Within 4 Years! #IndiumPhosphideInP Epitaxial Supply Chain JX Metal announced in a press release on the 16th that, in response to the growing demand for optical communication infrastructure used in data centers, it will",
+        "url": "https://x.com/technews_tw/status/2067073313957146678",
+        "timestamp": "2026-06-17T02:34:17.000Z",
         "keywords": [
-          "image"
+          "#indiumphosphideinp",
+          "data center",
+          "supply chain",
+          "capacity",
+          "demand",
+          "ai",
+          "indium phosphide",
+          "substrate capacity",
+          "chain jx",
+          "metal announced",
+          "optical communication"
         ],
         "has_images": true
       },
       {
         "rank": 2,
-        "interaction": 5528,
-        "likes": 4500,
-        "retweets": 823,
-        "replies": 205,
-        "views": 2008579,
-        "text": "BREAKING NEWS: Anthropic's latest model will NOT help you if it thinks your ML research/ML engineering is interesting, and/or will secretly degrade its IQ so that the average engineer won't notice. We are already seeing Anthropic's latest model's moderation filters our GPU",
-        "url": "https://x.com/SemiAnalysis_/status/2064482714149896431",
-        "timestamp": "2026-06-09T23:00:09.000Z",
+        "interaction": 83,
+        "likes": 71,
+        "retweets": 10,
+        "replies": 2,
+        "views": 9426,
+        "text": "Morgan Stanley raises Yageo target price to 1,355 yuan, with even the chance to challenge the sky-high 2,055 yuan! #MorganStanleyNamesYageoUltimateMLCCWinner Passive component industry to usher in a new round of major cycle, Morgan Stanley's latest research report candidly admits",
+        "url": "https://x.com/technews_tw/status/2066409421467779571",
+        "timestamp": "2026-06-15T06:36:12.000Z",
         "keywords": [
-          "gpu",
-          "ml engineering",
-          "degrade iq",
-          "anthropic latest",
-          "model moderation",
-          "filters gpu"
+          "#morganstanleynamesyageoultimatemlccwinner",
+          "price",
+          "ai",
+          "yageo target",
+          "355 yuan",
+          "stanley raises",
+          "component industry",
+          "cycle morgan"
         ],
         "has_images": true
       },
       {
         "rank": 3,
-        "interaction": 5293,
-        "likes": 5000,
-        "retweets": 233,
-        "replies": 60,
-        "views": 190970,
-        "text": "we heard fable got banned",
-        "url": "https://x.com/SemiAnalysis_/status/2065627871343698300",
-        "timestamp": "2026-06-13T02:50:36.000Z",
+        "interaction": 78,
+        "likes": 66,
+        "retweets": 8,
+        "replies": 4,
+        "views": 5518,
+        "text": "Can Glass Substrates Really Shoulder the Burden of AI Packaging? #GlassSubstrateEcosystemSupplyChain AI chips drive demand for high-density packaging, propelling glass substrates to become a key material in advanced packaging. With the advantages of large-scale sizing, high",
+        "url": "https://x.com/technews_tw/status/2064505979157581858",
+        "timestamp": "2026-06-10T00:32:36.000Z",
         "keywords": [
-          "fab",
-          "heard fable",
-          "fable got",
-          "fable",
-          "banned",
-          "heard"
+          "#glasssubstrateecosystemsupplychain",
+          "chip",
+          "chips",
+          "demand",
+          "packaging",
+          "ai",
+          "advanced packaging",
+          "ai packaging",
+          "packaging glasssubstrateecosystemsupplychain",
+          "glass substrates",
+          "chips drive",
+          "advantages large"
         ],
         "has_images": true
       },
       {
         "rank": 4,
-        "interaction": 4529,
-        "likes": 4000,
-        "retweets": 432,
-        "replies": 97,
-        "views": 888959,
-        "text": "SITUATION DETECTED: The city of Rio de Janerio has post-trained a model.  Based on Qwen 7/2, Rio 3.5 Open 397B adds SwiReasoning on top of the base Qwen model \u2014 a framework that dynamically switches between standard chain-of-thought and latent-space reasoning, guided by",
-        "url": "https://x.com/SemiAnalysis_/status/2065894494935933191",
-        "timestamp": "2026-06-13T20:30:04.000Z",
+        "interaction": 71,
+        "likes": 62,
+        "retweets": 9,
+        "replies": 0,
+        "views": 9058,
+        "text": "800V HVDC Becomes New Power Supply Standard for AI Data Centers! #AI\u8cc7\u6599\u4e2d\u5fc3\u50f9\u503c\u93c8 The AI computing race is extending from chips to power infrastructure. Market sources indicate that Delta Electronics' long-planned \u00b1400V and 800V high-voltage direct current power supply (HVDC)",
+        "url": "https://x.com/technews_tw/status/2062324291346313413",
+        "timestamp": "2026-06-04T00:03:21.000Z",
         "keywords": [
+          "#ai\u8cc7\u6599\u4e2d\u5fc3\u50f9\u503c\u93c8",
+          "chip",
+          "chips",
+          "data center",
           "ai",
-          "qwen model",
-          "city rio",
-          "space reasoning",
-          "thought latent",
-          "swireasoning base"
+          "800v hvdc",
+          "delta electronics",
+          "data centers",
+          "standard ai",
+          "direct current"
         ],
         "has_images": true
       },
       {
         "rank": 5,
-        "interaction": 4108,
-        "likes": 3300,
-        "retweets": 715,
-        "replies": 93,
-        "views": 605218,
-        "text": "US smartphone imports from China have collapsed from 90% to 25%.  The Foxconn China assembly network, once the undisputed backbone of Apple's hardware empire, is seeing its centrality eroded in real time. This is the clearest data point yet of a forced, systematic derisking of",
-        "url": "https://x.com/SemiAnalysis_/status/2043736083641373057",
-        "timestamp": "2026-04-13T17:00:27.000Z",
+        "interaction": 57,
+        "likes": 48,
+        "retweets": 9,
+        "replies": 0,
+        "views": 4060,
+        "text": "JPMorgan names 4 major Taiwanese manufacturers! #JPMorganNamesTop5AIWinners AI wave sweeps global hardware supply chain, multilayer ceramic capacitors (MLCC), copper-clad laminates (CCL) to high-end substrates (Substrate) facing full capacity shortages. Foreign brokerage JPMorgan",
+        "url": "https://x.com/technews_tw/status/2066802549764829202",
+        "timestamp": "2026-06-16T08:38:21.000Z",
         "keywords": [
-          "apple",
-          "smartphone",
-          "foxconn china",
-          "smartphone imports",
-          "centrality eroded",
-          "apple hardware",
-          "assembly network"
+          "#jpmorgannamestop5aiwinners",
+          "supply chain",
+          "capacity",
+          "shortage",
+          "ai",
+          "manufacturers jpmorgannamestop5aiwinners",
+          "foreign brokerage",
+          "laminates ccl",
+          "major taiwanese"
         ],
         "has_images": true
       },
       {
         "rank": 6,
-        "interaction": 3788,
-        "likes": 2900,
-        "retweets": 610,
-        "replies": 278,
-        "views": 2145581,
-        "text": "Micron\u2019s $100B megafab in NY is at risk of delay due to just 6 \u201cconcerned citizens\u201d and their frivolous lawsuit. (1/10) ",
-        "url": "https://x.com/SemiAnalysis_/status/2026719180284666046",
-        "timestamp": "2026-02-25T18:01:21.000Z",
+        "interaction": 53,
+        "likes": 47,
+        "retweets": 5,
+        "replies": 1,
+        "views": 4997,
+        "text": "AI Data Center Power Efficiency Anxiety! #Power Components vs Passive Components Differences Explained at a Glance   The South Korean government has launched the \"Super Innovation Economy Plan,\" investing over 50 billion KRW in national funds, focusing on next-generation power",
+        "url": "https://x.com/technews_tw/status/2068848009501360145",
+        "timestamp": "2026-06-22T00:06:17.000Z",
         "keywords": [
-          "micron",
-          "fab",
-          "micron 100b",
-          "megafab ny",
-          "frivolous lawsuit",
-          "risk delay",
-          "concerned citizens"
+          "#power",
+          "data center",
+          "ai",
+          "nm",
+          "power efficiency",
+          "super innovation",
+          "components differences",
+          "korean government"
         ],
         "has_images": true
       },
       {
         "rank": 7,
-        "interaction": 3568,
-        "likes": 2900,
-        "retweets": 496,
-        "replies": 172,
-        "views": 619746,
-        "text": "4% of GitHub public commits are being authored by Claude Code right now. At the current trajectory, we believe that Claude Code will be 20%+ of all daily commits by the end of 2026. While you blinked, AI consumed all of software development.",
-        "url": "https://x.com/SemiAnalysis_/status/2027443723362042308",
-        "timestamp": "2026-02-27T18:00:26.000Z",
+        "interaction": 49,
+        "likes": 46,
+        "retweets": 3,
+        "replies": 0,
+        "views": 2622,
+        "text": "A single AI server devours 440,000 #MLCCs, up to 15 times that of traditional servers. Foreign investors forecast the \"passive components supercycle\" to erupt ahead of schedule, with high-end production capacity in Japan and South Korea snapped up entirely, while simultaneously",
+        "url": "https://x.com/technews_tw/status/2069239320096178207",
+        "timestamp": "2026-06-23T02:01:13.000Z",
         "keywords": [
+          "#mlccs",
+          "server",
+          "ai server",
+          "capacity",
           "ai",
-          "public commits",
-          "github",
-          "claude code",
-          "software development",
-          "2026"
+          "forecast",
+          "000 mlccs",
+          "supercycle erupt",
+          "capacity japan"
         ],
-        "has_images": true
+        "has_images": false
       },
       {
         "rank": 8,
-        "interaction": 3268,
-        "likes": 3100,
-        "retweets": 125,
-        "replies": 43,
-        "views": 427250,
-        "text": "I\u2019ve had a number of conversations with folks inside and outside government about the current situation with Anthropic, and here is what I believe to be true:   \u2014 As we know, Anthropic publicly released its Mythos class models earlier this week under the commercial name Fable.",
-        "url": "https://x.com/SemiAnalysis_/status/2065866999188898080",
-        "timestamp": "2026-06-13T18:40:49.000Z",
+        "interaction": 46,
+        "likes": 42,
+        "retweets": 4,
+        "replies": 0,
+        "views": 3240,
+        "text": "JPMorgan names four Taiwanese firms as beneficiaries! #JPMorganUnveilsThreeMajorHardwareRevolutionsAndNewLandscapeForTaiwaneseFirms AI computing power is exploding, comprehensively reshaping the global tech hardware industry supply chain. U.S. investment bank JPMorgan (J.P.",
+        "url": "https://x.com/technews_tw/status/2067033562315182521",
+        "timestamp": "2026-06-16T23:56:19.000Z",
         "keywords": [
-          "nm",
-          "fab",
-          "anthropic believe",
-          "mythos class",
-          "commercial fable",
-          "class models",
-          "outside government"
+          "#jpmorganunveilsthreemajorhardwarerevolutionsandnewlandscapefortaiwanesefirms",
+          "supply chain",
+          "ai",
+          "jpmorgan names",
+          "taiwanese firms",
+          "jpmorganunveilsthreemajorhardwarerevolutionsandnewlandscapefortaiwanesefirms ai",
+          "beneficiaries"
         ],
         "has_images": true
       },
       {
         "rank": 9,
-        "interaction": 2968,
-        "likes": 2600,
-        "retweets": 279,
-        "replies": 89,
-        "views": 282036,
-        "text": "to be clear, NVIDIA is NOT a car",
-        "url": "https://x.com/SemiAnalysis_/status/2044629920035295307",
-        "timestamp": "2026-04-16T04:12:14.000Z",
+        "interaction": 46,
+        "likes": 40,
+        "retweets": 5,
+        "replies": 1,
+        "views": 3083,
+        "text": "Despite the fact that CPO's progress in mass adoption is slower due to technical difficulties, optical communication infrastructure has become the new battleground in the AI infrastructure race! #Optical Interconnect Becomes Key to AI_Factory Expansion According to TrendForce's",
+        "url": "https://x.com/technews_tw/status/2066725555203137645",
+        "timestamp": "2026-06-16T03:32:24.000Z",
         "keywords": [
-          "nvidia",
-          "nvidia car",
-          "clear nvidia",
-          "car"
+          "#optical",
+          "trendforce",
+          "ai",
+          "optical interconnect",
+          "ai infrastructure",
+          "ai_factory expansion",
+          "cpo progress",
+          "adoption slower"
         ],
         "has_images": true
       },
       {
         "rank": 10,
-        "interaction": 2778,
-        "likes": 2200,
-        "retweets": 495,
-        "replies": 83,
-        "views": 361225,
-        "text": "BREAKING NEWS: according to CloudFlare Radar Data, Agentic traffic has SURPASSED human traffic across the worldwide internet for HTML webpages.",
-        "url": "https://x.com/SemiAnalysis_/status/2062580333770408231",
-        "timestamp": "2026-06-04T17:00:47.000Z",
+        "interaction": 42,
+        "likes": 31,
+        "retweets": 11,
+        "replies": 0,
+        "views": 1141,
+        "text": "Nearly 30% of Taiwan's tax revenue comes from TSMC! #TSMCReignsAsTopTaxpayerForNinthTime 2025 corporate income tax settlement declarations are due by June 1. According to cross-referencing by the Ministry of Finance with corporate financial reports, TSMC has claimed the \"Top",
+        "url": "https://x.com/technews_tw/status/2067438212075954564",
+        "timestamp": "2026-06-18T02:44:15.000Z",
         "keywords": [
-          "agentic traffic",
-          "cloudflare radar",
-          "internet html",
-          "surpassed human",
-          "news according"
+          "#tsmcreignsastoptaxpayerforninthtime",
+          "tsmc",
+          "ai",
+          "revenue",
+          "taiwan tax",
+          "reports tsmc",
+          "revenue comes",
+          "2025 corporate",
+          "settlement declarations"
         ],
         "has_images": true
       }
     ],
     "best_image_keywords": [
       {
-        "keyword": "image",
-        "avg_interaction": 3322.2
+        "keyword": "data center",
+        "avg_interaction": 64.6
       },
       {
-        "keyword": "smartphone",
-        "avg_interaction": 1714.33
+        "keyword": "capacity",
+        "avg_interaction": 59.25
       },
       {
-        "keyword": "apple",
-        "avg_interaction": 1174.8
+        "keyword": "packaging",
+        "avg_interaction": 51.0
       },
       {
-        "keyword": "2026",
-        "avg_interaction": 1037.2
+        "keyword": "advanced packaging",
+        "avg_interaction": 51.0
       },
       {
-        "keyword": "fab",
-        "avg_interaction": 968.38
+        "keyword": "chips",
+        "avg_interaction": 51.0
       }
     ],
     "top_hashtags_by_interaction": [
       {
-        "hashtag": "#1",
-        "avg_interaction": 175.5,
+        "hashtag": "#optical",
+        "avg_interaction": 28.5,
         "tweet_count": 2,
-        "avg_views": 21842.5
+        "avg_views": 1730.0
       },
       {
-        "hashtag": "#2",
-        "avg_interaction": 172.0,
-        "tweet_count": 2,
-        "avg_views": 26754.0
+        "hashtag": "#jpmorgan",
+        "avg_interaction": 27.33,
+        "tweet_count": 3,
+        "avg_views": 1440.0
       },
       {
-        "hashtag": "#ai",
-        "avg_interaction": 45.0,
+        "hashtag": "#abf",
+        "avg_interaction": 24.0,
         "tweet_count": 2,
-        "avg_views": 12791.5
+        "avg_views": 1392.0
+      },
+      {
+        "hashtag": "#0050",
+        "avg_interaction": 15.0,
+        "tweet_count": 2,
+        "avg_views": 888.5
+      },
+      {
+        "hashtag": "#tsmc",
+        "avg_interaction": 12.21,
+        "tweet_count": 14,
+        "avg_views": 653.57
+      },
+      {
+        "hashtag": "#marvell",
+        "avg_interaction": 11.0,
+        "tweet_count": 3,
+        "avg_views": 590.0
+      },
+      {
+        "hashtag": "#intel",
+        "avg_interaction": 10.8,
+        "tweet_count": 5,
+        "avg_views": 824.2
+      },
+      {
+        "hashtag": "#copos",
+        "avg_interaction": 10.0,
+        "tweet_count": 2,
+        "avg_views": 552.5
+      },
+      {
+        "hashtag": "#\u53f0\u9054\u96fb",
+        "avg_interaction": 9.6,
+        "tweet_count": 5,
+        "avg_views": 593.2
+      },
+      {
+        "hashtag": "#memory",
+        "avg_interaction": 9.5,
+        "tweet_count": 4,
+        "avg_views": 725.25
+      },
+      {
+        "hashtag": "#apple",
+        "avg_interaction": 9.0,
+        "tweet_count": 2,
+        "avg_views": 449.0
+      },
+      {
+        "hashtag": "#tesla",
+        "avg_interaction": 8.0,
+        "tweet_count": 2,
+        "avg_views": 412.5
+      },
+      {
+        "hashtag": "#inp",
+        "avg_interaction": 8.0,
+        "tweet_count": 2,
+        "avg_views": 411.5
+      },
+      {
+        "hashtag": "#\u8166\u6a5f\u4ecb\u9762",
+        "avg_interaction": 7.5,
+        "tweet_count": 2,
+        "avg_views": 210.0
+      },
+      {
+        "hashtag": "#samsung",
+        "avg_interaction": 7.5,
+        "tweet_count": 2,
+        "avg_views": 515.5
       }
     ],
     "top_hashtags_by_usage": [
       {
-        "hashtag": "#2",
-        "tweet_count": 2,
-        "avg_interaction": 172.0
-      },
-      {
-        "hashtag": "#1",
-        "tweet_count": 2,
-        "avg_interaction": 175.5
-      },
-      {
         "hashtag": "#ai",
-        "tweet_count": 2,
-        "avg_interaction": 45.0
+        "tweet_count": 66,
+        "avg_interaction": 3.89
       },
       {
-        "hashtag": "#startup",
-        "tweet_count": 1,
-        "avg_interaction": 0
+        "hashtag": "#spacex",
+        "tweet_count": 36,
+        "avg_interaction": 2.06
       },
       {
-        "hashtag": "#chips",
-        "tweet_count": 1,
-        "avg_interaction": 0
+        "hashtag": "#\u860b\u679c",
+        "tweet_count": 31,
+        "avg_interaction": 2.65
       },
       {
-        "hashtag": "#oracle",
-        "tweet_count": 1,
-        "avg_interaction": 0
+        "hashtag": "#\u53f0\u7a4d\u96fb",
+        "tweet_count": 30,
+        "avg_interaction": 4.3
       },
       {
-        "hashtag": "#tech",
-        "tweet_count": 1,
-        "avg_interaction": 0
+        "hashtag": "#\u8f1d\u9054",
+        "tweet_count": 27,
+        "avg_interaction": 3.3
       },
       {
-        "hashtag": "#entrepreneur",
-        "tweet_count": 1,
-        "avg_interaction": 0
+        "hashtag": "#openai",
+        "tweet_count": 22,
+        "avg_interaction": 1.64
       },
       {
-        "hashtag": "#gtc",
-        "tweet_count": 1,
-        "avg_interaction": 0
+        "hashtag": "#anthropic",
+        "tweet_count": 21,
+        "avg_interaction": 1.76
       },
       {
-        "hashtag": "#gtc2026",
-        "tweet_count": 1,
-        "avg_interaction": 0
+        "hashtag": "#\u82f1\u7279\u723e",
+        "tweet_count": 17,
+        "avg_interaction": 3.65
       },
       {
-        "hashtag": "#hpc",
-        "tweet_count": 1,
-        "avg_interaction": 0
+        "hashtag": "#google",
+        "tweet_count": 15,
+        "avg_interaction": 3.87
       },
       {
-        "hashtag": "#hbm",
-        "tweet_count": 1,
-        "avg_interaction": 0
+        "hashtag": "#amd",
+        "tweet_count": 14,
+        "avg_interaction": 3.79
+      },
+      {
+        "hashtag": "#tsmc",
+        "tweet_count": 14,
+        "avg_interaction": 12.21
+      },
+      {
+        "hashtag": "#\u9ec3\u4ec1\u52f3",
+        "tweet_count": 13,
+        "avg_interaction": 2.31
+      },
+      {
+        "hashtag": "#ipo",
+        "tweet_count": 13,
+        "avg_interaction": 1.54
+      },
+      {
+        "hashtag": "#sk\u6d77\u529b\u58eb",
+        "tweet_count": 12,
+        "avg_interaction": 2.58
+      },
+      {
+        "hashtag": "#\u99ac\u65af\u514b",
+        "tweet_count": 12,
+        "avg_interaction": 2.17
       }
     ],
     "summary": {
-      "avg_interaction": 274.73,
-      "median_interaction": 119,
-      "max_interaction": 14697,
-      "avg_views": 52300.31,
-      "max_views": 2145581
+      "avg_interaction": 4.4,
+      "median_interaction": 2,
+      "max_interaction": 148,
+      "avg_views": 321.32,
+      "max_views": 10008
     }
   },
   "combined": {
     "handle": "combined",
-    "tweet_count": 2484,
-    "date_from": "2020-09-03",
+    "tweet_count": 1337,
+    "date_from": "2026-02-05",
     "date_to": "2026-06-24",
     "best_hours": [
       {
-        "hour": 23,
-        "avg_interaction": 1745.72
+        "hour": 0,
+        "avg_interaction": 33.23
       },
       {
-        "hour": 7,
-        "avg_interaction": 660.22
+        "hour": 22,
+        "avg_interaction": 27.15
       },
       {
-        "hour": 2,
-        "avg_interaction": 573.56
+        "hour": 8,
+        "avg_interaction": 21.39
       },
       {
-        "hour": 4,
-        "avg_interaction": 539.65
+        "hour": 21,
+        "avg_interaction": 21.0
       },
       {
-        "hour": 6,
-        "avg_interaction": 512.06
+        "hour": 1,
+        "avg_interaction": 20.38
       }
     ],
     "all_hours": [
       {
         "hour": 0,
-        "avg_interaction": 130.6,
-        "tweet_count": 186
+        "avg_interaction": 33.23,
+        "tweet_count": 73
       },
       {
         "hour": 1,
-        "avg_interaction": 323.68,
-        "tweet_count": 205
-      },
-      {
-        "hour": 2,
-        "avg_interaction": 573.56,
-        "tweet_count": 70
-      },
-      {
-        "hour": 3,
-        "avg_interaction": 358.69,
-        "tweet_count": 70
-      },
-      {
-        "hour": 4,
-        "avg_interaction": 539.65,
-        "tweet_count": 60
-      },
-      {
-        "hour": 5,
-        "avg_interaction": 329.21,
-        "tweet_count": 140
-      },
-      {
-        "hour": 6,
-        "avg_interaction": 512.06,
-        "tweet_count": 109
+        "avg_interaction": 20.38,
+        "tweet_count": 16
       },
       {
         "hour": 7,
-        "avg_interaction": 660.22,
-        "tweet_count": 107
+        "avg_interaction": 9.53,
+        "tweet_count": 17
       },
       {
         "hour": 8,
-        "avg_interaction": 178.37,
-        "tweet_count": 145
+        "avg_interaction": 21.39,
+        "tweet_count": 33
       },
       {
         "hour": 9,
-        "avg_interaction": 348.4,
-        "tweet_count": 170
+        "avg_interaction": 9.22,
+        "tweet_count": 55
       },
       {
         "hour": 10,
-        "avg_interaction": 435.36,
-        "tweet_count": 125
+        "avg_interaction": 11.91,
+        "tweet_count": 77
       },
       {
         "hour": 11,
-        "avg_interaction": 366.4,
-        "tweet_count": 104
+        "avg_interaction": 14.02,
+        "tweet_count": 95
       },
       {
         "hour": 12,
-        "avg_interaction": 472.22,
-        "tweet_count": 113
+        "avg_interaction": 17.37,
+        "tweet_count": 87
       },
       {
         "hour": 13,
-        "avg_interaction": 305.75,
-        "tweet_count": 91
+        "avg_interaction": 10.11,
+        "tweet_count": 84
       },
       {
         "hour": 14,
-        "avg_interaction": 174.41,
-        "tweet_count": 73
+        "avg_interaction": 13.71,
+        "tweet_count": 79
       },
       {
         "hour": 15,
-        "avg_interaction": 196.42,
-        "tweet_count": 73
+        "avg_interaction": 12.78,
+        "tweet_count": 76
       },
       {
         "hour": 16,
-        "avg_interaction": 187.97,
-        "tweet_count": 78
+        "avg_interaction": 17.95,
+        "tweet_count": 95
       },
       {
         "hour": 17,
-        "avg_interaction": 114.67,
-        "tweet_count": 61
+        "avg_interaction": 13.86,
+        "tweet_count": 103
       },
       {
         "hour": 18,
-        "avg_interaction": 244.5,
-        "tweet_count": 42
+        "avg_interaction": 7.05,
+        "tweet_count": 79
       },
       {
         "hour": 19,
-        "avg_interaction": 179.18,
-        "tweet_count": 39
+        "avg_interaction": 4.19,
+        "tweet_count": 67
       },
       {
         "hour": 20,
-        "avg_interaction": 206.87,
-        "tweet_count": 117
+        "avg_interaction": 12.45,
+        "tweet_count": 121
       },
       {
         "hour": 21,
-        "avg_interaction": 101.8,
-        "tweet_count": 167
+        "avg_interaction": 21.0,
+        "tweet_count": 110
       },
       {
         "hour": 22,
-        "avg_interaction": 123.93,
-        "tweet_count": 99
+        "avg_interaction": 27.15,
+        "tweet_count": 55
       },
       {
         "hour": 23,
-        "avg_interaction": 1745.72,
-        "tweet_count": 40
+        "avg_interaction": 16.33,
+        "tweet_count": 15
       }
     ],
     "best_days": [
       {
-        "day": "Sunday",
-        "avg_interaction": 731.06
-      },
-      {
-        "day": "Thursday",
-        "avg_interaction": 350.11
-      },
-      {
-        "day": "Saturday",
-        "avg_interaction": 321.86
-      },
-      {
         "day": "Wednesday",
-        "avg_interaction": 299.57
-      },
-      {
-        "day": "Monday",
-        "avg_interaction": 287.69
+        "avg_interaction": 21.94
       },
       {
         "day": "Tuesday",
-        "avg_interaction": 261.16
+        "avg_interaction": 19.24
+      },
+      {
+        "day": "Monday",
+        "avg_interaction": 14.54
       },
       {
         "day": "Friday",
-        "avg_interaction": 242.86
+        "avg_interaction": 14.21
+      },
+      {
+        "day": "Thursday",
+        "avg_interaction": 11.52
+      },
+      {
+        "day": "Sunday",
+        "avg_interaction": 9.48
+      },
+      {
+        "day": "Saturday",
+        "avg_interaction": 6.34
       }
     ],
     "images": {
       "with_image": {
-        "avg_interaction": 348.21,
-        "count": 1009
+        "avg_interaction": 40.04,
+        "count": 304
       },
       "without_image": {
-        "avg_interaction": 310.22,
-        "count": 1475
+        "avg_interaction": 7.88,
+        "count": 1033
       },
       "winner": "images",
-      "pct_difference": 12.2
+      "pct_difference": 408.1
     },
     "top_keywords": [
       {
-        "keyword": "newsletter semianalysis",
-        "avg_interaction": 2032.0,
-        "tweet_count": 3
+        "keyword": "agentic ai",
+        "avg_interaction": 139.0,
+        "tweet_count": 5
       },
       {
-        "keyword": "image",
-        "avg_interaction": 1589.85,
-        "tweet_count": 13
+        "keyword": "memory prices",
+        "avg_interaction": 107.8,
+        "tweet_count": 5
       },
       {
-        "keyword": "microsoft",
-        "avg_interaction": 1376.33,
-        "tweet_count": 3
-      },
-      {
-        "keyword": "sglang vllm",
-        "avg_interaction": 1349.0,
-        "tweet_count": 3
-      },
-      {
-        "keyword": "claude code",
-        "avg_interaction": 1109.42,
-        "tweet_count": 12
-      },
-      {
-        "keyword": "jensen",
-        "avg_interaction": 1083.67,
-        "tweet_count": 3
-      },
-      {
-        "keyword": "anthropic",
-        "avg_interaction": 981.0,
-        "tweet_count": 4
-      },
-      {
-        "keyword": "2026",
-        "avg_interaction": 782.38,
-        "tweet_count": 13
-      },
-      {
-        "keyword": "dominate global",
-        "avg_interaction": 770.67,
-        "tweet_count": 3
-      },
-      {
-        "keyword": "openai codex",
-        "avg_interaction": 580.33,
-        "tweet_count": 3
-      },
-      {
-        "keyword": "qualcomm",
-        "avg_interaction": 541.7,
-        "tweet_count": 23
-      },
-      {
-        "keyword": "gb200 nvl72",
-        "avg_interaction": 527.75,
-        "tweet_count": 4
-      },
-      {
-        "keyword": "openai",
-        "avg_interaction": 523.0,
+        "keyword": "memory giants",
+        "avg_interaction": 101.17,
         "tweet_count": 6
       },
       {
-        "keyword": "gpu clusters",
-        "avg_interaction": 494.67,
+        "keyword": "forecast",
+        "avg_interaction": 92.17,
+        "tweet_count": 6
+      },
+      {
+        "keyword": "tsmc copos",
+        "avg_interaction": 91.0,
         "tweet_count": 3
       },
       {
-        "keyword": "cost",
-        "avg_interaction": 492.67,
+        "keyword": "intel foundry",
+        "avg_interaction": 78.0,
         "tweet_count": 3
+      },
+      {
+        "keyword": "panel level",
+        "avg_interaction": 74.33,
+        "tweet_count": 3
+      },
+      {
+        "keyword": "training",
+        "avg_interaction": 73.2,
+        "tweet_count": 5
+      },
+      {
+        "keyword": "ddr5 spot",
+        "avg_interaction": 70.67,
+        "tweet_count": 3
+      },
+      {
+        "keyword": "#copos",
+        "avg_interaction": 70.0,
+        "tweet_count": 4
+      },
+      {
+        "keyword": "#advancedpackaging",
+        "avg_interaction": 69.5,
+        "tweet_count": 4
+      },
+      {
+        "keyword": "#ssd",
+        "avg_interaction": 69.0,
+        "tweet_count": 4
+      },
+      {
+        "keyword": "contract prices",
+        "avg_interaction": 63.67,
+        "tweet_count": 3
+      },
+      {
+        "keyword": "dram suppliers",
+        "avg_interaction": 58.67,
+        "tweet_count": 3
+      },
+      {
+        "keyword": "llm",
+        "avg_interaction": 57.75,
+        "tweet_count": 4
       }
     ],
     "top_tweets": [
       {
         "rank": 1,
-        "interaction": 55800,
-        "likes": 41000,
-        "retweets": 12000,
-        "replies": 2800,
-        "views": 0,
-        "text": "",
-        "url": "https://x.com/satyanadella/status/2066182223213293753",
-        "timestamp": "2026-06-14T15:33:24.000Z",
-        "keywords": [],
-        "has_images": false
+        "interaction": 488,
+        "likes": 359,
+        "retweets": 111,
+        "replies": 18,
+        "views": 339041,
+        "text": " CPUs are having a moment.  #Nvidia launched a standalone CPU. #Arm made its first chip in 35 years. #Intel & #AMD are raising prices amid a supply crunch.  What's behind it: Agentic AI needs far more CPU than anyone planned for \u2014 driving a structural shift in CPU:GPU ratios",
+        "url": "https://x.com/trendforce/status/2044038072107434251",
+        "timestamp": "2026-04-14T13:00:27.000Z",
+        "keywords": [
+          "#nvidia",
+          "#arm",
+          "#intel",
+          "#amd",
+          "chip",
+          "intel",
+          "nvidia",
+          "amd",
+          "gpu",
+          "cpu",
+          "arm",
+          "price",
+          "ai",
+          "cpu planned",
+          "agentic ai",
+          "raising prices",
+          "moment nvidia"
+        ],
+        "has_images": true
       },
       {
         "rank": 2,
-        "interaction": 26372,
-        "likes": 24000,
-        "retweets": 2300,
-        "replies": 72,
-        "views": 2219969,
-        "text": "In Korea, found this Tteokbokki spot ran by 2 elder ladies I asked if they took card She shook her head, spoke some Korean, walked out, waved me to follow We went to a 7/11 She pointed at some cigarettes, which I bought for her, 3500 won, $2.46 Went back and got served this meal",
-        "url": "https://x.com/dylan522p/status/1917719768066363629",
-        "timestamp": "2025-04-30T23:16:36.000Z",
+        "interaction": 402,
+        "likes": 293,
+        "retweets": 97,
+        "replies": 12,
+        "views": 118951,
+        "text": " Memory prices keep climbing: DRAM is forecast to rise 58\u201363% QoQ in 2Q26, while NAND flash may surge 70\u201375%. When will the supply-demand imbalance ease?More analysis from #TrendForce:  https:// buff.ly/NBcmN5k ",
+        "url": "https://x.com/trendforce/status/2039010015747396092",
+        "timestamp": "2026-03-31T16:00:45.000Z",
         "keywords": [
-          "korea tteokbokki",
-          "cigarettes bought",
-          "went 11",
-          "served meal",
-          "elder ladies"
+          "#trendforce",
+          "nand",
+          "dram",
+          "memory",
+          "demand",
+          "price",
+          "trendforce",
+          "forecast",
+          "dram forecast",
+          "memory prices",
+          "prices climbing",
+          "flash surge",
+          "imbalance ease"
         ],
-        "has_images": true
+        "has_images": false
       },
       {
         "rank": 3,
-        "interaction": 14697,
-        "likes": 14000,
-        "retweets": 605,
-        "replies": 92,
-        "views": 351117,
-        "text": "Elon rn",
-        "url": "https://x.com/SemiAnalysis_/status/2052085238856093973",
-        "timestamp": "2026-05-06T17:57:01.000Z",
+        "interaction": 269,
+        "likes": 234,
+        "retweets": 29,
+        "replies": 6,
+        "views": 42131,
+        "text": "Recent media reports claiming NVIDIA has exclusively selected Samsung and SK hynix for its HBM4 supply chain\u2014supposedly sidelining Micron\u2014are inaccurate. TrendForce reports that all three memory giants remain integral to the upcoming Vera Rubin architecture. Samsung plans to",
+        "url": "https://x.com/trendforce/status/2031285588754837987",
+        "timestamp": "2026-03-10T08:26:38.000Z",
         "keywords": [
-          "image"
+          "hbm",
+          "samsung",
+          "sk hynix",
+          "hynix",
+          "micron",
+          "nvidia",
+          "memory",
+          "supply chain",
+          "trendforce",
+          "ai",
+          "samsung plans",
+          "hynix hbm4",
+          "nvidia exclusively",
+          "memory giants",
+          "micron inaccurate"
         ],
-        "has_images": true
+        "has_images": false
       },
       {
         "rank": 4,
-        "interaction": 14633,
-        "likes": 12000,
-        "retweets": 2400,
-        "replies": 233,
-        "views": 0,
-        "text": "",
-        "url": "https://x.com/itsreallyvivek/status/2064686372737454155",
-        "timestamp": "2026-06-10T12:29:25.000Z",
-        "keywords": [],
+        "interaction": 212,
+        "likes": 185,
+        "retweets": 24,
+        "replies": 3,
+        "views": 35009,
+        "text": "#SanDisk announced that the company has secured long-term #SSD supply agreements of up to five years, featuring increasing volume commitments and a hybrid pricing structure that combines fixed and variable components. These agreements are designed to ensure demand visibility and",
+        "url": "https://x.com/trendforce/status/2051572611235119478",
+        "timestamp": "2026-05-05T08:00:01.000Z",
+        "keywords": [
+          "#sandisk",
+          "#ssd",
+          "ssd",
+          "demand",
+          "ssd supply",
+          "sandisk announced",
+          "agreements years",
+          "hybrid pricing"
+        ],
         "has_images": false
       },
       {
         "rank": 5,
-        "interaction": 10797,
-        "likes": 10000,
-        "retweets": 767,
-        "replies": 30,
-        "views": 772473,
-        "text": "The most hilarious part of the study isn't that all the Whole Foods Organic veggies & meat are plastic ridden Its that Sour Patch Kids + microwavable Kraft Mac & Cheese were among the least plastic containing foods 6 year old kid diets are totally vindicated vs Whole Foods Maxies",
-        "url": "https://x.com/dylan522p/status/1873227889610735667",
-        "timestamp": "2024-12-29T04:41:46.000Z",
+        "interaction": 199,
+        "likes": 159,
+        "retweets": 40,
+        "replies": 0,
+        "views": 53880,
+        "text": "TSMC's #CoPoS is moving fast, and the opportunities for Taiwan suppliers are taking shape. CoPoS replaces traditional round glass carrier with a square panel format, pushing utilization rates above 75%. More on glass material development:  https:// pse.is/977q8c ",
+        "url": "https://x.com/trendforce/status/2065436170428035281",
+        "timestamp": "2026-06-12T14:08:51.000Z",
         "keywords": [
+          "#copos",
+          "tsmc",
+          "panel",
           "ai",
-          "kid diets",
-          "vs foods",
-          "cheese plastic",
-          "hilarious study",
-          "totally vindicated"
+          "tsmc copos",
+          "carrier square",
+          "taiwan suppliers",
+          "round glass",
+          "utilization rates"
         ],
-        "has_images": false
+        "has_images": true
       },
       {
         "rank": 6,
-        "interaction": 8900,
-        "likes": 6100,
-        "retweets": 1500,
-        "replies": 1300,
-        "views": 6654201,
-        "text": "My caste (Leuva Patidar Samaj) volleyball tournament in Dallas is unreal 8,000 people here out of ~40,000 people in the US Everyone from a part of Gujarat and same way of life in the US Literally everyone here owns a motel or gas station in rural America",
-        "url": "https://x.com/dylan522p/status/1895971158169882830",
-        "timestamp": "2025-03-01T22:55:24.000Z",
+        "interaction": 164,
+        "likes": 141,
+        "retweets": 22,
+        "replies": 1,
+        "views": 21493,
+        "text": "#Intel Foundry's turnaround may be coming sooner than expected \u2014 with big tech now reportedly betting on its 18A node and advanced packaging.",
+        "url": "https://x.com/trendforce/status/2049339662964289700",
+        "timestamp": "2026-04-29T04:07:05.000Z",
         "keywords": [
-          "volleyball tournament",
-          "caste",
-          "people gujarat",
-          "dallas unreal",
-          "rural america"
+          "#intel",
+          "foundry",
+          "intel",
+          "packaging",
+          "node",
+          "advanced packaging",
+          "intel foundry",
+          "18a node",
+          "turnaround coming"
         ],
         "has_images": true
       },
       {
         "rank": 7,
-        "interaction": 8744,
-        "likes": 7600,
-        "retweets": 882,
-        "replies": 262,
-        "views": 0,
-        "text": "this is my personal singularity moment  this post may sound like a paid ad. I only wish. I'm concerned, more so than happy. the world is changing, and, among the scenarios where AI goes terribly wrong, inequality is the most realistic, yet, the one Anthropic seems to be the least",
-        "url": "https://x.com/VictorTaelin/status/2064448425936994742",
-        "timestamp": "2026-06-09T20:43:54.000Z",
+        "interaction": 148,
+        "likes": 125,
+        "retweets": 19,
+        "replies": 4,
+        "views": 10008,
+        "text": "Indium Phosphide Substrate Capacity to Expand 10-Fold Within 4 Years! #IndiumPhosphideInP Epitaxial Supply Chain JX Metal announced in a press release on the 16th that, in response to the growing demand for optical communication infrastructure used in data centers, it will",
+        "url": "https://x.com/technews_tw/status/2067073313957146678",
+        "timestamp": "2026-06-17T02:34:17.000Z",
         "keywords": [
-          "ai"
+          "#indiumphosphideinp",
+          "data center",
+          "supply chain",
+          "capacity",
+          "demand",
+          "ai",
+          "indium phosphide",
+          "substrate capacity",
+          "chain jx",
+          "metal announced",
+          "optical communication"
         ],
-        "has_images": false
+        "has_images": true
       },
       {
         "rank": 8,
-        "interaction": 7520,
-        "likes": 6700,
-        "retweets": 572,
-        "replies": 248,
-        "views": 1046171,
-        "text": "Elon's jet is in Florida. Global Foundries jet is in Florida. Qualcomm's jet is in Florida. In case anyone was wondering what's going on with Intel... They are at Mar-a-Lago. Make America Great Again can only be true if Intel is saved.",
-        "url": "https://x.com/dylan522p/status/1880379652054901175",
-        "timestamp": "2025-01-17T22:20:19.000Z",
+        "interaction": 143,
+        "likes": 108,
+        "retweets": 34,
+        "replies": 1,
+        "views": 10719,
+        "text": " #HBM prices may surge in 2027. HBM4 negotiations are underway, with suppliers holding the upper hand amid tight DRAM supply and rising costs.More analysis from #TrendForce:   https:// buff.ly/EM8TOV3 ",
+        "url": "https://x.com/trendforce/status/2061840478081867881",
+        "timestamp": "2026-06-02T16:00:51.000Z",
         "keywords": [
-          "intel",
-          "qualcomm",
-          "ai",
-          "elon jet",
-          "florida qualcomm",
-          "intel saved",
-          "global foundries"
+          "#hbm",
+          "#trendforce",
+          "dram",
+          "hbm",
+          "price",
+          "trendforce",
+          "hbm prices",
+          "dram supply",
+          "negotiations underway",
+          "2027"
         ],
         "has_images": false
       },
       {
         "rank": 9,
-        "interaction": 6170,
-        "likes": 5600,
-        "retweets": 298,
-        "replies": 272,
-        "views": 0,
-        "text": "I think we\u2019ve reached the point where normal people can\u2019t really determine whether new models are better than previous ones. Like Fable doesn\u2019t seem that much better to me, but every 150 IQ person I know is like \u201cwow the singularity came sooner than I thought\u201d.",
-        "url": "https://x.com/citrini/status/2064480613852201336",
-        "timestamp": "2026-06-09T22:51:49.000Z",
-        "keywords": [],
+        "interaction": 140,
+        "likes": 117,
+        "retweets": 22,
+        "replies": 1,
+        "views": 56367,
+        "text": " #HBF is emerging as the next-gen memory for AI inference, and the equipment race is already underway \u2014 Hanmi Semiconductor reportedly set to deliver the first batch of HBF TC bonders to customers in 2H26. More:  https:// buff.ly/8LliD7m ",
+        "url": "https://x.com/trendforce/status/2062882253630271695",
+        "timestamp": "2026-06-05T13:00:30.000Z",
+        "keywords": [
+          "#hbf",
+          "semiconductor",
+          "memory",
+          "ai",
+          "inference",
+          "nm",
+          "hbf emerging",
+          "hanmi semiconductor",
+          "tc bonders",
+          "memory ai",
+          "customers 2h26"
+        ],
         "has_images": false
       },
       {
         "rank": 10,
-        "interaction": 5905,
-        "likes": 5200,
-        "retweets": 412,
-        "replies": 293,
-        "views": 1893618,
-        "text": "Being in SF is like being in Wuhan right before the pandemic  Something is happening, it's gonna hit everywhere but so few people know it",
-        "url": "https://x.com/dylan522p/status/2030850153117327542",
-        "timestamp": "2026-03-09T03:36:22.000Z",
+        "interaction": 130,
+        "likes": 108,
+        "retweets": 19,
+        "replies": 3,
+        "views": 17947,
+        "text": "Power semiconductors, particularly SiC and GaN devices, are expected to play an increasingly important role in future HVDC power architectures as AI data centers contend with immense power consumption. Although the South Korean government has launched a $494 million R&D",
+        "url": "https://x.com/trendforce/status/2066803207993737578",
+        "timestamp": "2026-06-16T08:40:58.000Z",
         "keywords": [
-          "pandemic happening",
-          "sf like",
-          "hit people"
+          "semiconductor",
+          "data center",
+          "ai",
+          "nm",
+          "hvdc power",
+          "power semiconductors",
+          "gan devices",
+          "data centers",
+          "particularly sic"
         ],
         "has_images": false
       }
     ],
     "best_image_keywords": [
       {
-        "keyword": "volleyball tournament",
-        "avg_interaction": 4935.0
+        "keyword": "#arm",
+        "avg_interaction": 260.5
       },
       {
-        "keyword": "public commits",
-        "avg_interaction": 4211.5
+        "keyword": "#amd",
+        "avg_interaction": 181.0
       },
       {
-        "keyword": "software development",
-        "avg_interaction": 4211.5
+        "keyword": "agentic ai",
+        "avg_interaction": 171.0
       },
       {
-        "keyword": "newsletter semianalysis",
-        "avg_interaction": 2992.5
+        "keyword": "#copos",
+        "avg_interaction": 130.0
       },
       {
-        "keyword": "deepseek v3",
-        "avg_interaction": 2445.0
+        "keyword": "tsmc copos",
+        "avg_interaction": 130.0
       }
     ],
     "top_hashtags_by_interaction": [
@@ -3191,64 +1885,16 @@
         "avg_views": 172022.5
       },
       {
-        "hashtag": "#1",
-        "avg_interaction": 175.5,
-        "tweet_count": 2,
-        "avg_views": 21842.5
-      },
-      {
-        "hashtag": "#2",
-        "avg_interaction": 172.0,
-        "tweet_count": 2,
-        "avg_views": 26754.0
-      },
-      {
-        "hashtag": "#tech",
-        "avg_interaction": 170.67,
-        "tweet_count": 3,
-        "avg_views": 69635.67
-      },
-      {
-        "hashtag": "#ssd",
-        "avg_interaction": 134.5,
-        "tweet_count": 2,
-        "avg_views": 24018.0
-      },
-      {
-        "hashtag": "#copos",
-        "avg_interaction": 130.0,
-        "tweet_count": 2,
-        "avg_views": 31167.5
-      },
-      {
-        "hashtag": "#hbm4e",
-        "avg_interaction": 124.75,
-        "tweet_count": 4,
-        "avg_views": 7161.0
-      },
-      {
         "hashtag": "#hbf",
         "avg_interaction": 85.0,
         "tweet_count": 2,
         "avg_views": 29975.5
       },
       {
-        "hashtag": "#amd",
-        "avg_interaction": 84.0,
-        "tweet_count": 7,
-        "avg_views": 50820.0
-      },
-      {
-        "hashtag": "#sandisk",
-        "avg_interaction": 73.12,
-        "tweet_count": 8,
-        "avg_views": 16484.88
-      },
-      {
-        "hashtag": "#gtc",
-        "avg_interaction": 72.5,
-        "tweet_count": 2,
-        "avg_views": 9131.5
+        "hashtag": "#copos",
+        "avg_interaction": 70.0,
+        "tweet_count": 4,
+        "avg_views": 15860.0
       },
       {
         "hashtag": "#advancedpackaging",
@@ -3257,107 +1903,155 @@
         "avg_views": 13184.75
       },
       {
+        "hashtag": "#ssd",
+        "avg_interaction": 69.0,
+        "tweet_count": 4,
+        "avg_views": 12196.5
+      },
+      {
         "hashtag": "#inference",
         "avg_interaction": 63.5,
         "tweet_count": 2,
         "avg_views": 5069.5
       },
       {
-        "hashtag": "#hbm",
-        "avg_interaction": 61.6,
-        "tweet_count": 15,
-        "avg_views": 9185.29
+        "hashtag": "#sandisk",
+        "avg_interaction": 53.73,
+        "tweet_count": 11,
+        "avg_views": 12046.64
       },
       {
-        "hashtag": "#nvidia",
-        "avg_interaction": 57.36,
-        "tweet_count": 28,
-        "avg_views": 14685.89
+        "hashtag": "#texasinstruments",
+        "avg_interaction": 53.5,
+        "tweet_count": 2,
+        "avg_views": 8177.0
+      },
+      {
+        "hashtag": "#nxp",
+        "avg_interaction": 53.5,
+        "tweet_count": 2,
+        "avg_views": 8177.0
+      },
+      {
+        "hashtag": "#aiinfrastructure",
+        "avg_interaction": 53.5,
+        "tweet_count": 2,
+        "avg_views": 7303.0
+      },
+      {
+        "hashtag": "#sic",
+        "avg_interaction": 53.0,
+        "tweet_count": 2,
+        "avg_views": 6434.0
+      },
+      {
+        "hashtag": "#kioxia",
+        "avg_interaction": 51.0,
+        "tweet_count": 10,
+        "avg_views": 11520.4
+      },
+      {
+        "hashtag": "#intel",
+        "avg_interaction": 47.0,
+        "tweet_count": 32,
+        "avg_views": 14594.06
+      },
+      {
+        "hashtag": "#micron",
+        "avg_interaction": 43.7,
+        "tweet_count": 30,
+        "avg_views": 7764.03
+      },
+      {
+        "hashtag": "#emib",
+        "avg_interaction": 41.33,
+        "tweet_count": 3,
+        "avg_views": 5204.67
       }
     ],
     "top_hashtags_by_usage": [
       {
         "hashtag": "#trendforce",
-        "tweet_count": 84,
-        "avg_interaction": 29.71
-      },
-      {
-        "hashtag": "#samsung",
-        "tweet_count": 58,
-        "avg_interaction": 29.72
-      },
-      {
-        "hashtag": "#skhynix",
-        "tweet_count": 39,
-        "avg_interaction": 48.54
-      },
-      {
-        "hashtag": "#tsmc",
-        "tweet_count": 39,
-        "avg_interaction": 23.59
-      },
-      {
-        "hashtag": "#micron",
-        "tweet_count": 28,
-        "avg_interaction": 46.54
-      },
-      {
-        "hashtag": "#nvidia",
-        "tweet_count": 28,
-        "avg_interaction": 57.36
-      },
-      {
-        "hashtag": "#intel",
-        "tweet_count": 27,
-        "avg_interaction": 53.7
+        "tweet_count": 91,
+        "avg_interaction": 27.76
       },
       {
         "hashtag": "#ai",
-        "tweet_count": 24,
-        "avg_interaction": 39.21
+        "tweet_count": 87,
+        "avg_interaction": 8.26
+      },
+      {
+        "hashtag": "#samsung",
+        "tweet_count": 60,
+        "avg_interaction": 28.98
+      },
+      {
+        "hashtag": "#tsmc",
+        "tweet_count": 53,
+        "avg_interaction": 20.58
+      },
+      {
+        "hashtag": "#skhynix",
+        "tweet_count": 38,
+        "avg_interaction": 39.58
+      },
+      {
+        "hashtag": "#spacex",
+        "tweet_count": 37,
+        "avg_interaction": 2.38
+      },
+      {
+        "hashtag": "#nvidia",
+        "tweet_count": 35,
+        "avg_interaction": 27.77
+      },
+      {
+        "hashtag": "#intel",
+        "tweet_count": 32,
+        "avg_interaction": 47.0
+      },
+      {
+        "hashtag": "#\u860b\u679c",
+        "tweet_count": 31,
+        "avg_interaction": 2.65
+      },
+      {
+        "hashtag": "#micron",
+        "tweet_count": 30,
+        "avg_interaction": 43.7
+      },
+      {
+        "hashtag": "#\u53f0\u7a4d\u96fb",
+        "tweet_count": 30,
+        "avg_interaction": 4.3
+      },
+      {
+        "hashtag": "#\u8f1d\u9054",
+        "tweet_count": 27,
+        "avg_interaction": 3.3
+      },
+      {
+        "hashtag": "#openai",
+        "tweet_count": 23,
+        "avg_interaction": 2.0
       },
       {
         "hashtag": "#apple",
-        "tweet_count": 20,
-        "avg_interaction": 11.55
+        "tweet_count": 22,
+        "avg_interaction": 11.32
       },
       {
-        "hashtag": "#daily",
-        "tweet_count": 19,
-        "avg_interaction": 27.63
-      },
-      {
-        "hashtag": "#economic",
-        "tweet_count": 19,
-        "avg_interaction": 27.63
-      },
-      {
-        "hashtag": "#hbm",
-        "tweet_count": 15,
-        "avg_interaction": 61.6
-      },
-      {
-        "hashtag": "#china",
-        "tweet_count": 14,
-        "avg_interaction": 12.14
-      },
-      {
-        "hashtag": "#dram",
-        "tweet_count": 11,
-        "avg_interaction": 47.27
-      },
-      {
-        "hashtag": "#nand",
-        "tweet_count": 11,
-        "avg_interaction": 33.82
+        "hashtag": "#anthropic",
+        "tweet_count": 22,
+        "avg_interaction": 2.18
       }
     ],
     "summary": {
-      "avg_interaction": 325.65,
-      "median_interaction": 86,
-      "max_interaction": 55800,
-      "avg_views": 42352.37,
-      "max_views": 6654201
+      "avg_interaction": 15.19,
+      "median_interaction": 4,
+      "max_interaction": 488,
+      "avg_views": 3053.73,
+      "max_views": 339041
     }
   }
 }
