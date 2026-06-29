@@ -1,0 +1,132 @@
+SUMMARY -- @TrendForce
+  Total tweets:       487
+  Avg interaction:    34.03
+  Median interaction: 24
+  Max interaction:    488
+  Avg views:          7822.82
+  Max views:          339041
+""
+"BEST HOURS TO POST (Taiwan Time, avg total interaction):"
+  00:00  █████████  33.23  (73 tweets)
+  01:00  ██████  20.38  (16 tweets)
+  07:00  ██  10.0  (1 tweets)
+  08:00  ██████████████  50.71  (7 tweets)
+  09:00  ██████████  37.1  (10 tweets)
+  10:00  ███████████████  53.38  (8 tweets)
+  11:00  ███████████  39.58  (24 tweets)
+  12:00  █████████████  45.57  (28 tweets)
+  13:00  ████████████  41.19  (16 tweets)
+  14:00  ███████████  38.05  (20 tweets)
+  15:00  ██████████████  47.87  (15 tweets)
+  16:00  ████████████████████  67.62  (21 tweets)
+  17:00  █████████████  45.8  (25 tweets)
+  18:00  ███████████  39.11  (9 tweets)
+  19:00  ███  12.45  (11 tweets)
+  20:00  ████  16.46  (84 tweets)
+  21:00  ████████  28.62  (76 tweets)
+  22:00  ███████████  39.76  (37 tweets)
+  23:00  ██████████  35.0  (6 tweets)
+""
+AVG INTERACTION BY DAY OF WEEK:
+  Monday      █████████████████  35.59
+  Tuesday     ████████████████████  40.44
+  Wednesday   █████████████████  36.18
+  Thursday    ██████████████  29.35
+  Friday      ██████████████  29.72
+  Saturday    ██████████  22.0
+  Sunday      █████████████  26.42
+""
+IMAGES VS NO IMAGES:
+  With image:    avg 46.33  (228 tweets)
+  Without image: avg 23.2  (259 tweets)
+  -> images perform 99.7% better
+""
+TOP KEYWORDS BY AVG INTERACTION (min 3 tweets):
+  memory prices                  avg 165.0    (3 tweets)
+  agentic ai                     avg 139.0    (5 tweets)
+  forecast                       avg 124.25   (4 tweets)
+  memory giants                  avg 101.17   (6 tweets)
+  arm                            avg 96.0     (8 tweets)
+  tsmc copos                     avg 91.0     (3 tweets)
+  training                       avg 85.5     (4 tweets)
+  #amd                           avg 84.0     (7 tweets)
+  llm                            avg 76.33    (3 tweets)
+  panel level                    avg 74.33    (3 tweets)
+  sk hynix                       avg 73.33    (15 tweets)
+  #sandisk                       avg 73.12    (8 tweets)
+  ddr5 spot                      avg 70.67    (3 tweets)
+  #advancedpackaging             avg 69.5     (4 tweets)
+  amd                            avg 67.5     (10 tweets)
+""
+BEST KEYWORD + IMAGE COMBOS:
+  #amd                           avg 261.0
+  #arm                           avg 260.5
+  amd                            avg 194.0
+  agentic ai                     avg 171.0
+  #copos                         avg 130.0
+""
+TOP HASHTAGS BY AVG INTERACTION (min 2 tweets):
+  #arm                      avg 260.5    (2 tweets)  ████████████████████  views avg: 172022.5
+  #ssd                      avg 134.5    (2 tweets)  ██████████  views avg: 24018.0
+  #copos                    avg 130.0    (2 tweets)  █████████  views avg: 31167.5
+  #hbf                      avg 85.0     (2 tweets)  ██████  views avg: 29975.5
+  #amd                      avg 84.0     (7 tweets)  ██████  views avg: 50820.0
+  #sandisk                  avg 73.12    (8 tweets)  █████  views avg: 16484.88
+  #advancedpackaging        avg 69.5     (4 tweets)  █████  views avg: 13184.75
+  #inference                avg 63.5     (2 tweets)  ████  views avg: 5069.5
+  #kioxia                   avg 56.22    (9 tweets)  ████  views avg: 12789.22
+  #intel                    avg 53.7     (27 tweets)  ████  views avg: 17144.04
+  #texasinstruments         avg 53.5     (2 tweets)  ████  views avg: 8177.0
+  #nxp                      avg 53.5     (2 tweets)  ████  views avg: 8177.0
+  #aiinfrastructure         avg 53.5     (2 tweets)  ████  views avg: 7303.0
+  #sic                      avg 53.0     (2 tweets)  ████  views avg: 6434.0
+  #memory                   avg 48.33    (3 tweets)  ███  views avg: 11615.33
+""
+MOST USED HASHTAGS:
+  #trendforce                 84 tweets  ████████████████████  avg interaction: 29.71
+  #samsung                    58 tweets  █████████████  avg interaction: 29.72
+  #tsmc                       39 tweets  █████████  avg interaction: 23.59
+  #skhynix                    38 tweets  █████████  avg interaction: 39.58
+  #micron                     28 tweets  ██████  avg interaction: 46.54
+  #intel                      27 tweets  ██████  avg interaction: 53.7
+  #nvidia                     27 tweets  ██████  avg interaction: 34.19
+  #ai                         21 tweets  █████  avg interaction: 22.0
+  #apple                      20 tweets  ████  avg interaction: 11.55
+  #china                      14 tweets  ███  avg interaction: 12.14
+  #hbm                        13 tweets  ███  avg interaction: 40.08
+  #dram                       11 tweets  ██  avg interaction: 47.27
+  #nand                       11 tweets  ██  avg interaction: 33.82
+  #smic                       10 tweets  ██  avg interaction: 21.3
+  #hbm4                        9 tweets  ██  avg interaction: 24.89
+""
+TOP 10 TWEETS BY INTERACTION:
+  1. [488 total | 359 likes  111 retweets  18 replies  views: 339041]
+      CPUs are having a moment.  #Nvidia launched a standalone CPU. #Arm made its first chip in 35 years. #Intel & #AMD are r...
+     https://x.com/trendforce/status/2044038072107434251
+  2. [402 total | 293 likes  97 retweets  12 replies  views: 118951]
+"      Memory prices keep climbing: DRAM is forecast to rise 58–63% QoQ in 2Q26, while NAND flash may surge 70–75%. When will ..."
+     https://x.com/trendforce/status/2039010015747396092
+  3. [269 total | 234 likes  29 retweets  6 replies  views: 42131]
+     Recent media reports claiming NVIDIA has exclusively selected Samsung and SK hynix for its HBM4 supply chain—supposedly ...
+     https://x.com/trendforce/status/2031285588754837987
+  4. [212 total | 185 likes  24 retweets  3 replies  views: 35009]
+"     #SanDisk announced that the company has secured long-term #SSD supply agreements of up to five years, featuring increasi..."
+     https://x.com/trendforce/status/2051572611235119478
+  5. [199 total | 159 likes  40 retweets  0 replies  views: 53880]
+"     TSMC's #CoPoS is moving fast, and the opportunities for Taiwan suppliers are taking shape. CoPoS replaces traditional ro..."
+     https://x.com/trendforce/status/2065436170428035281
+  6. [164 total | 141 likes  22 retweets  1 replies  views: 21493]
+     #Intel Foundry's turnaround may be coming sooner than expected — with big tech now reportedly betting on its 18A node an...
+     https://x.com/trendforce/status/2049339662964289700
+  7. [143 total | 108 likes  34 retweets  1 replies  views: 10719]
+"      #HBM prices may surge in 2027. HBM4 negotiations are underway, with suppliers holding the upper hand amid tight DRAM su..."
+     https://x.com/trendforce/status/2061840478081867881
+  8. [140 total | 117 likes  22 retweets  1 replies  views: 56367]
+"      #HBF is emerging as the next-gen memory for AI inference, and the equipment race is already underway — Hanmi Semiconduc..."
+     https://x.com/trendforce/status/2062882253630271695
+  9. [130 total | 108 likes  19 retweets  3 replies  views: 17947]
+"     Power semiconductors, particularly SiC and GaN devices, are expected to play an increasingly important role in future HV..."
+     https://x.com/trendforce/status/2066803207993737578
+  10. [127 total | 109 likes  17 retweets  1 replies  views: 14843]
+"     #Intel is set to showcase 18A-P, while #TSMC prepares to debut A16 with its first Super Power Rail architecture at VLSI...."
+     https://x.com/trendforce/status/2052288096885223529

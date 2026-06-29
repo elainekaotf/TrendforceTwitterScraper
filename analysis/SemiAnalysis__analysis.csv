@@ -1,0 +1,120 @@
+SUMMARY -- @SemiAnalysis_
+  Total tweets:       697
+  Avg interaction:    274.73
+  Median interaction: 119
+  Max interaction:    14697
+  Avg views:          52300.31
+  Max views:          2145581
+""
+"BEST HOURS TO POST (Taiwan Time, avg total interaction):"
+  00:00  █████████  368.08  (12 tweets)
+  01:00  █████████  361.53  (123 tweets)
+  02:00  ██████████████  541.25  (32 tweets)
+  03:00  ██████  245.53  (34 tweets)
+  04:00  █████████  365.56  (25 tweets)
+  05:00  ███████  272.2  (96 tweets)
+  06:00  ████  170.54  (41 tweets)
+  07:00  █████████  348.32  (34 tweets)
+  08:00  ████  157.25  (20 tweets)
+  09:00  █████  195.09  (74 tweets)
+  10:00  ███████  293.24  (41 tweets)
+  11:00  ████████  332.95  (19 tweets)
+  12:00  ████████  318.41  (27 tweets)
+  13:00  █████  224.2  (5 tweets)
+  14:00  █████████████████  648.0  (2 tweets)
+  15:00  █████  223.0  (1 tweets)
+  17:00  ████████████████████  748.0  (1 tweets)
+  19:00  █  59.0  (2 tweets)
+  20:00  ██████████  382.0  (3 tweets)
+  21:00  ███  125.41  (58 tweets)
+  22:00  ███  115.18  (38 tweets)
+  23:00  █████  221.67  (9 tweets)
+""
+AVG INTERACTION BY DAY OF WEEK:
+  Monday      ██████████  205.33
+  Tuesday     ████████████  242.21
+  Wednesday   ██████████████  282.55
+  Thursday    ███████████████  311.24
+  Friday      ███████████  226.35
+  Saturday    ██████████████  287.81
+  Sunday      ████████████████████  390.73
+""
+IMAGES VS NO IMAGES:
+  With image:    avg 341.77  (482 tweets)
+  Without image: avg 124.43  (215 tweets)
+  -> images perform 174.7% better
+""
+TOP KEYWORDS BY AVG INTERACTION (min 3 tweets):
+  image                          avg 3322.2   (5 tweets)
+  smartphone                     avg 1304.25  (4 tweets)
+  apple                          avg 1174.8   (5 tweets)
+  2026                           avg 1037.2   (5 tweets)
+  ai chip                        avg 1001.0   (3 tweets)
+  fab                            avg 818.79   (19 tweets)
+  dominate global                avg 770.67   (3 tweets)
+  claude code                    avg 714.43   (7 tweets)
+  gb200 nvl72                    avg 527.75   (4 tweets)
+  micron                         avg 513.92   (13 tweets)
+  gpu clusters                   avg 494.67   (3 tweets)
+  cost                           avg 492.67   (3 tweets)
+  ai server                      avg 482.67   (3 tweets)
+  cuda moat                      avg 464.25   (4 tweets)
+  gpu                            avg 408.0    (49 tweets)
+""
+BEST KEYWORD + IMAGE COMBOS:
+  image                          avg 3322.2
+  smartphone                     avg 1714.33
+  apple                          avg 1174.8
+  2026                           avg 1037.2
+  fab                            avg 968.38
+""
+TOP HASHTAGS BY AVG INTERACTION (min 2 tweets):
+  #1                        avg 175.5    (2 tweets)  ████████████████████  views avg: 21842.5
+  #2                        avg 172.0    (2 tweets)  ███████████████████  views avg: 26754.0
+  #ai                       avg 45.0     (2 tweets)  █████  views avg: 12791.5
+""
+MOST USED HASHTAGS:
+  #2                           2 tweets  ████████████████████  avg interaction: 172.0
+  #1                           2 tweets  ████████████████████  avg interaction: 175.5
+  #ai                          2 tweets  ████████████████████  avg interaction: 45.0
+  #startup                     1 tweets  ██████████  avg interaction: 0
+  #chips                       1 tweets  ██████████  avg interaction: 0
+  #oracle                      1 tweets  ██████████  avg interaction: 0
+  #tech                        1 tweets  ██████████  avg interaction: 0
+  #entrepreneur                1 tweets  ██████████  avg interaction: 0
+  #gtc                         1 tweets  ██████████  avg interaction: 0
+  #gtc2026                     1 tweets  ██████████  avg interaction: 0
+  #hpc                         1 tweets  ██████████  avg interaction: 0
+  #hbm                         1 tweets  ██████████  avg interaction: 0
+""
+TOP 10 TWEETS BY INTERACTION:
+  1. [14697 total | 14000 likes  605 retweets  92 replies  views: 351117]
+     Elon rn
+     https://x.com/SemiAnalysis_/status/2052085238856093973
+  2. [5528 total | 4500 likes  823 retweets  205 replies  views: 2008579]
+"     BREAKING NEWS: Anthropic's latest model will NOT help you if it thinks your ML research/ML engineering is interesting, a..."
+     https://x.com/SemiAnalysis_/status/2064482714149896431
+  3. [5293 total | 5000 likes  233 retweets  60 replies  views: 190970]
+     we heard fable got banned
+     https://x.com/SemiAnalysis_/status/2065627871343698300
+  4. [4529 total | 4000 likes  432 retweets  97 replies  views: 888959]
+"     SITUATION DETECTED: The city of Rio de Janerio has post-trained a model.  Based on Qwen 7/2, Rio 3.5 Open 397B adds SwiR..."
+     https://x.com/SemiAnalysis_/status/2065894494935933191
+  5. [4108 total | 3300 likes  715 retweets  93 replies  views: 605218]
+"     US smartphone imports from China have collapsed from 90% to 25%.  The Foxconn China assembly network, once the undispute..."
+     https://x.com/SemiAnalysis_/status/2043736083641373057
+  6. [3788 total | 2900 likes  610 retweets  278 replies  views: 2145581]
+     Micron’s $100B megafab in NY is at risk of delay due to just 6 “concerned citizens” and their frivolous lawsuit. (1/10) 
+     https://x.com/SemiAnalysis_/status/2026719180284666046
+  7. [3568 total | 2900 likes  496 retweets  172 replies  views: 619746]
+"     4% of GitHub public commits are being authored by Claude Code right now. At the current trajectory, we believe that Clau..."
+     https://x.com/SemiAnalysis_/status/2027443723362042308
+  8. [3268 total | 3100 likes  125 retweets  43 replies  views: 427250]
+"     I’ve had a number of conversations with folks inside and outside government about the current situation with Anthropic, ..."
+     https://x.com/SemiAnalysis_/status/2065866999188898080
+  9. [2968 total | 2600 likes  279 retweets  89 replies  views: 282036]
+"     to be clear, NVIDIA is NOT a car"
+     https://x.com/SemiAnalysis_/status/2044629920035295307
+  10. [2778 total | 2200 likes  495 retweets  83 replies  views: 361225]
+"     BREAKING NEWS: according to CloudFlare Radar Data, Agentic traffic has SURPASSED human traffic across the worldwide inte..."
+     https://x.com/SemiAnalysis_/status/2062580333770408231

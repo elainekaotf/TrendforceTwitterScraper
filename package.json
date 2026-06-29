@@ -1,0 +1,28 @@
+{
+  "name": "trendforcetwitterscraper",
+  "version": "1.0.0",
+  "description": "Scrape Twitter/X for posts mentioning TrendForce",
+  "main": "scraper.js",
+  "scripts": {
+    "scrape": "node scraper.js",
+    "scrape:watchlist": "node scrape_watchlist.js",
+    "scrape:accounts": "node scrape_accounts.js",
+    "scrape:competitors": "node scrape_competitors.js",
+    "scrape:plagiarism": "node scrape_plagiarism.js",
+    "analyze": "python3 analyze_engagement.py",
+    "analyze:competitors": "python3 analyze_competitors.py",
+    "dashboard": "python3 generate_dashboard.py",
+    "publish": "bash publish.sh",
+    "citations": "node scrape_google_citations.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "playwright": "^1.61.0",
+    "playwright-extra": "^4.3.6",
+    "playwright-extra-plugin-stealth": "^0.0.1"
+  }
+}

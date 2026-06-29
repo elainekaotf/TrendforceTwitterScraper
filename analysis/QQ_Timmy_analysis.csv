@@ -1,0 +1,115 @@
+SUMMARY -- @QQ_Timmy
+  Total tweets:       493
+  Avg interaction:    204.48
+  Median interaction: 56
+  Max interaction:    55800
+  Avg views:          0.0
+  Max views:          0
+""
+"BEST HOURS TO POST (Taiwan Time, avg total interaction):"
+  00:00    78.88  (65 tweets)
+  01:00    84.44  (36 tweets)
+  02:00    37.0  (1 tweets)
+  03:00    359.0  (1 tweets)
+  08:00    53.62  (68 tweets)
+  09:00    102.93  (27 tweets)
+  10:00    107.9  (30 tweets)
+  11:00    96.07  (14 tweets)
+  12:00    104.0  (9 tweets)
+  13:00    135.07  (28 tweets)
+  14:00    58.15  (33 tweets)
+  15:00    165.86  (36 tweets)
+  16:00    76.17  (35 tweets)
+  17:00    66.39  (23 tweets)
+  18:00    100.5  (22 tweets)
+  19:00    175.82  (11 tweets)
+  20:00    78.73  (15 tweets)
+  21:00    96.47  (19 tweets)
+  22:00    74.69  (13 tweets)
+  23:00  ████████████████████  8043.71  (7 tweets)
+""
+AVG INTERACTION BY DAY OF WEEK:
+  Monday      █  99.6
+  Tuesday     █  71.07
+  Wednesday   █  123.29
+  Thursday    █  109.25
+  Friday        59.88
+  Saturday    █  81.64
+  Sunday      ████████████████████  1406.26
+""
+IMAGES VS NO IMAGES:
+  With image:    avg 0  (0 tweets)
+  Without image: avg 204.48  (493 tweets)
+  -> no images perform 100.0% better
+""
+TOP KEYWORDS BY AVG INTERACTION (min 3 tweets):
+  apple                          avg 235.14   (7 tweets)
+  cowos                          avg 228.0    (5 tweets)
+  semianalysis                   avg 172.4    (10 tweets)
+  supply chain                   avg 156.63   (27 tweets)
+  chip                           avg 153.33   (60 tweets)
+  nvidia                         avg 142.14   (57 tweets)
+  ics                            avg 134.16   (51 tweets)
+  packaging                      avg 124.85   (27 tweets)
+  shortage                       avg 116.11   (19 tweets)
+  mediatek                       avg 109.56   (18 tweets)
+  ml                             avg 106.32   (28 tweets)
+  gpu                            avg 105.72   (18 tweets)
+  tsmc                           avg 104.72   (32 tweets)
+  panel                          avg 103.82   (11 tweets)
+  ai server                      avg 98.89    (18 tweets)
+""
+BEST KEYWORD + IMAGE COMBOS:
+""
+TOP HASHTAGS BY AVG INTERACTION (min 2 tweets):
+  #daily                    avg 27.63    (19 tweets)  ████████████████████
+  #economic                 avg 27.63    (19 tweets)  ████████████████████
+""
+MOST USED HASHTAGS:
+  #daily                      19 tweets  ████████████████████  avg interaction: 27.63
+  #economic                   19 tweets  ████████████████████  avg interaction: 27.63
+  #20260624                    1 tweets  █  avg interaction: 0
+  #20260618                    1 tweets  █  avg interaction: 0
+  #20260617                    1 tweets  █  avg interaction: 0
+  #20260616                    1 tweets  █  avg interaction: 0
+  #20260612                    1 tweets  █  avg interaction: 0
+  #20260610                    1 tweets  █  avg interaction: 0
+  #20260609                    1 tweets  █  avg interaction: 0
+  #20260608                    1 tweets  █  avg interaction: 0
+  #20260605                    1 tweets  █  avg interaction: 0
+  #20260603                    1 tweets  █  avg interaction: 0
+  #20260602                    1 tweets  █  avg interaction: 0
+  #20260601                    1 tweets  █  avg interaction: 0
+  #20260529                    1 tweets  █  avg interaction: 0
+""
+TOP 10 TWEETS BY INTERACTION:
+  1. [55800 total | 41000 likes  12000 retweets  2800 replies  views: 0]
+     
+     https://x.com/satyanadella/status/2066182223213293753
+  2. [2908 total | 2300 likes  312 retweets  296 replies  views: 0]
+"     $XFAB (photonics + power semis) is an interesting long idea at $1.28B MC, that I took positions in.  Given EU CHIPS act ..."
+     https://x.com/aleabitoreddit/status/2059537337324085541
+  3. [1204 total | 940 likes  223 retweets  41 replies  views: 0]
+     Sheesh.   $NVDA  VR200 Bom Analysis from MS.
+     https://x.com/Aaronwei3n/status/2057279855784546352
+  4. [849 total | 717 likes  94 retweets  38 replies  views: 0]
+     Several key points about TSMC's next-generation advanced packaging CoPoS (technical details that can be looked up are om...
+     https://x.com/mingchikuo/status/2064896061051928623
+  5. [841 total | 699 likes  125 retweets  17 replies  views: 0]
+     重點解讀台積電的玻璃核心載板投影片  台積電在 6 月 11 日的日本 JPCA Show 2026，進行主題為「AIの進化に不可欠な先端パッケージング技術」的簡報，該份簡報約40頁，當中某張標題為「Glass Substrate Deve...
+     https://x.com/mingchikuo/status/2067438598836965616
+  6. [767 total | 600 likes  92 retweets  75 replies  views: 0]
+     Many people are looking forward to the N1X / Windows PC processor that Nvidia may soon release. Supply chain investigati...
+     https://x.com/mingchikuo/status/2060952159576014909
+  7. [742 total | 582 likes  137 retweets  23 replies  views: 0]
+"     Rosenblatt InP lasers checks: According to our checks, NVIDIA, which is the driving force behind scale up CPO, asked the..."
+     https://x.com/sean_________/status/2059952331001663593
+  8. [610 total | 531 likes  62 retweets  17 replies  views: 0]
+     
+     https://x.com/mingchikuo/status/2059797563331785048
+  9. [545 total | 455 likes  68 retweets  22 replies  views: 0]
+     Here are a few thoughts I have on NVIDIA RTX Spark (without diving into spec details yet): On-device AI agent narratives...
+     https://x.com/mingchikuo/status/2061869580964991273
+  10. [544 total | 492 likes  36 retweets  16 replies  views: 0]
+"     Contrary to recent market rumors, my latest industry survey indicates that Google currently has no clear plans to procur..."
+     https://x.com/mingchikuo/status/2069017336913527007

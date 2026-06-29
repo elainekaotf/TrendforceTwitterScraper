@@ -1,0 +1,137 @@
+SUMMARY -- @combined
+  Total tweets:       2484
+  Avg interaction:    325.65
+  Median interaction: 86
+  Max interaction:    55800
+  Avg views:          42352.37
+  Max views:          6654201
+""
+"BEST HOURS TO POST (Taiwan Time, avg total interaction):"
+  00:00  █  130.6  (186 tweets)
+  01:00  ███  323.68  (205 tweets)
+  02:00  ██████  573.56  (70 tweets)
+  03:00  ████  358.69  (70 tweets)
+  04:00  ██████  539.65  (60 tweets)
+  05:00  ███  329.21  (140 tweets)
+  06:00  █████  512.06  (109 tweets)
+  07:00  ███████  660.22  (107 tweets)
+  08:00  ██  178.37  (145 tweets)
+  09:00  ███  348.4  (170 tweets)
+  10:00  ████  435.36  (125 tweets)
+  11:00  ████  366.4  (104 tweets)
+  12:00  █████  472.22  (113 tweets)
+  13:00  ███  305.75  (91 tweets)
+  14:00  █  174.41  (73 tweets)
+  15:00  ██  196.42  (73 tweets)
+  16:00  ██  187.97  (78 tweets)
+  17:00  █  114.67  (61 tweets)
+  18:00  ██  244.5  (42 tweets)
+  19:00  ██  179.18  (39 tweets)
+  20:00  ██  206.87  (117 tweets)
+  21:00  █  101.8  (167 tweets)
+  22:00  █  123.93  (99 tweets)
+  23:00  ████████████████████  1745.72  (40 tweets)
+""
+AVG INTERACTION BY DAY OF WEEK:
+  Monday      ███████  287.69
+  Tuesday     ███████  261.16
+  Wednesday   ████████  299.57
+  Thursday    █████████  350.11
+  Friday      ██████  242.86
+  Saturday    ████████  321.86
+  Sunday      ████████████████████  731.06
+""
+IMAGES VS NO IMAGES:
+  With image:    avg 348.21  (1009 tweets)
+  Without image: avg 310.22  (1475 tweets)
+  -> images perform 12.2% better
+""
+TOP KEYWORDS BY AVG INTERACTION (min 3 tweets):
+  newsletter semianalysis        avg 2032.0   (3 tweets)
+  image                          avg 1589.85  (13 tweets)
+  microsoft                      avg 1376.33  (3 tweets)
+  sglang vllm                    avg 1349.0   (3 tweets)
+  claude code                    avg 1109.42  (12 tweets)
+  jensen                         avg 1083.67  (3 tweets)
+  anthropic                      avg 981.0    (4 tweets)
+  2026                           avg 782.38   (13 tweets)
+  dominate global                avg 770.67   (3 tweets)
+  openai codex                   avg 580.33   (3 tweets)
+  qualcomm                       avg 541.7    (23 tweets)
+  gb200 nvl72                    avg 527.75   (4 tweets)
+  openai                         avg 523.0    (6 tweets)
+  gpu clusters                   avg 494.67   (3 tweets)
+  cost                           avg 492.67   (3 tweets)
+""
+BEST KEYWORD + IMAGE COMBOS:
+  volleyball tournament          avg 4935.0
+  public commits                 avg 4211.5
+  software development           avg 4211.5
+  newsletter semianalysis        avg 2992.5
+  deepseek v3                    avg 2445.0
+""
+TOP HASHTAGS BY AVG INTERACTION (min 2 tweets):
+  #arm                      avg 260.5    (2 tweets)  ████████████████████  views avg: 172022.5
+  #1                        avg 175.5    (2 tweets)  █████████████  views avg: 21842.5
+  #2                        avg 172.0    (2 tweets)  █████████████  views avg: 26754.0
+  #tech                     avg 170.67   (3 tweets)  █████████████  views avg: 69635.67
+  #ssd                      avg 134.5    (2 tweets)  ██████████  views avg: 24018.0
+  #copos                    avg 130.0    (2 tweets)  █████████  views avg: 31167.5
+  #hbm4e                    avg 124.75   (4 tweets)  █████████  views avg: 7161.0
+  #hbf                      avg 85.0     (2 tweets)  ██████  views avg: 29975.5
+  #amd                      avg 84.0     (7 tweets)  ██████  views avg: 50820.0
+  #sandisk                  avg 73.12    (8 tweets)  █████  views avg: 16484.88
+  #gtc                      avg 72.5     (2 tweets)  █████  views avg: 9131.5
+  #advancedpackaging        avg 69.5     (4 tweets)  █████  views avg: 13184.75
+  #inference                avg 63.5     (2 tweets)  ████  views avg: 5069.5
+  #hbm                      avg 61.6     (15 tweets)  ████  views avg: 9185.29
+  #nvidia                   avg 57.36    (28 tweets)  ████  views avg: 14685.89
+""
+MOST USED HASHTAGS:
+  #trendforce                 84 tweets  ████████████████████  avg interaction: 29.71
+  #samsung                    58 tweets  █████████████  avg interaction: 29.72
+  #skhynix                    39 tweets  █████████  avg interaction: 48.54
+  #tsmc                       39 tweets  █████████  avg interaction: 23.59
+  #micron                     28 tweets  ██████  avg interaction: 46.54
+  #nvidia                     28 tweets  ██████  avg interaction: 57.36
+  #intel                      27 tweets  ██████  avg interaction: 53.7
+  #ai                         24 tweets  █████  avg interaction: 39.21
+  #apple                      20 tweets  ████  avg interaction: 11.55
+  #daily                      19 tweets  ████  avg interaction: 27.63
+  #economic                   19 tweets  ████  avg interaction: 27.63
+  #hbm                        15 tweets  ███  avg interaction: 61.6
+  #china                      14 tweets  ███  avg interaction: 12.14
+  #dram                       11 tweets  ██  avg interaction: 47.27
+  #nand                       11 tweets  ██  avg interaction: 33.82
+""
+TOP 10 TWEETS BY INTERACTION:
+  1. [55800 total | 41000 likes  12000 retweets  2800 replies  views: 0]
+     
+     https://x.com/satyanadella/status/2066182223213293753
+  2. [26372 total | 24000 likes  2300 retweets  72 replies  views: 2219969]
+"     In Korea, found this Tteokbokki spot ran by 2 elder ladies I asked if they took card She shook her head, spoke some Kore..."
+     https://x.com/dylan522p/status/1917719768066363629
+  3. [14697 total | 14000 likes  605 retweets  92 replies  views: 351117]
+     Elon rn
+     https://x.com/SemiAnalysis_/status/2052085238856093973
+  4. [14633 total | 12000 likes  2400 retweets  233 replies  views: 0]
+     
+     https://x.com/itsreallyvivek/status/2064686372737454155
+  5. [10797 total | 10000 likes  767 retweets  30 replies  views: 772473]
+     The most hilarious part of the study isn't that all the Whole Foods Organic veggies & meat are plastic ridden Its that S...
+     https://x.com/dylan522p/status/1873227889610735667
+  6. [8900 total | 6100 likes  1500 retweets  1300 replies  views: 6654201]
+"     My caste (Leuva Patidar Samaj) volleyball tournament in Dallas is unreal 8,000 people here out of ~40,000 people in the ..."
+     https://x.com/dylan522p/status/1895971158169882830
+  7. [8744 total | 7600 likes  882 retweets  262 replies  views: 0]
+"     this is my personal singularity moment  this post may sound like a paid ad. I only wish. I'm concerned, more so than hap..."
+     https://x.com/VictorTaelin/status/2064448425936994742
+  8. [7520 total | 6700 likes  572 retweets  248 replies  views: 1046171]
+     Elon's jet is in Florida. Global Foundries jet is in Florida. Qualcomm's jet is in Florida. In case anyone was wondering...
+     https://x.com/dylan522p/status/1880379652054901175
+  9. [6170 total | 5600 likes  298 retweets  272 replies  views: 0]
+     I think we’ve reached the point where normal people can’t really determine whether new models are better than previous o...
+     https://x.com/citrini/status/2064480613852201336
+  10. [5905 total | 5200 likes  412 retweets  293 replies  views: 1893618]
+"     Being in SF is like being in Wuhan right before the pandemic  Something is happening, it's gonna hit everywhere but so f..."
+     https://x.com/dylan522p/status/2030850153117327542

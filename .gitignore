@@ -1,0 +1,6 @@
+node_modules/
+.env
+session.json
+results.json
+results.csv
+error-screenshot.png

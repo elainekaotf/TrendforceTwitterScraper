@@ -1,0 +1,65 @@
+TRENDFORCE vs COMPETITOR MENTION ANALYSIS
+
+TOP ACCOUNTS BY FOLLOWERS - TRENDFORCE MENTIONS
+handle,displayName,followers,tweet_count
+kryp_toon,KrypToon,1300000,1
+aleabitoreddit,Serenity,881100,20
+bboczeng,勃勃OC,217100,1
+zephyr_z9,Zephyr,156400,17
+jukan05,Jukan,155300,28
+qinbafrank,qinbafrank,145900,11
+anishmoonka,Anish Moonka,133200,1
+kawzinvests,KawzInvests,114100,1
+semianalysis_,SemiAnalysis,111400,6
+eig_banphot,อิก บรรพต ธนาเพิ่มสุข,97100,2
+cryptodailyuk,Crypto Daily™,88800,1
+bubbleboi,bubble boi,88200,59
+paurooteri,パウロ,88100,3
+iamramenpanda,RamenPanda,87200,1
+blockbeatsasia,BlockBeats｜We're hiring!,87200,1
+
+TOP ACCOUNTS BY FOLLOWERS - COMPETITOR MENTIONS
+handle,displayName,followers,competitor_mentioned,tweet_count
+blockbeatsasia,BlockBeats｜We're hiring!,87200,SemiAnalysis,1
+fi56622380,fin,66200,SemiAnalysis,1
+insane_analyst,Irrational Analysis,40800,Sravan Kundojjala,1
+yosuke_kinosita,木下洋介,28600,SemiAnalysis,1
+franpradasai,Fran Pradas | Ingeniero de IA,25700,SemiAnalysis,1
+dmjk001,kuaixun,24600,SemiAnalysis,1
+wstanalystape,華爾街分析猿,24600,SemiAnalysis,1
+singularityres,Singularity Research,18600,SemiAnalysis,1
+dv_memetics,Deep Value Memetics,11400,SemiAnalysis,1
+aaronwei3n,Aaron,9235,SemiAnalysis,1
+hotaisle,Hot Aisle,5350,SemiAnalysis,1
+dongdongrobin,东东弗斯 (hype/acc),4160,SemiAnalysis,1
+bulletbear13,Bull et Bear 13,3579,SemiAnalysis,1
+thecsguy,nick,3310,SemiAnalysis,1
+sheikh__zohaib,Sheikh Zohaib 汤辰良,2265,SemiAnalysis,1
+
+ACCOUNTS MENTIONING BOTH TRENDFORCE AND COMPETITORS
+handle,displayName,followers,tf_mentions,comp_mentions,competitors
+blockbeatsasia,BlockBeats｜We're hiring!,87200,1,1,SemiAnalysis
+insane_analyst,Irrational Analysis,40800,11,1,Sravan Kundojjala
+wstanalystape,華爾街分析猿,24600,1,1,SemiAnalysis
+dmjk001,kuaixun,24600,1,1,SemiAnalysis
+sekai_kabu,せかい米国株,1006,4,1,SemiAnalysis
+sharonsdogs,大A萌主,125,1,1,SemiAnalysis
+haku2b,Haku,91,1,1,SemiAnalysis
+
+COMPETITOR MENTION COUNTS
+competitor,mention_count
+SemiAnalysis,47
+Sravan Kundojjala,2
+
+HIGH-FOLLOWER ACCOUNTS MENTIONING COMPETITORS ONLY
+handle,displayName,followers,competitors
+fi56622380,fin,66200,SemiAnalysis
+yosuke_kinosita,木下洋介,28600,SemiAnalysis
+franpradasai,Fran Pradas | Ingeniero de IA,25700,SemiAnalysis
+singularityres,Singularity Research,18600,SemiAnalysis
+dv_memetics,Deep Value Memetics,11400,SemiAnalysis
+aaronwei3n,Aaron,9235,SemiAnalysis
+hotaisle,Hot Aisle,5350,SemiAnalysis
+dongdongrobin,东东弗斯 (hype/acc),4160,SemiAnalysis
+bulletbear13,Bull et Bear 13,3579,SemiAnalysis
+thecsguy,nick,3310,SemiAnalysis

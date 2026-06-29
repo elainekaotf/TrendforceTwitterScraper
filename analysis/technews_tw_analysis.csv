@@ -1,0 +1,130 @@
+SUMMARY -- @technews_tw
+  Total tweets:       850
+  Avg interaction:    4.4
+  Median interaction: 2
+  Max interaction:    148
+  Avg views:          321.32
+  Max views:          10008
+""
+"BEST HOURS TO POST (Taiwan Time, avg total interaction):"
+  07:00  ██████████████  9.5  (16 tweets)
+  08:00  ████████████████████  13.5  (26 tweets)
+  09:00  ████  3.02  (45 tweets)
+  10:00  ██████████  7.1  (69 tweets)
+  11:00  ███████  5.38  (71 tweets)
+  12:00  █████  3.98  (59 tweets)
+  13:00  ████  2.79  (68 tweets)
+  14:00  ████████  5.46  (59 tweets)
+  15:00  ██████  4.15  (61 tweets)
+  16:00  █████  3.85  (74 tweets)
+  17:00  █████  3.63  (78 tweets)
+  18:00  ████  2.93  (70 tweets)
+  19:00  ███  2.57  (56 tweets)
+  20:00  ████  3.32  (37 tweets)
+  21:00  █████  3.97  (34 tweets)
+  22:00  █  1.22  (18 tweets)
+  23:00  █████  3.89  (9 tweets)
+""
+AVG INTERACTION BY DAY OF WEEK:
+  Monday      █████████████  4.41
+  Tuesday     █████████████  4.47
+  Wednesday   ████████████████████  6.39
+  Thursday    ████████████  3.94
+  Friday      ████████  2.84
+  Saturday    █████████████  4.35
+  Sunday      █████████████████  5.49
+""
+IMAGES VS NO IMAGES:
+  With image:    avg 21.17  (76 tweets)
+  Without image: avg 2.76  (774 tweets)
+  -> images perform 667.0% better
+""
+TOP KEYWORDS BY AVG INTERACTION (min 3 tweets):
+  optical communication          avg 53.67    (3 tweets)
+  data center                    avg 43.0     (8 tweets)
+  advanced packaging             avg 39.75    (4 tweets)
+  glass substrates               avg 37.67    (3 tweets)
+  capacity                       avg 35.11    (9 tweets)
+  packaging                      avg 34.5     (6 tweets)
+  demand                         avg 33.91    (11 tweets)
+  supply chain                   avg 27.93    (15 tweets)
+  #jpmorgan                      avg 27.33    (3 tweets)
+  chips                          avg 26.0     (9 tweets)
+  shortage                       avg 25.0     (3 tweets)
+  ai server                      avg 23.0     (6 tweets)
+  ai infrastructure              avg 20.25    (4 tweets)
+  server                         avg 18.58    (12 tweets)
+  chip                           avg 17.05    (19 tweets)
+""
+BEST KEYWORD + IMAGE COMBOS:
+  data center                    avg 64.6
+  capacity                       avg 59.25
+  packaging                      avg 51.0
+  advanced packaging             avg 51.0
+  chips                          avg 51.0
+""
+TOP HASHTAGS BY AVG INTERACTION (min 2 tweets):
+  #optical                  avg 28.5     (2 tweets)  ████████████████████  views avg: 1730.0
+  #jpmorgan                 avg 27.33    (3 tweets)  ███████████████████  views avg: 1440.0
+  #abf                      avg 24.0     (2 tweets)  ████████████████  views avg: 1392.0
+  #0050                     avg 15.0     (2 tweets)  ██████████  views avg: 888.5
+  #tsmc                     avg 12.21    (14 tweets)  ████████  views avg: 653.57
+  #marvell                  avg 11.0     (3 tweets)  ███████  views avg: 590.0
+  #intel                    avg 10.8     (5 tweets)  ███████  views avg: 824.2
+  #copos                    avg 10.0     (2 tweets)  ███████  views avg: 552.5
+  #台達電                      avg 9.6      (5 tweets)  ██████  views avg: 593.2
+  #memory                   avg 9.5      (4 tweets)  ██████  views avg: 725.25
+  #apple                    avg 9.0      (2 tweets)  ██████  views avg: 449.0
+  #tesla                    avg 8.0      (2 tweets)  █████  views avg: 412.5
+  #inp                      avg 8.0      (2 tweets)  █████  views avg: 411.5
+  #腦機介面                     avg 7.5      (2 tweets)  █████  views avg: 210.0
+  #samsung                  avg 7.5      (2 tweets)  █████  views avg: 515.5
+""
+MOST USED HASHTAGS:
+  #ai                         66 tweets  ████████████████████  avg interaction: 3.89
+  #spacex                     36 tweets  ██████████  avg interaction: 2.06
+  #蘋果                         31 tweets  █████████  avg interaction: 2.65
+  #台積電                        30 tweets  █████████  avg interaction: 4.3
+  #輝達                         27 tweets  ████████  avg interaction: 3.3
+  #openai                     22 tweets  ██████  avg interaction: 1.64
+  #anthropic                  21 tweets  ██████  avg interaction: 1.76
+  #英特爾                        17 tweets  █████  avg interaction: 3.65
+  #google                     15 tweets  ████  avg interaction: 3.87
+  #amd                        14 tweets  ████  avg interaction: 3.79
+  #tsmc                       14 tweets  ████  avg interaction: 12.21
+  #黃仁勳                        13 tweets  ███  avg interaction: 2.31
+  #ipo                        13 tweets  ███  avg interaction: 1.54
+  #sk海力士                      12 tweets  ███  avg interaction: 2.58
+  #馬斯克                        12 tweets  ███  avg interaction: 2.17
+""
+TOP 10 TWEETS BY INTERACTION:
+  1. [148 total | 125 likes  19 retweets  4 replies  views: 10008]
+     Indium Phosphide Substrate Capacity to Expand 10-Fold Within 4 Years! #IndiumPhosphideInP Epitaxial Supply Chain JX Meta...
+     https://x.com/technews_tw/status/2067073313957146678
+  2. [83 total | 71 likes  10 retweets  2 replies  views: 9426]
+"     Morgan Stanley raises Yageo target price to 1,355 yuan, with even the chance to challenge the sky-high 2,055 yuan! #Morg..."
+     https://x.com/technews_tw/status/2066409421467779571
+  3. [78 total | 66 likes  8 retweets  4 replies  views: 5518]
+     Can Glass Substrates Really Shoulder the Burden of AI Packaging? #GlassSubstrateEcosystemSupplyChain AI chips drive dema...
+     https://x.com/technews_tw/status/2064505979157581858
+  4. [71 total | 62 likes  9 retweets  0 replies  views: 9058]
+     800V HVDC Becomes New Power Supply Standard for AI Data Centers! #AI資料中心價值鏈 The AI computing race is extending from chip...
+     https://x.com/technews_tw/status/2062324291346313413
+  5. [57 total | 48 likes  9 retweets  0 replies  views: 4060]
+"     JPMorgan names 4 major Taiwanese manufacturers! #JPMorganNamesTop5AIWinners AI wave sweeps global hardware supply chain,..."
+     https://x.com/technews_tw/status/2066802549764829202
+  6. [53 total | 47 likes  5 retweets  1 replies  views: 4997]
+     AI Data Center Power Efficiency Anxiety! #Power Components vs Passive Components Differences Explained at a Glance   The...
+     https://x.com/technews_tw/status/2068848009501360145
+  7. [49 total | 46 likes  3 retweets  0 replies  views: 2622]
+"     A single AI server devours 440,000 #MLCCs, up to 15 times that of traditional servers. Foreign investors forecast the ""p..."
+     https://x.com/technews_tw/status/2069239320096178207
+  8. [46 total | 42 likes  4 retweets  0 replies  views: 3240]
+     JPMorgan names four Taiwanese firms as beneficiaries! #JPMorganUnveilsThreeMajorHardwareRevolutionsAndNewLandscapeForTai...
+     https://x.com/technews_tw/status/2067033562315182521
+  9. [46 total | 40 likes  5 retweets  1 replies  views: 3083]
+"     Despite the fact that CPO's progress in mass adoption is slower due to technical difficulties, optical communication inf..."
+     https://x.com/technews_tw/status/2066725555203137645
+  10. [42 total | 31 likes  11 retweets  0 replies  views: 1141]
+     Nearly 30% of Taiwan's tax revenue comes from TSMC! #TSMCReignsAsTopTaxpayerForNinthTime 2025 corporate income tax settl...
+     https://x.com/technews_tw/status/2067438212075954564
