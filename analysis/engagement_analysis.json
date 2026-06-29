@@ -2,6 +2,8 @@
   "QQ_Timmy": {
     "handle": "QQ_Timmy",
     "tweet_count": 493,
+    "date_from": "2025-11-11",
+    "date_to": "2026-06-24",
     "best_hours": [
       {
         "hour": 23,
@@ -506,6 +508,8 @@
   "jukan05": {
     "handle": "jukan05",
     "tweet_count": 221,
+    "date_from": "2026-04-22",
+    "date_to": "2026-06-24",
     "best_hours": [
       {
         "hour": 4,
@@ -934,6 +938,8 @@
   "TrendForce": {
     "handle": "TrendForce",
     "tweet_count": 487,
+    "date_from": "2026-02-05",
+    "date_to": "2026-06-24",
     "best_hours": [
       {
         "hour": 16,
@@ -1626,6 +1632,8 @@
   "dylan522p": {
     "handle": "dylan522p",
     "tweet_count": 586,
+    "date_from": "2020-09-03",
+    "date_to": "2026-06-20",
     "best_hours": [
       {
         "hour": 12,
@@ -2154,6 +2162,8 @@
   "SemiAnalysis_": {
     "handle": "SemiAnalysis_",
     "tweet_count": 697,
+    "date_from": "2026-02-17",
+    "date_to": "2026-06-24",
     "best_hours": [
       {
         "hour": 17,
@@ -2719,6 +2729,8 @@
   "combined": {
     "handle": "combined",
     "tweet_count": 2484,
+    "date_from": "2020-09-03",
+    "date_to": "2026-06-24",
     "best_hours": [
       {
         "hour": 23,
