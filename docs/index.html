@@ -41,7 +41,13 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:14
 .bar-val{font-family:var(--mono);font-size:11px;color:var(--text);min-width:42px;font-variant-numeric:tabular-nums}
 .bar-count{font-family:var(--mono);font-size:10px;color:var(--muted);min-width:60px}
 .bar-group{margin-bottom:5px}
+.bar-group-highlight{background:rgba(255,255,255,0.04);border-radius:5px;padding:3px 6px;margin-left:-6px}
 .bar-row-views{margin-top:2px;opacity:.65}
+.bar-row-best-interact{opacity:1}
+.bar-row-best-views{opacity:1}
+.bar-fill-best{filter:brightness(1.25)}
+.best-badge{font-size:9px;font-weight:700;color:var(--gold);margin-left:4px;letter-spacing:0.03em}
+.best-badge-views{color:#5baeff}
 .views-val{font-family:var(--mono);font-size:10px;color:var(--blue);min-width:42px}
 .bar-metric{font-size:9px;color:var(--muted);min-width:44px;font-family:var(--mono);opacity:.7}
 .bar-legend{display:flex;gap:16px;margin-bottom:10px;font-size:11px;color:var(--muted)}
@@ -102,7 +108,7 @@ window._data['trendforce'] = {
 };
 </script>
 <div class="page active" id="page-trendforce">
-  <p class="updated">Based on 487 tweets scraped from @TrendForce &middot; Updated June 29, 2026 17:35 Taiwan Time</p>
+  <p class="updated">Based on 487 tweets scraped from @TrendForce &middot; Updated June 29, 2026 17:40 Taiwan Time</p>
   
     <div class="kpi-row">
       <div class="kpi"><div class="kpi-label">Total Tweets</div><div class="kpi-value blue">487</div></div>
@@ -317,7 +323,7 @@ window._data['technewstw'] = {
 };
 </script>
 <div class="page " id="page-technewstw">
-  <p class="updated">Based on 850 tweets scraped from @technews_tw &middot; Updated June 29, 2026 17:35 Taiwan Time</p>
+  <p class="updated">Based on 850 tweets scraped from @technews_tw &middot; Updated June 29, 2026 17:40 Taiwan Time</p>
   
     <div class="kpi-row">
       <div class="kpi"><div class="kpi-label">Total Tweets</div><div class="kpi-value blue">850</div></div>
@@ -634,7 +640,7 @@ window._data['dylan522p'] = {
 };
 </script>
 <div class="page " id="page-dylan522p">
-  <p class="updated">Based on 586 tweets scraped from @dylan522p &middot; Updated June 29, 2026 17:35 Taiwan Time</p>
+  <p class="updated">Based on 586 tweets scraped from @dylan522p &middot; Updated June 29, 2026 17:40 Taiwan Time</p>
   
     <div class="kpi-row">
       <div class="kpi"><div class="kpi-label">Total Tweets</div><div class="kpi-value blue">586</div></div>
@@ -849,7 +855,7 @@ window._data['jukan05'] = {
 };
 </script>
 <div class="page " id="page-jukan05">
-  <p class="updated">Based on 584 tweets scraped from @jukan05 &middot; Updated June 29, 2026 17:35 Taiwan Time</p>
+  <p class="updated">Based on 584 tweets scraped from @jukan05 &middot; Updated June 29, 2026 17:40 Taiwan Time</p>
   
     <div class="kpi-row">
       <div class="kpi"><div class="kpi-label">Total Tweets</div><div class="kpi-value blue">584</div></div>
@@ -1064,7 +1070,7 @@ window._data['qqtimmy'] = {
 };
 </script>
 <div class="page " id="page-qqtimmy">
-  <p class="updated">Based on 323 tweets scraped from @QQ_Timmy &middot; Updated June 29, 2026 17:35 Taiwan Time</p>
+  <p class="updated">Based on 323 tweets scraped from @QQ_Timmy &middot; Updated June 29, 2026 17:40 Taiwan Time</p>
   
     <div class="kpi-row">
       <div class="kpi"><div class="kpi-label">Total Tweets</div><div class="kpi-value blue">323</div></div>
@@ -1279,7 +1285,7 @@ window._data['semianalysis'] = {
 };
 </script>
 <div class="page " id="page-semianalysis">
-  <p class="updated">Based on 691 tweets scraped from @SemiAnalysis_ &middot; Updated June 29, 2026 17:35 Taiwan Time</p>
+  <p class="updated">Based on 691 tweets scraped from @SemiAnalysis_ &middot; Updated June 29, 2026 17:40 Taiwan Time</p>
   
     <div class="kpi-row">
       <div class="kpi"><div class="kpi-label">Total Tweets</div><div class="kpi-value blue">691</div></div>
@@ -1496,6 +1502,9 @@ function renderBars(pid, key, color, valKey, labelKey, opts) {
 
   const maxI = Math.max(...items.map(i => +i[valKey] || 0), 1);
   const maxV = Math.max(...items.map(i => +i[viewKey] || 0), 1);
+  const isTimeDayChart = key === 'hours' || key === 'days' || key.endsWith('-hours') || key.endsWith('-days');
+  const bestIVal = isTimeDayChart ? maxI : null;
+  const bestVVal = isTimeDayChart ? maxV : null;
 
   items.forEach(item => {
     const label = labelKey === 'hour'
@@ -1509,21 +1518,27 @@ function renderBars(pid, key, color, valKey, labelKey, opts) {
       ? `<div class="bar-count">${item[opts.countKey] != null ? item[opts.countKey] + ' tweets' : ''}</div>`
       : '';
 
+    const isBestI = isTimeDayChart && val === bestIVal;
+    const isBestV = isTimeDayChart && views === bestVVal;
+
     const div = document.createElement('div');
     div.className = 'bar-group';
+    if (isBestI || isBestV) div.classList.add('bar-group-highlight');
     const viewsStr = views >= 1000 ? (views/1000).toFixed(1)+'K' : views;
+    const bestIBadge = isBestI ? ' <span class="best-badge">★ interactions</span>' : '';
+    const bestVBadge = isBestV ? ' <span class="best-badge best-badge-views">★ views</span>' : '';
     const secondRow = opts.dualBar !== false ? `
-      <div class="bar-row bar-row-views">
+      <div class="bar-row bar-row-views${isBestV?' bar-row-best-views':''}">
         <div class="bar-label ${isLeft?'left':''}"></div>
-        <div class="bar-track"><div class="bar-fill blue" style="width:${pctV}%"></div></div>
-        <div class="bar-val views-val">${viewsStr}</div>
+        <div class="bar-track"><div class="bar-fill blue${isBestV?' bar-fill-best':''}" style="width:${pctV}%"></div></div>
+        <div class="bar-val views-val">${viewsStr}${bestVBadge}</div>
         <div class="bar-metric">views</div>
       </div>` : '';
     div.innerHTML = `
-      <div class="bar-row">
+      <div class="bar-row${isBestI?' bar-row-best-interact':''}">
         <div class="bar-label ${isLeft?'left':''}">${label}</div>
-        <div class="bar-track"><div class="bar-fill ${color}" style="width:${pctI}%"></div></div>
-        <div class="bar-val">${val}</div>
+        <div class="bar-track"><div class="bar-fill ${color}${isBestI?' bar-fill-best':''}" style="width:${pctI}%"></div></div>
+        <div class="bar-val">${val}${bestIBadge}</div>
         <div class="bar-metric">${valKey==='avg_views'?'views':'interact'}</div>
         ${countStr}
       </div>
