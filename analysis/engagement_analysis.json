@@ -4537,12 +4537,6 @@
         "avg_views": 63996.0
       },
       {
-        "keyword": "cost",
-        "avg_interaction": 492.67,
-        "tweet_count": 3,
-        "avg_views": 78863.33
-      },
-      {
         "keyword": "cuda moat",
         "avg_interaction": 466.75,
         "tweet_count": 4,
@@ -4571,6 +4565,12 @@
         "avg_interaction": 347.77,
         "tweet_count": 71,
         "avg_views": 58028.37
+      },
+      {
+        "keyword": "faster tokens",
+        "avg_interaction": 345.0,
+        "tweet_count": 3,
+        "avg_views": 102029.0
       }
     ],
     "top_tweets": [
