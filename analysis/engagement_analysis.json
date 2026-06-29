@@ -690,12 +690,130 @@
         "tweet_count": 0,
         "avg_interaction": 0,
         "avg_views": 0,
+        "img_with": {
+          "avg": 0,
+          "count": 0
+        },
+        "img_without": {
+          "avg": 0,
+          "count": 0
+        },
+        "best_hours": [],
+        "best_days": [],
+        "top_hashtags": [],
         "top_tweets": []
       },
       "english": {
         "tweet_count": 487,
         "avg_interaction": 34.03,
         "avg_views": 7822.82,
+        "img_with": {
+          "avg": 46.33,
+          "count": 228
+        },
+        "img_without": {
+          "avg": 23.2,
+          "count": 259
+        },
+        "best_hours": [
+          {
+            "hour": 16,
+            "avg_interaction": 67.62,
+            "tweet_count": 21
+          },
+          {
+            "hour": 10,
+            "avg_interaction": 53.38,
+            "tweet_count": 8
+          },
+          {
+            "hour": 8,
+            "avg_interaction": 50.71,
+            "tweet_count": 7
+          },
+          {
+            "hour": 15,
+            "avg_interaction": 47.87,
+            "tweet_count": 15
+          },
+          {
+            "hour": 17,
+            "avg_interaction": 45.8,
+            "tweet_count": 25
+          }
+        ],
+        "best_days": [
+          {
+            "day": "Tuesday",
+            "avg_interaction": 40.44
+          },
+          {
+            "day": "Wednesday",
+            "avg_interaction": 36.18
+          },
+          {
+            "day": "Monday",
+            "avg_interaction": 35.59
+          },
+          {
+            "day": "Friday",
+            "avg_interaction": 29.72
+          },
+          {
+            "day": "Thursday",
+            "avg_interaction": 29.35
+          },
+          {
+            "day": "Sunday",
+            "avg_interaction": 26.42
+          },
+          {
+            "day": "Saturday",
+            "avg_interaction": 22.0
+          }
+        ],
+        "top_hashtags": [
+          {
+            "hashtag": "#arm",
+            "avg_interaction": 260.5,
+            "tweet_count": 2
+          },
+          {
+            "hashtag": "#ssd",
+            "avg_interaction": 134.5,
+            "tweet_count": 2
+          },
+          {
+            "hashtag": "#copos",
+            "avg_interaction": 130.0,
+            "tweet_count": 2
+          },
+          {
+            "hashtag": "#hbf",
+            "avg_interaction": 85.0,
+            "tweet_count": 2
+          },
+          {
+            "hashtag": "#amd",
+            "avg_interaction": 84.0,
+            "tweet_count": 7
+          },
+          {
+            "hashtag": "#sandisk",
+            "avg_interaction": 73.12,
+            "tweet_count": 8
+          },
+          {
+            "hashtag": "#advancedpackaging",
+            "avg_interaction": 69.5,
+            "tweet_count": 4
+          },
+          {
+            "hashtag": "#inference",
+            "avg_interaction": 63.5,
+            "tweet_count": 2
+          }
+        ],
         "top_tweets": [
           {
             "rank": 1,
@@ -705,7 +823,6 @@
             "replies": 18,
             "views": 339041,
             "text": " CPUs are having a moment.  #Nvidia launched a standalone CPU. #Arm made its first chip in 35 years. #Intel & #AMD are raising prices amid a supply crunch.  What's behind it: Agentic AI needs far more CPU than anyone planned for \u2014 driving a structural shift in CPU:GPU ratios",
-            "translated_text": " CPUs are having a moment.  #Nvidia launched a standalone CPU. #Arm made its first chip in 35 years. #Intel & #AMD are raising prices amid a supply crunch.  What's behind it: Agentic AI needs far more CPU than anyone planned for \u2014 driving a structural shift in CPU:GPU ratios",
             "url": "https://x.com/trendforce/status/2044038072107434251"
           },
           {
@@ -716,7 +833,6 @@
             "replies": 12,
             "views": 118951,
             "text": " Memory prices keep climbing: DRAM is forecast to rise 58\u201363% QoQ in 2Q26, while NAND flash may surge 70\u201375%. When will the supply-demand imbalance ease?More analysis from #TrendForce:  https:// buff.ly/NBcmN5k ",
-            "translated_text": " Memory prices keep climbing: DRAM is forecast to rise 58\u201363% QoQ in 2Q26, while NAND flash may surge 70\u201375%. When will the supply-demand imbalance ease?More analysis from #TrendForce:  https:// buff.ly/NBcmN5k ",
             "url": "https://x.com/trendforce/status/2039010015747396092"
           },
           {
@@ -727,7 +843,6 @@
             "replies": 6,
             "views": 42131,
             "text": "Recent media reports claiming NVIDIA has exclusively selected Samsung and SK hynix for its HBM4 supply chain\u2014supposedly sidelining Micron\u2014are inaccurate. TrendForce reports that all three memory giants remain integral to the upcoming Vera Rubin architecture. Samsung plans to",
-            "translated_text": "Recent media reports claiming NVIDIA has exclusively selected Samsung and SK hynix for its HBM4 supply chain\u2014supposedly sidelining Micron\u2014are inaccurate. TrendForce reports that all three memory giants remain integral to the upcoming Vera Rubin architecture. Samsung plans to",
             "url": "https://x.com/trendforce/status/2031285588754837987"
           },
           {
@@ -738,7 +853,6 @@
             "replies": 3,
             "views": 35009,
             "text": "#SanDisk announced that the company has secured long-term #SSD supply agreements of up to five years, featuring increasing volume commitments and a hybrid pricing structure that combines fixed and variable components. These agreements are designed to ensure demand visibility and",
-            "translated_text": "#SanDisk announced that the company has secured long-term #SSD supply agreements of up to five years, featuring increasing volume commitments and a hybrid pricing structure that combines fixed and variable components. These agreements are designed to ensure demand visibility and",
             "url": "https://x.com/trendforce/status/2051572611235119478"
           },
           {
@@ -749,7 +863,6 @@
             "replies": 0,
             "views": 53880,
             "text": "TSMC's #CoPoS is moving fast, and the opportunities for Taiwan suppliers are taking shape. CoPoS replaces traditional round glass carrier with a square panel format, pushing utilization rates above 75%. More on glass material development:  https:// pse.is/977q8c ",
-            "translated_text": "TSMC's #CoPoS is moving fast, and the opportunities for Taiwan suppliers are taking shape. CoPoS replaces traditional round glass carrier with a square panel format, pushing utilization rates above 75%. More on glass material development:  https:// pse.is/977q8c ",
             "url": "https://x.com/trendforce/status/2065436170428035281"
           }
         ]
@@ -921,79 +1034,79 @@
     },
     "top_keywords": [
       {
-        "keyword": "optical communication",
-        "avg_interaction": 53.67,
-        "tweet_count": 3
-      },
-      {
-        "keyword": "data center",
-        "avg_interaction": 43.0,
-        "tweet_count": 8
-      },
-      {
-        "keyword": "advanced packaging",
-        "avg_interaction": 39.75,
+        "keyword": "#mlcc",
+        "avg_interaction": 15.5,
         "tweet_count": 4
       },
       {
-        "keyword": "glass substrates",
-        "avg_interaction": 37.67,
-        "tweet_count": 3
+        "keyword": "#\u570b\u5de8",
+        "avg_interaction": 13.25,
+        "tweet_count": 4
       },
       {
-        "keyword": "packaging",
-        "avg_interaction": 34.67,
-        "tweet_count": 6
+        "keyword": "cowos",
+        "avg_interaction": 12.25,
+        "tweet_count": 4
       },
       {
         "keyword": "capacity",
-        "avg_interaction": 32.3,
-        "tweet_count": 10
-      },
-      {
-        "keyword": "demand",
-        "avg_interaction": 31.58,
-        "tweet_count": 12
-      },
-      {
-        "keyword": "#jpmorgan",
-        "avg_interaction": 27.33,
-        "tweet_count": 3
-      },
-      {
-        "keyword": "supply chain",
-        "avg_interaction": 26.5,
-        "tweet_count": 16
-      },
-      {
-        "keyword": "chips",
-        "avg_interaction": 26.0,
-        "tweet_count": 9
-      },
-      {
-        "keyword": "shortage",
-        "avg_interaction": 25.0,
-        "tweet_count": 3
-      },
-      {
-        "keyword": "ai server",
-        "avg_interaction": 23.0,
-        "tweet_count": 6
-      },
-      {
-        "keyword": "ai infrastructure",
-        "avg_interaction": 20.25,
+        "avg_interaction": 10.25,
         "tweet_count": 4
       },
       {
-        "keyword": "server",
-        "avg_interaction": 18.58,
-        "tweet_count": 12
+        "keyword": "computex 2026",
+        "avg_interaction": 10.25,
+        "tweet_count": 4
       },
       {
-        "keyword": "chip",
-        "avg_interaction": 17.05,
-        "tweet_count": 19
+        "keyword": "#\u53f0\u9054\u96fb",
+        "avg_interaction": 9.6,
+        "tweet_count": 5
+      },
+      {
+        "keyword": "micron",
+        "avg_interaction": 9.25,
+        "tweet_count": 4
+      },
+      {
+        "keyword": "trendforce",
+        "avg_interaction": 9.14,
+        "tweet_count": 14
+      },
+      {
+        "keyword": "\u53f0\u7a4d\u96fb",
+        "avg_interaction": 8.6,
+        "tweet_count": 5
+      },
+      {
+        "keyword": "10",
+        "avg_interaction": 8.33,
+        "tweet_count": 3
+      },
+      {
+        "keyword": "semianalysis",
+        "avg_interaction": 8.33,
+        "tweet_count": 6
+      },
+      {
+        "keyword": "nvlink fusion",
+        "avg_interaction": 8.33,
+        "tweet_count": 3
+      },
+      {
+        "keyword": "\u5146\u7f8e\u5143",
+        "avg_interaction": 7.8,
+        "tweet_count": 5
+      },
+      {
+        "keyword": "nvidia \u57f7\u884c\u9577\u9ec3\u4ec1\u52f3",
+        "avg_interaction": 7.33,
+        "tweet_count": 6
+      },
+      {
+        "keyword": "hbm",
+        "avg_interaction": 7.19,
+        "tweet_count": 16
       }
     ],
     "top_tweets": [
@@ -1003,22 +1116,17 @@
         "likes": 125,
         "retweets": 19,
         "replies": 4,
-        "views": 10020,
-        "text": "Indium Phosphide Substrate Capacity to Expand 10-Fold Within 4 Years! #IndiumPhosphideInP Epitaxial Supply Chain JX Metal announced in a press release on the 16th that, in response to the growing demand for optical communication infrastructure used in data centers, it will",
+        "views": 10021,
+        "text": "\u78f7\u5316\u92a6\u57fa\u677f\u7522\u80fd 4 \u5e74\u5167\u64f4\u589e\u81f3 10 \u500d\uff01 #\u78f7\u5316\u92a6InP\u78ca\u6676\u4f9b\u61c9\u93c8 JX \u91d1\u5c6c 16 \u65e5\u767c\u5e03\u65b0\u805e\u7a3f\u5ba3\u5e03\uff0c\u70ba\u4e86\u56e0\u61c9\u8cc7\u6599\u4e2d\u5fc3\u7528\u5149\u901a\u8a0a\u57fa\u790e\u8a2d\u65bd\u9700\u6c42\u64f4\u5927\uff0c\u5c07\u9032\u4e00\u6b65\u64f4\u589e InP \u57fa\u677f\u7522\u80fd\uff0c\u8a08\u756b\u5728\u4eca\u5f8c 4 \u5e74\u6700\u9ad8\u6295\u8cc7 1,200 \u5104\u65e5\u5713\uff08\u5305\u542b\u4e4b\u524d\u516c\u5e03\u7684\u6295\u8cc7\u8a08\u756b\u8a08\u7b97\u3001\u7e3d\u6295\u8cc7\u984d\u5c07\u9054 1,500\u2026  http:// dlvr.it/TT4WKF",
         "url": "https://x.com/technews_tw/status/2067073313957146678",
         "timestamp": "2026-06-17T02:34:17.000Z",
         "keywords": [
-          "#indiumphosphideinp",
-          "data center",
-          "supply chain",
-          "capacity",
-          "demand",
-          "ai",
-          "indium phosphide",
-          "substrate capacity",
-          "chain jx",
-          "metal announced",
-          "optical communication"
+          "#\u78f7\u5316\u92a6inp\u78ca\u6676\u4f9b\u61c9\u93c8",
+          "\u8a08\u756b\u5728\u4eca\u5f8c \u5e74\u6700\u9ad8\u6295\u8cc7",
+          "\u65e5\u767c\u5e03\u65b0\u805e\u7a3f\u5ba3\u5e03 \u70ba\u4e86\u56e0\u61c9\u8cc7\u6599\u4e2d\u5fc3\u7528\u5149\u901a\u8a0a\u57fa\u790e\u8a2d\u65bd\u9700\u6c42\u64f4\u5927",
+          "10 \u78f7\u5316\u92a6inp\u78ca\u6676\u4f9b\u61c9\u93c8",
+          "jx \u91d1\u5c6c",
+          "inp"
         ],
         "has_images": true
       },
@@ -1028,19 +1136,17 @@
         "likes": 71,
         "retweets": 10,
         "replies": 2,
-        "views": 9441,
-        "text": "Morgan Stanley raises Yageo target price to 1,355 yuan, with even the chance to challenge the sky-high 2,055 yuan! #MorganStanleyNamesYageoUltimateMLCCWinner Passive component industry to usher in a new round of major cycle, Morgan Stanley's latest research report candidly admits",
+        "views": 9442,
+        "text": "\u5927\u6469\u4e0a\u8abf\u570b\u5de8\u76ee\u6a19\u50f9\u81f3 1,355 \u5143\uff0c\u751a\u81f3\u6709\u6a5f\u6703\u6311\u6230 2,055 \u5143\u7684\u5929\u50f9\uff01 #\u5927\u6469\u9ede\u540d\u570b\u5de8MLCC\u7d42\u6975\u5927\u8d0f\u5bb6 \u88ab\u52d5\u5143\u4ef6\u7522\u696d\u5c07\u8fce\u4f86\u65b0\u4e00\u8f2a\u5927\u5faa\u74b0\uff0c\u6469\u6839\u58eb\u4e39\u5229\u6700\u65b0\u7814\u7a76\u5831\u544a\u4e2d\u5766\u8a00\uff0c\u904e\u53bb\u56b4\u91cd\u4f4e\u4f30\u96f2\u7aef AI \u5c0d\u7a4d\u5c64\u9676\u74f7\u96fb\u5bb9\uff08MLCC\uff09\u5e02\u5834\u5e36\u4f86\u7684\u300c\u4e8c\u968e\u6548\u61c9\u300d \uff0c\u96a8\u8457 AI\u2026  http:// dlvr.it/TT2lHB",
         "url": "https://x.com/technews_tw/status/2066409421467779571",
         "timestamp": "2026-06-15T06:36:12.000Z",
         "keywords": [
-          "#morganstanleynamesyageoultimatemlccwinner",
-          "price",
+          "#\u5927\u6469\u9ede\u540d\u570b\u5de8mlcc\u7d42\u6975\u5927\u8d0f\u5bb6",
           "ai",
-          "yageo target",
-          "355 yuan",
-          "stanley raises",
-          "component industry",
-          "cycle morgan"
+          "\u5927\u6469\u9ede\u540d\u570b\u5de8mlcc\u7d42\u6975\u5927\u8d0f\u5bb6 \u88ab\u52d5\u5143\u4ef6\u7522\u696d\u5c07\u8fce\u4f86\u65b0\u4e00\u8f2a\u5927\u5faa\u74b0",
+          "\u6469\u6839\u58eb\u4e39\u5229\u6700\u65b0\u7814\u7a76\u5831\u544a\u4e2d\u5766\u8a00 \u904e\u53bb\u56b4\u91cd\u4f4e\u4f30\u96f2\u7aef",
+          "\u4e8c\u968e\u6548\u61c9 \u96a8\u8457",
+          "\u5143\u7684\u5929\u50f9"
         ],
         "has_images": true
       },
@@ -1051,22 +1157,17 @@
         "retweets": 8,
         "replies": 4,
         "views": 5556,
-        "text": "Can Glass Substrates Really Shoulder the Burden of AI Packaging? #GlassSubstrateEcosystemSupplyChain AI chips drive demand for high-density packaging, propelling glass substrates to become a key material in advanced packaging. With the advantages of large-scale sizing, high",
+        "text": "\u73bb\u7483\u57fa\u677f\u771f\u80fd\u625b\u8d77 AI \u5c01\u88dd\u5927\u4efb\uff1f #\u73bb\u7483\u57fa\u677f\u751f\u614b\u7cfb\u4f9b\u61c9\u93c8 AI \u6676\u7247\u5e36\u52d5\u9ad8\u5bc6\u5ea6\u5c01\u88dd\u9700\u6c42\uff0c\u73bb\u7483\u57fa\u677f\u8e8d\u5c45\u5148\u9032\u5c01\u88dd\u95dc\u9375\u6750\u6599\u3002\u6191\u85c9\u53ef\u5927\u5c3a\u5bf8\u5316\u3001\u9ad8\u5e73\u6574\u5ea6\u8207\u63a5\u8fd1\u77fd\u6676\u5713\u7684\u71b1\u81a8\u8139\u4fc2\u6578\uff0c\u73bb\u7483\u57fa\u677f\u88ab\u8996\u70ba\u6709\u6a5f\u8f09\u677f\u4e4b\u5f8c\u7684\u6b21\u4e16\u4ee3 IC \u8f09\u677f\u3002\u53f0\u7a4d\u96fb\u8fd1\u671f\u8868\u614b\u73bb\u7483\u57fa\u677f\u6280\u8853\u6c92\u6709\u6377\u5f91\uff0cCoPoS\u2026  http:// dlvr.it/TSyY9S",
         "url": "https://x.com/technews_tw/status/2064505979157581858",
         "timestamp": "2026-06-10T00:32:36.000Z",
         "keywords": [
-          "#glasssubstrateecosystemsupplychain",
-          "chip",
-          "chips",
-          "demand",
-          "packaging",
+          "#\u73bb\u7483\u57fa\u677f\u751f\u614b\u7cfb\u4f9b\u61c9\u93c8",
           "ai",
-          "advanced packaging",
-          "ai packaging",
-          "packaging glasssubstrateecosystemsupplychain",
-          "glass substrates",
-          "chips drive",
-          "advantages large"
+          "\u6191\u85c9\u53ef\u5927\u5c3a\u5bf8\u5316 \u9ad8\u5e73\u6574\u5ea6\u8207\u63a5\u8fd1\u77fd\u6676\u5713\u7684\u71b1\u81a8\u8139\u4fc2\u6578",
+          "\u53f0\u7a4d\u96fb\u8fd1\u671f\u8868\u614b\u73bb\u7483\u57fa\u677f\u6280\u8853\u6c92\u6709\u6377\u5f91 copos",
+          "\u73bb\u7483\u57fa\u677f\u751f\u614b\u7cfb\u4f9b\u61c9\u93c8 ai",
+          "\u73bb\u7483\u57fa\u677f\u88ab\u8996\u70ba\u6709\u6a5f\u8f09\u677f\u4e4b\u5f8c\u7684\u6b21\u4e16\u4ee3 ic",
+          "\u8f09\u677f \u53f0\u7a4d\u96fb\u8fd1\u671f\u8868\u614b\u73bb\u7483\u57fa\u677f\u6280\u8853\u6c92\u6709\u6377\u5f91"
         ],
         "has_images": true
       },
@@ -1077,20 +1178,16 @@
         "retweets": 9,
         "replies": 0,
         "views": 9064,
-        "text": "800V HVDC Becomes New Power Supply Standard for AI Data Centers! #AI\u8cc7\u6599\u4e2d\u5fc3\u50f9\u503c\u93c8 The AI computing race is extending from chips to power infrastructure. Market sources indicate that Delta Electronics' long-planned \u00b1400V and 800V high-voltage direct current power supply (HVDC)",
+        "text": "800V HVDC \u6210 AI \u8cc7\u6599\u4e2d\u5fc3\u65b0\u4f9b\u96fb\u6a19\u6e96\uff01 #AI\u8cc7\u6599\u4e2d\u5fc3\u50f9\u503c\u93c8 AI \u904b\u7b97\u7af6\u8cfd\u6b63\u5f9e\u6676\u7247\u5ef6\u4f38\u81f3\u96fb\u529b\u57fa\u790e\u8a2d\u65bd\u3002\u5e02\u5834\u50b3\u51fa\uff0c\u53f0\u9054\u96fb\u5e03\u5c40\u591a\u5e74\u7684 \u00b1400V \u53ca 800V \u9ad8\u58d3\u76f4\u6d41\u4f9b\u96fb\uff08HVDC\uff09\u65b9\u6848\uff0c\u5df2\u5206\u5225\u7372\u5f97\u5169\u5bb6\u7f8e\u7cfb AI \u6307\u6a19\u5ba2\u6236\u63a1\u7528\uff0c\u76f8\u95dc\u7522\u54c1\u9810\u8a08\u7b2c\u4e09\u5b63\u958b\u59cb\u51fa\u8ca8\uff0c\u4e26\u5c0e\u5165\u65b0\u4e00\u4ee3 AI \u8cc7\u6599\u4e2d\u5fc3\u3002\u2026  http:// dlvr.it/TSsSgR",
         "url": "https://x.com/technews_tw/status/2062324291346313413",
         "timestamp": "2026-06-04T00:03:21.000Z",
         "keywords": [
           "#ai\u8cc7\u6599\u4e2d\u5fc3\u50f9\u503c\u93c8",
-          "chip",
-          "chips",
-          "data center",
           "ai",
-          "800v hvdc",
-          "delta electronics",
-          "data centers",
-          "standard ai",
-          "direct current"
+          "800v \u9ad8\u58d3\u76f4\u6d41\u4f9b\u96fb",
+          "\u53f0\u9054\u96fb\u5e03\u5c40\u591a\u5e74\u7684 400v",
+          "hvdc ai",
+          "\u8cc7\u6599\u4e2d\u5fc3\u65b0\u4f9b\u96fb\u6a19\u6e96 ai\u8cc7\u6599\u4e2d\u5fc3\u50f9\u503c\u93c8"
         ],
         "has_images": true
       },
@@ -1100,20 +1197,18 @@
         "likes": 48,
         "retweets": 9,
         "replies": 0,
-        "views": 4084,
-        "text": "JPMorgan names 4 major Taiwanese manufacturers! #JPMorganNamesTop5AIWinners AI wave sweeps global hardware supply chain, multilayer ceramic capacitors (MLCC), copper-clad laminates (CCL) to high-end substrates (Substrate) facing full capacity shortages. Foreign brokerage JPMorgan",
+        "views": 4085,
+        "text": "\u5c0f\u6469\u9ede\u540d 4 \u5927\u53f0\u5ee0\uff01 #\u5c0f\u6469\u9ede\u540dAI\u4f9b\u61c9\u93c8\u4e94\u5927\u8d0f\u5bb6 AI \u6d6a\u6f6e\u5e2d\u6372\u5168\u7403\u786c\u9ad4\u4f9b\u61c9\u93c8\uff0c\u7a4d\u5c64\u9676\u74f7\u96fb\u5bb9\uff08MLCC\uff09\u3001\u9285\u7b94\u57fa\u677f\uff08CCL\uff09\u5230\u9ad8\u968e\u8f09\u677f\uff08Substrate\uff09\u7522\u80fd\u5168\u9762\u5403\u7dca\u3002\u5916\u8cc7\u5238\u5546\u6469\u6839\u5927\u901a\uff08J.P. Morgan\uff09\u767c\u5e03\u7522\u696d\u5831\u544a\u6307\u51fa\uff0cAI\u2026  http:// dlvr.it/TT3lyV",
         "url": "https://x.com/technews_tw/status/2066802549764829202",
         "timestamp": "2026-06-16T08:38:21.000Z",
         "keywords": [
-          "#jpmorgannamestop5aiwinners",
-          "supply chain",
-          "capacity",
-          "shortage",
+          "#\u5c0f\u6469\u9ede\u540dai\u4f9b\u61c9\u93c8\u4e94\u5927\u8d0f\u5bb6",
           "ai",
-          "manufacturers jpmorgannamestop5aiwinners",
-          "foreign brokerage",
-          "laminates ccl",
-          "major taiwanese"
+          "\u5c0f\u6469\u9ede\u540dai\u4f9b\u61c9\u93c8\u4e94\u5927\u8d0f\u5bb6",
+          "ccl \u5230\u9ad8\u968e\u8f09\u677f",
+          "\u5230\u9ad8\u968e\u8f09\u677f substrate",
+          "morgan \u767c\u5e03\u7522\u696d\u5831\u544a\u6307\u51fa",
+          "mlcc"
         ],
         "has_images": true
       },
@@ -1124,18 +1219,17 @@
         "retweets": 5,
         "replies": 1,
         "views": 5083,
-        "text": "AI Data Center Power Efficiency Anxiety! #Power Components vs Passive Components Differences Explained at a Glance   The South Korean government has launched the \"Super Innovation Economy Plan,\" investing over 50 billion KRW in national funds, focusing on next-generation power",
+        "text": "AI \u8cc7\u6599\u4e2d\u5fc3\u7684\u96fb\u529b\u6548\u7387\u7126\u616e\uff01 #\u529f\u7387\u5143\u4ef6vs\u88ab\u52d5\u5143\u4ef6\u5dee\u7570\u4e00\u6b21\u770b\u61c2 \u5357\u97d3\u653f\u5e9c\u555f\u52d5\u300c\u8d85\u7d1a\u5275\u65b0\u7d93\u6fdf\u8a08\u756b\u300d\uff0c\u5c07\u6295\u5165\u903e 5,000 \u5104\u97d3\u5143\u570b\u5bb6\u8cc7\u91d1\uff0c\u4e3b\u653b\u78b3\u5316\u77fd\uff08SiC\uff09\u3001\u6c2e\u5316\u93b5\uff08GaN\uff09\u7b49\u6b21\u4e16\u4ee3\u529f\u7387\u534a\u5c0e\u9ad4\uff0c\u628a\u904e\u53bb\u504f\u91cd\u8a18\u61b6\u9ad4\u7684\u7522\u696d\u7d50\u69cb\uff0c\u8f49\u5411\u958b\u95e2\u7b2c\u4e8c\u6210\u9577\u66f2\u7dda\u3002\u4e09\u661f\u96fb\u5b50\u63a1\u300c\u6676\u5713\u4ee3\u5de5\uff0bIDM\u2026  http:// dlvr.it/TT8Lzn",
         "url": "https://x.com/technews_tw/status/2068848009501360145",
         "timestamp": "2026-06-22T00:06:17.000Z",
         "keywords": [
-          "#power",
-          "data center",
+          "#\u529f\u7387\u5143\u4ef6vs\u88ab\u52d5\u5143\u4ef6\u5dee\u7570\u4e00\u6b21\u770b\u61c2",
           "ai",
-          "nm",
-          "power efficiency",
-          "super innovation",
-          "components differences",
-          "korean government"
+          "\u8cc7\u6599\u4e2d\u5fc3\u7684\u96fb\u529b\u6548\u7387\u7126\u616e \u529f\u7387\u5143\u4ef6vs\u88ab\u52d5\u5143\u4ef6\u5dee\u7570\u4e00\u6b21\u770b\u61c2",
+          "000 \u5104\u97d3\u5143\u570b\u5bb6\u8cc7\u91d1",
+          "\u5357\u97d3\u653f\u5e9c\u555f\u52d5 \u8d85\u7d1a\u5275\u65b0\u7d93\u6fdf\u8a08\u756b",
+          "\u628a\u904e\u53bb\u504f\u91cd\u8a18\u61b6\u9ad4\u7684\u7522\u696d\u7d50\u69cb \u8f49\u5411\u958b\u95e2\u7b2c\u4e8c\u6210\u9577\u66f2\u7dda",
+          "gan"
         ],
         "has_images": true
       },
@@ -1146,19 +1240,18 @@
         "retweets": 3,
         "replies": 0,
         "views": 2689,
-        "text": "A single AI server devours 440,000 #MLCCs, up to 15 times that of traditional servers. Foreign investors forecast the \"passive components supercycle\" to erupt ahead of schedule, with high-end production capacity in Japan and South Korea snapped up entirely, while simultaneously",
+        "text": "\u55ae\u53f0 AI \u4f3a\u670d\u5668\u72c2\u5403 44 \u842c\u9846 #MLCC\uff0c\u9ad8\u9054\u50b3\u7d71\u4f3a\u670d\u5668\u7684 15 \u500d\u3002\u5916\u8cc7\u9810\u544a\u300c\u88ab\u52d5\u5143\u4ef6\u8d85\u7d1a\u9031\u671f\u300d\u63d0\u524d\u7206\u767c\uff0c\u65e5\u97d3\u9ad8\u7aef\u7522\u80fd\u88ab\u6436\u8a02\u4e00\u7a7a\uff0c\u66f4\u540c\u6b65\u8abf\u5347 #\u570b\u5de8 \u76ee\u6a19\u50f9\u81f3 1,515 \u5143\u3002",
         "url": "https://x.com/technews_tw/status/2069239320096178207",
         "timestamp": "2026-06-23T02:01:13.000Z",
         "keywords": [
-          "#mlccs",
-          "server",
-          "ai server",
-          "capacity",
+          "#mlcc",
+          "#\u570b\u5de8",
           "ai",
-          "forecast",
-          "000 mlccs",
-          "supercycle erupt",
-          "capacity japan"
+          "\u88ab\u52d5\u5143\u4ef6\u8d85\u7d1a\u9031\u671f",
+          "mlcc \u9ad8\u9054\u50b3\u7d71\u4f3a\u670d\u5668\u7684",
+          "\u65e5\u97d3\u9ad8\u7aef\u7522\u80fd\u88ab\u6436\u8a02\u4e00\u7a7a \u66f4\u540c\u6b65\u8abf\u5347",
+          "mlcc",
+          "515"
         ],
         "has_images": false
       },
@@ -1169,17 +1262,16 @@
         "retweets": 4,
         "replies": 0,
         "views": 3247,
-        "text": "JPMorgan names four Taiwanese firms as beneficiaries! #JPMorganUnveilsThreeMajorHardwareRevolutionsAndNewLandscapeForTaiwaneseFirms AI computing power is exploding, comprehensively reshaping the global tech hardware industry supply chain. U.S. investment bank JPMorgan (J.P.",
+        "text": "\u5c0f\u6469\u9ede\u540d\u56db\u5927\u53f0\u5ee0\u53d7\u60e0\uff01 #\u5c0f\u6469\u63ed\u793a\u4e09\u5927\u786c\u9ad4\u9769\u547d\u8207\u53f0\u5ee0\u65b0\u5c40 AI \u7b97\u529b\u5927\u7206\u767c\u6b63\u5168\u9762\u91cd\u5851\u5168\u7403\u79d1\u6280\u786c\u9ad4\u7522\u696d\u93c8\u3002\u7f8e\u8cc7\u5238\u5546\u6469\u6839\u5927\u901a\uff08J.P. Morgan\uff09\u767c\u5e03\u4e9e\u592a\u88ab\u52d5\u5143\u4ef6\u8207\u5370\u5237\u96fb\u8def\u677f\u7522\u696d\u6df1\u5ea6\u5831\u544a\uff0c\u6307\u51fa\u96a8\u8457 AI\u2026  http:// dlvr.it/TT4S32",
         "url": "https://x.com/technews_tw/status/2067033562315182521",
         "timestamp": "2026-06-16T23:56:19.000Z",
         "keywords": [
-          "#jpmorganunveilsthreemajorhardwarerevolutionsandnewlandscapefortaiwanesefirms",
-          "supply chain",
+          "#\u5c0f\u6469\u63ed\u793a\u4e09\u5927\u786c\u9ad4\u9769\u547d\u8207\u53f0\u5ee0\u65b0\u5c40",
           "ai",
-          "jpmorgan names",
-          "taiwanese firms",
-          "jpmorganunveilsthreemajorhardwarerevolutionsandnewlandscapefortaiwanesefirms ai",
-          "beneficiaries"
+          "\u5c0f\u6469\u9ede\u540d\u56db\u5927\u53f0\u5ee0\u53d7\u60e0 \u5c0f\u6469\u63ed\u793a\u4e09\u5927\u786c\u9ad4\u9769\u547d\u8207\u53f0\u5ee0\u65b0\u5c40",
+          "\u7f8e\u8cc7\u5238\u5546\u6469\u6839\u5927\u901a morgan",
+          "\u767c\u5e03\u4e9e\u592a\u88ab\u52d5\u5143\u4ef6\u8207\u5370\u5237\u96fb\u8def\u677f\u7522\u696d\u6df1\u5ea6\u5831\u544a \u6307\u51fa\u96a8\u8457",
+          "ai \u7b97\u529b\u5927\u7206\u767c\u6b63\u5168\u9762\u91cd\u5851\u5168\u7403\u79d1\u6280\u786c\u9ad4\u7522\u696d\u93c8"
         ],
         "has_images": true
       },
@@ -1190,18 +1282,17 @@
         "retweets": 5,
         "replies": 1,
         "views": 3089,
-        "text": "Despite the fact that CPO's progress in mass adoption is slower due to technical difficulties, optical communication infrastructure has become the new battleground in the AI infrastructure race! #Optical Interconnect Becomes Key to AI_Factory Expansion According to TrendForce's",
+        "text": "\u5118\u7ba1 CPO \u56e0\u6280\u8853\u56f0\u96e3\u3001\u5927\u91cf\u666e\u53ca\u7522\u9032\u5ea6\u8f03\u6162\uff0c\u4f46\u5149\u901a\u8a0a\u57fa\u790e\u8a2d\u65bd\u5df2\u6210 AI \u57fa\u790e\u5efa\u8a2d\u7af6\u8cfd\u65b0\u6230\u5834\uff01 #\u5149\u4e92\u9023\u6210AI_Factory\u64f4\u5f35\u95dc\u9375 \u6839\u64da TrendForce \u6700\u65b0\u77fd\u5149\u5b50\u7522\u696d\u7814\u7a76\uff0c\u96a8\u8457 AI \u8a13\u7df4\u8207\u63a8\u8ad6\u9700\u6c42\u5feb\u901f\u64f4\u5f35\uff0cAI\u2026  http:// dlvr.it/TT3ZgL",
         "url": "https://x.com/technews_tw/status/2066725555203137645",
         "timestamp": "2026-06-16T03:32:24.000Z",
         "keywords": [
-          "#optical",
+          "#\u5149\u4e92\u9023\u6210ai_factory\u64f4\u5f35\u95dc\u9375",
           "trendforce",
           "ai",
-          "optical interconnect",
-          "ai infrastructure",
-          "ai_factory expansion",
-          "cpo progress",
-          "adoption slower"
+          "\u57fa\u790e\u5efa\u8a2d\u7af6\u8cfd\u65b0\u6230\u5834 \u5149\u4e92\u9023\u6210ai_factory\u64f4\u5f35\u95dc\u9375",
+          "trendforce \u6700\u65b0\u77fd\u5149\u5b50\u7522\u696d\u7814\u7a76",
+          "cpo",
+          "dlvr tt3zgl"
         ],
         "has_images": true
       },
@@ -1211,88 +1302,72 @@
         "likes": 31,
         "retweets": 11,
         "replies": 0,
-        "views": 1143,
-        "text": "Nearly 30% of Taiwan's tax revenue comes from TSMC! #TSMCReignsAsTopTaxpayerForNinthTime 2025 corporate income tax settlement declarations are due by June 1. According to cross-referencing by the Ministry of Finance with corporate financial reports, TSMC has claimed the \"Top",
+        "views": 1144,
+        "text": "\u53f0\u7063\u8fd1\u4e09\u6210\u7a05\u91d1\u7531\u53f0\u7a4d\u96fb\u8ca2\u737b\uff01 #\u53f0\u7a4d\u96fb\u4e5d\u5ea6\u87ec\u806f\u7e73\u7a05\u738b 2025 \u5e74\u5ea6\u71df\u5229\u4e8b\u696d\u6240\u5f97\u7a05\u7d50\u7b97\u7533\u5831\u65bc 6 \u6708 1 \u65e5\u622a\u6b62\uff0c\u64da\u8ca1\u653f\u90e8\u7d71\u8a08\u53ca\u4f01\u696d\u8ca1\u5831\u8cc7\u6599\u4ea4\u53c9\u6bd4\u5c0d\uff0c\u53f0\u7a4d\u96fb\u7b2c\u4e5d\u5ea6\u87ec\u806f\u300c\u7e73\u7a05\u738b\u300d\u5bf6\u5ea7\uff0c5 \u6708\u7e73\u7d0d\u71df\u6240\u7a05\u8fd1 2,000\u2026  http:// dlvr.it/TT5TGr",
         "url": "https://x.com/technews_tw/status/2067438212075954564",
         "timestamp": "2026-06-18T02:44:15.000Z",
         "keywords": [
-          "#tsmcreignsastoptaxpayerforninthtime",
-          "tsmc",
-          "ai",
-          "revenue",
-          "taiwan tax",
-          "reports tsmc",
-          "revenue comes",
-          "2025 corporate",
-          "settlement declarations"
+          "#\u53f0\u7a4d\u96fb\u4e5d\u5ea6\u87ec\u806f\u7e73\u7a05\u738b",
+          "\u53f0\u7063\u8fd1\u4e09\u6210\u7a05\u91d1\u7531\u53f0\u7a4d\u96fb\u8ca2\u737b \u53f0\u7a4d\u96fb\u4e5d\u5ea6\u87ec\u806f\u7e73\u7a05\u738b",
+          "\u65e5\u622a\u6b62 \u64da\u8ca1\u653f\u90e8\u7d71\u8a08\u53ca\u4f01\u696d\u8ca1\u5831\u8cc7\u6599\u4ea4\u53c9\u6bd4\u5c0d",
+          "2025 \u5e74\u5ea6\u71df\u5229\u4e8b\u696d\u6240\u5f97\u7a05\u7d50\u7b97\u7533\u5831\u65bc",
+          "\u6708\u7e73\u7d0d\u71df\u6240\u7a05\u8fd1 000"
         ],
         "has_images": true
       }
     ],
     "best_image_keywords": [
       {
-        "keyword": "data center",
-        "avg_interaction": 64.6
+        "keyword": "#\u5c0f\u6469\u63ed\u973213\u5bb6\u53f0\u5ee0\u7372\u5229\u9632\u7dda",
+        "avg_interaction": 27.0
       },
       {
-        "keyword": "packaging",
-        "avg_interaction": 51.0
+        "keyword": "\u5c0f\u6469\u63ed\u973213\u5bb6\u53f0\u5ee0\u7372\u5229\u9632\u7dda \u5c0f\u6469\u63ed\u9732\u53f0\u5ee0\u7372\u5229\u9632\u7ddaai",
+        "avg_interaction": 27.0
       },
       {
-        "keyword": "advanced packaging",
-        "avg_interaction": 51.0
+        "keyword": "\u7b97\u529b\u72c2\u6f6e\u5e36\u52d5\u786c\u9ad4\u898f\u683c\u5168\u9762\u5347\u7d1a \u7f8e\u8cc7\u5238\u5546\u6469\u6839\u5927\u901a",
+        "avg_interaction": 27.0
       },
       {
-        "keyword": "chips",
-        "avg_interaction": 51.0
+        "keyword": "\u900f\u904e\u6295\u8cc7\u8a55\u4f30\u7e3d\u89bd\u8207\u5e95\u5c64\u8ca1\u52d9\u9810\u6e2c\u96d9\u8ecc\u4e26\u884c\u7684\u6578\u64da \u7cbe\u6e96\u91cf\u5316\u53f0\u7063",
+        "avg_interaction": 27.0
       },
       {
-        "keyword": "supply chain",
-        "avg_interaction": 50.43
+        "keyword": "\u52a0\u78bc",
+        "avg_interaction": 27.0
       }
     ],
     "top_hashtags_by_interaction": [
       {
-        "hashtag": "#optical",
-        "avg_interaction": 28.5,
+        "hashtag": "#\u73bb\u7483\u57fa\u677f",
+        "avg_interaction": 27.0,
         "tweet_count": 2,
-        "avg_views": 1733.5
+        "avg_views": 1297.5
       },
       {
-        "hashtag": "#jpmorgan",
-        "avg_interaction": 27.33,
-        "tweet_count": 3,
-        "avg_views": 1442.33
-      },
-      {
-        "hashtag": "#abf",
-        "avg_interaction": 24.0,
+        "hashtag": "#\u5c0f\u6469\u63ed\u973213\u5bb6\u53f0\u5ee0\u7372\u5229\u9632\u7dda",
+        "avg_interaction": 27.0,
         "tweet_count": 2,
-        "avg_views": 1448.5
+        "avg_views": 1302.5
       },
       {
-        "hashtag": "#0050",
-        "avg_interaction": 15.0,
+        "hashtag": "#mlcc",
+        "avg_interaction": 15.5,
+        "tweet_count": 4,
+        "avg_views": 845.75
+      },
+      {
+        "hashtag": "#\u570b\u5de8",
+        "avg_interaction": 13.25,
+        "tweet_count": 4,
+        "avg_views": 787.25
+      },
+      {
+        "hashtag": "#\u5eb7\u5be7",
+        "avg_interaction": 12.5,
         "tweet_count": 2,
-        "avg_views": 891.0
-      },
-      {
-        "hashtag": "#tsmc",
-        "avg_interaction": 12.29,
-        "tweet_count": 14,
-        "avg_views": 659.43
-      },
-      {
-        "hashtag": "#marvell",
-        "avg_interaction": 11.0,
-        "tweet_count": 3,
-        "avg_views": 599.0
-      },
-      {
-        "hashtag": "#intel",
-        "avg_interaction": 10.8,
-        "tweet_count": 5,
-        "avg_views": 830.0
+        "avg_views": 658.5
       },
       {
         "hashtag": "#copos",
@@ -1307,22 +1382,16 @@
         "avg_views": 602.0
       },
       {
-        "hashtag": "#memory",
-        "avg_interaction": 9.5,
-        "tweet_count": 4,
-        "avg_views": 743.5
-      },
-      {
-        "hashtag": "#apple",
+        "hashtag": "#marvell",
         "avg_interaction": 9.0,
         "tweet_count": 2,
-        "avg_views": 450.5
+        "avg_views": 559.0
       },
       {
-        "hashtag": "#inp",
-        "avg_interaction": 8.0,
+        "hashtag": "#\u9081\u5a01\u723e",
+        "avg_interaction": 9.0,
         "tweet_count": 2,
-        "avg_views": 412.0
+        "avg_views": 466.0
       },
       {
         "hashtag": "#\u8166\u6a5f\u4ecb\u9762",
@@ -1331,23 +1400,46 @@
         "avg_views": 211.0
       },
       {
-        "hashtag": "#samsung",
-        "avg_interaction": 7.5,
-        "tweet_count": 2,
-        "avg_views": 517.0
-      },
-      {
-        "hashtag": "#tesla",
+        "hashtag": "#spacex\u4e0a\u5e02\u8292\u679c\u80a1\u547c\u8072\u9ad8",
         "avg_interaction": 7.0,
         "tweet_count": 2,
-        "avg_views": 415.5
+        "avg_views": 236.0
+      },
+      {
+        "hashtag": "#\u53f0\u7a4d\u96fb",
+        "avg_interaction": 6.67,
+        "tweet_count": 43,
+        "avg_views": 369.26
+      },
+      {
+        "hashtag": "#\u93a7\u4fe0",
+        "avg_interaction": 6.5,
+        "tweet_count": 2,
+        "avg_views": 253.5
+      },
+      {
+        "hashtag": "#\u5148\u9032\u5c01\u88dd",
+        "avg_interaction": 6.33,
+        "tweet_count": 3,
+        "avg_views": 424.0
+      },
+      {
+        "hashtag": "#tech",
+        "avg_interaction": 6.0,
+        "tweet_count": 2,
+        "avg_views": 533.5
       }
     ],
     "top_hashtags_by_usage": [
       {
         "hashtag": "#ai",
-        "tweet_count": 68,
-        "avg_interaction": 3.96
+        "tweet_count": 66,
+        "avg_interaction": 3.11
+      },
+      {
+        "hashtag": "#\u53f0\u7a4d\u96fb",
+        "tweet_count": 43,
+        "avg_interaction": 6.67
       },
       {
         "hashtag": "#spacex",
@@ -1356,18 +1448,13 @@
       },
       {
         "hashtag": "#\u860b\u679c",
-        "tweet_count": 31,
-        "avg_interaction": 2.65
-      },
-      {
-        "hashtag": "#\u53f0\u7a4d\u96fb",
-        "tweet_count": 30,
-        "avg_interaction": 4.3
+        "tweet_count": 33,
+        "avg_interaction": 3.03
       },
       {
         "hashtag": "#\u8f1d\u9054",
-        "tweet_count": 27,
-        "avg_interaction": 3.3
+        "tweet_count": 29,
+        "avg_interaction": 3.66
       },
       {
         "hashtag": "#openai",
@@ -1381,8 +1468,8 @@
       },
       {
         "hashtag": "#\u82f1\u7279\u723e",
-        "tweet_count": 17,
-        "avg_interaction": 3.65
+        "tweet_count": 21,
+        "avg_interaction": 5.33
       },
       {
         "hashtag": "#google",
@@ -1390,19 +1477,19 @@
         "avg_interaction": 3.87
       },
       {
-        "hashtag": "#amd",
-        "tweet_count": 14,
-        "avg_interaction": 3.79
-      },
-      {
-        "hashtag": "#tsmc",
-        "tweet_count": 14,
-        "avg_interaction": 12.29
-      },
-      {
         "hashtag": "#\u9ec3\u4ec1\u52f3",
+        "tweet_count": 14,
+        "avg_interaction": 2.86
+      },
+      {
+        "hashtag": "#sk\u6d77\u529b\u58eb",
         "tweet_count": 13,
-        "avg_interaction": 2.31
+        "avg_interaction": 2.69
+      },
+      {
+        "hashtag": "#amd",
+        "tweet_count": 13,
+        "avg_interaction": 2.46
       },
       {
         "hashtag": "#ipo",
@@ -1410,83 +1497,128 @@
         "avg_interaction": 1.54
       },
       {
-        "hashtag": "#sk\u6d77\u529b\u58eb",
+        "hashtag": "#\u8a18\u61b6\u9ad4",
         "tweet_count": 12,
-        "avg_interaction": 2.58
+        "avg_interaction": 4.5
       },
       {
-        "hashtag": "#\u99ac\u65af\u514b",
+        "hashtag": "#\u4e09\u661f",
         "tweet_count": 12,
-        "avg_interaction": 2.0
+        "avg_interaction": 3.0
       }
     ],
     "language": {
       "chinese": {
-        "tweet_count": 716,
-        "avg_interaction": 2.38,
-        "avg_views": 176.45,
-        "top_tweets": [
+        "tweet_count": 841,
+        "avg_interaction": 4.4,
+        "avg_views": 322.88,
+        "img_with": {
+          "avg": 21.31,
+          "count": 74
+        },
+        "img_without": {
+          "avg": 2.77,
+          "count": 767
+        },
+        "best_hours": [
           {
-            "rank": 1,
-            "interaction": 18,
-            "likes": 17,
-            "retweets": 1,
-            "replies": 0,
-            "views": 848,
-            "text": "#\u53f0\u7a4d\u96fb \u6b21\u4e16\u4ee3\u5148\u9032\u5c01\u88dd #CoPoS \u65bc 2026 \u5e74 6 \u6708\u6b63\u5f0f\u9032\u6a5f\u8a66\u7522\u3002",
-            "translated_text": "#\u53f0\u7a4d\u96fb \u6b21\u4e16\u4ee3\u5148\u9032\u5c01\u88dd #CoPoS \u65bc 2026 \u5e74 6 \u6708\u6b63\u5f0f\u9032\u6a5f\u8a66\u7522\u3002",
-            "url": "https://x.com/technews_tw/status/2064539606566199716"
+            "hour": 8,
+            "avg_interaction": 13.5,
+            "tweet_count": 26
           },
           {
-            "rank": 2,
-            "interaction": 16,
-            "likes": 16,
-            "retweets": 0,
-            "replies": 0,
-            "views": 1086,
-            "text": "\u80a1\u5229\u9810\u8a08 7/9 \u5165\u5e33\uff01 #\u53f0\u7a4d\u96fb\u9664\u606f6\u5143\u79d2\u586b\u606f \u53f0\u7a4d\u96fb\uff082330\uff09\u4eca\u65e5\u9664\u606f 6 \u5143\uff0c\u5118\u7ba1\u524d\u4e00\u665a\u7f8e\u80a1\u56e0\u7f8e\u4f0a\u7dca\u5f35\u8207\u901a\u81a8\u6578\u64da\u8d70\u5f31\u3001ADR \u540c\u6b65\u91cd\u632b\uff0c\u5916\u8cc7\u8fd1\u671f\u66f4\u55ae\u65e5\u8ce3\u8d85\u903e 900 \u5104\u5143\uff0c\u53f0\u80a1\u65e9\u76e4\u4e00\u5ea6\u6025\u632b\u903e 300 \u9ede\uff0c\u53f0\u7a4d\u96fb\u4ecd\u5728\u958b\u76e4\u5f8c\u50c5 24\u2026  http:// dlvr.it/TSzZBp",
-            "translated_text": "\u80a1\u5229\u9810\u8a08 7/9 \u5165\u5e33\uff01 #\u53f0\u7a4d\u96fb\u9664\u606f6\u5143\u79d2\u586b\u606f \u53f0\u7a4d\u96fb\uff082330\uff09\u4eca\u65e5\u9664\u606f 6 \u5143\uff0c\u5118\u7ba1\u524d\u4e00\u665a\u7f8e\u80a1\u56e0\u7f8e\u4f0a\u7dca\u5f35\u8207\u901a\u81a8\u6578\u64da\u8d70\u5f31\u3001ADR \u540c\u6b65\u91cd\u632b\uff0c\u5916\u8cc7\u8fd1\u671f\u66f4\u55ae\u65e5\u8ce3\u8d85\u903e 900 \u5104\u5143\uff0c\u53f0\u80a1\u65e9\u76e4\u4e00\u5ea6\u6025\u632b\u903e 300 \u9ede\uff0c\u53f0\u7a4d\u96fb\u4ecd\u5728\u958b\u76e4\u5f8c\u50c5 24\u2026  http:// dlvr.it/TSzZBp",
-            "url": "https://x.com/technews_tw/status/2064913081025867884"
+            "hour": 7,
+            "avg_interaction": 9.5,
+            "tweet_count": 16
           },
           {
-            "rank": 3,
-            "interaction": 14,
-            "likes": 13,
-            "retweets": 1,
-            "replies": 0,
-            "views": 609,
-            "text": "\u53f0\u9054\u96fb\u8463\u4e8b\u9577\u912d\u5e73\u76f4\u8a00\u96fb\u529b\u7f3a\u53e3\u5df2\u6210 AI \u5efa\u8a2d\u6700\u5927\u7d46\u8173\u77f3\uff012025 \u5e74\u5168\u7403 AI \u5efa\u8a2d\u5ef6\u8aa4\u6050\u9054 1,560 \u5104\u7f8e\u5143\uff0c\u96fb\u529b\u7cfb\u7d71\u6295\u8cc7\u6210\u9577\u901f\u5ea6\u8d95\u4e0d\u4e0a CSP \u6295\u8cc7\u4e00\u534a\u3002 #\u53f0\u9054\u96fb #AI\u57fa\u790e\u8a2d\u65bd #\u96fb\u529b\u7f3a\u53e3",
-            "translated_text": "\u53f0\u9054\u96fb\u8463\u4e8b\u9577\u912d\u5e73\u76f4\u8a00\u96fb\u529b\u7f3a\u53e3\u5df2\u6210 AI \u5efa\u8a2d\u6700\u5927\u7d46\u8173\u77f3\uff012025 \u5e74\u5168\u7403 AI \u5efa\u8a2d\u5ef6\u8aa4\u6050\u9054 1,560 \u5104\u7f8e\u5143\uff0c\u96fb\u529b\u7cfb\u7d71\u6295\u8cc7\u6210\u9577\u901f\u5ea6\u8d95\u4e0d\u4e0a CSP \u6295\u8cc7\u4e00\u534a\u3002 #\u53f0\u9054\u96fb #AI\u57fa\u790e\u8a2d\u65bd #\u96fb\u529b\u7f3a\u53e3",
-            "url": "https://x.com/technews_tw/status/2063457056166932545"
+            "hour": 10,
+            "avg_interaction": 7.1,
+            "tweet_count": 69
           },
           {
-            "rank": 4,
-            "interaction": 11,
-            "likes": 9,
-            "retweets": 2,
-            "replies": 0,
-            "views": 834,
-            "text": "#\u53f0\u9054\u96fb \u5e03\u5c40 SOFC \u71c3\u6599\u96fb\u6c60\uff0c\u6210\u70ba\u5206\u6563\u5f0f\u80fd\u6e90\u65b0\u89e3\u65b9\uff01",
-            "translated_text": "#\u53f0\u9054\u96fb \u5e03\u5c40 SOFC \u71c3\u6599\u96fb\u6c60\uff0c\u6210\u70ba\u5206\u6563\u5f0f\u80fd\u6e90\u65b0\u89e3\u65b9\uff01",
-            "url": "https://x.com/technews_tw/status/2068666796073496985"
+            "hour": 14,
+            "avg_interaction": 5.46,
+            "tweet_count": 59
           },
           {
-            "rank": 5,
-            "interaction": 11,
-            "likes": 11,
-            "retweets": 0,
-            "replies": 0,
-            "views": 438,
-            "text": "\u6469\u6839\u5927\u901a\u767c\u5e03\u6700\u65b0\u5831\u544a\uff0c\u5c07 #\u83ef\u90a6\u96fb \u76ee\u6a19\u50f9\u4e00\u8209\u558a\u4e0a 255 \u5143\uff0c\u5275\u4e0b\u5916\u8cc7\u6700\u9ad8\u7d00\u9304\u3002",
-            "translated_text": "\u6469\u6839\u5927\u901a\u767c\u5e03\u6700\u65b0\u5831\u544a\uff0c\u5c07 #\u83ef\u90a6\u96fb \u76ee\u6a19\u50f9\u4e00\u8209\u558a\u4e0a 255 \u5143\uff0c\u5275\u4e0b\u5916\u8cc7\u6700\u9ad8\u7d00\u9304\u3002",
-            "url": "https://x.com/technews_tw/status/2068620223901811169"
+            "hour": 11,
+            "avg_interaction": 5.16,
+            "tweet_count": 69
           }
-        ]
-      },
-      "english": {
-        "tweet_count": 134,
-        "avg_interaction": 15.31,
-        "avg_views": 1122.06,
+        ],
+        "best_days": [
+          {
+            "day": "Wednesday",
+            "avg_interaction": 6.33
+          },
+          {
+            "day": "Sunday",
+            "avg_interaction": 5.56
+          },
+          {
+            "day": "Tuesday",
+            "avg_interaction": 4.52
+          },
+          {
+            "day": "Monday",
+            "avg_interaction": 4.41
+          },
+          {
+            "day": "Saturday",
+            "avg_interaction": 4.32
+          },
+          {
+            "day": "Thursday",
+            "avg_interaction": 3.97
+          },
+          {
+            "day": "Friday",
+            "avg_interaction": 2.84
+          }
+        ],
+        "top_hashtags": [
+          {
+            "hashtag": "#\u73bb\u7483\u57fa\u677f",
+            "avg_interaction": 27.0,
+            "tweet_count": 2
+          },
+          {
+            "hashtag": "#\u5c0f\u6469\u63ed\u973213\u5bb6\u53f0\u5ee0\u7372\u5229\u9632\u7dda",
+            "avg_interaction": 27.0,
+            "tweet_count": 2
+          },
+          {
+            "hashtag": "#mlcc",
+            "avg_interaction": 15.5,
+            "tweet_count": 4
+          },
+          {
+            "hashtag": "#\u570b\u5de8",
+            "avg_interaction": 13.25,
+            "tweet_count": 4
+          },
+          {
+            "hashtag": "#\u5eb7\u5be7",
+            "avg_interaction": 12.5,
+            "tweet_count": 2
+          },
+          {
+            "hashtag": "#copos",
+            "avg_interaction": 10.0,
+            "tweet_count": 2
+          },
+          {
+            "hashtag": "#\u53f0\u9054\u96fb",
+            "avg_interaction": 9.6,
+            "tweet_count": 5
+          },
+          {
+            "hashtag": "#marvell",
+            "avg_interaction": 9.0,
+            "tweet_count": 2
+          }
+        ],
         "top_tweets": [
           {
             "rank": 1,
@@ -1494,9 +1626,8 @@
             "likes": 125,
             "retweets": 19,
             "replies": 4,
-            "views": 10020,
-            "text": "Indium Phosphide Substrate Capacity to Expand 10-Fold Within 4 Years! #IndiumPhosphideInP Epitaxial Supply Chain JX Metal announced in a press release on the 16th that, in response to the growing demand for optical communication infrastructure used in data centers, it will",
-            "translated_text": "Indium Phosphide Substrate Capacity to Expand 10-Fold Within 4 Years! #IndiumPhosphideInP Epitaxial Supply Chain JX Metal announced in a press release on the 16th that, in response to the growing demand for optical communication infrastructure used in data centers, it will",
+            "views": 10021,
+            "text": "\u78f7\u5316\u92a6\u57fa\u677f\u7522\u80fd 4 \u5e74\u5167\u64f4\u589e\u81f3 10 \u500d\uff01 #\u78f7\u5316\u92a6InP\u78ca\u6676\u4f9b\u61c9\u93c8 JX \u91d1\u5c6c 16 \u65e5\u767c\u5e03\u65b0\u805e\u7a3f\u5ba3\u5e03\uff0c\u70ba\u4e86\u56e0\u61c9\u8cc7\u6599\u4e2d\u5fc3\u7528\u5149\u901a\u8a0a\u57fa\u790e\u8a2d\u65bd\u9700\u6c42\u64f4\u5927\uff0c\u5c07\u9032\u4e00\u6b65\u64f4\u589e InP \u57fa\u677f\u7522\u80fd\uff0c\u8a08\u756b\u5728\u4eca\u5f8c 4 \u5e74\u6700\u9ad8\u6295\u8cc7 1,200 \u5104\u65e5\u5713\uff08\u5305\u542b\u4e4b\u524d\u516c\u5e03\u7684\u6295\u8cc7\u8a08\u756b\u8a08\u7b97\u3001\u7e3d\u6295\u8cc7\u984d\u5c07\u9054 1,500\u2026  http:// dlvr.it/TT4WKF",
             "url": "https://x.com/technews_tw/status/2067073313957146678"
           },
           {
@@ -1505,9 +1636,8 @@
             "likes": 71,
             "retweets": 10,
             "replies": 2,
-            "views": 9441,
-            "text": "Morgan Stanley raises Yageo target price to 1,355 yuan, with even the chance to challenge the sky-high 2,055 yuan! #MorganStanleyNamesYageoUltimateMLCCWinner Passive component industry to usher in a new round of major cycle, Morgan Stanley's latest research report candidly admits",
-            "translated_text": "Morgan Stanley raises Yageo target price to 1,355 yuan, with even the chance to challenge the sky-high 2,055 yuan! #MorganStanleyNamesYageoUltimateMLCCWinner Passive component industry to usher in a new round of major cycle, Morgan Stanley's latest research report candidly admits",
+            "views": 9442,
+            "text": "\u5927\u6469\u4e0a\u8abf\u570b\u5de8\u76ee\u6a19\u50f9\u81f3 1,355 \u5143\uff0c\u751a\u81f3\u6709\u6a5f\u6703\u6311\u6230 2,055 \u5143\u7684\u5929\u50f9\uff01 #\u5927\u6469\u9ede\u540d\u570b\u5de8MLCC\u7d42\u6975\u5927\u8d0f\u5bb6 \u88ab\u52d5\u5143\u4ef6\u7522\u696d\u5c07\u8fce\u4f86\u65b0\u4e00\u8f2a\u5927\u5faa\u74b0\uff0c\u6469\u6839\u58eb\u4e39\u5229\u6700\u65b0\u7814\u7a76\u5831\u544a\u4e2d\u5766\u8a00\uff0c\u904e\u53bb\u56b4\u91cd\u4f4e\u4f30\u96f2\u7aef AI \u5c0d\u7a4d\u5c64\u9676\u74f7\u96fb\u5bb9\uff08MLCC\uff09\u5e02\u5834\u5e36\u4f86\u7684\u300c\u4e8c\u968e\u6548\u61c9\u300d \uff0c\u96a8\u8457 AI\u2026  http:// dlvr.it/TT2lHB",
             "url": "https://x.com/technews_tw/status/2066409421467779571"
           },
           {
@@ -1517,8 +1647,7 @@
             "retweets": 8,
             "replies": 4,
             "views": 5556,
-            "text": "Can Glass Substrates Really Shoulder the Burden of AI Packaging? #GlassSubstrateEcosystemSupplyChain AI chips drive demand for high-density packaging, propelling glass substrates to become a key material in advanced packaging. With the advantages of large-scale sizing, high",
-            "translated_text": "Can Glass Substrates Really Shoulder the Burden of AI Packaging? #GlassSubstrateEcosystemSupplyChain AI chips drive demand for high-density packaging, propelling glass substrates to become a key material in advanced packaging. With the advantages of large-scale sizing, high",
+            "text": "\u73bb\u7483\u57fa\u677f\u771f\u80fd\u625b\u8d77 AI \u5c01\u88dd\u5927\u4efb\uff1f #\u73bb\u7483\u57fa\u677f\u751f\u614b\u7cfb\u4f9b\u61c9\u93c8 AI \u6676\u7247\u5e36\u52d5\u9ad8\u5bc6\u5ea6\u5c01\u88dd\u9700\u6c42\uff0c\u73bb\u7483\u57fa\u677f\u8e8d\u5c45\u5148\u9032\u5c01\u88dd\u95dc\u9375\u6750\u6599\u3002\u6191\u85c9\u53ef\u5927\u5c3a\u5bf8\u5316\u3001\u9ad8\u5e73\u6574\u5ea6\u8207\u63a5\u8fd1\u77fd\u6676\u5713\u7684\u71b1\u81a8\u8139\u4fc2\u6578\uff0c\u73bb\u7483\u57fa\u677f\u88ab\u8996\u70ba\u6709\u6a5f\u8f09\u677f\u4e4b\u5f8c\u7684\u6b21\u4e16\u4ee3 IC \u8f09\u677f\u3002\u53f0\u7a4d\u96fb\u8fd1\u671f\u8868\u614b\u73bb\u7483\u57fa\u677f\u6280\u8853\u6c92\u6709\u6377\u5f91\uff0cCoPoS\u2026  http:// dlvr.it/TSyY9S",
             "url": "https://x.com/technews_tw/status/2064505979157581858"
           },
           {
@@ -1528,8 +1657,7 @@
             "retweets": 9,
             "replies": 0,
             "views": 9064,
-            "text": "800V HVDC Becomes New Power Supply Standard for AI Data Centers! #AI\u8cc7\u6599\u4e2d\u5fc3\u50f9\u503c\u93c8 The AI computing race is extending from chips to power infrastructure. Market sources indicate that Delta Electronics' long-planned \u00b1400V and 800V high-voltage direct current power supply (HVDC)",
-            "translated_text": "800V HVDC Becomes New Power Supply Standard for AI Data Centers! #AI\u8cc7\u6599\u4e2d\u5fc3\u50f9\u503c\u93c8 The AI computing race is extending from chips to power infrastructure. Market sources indicate that Delta Electronics' long-planned \u00b1400V and 800V high-voltage direct current power supply (HVDC)",
+            "text": "800V HVDC \u6210 AI \u8cc7\u6599\u4e2d\u5fc3\u65b0\u4f9b\u96fb\u6a19\u6e96\uff01 #AI\u8cc7\u6599\u4e2d\u5fc3\u50f9\u503c\u93c8 AI \u904b\u7b97\u7af6\u8cfd\u6b63\u5f9e\u6676\u7247\u5ef6\u4f38\u81f3\u96fb\u529b\u57fa\u790e\u8a2d\u65bd\u3002\u5e02\u5834\u50b3\u51fa\uff0c\u53f0\u9054\u96fb\u5e03\u5c40\u591a\u5e74\u7684 \u00b1400V \u53ca 800V \u9ad8\u58d3\u76f4\u6d41\u4f9b\u96fb\uff08HVDC\uff09\u65b9\u6848\uff0c\u5df2\u5206\u5225\u7372\u5f97\u5169\u5bb6\u7f8e\u7cfb AI \u6307\u6a19\u5ba2\u6236\u63a1\u7528\uff0c\u76f8\u95dc\u7522\u54c1\u9810\u8a08\u7b2c\u4e09\u5b63\u958b\u59cb\u51fa\u8ca8\uff0c\u4e26\u5c0e\u5165\u65b0\u4e00\u4ee3 AI \u8cc7\u6599\u4e2d\u5fc3\u3002\u2026  http:// dlvr.it/TSsSgR",
             "url": "https://x.com/technews_tw/status/2062324291346313413"
           },
           {
@@ -1538,10 +1666,131 @@
             "likes": 48,
             "retweets": 9,
             "replies": 0,
-            "views": 4084,
-            "text": "JPMorgan names 4 major Taiwanese manufacturers! #JPMorganNamesTop5AIWinners AI wave sweeps global hardware supply chain, multilayer ceramic capacitors (MLCC), copper-clad laminates (CCL) to high-end substrates (Substrate) facing full capacity shortages. Foreign brokerage JPMorgan",
-            "translated_text": "JPMorgan names 4 major Taiwanese manufacturers! #JPMorganNamesTop5AIWinners AI wave sweeps global hardware supply chain, multilayer ceramic capacitors (MLCC), copper-clad laminates (CCL) to high-end substrates (Substrate) facing full capacity shortages. Foreign brokerage JPMorgan",
+            "views": 4085,
+            "text": "\u5c0f\u6469\u9ede\u540d 4 \u5927\u53f0\u5ee0\uff01 #\u5c0f\u6469\u9ede\u540dAI\u4f9b\u61c9\u93c8\u4e94\u5927\u8d0f\u5bb6 AI \u6d6a\u6f6e\u5e2d\u6372\u5168\u7403\u786c\u9ad4\u4f9b\u61c9\u93c8\uff0c\u7a4d\u5c64\u9676\u74f7\u96fb\u5bb9\uff08MLCC\uff09\u3001\u9285\u7b94\u57fa\u677f\uff08CCL\uff09\u5230\u9ad8\u968e\u8f09\u677f\uff08Substrate\uff09\u7522\u80fd\u5168\u9762\u5403\u7dca\u3002\u5916\u8cc7\u5238\u5546\u6469\u6839\u5927\u901a\uff08J.P. Morgan\uff09\u767c\u5e03\u7522\u696d\u5831\u544a\u6307\u51fa\uff0cAI\u2026  http:// dlvr.it/TT3lyV",
             "url": "https://x.com/technews_tw/status/2066802549764829202"
+          }
+        ]
+      },
+      "english": {
+        "tweet_count": 9,
+        "avg_interaction": 5.67,
+        "avg_views": 573.44,
+        "img_with": {
+          "avg": 11.25,
+          "count": 4
+        },
+        "img_without": {
+          "avg": 1.2,
+          "count": 5
+        },
+        "best_hours": [
+          {
+            "hour": 11,
+            "avg_interaction": 13.0,
+            "tweet_count": 2
+          },
+          {
+            "hour": 12,
+            "avg_interaction": 9.0,
+            "tweet_count": 1
+          },
+          {
+            "hour": 15,
+            "avg_interaction": 6.0,
+            "tweet_count": 1
+          },
+          {
+            "hour": 14,
+            "avg_interaction": 6.0,
+            "tweet_count": 1
+          },
+          {
+            "hour": 13,
+            "avg_interaction": 1.33,
+            "tweet_count": 3
+          }
+        ],
+        "best_days": [
+          {
+            "day": "Wednesday",
+            "avg_interaction": 24.0
+          },
+          {
+            "day": "Thursday",
+            "avg_interaction": 4.0
+          },
+          {
+            "day": "Tuesday",
+            "avg_interaction": 3.25
+          },
+          {
+            "day": "Sunday",
+            "avg_interaction": 2.0
+          }
+        ],
+        "top_hashtags": [
+          {
+            "hashtag": "#tech",
+            "avg_interaction": 6.0,
+            "tweet_count": 2
+          },
+          {
+            "hashtag": "#ai",
+            "avg_interaction": 3.75,
+            "tweet_count": 4
+          }
+        ],
+        "top_tweets": [
+          {
+            "rank": 1,
+            "interaction": 24,
+            "likes": 20,
+            "retweets": 4,
+            "replies": 0,
+            "views": 1644,
+            "text": "JPMorgan names 5 AI supply chain winners  AI demand is straining MLCC, CCL & substrate capacity, squeezing traditional components. JPMorgan tips Yageo, EMC, Unimicron, Chroma & Japan's Ibiden to gain pricing power and a profit surge on tech and material edges.",
+            "url": "https://x.com/technews_tw/status/2067093992324633028"
+          },
+          {
+            "rank": 2,
+            "interaction": 9,
+            "likes": 6,
+            "retweets": 0,
+            "replies": 3,
+            "views": 1024,
+            "text": "Western Digital just named the 2 biggest storage challenges of the AI era   Scaling capacity to keep up with exponential data growth   Controlling total cost of ownership (TCO) The answer? A tiered memory stack: SRAM \u2192 HBM \u2192 DRAM \u2192 NAND/SSD. ",
+            "url": "https://x.com/technews_tw/status/2069272324696842390"
+          },
+          {
+            "rank": 3,
+            "interaction": 6,
+            "likes": 6,
+            "retweets": 0,
+            "replies": 0,
+            "views": 641,
+            "text": " Micron's (  $MU  ) surge is just a teaser. TrendForce previously projected Agentic AI to spark a mega-cycle, pushing memory to a $1.28T market by 2027!   The Shift:  Agentic AI loops spike DRAM demand  HBM capacity squeeze locks in supplier pricing power.  #AI #Tech",
+            "url": "https://x.com/technews_tw/status/2070053128335237120"
+          },
+          {
+            "rank": 4,
+            "interaction": 6,
+            "likes": 4,
+            "retweets": 0,
+            "replies": 2,
+            "views": 426,
+            "text": " Micron ($MU) rebounds from its recent dip, posting a record Q3 rev of $41.5B (84.9% margin) for a 15% AH jump.   The driver? Diversified AI growth:   HBM4 (Compute)   Gen6 SSD (Storage)   LPDDR5X (Edge)  Strong Q4 outlook sets guidance at $50B!   #AI #Micron #Tech",
+            "url": "https://x.com/technews_tw/status/2070036718691205396"
+          },
+          {
+            "rank": 5,
+            "interaction": 2,
+            "likes": 2,
+            "retweets": 0,
+            "replies": 0,
+            "views": 477,
+            "text": "3/ The tiered playbook, each layer doing one job well:  SRAM \u2014 on-chip, fastest  HBM \u2014 in-package  DRAM \u2014 on-board  NAND / SSD \u2014 external, highest capacity  Speed, capacity & cost, balanced across the stack.",
+            "url": "https://x.com/technews_tw/status/2069290268717920280"
           }
         ]
       }
@@ -1550,8 +1799,8 @@
       "avg_interaction": 4.42,
       "median_interaction": 2,
       "max_interaction": 148,
-      "avg_views": 325.52,
-      "max_views": 10020
+      "avg_views": 325.53,
+      "max_views": 10021
     }
   },
   "combined": {
@@ -1722,23 +1971,23 @@
     },
     "top_keywords": [
       {
-        "keyword": "agentic ai",
-        "avg_interaction": 139.0,
-        "tweet_count": 5
+        "keyword": "memory prices",
+        "avg_interaction": 165.0,
+        "tweet_count": 3
       },
       {
-        "keyword": "memory prices",
-        "avg_interaction": 107.8,
-        "tweet_count": 5
+        "keyword": "forecast",
+        "avg_interaction": 124.25,
+        "tweet_count": 4
+      },
+      {
+        "keyword": "agentic ai",
+        "avg_interaction": 117.33,
+        "tweet_count": 6
       },
       {
         "keyword": "memory giants",
         "avg_interaction": 101.17,
-        "tweet_count": 6
-      },
-      {
-        "keyword": "forecast",
-        "avg_interaction": 92.17,
         "tweet_count": 6
       },
       {
@@ -1749,6 +1998,11 @@
       {
         "keyword": "intel foundry",
         "avg_interaction": 78.0,
+        "tweet_count": 3
+      },
+      {
+        "keyword": "llm",
+        "avg_interaction": 76.33,
         "tweet_count": 3
       },
       {
@@ -1787,14 +2041,9 @@
         "tweet_count": 3
       },
       {
-        "keyword": "dram suppliers",
-        "avg_interaction": 58.67,
-        "tweet_count": 3
-      },
-      {
-        "keyword": "llm",
-        "avg_interaction": 57.75,
-        "tweet_count": 4
+        "keyword": "sk hynix",
+        "avg_interaction": 61.72,
+        "tweet_count": 18
       }
     ],
     "top_tweets": [
@@ -1959,22 +2208,17 @@
         "likes": 125,
         "retweets": 19,
         "replies": 4,
-        "views": 10020,
-        "text": "Indium Phosphide Substrate Capacity to Expand 10-Fold Within 4 Years! #IndiumPhosphideInP Epitaxial Supply Chain JX Metal announced in a press release on the 16th that, in response to the growing demand for optical communication infrastructure used in data centers, it will",
+        "views": 10021,
+        "text": "\u78f7\u5316\u92a6\u57fa\u677f\u7522\u80fd 4 \u5e74\u5167\u64f4\u589e\u81f3 10 \u500d\uff01 #\u78f7\u5316\u92a6InP\u78ca\u6676\u4f9b\u61c9\u93c8 JX \u91d1\u5c6c 16 \u65e5\u767c\u5e03\u65b0\u805e\u7a3f\u5ba3\u5e03\uff0c\u70ba\u4e86\u56e0\u61c9\u8cc7\u6599\u4e2d\u5fc3\u7528\u5149\u901a\u8a0a\u57fa\u790e\u8a2d\u65bd\u9700\u6c42\u64f4\u5927\uff0c\u5c07\u9032\u4e00\u6b65\u64f4\u589e InP \u57fa\u677f\u7522\u80fd\uff0c\u8a08\u756b\u5728\u4eca\u5f8c 4 \u5e74\u6700\u9ad8\u6295\u8cc7 1,200 \u5104\u65e5\u5713\uff08\u5305\u542b\u4e4b\u524d\u516c\u5e03\u7684\u6295\u8cc7\u8a08\u756b\u8a08\u7b97\u3001\u7e3d\u6295\u8cc7\u984d\u5c07\u9054 1,500\u2026  http:// dlvr.it/TT4WKF",
         "url": "https://x.com/technews_tw/status/2067073313957146678",
         "timestamp": "2026-06-17T02:34:17.000Z",
         "keywords": [
-          "#indiumphosphideinp",
-          "data center",
-          "supply chain",
-          "capacity",
-          "demand",
-          "ai",
-          "indium phosphide",
-          "substrate capacity",
-          "chain jx",
-          "metal announced",
-          "optical communication"
+          "#\u78f7\u5316\u92a6inp\u78ca\u6676\u4f9b\u61c9\u93c8",
+          "\u8a08\u756b\u5728\u4eca\u5f8c \u5e74\u6700\u9ad8\u6295\u8cc7",
+          "\u65e5\u767c\u5e03\u65b0\u805e\u7a3f\u5ba3\u5e03 \u70ba\u4e86\u56e0\u61c9\u8cc7\u6599\u4e2d\u5fc3\u7528\u5149\u901a\u8a0a\u57fa\u790e\u8a2d\u65bd\u9700\u6c42\u64f4\u5927",
+          "10 \u78f7\u5316\u92a6inp\u78ca\u6676\u4f9b\u61c9\u93c8",
+          "jx \u91d1\u5c6c",
+          "inp"
         ],
         "has_images": true
       },
@@ -2053,12 +2297,12 @@
     ],
     "best_image_keywords": [
       {
-        "keyword": "#arm",
-        "avg_interaction": 260.5
+        "keyword": "#amd",
+        "avg_interaction": 261.0
       },
       {
-        "keyword": "#amd",
-        "avg_interaction": 181.0
+        "keyword": "#arm",
+        "avg_interaction": 260.5
       },
       {
         "keyword": "agentic ai",
@@ -2111,6 +2355,12 @@
         "avg_views": 5069.5
       },
       {
+        "hashtag": "#kioxia",
+        "avg_interaction": 56.22,
+        "tweet_count": 9,
+        "avg_views": 12789.22
+      },
+      {
         "hashtag": "#sandisk",
         "avg_interaction": 53.73,
         "tweet_count": 11,
@@ -2141,28 +2391,22 @@
         "avg_views": 6434.0
       },
       {
-        "hashtag": "#kioxia",
-        "avg_interaction": 51.0,
-        "tweet_count": 10,
-        "avg_views": 11520.4
-      },
-      {
         "hashtag": "#intel",
-        "avg_interaction": 47.0,
-        "tweet_count": 32,
-        "avg_views": 14594.97
+        "avg_interaction": 51.93,
+        "tweet_count": 28,
+        "avg_views": 16579.18
       },
       {
         "hashtag": "#micron",
-        "avg_interaction": 42.48,
-        "tweet_count": 31,
-        "avg_views": 7528.1
+        "avg_interaction": 45.14,
+        "tweet_count": 29,
+        "avg_views": 8019.83
       },
       {
-        "hashtag": "#emib",
-        "avg_interaction": 41.33,
-        "tweet_count": 3,
-        "avg_views": 5204.67
+        "hashtag": "#glasssubstrate",
+        "avg_interaction": 43.0,
+        "tweet_count": 2,
+        "avg_views": 5292.5
       }
     ],
     "top_hashtags_by_usage": [
@@ -2173,18 +2417,23 @@
       },
       {
         "hashtag": "#ai",
-        "tweet_count": 89,
-        "avg_interaction": 8.21
+        "tweet_count": 87,
+        "avg_interaction": 7.67
       },
       {
         "hashtag": "#samsung",
-        "tweet_count": 60,
-        "avg_interaction": 28.98
+        "tweet_count": 58,
+        "avg_interaction": 29.72
+      },
+      {
+        "hashtag": "#\u53f0\u7a4d\u96fb",
+        "tweet_count": 43,
+        "avg_interaction": 6.67
       },
       {
         "hashtag": "#tsmc",
-        "tweet_count": 53,
-        "avg_interaction": 20.6
+        "tweet_count": 39,
+        "avg_interaction": 23.59
       },
       {
         "hashtag": "#skhynix",
@@ -2197,34 +2446,29 @@
         "avg_interaction": 2.32
       },
       {
-        "hashtag": "#nvidia",
-        "tweet_count": 35,
-        "avg_interaction": 27.77
+        "hashtag": "#\u860b\u679c",
+        "tweet_count": 33,
+        "avg_interaction": 3.03
       },
       {
-        "hashtag": "#intel",
+        "hashtag": "#nvidia",
         "tweet_count": 32,
-        "avg_interaction": 47.0
+        "avg_interaction": 29.19
       },
       {
         "hashtag": "#micron",
-        "tweet_count": 31,
-        "avg_interaction": 42.48
-      },
-      {
-        "hashtag": "#\u860b\u679c",
-        "tweet_count": 31,
-        "avg_interaction": 2.65
-      },
-      {
-        "hashtag": "#\u53f0\u7a4d\u96fb",
-        "tweet_count": 30,
-        "avg_interaction": 4.3
+        "tweet_count": 29,
+        "avg_interaction": 45.14
       },
       {
         "hashtag": "#\u8f1d\u9054",
-        "tweet_count": 27,
-        "avg_interaction": 3.3
+        "tweet_count": 29,
+        "avg_interaction": 3.66
+      },
+      {
+        "hashtag": "#intel",
+        "tweet_count": 28,
+        "avg_interaction": 51.93
       },
       {
         "hashtag": "#openai",
@@ -2232,83 +2476,292 @@
         "avg_interaction": 2.0
       },
       {
-        "hashtag": "#apple",
-        "tweet_count": 22,
-        "avg_interaction": 11.32
-      },
-      {
         "hashtag": "#anthropic",
         "tweet_count": 22,
         "avg_interaction": 2.18
+      },
+      {
+        "hashtag": "#\u82f1\u7279\u723e",
+        "tweet_count": 21,
+        "avg_interaction": 5.33
       }
     ],
     "language": {
       "chinese": {
-        "tweet_count": 716,
-        "avg_interaction": 2.38,
-        "avg_views": 176.45,
+        "tweet_count": 841,
+        "avg_interaction": 4.4,
+        "avg_views": 322.88,
+        "img_with": {
+          "avg": 21.31,
+          "count": 74
+        },
+        "img_without": {
+          "avg": 2.77,
+          "count": 767
+        },
+        "best_hours": [
+          {
+            "hour": 8,
+            "avg_interaction": 13.5,
+            "tweet_count": 26
+          },
+          {
+            "hour": 7,
+            "avg_interaction": 9.5,
+            "tweet_count": 16
+          },
+          {
+            "hour": 10,
+            "avg_interaction": 7.1,
+            "tweet_count": 69
+          },
+          {
+            "hour": 14,
+            "avg_interaction": 5.46,
+            "tweet_count": 59
+          },
+          {
+            "hour": 11,
+            "avg_interaction": 5.16,
+            "tweet_count": 69
+          }
+        ],
+        "best_days": [
+          {
+            "day": "Wednesday",
+            "avg_interaction": 6.33
+          },
+          {
+            "day": "Sunday",
+            "avg_interaction": 5.56
+          },
+          {
+            "day": "Tuesday",
+            "avg_interaction": 4.52
+          },
+          {
+            "day": "Monday",
+            "avg_interaction": 4.41
+          },
+          {
+            "day": "Saturday",
+            "avg_interaction": 4.32
+          },
+          {
+            "day": "Thursday",
+            "avg_interaction": 3.97
+          },
+          {
+            "day": "Friday",
+            "avg_interaction": 2.84
+          }
+        ],
+        "top_hashtags": [
+          {
+            "hashtag": "#\u73bb\u7483\u57fa\u677f",
+            "avg_interaction": 27.0,
+            "tweet_count": 2
+          },
+          {
+            "hashtag": "#\u5c0f\u6469\u63ed\u973213\u5bb6\u53f0\u5ee0\u7372\u5229\u9632\u7dda",
+            "avg_interaction": 27.0,
+            "tweet_count": 2
+          },
+          {
+            "hashtag": "#mlcc",
+            "avg_interaction": 15.5,
+            "tweet_count": 4
+          },
+          {
+            "hashtag": "#\u570b\u5de8",
+            "avg_interaction": 13.25,
+            "tweet_count": 4
+          },
+          {
+            "hashtag": "#\u5eb7\u5be7",
+            "avg_interaction": 12.5,
+            "tweet_count": 2
+          },
+          {
+            "hashtag": "#copos",
+            "avg_interaction": 10.0,
+            "tweet_count": 2
+          },
+          {
+            "hashtag": "#\u53f0\u9054\u96fb",
+            "avg_interaction": 9.6,
+            "tweet_count": 5
+          },
+          {
+            "hashtag": "#marvell",
+            "avg_interaction": 9.0,
+            "tweet_count": 2
+          }
+        ],
         "top_tweets": [
           {
             "rank": 1,
-            "interaction": 18,
-            "likes": 17,
-            "retweets": 1,
-            "replies": 0,
-            "views": 848,
-            "text": "#\u53f0\u7a4d\u96fb \u6b21\u4e16\u4ee3\u5148\u9032\u5c01\u88dd #CoPoS \u65bc 2026 \u5e74 6 \u6708\u6b63\u5f0f\u9032\u6a5f\u8a66\u7522\u3002",
-            "translated_text": "#\u53f0\u7a4d\u96fb \u6b21\u4e16\u4ee3\u5148\u9032\u5c01\u88dd #CoPoS \u65bc 2026 \u5e74 6 \u6708\u6b63\u5f0f\u9032\u6a5f\u8a66\u7522\u3002",
-            "url": "https://x.com/technews_tw/status/2064539606566199716"
+            "interaction": 148,
+            "likes": 125,
+            "retweets": 19,
+            "replies": 4,
+            "views": 10021,
+            "text": "\u78f7\u5316\u92a6\u57fa\u677f\u7522\u80fd 4 \u5e74\u5167\u64f4\u589e\u81f3 10 \u500d\uff01 #\u78f7\u5316\u92a6InP\u78ca\u6676\u4f9b\u61c9\u93c8 JX \u91d1\u5c6c 16 \u65e5\u767c\u5e03\u65b0\u805e\u7a3f\u5ba3\u5e03\uff0c\u70ba\u4e86\u56e0\u61c9\u8cc7\u6599\u4e2d\u5fc3\u7528\u5149\u901a\u8a0a\u57fa\u790e\u8a2d\u65bd\u9700\u6c42\u64f4\u5927\uff0c\u5c07\u9032\u4e00\u6b65\u64f4\u589e InP \u57fa\u677f\u7522\u80fd\uff0c\u8a08\u756b\u5728\u4eca\u5f8c 4 \u5e74\u6700\u9ad8\u6295\u8cc7 1,200 \u5104\u65e5\u5713\uff08\u5305\u542b\u4e4b\u524d\u516c\u5e03\u7684\u6295\u8cc7\u8a08\u756b\u8a08\u7b97\u3001\u7e3d\u6295\u8cc7\u984d\u5c07\u9054 1,500\u2026  http:// dlvr.it/TT4WKF",
+            "url": "https://x.com/technews_tw/status/2067073313957146678"
           },
           {
             "rank": 2,
-            "interaction": 16,
-            "likes": 16,
-            "retweets": 0,
-            "replies": 0,
-            "views": 1086,
-            "text": "\u80a1\u5229\u9810\u8a08 7/9 \u5165\u5e33\uff01 #\u53f0\u7a4d\u96fb\u9664\u606f6\u5143\u79d2\u586b\u606f \u53f0\u7a4d\u96fb\uff082330\uff09\u4eca\u65e5\u9664\u606f 6 \u5143\uff0c\u5118\u7ba1\u524d\u4e00\u665a\u7f8e\u80a1\u56e0\u7f8e\u4f0a\u7dca\u5f35\u8207\u901a\u81a8\u6578\u64da\u8d70\u5f31\u3001ADR \u540c\u6b65\u91cd\u632b\uff0c\u5916\u8cc7\u8fd1\u671f\u66f4\u55ae\u65e5\u8ce3\u8d85\u903e 900 \u5104\u5143\uff0c\u53f0\u80a1\u65e9\u76e4\u4e00\u5ea6\u6025\u632b\u903e 300 \u9ede\uff0c\u53f0\u7a4d\u96fb\u4ecd\u5728\u958b\u76e4\u5f8c\u50c5 24\u2026  http:// dlvr.it/TSzZBp",
-            "translated_text": "\u80a1\u5229\u9810\u8a08 7/9 \u5165\u5e33\uff01 #\u53f0\u7a4d\u96fb\u9664\u606f6\u5143\u79d2\u586b\u606f \u53f0\u7a4d\u96fb\uff082330\uff09\u4eca\u65e5\u9664\u606f 6 \u5143\uff0c\u5118\u7ba1\u524d\u4e00\u665a\u7f8e\u80a1\u56e0\u7f8e\u4f0a\u7dca\u5f35\u8207\u901a\u81a8\u6578\u64da\u8d70\u5f31\u3001ADR \u540c\u6b65\u91cd\u632b\uff0c\u5916\u8cc7\u8fd1\u671f\u66f4\u55ae\u65e5\u8ce3\u8d85\u903e 900 \u5104\u5143\uff0c\u53f0\u80a1\u65e9\u76e4\u4e00\u5ea6\u6025\u632b\u903e 300 \u9ede\uff0c\u53f0\u7a4d\u96fb\u4ecd\u5728\u958b\u76e4\u5f8c\u50c5 24\u2026  http:// dlvr.it/TSzZBp",
-            "url": "https://x.com/technews_tw/status/2064913081025867884"
+            "interaction": 83,
+            "likes": 71,
+            "retweets": 10,
+            "replies": 2,
+            "views": 9442,
+            "text": "\u5927\u6469\u4e0a\u8abf\u570b\u5de8\u76ee\u6a19\u50f9\u81f3 1,355 \u5143\uff0c\u751a\u81f3\u6709\u6a5f\u6703\u6311\u6230 2,055 \u5143\u7684\u5929\u50f9\uff01 #\u5927\u6469\u9ede\u540d\u570b\u5de8MLCC\u7d42\u6975\u5927\u8d0f\u5bb6 \u88ab\u52d5\u5143\u4ef6\u7522\u696d\u5c07\u8fce\u4f86\u65b0\u4e00\u8f2a\u5927\u5faa\u74b0\uff0c\u6469\u6839\u58eb\u4e39\u5229\u6700\u65b0\u7814\u7a76\u5831\u544a\u4e2d\u5766\u8a00\uff0c\u904e\u53bb\u56b4\u91cd\u4f4e\u4f30\u96f2\u7aef AI \u5c0d\u7a4d\u5c64\u9676\u74f7\u96fb\u5bb9\uff08MLCC\uff09\u5e02\u5834\u5e36\u4f86\u7684\u300c\u4e8c\u968e\u6548\u61c9\u300d \uff0c\u96a8\u8457 AI\u2026  http:// dlvr.it/TT2lHB",
+            "url": "https://x.com/technews_tw/status/2066409421467779571"
           },
           {
             "rank": 3,
-            "interaction": 14,
-            "likes": 13,
-            "retweets": 1,
-            "replies": 0,
-            "views": 609,
-            "text": "\u53f0\u9054\u96fb\u8463\u4e8b\u9577\u912d\u5e73\u76f4\u8a00\u96fb\u529b\u7f3a\u53e3\u5df2\u6210 AI \u5efa\u8a2d\u6700\u5927\u7d46\u8173\u77f3\uff012025 \u5e74\u5168\u7403 AI \u5efa\u8a2d\u5ef6\u8aa4\u6050\u9054 1,560 \u5104\u7f8e\u5143\uff0c\u96fb\u529b\u7cfb\u7d71\u6295\u8cc7\u6210\u9577\u901f\u5ea6\u8d95\u4e0d\u4e0a CSP \u6295\u8cc7\u4e00\u534a\u3002 #\u53f0\u9054\u96fb #AI\u57fa\u790e\u8a2d\u65bd #\u96fb\u529b\u7f3a\u53e3",
-            "translated_text": "\u53f0\u9054\u96fb\u8463\u4e8b\u9577\u912d\u5e73\u76f4\u8a00\u96fb\u529b\u7f3a\u53e3\u5df2\u6210 AI \u5efa\u8a2d\u6700\u5927\u7d46\u8173\u77f3\uff012025 \u5e74\u5168\u7403 AI \u5efa\u8a2d\u5ef6\u8aa4\u6050\u9054 1,560 \u5104\u7f8e\u5143\uff0c\u96fb\u529b\u7cfb\u7d71\u6295\u8cc7\u6210\u9577\u901f\u5ea6\u8d95\u4e0d\u4e0a CSP \u6295\u8cc7\u4e00\u534a\u3002 #\u53f0\u9054\u96fb #AI\u57fa\u790e\u8a2d\u65bd #\u96fb\u529b\u7f3a\u53e3",
-            "url": "https://x.com/technews_tw/status/2063457056166932545"
+            "interaction": 78,
+            "likes": 66,
+            "retweets": 8,
+            "replies": 4,
+            "views": 5556,
+            "text": "\u73bb\u7483\u57fa\u677f\u771f\u80fd\u625b\u8d77 AI \u5c01\u88dd\u5927\u4efb\uff1f #\u73bb\u7483\u57fa\u677f\u751f\u614b\u7cfb\u4f9b\u61c9\u93c8 AI \u6676\u7247\u5e36\u52d5\u9ad8\u5bc6\u5ea6\u5c01\u88dd\u9700\u6c42\uff0c\u73bb\u7483\u57fa\u677f\u8e8d\u5c45\u5148\u9032\u5c01\u88dd\u95dc\u9375\u6750\u6599\u3002\u6191\u85c9\u53ef\u5927\u5c3a\u5bf8\u5316\u3001\u9ad8\u5e73\u6574\u5ea6\u8207\u63a5\u8fd1\u77fd\u6676\u5713\u7684\u71b1\u81a8\u8139\u4fc2\u6578\uff0c\u73bb\u7483\u57fa\u677f\u88ab\u8996\u70ba\u6709\u6a5f\u8f09\u677f\u4e4b\u5f8c\u7684\u6b21\u4e16\u4ee3 IC \u8f09\u677f\u3002\u53f0\u7a4d\u96fb\u8fd1\u671f\u8868\u614b\u73bb\u7483\u57fa\u677f\u6280\u8853\u6c92\u6709\u6377\u5f91\uff0cCoPoS\u2026  http:// dlvr.it/TSyY9S",
+            "url": "https://x.com/technews_tw/status/2064505979157581858"
           },
           {
             "rank": 4,
-            "interaction": 11,
-            "likes": 9,
-            "retweets": 2,
+            "interaction": 71,
+            "likes": 62,
+            "retweets": 9,
             "replies": 0,
-            "views": 834,
-            "text": "#\u53f0\u9054\u96fb \u5e03\u5c40 SOFC \u71c3\u6599\u96fb\u6c60\uff0c\u6210\u70ba\u5206\u6563\u5f0f\u80fd\u6e90\u65b0\u89e3\u65b9\uff01",
-            "translated_text": "#\u53f0\u9054\u96fb \u5e03\u5c40 SOFC \u71c3\u6599\u96fb\u6c60\uff0c\u6210\u70ba\u5206\u6563\u5f0f\u80fd\u6e90\u65b0\u89e3\u65b9\uff01",
-            "url": "https://x.com/technews_tw/status/2068666796073496985"
+            "views": 9064,
+            "text": "800V HVDC \u6210 AI \u8cc7\u6599\u4e2d\u5fc3\u65b0\u4f9b\u96fb\u6a19\u6e96\uff01 #AI\u8cc7\u6599\u4e2d\u5fc3\u50f9\u503c\u93c8 AI \u904b\u7b97\u7af6\u8cfd\u6b63\u5f9e\u6676\u7247\u5ef6\u4f38\u81f3\u96fb\u529b\u57fa\u790e\u8a2d\u65bd\u3002\u5e02\u5834\u50b3\u51fa\uff0c\u53f0\u9054\u96fb\u5e03\u5c40\u591a\u5e74\u7684 \u00b1400V \u53ca 800V \u9ad8\u58d3\u76f4\u6d41\u4f9b\u96fb\uff08HVDC\uff09\u65b9\u6848\uff0c\u5df2\u5206\u5225\u7372\u5f97\u5169\u5bb6\u7f8e\u7cfb AI \u6307\u6a19\u5ba2\u6236\u63a1\u7528\uff0c\u76f8\u95dc\u7522\u54c1\u9810\u8a08\u7b2c\u4e09\u5b63\u958b\u59cb\u51fa\u8ca8\uff0c\u4e26\u5c0e\u5165\u65b0\u4e00\u4ee3 AI \u8cc7\u6599\u4e2d\u5fc3\u3002\u2026  http:// dlvr.it/TSsSgR",
+            "url": "https://x.com/technews_tw/status/2062324291346313413"
           },
           {
             "rank": 5,
-            "interaction": 11,
-            "likes": 11,
-            "retweets": 0,
+            "interaction": 57,
+            "likes": 48,
+            "retweets": 9,
             "replies": 0,
-            "views": 438,
-            "text": "\u6469\u6839\u5927\u901a\u767c\u5e03\u6700\u65b0\u5831\u544a\uff0c\u5c07 #\u83ef\u90a6\u96fb \u76ee\u6a19\u50f9\u4e00\u8209\u558a\u4e0a 255 \u5143\uff0c\u5275\u4e0b\u5916\u8cc7\u6700\u9ad8\u7d00\u9304\u3002",
-            "translated_text": "\u6469\u6839\u5927\u901a\u767c\u5e03\u6700\u65b0\u5831\u544a\uff0c\u5c07 #\u83ef\u90a6\u96fb \u76ee\u6a19\u50f9\u4e00\u8209\u558a\u4e0a 255 \u5143\uff0c\u5275\u4e0b\u5916\u8cc7\u6700\u9ad8\u7d00\u9304\u3002",
-            "url": "https://x.com/technews_tw/status/2068620223901811169"
+            "views": 4085,
+            "text": "\u5c0f\u6469\u9ede\u540d 4 \u5927\u53f0\u5ee0\uff01 #\u5c0f\u6469\u9ede\u540dAI\u4f9b\u61c9\u93c8\u4e94\u5927\u8d0f\u5bb6 AI \u6d6a\u6f6e\u5e2d\u6372\u5168\u7403\u786c\u9ad4\u4f9b\u61c9\u93c8\uff0c\u7a4d\u5c64\u9676\u74f7\u96fb\u5bb9\uff08MLCC\uff09\u3001\u9285\u7b94\u57fa\u677f\uff08CCL\uff09\u5230\u9ad8\u968e\u8f09\u677f\uff08Substrate\uff09\u7522\u80fd\u5168\u9762\u5403\u7dca\u3002\u5916\u8cc7\u5238\u5546\u6469\u6839\u5927\u901a\uff08J.P. Morgan\uff09\u767c\u5e03\u7522\u696d\u5831\u544a\u6307\u51fa\uff0cAI\u2026  http:// dlvr.it/TT3lyV",
+            "url": "https://x.com/technews_tw/status/2066802549764829202"
           }
         ]
       },
       "english": {
-        "tweet_count": 621,
-        "avg_interaction": 29.99,
-        "avg_views": 6376.92,
+        "tweet_count": 496,
+        "avg_interaction": 33.51,
+        "avg_views": 7691.28,
+        "img_with": {
+          "avg": 45.73,
+          "count": 232
+        },
+        "img_without": {
+          "avg": 22.78,
+          "count": 264
+        },
+        "best_hours": [
+          {
+            "hour": 16,
+            "avg_interaction": 64.55,
+            "tweet_count": 22
+          },
+          {
+            "hour": 10,
+            "avg_interaction": 53.38,
+            "tweet_count": 8
+          },
+          {
+            "hour": 8,
+            "avg_interaction": 50.71,
+            "tweet_count": 7
+          },
+          {
+            "hour": 17,
+            "avg_interaction": 45.8,
+            "tweet_count": 25
+          },
+          {
+            "hour": 15,
+            "avg_interaction": 45.25,
+            "tweet_count": 16
+          }
+        ],
+        "best_days": [
+          {
+            "day": "Tuesday",
+            "avg_interaction": 38.92
+          },
+          {
+            "day": "Wednesday",
+            "avg_interaction": 36.08
+          },
+          {
+            "day": "Monday",
+            "avg_interaction": 35.59
+          },
+          {
+            "day": "Friday",
+            "avg_interaction": 29.72
+          },
+          {
+            "day": "Thursday",
+            "avg_interaction": 28.54
+          },
+          {
+            "day": "Sunday",
+            "avg_interaction": 24.54
+          },
+          {
+            "day": "Saturday",
+            "avg_interaction": 22.0
+          }
+        ],
+        "top_hashtags": [
+          {
+            "hashtag": "#arm",
+            "avg_interaction": 260.5,
+            "tweet_count": 2
+          },
+          {
+            "hashtag": "#copos",
+            "avg_interaction": 130.0,
+            "tweet_count": 2
+          },
+          {
+            "hashtag": "#ssd",
+            "avg_interaction": 90.0,
+            "tweet_count": 3
+          },
+          {
+            "hashtag": "#hbf",
+            "avg_interaction": 85.0,
+            "tweet_count": 2
+          },
+          {
+            "hashtag": "#amd",
+            "avg_interaction": 84.0,
+            "tweet_count": 7
+          },
+          {
+            "hashtag": "#sandisk",
+            "avg_interaction": 73.12,
+            "tweet_count": 8
+          },
+          {
+            "hashtag": "#advancedpackaging",
+            "avg_interaction": 69.5,
+            "tweet_count": 4
+          },
+          {
+            "hashtag": "#inference",
+            "avg_interaction": 63.5,
+            "tweet_count": 2
+          }
+        ],
         "top_tweets": [
           {
             "rank": 1,
@@ -2318,7 +2771,6 @@
             "replies": 18,
             "views": 339041,
             "text": " CPUs are having a moment.  #Nvidia launched a standalone CPU. #Arm made its first chip in 35 years. #Intel & #AMD are raising prices amid a supply crunch.  What's behind it: Agentic AI needs far more CPU than anyone planned for \u2014 driving a structural shift in CPU:GPU ratios",
-            "translated_text": " CPUs are having a moment.  #Nvidia launched a standalone CPU. #Arm made its first chip in 35 years. #Intel & #AMD are raising prices amid a supply crunch.  What's behind it: Agentic AI needs far more CPU than anyone planned for \u2014 driving a structural shift in CPU:GPU ratios",
             "url": "https://x.com/trendforce/status/2044038072107434251"
           },
           {
@@ -2329,7 +2781,6 @@
             "replies": 12,
             "views": 118951,
             "text": " Memory prices keep climbing: DRAM is forecast to rise 58\u201363% QoQ in 2Q26, while NAND flash may surge 70\u201375%. When will the supply-demand imbalance ease?More analysis from #TrendForce:  https:// buff.ly/NBcmN5k ",
-            "translated_text": " Memory prices keep climbing: DRAM is forecast to rise 58\u201363% QoQ in 2Q26, while NAND flash may surge 70\u201375%. When will the supply-demand imbalance ease?More analysis from #TrendForce:  https:// buff.ly/NBcmN5k ",
             "url": "https://x.com/trendforce/status/2039010015747396092"
           },
           {
@@ -2340,7 +2791,6 @@
             "replies": 6,
             "views": 42131,
             "text": "Recent media reports claiming NVIDIA has exclusively selected Samsung and SK hynix for its HBM4 supply chain\u2014supposedly sidelining Micron\u2014are inaccurate. TrendForce reports that all three memory giants remain integral to the upcoming Vera Rubin architecture. Samsung plans to",
-            "translated_text": "Recent media reports claiming NVIDIA has exclusively selected Samsung and SK hynix for its HBM4 supply chain\u2014supposedly sidelining Micron\u2014are inaccurate. TrendForce reports that all three memory giants remain integral to the upcoming Vera Rubin architecture. Samsung plans to",
             "url": "https://x.com/trendforce/status/2031285588754837987"
           },
           {
@@ -2351,7 +2801,6 @@
             "replies": 3,
             "views": 35009,
             "text": "#SanDisk announced that the company has secured long-term #SSD supply agreements of up to five years, featuring increasing volume commitments and a hybrid pricing structure that combines fixed and variable components. These agreements are designed to ensure demand visibility and",
-            "translated_text": "#SanDisk announced that the company has secured long-term #SSD supply agreements of up to five years, featuring increasing volume commitments and a hybrid pricing structure that combines fixed and variable components. These agreements are designed to ensure demand visibility and",
             "url": "https://x.com/trendforce/status/2051572611235119478"
           },
           {
@@ -2362,7 +2811,6 @@
             "replies": 0,
             "views": 53880,
             "text": "TSMC's #CoPoS is moving fast, and the opportunities for Taiwan suppliers are taking shape. CoPoS replaces traditional round glass carrier with a square panel format, pushing utilization rates above 75%. More on glass material development:  https:// pse.is/977q8c ",
-            "translated_text": "TSMC's #CoPoS is moving fast, and the opportunities for Taiwan suppliers are taking shape. CoPoS replaces traditional round glass carrier with a square panel format, pushing utilization rates above 75%. More on glass material development:  https:// pse.is/977q8c ",
             "url": "https://x.com/trendforce/status/2065436170428035281"
           }
         ]
@@ -2372,7 +2820,7 @@
       "avg_interaction": 15.2,
       "median_interaction": 4,
       "max_interaction": 488,
-      "avg_views": 3056.4,
+      "avg_views": 3056.41,
       "max_views": 339041
     }
   }
