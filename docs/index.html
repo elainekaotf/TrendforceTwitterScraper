@@ -34,7 +34,7 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:14
 @media(max-width:700px){.two-col{grid-template-columns:1fr}}
 .bar-row{display:flex;align-items:center;gap:10px;margin-bottom:7px;font-size:12px}
 .bar-label{width:110px;color:var(--muted);text-align:right;flex-shrink:0;font-family:var(--mono);font-size:11px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.bar-label.left{text-align:left;width:140px}
+.bar-label.left{text-align:left;width:200px}
 .bar-track{flex:1;height:6px;background:var(--border);border-radius:3px;overflow:hidden}
 .bar-fill{height:100%;border-radius:3px;background:var(--blue);transition:width .4s ease}
 .bar-fill.gold{background:var(--gold)}.bar-fill.teal{background:var(--teal)}.bar-fill.green{background:var(--green)}
@@ -52,6 +52,11 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:14
 .img-card-val{font-family:var(--mono);font-size:26px;font-weight:700}
 .img-card-sub{font-size:11px;color:var(--muted);margin-top:4px}
 .img-winner{margin-top:12px;font-size:12px;color:var(--green);text-align:center}
+.img-row{display:flex;gap:16px;align-items:flex-start}
+.img-stat{flex:1;background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:10px 12px;text-align:center}
+.img-stat-label{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.07em;margin-bottom:4px}
+.img-stat-val{font-family:var(--mono);font-size:20px;font-weight:700}
+.img-stat-sub{font-size:10px;color:var(--muted);margin-top:3px}
 .tweet-card{background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:14px 16px;margin-bottom:10px}
 .tweet-rank{font-family:var(--mono);font-size:10px;color:var(--muted);margin-bottom:6px}
 .tweet-stats{display:flex;gap:16px;margin-bottom:8px;flex-wrap:wrap}
@@ -95,7 +100,7 @@ window._data['trendforce'] = {
 };
 </script>
 <div class="page active" id="page-trendforce">
-  <p class="updated">Based on 487 tweets scraped from @TrendForce &middot; Updated June 29, 2026 16:58 Taiwan Time</p>
+  <p class="updated">Based on 487 tweets scraped from @TrendForce &middot; Updated June 29, 2026 17:02 Taiwan Time</p>
   
     <div class="kpi-row">
       <div class="kpi"><div class="kpi-label">Total Tweets</div><div class="kpi-value blue">487</div></div>
@@ -116,28 +121,30 @@ window._data['trendforce'] = {
       <div id="trendforce-days"></div>
     </div>
   </div>
-  <div class="two-col">
-    
+  
       <div class="section">
         <div class="section-title">Images vs No Images</div>
-        <div class="img-compare">
-          <div class="img-card">
-            <div class="img-card-label">With Image</div>
-            <div class="img-card-val" style="color:var(--green)">46.33</div>
-            <div class="img-card-sub">avg interaction &middot; 228 tweets</div>
+        <div class="img-row">
+          <div class="img-stat">
+            <div class="img-stat-label">With Image</div>
+            <div class="img-stat-val" style="color:var(--green)">46.33</div>
+            <div class="img-stat-sub">228 tweets</div>
           </div>
-          <div class="img-card">
-            <div class="img-card-label">Without Image</div>
-            <div class="img-card-val" style="color:var(--muted)">23.2</div>
-            <div class="img-card-sub">avg interaction &middot; 259 tweets</div>
+          <div class="img-stat">
+            <div class="img-stat-label">No Image</div>
+            <div class="img-stat-val" style="color:var(--muted)">23.2</div>
+            <div class="img-stat-sub">259 tweets</div>
+          </div>
+          <div class="img-stat">
+            <div class="img-stat-label">Winner</div>
+            <div class="img-stat-val" style="color:var(--blue);font-size:14px">Images</div>
+            <div class="img-stat-sub">99.7% better</div>
           </div>
         </div>
-        <div class="img-winner">Images perform 99.7% better</div>
       </div>
-    <div class="section">
-      <div class="section-title">Top Topics by Avg Interaction</div>
-      <div id="trendforce-kws"></div>
-    </div>
+  <div class="section">
+    <div class="section-title">Top Topics by Avg Interaction</div>
+    <div id="trendforce-kws"></div>
   </div>
   <div class="two-col">
     <div class="section">
@@ -301,7 +308,7 @@ window._data['technewstw'] = {
 };
 </script>
 <div class="page " id="page-technewstw">
-  <p class="updated">Based on 850 tweets scraped from @technews_tw &middot; Updated June 29, 2026 16:58 Taiwan Time</p>
+  <p class="updated">Based on 850 tweets scraped from @technews_tw &middot; Updated June 29, 2026 17:02 Taiwan Time</p>
   
     <div class="kpi-row">
       <div class="kpi"><div class="kpi-label">Total Tweets</div><div class="kpi-value blue">850</div></div>
@@ -322,28 +329,30 @@ window._data['technewstw'] = {
       <div id="technewstw-days"></div>
     </div>
   </div>
-  <div class="two-col">
-    
+  
       <div class="section">
         <div class="section-title">Images vs No Images</div>
-        <div class="img-compare">
-          <div class="img-card">
-            <div class="img-card-label">With Image</div>
-            <div class="img-card-val" style="color:var(--green)">20.79</div>
-            <div class="img-card-sub">avg interaction &middot; 78 tweets</div>
+        <div class="img-row">
+          <div class="img-stat">
+            <div class="img-stat-label">With Image</div>
+            <div class="img-stat-val" style="color:var(--green)">20.79</div>
+            <div class="img-stat-sub">78 tweets</div>
           </div>
-          <div class="img-card">
-            <div class="img-card-label">Without Image</div>
-            <div class="img-card-val" style="color:var(--muted)">2.76</div>
-            <div class="img-card-sub">avg interaction &middot; 772 tweets</div>
+          <div class="img-stat">
+            <div class="img-stat-label">No Image</div>
+            <div class="img-stat-val" style="color:var(--muted)">2.76</div>
+            <div class="img-stat-sub">772 tweets</div>
+          </div>
+          <div class="img-stat">
+            <div class="img-stat-label">Winner</div>
+            <div class="img-stat-val" style="color:var(--blue);font-size:14px">Images</div>
+            <div class="img-stat-sub">653.3% better</div>
           </div>
         </div>
-        <div class="img-winner">Images perform 653.3% better</div>
       </div>
-    <div class="section">
-      <div class="section-title">Top Topics by Avg Interaction</div>
-      <div id="technewstw-kws"></div>
-    </div>
+  <div class="section">
+    <div class="section-title">Top Topics by Avg Interaction</div>
+    <div id="technewstw-kws"></div>
   </div>
   <div class="two-col">
     <div class="section">
@@ -609,7 +618,7 @@ window._data['dylan522p'] = {
 };
 </script>
 <div class="page " id="page-dylan522p">
-  <p class="updated">Based on 586 tweets scraped from @dylan522p &middot; Updated June 29, 2026 16:58 Taiwan Time</p>
+  <p class="updated">Based on 586 tweets scraped from @dylan522p &middot; Updated June 29, 2026 17:02 Taiwan Time</p>
   
     <div class="kpi-row">
       <div class="kpi"><div class="kpi-label">Total Tweets</div><div class="kpi-value blue">586</div></div>
@@ -630,28 +639,30 @@ window._data['dylan522p'] = {
       <div id="dylan522p-days"></div>
     </div>
   </div>
-  <div class="two-col">
-    
+  
       <div class="section">
         <div class="section-title">Images vs No Images</div>
-        <div class="img-compare">
-          <div class="img-card">
-            <div class="img-card-label">With Image</div>
-            <div class="img-card-val" style="color:var(--green)">588.8</div>
-            <div class="img-card-sub">avg interaction &middot; 299 tweets</div>
+        <div class="img-row">
+          <div class="img-stat">
+            <div class="img-stat-label">With Image</div>
+            <div class="img-stat-val" style="color:var(--green)">588.8</div>
+            <div class="img-stat-sub">299 tweets</div>
           </div>
-          <div class="img-card">
-            <div class="img-card-label">Without Image</div>
-            <div class="img-card-val" style="color:var(--muted)">595.8</div>
-            <div class="img-card-sub">avg interaction &middot; 287 tweets</div>
+          <div class="img-stat">
+            <div class="img-stat-label">No Image</div>
+            <div class="img-stat-val" style="color:var(--muted)">595.8</div>
+            <div class="img-stat-sub">287 tweets</div>
+          </div>
+          <div class="img-stat">
+            <div class="img-stat-label">Winner</div>
+            <div class="img-stat-val" style="color:var(--blue);font-size:14px">No images</div>
+            <div class="img-stat-sub">1.2% better</div>
           </div>
         </div>
-        <div class="img-winner">No images perform 1.2% better</div>
       </div>
-    <div class="section">
-      <div class="section-title">Top Topics by Avg Interaction</div>
-      <div id="dylan522p-kws"></div>
-    </div>
+  <div class="section">
+    <div class="section-title">Top Topics by Avg Interaction</div>
+    <div id="dylan522p-kws"></div>
   </div>
   <div class="two-col">
     <div class="section">
@@ -815,7 +826,7 @@ window._data['jukan05'] = {
 };
 </script>
 <div class="page " id="page-jukan05">
-  <p class="updated">Based on 584 tweets scraped from @jukan05 &middot; Updated June 29, 2026 16:58 Taiwan Time</p>
+  <p class="updated">Based on 584 tweets scraped from @jukan05 &middot; Updated June 29, 2026 17:02 Taiwan Time</p>
   
     <div class="kpi-row">
       <div class="kpi"><div class="kpi-label">Total Tweets</div><div class="kpi-value blue">584</div></div>
@@ -836,28 +847,30 @@ window._data['jukan05'] = {
       <div id="jukan05-days"></div>
     </div>
   </div>
-  <div class="two-col">
-    
+  
       <div class="section">
         <div class="section-title">Images vs No Images</div>
-        <div class="img-compare">
-          <div class="img-card">
-            <div class="img-card-label">With Image</div>
-            <div class="img-card-val" style="color:var(--green)">780.43</div>
-            <div class="img-card-sub">avg interaction &middot; 242 tweets</div>
+        <div class="img-row">
+          <div class="img-stat">
+            <div class="img-stat-label">With Image</div>
+            <div class="img-stat-val" style="color:var(--green)">780.43</div>
+            <div class="img-stat-sub">242 tweets</div>
           </div>
-          <div class="img-card">
-            <div class="img-card-label">Without Image</div>
-            <div class="img-card-val" style="color:var(--muted)">451.55</div>
-            <div class="img-card-sub">avg interaction &middot; 342 tweets</div>
+          <div class="img-stat">
+            <div class="img-stat-label">No Image</div>
+            <div class="img-stat-val" style="color:var(--muted)">451.55</div>
+            <div class="img-stat-sub">342 tweets</div>
+          </div>
+          <div class="img-stat">
+            <div class="img-stat-label">Winner</div>
+            <div class="img-stat-val" style="color:var(--blue);font-size:14px">Images</div>
+            <div class="img-stat-sub">72.8% better</div>
           </div>
         </div>
-        <div class="img-winner">Images perform 72.8% better</div>
       </div>
-    <div class="section">
-      <div class="section-title">Top Topics by Avg Interaction</div>
-      <div id="jukan05-kws"></div>
-    </div>
+  <div class="section">
+    <div class="section-title">Top Topics by Avg Interaction</div>
+    <div id="jukan05-kws"></div>
   </div>
   <div class="two-col">
     <div class="section">
@@ -1021,7 +1034,7 @@ window._data['qqtimmy'] = {
 };
 </script>
 <div class="page " id="page-qqtimmy">
-  <p class="updated">Based on 323 tweets scraped from @QQ_Timmy &middot; Updated June 29, 2026 16:58 Taiwan Time</p>
+  <p class="updated">Based on 323 tweets scraped from @QQ_Timmy &middot; Updated June 29, 2026 17:02 Taiwan Time</p>
   
     <div class="kpi-row">
       <div class="kpi"><div class="kpi-label">Total Tweets</div><div class="kpi-value blue">323</div></div>
@@ -1042,28 +1055,30 @@ window._data['qqtimmy'] = {
       <div id="qqtimmy-days"></div>
     </div>
   </div>
-  <div class="two-col">
-    
+  
       <div class="section">
         <div class="section-title">Images vs No Images</div>
-        <div class="img-compare">
-          <div class="img-card">
-            <div class="img-card-label">With Image</div>
-            <div class="img-card-val" style="color:var(--green)">82.05</div>
-            <div class="img-card-sub">avg interaction &middot; 153 tweets</div>
+        <div class="img-row">
+          <div class="img-stat">
+            <div class="img-stat-label">With Image</div>
+            <div class="img-stat-val" style="color:var(--green)">82.05</div>
+            <div class="img-stat-sub">153 tweets</div>
           </div>
-          <div class="img-card">
-            <div class="img-card-label">Without Image</div>
-            <div class="img-card-val" style="color:var(--muted)">65.6</div>
-            <div class="img-card-sub">avg interaction &middot; 170 tweets</div>
+          <div class="img-stat">
+            <div class="img-stat-label">No Image</div>
+            <div class="img-stat-val" style="color:var(--muted)">65.6</div>
+            <div class="img-stat-sub">170 tweets</div>
+          </div>
+          <div class="img-stat">
+            <div class="img-stat-label">Winner</div>
+            <div class="img-stat-val" style="color:var(--blue);font-size:14px">Images</div>
+            <div class="img-stat-sub">25.1% better</div>
           </div>
         </div>
-        <div class="img-winner">Images perform 25.1% better</div>
       </div>
-    <div class="section">
-      <div class="section-title">Top Topics by Avg Interaction</div>
-      <div id="qqtimmy-kws"></div>
-    </div>
+  <div class="section">
+    <div class="section-title">Top Topics by Avg Interaction</div>
+    <div id="qqtimmy-kws"></div>
   </div>
   <div class="two-col">
     <div class="section">
@@ -1227,7 +1242,7 @@ window._data['semianalysis'] = {
 };
 </script>
 <div class="page " id="page-semianalysis">
-  <p class="updated">Based on 691 tweets scraped from @SemiAnalysis_ &middot; Updated June 29, 2026 16:58 Taiwan Time</p>
+  <p class="updated">Based on 691 tweets scraped from @SemiAnalysis_ &middot; Updated June 29, 2026 17:02 Taiwan Time</p>
   
     <div class="kpi-row">
       <div class="kpi"><div class="kpi-label">Total Tweets</div><div class="kpi-value blue">691</div></div>
@@ -1248,28 +1263,30 @@ window._data['semianalysis'] = {
       <div id="semianalysis-days"></div>
     </div>
   </div>
-  <div class="two-col">
-    
+  
       <div class="section">
         <div class="section-title">Images vs No Images</div>
-        <div class="img-compare">
-          <div class="img-card">
-            <div class="img-card-label">With Image</div>
-            <div class="img-card-val" style="color:var(--green)">366.13</div>
-            <div class="img-card-sub">avg interaction &middot; 473 tweets</div>
+        <div class="img-row">
+          <div class="img-stat">
+            <div class="img-stat-label">With Image</div>
+            <div class="img-stat-val" style="color:var(--green)">366.13</div>
+            <div class="img-stat-sub">473 tweets</div>
           </div>
-          <div class="img-card">
-            <div class="img-card-label">Without Image</div>
-            <div class="img-card-val" style="color:var(--muted)">144.34</div>
-            <div class="img-card-sub">avg interaction &middot; 218 tweets</div>
+          <div class="img-stat">
+            <div class="img-stat-label">No Image</div>
+            <div class="img-stat-val" style="color:var(--muted)">144.34</div>
+            <div class="img-stat-sub">218 tweets</div>
+          </div>
+          <div class="img-stat">
+            <div class="img-stat-label">Winner</div>
+            <div class="img-stat-val" style="color:var(--blue);font-size:14px">Images</div>
+            <div class="img-stat-sub">153.7% better</div>
           </div>
         </div>
-        <div class="img-winner">Images perform 153.7% better</div>
       </div>
-    <div class="section">
-      <div class="section-title">Top Topics by Avg Interaction</div>
-      <div id="semianalysis-kws"></div>
-    </div>
+  <div class="section">
+    <div class="section-title">Top Topics by Avg Interaction</div>
+    <div id="semianalysis-kws"></div>
   </div>
   <div class="two-col">
     <div class="section">
