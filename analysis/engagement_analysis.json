@@ -193,94 +193,94 @@
     },
     "top_keywords": [
       {
-        "keyword": "memory prices",
-        "avg_interaction": 165.0,
-        "tweet_count": 3,
-        "avg_views": 43138.0
-      },
-      {
-        "keyword": "agentic ai",
-        "avg_interaction": 139.0,
-        "tweet_count": 5,
-        "avg_views": 71128.4
-      },
-      {
-        "keyword": "memory giants",
-        "avg_interaction": 101.17,
-        "tweet_count": 6,
-        "avg_views": 14304.33
-      },
-      {
-        "keyword": "arm",
-        "avg_interaction": 96.0,
-        "tweet_count": 8,
-        "avg_views": 46134.12
-      },
-      {
-        "keyword": "tsmc copos",
-        "avg_interaction": 91.0,
-        "tweet_count": 3,
-        "avg_views": 21558.67
-      },
-      {
-        "keyword": "training",
-        "avg_interaction": 85.5,
+        "keyword": "Glass Substrate",
+        "avg_interaction": 70.5,
         "tweet_count": 4,
-        "avg_views": 8353.25
+        "avg_views": 7204.75
       },
       {
-        "keyword": "#amd",
-        "avg_interaction": 84.0,
-        "tweet_count": 7,
-        "avg_views": 50820.0
-      },
-      {
-        "keyword": "llm",
-        "avg_interaction": 76.33,
-        "tweet_count": 3,
-        "avg_views": 9617.0
-      },
-      {
-        "keyword": "panel level",
-        "avg_interaction": 74.33,
-        "tweet_count": 3,
-        "avg_views": 25929.33
-      },
-      {
-        "keyword": "#sandisk",
-        "avg_interaction": 73.12,
-        "tweet_count": 8,
-        "avg_views": 16484.88
-      },
-      {
-        "keyword": "ddr5 spot",
-        "avg_interaction": 70.67,
-        "tweet_count": 3,
-        "avg_views": 34311.0
-      },
-      {
-        "keyword": "#advancedpackaging",
-        "avg_interaction": 69.5,
-        "tweet_count": 4,
-        "avg_views": 13184.75
-      },
-      {
-        "keyword": "amd",
+        "keyword": "AMD AI",
         "avg_interaction": 67.5,
         "tweet_count": 10,
         "avg_views": 36667.6
       },
       {
-        "keyword": "contract prices",
-        "avg_interaction": 63.67,
-        "tweet_count": 3,
-        "avg_views": 17269.67
+        "keyword": "Storage",
+        "avg_interaction": 67.0,
+        "tweet_count": 14,
+        "avg_views": 12520.21
       },
       {
-        "keyword": "dram suppliers",
-        "avg_interaction": 58.67,
+        "keyword": "Google TPU",
+        "avg_interaction": 61.67,
         "tweet_count": 3,
-        "avg_views": 16030.67
+        "avg_views": 8110.67
+      },
+      {
+        "keyword": "PCB / Substrate",
+        "avg_interaction": 60.5,
+        "tweet_count": 2,
+        "avg_views": 7293.5
+      },
+      {
+        "keyword": "PLP Packaging",
+        "avg_interaction": 53.6,
+        "tweet_count": 5,
+        "avg_views": 18676.4
+      },
+      {
+        "keyword": "Micron",
+        "avg_interaction": 51.55,
+        "tweet_count": 33,
+        "avg_views": 8793.76
+      },
+      {
+        "keyword": "Thermal Management",
+        "avg_interaction": 50.67,
+        "tweet_count": 3,
+        "avg_views": 4506.67
+      },
+      {
+        "keyword": "DRAM / NAND / SSD",
+        "avg_interaction": 50.1,
+        "tweet_count": 102,
+        "avg_views": 13896.54
+      },
+      {
+        "keyword": "SK Hynix",
+        "avg_interaction": 48.63,
+        "tweet_count": 52,
+        "avg_views": 8649.52
+      },
+      {
+        "keyword": "HBM Memory",
+        "avg_interaction": 44.77,
+        "tweet_count": 48,
+        "avg_views": 8803.04
+      },
+      {
+        "keyword": "NVIDIA AI",
+        "avg_interaction": 37.14,
+        "tweet_count": 57,
+        "avg_views": 12367.39
+      },
+      {
+        "keyword": "Samsung",
+        "avg_interaction": 35.49,
+        "tweet_count": 91,
+        "avg_views": 7070.98
+      },
+      {
+        "keyword": "LLM / Foundation Model",
+        "avg_interaction": 32.33,
+        "tweet_count": 6,
+        "avg_views": 5146.67
+      },
+      {
+        "keyword": "Optical / Silicon Photonics",
+        "avg_interaction": 30.79,
+        "tweet_count": 24,
+        "avg_views": 6123.0
       }
     ],
     "top_tweets": [
@@ -1119,94 +1119,94 @@
     },
     "top_keywords": [
       {
-        "keyword": "#mlcc",
-        "avg_interaction": 15.5,
+        "keyword": "Glass Substrate",
+        "avg_interaction": 36.0,
         "tweet_count": 4,
-        "avg_views": 845.75
+        "avg_views": 2244.25
       },
       {
-        "keyword": "#\u570b\u5de8",
-        "avg_interaction": 13.25,
-        "tweet_count": 4,
-        "avg_views": 787.25
+        "keyword": "CCL",
+        "avg_interaction": 29.33,
+        "tweet_count": 3,
+        "avg_views": 2054.0
       },
       {
-        "keyword": "cowos",
-        "avg_interaction": 12.25,
-        "tweet_count": 4,
-        "avg_views": 1271.5
-      },
-      {
-        "keyword": "#\u53f0\u9054\u96fb",
-        "avg_interaction": 9.6,
-        "tweet_count": 5,
-        "avg_views": 602.0
-      },
-      {
-        "keyword": "micron",
-        "avg_interaction": 9.25,
-        "tweet_count": 4,
-        "avg_views": 816.0
-      },
-      {
-        "keyword": "trendforce",
-        "avg_interaction": 9.14,
+        "keyword": "PCB / Substrate",
+        "avg_interaction": 21.57,
         "tweet_count": 14,
-        "avg_views": 585.36
+        "avg_views": 1551.29
       },
       {
-        "keyword": "\u53f0\u7a4d\u96fb",
-        "avg_interaction": 8.6,
-        "tweet_count": 5,
-        "avg_views": 451.0
+        "keyword": "Semiconductor Materials",
+        "avg_interaction": 20.75,
+        "tweet_count": 4,
+        "avg_views": 1561.25
       },
       {
-        "keyword": "10",
-        "avg_interaction": 8.33,
-        "tweet_count": 3,
-        "avg_views": 468.67
+        "keyword": "Advanced Packaging",
+        "avg_interaction": 15.53,
+        "tweet_count": 15,
+        "avg_views": 1068.33
       },
       {
-        "keyword": "semianalysis",
-        "avg_interaction": 8.33,
-        "tweet_count": 6,
-        "avg_views": 705.0
+        "keyword": "Power Supply",
+        "avg_interaction": 12.86,
+        "tweet_count": 14,
+        "avg_views": 1164.5
       },
       {
-        "keyword": "nvlink fusion",
-        "avg_interaction": 8.33,
-        "tweet_count": 3,
-        "avg_views": 385.67
+        "keyword": "Thermal Management",
+        "avg_interaction": 10.5,
+        "tweet_count": 4,
+        "avg_views": 548.5
       },
       {
-        "keyword": "\u5146\u7f8e\u5143",
-        "avg_interaction": 7.8,
-        "tweet_count": 5,
-        "avg_views": 417.2
+        "keyword": "TSMC / Foundry",
+        "avg_interaction": 10.37,
+        "tweet_count": 79,
+        "avg_views": 661.56
       },
       {
-        "keyword": "nvidia \u57f7\u884c\u9577\u9ec3\u4ec1\u52f3",
-        "avg_interaction": 7.33,
-        "tweet_count": 6,
-        "avg_views": 463.67
+        "keyword": "AI Server",
+        "avg_interaction": 9.05,
+        "tweet_count": 20,
+        "avg_views": 585.85
       },
       {
-        "keyword": "hbm",
-        "avg_interaction": 7.19,
-        "tweet_count": 16,
-        "avg_views": 672.12
+        "keyword": "Optical / Silicon Photonics",
+        "avg_interaction": 8.11,
+        "tweet_count": 19,
+        "avg_views": 530.0
       },
       {
-        "keyword": "#\u53f0\u7a4d\u96fb",
-        "avg_interaction": 6.67,
-        "tweet_count": 43,
-        "avg_views": 369.26
+        "keyword": "AI PC",
+        "avg_interaction": 7.25,
+        "tweet_count": 4,
+        "avg_views": 432.5
       },
       {
-        "keyword": "nvidia",
-        "avg_interaction": 6.41,
-        "tweet_count": 22,
-        "avg_views": 434.0
+        "keyword": "Storage",
+        "avg_interaction": 7.0,
+        "tweet_count": 8,
+        "avg_views": 442.88
+      },
+      {
+        "keyword": "SK Hynix",
+        "avg_interaction": 5.74,
+        "tweet_count": 19,
+        "avg_views": 553.11
+      },
+      {
+        "keyword": "HBM Memory",
+        "avg_interaction": 5.06,
+        "tweet_count": 34,
+        "avg_views": 465.06
+      },
+      {
+        "keyword": "NVIDIA AI",
+        "avg_interaction": 4.92,
+        "tweet_count": 51,
+        "avg_views": 315.76
       }
     ],
     "top_tweets": [
@@ -2172,94 +2172,94 @@
     },
     "top_keywords": [
       {
-        "keyword": "capex",
-        "avg_interaction": 1681.75,
-        "tweet_count": 4,
-        "avg_views": 371063.0
+        "keyword": "AI Server",
+        "avg_interaction": 1208.0,
+        "tweet_count": 6,
+        "avg_views": 293143.83
       },
       {
-        "keyword": "claude code",
-        "avg_interaction": 1662.4,
-        "tweet_count": 5,
-        "avg_views": 526309.6
+        "keyword": "LLM / Foundation Model",
+        "avg_interaction": 851.51,
+        "tweet_count": 99,
+        "avg_views": 169876.03
       },
       {
-        "keyword": "qualcomm",
-        "avg_interaction": 1409.25,
-        "tweet_count": 8,
-        "avg_views": 215258.62
+        "keyword": "TSMC / Foundry",
+        "avg_interaction": 842.27,
+        "tweet_count": 15,
+        "avg_views": 151562.93
       },
       {
-        "keyword": "microsoft",
-        "avg_interaction": 1376.33,
-        "tweet_count": 3,
-        "avg_views": 143676.33
-      },
-      {
-        "keyword": "tsmc",
-        "avg_interaction": 992.17,
-        "tweet_count": 12,
-        "avg_views": 178974.33
-      },
-      {
-        "keyword": "intel",
-        "avg_interaction": 893.78,
+        "keyword": "AMD AI",
+        "avg_interaction": 694.87,
         "tweet_count": 23,
-        "avg_views": 130268.43
+        "avg_views": 149132.17
       },
       {
-        "keyword": "amd",
-        "avg_interaction": 724.65,
-        "tweet_count": 20,
-        "avg_views": 164891.35
+        "keyword": "Wafer Fab Equipment",
+        "avg_interaction": 674.11,
+        "tweet_count": 9,
+        "avg_views": 131293.11
       },
       {
-        "keyword": "ai",
-        "avg_interaction": 653.56,
-        "tweet_count": 224,
-        "avg_views": 116475.58
+        "keyword": "ASIC / Custom Chip",
+        "avg_interaction": 664.67,
+        "tweet_count": 6,
+        "avg_views": 239512.67
       },
       {
-        "keyword": "chips",
-        "avg_interaction": 644.73,
-        "tweet_count": 11,
-        "avg_views": 122774.36
+        "keyword": "NVIDIA AI",
+        "avg_interaction": 535.1,
+        "tweet_count": 60,
+        "avg_views": 124913.0
       },
       {
-        "keyword": "semiconductor",
-        "avg_interaction": 628.25,
-        "tweet_count": 16,
-        "avg_views": 113818.12
+        "keyword": "Samsung",
+        "avg_interaction": 478.6,
+        "tweet_count": 5,
+        "avg_views": 100732.6
       },
       {
-        "keyword": "nvidia",
-        "avg_interaction": 624.16,
-        "tweet_count": 43,
-        "avg_views": 144759.23
+        "keyword": "Google TPU",
+        "avg_interaction": 356.0,
+        "tweet_count": 2,
+        "avg_views": 46127.5
       },
       {
-        "keyword": "llm",
-        "avg_interaction": 616.38,
-        "tweet_count": 13,
-        "avg_views": 82451.69
+        "keyword": "SK Hynix",
+        "avg_interaction": 307.0,
+        "tweet_count": 2,
+        "avg_views": 128213.0
       },
       {
-        "keyword": "openai",
-        "avg_interaction": 593.5,
-        "tweet_count": 4,
-        "avg_views": 143126.0
+        "keyword": "PCB / Substrate",
+        "avg_interaction": 270.0,
+        "tweet_count": 2,
+        "avg_views": 63205.0
       },
       {
-        "keyword": "inference",
-        "avg_interaction": 588.57,
-        "tweet_count": 21,
-        "avg_views": 125073.19
+        "keyword": "CCL",
+        "avg_interaction": 270.0,
+        "tweet_count": 2,
+        "avg_views": 63205.0
       },
       {
-        "keyword": "semianalysis",
-        "avg_interaction": 550.27,
-        "tweet_count": 49,
-        "avg_views": 119620.27
+        "keyword": "HBM Memory",
+        "avg_interaction": 243.5,
+        "tweet_count": 2,
+        "avg_views": 56640.0
+      },
+      {
+        "keyword": "Advanced Packaging",
+        "avg_interaction": 214.6,
+        "tweet_count": 5,
+        "avg_views": 56868.0
+      },
+      {
+        "keyword": "Optical / Silicon Photonics",
+        "avg_interaction": 214.0,
+        "tweet_count": 2,
+        "avg_views": 48300.5
       }
     ],
     "top_tweets": [
@@ -2901,94 +2901,94 @@
     },
     "top_keywords": [
       {
-        "keyword": "sk",
-        "avg_interaction": 1279.75,
-        "tweet_count": 4,
-        "avg_views": 227927.0
-      },
-      {
-        "keyword": "micron",
+        "keyword": "Micron",
         "avg_interaction": 1252.69,
         "tweet_count": 13,
         "avg_views": 192098.62
       },
       {
-        "keyword": "semianalysis",
-        "avg_interaction": 1233.0,
-        "tweet_count": 7,
-        "avg_views": 225080.71
+        "keyword": "Storage",
+        "avg_interaction": 978.75,
+        "tweet_count": 12,
+        "avg_views": 220307.33
       },
       {
-        "keyword": "cxmt",
-        "avg_interaction": 1177.33,
-        "tweet_count": 3,
-        "avg_views": 121730.67
-      },
-      {
-        "keyword": "memory prices",
-        "avg_interaction": 1066.25,
-        "tweet_count": 8,
-        "avg_views": 216833.5
-      },
-      {
-        "keyword": "gpu",
-        "avg_interaction": 975.33,
-        "tweet_count": 6,
-        "avg_views": 326246.33
-      },
-      {
-        "keyword": "jensen huang",
-        "avg_interaction": 945.33,
-        "tweet_count": 3,
-        "avg_views": 87255.67
-      },
-      {
-        "keyword": "hynix",
+        "keyword": "SK Hynix",
         "avg_interaction": 933.34,
         "tweet_count": 44,
         "avg_views": 179267.16
       },
       {
-        "keyword": "semiconductor",
-        "avg_interaction": 897.91,
-        "tweet_count": 35,
-        "avg_views": 185450.14
+        "keyword": "ASIC / Custom Chip",
+        "avg_interaction": 842.42,
+        "tweet_count": 12,
+        "avg_views": 154027.33
       },
       {
-        "keyword": "fab",
-        "avg_interaction": 885.21,
-        "tweet_count": 14,
-        "avg_views": 187846.43
+        "keyword": "LLM / Foundation Model",
+        "avg_interaction": 830.29,
+        "tweet_count": 24,
+        "avg_views": 153464.71
       },
       {
-        "keyword": "memory",
-        "avg_interaction": 872.98,
-        "tweet_count": 58,
-        "avg_views": 169678.88
+        "keyword": "Samsung",
+        "avg_interaction": 800.95,
+        "tweet_count": 57,
+        "avg_views": 156951.54
       },
       {
-        "keyword": "apple",
-        "avg_interaction": 861.44,
+        "keyword": "DRAM / NAND / SSD",
+        "avg_interaction": 782.83,
+        "tweet_count": 42,
+        "avg_views": 172619.86
+      },
+      {
+        "keyword": "Optical / Silicon Photonics",
+        "avg_interaction": 781.78,
         "tweet_count": 9,
-        "avg_views": 193288.11
+        "avg_views": 144610.67
       },
       {
-        "keyword": "cpu",
-        "avg_interaction": 845.62,
-        "tweet_count": 13,
-        "avg_views": 136277.92
+        "keyword": "PLP Packaging",
+        "avg_interaction": 717.5,
+        "tweet_count": 2,
+        "avg_views": 710210.5
       },
       {
-        "keyword": "nand",
-        "avg_interaction": 830.75,
-        "tweet_count": 20,
-        "avg_views": 183974.15
+        "keyword": "HBM Memory",
+        "avg_interaction": 711.94,
+        "tweet_count": 18,
+        "avg_views": 185702.89
       },
       {
-        "keyword": "dram",
-        "avg_interaction": 820.84,
-        "tweet_count": 25,
-        "avg_views": 190224.6
+        "keyword": "NVIDIA AI",
+        "avg_interaction": 687.07,
+        "tweet_count": 58,
+        "avg_views": 180416.81
+      },
+      {
+        "keyword": "TSMC / Foundry",
+        "avg_interaction": 565.17,
+        "tweet_count": 36,
+        "avg_views": 127979.83
+      },
+      {
+        "keyword": "CCL",
+        "avg_interaction": 519.0,
+        "tweet_count": 7,
+        "avg_views": 187399.14
+      },
+      {
+        "keyword": "AMD AI",
+        "avg_interaction": 497.67,
+        "tweet_count": 6,
+        "avg_views": 102999.0
+      },
+      {
+        "keyword": "PCB / Substrate",
+        "avg_interaction": 483.0,
+        "tweet_count": 7,
+        "avg_views": 136673.86
       }
     ],
     "top_tweets": [
@@ -3571,94 +3571,94 @@
     },
     "top_keywords": [
       {
-        "keyword": "semianalysis",
-        "avg_interaction": 132.86,
+        "keyword": "Storage",
+        "avg_interaction": 144.5,
+        "tweet_count": 2,
+        "avg_views": 14293.0
+      },
+      {
+        "keyword": "Glass Substrate",
+        "avg_interaction": 133.86,
         "tweet_count": 7,
-        "avg_views": 22113.86
+        "avg_views": 18812.71
       },
       {
-        "keyword": "nvidia",
-        "avg_interaction": 109.26,
-        "tweet_count": 34,
-        "avg_views": 18404.03
-      },
-      {
-        "keyword": "ddr5",
-        "avg_interaction": 105.5,
-        "tweet_count": 4,
-        "avg_views": 12631.5
-      },
-      {
-        "keyword": "micron",
-        "avg_interaction": 102.33,
-        "tweet_count": 3,
-        "avg_views": 18301.67
-      },
-      {
-        "keyword": "cowos",
-        "avg_interaction": 100.67,
-        "tweet_count": 6,
-        "avg_views": 15430.83
-      },
-      {
-        "keyword": "iphone",
-        "avg_interaction": 99.2,
+        "keyword": "Thermal Management",
+        "avg_interaction": 125.8,
         "tweet_count": 5,
-        "avg_views": 15834.8
+        "avg_views": 16651.6
       },
       {
-        "keyword": "tsmc",
-        "avg_interaction": 97.89,
-        "tweet_count": 9,
-        "avg_views": 15797.22
+        "keyword": "PCB / Substrate",
+        "avg_interaction": 124.54,
+        "tweet_count": 13,
+        "avg_views": 25569.92
       },
       {
-        "keyword": "samsung",
-        "avg_interaction": 85.33,
-        "tweet_count": 3,
-        "avg_views": 11449.33
-      },
-      {
-        "keyword": "\u5c0a\u656c\u7684\u5ba2\u6236",
-        "avg_interaction": 84.75,
+        "keyword": "PLP Packaging",
+        "avg_interaction": 113.25,
         "tweet_count": 4,
-        "avg_views": 10523.25
+        "avg_views": 15481.0
       },
       {
-        "keyword": "cpu",
-        "avg_interaction": 84.09,
-        "tweet_count": 11,
-        "avg_views": 13772.18
-      },
-      {
-        "keyword": "gpu",
-        "avg_interaction": 83.22,
+        "keyword": "AI Server",
+        "avg_interaction": 112.56,
         "tweet_count": 9,
-        "avg_views": 12189.0
+        "avg_views": 26936.33
       },
       {
-        "keyword": "dram",
-        "avg_interaction": 81.5,
-        "tweet_count": 22,
-        "avg_views": 13252.73
+        "keyword": "Power Supply",
+        "avg_interaction": 111.56,
+        "tweet_count": 9,
+        "avg_views": 13142.56
       },
       {
-        "keyword": "ai",
-        "avg_interaction": 80.29,
-        "tweet_count": 133,
-        "avg_views": 13750.29
+        "keyword": "NVIDIA AI",
+        "avg_interaction": 103.85,
+        "tweet_count": 40,
+        "avg_views": 17198.78
       },
       {
-        "keyword": "hynix",
-        "avg_interaction": 76.75,
-        "tweet_count": 4,
-        "avg_views": 11620.25
+        "keyword": "CCL",
+        "avg_interaction": 102.71,
+        "tweet_count": 7,
+        "avg_views": 15511.43
       },
       {
-        "keyword": "trendforce",
-        "avg_interaction": 69.0,
+        "keyword": "Micron",
+        "avg_interaction": 98.2,
+        "tweet_count": 5,
+        "avg_views": 14425.0
+      },
+      {
+        "keyword": "Optical / Silicon Photonics",
+        "avg_interaction": 95.94,
         "tweet_count": 16,
-        "avg_views": 12506.0
+        "avg_views": 16081.81
+      },
+      {
+        "keyword": "Advanced Packaging",
+        "avg_interaction": 92.25,
+        "tweet_count": 16,
+        "avg_views": 14130.12
+      },
+      {
+        "keyword": "Samsung",
+        "avg_interaction": 90.6,
+        "tweet_count": 10,
+        "avg_views": 11459.0
+      },
+      {
+        "keyword": "AI PC",
+        "avg_interaction": 86.0,
+        "tweet_count": 3,
+        "avg_views": 10096.0
+      },
+      {
+        "keyword": "SK Hynix",
+        "avg_interaction": 85.8,
+        "tweet_count": 5,
+        "avg_views": 11098.4
       }
     ],
     "top_tweets": [
@@ -4483,94 +4483,94 @@
     },
     "top_keywords": [
       {
-        "keyword": "image",
-        "avg_interaction": 4105.75,
-        "tweet_count": 4,
-        "avg_views": 129751.75
-      },
-      {
-        "keyword": "smartphone",
-        "avg_interaction": 1305.0,
-        "tweet_count": 4,
-        "avg_views": 200154.5
-      },
-      {
-        "keyword": "apple",
-        "avg_interaction": 1175.2,
+        "keyword": "AI Server",
+        "avg_interaction": 1120.0,
         "tweet_count": 5,
-        "avg_views": 192973.6
+        "avg_views": 192150.8
       },
       {
-        "keyword": "ai chip",
-        "avg_interaction": 966.67,
+        "keyword": "Micron",
+        "avg_interaction": 806.11,
+        "tweet_count": 9,
+        "avg_views": 327284.0
+      },
+      {
+        "keyword": "Google TPU",
+        "avg_interaction": 492.78,
+        "tweet_count": 9,
+        "avg_views": 122099.11
+      },
+      {
+        "keyword": "LLM / Foundation Model",
+        "avg_interaction": 407.18,
+        "tweet_count": 90,
+        "avg_views": 82009.5
+      },
+      {
+        "keyword": "Advanced Packaging",
+        "avg_interaction": 374.67,
         "tweet_count": 3,
-        "avg_views": 192768.67
+        "avg_views": 70362.0
       },
       {
-        "keyword": "fab",
-        "avg_interaction": 849.05,
-        "tweet_count": 20,
-        "avg_views": 173565.15
-      },
-      {
-        "keyword": "claude code",
-        "avg_interaction": 786.67,
+        "keyword": "SK Hynix",
+        "avg_interaction": 340.5,
         "tweet_count": 6,
-        "avg_views": 126823.0
+        "avg_views": 171185.83
       },
       {
-        "keyword": "micron",
-        "avg_interaction": 675.55,
+        "keyword": "NVIDIA AI",
+        "avg_interaction": 327.51,
+        "tweet_count": 118,
+        "avg_views": 56938.05
+      },
+      {
+        "keyword": "AMD AI",
+        "avg_interaction": 292.78,
+        "tweet_count": 32,
+        "avg_views": 67085.44
+      },
+      {
+        "keyword": "HBM Memory",
+        "avg_interaction": 237.25,
+        "tweet_count": 16,
+        "avg_views": 67754.19
+      },
+      {
+        "keyword": "Optical / Silicon Photonics",
+        "avg_interaction": 224.1,
+        "tweet_count": 10,
+        "avg_views": 52145.7
+      },
+      {
+        "keyword": "DRAM / NAND / SSD",
+        "avg_interaction": 218.44,
+        "tweet_count": 9,
+        "avg_views": 82883.33
+      },
+      {
+        "keyword": "TSMC / Foundry",
+        "avg_interaction": 209.57,
+        "tweet_count": 21,
+        "avg_views": 54646.0
+      },
+      {
+        "keyword": "Samsung",
+        "avg_interaction": 205.82,
         "tweet_count": 11,
-        "avg_views": 272531.09
+        "avg_views": 97644.09
       },
       {
-        "keyword": "gb200 nvl72",
-        "avg_interaction": 624.0,
-        "tweet_count": 3,
-        "avg_views": 69104.0
+        "keyword": "Wafer Fab Equipment",
+        "avg_interaction": 132.0,
+        "tweet_count": 2,
+        "avg_views": 24086.0
       },
       {
-        "keyword": "gpu clusters",
-        "avg_interaction": 494.67,
-        "tweet_count": 3,
-        "avg_views": 63996.0
-      },
-      {
-        "keyword": "cuda moat",
-        "avg_interaction": 466.75,
+        "keyword": "ASIC / Custom Chip",
+        "avg_interaction": 69.5,
         "tweet_count": 4,
-        "avg_views": 51972.25
-      },
-      {
-        "keyword": "gpu",
-        "avg_interaction": 427.63,
-        "tweet_count": 54,
-        "avg_views": 105194.93
-      },
-      {
-        "keyword": "capex",
-        "avg_interaction": 411.75,
-        "tweet_count": 4,
-        "avg_views": 88400.25
-      },
-      {
-        "keyword": "cpu",
-        "avg_interaction": 386.71,
-        "tweet_count": 14,
-        "avg_views": 79011.57
-      },
-      {
-        "keyword": "nvidia",
-        "avg_interaction": 347.77,
-        "tweet_count": 71,
-        "avg_views": 58028.37
-      },
-      {
-        "keyword": "faster tokens",
-        "avg_interaction": 345.0,
-        "tweet_count": 3,
-        "avg_views": 102029.0
+        "avg_views": 14552.25
       }
     ],
     "top_tweets": [
@@ -5313,94 +5313,94 @@
     },
     "top_keywords": [
       {
-        "keyword": "jensen",
-        "avg_interaction": 2312.2,
-        "tweet_count": 5,
-        "avg_views": 475168.2
+        "keyword": "LLM / Foundation Model",
+        "avg_interaction": 514.83,
+        "tweet_count": 275,
+        "avg_views": 101781.61
       },
       {
-        "keyword": "newsletter semianalysis",
-        "avg_interaction": 2032.0,
-        "tweet_count": 3,
-        "avg_views": 483100.67
+        "keyword": "SK Hynix",
+        "avg_interaction": 365.55,
+        "tweet_count": 128,
+        "avg_views": 75680.25
       },
       {
-        "keyword": "fable",
-        "avg_interaction": 1705.25,
-        "tweet_count": 4,
-        "avg_views": 116610.75
+        "keyword": "Storage",
+        "avg_interaction": 361.89,
+        "tweet_count": 36,
+        "avg_views": 79197.22
       },
       {
-        "keyword": "sglang vllm",
-        "avg_interaction": 1349.0,
-        "tweet_count": 3,
-        "avg_views": 233902.33
+        "keyword": "Micron",
+        "avg_interaction": 331.06,
+        "tweet_count": 79,
+        "avg_views": 74040.2
       },
       {
-        "keyword": "microsoft",
-        "avg_interaction": 1110.75,
-        "tweet_count": 4,
-        "avg_views": 120998.5
+        "keyword": "AMD AI",
+        "avg_interaction": 307.62,
+        "tweet_count": 96,
+        "avg_views": 69131.16
       },
       {
-        "keyword": "claude code",
-        "avg_interaction": 1090.75,
-        "tweet_count": 12,
-        "avg_views": 283517.0
+        "keyword": "NVIDIA AI",
+        "avg_interaction": 305.01,
+        "tweet_count": 384,
+        "avg_views": 67933.96
       },
       {
-        "keyword": "image",
-        "avg_interaction": 1064.0,
-        "tweet_count": 25,
-        "avg_views": 91443.44
+        "keyword": "AI Server",
+        "avg_interaction": 269.97,
+        "tweet_count": 67,
+        "avg_views": 64581.18
       },
       {
-        "keyword": "claude",
-        "avg_interaction": 1049.5,
-        "tweet_count": 4,
-        "avg_views": 413037.25
+        "keyword": "Samsung",
+        "avg_interaction": 264.96,
+        "tweet_count": 206,
+        "avg_views": 54829.11
       },
       {
-        "keyword": "semiconductor manufacturing",
-        "avg_interaction": 759.0,
-        "tweet_count": 3,
-        "avg_views": 113701.67
+        "keyword": "CCL",
+        "avg_interaction": 262.11,
+        "tweet_count": 19,
+        "avg_views": 81734.0
       },
       {
-        "keyword": "memory prices",
-        "avg_interaction": 756.67,
-        "tweet_count": 12,
-        "avg_views": 157796.5
+        "keyword": "Google TPU",
+        "avg_interaction": 243.11,
+        "tweet_count": 35,
+        "avg_views": 59217.17
       },
       {
-        "keyword": "cxmt",
-        "avg_interaction": 741.4,
-        "tweet_count": 5,
-        "avg_views": 79886.4
+        "keyword": "ASIC / Custom Chip",
+        "avg_interaction": 234.65,
+        "tweet_count": 66,
+        "avg_views": 53062.11
       },
       {
-        "keyword": "sk",
-        "avg_interaction": 733.0,
-        "tweet_count": 7,
-        "avg_views": 130390.43
+        "keyword": "DRAM / NAND / SSD",
+        "avg_interaction": 208.97,
+        "tweet_count": 206,
+        "avg_views": 48784.89
       },
       {
-        "keyword": "china",
-        "avg_interaction": 667.33,
-        "tweet_count": 3,
-        "avg_views": 125862.33
+        "keyword": "Glass Substrate",
+        "avg_interaction": 202.27,
+        "tweet_count": 22,
+        "avg_views": 36018.36
       },
       {
-        "keyword": "gb200 nvl72",
-        "avg_interaction": 624.0,
-        "tweet_count": 3,
-        "avg_views": 69104.0
+        "keyword": "Wafer Fab Equipment",
+        "avg_interaction": 189.69,
+        "tweet_count": 51,
+        "avg_views": 36979.98
       },
       {
-        "keyword": "korean media",
-        "avg_interaction": 617.38,
-        "tweet_count": 8,
-        "avg_views": 157623.88
+        "keyword": "TSMC / Foundry",
+        "avg_interaction": 169.73,
+        "tweet_count": 250,
+        "avg_views": 34950.6
       }
     ],
     "top_tweets": [
