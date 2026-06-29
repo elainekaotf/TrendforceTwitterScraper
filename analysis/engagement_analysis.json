@@ -1422,34 +1422,12 @@
     ],
     "language": {
       "chinese": {
-        "tweet_count": 739,
-        "avg_interaction": 2.55,
-        "avg_views": 195.56,
+        "tweet_count": 716,
+        "avg_interaction": 2.38,
+        "avg_views": 176.45,
         "top_tweets": [
           {
             "rank": 1,
-            "interaction": 71,
-            "likes": 62,
-            "retweets": 9,
-            "replies": 0,
-            "views": 9064,
-            "text": "800V HVDC Becomes New Power Supply Standard for AI Data Centers! #AI\u8cc7\u6599\u4e2d\u5fc3\u50f9\u503c\u93c8 The AI computing race is extending from chips to power infrastructure. Market sources indicate that Delta Electronics' long-planned \u00b1400V and 800V high-voltage direct current power supply (HVDC)",
-            "translated_text": "800V HVDC Becomes New Power Supply Standard for AI Data Centers! #AI\u8cc7\u6599\u4e2d\u5fc3\u50f9\u503c\u93c8 The AI computing race is extending from chips to power infrastructure. Market sources indicate that Delta Electronics' long-planned \u00b1400V and 800V high-voltage direct current power supply (HVDC)",
-            "url": "https://x.com/technews_tw/status/2062324291346313413"
-          },
-          {
-            "rank": 2,
-            "interaction": 24,
-            "likes": 19,
-            "retweets": 4,
-            "replies": 1,
-            "views": 1659,
-            "text": "The Chang brothers are too amazing! #\u65e5\u6708\u5149\u5f35\u8654\u751f\u5144\u5f1f\u9996\u767b\u5bcc\u6bd4\u58eb\u53f0\u7063\u9996\u5bcc US Forbes announces the 2026 top 50 richest people in Taiwan, with ASE Technology Holding Co. Chairman Chang Chien-sheng and Vice Chairman Chang Hung-pin's brothers making their first leap to the top of the",
-            "translated_text": "The Chang brothers are too amazing! #\u65e5\u6708\u5149\u5f35\u8654\u751f\u5144\u5f1f\u9996\u767b\u5bcc\u6bd4\u58eb\u53f0\u7063\u9996\u5bcc US Forbes announces the 2026 top 50 richest people in Taiwan, with ASE Technology Holding Co. Chairman Chang Chien-sheng and Vice Chairman Chang Hung-pin's brothers making their first leap to the top of the",
-            "url": "https://x.com/technews_tw/status/2064955947152482314"
-          },
-          {
-            "rank": 3,
             "interaction": 18,
             "likes": 17,
             "retweets": 1,
@@ -1460,7 +1438,7 @@
             "url": "https://x.com/technews_tw/status/2064539606566199716"
           },
           {
-            "rank": 4,
+            "rank": 2,
             "interaction": 16,
             "likes": 16,
             "retweets": 0,
@@ -1471,7 +1449,7 @@
             "url": "https://x.com/technews_tw/status/2064913081025867884"
           },
           {
-            "rank": 5,
+            "rank": 3,
             "interaction": 14,
             "likes": 13,
             "retweets": 1,
@@ -1480,13 +1458,35 @@
             "text": "\u53f0\u9054\u96fb\u8463\u4e8b\u9577\u912d\u5e73\u76f4\u8a00\u96fb\u529b\u7f3a\u53e3\u5df2\u6210 AI \u5efa\u8a2d\u6700\u5927\u7d46\u8173\u77f3\uff012025 \u5e74\u5168\u7403 AI \u5efa\u8a2d\u5ef6\u8aa4\u6050\u9054 1,560 \u5104\u7f8e\u5143\uff0c\u96fb\u529b\u7cfb\u7d71\u6295\u8cc7\u6210\u9577\u901f\u5ea6\u8d95\u4e0d\u4e0a CSP \u6295\u8cc7\u4e00\u534a\u3002 #\u53f0\u9054\u96fb #AI\u57fa\u790e\u8a2d\u65bd #\u96fb\u529b\u7f3a\u53e3",
             "translated_text": "\u53f0\u9054\u96fb\u8463\u4e8b\u9577\u912d\u5e73\u76f4\u8a00\u96fb\u529b\u7f3a\u53e3\u5df2\u6210 AI \u5efa\u8a2d\u6700\u5927\u7d46\u8173\u77f3\uff012025 \u5e74\u5168\u7403 AI \u5efa\u8a2d\u5ef6\u8aa4\u6050\u9054 1,560 \u5104\u7f8e\u5143\uff0c\u96fb\u529b\u7cfb\u7d71\u6295\u8cc7\u6210\u9577\u901f\u5ea6\u8d95\u4e0d\u4e0a CSP \u6295\u8cc7\u4e00\u534a\u3002 #\u53f0\u9054\u96fb #AI\u57fa\u790e\u8a2d\u65bd #\u96fb\u529b\u7f3a\u53e3",
             "url": "https://x.com/technews_tw/status/2063457056166932545"
+          },
+          {
+            "rank": 4,
+            "interaction": 11,
+            "likes": 9,
+            "retweets": 2,
+            "replies": 0,
+            "views": 834,
+            "text": "#\u53f0\u9054\u96fb \u5e03\u5c40 SOFC \u71c3\u6599\u96fb\u6c60\uff0c\u6210\u70ba\u5206\u6563\u5f0f\u80fd\u6e90\u65b0\u89e3\u65b9\uff01",
+            "translated_text": "#\u53f0\u9054\u96fb \u5e03\u5c40 SOFC \u71c3\u6599\u96fb\u6c60\uff0c\u6210\u70ba\u5206\u6563\u5f0f\u80fd\u6e90\u65b0\u89e3\u65b9\uff01",
+            "url": "https://x.com/technews_tw/status/2068666796073496985"
+          },
+          {
+            "rank": 5,
+            "interaction": 11,
+            "likes": 11,
+            "retweets": 0,
+            "replies": 0,
+            "views": 438,
+            "text": "\u6469\u6839\u5927\u901a\u767c\u5e03\u6700\u65b0\u5831\u544a\uff0c\u5c07 #\u83ef\u90a6\u96fb \u76ee\u6a19\u50f9\u4e00\u8209\u558a\u4e0a 255 \u5143\uff0c\u5275\u4e0b\u5916\u8cc7\u6700\u9ad8\u7d00\u9304\u3002",
+            "translated_text": "\u6469\u6839\u5927\u901a\u767c\u5e03\u6700\u65b0\u5831\u544a\uff0c\u5c07 #\u83ef\u90a6\u96fb \u76ee\u6a19\u50f9\u4e00\u8209\u558a\u4e0a 255 \u5143\uff0c\u5275\u4e0b\u5916\u8cc7\u6700\u9ad8\u7d00\u9304\u3002",
+            "url": "https://x.com/technews_tw/status/2068620223901811169"
           }
         ]
       },
       "english": {
-        "tweet_count": 111,
-        "avg_interaction": 16.84,
-        "avg_views": 1190.77,
+        "tweet_count": 134,
+        "avg_interaction": 15.31,
+        "avg_views": 1122.06,
         "top_tweets": [
           {
             "rank": 1,
@@ -1523,6 +1523,17 @@
           },
           {
             "rank": 4,
+            "interaction": 71,
+            "likes": 62,
+            "retweets": 9,
+            "replies": 0,
+            "views": 9064,
+            "text": "800V HVDC Becomes New Power Supply Standard for AI Data Centers! #AI\u8cc7\u6599\u4e2d\u5fc3\u50f9\u503c\u93c8 The AI computing race is extending from chips to power infrastructure. Market sources indicate that Delta Electronics' long-planned \u00b1400V and 800V high-voltage direct current power supply (HVDC)",
+            "translated_text": "800V HVDC Becomes New Power Supply Standard for AI Data Centers! #AI\u8cc7\u6599\u4e2d\u5fc3\u50f9\u503c\u93c8 The AI computing race is extending from chips to power infrastructure. Market sources indicate that Delta Electronics' long-planned \u00b1400V and 800V high-voltage direct current power supply (HVDC)",
+            "url": "https://x.com/technews_tw/status/2062324291346313413"
+          },
+          {
+            "rank": 5,
             "interaction": 57,
             "likes": 48,
             "retweets": 9,
@@ -1531,17 +1542,6 @@
             "text": "JPMorgan names 4 major Taiwanese manufacturers! #JPMorganNamesTop5AIWinners AI wave sweeps global hardware supply chain, multilayer ceramic capacitors (MLCC), copper-clad laminates (CCL) to high-end substrates (Substrate) facing full capacity shortages. Foreign brokerage JPMorgan",
             "translated_text": "JPMorgan names 4 major Taiwanese manufacturers! #JPMorganNamesTop5AIWinners AI wave sweeps global hardware supply chain, multilayer ceramic capacitors (MLCC), copper-clad laminates (CCL) to high-end substrates (Substrate) facing full capacity shortages. Foreign brokerage JPMorgan",
             "url": "https://x.com/technews_tw/status/2066802549764829202"
-          },
-          {
-            "rank": 5,
-            "interaction": 53,
-            "likes": 47,
-            "retweets": 5,
-            "replies": 1,
-            "views": 5083,
-            "text": "AI Data Center Power Efficiency Anxiety! #Power Components vs Passive Components Differences Explained at a Glance   The South Korean government has launched the \"Super Innovation Economy Plan,\" investing over 50 billion KRW in national funds, focusing on next-generation power",
-            "translated_text": "AI Data Center Power Efficiency Anxiety! #Power Components vs Passive Components Differences Explained at a Glance   The South Korean government has launched the \"Super Innovation Economy Plan,\" investing over 50 billion KRW in national funds, focusing on next-generation power",
-            "url": "https://x.com/technews_tw/status/2068848009501360145"
           }
         ]
       }
@@ -2244,34 +2244,12 @@
     ],
     "language": {
       "chinese": {
-        "tweet_count": 739,
-        "avg_interaction": 2.55,
-        "avg_views": 195.56,
+        "tweet_count": 716,
+        "avg_interaction": 2.38,
+        "avg_views": 176.45,
         "top_tweets": [
           {
             "rank": 1,
-            "interaction": 71,
-            "likes": 62,
-            "retweets": 9,
-            "replies": 0,
-            "views": 9064,
-            "text": "800V HVDC Becomes New Power Supply Standard for AI Data Centers! #AI\u8cc7\u6599\u4e2d\u5fc3\u50f9\u503c\u93c8 The AI computing race is extending from chips to power infrastructure. Market sources indicate that Delta Electronics' long-planned \u00b1400V and 800V high-voltage direct current power supply (HVDC)",
-            "translated_text": "800V HVDC Becomes New Power Supply Standard for AI Data Centers! #AI\u8cc7\u6599\u4e2d\u5fc3\u50f9\u503c\u93c8 The AI computing race is extending from chips to power infrastructure. Market sources indicate that Delta Electronics' long-planned \u00b1400V and 800V high-voltage direct current power supply (HVDC)",
-            "url": "https://x.com/technews_tw/status/2062324291346313413"
-          },
-          {
-            "rank": 2,
-            "interaction": 24,
-            "likes": 19,
-            "retweets": 4,
-            "replies": 1,
-            "views": 1659,
-            "text": "The Chang brothers are too amazing! #\u65e5\u6708\u5149\u5f35\u8654\u751f\u5144\u5f1f\u9996\u767b\u5bcc\u6bd4\u58eb\u53f0\u7063\u9996\u5bcc US Forbes announces the 2026 top 50 richest people in Taiwan, with ASE Technology Holding Co. Chairman Chang Chien-sheng and Vice Chairman Chang Hung-pin's brothers making their first leap to the top of the",
-            "translated_text": "The Chang brothers are too amazing! #\u65e5\u6708\u5149\u5f35\u8654\u751f\u5144\u5f1f\u9996\u767b\u5bcc\u6bd4\u58eb\u53f0\u7063\u9996\u5bcc US Forbes announces the 2026 top 50 richest people in Taiwan, with ASE Technology Holding Co. Chairman Chang Chien-sheng and Vice Chairman Chang Hung-pin's brothers making their first leap to the top of the",
-            "url": "https://x.com/technews_tw/status/2064955947152482314"
-          },
-          {
-            "rank": 3,
             "interaction": 18,
             "likes": 17,
             "retweets": 1,
@@ -2282,7 +2260,7 @@
             "url": "https://x.com/technews_tw/status/2064539606566199716"
           },
           {
-            "rank": 4,
+            "rank": 2,
             "interaction": 16,
             "likes": 16,
             "retweets": 0,
@@ -2293,7 +2271,7 @@
             "url": "https://x.com/technews_tw/status/2064913081025867884"
           },
           {
-            "rank": 5,
+            "rank": 3,
             "interaction": 14,
             "likes": 13,
             "retweets": 1,
@@ -2302,13 +2280,35 @@
             "text": "\u53f0\u9054\u96fb\u8463\u4e8b\u9577\u912d\u5e73\u76f4\u8a00\u96fb\u529b\u7f3a\u53e3\u5df2\u6210 AI \u5efa\u8a2d\u6700\u5927\u7d46\u8173\u77f3\uff012025 \u5e74\u5168\u7403 AI \u5efa\u8a2d\u5ef6\u8aa4\u6050\u9054 1,560 \u5104\u7f8e\u5143\uff0c\u96fb\u529b\u7cfb\u7d71\u6295\u8cc7\u6210\u9577\u901f\u5ea6\u8d95\u4e0d\u4e0a CSP \u6295\u8cc7\u4e00\u534a\u3002 #\u53f0\u9054\u96fb #AI\u57fa\u790e\u8a2d\u65bd #\u96fb\u529b\u7f3a\u53e3",
             "translated_text": "\u53f0\u9054\u96fb\u8463\u4e8b\u9577\u912d\u5e73\u76f4\u8a00\u96fb\u529b\u7f3a\u53e3\u5df2\u6210 AI \u5efa\u8a2d\u6700\u5927\u7d46\u8173\u77f3\uff012025 \u5e74\u5168\u7403 AI \u5efa\u8a2d\u5ef6\u8aa4\u6050\u9054 1,560 \u5104\u7f8e\u5143\uff0c\u96fb\u529b\u7cfb\u7d71\u6295\u8cc7\u6210\u9577\u901f\u5ea6\u8d95\u4e0d\u4e0a CSP \u6295\u8cc7\u4e00\u534a\u3002 #\u53f0\u9054\u96fb #AI\u57fa\u790e\u8a2d\u65bd #\u96fb\u529b\u7f3a\u53e3",
             "url": "https://x.com/technews_tw/status/2063457056166932545"
+          },
+          {
+            "rank": 4,
+            "interaction": 11,
+            "likes": 9,
+            "retweets": 2,
+            "replies": 0,
+            "views": 834,
+            "text": "#\u53f0\u9054\u96fb \u5e03\u5c40 SOFC \u71c3\u6599\u96fb\u6c60\uff0c\u6210\u70ba\u5206\u6563\u5f0f\u80fd\u6e90\u65b0\u89e3\u65b9\uff01",
+            "translated_text": "#\u53f0\u9054\u96fb \u5e03\u5c40 SOFC \u71c3\u6599\u96fb\u6c60\uff0c\u6210\u70ba\u5206\u6563\u5f0f\u80fd\u6e90\u65b0\u89e3\u65b9\uff01",
+            "url": "https://x.com/technews_tw/status/2068666796073496985"
+          },
+          {
+            "rank": 5,
+            "interaction": 11,
+            "likes": 11,
+            "retweets": 0,
+            "replies": 0,
+            "views": 438,
+            "text": "\u6469\u6839\u5927\u901a\u767c\u5e03\u6700\u65b0\u5831\u544a\uff0c\u5c07 #\u83ef\u90a6\u96fb \u76ee\u6a19\u50f9\u4e00\u8209\u558a\u4e0a 255 \u5143\uff0c\u5275\u4e0b\u5916\u8cc7\u6700\u9ad8\u7d00\u9304\u3002",
+            "translated_text": "\u6469\u6839\u5927\u901a\u767c\u5e03\u6700\u65b0\u5831\u544a\uff0c\u5c07 #\u83ef\u90a6\u96fb \u76ee\u6a19\u50f9\u4e00\u8209\u558a\u4e0a 255 \u5143\uff0c\u5275\u4e0b\u5916\u8cc7\u6700\u9ad8\u7d00\u9304\u3002",
+            "url": "https://x.com/technews_tw/status/2068620223901811169"
           }
         ]
       },
       "english": {
-        "tweet_count": 598,
-        "avg_interaction": 30.84,
-        "avg_views": 6591.79,
+        "tweet_count": 621,
+        "avg_interaction": 29.99,
+        "avg_views": 6376.92,
         "top_tweets": [
           {
             "rank": 1,
