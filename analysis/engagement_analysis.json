@@ -354,7 +354,6 @@
           "micron",
           "nvidia",
           "memory",
-          "supply chain",
           "trendforce",
           "ai",
           "samsung plans",
@@ -379,7 +378,6 @@
           "#sandisk",
           "#ssd",
           "ssd",
-          "ssd supply",
           "agreements years",
           "hybrid pricing"
         ],
@@ -448,7 +446,6 @@
           "hbm",
           "trendforce",
           "hbm prices",
-          "dram supply",
           "negotiations underway"
         ],
         "has_images": false
@@ -2259,10 +2256,10 @@
         "avg_views": 125073.19
       },
       {
-        "keyword": "supply chain",
-        "avg_interaction": 584.5,
-        "tweet_count": 8,
-        "avg_views": 69225.0
+        "keyword": "semianalysis",
+        "avg_interaction": 550.27,
+        "tweet_count": 49,
+        "avg_views": 119620.27
       }
     ],
     "top_tweets": [
@@ -2940,12 +2937,6 @@
         "avg_views": 326246.33
       },
       {
-        "keyword": "supply chain",
-        "avg_interaction": 945.61,
-        "tweet_count": 18,
-        "avg_views": 153702.89
-      },
-      {
         "keyword": "jensen huang",
         "avg_interaction": 945.33,
         "tweet_count": 3,
@@ -2992,6 +2983,12 @@
         "avg_interaction": 830.75,
         "tweet_count": 20,
         "avg_views": 183974.15
+      },
+      {
+        "keyword": "dram",
+        "avg_interaction": 820.84,
+        "tweet_count": 25,
+        "avg_views": 190224.6
       }
     ],
     "top_tweets": [
@@ -3046,7 +3043,6 @@
         "keywords": [
           "semiconductor",
           "ai",
-          "supply chain",
           "korean semiconductor",
           "engineers free"
         ],
@@ -5552,7 +5548,6 @@
         "keywords": [
           "semiconductor",
           "ai",
-          "supply chain",
           "korean semiconductor",
           "engineers free"
         ],
