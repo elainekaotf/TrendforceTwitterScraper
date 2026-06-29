@@ -40,6 +40,12 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:14
 .bar-fill.gold{background:var(--gold)}.bar-fill.teal{background:var(--teal)}.bar-fill.green{background:var(--green)}
 .bar-val{font-family:var(--mono);font-size:11px;color:var(--text);min-width:42px;font-variant-numeric:tabular-nums}
 .bar-count{font-family:var(--mono);font-size:10px;color:var(--muted);min-width:60px}
+.bar-group{margin-bottom:10px}
+.bar-row-views{margin-top:2px;opacity:.65}
+.views-val{font-family:var(--mono);font-size:10px;color:var(--blue);min-width:42px}
+.bar-legend{display:flex;gap:16px;margin-bottom:10px;font-size:11px;color:var(--muted)}
+.bar-legend span{display:flex;align-items:center;gap:5px}
+.dot{width:8px;height:8px;border-radius:50%;display:inline-block}
 .img-compare{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .img-card{background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:14px;text-align:center}
 .img-card-label{font-size:11px;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:.07em}
@@ -76,21 +82,21 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:14
 <script>
 window._data = window._data || {};
 window._data['tf'] = {
-  hours:    [{"hour": 0, "avg_interaction": 33.23, "tweet_count": 73}, {"hour": 1, "avg_interaction": 20.38, "tweet_count": 16}, {"hour": 7, "avg_interaction": 10.0, "tweet_count": 1}, {"hour": 8, "avg_interaction": 50.71, "tweet_count": 7}, {"hour": 9, "avg_interaction": 37.1, "tweet_count": 10}, {"hour": 10, "avg_interaction": 53.38, "tweet_count": 8}, {"hour": 11, "avg_interaction": 39.58, "tweet_count": 24}, {"hour": 12, "avg_interaction": 45.57, "tweet_count": 28}, {"hour": 13, "avg_interaction": 41.19, "tweet_count": 16}, {"hour": 14, "avg_interaction": 38.05, "tweet_count": 20}, {"hour": 15, "avg_interaction": 47.87, "tweet_count": 15}, {"hour": 16, "avg_interaction": 67.62, "tweet_count": 21}, {"hour": 17, "avg_interaction": 45.8, "tweet_count": 25}, {"hour": 18, "avg_interaction": 39.11, "tweet_count": 9}, {"hour": 19, "avg_interaction": 12.45, "tweet_count": 11}, {"hour": 20, "avg_interaction": 16.46, "tweet_count": 84}, {"hour": 21, "avg_interaction": 28.62, "tweet_count": 76}, {"hour": 22, "avg_interaction": 39.76, "tweet_count": 37}, {"hour": 23, "avg_interaction": 35.0, "tweet_count": 6}],
-  days:     [{"day": "Tuesday", "avg_interaction": 40.44}, {"day": "Wednesday", "avg_interaction": 36.18}, {"day": "Monday", "avg_interaction": 35.59}, {"day": "Friday", "avg_interaction": 29.72}, {"day": "Thursday", "avg_interaction": 29.35}, {"day": "Sunday", "avg_interaction": 26.42}, {"day": "Saturday", "avg_interaction": 22.0}],
+  hours:    [{"hour": 0, "avg_interaction": 33.23, "avg_views": 7190.14, "tweet_count": 73}, {"hour": 1, "avg_interaction": 20.38, "avg_views": 3003.12, "tweet_count": 16}, {"hour": 7, "avg_interaction": 10.0, "avg_views": 1328.0, "tweet_count": 1}, {"hour": 8, "avg_interaction": 50.71, "avg_views": 6358.0, "tweet_count": 7}, {"hour": 9, "avg_interaction": 37.1, "avg_views": 5675.5, "tweet_count": 10}, {"hour": 10, "avg_interaction": 53.38, "avg_views": 11719.88, "tweet_count": 8}, {"hour": 11, "avg_interaction": 39.58, "avg_views": 5451.96, "tweet_count": 24}, {"hour": 12, "avg_interaction": 45.57, "avg_views": 7015.54, "tweet_count": 28}, {"hour": 13, "avg_interaction": 41.19, "avg_views": 10877.44, "tweet_count": 16}, {"hour": 14, "avg_interaction": 38.05, "avg_views": 18059.85, "tweet_count": 20}, {"hour": 15, "avg_interaction": 47.87, "avg_views": 12140.2, "tweet_count": 15}, {"hour": 16, "avg_interaction": 67.62, "avg_views": 14936.71, "tweet_count": 21}, {"hour": 17, "avg_interaction": 45.8, "avg_views": 11174.04, "tweet_count": 25}, {"hour": 18, "avg_interaction": 39.11, "avg_views": 6332.89, "tweet_count": 9}, {"hour": 19, "avg_interaction": 12.45, "avg_views": 2048.55, "tweet_count": 11}, {"hour": 20, "avg_interaction": 16.46, "avg_views": 2800.55, "tweet_count": 84}, {"hour": 21, "avg_interaction": 28.62, "avg_views": 9015.3, "tweet_count": 76}, {"hour": 22, "avg_interaction": 39.76, "avg_views": 10021.97, "tweet_count": 37}, {"hour": 23, "avg_interaction": 35.0, "avg_views": 5340.0, "tweet_count": 6}],
+  days:     [{"day": "Tuesday", "avg_interaction": 40.44, "avg_views": 9285.79}, {"day": "Wednesday", "avg_interaction": 36.18, "avg_views": 10794.87}, {"day": "Monday", "avg_interaction": 35.59, "avg_views": 7393.15}, {"day": "Friday", "avg_interaction": 29.72, "avg_views": 6201.61}, {"day": "Thursday", "avg_interaction": 29.35, "avg_views": 4515.07}, {"day": "Sunday", "avg_interaction": 26.42, "avg_views": 7251.92}, {"day": "Saturday", "avg_interaction": 22.0, "avg_views": 6320.38}],
   kws:      [{"keyword": "memory prices", "avg_interaction": 165.0, "tweet_count": 3}, {"keyword": "agentic ai", "avg_interaction": 139.0, "tweet_count": 5}, {"keyword": "forecast", "avg_interaction": 124.25, "tweet_count": 4}, {"keyword": "memory giants", "avg_interaction": 101.17, "tweet_count": 6}, {"keyword": "arm", "avg_interaction": 96.0, "tweet_count": 8}, {"keyword": "tsmc copos", "avg_interaction": 91.0, "tweet_count": 3}, {"keyword": "training", "avg_interaction": 85.5, "tweet_count": 4}, {"keyword": "#amd", "avg_interaction": 84.0, "tweet_count": 7}, {"keyword": "llm", "avg_interaction": 76.33, "tweet_count": 3}, {"keyword": "panel level", "avg_interaction": 74.33, "tweet_count": 3}],
   hti:      [{"hashtag": "#arm", "avg_interaction": 260.5, "tweet_count": 2, "avg_views": 172022.5}, {"hashtag": "#ssd", "avg_interaction": 134.5, "tweet_count": 2, "avg_views": 24018.0}, {"hashtag": "#copos", "avg_interaction": 130.0, "tweet_count": 2, "avg_views": 31167.5}, {"hashtag": "#hbf", "avg_interaction": 85.0, "tweet_count": 2, "avg_views": 29975.5}, {"hashtag": "#amd", "avg_interaction": 84.0, "tweet_count": 7, "avg_views": 50820.0}, {"hashtag": "#sandisk", "avg_interaction": 73.12, "tweet_count": 8, "avg_views": 16484.88}, {"hashtag": "#advancedpackaging", "avg_interaction": 69.5, "tweet_count": 4, "avg_views": 13184.75}, {"hashtag": "#inference", "avg_interaction": 63.5, "tweet_count": 2, "avg_views": 5069.5}, {"hashtag": "#kioxia", "avg_interaction": 56.22, "tweet_count": 9, "avg_views": 12789.22}, {"hashtag": "#intel", "avg_interaction": 53.7, "tweet_count": 27, "avg_views": 17144.04}],
-  htu:      [{"hashtag": "#trendforce", "tweet_count": 84, "avg_interaction": 29.71}, {"hashtag": "#samsung", "tweet_count": 58, "avg_interaction": 29.72}, {"hashtag": "#tsmc", "tweet_count": 39, "avg_interaction": 23.59}, {"hashtag": "#skhynix", "tweet_count": 38, "avg_interaction": 39.58}, {"hashtag": "#micron", "tweet_count": 28, "avg_interaction": 46.54}, {"hashtag": "#intel", "tweet_count": 27, "avg_interaction": 53.7}, {"hashtag": "#nvidia", "tweet_count": 27, "avg_interaction": 34.19}, {"hashtag": "#ai", "tweet_count": 21, "avg_interaction": 22.0}, {"hashtag": "#apple", "tweet_count": 20, "avg_interaction": 11.55}, {"hashtag": "#china", "tweet_count": 14, "avg_interaction": 12.14}],
+  htu:      [{"hashtag": "#trendforce", "tweet_count": 84, "avg_interaction": 29.71, "avg_views": 6926.63}, {"hashtag": "#samsung", "tweet_count": 58, "avg_interaction": 29.72, "avg_views": 6442.71}, {"hashtag": "#tsmc", "tweet_count": 39, "avg_interaction": 23.59, "avg_views": 3169.77}, {"hashtag": "#skhynix", "tweet_count": 38, "avg_interaction": 39.58, "avg_views": 8524.84}, {"hashtag": "#micron", "tweet_count": 28, "avg_interaction": 46.54, "avg_views": 8291.04}, {"hashtag": "#intel", "tweet_count": 27, "avg_interaction": 53.7, "avg_views": 17144.04}, {"hashtag": "#nvidia", "tweet_count": 27, "avg_interaction": 34.19, "avg_views": 14685.89}, {"hashtag": "#ai", "tweet_count": 21, "avg_interaction": 22.0, "avg_views": 3749.57}, {"hashtag": "#apple", "tweet_count": 20, "avg_interaction": 11.55, "avg_views": 3181.4}, {"hashtag": "#china", "tweet_count": 14, "avg_interaction": 12.14, "avg_views": 3651.36}],
   zh_hours: [],
-  en_hours: [{"hour": 16, "avg_interaction": 67.62, "tweet_count": 21}, {"hour": 10, "avg_interaction": 53.38, "tweet_count": 8}, {"hour": 8, "avg_interaction": 50.71, "tweet_count": 7}, {"hour": 15, "avg_interaction": 47.87, "tweet_count": 15}, {"hour": 17, "avg_interaction": 45.8, "tweet_count": 25}],
+  en_hours: [{"hour": 16, "avg_interaction": 67.62, "avg_views": 14936.71, "tweet_count": 21}, {"hour": 10, "avg_interaction": 53.38, "avg_views": 11719.88, "tweet_count": 8}, {"hour": 8, "avg_interaction": 50.71, "avg_views": 6358.0, "tweet_count": 7}, {"hour": 15, "avg_interaction": 47.87, "avg_views": 12140.2, "tweet_count": 15}, {"hour": 17, "avg_interaction": 45.8, "avg_views": 11174.04, "tweet_count": 25}],
   zh_days:  [],
-  en_days:  [{"day": "Tuesday", "avg_interaction": 40.44}, {"day": "Wednesday", "avg_interaction": 36.18}, {"day": "Monday", "avg_interaction": 35.59}, {"day": "Friday", "avg_interaction": 29.72}, {"day": "Thursday", "avg_interaction": 29.35}, {"day": "Sunday", "avg_interaction": 26.42}, {"day": "Saturday", "avg_interaction": 22.0}],
+  en_days:  [{"day": "Tuesday", "avg_interaction": 40.44, "avg_views": 9285.79}, {"day": "Wednesday", "avg_interaction": 36.18, "avg_views": 10794.87}, {"day": "Monday", "avg_interaction": 35.59, "avg_views": 7393.15}, {"day": "Friday", "avg_interaction": 29.72, "avg_views": 6201.61}, {"day": "Thursday", "avg_interaction": 29.35, "avg_views": 4515.07}, {"day": "Sunday", "avg_interaction": 26.42, "avg_views": 7251.92}, {"day": "Saturday", "avg_interaction": 22.0, "avg_views": 6320.38}],
   zh_ht:    [],
-  en_ht:    [{"hashtag": "#arm", "avg_interaction": 260.5, "tweet_count": 2}, {"hashtag": "#ssd", "avg_interaction": 134.5, "tweet_count": 2}, {"hashtag": "#copos", "avg_interaction": 130.0, "tweet_count": 2}, {"hashtag": "#hbf", "avg_interaction": 85.0, "tweet_count": 2}, {"hashtag": "#amd", "avg_interaction": 84.0, "tweet_count": 7}, {"hashtag": "#sandisk", "avg_interaction": 73.12, "tweet_count": 8}, {"hashtag": "#advancedpackaging", "avg_interaction": 69.5, "tweet_count": 4}, {"hashtag": "#inference", "avg_interaction": 63.5, "tweet_count": 2}]
+  en_ht:    [{"hashtag": "#arm", "avg_interaction": 260.5, "avg_views": 172022.5, "tweet_count": 2}, {"hashtag": "#ssd", "avg_interaction": 134.5, "avg_views": 24018.0, "tweet_count": 2}, {"hashtag": "#copos", "avg_interaction": 130.0, "avg_views": 31167.5, "tweet_count": 2}, {"hashtag": "#hbf", "avg_interaction": 85.0, "avg_views": 29975.5, "tweet_count": 2}, {"hashtag": "#amd", "avg_interaction": 84.0, "avg_views": 50820.0, "tweet_count": 7}, {"hashtag": "#sandisk", "avg_interaction": 73.12, "avg_views": 16484.88, "tweet_count": 8}, {"hashtag": "#advancedpackaging", "avg_interaction": 69.5, "avg_views": 13184.75, "tweet_count": 4}, {"hashtag": "#inference", "avg_interaction": 63.5, "avg_views": 5069.5, "tweet_count": 2}]
 };
 </script>
 <div class="page active" id="page-tf">
-  <p class="updated">Based on 487 tweets scraped from @TrendForce &middot; Updated June 29, 2026 15:35 Taiwan Time</p>
+  <p class="updated">Based on 487 tweets scraped from @TrendForce &middot; Updated June 29, 2026 15:39 Taiwan Time</p>
   
     <div class="kpi-row">
       <div class="kpi"><div class="kpi-label">Total Tweets</div><div class="kpi-value blue">487</div></div>
@@ -100,13 +106,14 @@ window._data['tf'] = {
       <div class="kpi"><div class="kpi-label">Avg Views</div><div class="kpi-value teal">7,822</div></div>
       <div class="kpi"><div class="kpi-label">Max Views</div><div class="kpi-value">339,041</div></div>
     </div>
+  <div class="bar-legend"><span><span class="dot" style="background:var(--gold)"></span>Interaction</span><span><span class="dot" style="background:var(--blue)"></span>Views</span></div>
   <div class="two-col">
     <div class="section">
       <div class="section-title">Best Hours to Post (Taiwan Time)</div>
       <div id="tf-hours"></div>
     </div>
     <div class="section">
-      <div class="section-title">Avg Interaction by Day</div>
+      <div class="section-title">Avg Interaction &amp; Views by Day</div>
       <div id="tf-days"></div>
     </div>
   </div>
@@ -281,21 +288,21 @@ window._data['tf'] = {
 <script>
 window._data = window._data || {};
 window._data['tn'] = {
-  hours:    [{"hour": 7, "avg_interaction": 9.5, "tweet_count": 16}, {"hour": 8, "avg_interaction": 13.5, "tweet_count": 26}, {"hour": 9, "avg_interaction": 3.02, "tweet_count": 45}, {"hour": 10, "avg_interaction": 7.1, "tweet_count": 69}, {"hour": 11, "avg_interaction": 5.38, "tweet_count": 71}, {"hour": 12, "avg_interaction": 4.0, "tweet_count": 59}, {"hour": 13, "avg_interaction": 2.85, "tweet_count": 66}, {"hour": 14, "avg_interaction": 5.47, "tweet_count": 60}, {"hour": 15, "avg_interaction": 4.18, "tweet_count": 62}, {"hour": 16, "avg_interaction": 3.85, "tweet_count": 74}, {"hour": 17, "avg_interaction": 3.63, "tweet_count": 78}, {"hour": 18, "avg_interaction": 2.9, "tweet_count": 70}, {"hour": 19, "avg_interaction": 2.57, "tweet_count": 56}, {"hour": 20, "avg_interaction": 3.32, "tweet_count": 37}, {"hour": 21, "avg_interaction": 4.0, "tweet_count": 34}, {"hour": 22, "avg_interaction": 1.22, "tweet_count": 18}, {"hour": 23, "avg_interaction": 3.89, "tweet_count": 9}],
-  days:     [{"day": "Wednesday", "avg_interaction": 6.5}, {"day": "Sunday", "avg_interaction": 5.49}, {"day": "Tuesday", "avg_interaction": 4.48}, {"day": "Monday", "avg_interaction": 4.41}, {"day": "Saturday", "avg_interaction": 4.32}, {"day": "Thursday", "avg_interaction": 3.97}, {"day": "Friday", "avg_interaction": 2.84}],
+  hours:    [{"hour": 7, "avg_interaction": 9.5, "avg_views": 558.56, "tweet_count": 16}, {"hour": 8, "avg_interaction": 13.5, "avg_views": 1182.38, "tweet_count": 26}, {"hour": 9, "avg_interaction": 3.02, "avg_views": 209.89, "tweet_count": 45}, {"hour": 10, "avg_interaction": 7.1, "avg_views": 490.77, "tweet_count": 69}, {"hour": 11, "avg_interaction": 5.38, "avg_views": 372.44, "tweet_count": 71}, {"hour": 12, "avg_interaction": 4.0, "avg_views": 367.34, "tweet_count": 59}, {"hour": 13, "avg_interaction": 2.85, "avg_views": 239.97, "tweet_count": 66}, {"hour": 14, "avg_interaction": 5.47, "avg_views": 417.08, "tweet_count": 60}, {"hour": 15, "avg_interaction": 4.18, "avg_views": 275.74, "tweet_count": 62}, {"hour": 16, "avg_interaction": 3.85, "avg_views": 253.2, "tweet_count": 74}, {"hour": 17, "avg_interaction": 3.63, "avg_views": 237.72, "tweet_count": 78}, {"hour": 18, "avg_interaction": 2.9, "avg_views": 217.29, "tweet_count": 70}, {"hour": 19, "avg_interaction": 2.57, "avg_views": 233.0, "tweet_count": 56}, {"hour": 20, "avg_interaction": 3.32, "avg_views": 223.19, "tweet_count": 37}, {"hour": 21, "avg_interaction": 4.0, "avg_views": 264.38, "tweet_count": 34}, {"hour": 22, "avg_interaction": 1.22, "avg_views": 163.56, "tweet_count": 18}, {"hour": 23, "avg_interaction": 3.89, "avg_views": 212.67, "tweet_count": 9}],
+  days:     [{"day": "Wednesday", "avg_interaction": 6.5, "avg_views": 438.26}, {"day": "Sunday", "avg_interaction": 5.49, "avg_views": 405.06}, {"day": "Tuesday", "avg_interaction": 4.48, "avg_views": 286.45}, {"day": "Monday", "avg_interaction": 4.41, "avg_views": 362.1}, {"day": "Saturday", "avg_interaction": 4.32, "avg_views": 300.98}, {"day": "Thursday", "avg_interaction": 3.97, "avg_views": 314.62}, {"day": "Friday", "avg_interaction": 2.84, "avg_views": 214.66}],
   kws:      [{"keyword": "#mlcc", "avg_interaction": 15.5, "tweet_count": 4}, {"keyword": "#國巨", "avg_interaction": 13.25, "tweet_count": 4}, {"keyword": "cowos", "avg_interaction": 12.25, "tweet_count": 4}, {"keyword": "capacity", "avg_interaction": 10.25, "tweet_count": 4}, {"keyword": "computex 2026", "avg_interaction": 10.25, "tweet_count": 4}, {"keyword": "#台達電", "avg_interaction": 9.6, "tweet_count": 5}, {"keyword": "micron", "avg_interaction": 9.25, "tweet_count": 4}, {"keyword": "trendforce", "avg_interaction": 9.14, "tweet_count": 14}, {"keyword": "台積電", "avg_interaction": 8.6, "tweet_count": 5}, {"keyword": "10", "avg_interaction": 8.33, "tweet_count": 3}],
   hti:      [{"hashtag": "#玻璃基板", "avg_interaction": 27.0, "tweet_count": 2, "avg_views": 1297.5}, {"hashtag": "#小摩揭露13家台廠獲利防線", "avg_interaction": 27.0, "tweet_count": 2, "avg_views": 1302.5}, {"hashtag": "#mlcc", "avg_interaction": 15.5, "tweet_count": 4, "avg_views": 845.75}, {"hashtag": "#國巨", "avg_interaction": 13.25, "tweet_count": 4, "avg_views": 787.25}, {"hashtag": "#康寧", "avg_interaction": 12.5, "tweet_count": 2, "avg_views": 658.5}, {"hashtag": "#copos", "avg_interaction": 10.0, "tweet_count": 2, "avg_views": 553.0}, {"hashtag": "#台達電", "avg_interaction": 9.6, "tweet_count": 5, "avg_views": 602.0}, {"hashtag": "#marvell", "avg_interaction": 9.0, "tweet_count": 2, "avg_views": 559.0}, {"hashtag": "#邁威爾", "avg_interaction": 9.0, "tweet_count": 2, "avg_views": 466.0}, {"hashtag": "#腦機介面", "avg_interaction": 7.5, "tweet_count": 2, "avg_views": 211.0}],
-  htu:      [{"hashtag": "#ai", "tweet_count": 66, "avg_interaction": 3.11}, {"hashtag": "#台積電", "tweet_count": 43, "avg_interaction": 6.67}, {"hashtag": "#spacex", "tweet_count": 36, "avg_interaction": 2.0}, {"hashtag": "#蘋果", "tweet_count": 33, "avg_interaction": 3.03}, {"hashtag": "#輝達", "tweet_count": 29, "avg_interaction": 3.66}, {"hashtag": "#openai", "tweet_count": 22, "avg_interaction": 1.64}, {"hashtag": "#anthropic", "tweet_count": 21, "avg_interaction": 1.76}, {"hashtag": "#英特爾", "tweet_count": 21, "avg_interaction": 5.33}, {"hashtag": "#google", "tweet_count": 15, "avg_interaction": 3.87}, {"hashtag": "#黃仁勳", "tweet_count": 14, "avg_interaction": 2.86}],
-  zh_hours: [{"hour": 8, "avg_interaction": 13.5, "tweet_count": 26}, {"hour": 7, "avg_interaction": 9.5, "tweet_count": 16}, {"hour": 10, "avg_interaction": 7.1, "tweet_count": 69}, {"hour": 14, "avg_interaction": 5.46, "tweet_count": 59}, {"hour": 11, "avg_interaction": 5.16, "tweet_count": 69}],
-  en_hours: [{"hour": 11, "avg_interaction": 13.0, "tweet_count": 2}, {"hour": 12, "avg_interaction": 9.0, "tweet_count": 1}, {"hour": 15, "avg_interaction": 6.0, "tweet_count": 1}, {"hour": 14, "avg_interaction": 6.0, "tweet_count": 1}, {"hour": 13, "avg_interaction": 1.33, "tweet_count": 3}],
-  zh_days:  [{"day": "Wednesday", "avg_interaction": 6.33}, {"day": "Sunday", "avg_interaction": 5.56}, {"day": "Tuesday", "avg_interaction": 4.52}, {"day": "Monday", "avg_interaction": 4.41}, {"day": "Saturday", "avg_interaction": 4.32}, {"day": "Thursday", "avg_interaction": 3.97}, {"day": "Friday", "avg_interaction": 2.84}],
-  en_days:  [{"day": "Wednesday", "avg_interaction": 24.0}, {"day": "Thursday", "avg_interaction": 4.0}, {"day": "Tuesday", "avg_interaction": 3.25}, {"day": "Sunday", "avg_interaction": 2.0}],
-  zh_ht:    [{"hashtag": "#玻璃基板", "avg_interaction": 27.0, "tweet_count": 2}, {"hashtag": "#小摩揭露13家台廠獲利防線", "avg_interaction": 27.0, "tweet_count": 2}, {"hashtag": "#mlcc", "avg_interaction": 15.5, "tweet_count": 4}, {"hashtag": "#國巨", "avg_interaction": 13.25, "tweet_count": 4}, {"hashtag": "#康寧", "avg_interaction": 12.5, "tweet_count": 2}, {"hashtag": "#copos", "avg_interaction": 10.0, "tweet_count": 2}, {"hashtag": "#台達電", "avg_interaction": 9.6, "tweet_count": 5}, {"hashtag": "#marvell", "avg_interaction": 9.0, "tweet_count": 2}],
-  en_ht:    [{"hashtag": "#tech", "avg_interaction": 6.0, "tweet_count": 2}, {"hashtag": "#ai", "avg_interaction": 3.75, "tweet_count": 4}]
+  htu:      [{"hashtag": "#ai", "tweet_count": 66, "avg_interaction": 3.11, "avg_views": 238.36}, {"hashtag": "#台積電", "tweet_count": 43, "avg_interaction": 6.67, "avg_views": 369.26}, {"hashtag": "#spacex", "tweet_count": 36, "avg_interaction": 2.0, "avg_views": 152.47}, {"hashtag": "#蘋果", "tweet_count": 33, "avg_interaction": 3.03, "avg_views": 201.45}, {"hashtag": "#輝達", "tweet_count": 29, "avg_interaction": 3.66, "avg_views": 239.31}, {"hashtag": "#openai", "tweet_count": 22, "avg_interaction": 1.64, "avg_views": 148.0}, {"hashtag": "#anthropic", "tweet_count": 21, "avg_interaction": 1.76, "avg_views": 161.19}, {"hashtag": "#英特爾", "tweet_count": 21, "avg_interaction": 5.33, "avg_views": 350.19}, {"hashtag": "#google", "tweet_count": 15, "avg_interaction": 3.87, "avg_views": 232.2}, {"hashtag": "#黃仁勳", "tweet_count": 14, "avg_interaction": 2.86, "avg_views": 189.21}],
+  zh_hours: [{"hour": 8, "avg_interaction": 13.5, "avg_views": 1182.38, "tweet_count": 26}, {"hour": 7, "avg_interaction": 9.5, "avg_views": 558.56, "tweet_count": 16}, {"hour": 10, "avg_interaction": 7.1, "avg_views": 490.77, "tweet_count": 69}, {"hour": 14, "avg_interaction": 5.46, "avg_views": 416.93, "tweet_count": 59}, {"hour": 11, "avg_interaction": 5.16, "avg_views": 357.1, "tweet_count": 69}],
+  en_hours: [{"hour": 11, "avg_interaction": 13.0, "avg_views": 901.5, "tweet_count": 2}, {"hour": 12, "avg_interaction": 9.0, "avg_views": 1024.0, "tweet_count": 1}, {"hour": 15, "avg_interaction": 6.0, "avg_views": 641.0, "tweet_count": 1}, {"hour": 14, "avg_interaction": 6.0, "avg_views": 426.0, "tweet_count": 1}, {"hour": 13, "avg_interaction": 1.33, "avg_views": 388.0, "tweet_count": 3}],
+  zh_days:  [{"day": "Wednesday", "avg_interaction": 6.33, "avg_views": 426.89}, {"day": "Sunday", "avg_interaction": 5.56, "avg_views": 409.98}, {"day": "Tuesday", "avg_interaction": 4.52, "avg_views": 278.5}, {"day": "Monday", "avg_interaction": 4.41, "avg_views": 362.1}, {"day": "Saturday", "avg_interaction": 4.32, "avg_views": 300.98}, {"day": "Thursday", "avg_interaction": 3.97, "avg_views": 313.56}, {"day": "Friday", "avg_interaction": 2.84, "avg_views": 214.66}],
+  en_days:  [{"day": "Wednesday", "avg_interaction": 24.0, "avg_views": 1644.0}, {"day": "Thursday", "avg_interaction": 4.0, "avg_views": 390.0}, {"day": "Tuesday", "avg_interaction": 3.25, "avg_views": 547.0}, {"day": "Sunday", "avg_interaction": 2.0, "avg_views": 159.0}],
+  zh_ht:    [{"hashtag": "#玻璃基板", "avg_interaction": 27.0, "avg_views": 1297.5, "tweet_count": 2}, {"hashtag": "#小摩揭露13家台廠獲利防線", "avg_interaction": 27.0, "avg_views": 1302.5, "tweet_count": 2}, {"hashtag": "#mlcc", "avg_interaction": 15.5, "avg_views": 845.75, "tweet_count": 4}, {"hashtag": "#國巨", "avg_interaction": 13.25, "avg_views": 787.25, "tweet_count": 4}, {"hashtag": "#康寧", "avg_interaction": 12.5, "avg_views": 658.5, "tweet_count": 2}, {"hashtag": "#copos", "avg_interaction": 10.0, "avg_views": 553.0, "tweet_count": 2}, {"hashtag": "#台達電", "avg_interaction": 9.6, "avg_views": 602.0, "tweet_count": 5}, {"hashtag": "#marvell", "avg_interaction": 9.0, "avg_views": 559.0, "tweet_count": 2}],
+  en_ht:    [{"hashtag": "#tech", "avg_interaction": 6.0, "avg_views": 533.5, "tweet_count": 2}, {"hashtag": "#ai", "avg_interaction": 3.75, "avg_views": 444.75, "tweet_count": 4}]
 };
 </script>
 <div class="page " id="page-tn">
-  <p class="updated">Based on 850 tweets scraped from @technews_tw &middot; Updated June 29, 2026 15:35 Taiwan Time</p>
+  <p class="updated">Based on 850 tweets scraped from @technews_tw &middot; Updated June 29, 2026 15:39 Taiwan Time</p>
   
     <div class="kpi-row">
       <div class="kpi"><div class="kpi-label">Total Tweets</div><div class="kpi-value blue">850</div></div>
@@ -305,13 +312,14 @@ window._data['tn'] = {
       <div class="kpi"><div class="kpi-label">Avg Views</div><div class="kpi-value teal">325</div></div>
       <div class="kpi"><div class="kpi-label">Max Views</div><div class="kpi-value">10,021</div></div>
     </div>
+  <div class="bar-legend"><span><span class="dot" style="background:var(--gold)"></span>Interaction</span><span><span class="dot" style="background:var(--blue)"></span>Views</span></div>
   <div class="two-col">
     <div class="section">
       <div class="section-title">Best Hours to Post (Taiwan Time)</div>
       <div id="tn-hours"></div>
     </div>
     <div class="section">
-      <div class="section-title">Avg Interaction by Day</div>
+      <div class="section-title">Avg Interaction &amp; Views by Day</div>
       <div id="tn-days"></div>
     </div>
   </div>
@@ -594,44 +602,60 @@ function switchTab(id, el) {
   document.getElementById('page-' + id).classList.add('active');
 }
 
-function renderBars(pid, key, color, valKey, labelKey, countKey, count2) {
+function renderBars(pid, key, color, valKey, labelKey, opts) {
+  opts = opts || {};
   const el = document.getElementById(pid + '-' + key);
   if (!el) return;
   const dataKey = key.replace(/-/g, '_');
   const items = (window._data[pid] || {})[dataKey] || [];
-  const max = Math.max(...items.map(i => +i[valKey] || 0), 1);
+  const viewKey = opts.viewKey || 'avg_views';
+  const isLeft = labelKey === 'hashtag' || labelKey === 'keyword';
+
+  const maxI = Math.max(...items.map(i => +i[valKey] || 0), 1);
+  const maxV = Math.max(...items.map(i => +i[viewKey] || 0), 1);
+
   items.forEach(item => {
     const label = labelKey === 'hour'
       ? String(item.hour).padStart(2,'0') + ':00'
       : String(item[labelKey] || '');
-    const val = +item[valKey] || 0;
-    const pct = (val / max * 100).toFixed(1);
-    const countStr = countKey
-      ? `<div class="bar-count">${item[countKey] != null ? item[countKey] + (countKey==='tweet_count'?' tweets':'') : ''}</div>`
-      : (count2 ? `<div class="bar-count">avg ${item[count2]}</div>` : '');
+    const val  = +item[valKey]  || 0;
+    const views = +item[viewKey] || 0;
+    const pctI = (val   / maxI * 100).toFixed(1);
+    const pctV = (views / maxV * 100).toFixed(1);
+    const countStr = opts.countKey
+      ? `<div class="bar-count">${item[opts.countKey] != null ? item[opts.countKey] + ' tweets' : ''}</div>`
+      : '';
+
     const div = document.createElement('div');
-    div.className = 'bar-row';
+    div.className = 'bar-group';
     div.innerHTML = `
-      <div class="bar-label ${labelKey==='hashtag'||labelKey==='keyword'?'left':''}">${label}</div>
-      <div class="bar-track"><div class="bar-fill ${color}" style="width:${pct}%"></div></div>
-      <div class="bar-val">${val}</div>
-      ${countStr}`;
+      <div class="bar-row">
+        <div class="bar-label ${isLeft?'left':''}">${label}</div>
+        <div class="bar-track"><div class="bar-fill ${color}" style="width:${pctI}%"></div></div>
+        <div class="bar-val">${val}</div>
+        ${countStr}
+      </div>
+      <div class="bar-row bar-row-views">
+        <div class="bar-label ${isLeft?'left':''}"></div>
+        <div class="bar-track"><div class="bar-fill blue" style="width:${pctV}%"></div></div>
+        <div class="bar-val views-val">${views >= 1000 ? (views/1000).toFixed(1)+'K' : views}</div>
+      </div>`;
     el.appendChild(div);
   });
 }
 
 ['tf','tn'].forEach(pid => {
-  renderBars(pid, 'hours',    'gold',  'avg_interaction', 'hour',    'tweet_count', null);
-  renderBars(pid, 'days',     '',      'avg_interaction', 'day',     null,          null);
-  renderBars(pid, 'kws',      'teal',  'avg_interaction', 'keyword', 'tweet_count', null);
-  renderBars(pid, 'hti',      '',      'avg_interaction', 'hashtag', 'tweet_count', null);
-  renderBars(pid, 'htu',      'green', 'tweet_count',     'hashtag', null,          'avg_interaction');
-  renderBars(pid, 'zh-hours', 'gold',  'avg_interaction', 'hour',    'tweet_count', null);
-  renderBars(pid, 'en-hours', 'teal',  'avg_interaction', 'hour',    'tweet_count', null);
-  renderBars(pid, 'zh-days',  'gold',  'avg_interaction', 'day',     null,          null);
-  renderBars(pid, 'en-days',  'teal',  'avg_interaction', 'day',     null,          null);
-  renderBars(pid, 'zh-ht',    'gold',  'avg_interaction', 'hashtag', 'tweet_count', null);
-  renderBars(pid, 'en-ht',    'teal',  'avg_interaction', 'hashtag', 'tweet_count', null);
+  renderBars(pid, 'hours',    'gold',  'avg_interaction', 'hour',    {countKey:'tweet_count'});
+  renderBars(pid, 'days',     '',      'avg_interaction', 'day',     {});
+  renderBars(pid, 'kws',      'teal',  'avg_interaction', 'keyword', {countKey:'tweet_count'});
+  renderBars(pid, 'hti',      '',      'avg_interaction', 'hashtag', {countKey:'tweet_count'});
+  renderBars(pid, 'htu',      'green', 'tweet_count',     'hashtag', {});
+  renderBars(pid, 'zh-hours', 'gold',  'avg_interaction', 'hour',    {countKey:'tweet_count'});
+  renderBars(pid, 'en-hours', 'teal',  'avg_interaction', 'hour',    {countKey:'tweet_count'});
+  renderBars(pid, 'zh-days',  'gold',  'avg_interaction', 'day',     {});
+  renderBars(pid, 'en-days',  'teal',  'avg_interaction', 'day',     {});
+  renderBars(pid, 'zh-ht',    'gold',  'avg_interaction', 'hashtag', {countKey:'tweet_count'});
+  renderBars(pid, 'en-ht',    'teal',  'avg_interaction', 'hashtag', {countKey:'tweet_count'});
 });
 </script>
 </body>
