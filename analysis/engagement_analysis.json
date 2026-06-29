@@ -2340,8 +2340,7 @@
           "ai",
           "elon jet",
           "florida qualcomm",
-          "intel saved",
-          "global foundries"
+          "intel saved"
         ],
         "has_images": false
       },
@@ -4524,12 +4523,6 @@
         "avg_views": 126823.0
       },
       {
-        "keyword": "dominate global",
-        "avg_interaction": 771.67,
-        "tweet_count": 3,
-        "avg_views": 273597.33
-      },
-      {
         "keyword": "micron",
         "avg_interaction": 675.55,
         "tweet_count": 11,
@@ -4576,6 +4569,12 @@
         "avg_interaction": 386.71,
         "tweet_count": 14,
         "avg_views": 79011.57
+      },
+      {
+        "keyword": "nvidia",
+        "avg_interaction": 347.77,
+        "tweet_count": 71,
+        "avg_views": 58028.37
       }
     ],
     "top_tweets": [
@@ -5366,12 +5365,6 @@
         "avg_views": 413037.25
       },
       {
-        "keyword": "dominate global",
-        "avg_interaction": 771.67,
-        "tweet_count": 3,
-        "avg_views": 273597.33
-      },
-      {
         "keyword": "semiconductor manufacturing",
         "avg_interaction": 759.0,
         "tweet_count": 3,
@@ -5406,6 +5399,12 @@
         "avg_interaction": 624.0,
         "tweet_count": 3,
         "avg_views": 69104.0
+      },
+      {
+        "keyword": "korean media",
+        "avg_interaction": 617.38,
+        "tweet_count": 8,
+        "avg_views": 157623.88
       }
     ],
     "top_tweets": [
@@ -5498,8 +5497,7 @@
           "ai",
           "elon jet",
           "florida qualcomm",
-          "intel saved",
-          "global foundries"
+          "intel saved"
         ],
         "has_images": false
       },
