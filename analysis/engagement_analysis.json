@@ -205,12 +205,6 @@
         "avg_views": 71128.4
       },
       {
-        "keyword": "forecast",
-        "avg_interaction": 124.25,
-        "tweet_count": 4,
-        "avg_views": 44572.25
-      },
-      {
         "keyword": "memory giants",
         "avg_interaction": 101.17,
         "tweet_count": 6,
@@ -253,12 +247,6 @@
         "avg_views": 25929.33
       },
       {
-        "keyword": "sk hynix",
-        "avg_interaction": 73.33,
-        "tweet_count": 15,
-        "avg_views": 9688.6
-      },
-      {
         "keyword": "#sandisk",
         "avg_interaction": 73.12,
         "tweet_count": 8,
@@ -281,6 +269,18 @@
         "avg_interaction": 67.5,
         "tweet_count": 10,
         "avg_views": 36667.6
+      },
+      {
+        "keyword": "contract prices",
+        "avg_interaction": 63.67,
+        "tweet_count": 3,
+        "avg_views": 17269.67
+      },
+      {
+        "keyword": "dram suppliers",
+        "avg_interaction": 58.67,
+        "tweet_count": 3,
+        "avg_views": 16030.67
       }
     ],
     "top_tweets": [
@@ -306,7 +306,6 @@
           "gpu",
           "cpu",
           "arm",
-          "price",
           "ai",
           "cpu planned",
           "agentic ai",
@@ -330,11 +329,7 @@
           "nand",
           "dram",
           "memory",
-          "demand",
-          "price",
           "trendforce",
-          "forecast",
-          "dram forecast",
           "memory prices",
           "prices climbing",
           "flash surge",
@@ -355,7 +350,6 @@
         "keywords": [
           "hbm",
           "samsung",
-          "sk hynix",
           "hynix",
           "micron",
           "nvidia",
@@ -385,9 +379,7 @@
           "#sandisk",
           "#ssd",
           "ssd",
-          "demand",
           "ssd supply",
-          "sandisk announced",
           "agreements years",
           "hybrid pricing"
         ],
@@ -454,12 +446,10 @@
           "#trendforce",
           "dram",
           "hbm",
-          "price",
           "trendforce",
           "hbm prices",
           "dram supply",
-          "negotiations underway",
-          "2027"
+          "negotiations underway"
         ],
         "has_images": false
       },
@@ -479,7 +469,6 @@
           "memory",
           "ai",
           "inference",
-          "nm",
           "hbf emerging",
           "hanmi semiconductor",
           "tc bonders",
@@ -502,7 +491,6 @@
           "semiconductor",
           "data center",
           "ai",
-          "nm",
           "hvdc power",
           "power semiconductors",
           "gan devices",
@@ -1152,18 +1140,6 @@
         "avg_views": 1271.5
       },
       {
-        "keyword": "capacity",
-        "avg_interaction": 10.25,
-        "tweet_count": 4,
-        "avg_views": 946.5
-      },
-      {
-        "keyword": "computex 2026",
-        "avg_interaction": 10.25,
-        "tweet_count": 4,
-        "avg_views": 638.25
-      },
-      {
         "keyword": "#\u53f0\u9054\u96fb",
         "avg_interaction": 9.6,
         "tweet_count": 5,
@@ -1222,6 +1198,18 @@
         "avg_interaction": 7.19,
         "tweet_count": 16,
         "avg_views": 672.12
+      },
+      {
+        "keyword": "#\u53f0\u7a4d\u96fb",
+        "avg_interaction": 6.67,
+        "tweet_count": 43,
+        "avg_views": 369.26
+      },
+      {
+        "keyword": "nvidia",
+        "avg_interaction": 6.41,
+        "tweet_count": 22,
+        "avg_views": 434.0
       }
     ],
     "top_tweets": [
@@ -1425,7 +1413,6 @@
           "#\u53f0\u7a4d\u96fb\u4e5d\u5ea6\u87ec\u806f\u7e73\u7a05\u738b",
           "\u53f0\u7063\u8fd1\u4e09\u6210\u7a05\u91d1\u7531\u53f0\u7a4d\u96fb\u8ca2\u737b \u53f0\u7a4d\u96fb\u4e5d\u5ea6\u87ec\u806f\u7e73\u7a05\u738b",
           "\u65e5\u622a\u6b62 \u64da\u8ca1\u653f\u90e8\u7d71\u8a08\u53ca\u4f01\u696d\u8ca1\u5831\u8cc7\u6599\u4ea4\u53c9\u6bd4\u5c0d",
-          "2025 \u5e74\u5ea6\u71df\u5229\u4e8b\u696d\u6240\u5f97\u7a05\u7d50\u7b97\u7533\u5831\u65bc",
           "\u6708\u7e73\u7d0d\u71df\u6240\u7a05\u8fd1 000"
         ],
         "has_images": true
@@ -2425,7 +2412,6 @@
           "public commits",
           "claude code",
           "software development",
-          "2026",
           "newsletter semianalysis"
         ],
         "has_images": true
@@ -2919,18 +2905,6 @@
     },
     "top_keywords": [
       {
-        "keyword": "samsung sk",
-        "avg_interaction": 3058.0,
-        "tweet_count": 3,
-        "avg_views": 643211.67
-      },
-      {
-        "keyword": "announce",
-        "avg_interaction": 2366.67,
-        "tweet_count": 3,
-        "avg_views": 410075.33
-      },
-      {
         "keyword": "sk",
         "avg_interaction": 1279.75,
         "tweet_count": 4,
@@ -2941,12 +2915,6 @@
         "avg_interaction": 1252.69,
         "tweet_count": 13,
         "avg_views": 192098.62
-      },
-      {
-        "keyword": "market capitalization",
-        "avg_interaction": 1234.0,
-        "tweet_count": 3,
-        "avg_views": 182668.33
       },
       {
         "keyword": "semianalysis",
@@ -2961,12 +2929,6 @@
         "avg_views": 121730.67
       },
       {
-        "keyword": "earnings",
-        "avg_interaction": 1080.71,
-        "tweet_count": 7,
-        "avg_views": 173750.0
-      },
-      {
         "keyword": "memory prices",
         "avg_interaction": 1066.25,
         "tweet_count": 8,
@@ -2977,12 +2939,6 @@
         "avg_interaction": 975.33,
         "tweet_count": 6,
         "avg_views": 326246.33
-      },
-      {
-        "keyword": "sk hynix",
-        "avg_interaction": 947.26,
-        "tweet_count": 43,
-        "avg_views": 180348.21
       },
       {
         "keyword": "supply chain",
@@ -3003,10 +2959,40 @@
         "avg_views": 179267.16
       },
       {
-        "keyword": "forecast",
-        "avg_interaction": 931.67,
-        "tweet_count": 6,
-        "avg_views": 271505.67
+        "keyword": "semiconductor",
+        "avg_interaction": 897.91,
+        "tweet_count": 35,
+        "avg_views": 185450.14
+      },
+      {
+        "keyword": "fab",
+        "avg_interaction": 885.21,
+        "tweet_count": 14,
+        "avg_views": 187846.43
+      },
+      {
+        "keyword": "memory",
+        "avg_interaction": 872.98,
+        "tweet_count": 58,
+        "avg_views": 169678.88
+      },
+      {
+        "keyword": "apple",
+        "avg_interaction": 861.44,
+        "tweet_count": 9,
+        "avg_views": 193288.11
+      },
+      {
+        "keyword": "cpu",
+        "avg_interaction": 845.62,
+        "tweet_count": 13,
+        "avg_views": 136277.92
+      },
+      {
+        "keyword": "nand",
+        "avg_interaction": 830.75,
+        "tweet_count": 20,
+        "avg_views": 183974.15
       }
     ],
     "top_tweets": [
@@ -3022,10 +3008,8 @@
         "timestamp": "2026-05-22T01:29:35.000Z",
         "keywords": [
           "samsung",
-          "sk hynix",
           "hynix",
           "showrooms packed",
-          "samsung sk",
           "hynix employees",
           "korea say",
           "supercar dealerships"
@@ -3045,7 +3029,6 @@
         "keywords": [
           "korean tv",
           "lg electronics",
-          "industry collapsed",
           "china hisense",
           "sad according"
         ],
@@ -3066,8 +3049,7 @@
           "ai",
           "supply chain",
           "korean semiconductor",
-          "engineers free",
-          "real time"
+          "engineers free"
         ],
         "has_images": false
       },
@@ -3102,8 +3084,6 @@
         "timestamp": "2026-05-28T08:17:10.000Z",
         "keywords": [
           "huang surprising",
-          "announce",
-          "surprising new",
           "product haven",
           "jensen"
         ],
@@ -3138,10 +3118,8 @@
         "timestamp": "2026-06-23T10:33:47.000Z",
         "keywords": [
           "micron",
-          "earnings",
           "kospi fall",
-          "korean leverage",
-          "micron earnings"
+          "korean leverage"
         ],
         "has_images": false
       },
@@ -3156,10 +3134,8 @@
         "url": "https://x.com/jukan05/status/2059782862661210172",
         "timestamp": "2026-05-27T23:44:38.000Z",
         "keywords": [
-          "tweets reports",
           "jpm using",
-          "using tweets",
-          "reports just"
+          "using tweets"
         ],
         "has_images": true
       },
@@ -3176,7 +3152,6 @@
         "keywords": [
           "breaking news",
           "chinese media",
-          "exit shares",
           "damn chinese"
         ],
         "has_images": true
@@ -3204,24 +3179,24 @@
     ],
     "best_image_keywords": [
       {
-        "keyword": "samsung sk",
-        "avg_interaction": 3058.0
-      },
-      {
         "keyword": "didn",
         "avg_interaction": 1380.5
-      },
-      {
-        "keyword": "market capitalization",
-        "avg_interaction": 1325.5
       },
       {
         "keyword": "sk",
         "avg_interaction": 1307.33
       },
       {
-        "keyword": "sk hynix",
-        "avg_interaction": 1128.35
+        "keyword": "micron",
+        "avg_interaction": 1102.5
+      },
+      {
+        "keyword": "trendforce",
+        "avg_interaction": 1100.67
+      },
+      {
+        "keyword": "hynix",
+        "avg_interaction": 1095.29
       }
     ],
     "top_hashtags_by_interaction": [],
@@ -3607,12 +3582,6 @@
         "avg_views": 22113.86
       },
       {
-        "keyword": "shipment",
-        "avg_interaction": 121.0,
-        "tweet_count": 3,
-        "avg_views": 29647.33
-      },
-      {
         "keyword": "nvidia",
         "avg_interaction": 109.26,
         "tweet_count": 34,
@@ -3649,12 +3618,6 @@
         "avg_views": 15797.22
       },
       {
-        "keyword": "nm",
-        "avg_interaction": 92.4,
-        "tweet_count": 5,
-        "avg_views": 11311.0
-      },
-      {
         "keyword": "samsung",
         "avg_interaction": 85.33,
         "tweet_count": 3,
@@ -3689,6 +3652,18 @@
         "avg_interaction": 80.29,
         "tweet_count": 133,
         "avg_views": 13750.29
+      },
+      {
+        "keyword": "hynix",
+        "avg_interaction": 76.75,
+        "tweet_count": 4,
+        "avg_views": 11620.25
+      },
+      {
+        "keyword": "trendforce",
+        "avg_interaction": 69.0,
+        "tweet_count": 16,
+        "avg_views": 12506.0
       }
     ],
     "top_tweets": [
@@ -3744,12 +3719,10 @@
         "timestamp": "2026-06-09T16:31:04.000Z",
         "keywords": [
           "nvidia",
-          "shipment",
           "semianalysis",
           "delayed 800vdc",
           "adoption nvidia",
           "push cpo",
-          "2026 widespread",
           "semianalysis power"
         ],
         "has_images": false
@@ -4533,12 +4506,6 @@
         "avg_views": 192973.6
       },
       {
-        "keyword": "2026",
-        "avg_interaction": 1038.0,
-        "tweet_count": 5,
-        "avg_views": 173991.0
-      },
-      {
         "keyword": "ai chip",
         "avg_interaction": 966.67,
         "tweet_count": 3,
@@ -4561,12 +4528,6 @@
         "avg_interaction": 771.67,
         "tweet_count": 3,
         "avg_views": 273597.33
-      },
-      {
-        "keyword": "spot price",
-        "avg_interaction": 710.0,
-        "tweet_count": 3,
-        "avg_views": 169404.0
       },
       {
         "keyword": "micron",
@@ -4599,10 +4560,22 @@
         "avg_views": 51972.25
       },
       {
-        "keyword": "nm",
-        "avg_interaction": 451.87,
-        "tweet_count": 23,
-        "avg_views": 72023.78
+        "keyword": "gpu",
+        "avg_interaction": 427.63,
+        "tweet_count": 54,
+        "avg_views": 105194.93
+      },
+      {
+        "keyword": "capex",
+        "avg_interaction": 411.75,
+        "tweet_count": 4,
+        "avg_views": 88400.25
+      },
+      {
+        "keyword": "cpu",
+        "avg_interaction": 386.71,
+        "tweet_count": 14,
+        "avg_views": 79011.57
       }
     ],
     "top_tweets": [
@@ -4738,8 +4711,7 @@
           "public commits",
           "github",
           "claude code",
-          "software development",
-          "2026"
+          "software development"
         ],
         "has_images": true
       },
@@ -4754,7 +4726,6 @@
         "url": "https://x.com/SemiAnalysis_/status/2065866999188898080",
         "timestamp": "2026-06-13T18:40:49.000Z",
         "keywords": [
-          "nm",
           "fab",
           "anthropic believe",
           "mythos class",
@@ -4820,8 +4791,8 @@
         "avg_interaction": 1048.5
       },
       {
-        "keyword": "2026",
-        "avg_interaction": 1038.0
+        "keyword": "fab",
+        "avg_interaction": 995.18
       }
     ],
     "top_hashtags_by_interaction": [
@@ -5347,22 +5318,10 @@
     },
     "top_keywords": [
       {
-        "keyword": "announce",
-        "avg_interaction": 2366.67,
-        "tweet_count": 3,
-        "avg_views": 410075.33
-      },
-      {
         "keyword": "jensen",
         "avg_interaction": 2312.2,
         "tweet_count": 5,
         "avg_views": 475168.2
-      },
-      {
-        "keyword": "samsung sk",
-        "avg_interaction": 2308.0,
-        "tweet_count": 4,
-        "avg_views": 483464.25
       },
       {
         "keyword": "newsletter semianalysis",
@@ -5381,18 +5340,6 @@
         "avg_interaction": 1349.0,
         "tweet_count": 3,
         "avg_views": 233902.33
-      },
-      {
-        "keyword": "nvidia stock",
-        "avg_interaction": 1278.67,
-        "tweet_count": 3,
-        "avg_views": 177593.33
-      },
-      {
-        "keyword": "market capitalization",
-        "avg_interaction": 1234.0,
-        "tweet_count": 3,
-        "avg_views": 182668.33
       },
       {
         "keyword": "microsoft",
@@ -5419,22 +5366,46 @@
         "avg_views": 413037.25
       },
       {
-        "keyword": "high na",
-        "avg_interaction": 836.33,
-        "tweet_count": 3,
-        "avg_views": 167863.0
-      },
-      {
-        "keyword": "company",
-        "avg_interaction": 812.5,
-        "tweet_count": 4,
-        "avg_views": 325243.5
-      },
-      {
         "keyword": "dominate global",
         "avg_interaction": 771.67,
         "tweet_count": 3,
         "avg_views": 273597.33
+      },
+      {
+        "keyword": "semiconductor manufacturing",
+        "avg_interaction": 759.0,
+        "tweet_count": 3,
+        "avg_views": 113701.67
+      },
+      {
+        "keyword": "memory prices",
+        "avg_interaction": 756.67,
+        "tweet_count": 12,
+        "avg_views": 157796.5
+      },
+      {
+        "keyword": "cxmt",
+        "avg_interaction": 741.4,
+        "tweet_count": 5,
+        "avg_views": 79886.4
+      },
+      {
+        "keyword": "sk",
+        "avg_interaction": 733.0,
+        "tweet_count": 7,
+        "avg_views": 130390.43
+      },
+      {
+        "keyword": "china",
+        "avg_interaction": 667.33,
+        "tweet_count": 3,
+        "avg_views": 125862.33
+      },
+      {
+        "keyword": "gb200 nvl72",
+        "avg_interaction": 624.0,
+        "tweet_count": 3,
+        "avg_views": 69104.0
       }
     ],
     "top_tweets": [
@@ -5544,10 +5515,8 @@
         "timestamp": "2026-05-22T01:29:35.000Z",
         "keywords": [
           "samsung",
-          "sk hynix",
           "hynix",
           "showrooms packed",
-          "samsung sk",
           "hynix employees",
           "korea say",
           "supercar dealerships"
@@ -5567,7 +5536,6 @@
         "keywords": [
           "korean tv",
           "lg electronics",
-          "industry collapsed",
           "china hisense",
           "sad according"
         ],
@@ -5588,8 +5556,7 @@
           "ai",
           "supply chain",
           "korean semiconductor",
-          "engineers free",
-          "real time"
+          "engineers free"
         ],
         "has_images": false
       },
@@ -5644,12 +5611,12 @@
         "avg_interaction": 4211.5
       },
       {
-        "keyword": "samsung sk",
-        "avg_interaction": 3058.0
-      },
-      {
         "keyword": "newsletter semianalysis",
         "avg_interaction": 2992.5
+      },
+      {
+        "keyword": "deepseek v3",
+        "avg_interaction": 2445.0
       }
     ],
     "top_hashtags_by_interaction": [
