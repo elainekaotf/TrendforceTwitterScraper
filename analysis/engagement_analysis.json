@@ -4230,10 +4230,14 @@
   },
   "SemiAnalysis_": {
     "handle": "SemiAnalysis_",
-    "tweet_count": 697,
-    "date_from": "2026-02-17",
-    "date_to": "2026-06-24",
+    "tweet_count": 691,
+    "date_from": "2026-02-25",
+    "date_to": "2026-06-29",
     "best_hours": [
+      {
+        "hour": 2,
+        "avg_interaction": 845.33
+      },
       {
         "hour": 17,
         "avg_interaction": 748.0
@@ -4243,251 +4247,252 @@
         "avg_interaction": 648.0
       },
       {
-        "hour": 2,
-        "avg_interaction": 541.25
+        "hour": 7,
+        "avg_interaction": 427.11
       },
       {
         "hour": 20,
-        "avg_interaction": 382.0
-      },
-      {
-        "hour": 0,
-        "avg_interaction": 368.08
+        "avg_interaction": 382.67
       }
     ],
     "all_hours": [
       {
         "hour": 0,
-        "avg_interaction": 368.08,
-        "avg_views": 89584.25,
+        "avg_interaction": 368.17,
+        "avg_views": 90147.42,
         "tweet_count": 12
       },
       {
         "hour": 1,
-        "avg_interaction": 361.53,
-        "avg_views": 45691.53,
-        "tweet_count": 123
+        "avg_interaction": 350.72,
+        "avg_views": 45689.64,
+        "tweet_count": 137
       },
       {
         "hour": 2,
-        "avg_interaction": 541.25,
-        "avg_views": 140682.28,
-        "tweet_count": 32
+        "avg_interaction": 845.33,
+        "avg_views": 207141.76,
+        "tweet_count": 21
       },
       {
         "hour": 3,
-        "avg_interaction": 245.53,
-        "avg_views": 51203.47,
-        "tweet_count": 34
+        "avg_interaction": 272.38,
+        "avg_views": 63048.07,
+        "tweet_count": 29
       },
       {
         "hour": 4,
-        "avg_interaction": 365.56,
-        "avg_views": 68700.48,
-        "tweet_count": 25
-      },
-      {
-        "hour": 5,
-        "avg_interaction": 272.2,
-        "avg_views": 50452.62,
-        "tweet_count": 96
-      },
-      {
-        "hour": 6,
-        "avg_interaction": 170.54,
-        "avg_views": 48434.56,
-        "tweet_count": 41
-      },
-      {
-        "hour": 7,
-        "avg_interaction": 348.32,
-        "avg_views": 87601.97,
-        "tweet_count": 34
-      },
-      {
-        "hour": 8,
-        "avg_interaction": 157.25,
-        "avg_views": 32349.75,
-        "tweet_count": 20
-      },
-      {
-        "hour": 9,
-        "avg_interaction": 195.09,
-        "avg_views": 37603.31,
-        "tweet_count": 74
-      },
-      {
-        "hour": 10,
-        "avg_interaction": 293.24,
-        "avg_views": 42306.41,
-        "tweet_count": 41
-      },
-      {
-        "hour": 11,
-        "avg_interaction": 332.95,
-        "avg_views": 47183.11,
-        "tweet_count": 19
-      },
-      {
-        "hour": 12,
-        "avg_interaction": 318.41,
-        "avg_views": 47719.3,
+        "avg_interaction": 336.07,
+        "avg_views": 64163.48,
         "tweet_count": 27
       },
       {
+        "hour": 5,
+        "avg_interaction": 273.52,
+        "avg_views": 51420.05,
+        "tweet_count": 98
+      },
+      {
+        "hour": 6,
+        "avg_interaction": 222.31,
+        "avg_views": 55629.91,
+        "tweet_count": 35
+      },
+      {
+        "hour": 7,
+        "avg_interaction": 427.11,
+        "avg_views": 109792.8,
+        "tweet_count": 35
+      },
+      {
+        "hour": 8,
+        "avg_interaction": 197.43,
+        "avg_views": 38322.61,
+        "tweet_count": 23
+      },
+      {
+        "hour": 9,
+        "avg_interaction": 202.96,
+        "avg_views": 36355.97,
+        "tweet_count": 77
+      },
+      {
+        "hour": 10,
+        "avg_interaction": 327.03,
+        "avg_views": 46173.06,
+        "tweet_count": 36
+      },
+      {
+        "hour": 11,
+        "avg_interaction": 364.64,
+        "avg_views": 62346.76,
+        "tweet_count": 25
+      },
+      {
+        "hour": 12,
+        "avg_interaction": 319.5,
+        "avg_views": 48330.93,
+        "tweet_count": 28
+      },
+      {
         "hour": 13,
-        "avg_interaction": 224.2,
-        "avg_views": 34109.0,
-        "tweet_count": 5
+        "avg_interaction": 210.25,
+        "avg_views": 31989.5,
+        "tweet_count": 4
       },
       {
         "hour": 14,
         "avg_interaction": 648.0,
-        "avg_views": 103123.5,
+        "avg_views": 103325.5,
         "tweet_count": 2
       },
       {
         "hour": 15,
         "avg_interaction": 223.0,
-        "avg_views": 37564.0,
+        "avg_views": 37589.0,
         "tweet_count": 1
       },
       {
         "hour": 17,
         "avg_interaction": 748.0,
-        "avg_views": 396877.0,
+        "avg_views": 397098.0,
         "tweet_count": 1
       },
       {
         "hour": 19,
-        "avg_interaction": 59.0,
-        "avg_views": 20936.5,
+        "avg_interaction": 59.5,
+        "avg_views": 20940.5,
         "tweet_count": 2
       },
       {
         "hour": 20,
-        "avg_interaction": 382.0,
-        "avg_views": 164780.0,
+        "avg_interaction": 382.67,
+        "avg_views": 166400.0,
         "tweet_count": 3
       },
       {
         "hour": 21,
-        "avg_interaction": 125.41,
-        "avg_views": 27548.17,
-        "tweet_count": 58
+        "avg_interaction": 135.88,
+        "avg_views": 29123.86,
+        "tweet_count": 57
       },
       {
         "hour": 22,
-        "avg_interaction": 115.18,
-        "avg_views": 26241.18,
-        "tweet_count": 38
+        "avg_interaction": 128.57,
+        "avg_views": 36694.11,
+        "tweet_count": 28
       },
       {
         "hour": 23,
-        "avg_interaction": 221.67,
-        "avg_views": 77638.11,
-        "tweet_count": 9
+        "avg_interaction": 219.4,
+        "avg_views": 88565.6,
+        "tweet_count": 10
       }
     ],
     "best_days": [
       {
         "day": "Sunday",
-        "avg_interaction": 390.73,
-        "avg_views": 72698.29
+        "avg_interaction": 423.4,
+        "avg_views": 83395.38
       },
       {
         "day": "Thursday",
-        "avg_interaction": 311.24,
-        "avg_views": 52401.56
-      },
-      {
-        "day": "Saturday",
-        "avg_interaction": 287.81,
-        "avg_views": 49102.87
+        "avg_interaction": 351.62,
+        "avg_views": 56294.05
       },
       {
         "day": "Wednesday",
-        "avg_interaction": 282.55,
-        "avg_views": 58455.2
+        "avg_interaction": 317.55,
+        "avg_views": 65754.06
+      },
+      {
+        "day": "Saturday",
+        "avg_interaction": 281.4,
+        "avg_views": 47442.05
       },
       {
         "day": "Tuesday",
-        "avg_interaction": 242.21,
-        "avg_views": 50246.03
+        "avg_interaction": 250.49,
+        "avg_views": 55406.52
       },
       {
         "day": "Friday",
-        "avg_interaction": 226.35,
-        "avg_views": 47933.92
+        "avg_interaction": 241.64,
+        "avg_views": 52742.8
       },
       {
         "day": "Monday",
-        "avg_interaction": 205.33,
-        "avg_views": 41835.53
+        "avg_interaction": 224.71,
+        "avg_views": 44441.55
       }
     ],
     "images": {
       "with_image": {
-        "avg_interaction": 341.77,
-        "count": 482
+        "avg_interaction": 366.13,
+        "count": 473
       },
       "without_image": {
-        "avg_interaction": 124.43,
-        "count": 215
+        "avg_interaction": 144.34,
+        "count": 218
       },
       "winner": "images",
-      "pct_difference": 174.7
+      "pct_difference": 153.7
     },
     "top_keywords": [
       {
         "keyword": "image",
-        "avg_interaction": 3322.2,
-        "tweet_count": 5
+        "avg_interaction": 4105.75,
+        "tweet_count": 4
       },
       {
         "keyword": "smartphone",
-        "avg_interaction": 1304.25,
+        "avg_interaction": 1305.0,
         "tweet_count": 4
       },
       {
         "keyword": "apple",
-        "avg_interaction": 1174.8,
+        "avg_interaction": 1175.2,
         "tweet_count": 5
       },
       {
         "keyword": "2026",
-        "avg_interaction": 1037.2,
+        "avg_interaction": 1038.0,
         "tweet_count": 5
       },
       {
         "keyword": "ai chip",
-        "avg_interaction": 1001.0,
+        "avg_interaction": 966.67,
         "tweet_count": 3
       },
       {
         "keyword": "fab",
-        "avg_interaction": 818.79,
-        "tweet_count": 19
-      },
-      {
-        "keyword": "dominate global",
-        "avg_interaction": 770.67,
-        "tweet_count": 3
+        "avg_interaction": 849.05,
+        "tweet_count": 20
       },
       {
         "keyword": "claude code",
-        "avg_interaction": 714.43,
-        "tweet_count": 7
+        "avg_interaction": 786.67,
+        "tweet_count": 6
       },
       {
-        "keyword": "gb200 nvl72",
-        "avg_interaction": 527.75,
-        "tweet_count": 4
+        "keyword": "dominate global",
+        "avg_interaction": 771.67,
+        "tweet_count": 3
+      },
+      {
+        "keyword": "spot price",
+        "avg_interaction": 710.0,
+        "tweet_count": 3
       },
       {
         "keyword": "micron",
-        "avg_interaction": 513.92,
-        "tweet_count": 13
+        "avg_interaction": 675.55,
+        "tweet_count": 11
+      },
+      {
+        "keyword": "gb200 nvl72",
+        "avg_interaction": 624.0,
+        "tweet_count": 3
       },
       {
         "keyword": "gpu clusters",
@@ -4500,29 +4505,24 @@
         "tweet_count": 3
       },
       {
-        "keyword": "ai server",
-        "avg_interaction": 482.67,
-        "tweet_count": 3
-      },
-      {
         "keyword": "cuda moat",
-        "avg_interaction": 464.25,
+        "avg_interaction": 466.75,
         "tweet_count": 4
       },
       {
-        "keyword": "gpu",
-        "avg_interaction": 408.0,
-        "tweet_count": 49
+        "keyword": "nm",
+        "avg_interaction": 451.87,
+        "tweet_count": 23
       }
     ],
     "top_tweets": [
       {
         "rank": 1,
-        "interaction": 14697,
+        "interaction": 14700,
         "likes": 14000,
-        "retweets": 605,
+        "retweets": 608,
         "replies": 92,
-        "views": 351117,
+        "views": 351178,
         "text": "Elon rn",
         "url": "https://x.com/SemiAnalysis_/status/2052085238856093973",
         "timestamp": "2026-05-06T17:57:01.000Z",
@@ -4533,11 +4533,11 @@
       },
       {
         "rank": 2,
-        "interaction": 5528,
+        "interaction": 5527,
         "likes": 4500,
         "retweets": 823,
-        "replies": 205,
-        "views": 2008579,
+        "replies": 204,
+        "views": 2011506,
         "text": "BREAKING NEWS: Anthropic's latest model will NOT help you if it thinks your ML research/ML engineering is interesting, and/or will secretly degrade its IQ so that the average engineer won't notice. We are already seeing Anthropic's latest model's moderation filters our GPU",
         "url": "https://x.com/SemiAnalysis_/status/2064482714149896431",
         "timestamp": "2026-06-09T23:00:09.000Z",
@@ -4553,11 +4553,11 @@
       },
       {
         "rank": 3,
-        "interaction": 5293,
+        "interaction": 5294,
         "likes": 5000,
-        "retweets": 233,
+        "retweets": 234,
         "replies": 60,
-        "views": 190970,
+        "views": 191400,
         "text": "we heard fable got banned",
         "url": "https://x.com/SemiAnalysis_/status/2065627871343698300",
         "timestamp": "2026-06-13T02:50:36.000Z",
@@ -4573,11 +4573,11 @@
       },
       {
         "rank": 4,
-        "interaction": 4529,
+        "interaction": 4521,
         "likes": 4000,
-        "retweets": 432,
-        "replies": 97,
-        "views": 888959,
+        "retweets": 423,
+        "replies": 98,
+        "views": 891296,
         "text": "SITUATION DETECTED: The city of Rio de Janerio has post-trained a model.  Based on Qwen 7/2, Rio 3.5 Open 397B adds SwiReasoning on top of the base Qwen model \u2014 a framework that dynamically switches between standard chain-of-thought and latent-space reasoning, guided by",
         "url": "https://x.com/SemiAnalysis_/status/2065894494935933191",
         "timestamp": "2026-06-13T20:30:04.000Z",
@@ -4593,11 +4593,11 @@
       },
       {
         "rank": 5,
-        "interaction": 4108,
+        "interaction": 4110,
         "likes": 3300,
-        "retweets": 715,
+        "retweets": 717,
         "replies": 93,
-        "views": 605218,
+        "views": 605300,
         "text": "US smartphone imports from China have collapsed from 90% to 25%.  The Foxconn China assembly network, once the undisputed backbone of Apple's hardware empire, is seeing its centrality eroded in real time. This is the clearest data point yet of a forced, systematic derisking of",
         "url": "https://x.com/SemiAnalysis_/status/2043736083641373057",
         "timestamp": "2026-04-13T17:00:27.000Z",
@@ -4616,9 +4616,9 @@
         "rank": 6,
         "interaction": 3788,
         "likes": 2900,
-        "retweets": 610,
-        "replies": 278,
-        "views": 2145581,
+        "retweets": 611,
+        "replies": 277,
+        "views": 2145700,
         "text": "Micron\u2019s $100B megafab in NY is at risk of delay due to just 6 \u201cconcerned citizens\u201d and their frivolous lawsuit. (1/10) ",
         "url": "https://x.com/SemiAnalysis_/status/2026719180284666046",
         "timestamp": "2026-02-25T18:01:21.000Z",
@@ -4639,7 +4639,7 @@
         "likes": 2900,
         "retweets": 496,
         "replies": 172,
-        "views": 619746,
+        "views": 619835,
         "text": "4% of GitHub public commits are being authored by Claude Code right now. At the current trajectory, we believe that Claude Code will be 20%+ of all daily commits by the end of 2026. While you blinked, AI consumed all of software development.",
         "url": "https://x.com/SemiAnalysis_/status/2027443723362042308",
         "timestamp": "2026-02-27T18:00:26.000Z",
@@ -4659,7 +4659,7 @@
         "likes": 3100,
         "retweets": 125,
         "replies": 43,
-        "views": 427250,
+        "views": 427540,
         "text": "I\u2019ve had a number of conversations with folks inside and outside government about the current situation with Anthropic, and here is what I believe to be true:   \u2014 As we know, Anthropic publicly released its Mythos class models earlier this week under the commercial name Fable.",
         "url": "https://x.com/SemiAnalysis_/status/2065866999188898080",
         "timestamp": "2026-06-13T18:40:49.000Z",
@@ -4676,11 +4676,11 @@
       },
       {
         "rank": 9,
-        "interaction": 2968,
-        "likes": 2600,
+        "interaction": 3068,
+        "likes": 2700,
         "retweets": 279,
         "replies": 89,
-        "views": 282036,
+        "views": 282211,
         "text": "to be clear, NVIDIA is NOT a car",
         "url": "https://x.com/SemiAnalysis_/status/2044629920035295307",
         "timestamp": "2026-04-16T04:12:14.000Z",
@@ -4694,11 +4694,11 @@
       },
       {
         "rank": 10,
-        "interaction": 2778,
+        "interaction": 2781,
         "likes": 2200,
-        "retweets": 495,
+        "retweets": 498,
         "replies": 83,
-        "views": 361225,
+        "views": 361685,
         "text": "BREAKING NEWS: according to CloudFlare Radar Data, Agentic traffic has SURPASSED human traffic across the worldwide internet for HTML webpages.",
         "url": "https://x.com/SemiAnalysis_/status/2062580333770408231",
         "timestamp": "2026-06-04T17:00:47.000Z",
@@ -4715,43 +4715,43 @@
     "best_image_keywords": [
       {
         "keyword": "image",
-        "avg_interaction": 3322.2
+        "avg_interaction": 4105.75
       },
       {
         "keyword": "smartphone",
-        "avg_interaction": 1714.33
+        "avg_interaction": 1715.33
       },
       {
         "keyword": "apple",
-        "avg_interaction": 1174.8
+        "avg_interaction": 1175.2
+      },
+      {
+        "keyword": "ai value",
+        "avg_interaction": 1048.5
       },
       {
         "keyword": "2026",
-        "avg_interaction": 1037.2
-      },
-      {
-        "keyword": "fab",
-        "avg_interaction": 968.38
+        "avg_interaction": 1038.0
       }
     ],
     "top_hashtags_by_interaction": [
       {
         "hashtag": "#1",
-        "avg_interaction": 175.5,
+        "avg_interaction": 176.0,
         "tweet_count": 2,
-        "avg_views": 21842.5
+        "avg_views": 21854.5
       },
       {
         "hashtag": "#2",
         "avg_interaction": 172.0,
         "tweet_count": 2,
-        "avg_views": 26754.0
+        "avg_views": 26789.5
       },
       {
         "hashtag": "#ai",
-        "avg_interaction": 45.0,
+        "avg_interaction": 45.5,
         "tweet_count": 2,
-        "avg_views": 12791.5
+        "avg_views": 12803.0
       }
     ],
     "top_hashtags_by_usage": [
@@ -4759,19 +4759,19 @@
         "hashtag": "#2",
         "tweet_count": 2,
         "avg_interaction": 172.0,
-        "avg_views": 26754.0
+        "avg_views": 26789.5
       },
       {
         "hashtag": "#1",
         "tweet_count": 2,
-        "avg_interaction": 175.5,
-        "avg_views": 21842.5
+        "avg_interaction": 176.0,
+        "avg_views": 21854.5
       },
       {
         "hashtag": "#ai",
         "tweet_count": 2,
-        "avg_interaction": 45.0,
-        "avg_views": 12791.5
+        "avg_interaction": 45.5,
+        "avg_views": 12803.0
       },
       {
         "hashtag": "#startup",
@@ -4831,194 +4831,194 @@
     "language": {
       "chinese": {
         "tweet_count": 1,
-        "avg_interaction": 191.0,
-        "avg_views": 20979.0,
+        "avg_interaction": 232.0,
+        "avg_views": 39454.0,
         "img_with": {
-          "avg": 191.0,
-          "count": 1
-        },
-        "img_without": {
           "avg": 0,
           "count": 0
         },
+        "img_without": {
+          "avg": 232.0,
+          "count": 1
+        },
         "best_hours": [
           {
-            "hour": 6,
-            "avg_interaction": 191.0,
-            "avg_views": 20979.0,
+            "hour": 9,
+            "avg_interaction": 232.0,
+            "avg_views": 39454.0,
             "tweet_count": 1
           }
         ],
         "best_days": [
           {
-            "day": "Wednesday",
-            "avg_interaction": 191.0,
-            "avg_views": 20979.0
+            "day": "Monday",
+            "avg_interaction": 232.0,
+            "avg_views": 39454.0
           }
         ],
         "top_hashtags": [],
         "top_tweets": [
           {
             "rank": 1,
-            "interaction": 191,
-            "likes": 173,
-            "retweets": 8,
-            "replies": 10,
-            "views": 20979,
-            "text": "\u795d\u5927\u5bb6\u65b0\u5e74\u5feb\u4e50!",
-            "url": "https://x.com/SemiAnalysis_/status/2023890028884054052"
+            "interaction": 232,
+            "likes": 199,
+            "retweets": 19,
+            "replies": 14,
+            "views": 39454,
+            "text": "\u52b3\u52a8\u8282\u5feb\u4e50\uff0c\u4e0d\u662f\u4f11\u606f\u65e5\uff0c\u4e0d\u662f\u7761\u89c9\u65e5\uff0c\u662f\u52b3\u52a8\u8282\u3002\u4e3a\u4e86\u5e86\u795d\u8fd9\u4e2a\u8282\u65e5\uff0c\u4e2d\u56fd\u5de5\u7a0b\u5e08\u4eec\u5c06\u4ece\u5e73\u65f6\u7684\u671d\u4e5d\u665a\u4e5d\u7f29\u51cf\u4e3a\u671d\u4e5d\u665a\u4e94\u3002\u6574\u6574\u5c11\u4e868\u4e2a\u5c0f\u65f6\u3002\u524d\u6240\u672a\u6709\u7684\u5de5\u4f5c\u751f\u6d3b\u5e73\u8861\u3002",
+            "url": "https://x.com/SemiAnalysis_/status/2051118128734548024"
           }
         ]
       },
       "english": {
-        "tweet_count": 696,
-        "avg_interaction": 274.85,
-        "avg_views": 52345.32,
+        "tweet_count": 690,
+        "avg_interaction": 296.25,
+        "avg_views": 56782.7,
         "img_with": {
-          "avg": 342.08,
-          "count": 481
+          "avg": 366.13,
+          "count": 473
         },
         "img_without": {
-          "avg": 124.43,
-          "count": 215
+          "avg": 143.94,
+          "count": 217
         },
         "best_hours": [
           {
+            "hour": 2,
+            "avg_interaction": 845.33,
+            "avg_views": 207141.76,
+            "tweet_count": 21
+          },
+          {
             "hour": 17,
             "avg_interaction": 748.0,
-            "avg_views": 396877.0,
+            "avg_views": 397098.0,
             "tweet_count": 1
           },
           {
             "hour": 14,
             "avg_interaction": 648.0,
-            "avg_views": 103123.5,
+            "avg_views": 103325.5,
             "tweet_count": 2
           },
           {
-            "hour": 2,
-            "avg_interaction": 541.25,
-            "avg_views": 140682.28,
-            "tweet_count": 32
+            "hour": 7,
+            "avg_interaction": 427.11,
+            "avg_views": 109792.8,
+            "tweet_count": 35
           },
           {
             "hour": 20,
-            "avg_interaction": 382.0,
-            "avg_views": 164780.0,
+            "avg_interaction": 382.67,
+            "avg_views": 166400.0,
             "tweet_count": 3
-          },
-          {
-            "hour": 0,
-            "avg_interaction": 368.08,
-            "avg_views": 89584.25,
-            "tweet_count": 12
           }
         ],
         "best_days": [
           {
             "day": "Sunday",
-            "avg_interaction": 390.73,
-            "avg_views": 72698.29
+            "avg_interaction": 423.4,
+            "avg_views": 83395.38
           },
           {
             "day": "Thursday",
-            "avg_interaction": 311.24,
-            "avg_views": 52401.56
-          },
-          {
-            "day": "Saturday",
-            "avg_interaction": 287.81,
-            "avg_views": 49102.87
+            "avg_interaction": 351.62,
+            "avg_views": 56294.05
           },
           {
             "day": "Wednesday",
-            "avg_interaction": 283.4,
-            "avg_views": 58805.45
+            "avg_interaction": 317.55,
+            "avg_views": 65754.06
+          },
+          {
+            "day": "Saturday",
+            "avg_interaction": 281.4,
+            "avg_views": 47442.05
           },
           {
             "day": "Tuesday",
-            "avg_interaction": 242.21,
-            "avg_views": 50246.03
+            "avg_interaction": 250.49,
+            "avg_views": 55406.52
           },
           {
             "day": "Friday",
-            "avg_interaction": 226.35,
-            "avg_views": 47933.92
+            "avg_interaction": 241.64,
+            "avg_views": 52742.8
           },
           {
             "day": "Monday",
-            "avg_interaction": 205.33,
-            "avg_views": 41835.53
+            "avg_interaction": 224.58,
+            "avg_views": 44529.05
           }
         ],
         "top_hashtags": [
           {
             "hashtag": "#1",
-            "avg_interaction": 175.5,
-            "avg_views": 21842.5,
+            "avg_interaction": 176.0,
+            "avg_views": 21854.5,
             "tweet_count": 2
           },
           {
             "hashtag": "#2",
             "avg_interaction": 172.0,
-            "avg_views": 26754.0,
+            "avg_views": 26789.5,
             "tweet_count": 2
           },
           {
             "hashtag": "#ai",
-            "avg_interaction": 45.0,
-            "avg_views": 12791.5,
+            "avg_interaction": 45.5,
+            "avg_views": 12803.0,
             "tweet_count": 2
           }
         ],
         "top_tweets": [
           {
             "rank": 1,
-            "interaction": 14697,
+            "interaction": 14700,
             "likes": 14000,
-            "retweets": 605,
+            "retweets": 608,
             "replies": 92,
-            "views": 351117,
+            "views": 351178,
             "text": "Elon rn",
             "url": "https://x.com/SemiAnalysis_/status/2052085238856093973"
           },
           {
             "rank": 2,
-            "interaction": 5528,
+            "interaction": 5527,
             "likes": 4500,
             "retweets": 823,
-            "replies": 205,
-            "views": 2008579,
+            "replies": 204,
+            "views": 2011506,
             "text": "BREAKING NEWS: Anthropic's latest model will NOT help you if it thinks your ML research/ML engineering is interesting, and/or will secretly degrade its IQ so that the average engineer won't notice. We are already seeing Anthropic's latest model's moderation filters our GPU",
             "url": "https://x.com/SemiAnalysis_/status/2064482714149896431"
           },
           {
             "rank": 3,
-            "interaction": 5293,
+            "interaction": 5294,
             "likes": 5000,
-            "retweets": 233,
+            "retweets": 234,
             "replies": 60,
-            "views": 190970,
+            "views": 191400,
             "text": "we heard fable got banned",
             "url": "https://x.com/SemiAnalysis_/status/2065627871343698300"
           },
           {
             "rank": 4,
-            "interaction": 4529,
+            "interaction": 4521,
             "likes": 4000,
-            "retweets": 432,
-            "replies": 97,
-            "views": 888959,
+            "retweets": 423,
+            "replies": 98,
+            "views": 891296,
             "text": "SITUATION DETECTED: The city of Rio de Janerio has post-trained a model.  Based on Qwen 7/2, Rio 3.5 Open 397B adds SwiReasoning on top of the base Qwen model \u2014 a framework that dynamically switches between standard chain-of-thought and latent-space reasoning, guided by",
             "url": "https://x.com/SemiAnalysis_/status/2065894494935933191"
           },
           {
             "rank": 5,
-            "interaction": 4108,
+            "interaction": 4110,
             "likes": 3300,
-            "retweets": 715,
+            "retweets": 717,
             "replies": 93,
-            "views": 605218,
+            "views": 605300,
             "text": "US smartphone imports from China have collapsed from 90% to 25%.  The Foxconn China assembly network, once the undisputed backbone of Apple's hardware empire, is seeing its centrality eroded in real time. This is the clearest data point yet of a forced, systematic derisking of",
             "url": "https://x.com/SemiAnalysis_/status/2043736083641373057"
           }
@@ -5026,135 +5026,135 @@
       }
     },
     "summary": {
-      "avg_interaction": 274.73,
-      "median_interaction": 119,
-      "max_interaction": 14697,
-      "avg_views": 52300.31,
-      "max_views": 2145581
+      "avg_interaction": 296.16,
+      "median_interaction": 125,
+      "max_interaction": 14700,
+      "avg_views": 56757.62,
+      "max_views": 2145700
     }
   },
   "combined": {
     "handle": "combined",
-    "tweet_count": 3527,
+    "tweet_count": 3521,
     "date_from": "2020-09-03",
     "date_to": "2026-06-29",
     "best_hours": [
       {
-        "hour": 7,
-        "avg_interaction": 578.34
+        "hour": 2,
+        "avg_interaction": 690.49
       },
       {
-        "hour": 2,
-        "avg_interaction": 575.81
+        "hour": 7,
+        "avg_interaction": 594.24
       },
       {
         "hour": 6,
-        "avg_interaction": 463.87
+        "avg_interaction": 494.4
       },
       {
         "hour": 4,
-        "avg_interaction": 400.59
+        "avg_interaction": 386.39
       },
       {
         "hour": 3,
-        "avg_interaction": 358.68
+        "avg_interaction": 379.69
       }
     ],
     "all_hours": [
       {
         "hour": 0,
-        "avg_interaction": 147.03,
-        "avg_views": 31954.86,
+        "avg_interaction": 147.04,
+        "avg_views": 31993.7,
         "tweet_count": 174
       },
       {
         "hour": 1,
-        "avg_interaction": 334.19,
-        "avg_views": 44999.41,
-        "tweet_count": 195
+        "avg_interaction": 328.94,
+        "avg_views": 45044.53,
+        "tweet_count": 209
       },
       {
         "hour": 2,
-        "avg_interaction": 575.81,
-        "avg_views": 128341.94,
-        "tweet_count": 70
-      },
-      {
-        "hour": 3,
-        "avg_interaction": 358.68,
-        "avg_views": 70472.32,
-        "tweet_count": 69
-      },
-      {
-        "hour": 4,
-        "avg_interaction": 400.59,
-        "avg_views": 69124.51,
+        "avg_interaction": 690.49,
+        "avg_views": 149696.27,
         "tweet_count": 59
       },
       {
+        "hour": 3,
+        "avg_interaction": 379.69,
+        "avg_views": 77344.78,
+        "tweet_count": 64
+      },
+      {
+        "hour": 4,
+        "avg_interaction": 386.39,
+        "avg_views": 67102.43,
+        "tweet_count": 61
+      },
+      {
         "hour": 5,
-        "avg_interaction": 330.57,
-        "avg_views": 59982.29,
-        "tweet_count": 141
+        "avg_interaction": 330.66,
+        "avg_views": 60512.0,
+        "tweet_count": 143
       },
       {
         "hour": 6,
-        "avg_interaction": 463.87,
-        "avg_views": 133029.24,
-        "tweet_count": 123
+        "avg_interaction": 494.4,
+        "avg_views": 139519.89,
+        "tweet_count": 117
       },
       {
         "hour": 7,
-        "avg_interaction": 578.34,
-        "avg_views": 111247.33,
-        "tweet_count": 158
+        "avg_interaction": 594.24,
+        "avg_views": 115983.39,
+        "tweet_count": 159
       },
       {
         "hour": 8,
-        "avg_interaction": 253.01,
-        "avg_views": 54320.37,
-        "tweet_count": 173
+        "avg_interaction": 256.63,
+        "avg_views": 54726.41,
+        "tweet_count": 176
       },
       {
         "hour": 9,
-        "avg_interaction": 313.35,
-        "avg_views": 65780.74,
-        "tweet_count": 225
+        "avg_interaction": 314.45,
+        "avg_views": 64988.73,
+        "tweet_count": 228
       },
       {
         "hour": 10,
-        "avg_interaction": 331.21,
-        "avg_views": 57811.07,
-        "tweet_count": 217
+        "avg_interaction": 337.84,
+        "avg_views": 58833.35,
+        "tweet_count": 212
       },
       {
         "hour": 11,
-        "avg_interaction": 258.45,
-        "avg_views": 55690.49,
-        "tweet_count": 196
+        "avg_interaction": 264.59,
+        "avg_views": 57314.49,
+        "tweet_count": 202
       },
       {
         "hour": 12,
-        "avg_interaction": 331.93,
-        "avg_views": 48966.52,
-        "tweet_count": 180
+        "avg_interaction": 332.02,
+        "avg_views": 49054.25,
+        "tweet_count": 181
       },
       {
         "hour": 13,
-        "avg_interaction": 263.82,
-        "avg_views": 49605.24,
-        "tweet_count": 160
+        "avg_interaction": 263.72,
+        "avg_views": 49649.38,
+        "tweet_count": 159
       },
       {
         "hour": 14,
         "avg_interaction": 135.56,
-        "avg_views": 21940.81,
+        "avg_views": 21943.52,
         "tweet_count": 149
       },
       {
         "hour": 15,
         "avg_interaction": 192.22,
-        "avg_views": 38888.34,
+        "avg_views": 38888.5,
         "tweet_count": 153
       },
       {
@@ -5166,7 +5166,7 @@
       {
         "hour": 17,
         "avg_interaction": 113.47,
-        "avg_views": 26249.55,
+        "avg_views": 26251.03,
         "tweet_count": 150
       },
       {
@@ -5177,83 +5177,83 @@
       },
       {
         "hour": 19,
-        "avg_interaction": 146.14,
-        "avg_views": 29624.68,
+        "avg_interaction": 146.15,
+        "avg_views": 29624.76,
         "tweet_count": 103
       },
       {
         "hour": 20,
-        "avg_interaction": 89.13,
-        "avg_views": 27778.2,
+        "avg_interaction": 89.14,
+        "avg_views": 27810.82,
         "tweet_count": 149
       },
       {
         "hour": 21,
-        "avg_interaction": 127.32,
-        "avg_views": 27180.45,
-        "tweet_count": 216
+        "avg_interaction": 130.1,
+        "avg_views": 27596.48,
+        "tweet_count": 215
       },
       {
         "hour": 22,
-        "avg_interaction": 163.6,
-        "avg_views": 30467.42,
-        "tweet_count": 120
+        "avg_interaction": 171.41,
+        "avg_views": 33512.36,
+        "tweet_count": 110
       },
       {
         "hour": 23,
-        "avg_interaction": 304.38,
-        "avg_views": 66002.02,
-        "tweet_count": 48
+        "avg_interaction": 302.22,
+        "avg_views": 68469.59,
+        "tweet_count": 49
       }
     ],
     "best_days": [
       {
         "day": "Sunday",
-        "avg_interaction": 394.26,
-        "avg_views": 100419.43
+        "avg_interaction": 401.1,
+        "avg_views": 101681.27
       },
       {
         "day": "Saturday",
-        "avg_interaction": 308.44,
-        "avg_views": 59252.36
+        "avg_interaction": 306.49,
+        "avg_views": 58707.88
       },
       {
         "day": "Thursday",
-        "avg_interaction": 282.2,
-        "avg_views": 48456.66
+        "avg_interaction": 290.44,
+        "avg_views": 49235.6
       },
       {
         "day": "Tuesday",
-        "avg_interaction": 240.62,
-        "avg_views": 44370.07
+        "avg_interaction": 242.05,
+        "avg_views": 45177.69
       },
       {
         "day": "Friday",
-        "avg_interaction": 234.12,
-        "avg_views": 44585.85
+        "avg_interaction": 237.45,
+        "avg_views": 45761.41
       },
       {
         "day": "Wednesday",
-        "avg_interaction": 228.8,
-        "avg_views": 47567.09
+        "avg_interaction": 233.54,
+        "avg_views": 48564.58
       },
       {
         "day": "Monday",
-        "avg_interaction": 228.43,
-        "avg_views": 48648.89
+        "avg_interaction": 230.59,
+        "avg_views": 48931.91
       }
     ],
     "images": {
       "with_image": {
-        "avg_interaction": 374.08,
-        "count": 1482
+        "avg_interaction": 382.1,
+        "count": 1473
       },
       "without_image": {
-        "avg_interaction": 181.65,
-        "count": 2045
+        "avg_interaction": 183.68,
+        "count": 2048
       },
       "winner": "images",
-      "pct_difference": 105.9
+      "pct_difference": 108.0
     },
     "top_keywords": [
       {
@@ -5278,7 +5278,7 @@
       },
       {
         "keyword": "fable",
-        "avg_interaction": 1705.0,
+        "avg_interaction": 1705.25,
         "tweet_count": 4
       },
       {
@@ -5302,19 +5302,24 @@
         "tweet_count": 4
       },
       {
+        "keyword": "claude code",
+        "avg_interaction": 1090.75,
+        "tweet_count": 12
+      },
+      {
+        "keyword": "image",
+        "avg_interaction": 1064.0,
+        "tweet_count": 25
+      },
+      {
         "keyword": "claude",
         "avg_interaction": 1049.5,
         "tweet_count": 4
       },
       {
-        "keyword": "image",
-        "avg_interaction": 1030.31,
-        "tweet_count": 26
-      },
-      {
-        "keyword": "claude code",
-        "avg_interaction": 1028.46,
-        "tweet_count": 13
+        "keyword": "high na",
+        "avg_interaction": 836.33,
+        "tweet_count": 3
       },
       {
         "keyword": "company",
@@ -5323,12 +5328,7 @@
       },
       {
         "keyword": "dominate global",
-        "avg_interaction": 770.67,
-        "tweet_count": 3
-      },
-      {
-        "keyword": "semiconductor manufacturing",
-        "avg_interaction": 759.0,
+        "avg_interaction": 771.67,
         "tweet_count": 3
       }
     ],
@@ -5354,11 +5354,11 @@
       },
       {
         "rank": 2,
-        "interaction": 14697,
+        "interaction": 14700,
         "likes": 14000,
-        "retweets": 605,
+        "retweets": 608,
         "replies": 92,
-        "views": 351117,
+        "views": 351178,
         "text": "Elon rn",
         "url": "https://x.com/SemiAnalysis_/status/2052085238856093973",
         "timestamp": "2026-05-06T17:57:01.000Z",
@@ -5556,21 +5556,21 @@
       },
       {
         "hashtag": "#1",
-        "avg_interaction": 167.67,
+        "avg_interaction": 168.0,
         "tweet_count": 3,
-        "avg_views": 24322.67
+        "avg_views": 24330.67
       },
       {
         "hashtag": "#2",
         "avg_interaction": 165.33,
         "tweet_count": 3,
-        "avg_views": 27597.0
+        "avg_views": 27620.67
       },
       {
         "hashtag": "#tech",
-        "avg_interaction": 104.8,
+        "avg_interaction": 105.0,
         "tweet_count": 5,
-        "avg_views": 41994.8
+        "avg_views": 41999.0
       },
       {
         "hashtag": "#hbf",
@@ -5582,7 +5582,7 @@
         "hashtag": "#gtc",
         "avg_interaction": 72.5,
         "tweet_count": 2,
-        "avg_views": 9131.5
+        "avg_views": 9133.0
       },
       {
         "hashtag": "#copos",
@@ -5649,8 +5649,8 @@
       {
         "hashtag": "#ai",
         "tweet_count": 89,
-        "avg_interaction": 8.51,
-        "avg_views": 1348.94
+        "avg_interaction": 8.52,
+        "avg_views": 1349.2
       },
       {
         "hashtag": "#samsung",
@@ -5734,23 +5734,17 @@
     "language": {
       "chinese": {
         "tweet_count": 1118,
-        "avg_interaction": 23.6,
-        "avg_views": 3892.39,
+        "avg_interaction": 23.64,
+        "avg_views": 3908.92,
         "img_with": {
-          "avg": 62.91,
-          "count": 223
+          "avg": 62.34,
+          "count": 222
         },
         "img_without": {
-          "avg": 13.8,
-          "count": 895
+          "avg": 14.05,
+          "count": 896
         },
         "best_hours": [
-          {
-            "hour": 6,
-            "avg_interaction": 191.0,
-            "avg_views": 20979.0,
-            "tweet_count": 1
-          },
           {
             "hour": 0,
             "avg_interaction": 76.66,
@@ -5774,6 +5768,12 @@
             "avg_interaction": 37.0,
             "avg_views": 6102.0,
             "tweet_count": 1
+          },
+          {
+            "hour": 23,
+            "avg_interaction": 34.64,
+            "avg_views": 3776.5,
+            "tweet_count": 14
           }
         ],
         "best_days": [
@@ -5799,13 +5799,13 @@
           },
           {
             "day": "Wednesday",
-            "avg_interaction": 22.38,
-            "avg_views": 3130.41
+            "avg_interaction": 21.13,
+            "avg_views": 2998.2
           },
           {
             "day": "Monday",
-            "avg_interaction": 17.62,
-            "avg_views": 2194.53
+            "avg_interaction": 18.72,
+            "avg_views": 2385.61
           },
           {
             "day": "Thursday",
@@ -5917,84 +5917,84 @@
         ]
       },
       "english": {
-        "tweet_count": 2409,
-        "avg_interaction": 373.38,
-        "avg_views": 74340.29,
+        "tweet_count": 2403,
+        "avg_interaction": 379.77,
+        "avg_views": 75669.37,
         "img_with": {
-          "avg": 429.19,
-          "count": 1259
+          "avg": 438.84,
+          "count": 1251
         },
         "img_without": {
-          "avg": 312.27,
-          "count": 1150
+          "avg": 315.62,
+          "count": 1152
         },
         "best_hours": [
           {
-            "hour": 7,
-            "avg_interaction": 642.44,
-            "avg_views": 123719.3,
-            "tweet_count": 142
+            "hour": 2,
+            "avg_interaction": 701.76,
+            "avg_views": 152172.03,
+            "tweet_count": 58
           },
           {
-            "hour": 2,
-            "avg_interaction": 583.62,
-            "avg_views": 130113.54,
-            "tweet_count": 69
+            "hour": 7,
+            "avg_interaction": 659.66,
+            "avg_views": 128898.06,
+            "tweet_count": 143
           },
           {
             "hour": 10,
-            "avg_interaction": 542.09,
-            "avg_views": 95275.78,
-            "tweet_count": 129
+            "avg_interaction": 561.93,
+            "avg_views": 98534.21,
+            "tweet_count": 124
+          },
+          {
+            "hour": 6,
+            "avg_interaction": 494.4,
+            "avg_views": 139519.89,
+            "tweet_count": 117
           },
           {
             "hour": 12,
-            "avg_interaction": 494.13,
-            "avg_views": 73052.09,
-            "tweet_count": 120
-          },
-          {
-            "hour": 13,
-            "avg_interaction": 481.67,
-            "avg_views": 84885.7,
-            "tweet_count": 84
+            "avg_interaction": 492.93,
+            "avg_views": 72984.26,
+            "tweet_count": 121
           }
         ],
         "best_days": [
           {
             "day": "Sunday",
-            "avg_interaction": 540.51,
-            "avg_views": 139825.82
+            "avg_interaction": 542.54,
+            "avg_views": 139565.08
           },
           {
             "day": "Thursday",
-            "avg_interaction": 434.55,
-            "avg_views": 74819.08
+            "avg_interaction": 450.73,
+            "avg_views": 76597.51
           },
           {
             "day": "Saturday",
-            "avg_interaction": 410.11,
-            "avg_views": 79613.12
+            "avg_interaction": 406.3,
+            "avg_views": 78638.41
           },
           {
             "day": "Monday",
-            "avg_interaction": 358.26,
-            "avg_views": 77258.88
+            "avg_interaction": 361.75,
+            "avg_views": 77746.28
           },
           {
             "day": "Tuesday",
-            "avg_interaction": 338.69,
-            "avg_views": 62484.28
+            "avg_interaction": 343.31,
+            "avg_views": 64139.27
           },
           {
             "day": "Friday",
-            "avg_interaction": 328.97,
-            "avg_views": 61866.02
+            "avg_interaction": 330.67,
+            "avg_views": 62994.52
           },
           {
             "day": "Wednesday",
-            "avg_interaction": 296.77,
-            "avg_views": 62199.99
+            "avg_interaction": 305.23,
+            "avg_views": 63943.24
           }
         ],
         "top_hashtags": [
@@ -6006,14 +6006,14 @@
           },
           {
             "hashtag": "#1",
-            "avg_interaction": 167.67,
-            "avg_views": 24322.67,
+            "avg_interaction": 168.0,
+            "avg_views": 24330.67,
             "tweet_count": 3
           },
           {
             "hashtag": "#2",
             "avg_interaction": 165.33,
-            "avg_views": 27597.0,
+            "avg_views": 27620.67,
             "tweet_count": 3
           },
           {
@@ -6024,8 +6024,8 @@
           },
           {
             "hashtag": "#tech",
-            "avg_interaction": 104.8,
-            "avg_views": 41994.8,
+            "avg_interaction": 105.0,
+            "avg_views": 41999.0,
             "tweet_count": 5
           },
           {
@@ -6060,11 +6060,11 @@
           },
           {
             "rank": 2,
-            "interaction": 14697,
+            "interaction": 14700,
             "likes": 14000,
-            "retweets": 605,
+            "retweets": 608,
             "replies": 92,
-            "views": 351117,
+            "views": 351178,
             "text": "Elon rn",
             "url": "https://x.com/SemiAnalysis_/status/2052085238856093973"
           },
@@ -6102,10 +6102,10 @@
       }
     },
     "summary": {
-      "avg_interaction": 262.5,
-      "median_interaction": 52,
+      "avg_interaction": 266.69,
+      "median_interaction": 53,
       "max_interaction": 26372,
-      "avg_views": 52009.49,
+      "avg_views": 52883.74,
       "max_views": 6654201
     }
   }
