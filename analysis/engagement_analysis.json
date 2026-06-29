@@ -193,46 +193,16 @@
     },
     "top_keywords": [
       {
-        "keyword": "Client Storage",
-        "avg_interaction": 74.89,
-        "tweet_count": 9,
-        "avg_views": 15681.33
-      },
-      {
-        "keyword": "Glass Substrate",
-        "avg_interaction": 70.5,
-        "tweet_count": 4,
-        "avg_views": 7204.75
-      },
-      {
         "keyword": "AMD AI",
         "avg_interaction": 67.5,
         "tweet_count": 10,
         "avg_views": 36667.6
       },
       {
-        "keyword": "Google TPU",
-        "avg_interaction": 61.67,
-        "tweet_count": 3,
-        "avg_views": 8110.67
-      },
-      {
-        "keyword": "PCB / Substrate",
-        "avg_interaction": 60.5,
-        "tweet_count": 2,
-        "avg_views": 7293.5
-      },
-      {
         "keyword": "Kioxia",
         "avg_interaction": 57.45,
         "tweet_count": 11,
         "avg_views": 11822.36
-      },
-      {
-        "keyword": "Enterprise SSD",
-        "avg_interaction": 57.0,
-        "tweet_count": 2,
-        "avg_views": 6200.5
       },
       {
         "keyword": "PLP Packaging",
@@ -245,12 +215,6 @@
         "avg_interaction": 51.55,
         "tweet_count": 33,
         "avg_views": 8793.76
-      },
-      {
-        "keyword": "Thermal Management",
-        "avg_interaction": 50.67,
-        "tweet_count": 3,
-        "avg_views": 4506.67
       },
       {
         "keyword": "DRAM / NAND / SSD",
@@ -281,6 +245,42 @@
         "avg_interaction": 35.49,
         "tweet_count": 91,
         "avg_views": 7070.98
+      },
+      {
+        "keyword": "LLM / Foundation Model",
+        "avg_interaction": 32.33,
+        "tweet_count": 6,
+        "avg_views": 5146.67
+      },
+      {
+        "keyword": "Optical / Silicon Photonics",
+        "avg_interaction": 30.79,
+        "tweet_count": 24,
+        "avg_views": 6123.0
+      },
+      {
+        "keyword": "Advanced Packaging",
+        "avg_interaction": 28.61,
+        "tweet_count": 23,
+        "avg_views": 3979.65
+      },
+      {
+        "keyword": "TSMC / Foundry",
+        "avg_interaction": 26.05,
+        "tweet_count": 66,
+        "avg_views": 3977.29
+      },
+      {
+        "keyword": "ASIC / Custom Chip",
+        "avg_interaction": 22.29,
+        "tweet_count": 17,
+        "avg_views": 2640.53
+      },
+      {
+        "keyword": "Wafer Fab Equipment",
+        "avg_interaction": 21.93,
+        "tweet_count": 14,
+        "avg_views": 7025.64
       }
     ],
     "top_tweets": [
@@ -1119,28 +1119,10 @@
     },
     "top_keywords": [
       {
-        "keyword": "Glass Substrate",
-        "avg_interaction": 36.0,
-        "tweet_count": 4,
-        "avg_views": 2244.25
-      },
-      {
-        "keyword": "CCL",
-        "avg_interaction": 29.33,
-        "tweet_count": 3,
-        "avg_views": 2054.0
-      },
-      {
         "keyword": "PCB / Substrate",
         "avg_interaction": 21.57,
         "tweet_count": 14,
         "avg_views": 1551.29
-      },
-      {
-        "keyword": "Semiconductor Materials",
-        "avg_interaction": 20.75,
-        "tweet_count": 4,
-        "avg_views": 1561.25
       },
       {
         "keyword": "Advanced Packaging",
@@ -1155,46 +1137,16 @@
         "avg_views": 1164.5
       },
       {
-        "keyword": "Thermal Management",
-        "avg_interaction": 10.5,
-        "tweet_count": 4,
-        "avg_views": 548.5
-      },
-      {
         "keyword": "TSMC / Foundry",
         "avg_interaction": 10.37,
         "tweet_count": 79,
         "avg_views": 661.56
       },
       {
-        "keyword": "Western Digital",
-        "avg_interaction": 9.5,
-        "tweet_count": 4,
-        "avg_views": 737.5
-      },
-      {
         "keyword": "Optical / Silicon Photonics",
         "avg_interaction": 8.11,
         "tweet_count": 19,
         "avg_views": 530.0
-      },
-      {
-        "keyword": "AI PC",
-        "avg_interaction": 7.25,
-        "tweet_count": 4,
-        "avg_views": 432.5
-      },
-      {
-        "keyword": "AI Server ODM",
-        "avg_interaction": 6.5,
-        "tweet_count": 4,
-        "avg_views": 480.25
-      },
-      {
-        "keyword": "Kioxia",
-        "avg_interaction": 6.5,
-        "tweet_count": 2,
-        "avg_views": 253.5
       },
       {
         "keyword": "SK Hynix",
@@ -1207,6 +1159,54 @@
         "avg_interaction": 5.06,
         "tweet_count": 34,
         "avg_views": 465.06
+      },
+      {
+        "keyword": "NVIDIA AI",
+        "avg_interaction": 4.92,
+        "tweet_count": 51,
+        "avg_views": 315.76
+      },
+      {
+        "keyword": "AMD AI",
+        "avg_interaction": 4.78,
+        "tweet_count": 18,
+        "avg_views": 338.83
+      },
+      {
+        "keyword": "ASIC / Custom Chip",
+        "avg_interaction": 4.69,
+        "tweet_count": 16,
+        "avg_views": 350.44
+      },
+      {
+        "keyword": "Samsung",
+        "avg_interaction": 4.22,
+        "tweet_count": 32,
+        "avg_views": 398.78
+      },
+      {
+        "keyword": "Wafer Fab Equipment",
+        "avg_interaction": 4.08,
+        "tweet_count": 13,
+        "avg_views": 277.46
+      },
+      {
+        "keyword": "DRAM / NAND / SSD",
+        "avg_interaction": 3.87,
+        "tweet_count": 23,
+        "avg_views": 335.0
+      },
+      {
+        "keyword": "Google TPU",
+        "avg_interaction": 3.6,
+        "tweet_count": 5,
+        "avg_views": 242.2
+      },
+      {
+        "keyword": "Foxconn / Inventec",
+        "avg_interaction": 3.0,
+        "tweet_count": 7,
+        "avg_views": 215.71
       }
     ],
     "top_tweets": [
@@ -2226,40 +2226,16 @@
         "avg_views": 83083.14
       },
       {
-        "keyword": "Google TPU",
-        "avg_interaction": 356.0,
-        "tweet_count": 2,
-        "avg_views": 46127.5
-      },
-      {
-        "keyword": "SK Hynix",
-        "avg_interaction": 307.0,
-        "tweet_count": 2,
-        "avg_views": 128213.0
-      },
-      {
-        "keyword": "PCB / Substrate",
-        "avg_interaction": 270.0,
-        "tweet_count": 2,
-        "avg_views": 63205.0
-      },
-      {
-        "keyword": "CCL",
-        "avg_interaction": 270.0,
-        "tweet_count": 2,
-        "avg_views": 63205.0
-      },
-      {
-        "keyword": "HBM Memory",
-        "avg_interaction": 243.5,
-        "tweet_count": 2,
-        "avg_views": 56640.0
-      },
-      {
         "keyword": "Advanced Packaging",
         "avg_interaction": 214.6,
         "tweet_count": 5,
         "avg_views": 56868.0
+      },
+      {
+        "keyword": "DRAM / NAND / SSD",
+        "avg_interaction": 212.8,
+        "tweet_count": 5,
+        "avg_views": 73502.4
       }
     ],
     "top_tweets": [
@@ -2907,12 +2883,6 @@
         "avg_views": 192098.62
       },
       {
-        "keyword": "Client Storage",
-        "avg_interaction": 1099.0,
-        "tweet_count": 2,
-        "avg_views": 164550.5
-      },
-      {
         "keyword": "Kioxia",
         "avg_interaction": 954.7,
         "tweet_count": 10,
@@ -2955,12 +2925,6 @@
         "avg_views": 144610.67
       },
       {
-        "keyword": "PLP Packaging",
-        "avg_interaction": 717.5,
-        "tweet_count": 2,
-        "avg_views": 710210.5
-      },
-      {
         "keyword": "HBM Memory",
         "avg_interaction": 711.94,
         "tweet_count": 18,
@@ -2989,6 +2953,18 @@
         "avg_interaction": 519.0,
         "tweet_count": 7,
         "avg_views": 187399.14
+      },
+      {
+        "keyword": "AMD AI",
+        "avg_interaction": 497.67,
+        "tweet_count": 6,
+        "avg_views": 102999.0
+      },
+      {
+        "keyword": "PCB / Substrate",
+        "avg_interaction": 483.0,
+        "tweet_count": 7,
+        "avg_views": 136673.86
       }
     ],
     "top_tweets": [
@@ -3589,12 +3565,6 @@
         "avg_views": 25569.92
       },
       {
-        "keyword": "PLP Packaging",
-        "avg_interaction": 113.25,
-        "tweet_count": 4,
-        "avg_views": 15481.0
-      },
-      {
         "keyword": "Power Supply",
         "avg_interaction": 111.56,
         "tweet_count": 9,
@@ -3637,12 +3607,6 @@
         "avg_views": 11459.0
       },
       {
-        "keyword": "AI PC",
-        "avg_interaction": 86.0,
-        "tweet_count": 3,
-        "avg_views": 10096.0
-      },
-      {
         "keyword": "SK Hynix",
         "avg_interaction": 85.8,
         "tweet_count": 5,
@@ -3655,10 +3619,22 @@
         "avg_views": 10441.6
       },
       {
-        "keyword": "Semiconductor Materials",
-        "avg_interaction": 76.5,
-        "tweet_count": 2,
-        "avg_views": 9407.5
+        "keyword": "TSMC / Foundry",
+        "avg_interaction": 76.15,
+        "tweet_count": 33,
+        "avg_views": 11957.61
+      },
+      {
+        "keyword": "Wafer Fab Equipment",
+        "avg_interaction": 72.88,
+        "tweet_count": 8,
+        "avg_views": 9363.25
+      },
+      {
+        "keyword": "HBM Memory",
+        "avg_interaction": 66.67,
+        "tweet_count": 15,
+        "avg_views": 8341.93
       }
     ],
     "top_tweets": [
@@ -4483,12 +4459,6 @@
     },
     "top_keywords": [
       {
-        "keyword": "Foxconn / Inventec",
-        "avg_interaction": 2248.0,
-        "tweet_count": 2,
-        "avg_views": 319370.0
-      },
-      {
         "keyword": "Micron",
         "avg_interaction": 806.11,
         "tweet_count": 9,
@@ -4505,12 +4475,6 @@
         "avg_interaction": 407.18,
         "tweet_count": 90,
         "avg_views": 82009.5
-      },
-      {
-        "keyword": "Advanced Packaging",
-        "avg_interaction": 374.67,
-        "tweet_count": 3,
-        "avg_views": 70362.0
       },
       {
         "keyword": "SK Hynix",
@@ -4567,10 +4531,10 @@
         "avg_views": 30344.08
       },
       {
-        "keyword": "Wafer Fab Equipment",
-        "avg_interaction": 132.0,
-        "tweet_count": 2,
-        "avg_views": 24086.0
+        "keyword": "PCB / Substrate",
+        "avg_interaction": 55.86,
+        "tweet_count": 7,
+        "avg_views": 15488.43
       }
     ],
     "top_tweets": [
@@ -5397,10 +5361,10 @@
         "avg_views": 48784.89
       },
       {
-        "keyword": "Client Storage",
-        "avg_interaction": 205.57,
-        "tweet_count": 14,
-        "avg_views": 33633.71
+        "keyword": "Glass Substrate",
+        "avg_interaction": 202.27,
+        "tweet_count": 22,
+        "avg_views": 36018.36
       }
     ],
     "top_tweets": [
