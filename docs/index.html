@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>X Analytics Dashboard &mdash; TrendForce Research</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0d1117;--surface:#161b22;--border:#21262d;--muted:#8b949e;
+  --text:#e6edf3;--blue:#3b9eff;--teal:#26c6da;--gold:#f0b429;
+  --green:#3fb950;--red:#f85149;
+  --mono:'SF Mono','Fira Code','Cascadia Code',monospace;
+  --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;
+}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:14px;line-height:1.6;min-height:100vh}
+.header{border-bottom:1px solid var(--border);padding:20px 32px 0;display:flex;align-items:flex-end;gap:32px;position:sticky;top:0;background:rgba(13,17,23,.92);backdrop-filter:blur(8px);z-index:10}
+.logo{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding-bottom:18px;white-space:nowrap}
+.logo span{color:var(--blue)}
+.tabs{display:flex;gap:0}
+.tab{padding:10px 22px 14px;font-size:13px;font-weight:500;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;transition:color .15s,border-color .15s;white-space:nowrap;user-select:none}
+.tab:hover{color:var(--text)}
+.tab.active{color:var(--text);border-color:var(--blue)}
+.page{display:none;padding:32px;max-width:1200px;margin:0 auto}
+.page.active{display:block}
+.kpi-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:28px}
+.kpi{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:16px 18px}
+.kpi-label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px}
+.kpi-value{font-family:var(--mono);font-size:22px;font-weight:600;font-variant-numeric:tabular-nums;color:var(--text)}
+.kpi-value.blue{color:var(--blue)}.kpi-value.gold{color:var(--gold)}.kpi-value.green{color:var(--green)}.kpi-value.teal{color:var(--teal)}
+.section{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:20px 22px;margin-bottom:16px}
+.section-title{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:16px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+@media(max-width:700px){.two-col{grid-template-columns:1fr}}
+.bar-row{display:flex;align-items:center;gap:10px;margin-bottom:7px;font-size:12px}
+.bar-label{width:110px;color:var(--muted);text-align:right;flex-shrink:0;font-family:var(--mono);font-size:11px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bar-label.left{text-align:left;width:140px}
+.bar-track{flex:1;height:6px;background:var(--border);border-radius:3px;overflow:hidden}
+.bar-fill{height:100%;border-radius:3px;background:var(--blue);transition:width .4s ease}
+.bar-fill.gold{background:var(--gold)}.bar-fill.teal{background:var(--teal)}.bar-fill.green{background:var(--green)}
+.bar-val{font-family:var(--mono);font-size:11px;color:var(--text);min-width:42px;font-variant-numeric:tabular-nums}
+.bar-count{font-family:var(--mono);font-size:10px;color:var(--muted);min-width:60px}
+.img-compare{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.img-card{background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:14px;text-align:center}
+.img-card-label{font-size:11px;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:.07em}
+.img-card-val{font-family:var(--mono);font-size:26px;font-weight:700}
+.img-card-sub{font-size:11px;color:var(--muted);margin-top:4px}
+.img-winner{margin-top:12px;font-size:12px;color:var(--green);text-align:center}
+.tweet-card{background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:14px 16px;margin-bottom:10px}
+.tweet-rank{font-family:var(--mono);font-size:10px;color:var(--muted);margin-bottom:6px}
+.tweet-stats{display:flex;gap:16px;margin-bottom:8px;flex-wrap:wrap}
+.tweet-stat{font-family:var(--mono);font-size:12px}
+.tweet-stat .num{color:var(--blue);font-weight:600}
+.tweet-stat .lbl{color:var(--muted);font-size:10px;margin-left:2px}
+.tweet-text{font-size:13px;color:var(--text);line-height:1.5;margin-bottom:8px}
+.tweet-link{font-size:11px;color:var(--blue);text-decoration:none;word-break:break-all}
+.tweet-link:hover{text-decoration:underline}
+.updated{font-size:11px;color:var(--muted);margin-bottom:24px}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="logo">X Analytics &middot; <span>TrendForce Research</span></div>
+  <div class="tabs">
+    <div class="tab active" onclick="switchTab('tf',this)">@TrendForce</div>
+    <div class="tab" onclick="switchTab('tn',this)">@technews_tw</div>
+  </div>
+</div>
+
+
+<div class="page active" id="page-tf">
+  <p class="updated">Based on 487 tweets scraped from @TrendForce &middot; Updated June 29, 2026 13:53 Taiwan Time</p>
+  
+    <div class="kpi-row">
+      <div class="kpi"><div class="kpi-label">Total Tweets</div><div class="kpi-value blue">487</div></div>
+      <div class="kpi"><div class="kpi-label">Avg Interaction</div><div class="kpi-value gold">34.03</div></div>
+      <div class="kpi"><div class="kpi-label">Median Interaction</div><div class="kpi-value">24</div></div>
+      <div class="kpi"><div class="kpi-label">Max Interaction</div><div class="kpi-value green">488</div></div>
+      <div class="kpi"><div class="kpi-label">Avg Views</div><div class="kpi-value teal">7,822</div></div>
+      <div class="kpi"><div class="kpi-label">Max Views</div><div class="kpi-value">339,041</div></div>
+    </div>
+  <div class="two-col">
+    <div class="section">
+      <div class="section-title">Best Hours to Post (Taiwan Time)</div>
+      <div id="tf-hours" data-items='[{"hour": 0, "avg_interaction": 33.23, "tweet_count": 73}, {"hour": 1, "avg_interaction": 20.38, "tweet_count": 16}, {"hour": 7, "avg_interaction": 10.0, "tweet_count": 1}, {"hour": 8, "avg_interaction": 50.71, "tweet_count": 7}, {"hour": 9, "avg_interaction": 37.1, "tweet_count": 10}, {"hour": 10, "avg_interaction": 53.38, "tweet_count": 8}, {"hour": 11, "avg_interaction": 39.58, "tweet_count": 24}, {"hour": 12, "avg_interaction": 45.57, "tweet_count": 28}, {"hour": 13, "avg_interaction": 41.19, "tweet_count": 16}, {"hour": 14, "avg_interaction": 38.05, "tweet_count": 20}, {"hour": 15, "avg_interaction": 47.87, "tweet_count": 15}, {"hour": 16, "avg_interaction": 67.62, "tweet_count": 21}, {"hour": 17, "avg_interaction": 45.8, "tweet_count": 25}, {"hour": 18, "avg_interaction": 39.11, "tweet_count": 9}, {"hour": 19, "avg_interaction": 12.45, "tweet_count": 11}, {"hour": 20, "avg_interaction": 16.46, "tweet_count": 84}, {"hour": 21, "avg_interaction": 28.62, "tweet_count": 76}, {"hour": 22, "avg_interaction": 39.76, "tweet_count": 37}, {"hour": 23, "avg_interaction": 35.0, "tweet_count": 6}]' data-color="gold" data-val="avg_interaction" data-count="tweet_count" data-label="hour_label"></div>
+    </div>
+    <div class="section">
+      <div class="section-title">Avg Interaction by Day</div>
+      <div id="tf-days" data-items='[{"day": "Tuesday", "avg_interaction": 40.44}, {"day": "Wednesday", "avg_interaction": 36.18}, {"day": "Monday", "avg_interaction": 35.59}, {"day": "Friday", "avg_interaction": 29.72}, {"day": "Thursday", "avg_interaction": 29.35}, {"day": "Sunday", "avg_interaction": 26.42}, {"day": "Saturday", "avg_interaction": 22.0}]' data-color="" data-val="avg_interaction" data-label="day"></div>
+    </div>
+  </div>
+  <div class="two-col">
+    
+      <div class="section">
+        <div class="section-title">Images vs No Images</div>
+        <div class="img-compare">
+          <div class="img-card">
+            <div class="img-card-label">With Image</div>
+            <div class="img-card-val" style="color:var(--green)">46.33</div>
+            <div class="img-card-sub">avg interaction &middot; 228 tweets</div>
+          </div>
+          <div class="img-card">
+            <div class="img-card-label">Without Image</div>
+            <div class="img-card-val" style="color:var(--muted)">23.2</div>
+            <div class="img-card-sub">avg interaction &middot; 259 tweets</div>
+          </div>
+        </div>
+        <div class="img-winner">Images perform 99.7% better</div>
+      </div>
+    <div class="section">
+      <div class="section-title">Top Keywords by Avg Interaction</div>
+      <div id="tf-kws" data-items='[{"keyword": "memory prices", "avg_interaction": 165.0, "tweet_count": 3}, {"keyword": "agentic ai", "avg_interaction": 139.0, "tweet_count": 5}, {"keyword": "forecast", "avg_interaction": 124.25, "tweet_count": 4}, {"keyword": "memory giants", "avg_interaction": 101.17, "tweet_count": 6}, {"keyword": "arm", "avg_interaction": 96.0, "tweet_count": 8}, {"keyword": "tsmc copos", "avg_interaction": 91.0, "tweet_count": 3}, {"keyword": "training", "avg_interaction": 85.5, "tweet_count": 4}, {"keyword": "#amd", "avg_interaction": 84.0, "tweet_count": 7}, {"keyword": "llm", "avg_interaction": 76.33, "tweet_count": 3}, {"keyword": "panel level", "avg_interaction": 74.33, "tweet_count": 3}]' data-color="teal" data-val="avg_interaction" data-count="tweet_count" data-label="keyword"></div>
+    </div>
+  </div>
+  <div class="two-col">
+    <div class="section">
+      <div class="section-title">Top Hashtags by Avg Interaction</div>
+      <div id="tf-hti" data-items='[{"hashtag": "#arm", "avg_interaction": 260.5, "tweet_count": 2, "avg_views": 172022.5}, {"hashtag": "#ssd", "avg_interaction": 134.5, "tweet_count": 2, "avg_views": 24018.0}, {"hashtag": "#copos", "avg_interaction": 130.0, "tweet_count": 2, "avg_views": 31167.5}, {"hashtag": "#hbf", "avg_interaction": 85.0, "tweet_count": 2, "avg_views": 29975.5}, {"hashtag": "#amd", "avg_interaction": 84.0, "tweet_count": 7, "avg_views": 50820.0}, {"hashtag": "#sandisk", "avg_interaction": 73.12, "tweet_count": 8, "avg_views": 16484.88}, {"hashtag": "#advancedpackaging", "avg_interaction": 69.5, "tweet_count": 4, "avg_views": 13184.75}, {"hashtag": "#inference", "avg_interaction": 63.5, "tweet_count": 2, "avg_views": 5069.5}, {"hashtag": "#kioxia", "avg_interaction": 56.22, "tweet_count": 9, "avg_views": 12789.22}, {"hashtag": "#intel", "avg_interaction": 53.7, "tweet_count": 27, "avg_views": 17144.04}]' data-color="" data-val="avg_interaction" data-count="tweet_count" data-label="hashtag"></div>
+    </div>
+    <div class="section">
+      <div class="section-title">Most Used Hashtags</div>
+      <div id="tf-htu" data-items='[{"hashtag": "#trendforce", "tweet_count": 84, "avg_interaction": 29.71}, {"hashtag": "#samsung", "tweet_count": 58, "avg_interaction": 29.72}, {"hashtag": "#tsmc", "tweet_count": 39, "avg_interaction": 23.59}, {"hashtag": "#skhynix", "tweet_count": 38, "avg_interaction": 39.58}, {"hashtag": "#micron", "tweet_count": 28, "avg_interaction": 46.54}, {"hashtag": "#intel", "tweet_count": 27, "avg_interaction": 53.7}, {"hashtag": "#nvidia", "tweet_count": 27, "avg_interaction": 34.19}, {"hashtag": "#ai", "tweet_count": 21, "avg_interaction": 22.0}, {"hashtag": "#apple", "tweet_count": 20, "avg_interaction": 11.55}, {"hashtag": "#china", "tweet_count": 14, "avg_interaction": 12.14}]' data-color="green" data-val="tweet_count" data-count2="avg_interaction" data-label="hashtag"></div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">Top 10 Tweets by Interaction</div>
+    
+      <div class="tweet-card">
+        <div class="tweet-rank">#1</div>
+        <div class="tweet-stats">
+          <div class="tweet-stat"><span class="num">488</span><span class="lbl">total</span></div>
+          <div class="tweet-stat"><span class="num">359</span><span class="lbl">likes</span></div>
+          <div class="tweet-stat"><span class="num">111</span><span class="lbl">retweets</span></div>
+          <div class="tweet-stat"><span class="num">18</span><span class="lbl">replies</span></div>
+          <div class="tweet-stat"><span class="num">339,041</span><span class="lbl">views</span></div>
+        </div>
+        <div class="tweet-text"> CPUs are having a moment.  #Nvidia launched a standalone CPU. #Arm made its first chip in 35 years. #Intel & #AMD are raising prices amid a supply crunch.  What's behind it: Agentic AI needs far more...</div>
+        <a class="tweet-link" href="https://x.com/trendforce/status/2044038072107434251" target="_blank" rel="noopener">https://x.com/trendforce/status/2044038072107434251</a>
+      </div>
+
+      <div class="tweet-card">
+        <div class="tweet-rank">#2</div>
+        <div class="tweet-stats">
+          <div class="tweet-stat"><span class="num">402</span><span class="lbl">total</span></div>
+          <div class="tweet-stat"><span class="num">293</span><span class="lbl">likes</span></div>
+          <div class="tweet-stat"><span class="num">97</span><span class="lbl">retweets</span></div>
+          <div class="tweet-stat"><span class="num">12</span><span class="lbl">replies</span></div>
+          <div class="tweet-stat"><span class="num">118,951</span><span class="lbl">views</span></div>
+        </div>
+        <div class="tweet-text"> Memory prices keep climbing: DRAM is forecast to rise 58–63% QoQ in 2Q26, while NAND flash may surge 70–75%. When will the supply-demand imbalance ease?More analysis from #TrendForce:  https:// buff....</div>
+        <a class="tweet-link" href="https://x.com/trendforce/status/2039010015747396092" target="_blank" rel="noopener">https://x.com/trendforce/status/2039010015747396092</a>
+      </div>
+
+      <div class="tweet-card">
+        <div class="tweet-rank">#3</div>
+        <div class="tweet-stats">
+          <div class="tweet-stat"><span class="num">269</span><span class="lbl">total</span></div>
+          <div class="tweet-stat"><span class="num">234</span><span class="lbl">likes</span></div>
+          <div class="tweet-stat"><span class="num">29</span><span class="lbl">retweets</span></div>
+          <div class="tweet-stat"><span class="num">6</span><span class="lbl">replies</span></div>
+          <div class="tweet-stat"><span class="num">42,131</span><span class="lbl">views</span></div>
+        </div>
+        <div class="tweet-text">Recent media reports claiming NVIDIA has exclusively selected Samsung and SK hynix for its HBM4 supply chain—supposedly sidelining Micron—are inaccurate. TrendForce reports that all three memory giant...</div>
+        <a class="tweet-link" href="https://x.com/trendforce/status/2031285588754837987" target="_blank" rel="noopener">https://x.com/trendforce/status/2031285588754837987</a>
+      </div>
+
+      <div class="tweet-card">
+        <div class="tweet-rank">#4</div>
+        <div class="tweet-stats">
+          <div class="tweet-stat"><span class="num">212</span><span class="lbl">total</span></div>
+          <div class="tweet-stat"><span class="num">185</span><span class="lbl">likes</span></div>
+          <div class="tweet-stat"><span class="num">24</span><span class="lbl">retweets</span></div>
+          <div class="tweet-stat"><span class="num">3</span><span class="lbl">replies</span></div>
+          <div class="tweet-stat"><span class="num">35,009</span><span class="lbl">views</span></div>
+        </div>
+        <div class="tweet-text">#SanDisk announced that the company has secured long-term #SSD supply agreements of up to five years, featuring increasing volume commitments and a hybrid pricing structure that combines fixed and var...</div>
+        <a class="tweet-link" href="https://x.com/trendforce/status/2051572611235119478" target="_blank" rel="noopener">https://x.com/trendforce/status/2051572611235119478</a>
+      </div>
+
+      <div class="tweet-card">
+        <div class="tweet-rank">#5</div>
+        <div class="tweet-stats">
+          <div class="tweet-stat"><span class="num">199</span><span class="lbl">total</span></div>
+          <div class="tweet-stat"><span class="num">159</span><span class="lbl">likes</span></div>
+          <div class="tweet-stat"><span class="num">40</span><span class="lbl">retweets</span></div>
+          <div class="tweet-stat"><span class="num">0</span><span class="lbl">replies</span></div>
+          <div class="tweet-stat"><span class="num">53,880</span><span class="lbl">views</span></div>
+        </div>
+        <div class="tweet-text">TSMC's #CoPoS is moving fast, and the opportunities for Taiwan suppliers are taking shape. CoPoS replaces traditional round glass carrier with a square panel format, pushing utilization rates above 75...</div>
+        <a class="tweet-link" href="https://x.com/trendforce/status/2065436170428035281" target="_blank" rel="noopener">https://x.com/trendforce/status/2065436170428035281</a>
+      </div>
+
+      <div class="tweet-card">
+        <div class="tweet-rank">#6</div>
+        <div class="tweet-stats">
+          <div class="tweet-stat"><span class="num">164</span><span class="lbl">total</span></div>
+          <div class="tweet-stat"><span class="num">141</span><span class="lbl">likes</span></div>
+          <div class="tweet-stat"><span class="num">22</span><span class="lbl">retweets</span></div>
+          <div class="tweet-stat"><span class="num">1</span><span class="lbl">replies</span></div>
+          <div class="tweet-stat"><span class="num">21,493</span><span class="lbl">views</span></div>
+        </div>
+        <div class="tweet-text">#Intel Foundry's turnaround may be coming sooner than expected — with big tech now reportedly betting on its 18A node and advanced packaging.</div>
+        <a class="tweet-link" href="https://x.com/trendforce/status/2049339662964289700" target="_blank" rel="noopener">https://x.com/trendforce/status/2049339662964289700</a>
+      </div>
+
+      <div class="tweet-card">
+        <div class="tweet-rank">#7</div>
+        <div class="tweet-stats">
+          <div class="tweet-stat"><span class="num">143</span><span class="lbl">total</span></div>
+          <div class="tweet-stat"><span class="num">108</span><span class="lbl">likes</span></div>
+          <div class="tweet-stat"><span class="num">34</span><span class="lbl">retweets</span></div>
+          <div class="tweet-stat"><span class="num">1</span><span class="lbl">replies</span></div>
+          <div class="tweet-stat"><span class="num">10,719</span><span class="lbl">views</span></div>
+        </div>
+        <div class="tweet-text"> #HBM prices may surge in 2027. HBM4 negotiations are underway, with suppliers holding the upper hand amid tight DRAM supply and rising costs.More analysis from #TrendForce:   https:// buff.ly/EM8TOV3...</div>
+        <a class="tweet-link" href="https://x.com/trendforce/status/2061840478081867881" target="_blank" rel="noopener">https://x.com/trendforce/status/2061840478081867881</a>
+      </div>
+
+      <div class="tweet-card">
+        <div class="tweet-rank">#8</div>
+        <div class="tweet-stats">
+          <div class="tweet-stat"><span class="num">140</span><span class="lbl">total</span></div>
+          <div class="tweet-stat"><span class="num">117</span><span class="lbl">likes</span></div>
+          <div class="tweet-stat"><span class="num">22</span><span class="lbl">retweets</span></div>
+          <div class="tweet-stat"><span class="num">1</span><span class="lbl">replies</span></div>
+          <div class="tweet-stat"><span class="num">56,367</span><span class="lbl">views</span></div>
+        </div>
+        <div class="tweet-text"> #HBF is emerging as the next-gen memory for AI inference, and the equipment race is already underway — Hanmi Semiconductor reportedly set to deliver the first batch of HBF TC bonders to customers in ...</div>
+        <a class="tweet-link" href="https://x.com/trendforce/status/2062882253630271695" target="_blank" rel="noopener">https://x.com/trendforce/status/2062882253630271695</a>
+      </div>
+
+      <div class="tweet-card">
+        <div class="tweet-rank">#9</div>
+        <div class="tweet-stats">
+          <div class="tweet-stat"><span class="num">130</span><span class="lbl">total</span></div>
+          <div class="tweet-stat"><span class="num">108</span><span class="lbl">likes</span></div>
+          <div class="tweet-stat"><span class="num">19</span><span class="lbl">retweets</span></div>
+          <div class="tweet-stat"><span class="num">3</span><span class="lbl">replies</span></div>
+          <div class="tweet-stat"><span class="num">17,947</span><span class="lbl">views</span></div>
+        </div>
+        <div class="tweet-text">Power semiconductors, particularly SiC and GaN devices, are expected to play an increasingly important role in future HVDC power architectures as AI data centers contend with immense power consumption...</div>
+        <a class="tweet-link" href="https://x.com/trendforce/status/2066803207993737578" target="_blank" rel="noopener">https://x.com/trendforce/status/2066803207993737578</a>
+      </div>
+
+      <div class="tweet-card">
+        <div class="tweet-rank">#10</div>
+        <div class="tweet-stats">
+          <div class="tweet-stat"><span class="num">127</span><span class="lbl">total</span></div>
+          <div class="tweet-stat"><span class="num">109</span><span class="lbl">likes</span></div>
+          <div class="tweet-stat"><span class="num">17</span><span class="lbl">retweets</span></div>
+          <div class="tweet-stat"><span class="num">1</span><span class="lbl">replies</span></div>
+          <div class="tweet-stat"><span class="num">14,843</span><span class="lbl">views</span></div>
+        </div>
+        <div class="tweet-text">#Intel is set to showcase 18A-P, while #TSMC prepares to debut A16 with its first Super Power Rail architecture at VLSI. What was once a roadmap race is now turning into a head-to-head showdown.</div>
+        <a class="tweet-link" href="https://x.com/trendforce/status/2052288096885223529" target="_blank" rel="noopener">https://x.com/trendforce/status/2052288096885223529</a>
+      </div>
+  </div>
+</div>
+<div class="page " id="page-tn">
+  <p class="updated">Based on 850 tweets scraped from @technews_tw &middot; Updated June 29, 2026 13:53 Taiwan Time</p>
+  
+    <div class="kpi-row">
+      <div class="kpi"><div class="kpi-label">Total Tweets</div><div class="kpi-value blue">850</div></div>
+      <div class="kpi"><div class="kpi-label">Avg Interaction</div><div class="kpi-value gold">4.4</div></div>
+      <div class="kpi"><div class="kpi-label">Median Interaction</div><div class="kpi-value">2</div></div>
+      <div class="kpi"><div class="kpi-label">Max Interaction</div><div class="kpi-value green">148</div></div>
+      <div class="kpi"><div class="kpi-label">Avg Views</div><div class="kpi-value teal">321</div></div>
+      <div class="kpi"><div class="kpi-label">Max Views</div><div class="kpi-value">10,008</div></div>
+    </div>
+  <div class="two-col">
+    <div class="section">
+      <div class="section-title">Best Hours to Post (Taiwan Time)</div>
+      <div id="tn-hours" data-items='[{"hour": 7, "avg_interaction": 9.5, "tweet_count": 16}, {"hour": 8, "avg_interaction": 13.5, "tweet_count": 26}, {"hour": 9, "avg_interaction": 3.02, "tweet_count": 45}, {"hour": 10, "avg_interaction": 7.1, "tweet_count": 69}, {"hour": 11, "avg_interaction": 5.38, "tweet_count": 71}, {"hour": 12, "avg_interaction": 3.98, "tweet_count": 59}, {"hour": 13, "avg_interaction": 2.79, "tweet_count": 68}, {"hour": 14, "avg_interaction": 5.46, "tweet_count": 59}, {"hour": 15, "avg_interaction": 4.15, "tweet_count": 61}, {"hour": 16, "avg_interaction": 3.85, "tweet_count": 74}, {"hour": 17, "avg_interaction": 3.63, "tweet_count": 78}, {"hour": 18, "avg_interaction": 2.93, "tweet_count": 70}, {"hour": 19, "avg_interaction": 2.57, "tweet_count": 56}, {"hour": 20, "avg_interaction": 3.32, "tweet_count": 37}, {"hour": 21, "avg_interaction": 3.97, "tweet_count": 34}, {"hour": 22, "avg_interaction": 1.22, "tweet_count": 18}, {"hour": 23, "avg_interaction": 3.89, "tweet_count": 9}]' data-color="gold" data-val="avg_interaction" data-count="tweet_count" data-label="hour_label"></div>
+    </div>
+    <div class="section">
+      <div class="section-title">Avg Interaction by Day</div>
+      <div id="tn-days" data-items='[{"day": "Wednesday", "avg_interaction": 6.39}, {"day": "Sunday", "avg_interaction": 5.49}, {"day": "Tuesday", "avg_interaction": 4.47}, {"day": "Monday", "avg_interaction": 4.41}, {"day": "Saturday", "avg_interaction": 4.35}, {"day": "Thursday", "avg_interaction": 3.94}, {"day": "Friday", "avg_interaction": 2.84}]' data-color="" data-val="avg_interaction" data-label="day"></div>
+    </div>
+  </div>
+  <div class="two-col">
+    
+      <div class="section">
+        <div class="section-title">Images vs No Images</div>
+        <div class="img-compare">
+          <div class="img-card">
+            <div class="img-card-label">With Image</div>
+            <div class="img-card-val" style="color:var(--green)">21.17</div>
+            <div class="img-card-sub">avg interaction &middot; 76 tweets</div>
+          </div>
+          <div class="img-card">
+            <div class="img-card-label">Without Image</div>
+            <div class="img-card-val" style="color:var(--muted)">2.76</div>
+            <div class="img-card-sub">avg interaction &middot; 774 tweets</div>
+          </div>
+        </div>
+        <div class="img-winner">Images perform 667.0% better</div>
+      </div>
+    <div class="section">
+      <div class="section-title">Top Keywords by Avg Interaction</div>
+      <div id="tn-kws" data-items='[{"keyword": "optical communication", "avg_interaction": 53.67, "tweet_count": 3}, {"keyword": "data center", "avg_interaction": 43.0, "tweet_count": 8}, {"keyword": "advanced packaging", "avg_interaction": 39.75, "tweet_count": 4}, {"keyword": "glass substrates", "avg_interaction": 37.67, "tweet_count": 3}, {"keyword": "capacity", "avg_interaction": 35.11, "tweet_count": 9}, {"keyword": "packaging", "avg_interaction": 34.5, "tweet_count": 6}, {"keyword": "demand", "avg_interaction": 33.91, "tweet_count": 11}, {"keyword": "supply chain", "avg_interaction": 27.93, "tweet_count": 15}, {"keyword": "#jpmorgan", "avg_interaction": 27.33, "tweet_count": 3}, {"keyword": "chips", "avg_interaction": 26.0, "tweet_count": 9}]' data-color="teal" data-val="avg_interaction" data-count="tweet_count" data-label="keyword"></div>
+    </div>
+  </div>
+  <div class="two-col">
+    <div class="section">
+      <div class="section-title">Top Hashtags by Avg Interaction</div>
+      <div id="tn-hti" data-items='[{"hashtag": "#optical", "avg_interaction": 28.5, "tweet_count": 2, "avg_views": 1730.0}, {"hashtag": "#jpmorgan", "avg_interaction": 27.33, "tweet_count": 3, "avg_views": 1440.0}, {"hashtag": "#abf", "avg_interaction": 24.0, "tweet_count": 2, "avg_views": 1392.0}, {"hashtag": "#0050", "avg_interaction": 15.0, "tweet_count": 2, "avg_views": 888.5}, {"hashtag": "#tsmc", "avg_interaction": 12.21, "tweet_count": 14, "avg_views": 653.57}, {"hashtag": "#marvell", "avg_interaction": 11.0, "tweet_count": 3, "avg_views": 590.0}, {"hashtag": "#intel", "avg_interaction": 10.8, "tweet_count": 5, "avg_views": 824.2}, {"hashtag": "#copos", "avg_interaction": 10.0, "tweet_count": 2, "avg_views": 552.5}, {"hashtag": "#台達電", "avg_interaction": 9.6, "tweet_count": 5, "avg_views": 593.2}, {"hashtag": "#memory", "avg_interaction": 9.5, "tweet_count": 4, "avg_views": 725.25}]' data-color="" data-val="avg_interaction" data-count="tweet_count" data-label="hashtag"></div>
+    </div>
+    <div class="section">
+      <div class="section-title">Most Used Hashtags</div>
+      <div id="tn-htu" data-items='[{"hashtag": "#ai", "tweet_count": 66, "avg_interaction": 3.89}, {"hashtag": "#spacex", "tweet_count": 36, "avg_interaction": 2.06}, {"hashtag": "#蘋果", "tweet_count": 31, "avg_interaction": 2.65}, {"hashtag": "#台積電", "tweet_count": 30, "avg_interaction": 4.3}, {"hashtag": "#輝達", "tweet_count": 27, "avg_interaction": 3.3}, {"hashtag": "#openai", "tweet_count": 22, "avg_interaction": 1.64}, {"hashtag": "#anthropic", "tweet_count": 21, "avg_interaction": 1.76}, {"hashtag": "#英特爾", "tweet_count": 17, "avg_interaction": 3.65}, {"hashtag": "#google", "tweet_count": 15, "avg_interaction": 3.87}, {"hashtag": "#amd", "tweet_count": 14, "avg_interaction": 3.79}]' data-color="green" data-val="tweet_count" data-count2="avg_interaction" data-label="hashtag"></div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">Top 10 Tweets by Interaction</div>
+    
+      <div class="tweet-card">
+        <div class="tweet-rank">#1</div>
+        <div class="tweet-stats">
+          <div class="tweet-stat"><span class="num">148</span><span class="lbl">total</span></div>
+          <div class="tweet-stat"><span class="num">125</span><span class="lbl">likes</span></div>
+          <div class="tweet-stat"><span class="num">19</span><span class="lbl">retweets</span></div>
+          <div class="tweet-stat"><span class="num">4</span><span class="lbl">replies</span></div>
+          <div class="tweet-stat"><span class="num">10,008</span><span class="lbl">views</span></div>
+        </div>
+        <div class="tweet-text">Indium Phosphide Substrate Capacity to Expand 10-Fold Within 4 Years! #IndiumPhosphideInP Epitaxial Supply Chain JX Metal announced in a press release on the 16th that, in response to the growing dema...</div>
+        <a class="tweet-link" href="https://x.com/technews_tw/status/2067073313957146678" target="_blank" rel="noopener">https://x.com/technews_tw/status/2067073313957146678</a>
+      </div>
+
+      <div class="tweet-card">
+        <div class="tweet-rank">#2</div>
+        <div class="tweet-stats">
+          <div class="tweet-stat"><span class="num">83</span><span class="lbl">total</span></div>
+          <div class="tweet-stat"><span class="num">71</span><span class="lbl">likes</span></div>
+          <div class="tweet-stat"><span class="num">10</span><span class="lbl">retweets</span></div>
+          <div class="tweet-stat"><span class="num">2</span><span class="lbl">replies</span></div>
+          <div class="tweet-stat"><span class="num">9,426</span><span class="lbl">views</span></div>
+        </div>
+        <div class="tweet-text">Morgan Stanley raises Yageo target price to 1,355 yuan, with even the chance to challenge the sky-high 2,055 yuan! #MorganStanleyNamesYageoUltimateMLCCWinner Passive component industry to usher in a n...</div>
+        <a class="tweet-link" href="https://x.com/technews_tw/status/2066409421467779571" target="_blank" rel="noopener">https://x.com/technews_tw/status/2066409421467779571</a>
+      </div>
+
+      <div class="tweet-card">
+        <div class="tweet-rank">#3</div>
+        <div class="tweet-stats">
+          <div class="tweet-stat"><span class="num">78</span><span class="lbl">total</span></div>
+          <div class="tweet-stat"><span class="num">66</span><span class="lbl">likes</span></div>
+          <div class="tweet-stat"><span class="num">8</span><span class="lbl">retweets</span></div>
+          <div class="tweet-stat"><span class="num">4</span><span class="lbl">replies</span></div>
+          <div class="tweet-stat"><span class="num">5,518</span><span class="lbl">views</span></div>
+        </div>
+        <div class="tweet-text">Can Glass Substrates Really Shoulder the Burden of AI Packaging? #GlassSubstrateEcosystemSupplyChain AI chips drive demand for high-density packaging, propelling glass substrates to become a key mater...</div>
+        <a class="tweet-link" href="https://x.com/technews_tw/status/2064505979157581858" target="_blank" rel="noopener">https://x.com/technews_tw/status/2064505979157581858</a>
+      </div>
+
+      <div class="tweet-card">
+        <div class="tweet-rank">#4</div>
+        <div class="tweet-stats">
+          <div class="tweet-stat"><span class="num">71</span><span class="lbl">total</span></div>
+          <div class="tweet-stat"><span class="num">62</span><span class="lbl">likes</span></div>
+          <div class="tweet-stat"><span class="num">9</span><span class="lbl">retweets</span></div>
+          <div class="tweet-stat"><span class="num">0</span><span class="lbl">replies</span></div>
+          <div class="tweet-stat"><span class="num">9,058</span><span class="lbl">views</span></div>
+        </div>
+        <div class="tweet-text">800V HVDC Becomes New Power Supply Standard for AI Data Centers! #AI資料中心價值鏈 The AI computing race is extending from chips to power infrastructure. Market sources indicate that Delta Electronics' long-...</div>
+        <a class="tweet-link" href="https://x.com/technews_tw/status/2062324291346313413" target="_blank" rel="noopener">https://x.com/technews_tw/status/2062324291346313413</a>
+      </div>
+
+      <div class="tweet-card">
+        <div class="tweet-rank">#5</div>
+        <div class="tweet-stats">
+          <div class="tweet-stat"><span class="num">57</span><span class="lbl">total</span></div>
+          <div class="tweet-stat"><span class="num">48</span><span class="lbl">likes</span></div>
+          <div class="tweet-stat"><span class="num">9</span><span class="lbl">retweets</span></div>
+          <div class="tweet-stat"><span class="num">0</span><span class="lbl">replies</span></div>
+          <div class="tweet-stat"><span class="num">4,060</span><span class="lbl">views</span></div>
+        </div>
+        <div class="tweet-text">JPMorgan names 4 major Taiwanese manufacturers! #JPMorganNamesTop5AIWinners AI wave sweeps global hardware supply chain, multilayer ceramic capacitors (MLCC), copper-clad laminates (CCL) to high-end s...</div>
+        <a class="tweet-link" href="https://x.com/technews_tw/status/2066802549764829202" target="_blank" rel="noopener">https://x.com/technews_tw/status/2066802549764829202</a>
+      </div>
+
+      <div class="tweet-card">
+        <div class="tweet-rank">#6</div>
+        <div class="tweet-stats">
+          <div class="tweet-stat"><span class="num">53</span><span class="lbl">total</span></div>
+          <div class="tweet-stat"><span class="num">47</span><span class="lbl">likes</span></div>
+          <div class="tweet-stat"><span class="num">5</span><span class="lbl">retweets</span></div>
+          <div class="tweet-stat"><span class="num">1</span><span class="lbl">replies</span></div>
+          <div class="tweet-stat"><span class="num">4,997</span><span class="lbl">views</span></div>
+        </div>
+        <div class="tweet-text">AI Data Center Power Efficiency Anxiety! #Power Components vs Passive Components Differences Explained at a Glance   The South Korean government has launched the &quot;Super Innovation Economy Plan,&q...</div>
+        <a class="tweet-link" href="https://x.com/technews_tw/status/2068848009501360145" target="_blank" rel="noopener">https://x.com/technews_tw/status/2068848009501360145</a>
+      </div>
+
+      <div class="tweet-card">
+        <div class="tweet-rank">#7</div>
+        <div class="tweet-stats">
+          <div class="tweet-stat"><span class="num">49</span><span class="lbl">total</span></div>
+          <div class="tweet-stat"><span class="num">46</span><span class="lbl">likes</span></div>
+          <div class="tweet-stat"><span class="num">3</span><span class="lbl">retweets</span></div>
+          <div class="tweet-stat"><span class="num">0</span><span class="lbl">replies</span></div>
+          <div class="tweet-stat"><span class="num">2,622</span><span class="lbl">views</span></div>
+        </div>
+        <div class="tweet-text">A single AI server devours 440,000 #MLCCs, up to 15 times that of traditional servers. Foreign investors forecast the &quot;passive components supercycle&quot; to erupt ahead of schedule, with high-en...</div>
+        <a class="tweet-link" href="https://x.com/technews_tw/status/2069239320096178207" target="_blank" rel="noopener">https://x.com/technews_tw/status/2069239320096178207</a>
+      </div>
+
+      <div class="tweet-card">
+        <div class="tweet-rank">#8</div>
+        <div class="tweet-stats">
+          <div class="tweet-stat"><span class="num">46</span><span class="lbl">total</span></div>
+          <div class="tweet-stat"><span class="num">42</span><span class="lbl">likes</span></div>
+          <div class="tweet-stat"><span class="num">4</span><span class="lbl">retweets</span></div>
+          <div class="tweet-stat"><span class="num">0</span><span class="lbl">replies</span></div>
+          <div class="tweet-stat"><span class="num">3,240</span><span class="lbl">views</span></div>
+        </div>
+        <div class="tweet-text">JPMorgan names four Taiwanese firms as beneficiaries! #JPMorganUnveilsThreeMajorHardwareRevolutionsAndNewLandscapeForTaiwaneseFirms AI computing power is exploding, comprehensively reshaping the globa...</div>
+        <a class="tweet-link" href="https://x.com/technews_tw/status/2067033562315182521" target="_blank" rel="noopener">https://x.com/technews_tw/status/2067033562315182521</a>
+      </div>
+
+      <div class="tweet-card">
+        <div class="tweet-rank">#9</div>
+        <div class="tweet-stats">
+          <div class="tweet-stat"><span class="num">46</span><span class="lbl">total</span></div>
+          <div class="tweet-stat"><span class="num">40</span><span class="lbl">likes</span></div>
+          <div class="tweet-stat"><span class="num">5</span><span class="lbl">retweets</span></div>
+          <div class="tweet-stat"><span class="num">1</span><span class="lbl">replies</span></div>
+          <div class="tweet-stat"><span class="num">3,083</span><span class="lbl">views</span></div>
+        </div>
+        <div class="tweet-text">Despite the fact that CPO's progress in mass adoption is slower due to technical difficulties, optical communication infrastructure has become the new battleground in the AI infrastructure race! #Opti...</div>
+        <a class="tweet-link" href="https://x.com/technews_tw/status/2066725555203137645" target="_blank" rel="noopener">https://x.com/technews_tw/status/2066725555203137645</a>
+      </div>
+
+      <div class="tweet-card">
+        <div class="tweet-rank">#10</div>
+        <div class="tweet-stats">
+          <div class="tweet-stat"><span class="num">42</span><span class="lbl">total</span></div>
+          <div class="tweet-stat"><span class="num">31</span><span class="lbl">likes</span></div>
+          <div class="tweet-stat"><span class="num">11</span><span class="lbl">retweets</span></div>
+          <div class="tweet-stat"><span class="num">0</span><span class="lbl">replies</span></div>
+          <div class="tweet-stat"><span class="num">1,141</span><span class="lbl">views</span></div>
+        </div>
+        <div class="tweet-text">Nearly 30% of Taiwan's tax revenue comes from TSMC! #TSMCReignsAsTopTaxpayerForNinthTime 2025 corporate income tax settlement declarations are due by June 1. According to cross-referencing by the Mini...</div>
+        <a class="tweet-link" href="https://x.com/technews_tw/status/2067438212075954564" target="_blank" rel="noopener">https://x.com/technews_tw/status/2067438212075954564</a>
+      </div>
+  </div>
+</div>
+
+<script>
+function switchTab(id, el) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  el.classList.add('active');
+  document.getElementById('page-' + id).classList.add('active');
+}
+
+function renderBars(containerId) {
+  const el = document.getElementById(containerId);
+  if (!el) return;
+  const items   = JSON.parse(el.dataset.items || '[]');
+  const color   = el.dataset.color || '';
+  const valKey  = el.dataset.val;
+  const countKey= el.dataset.count;
+  const count2  = el.dataset.count2;
+  const labelKey= el.dataset.label;
+  const max = Math.max(...items.map(i => +i[valKey] || 0)) || 1;
+
+  items.forEach(item => {
+    const label = labelKey === 'hour_label'
+      ? String(item.hour).padStart(2,'0') + ':00'
+      : (item[labelKey] || '');
+    const val = +item[valKey] || 0;
+    const pct = (val / max * 100).toFixed(1);
+    const countStr = countKey
+      ? `<div class="bar-count">${item[countKey] ? item[countKey] + (countKey==='tweet_count'?' tweets':'') : ''}</div>`
+      : (count2 ? `<div class="bar-count">avg ${item[count2]}</div>` : '');
+
+    const div = document.createElement('div');
+    div.className = 'bar-row';
+    div.innerHTML = `
+      <div class="bar-label ${labelKey==='hashtag'||labelKey==='keyword'?'left':''}">${label}</div>
+      <div class="bar-track"><div class="bar-fill ${color}" style="width:${pct}%"></div></div>
+      <div class="bar-val">${val}</div>
+      ${countStr}
+    `;
+    el.appendChild(div);
+  });
+}
+
+['tf-hours','tf-days','tf-kws','tf-hti','tf-htu',
+ 'tn-hours','tn-days','tn-kws','tn-hti','tn-htu'].forEach(renderBars);
+</script>
+</body>
+</html>

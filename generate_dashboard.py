@@ -37,8 +37,10 @@ def account_data(key):
         top_tweets   = d.get('top_tweets', [])[:10],
     )
 
-tf = account_data('TrendForce')
-tn = account_data('technews_tw')
+ACCOUNTS_IN_JSON = list(data.keys())
+
+tf = account_data('TrendForce') if 'TrendForce' in data else None
+tn = account_data('technews_tw') if 'technews_tw' in data else None
 
 def kpi_row(d):
     s = d['summary']
@@ -141,6 +143,13 @@ def page(pid, d, active=''):
   </div>
 </div>"""
 
+tf_tab = '<div class="tab active" onclick="switchTab(\'tf\',this)">@TrendForce</div>' if tf else ''
+tn_tab = '<div class="tab" onclick="switchTab(\'tn\',this)">@technews_tw</div>' if tn else ''
+pages_html = ''.join([
+    page('tf', tf, active='active') if tf else '',
+    page('tn', tn) if tn else '',
+])
+
 html = f"""<!doctype html>
 <html lang="en">
 <head>
@@ -206,13 +215,12 @@ body{{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:1
 <div class="header">
   <div class="logo">X Analytics &middot; <span>TrendForce Research</span></div>
   <div class="tabs">
-    <div class="tab active" onclick="switchTab('tf',this)">@TrendForce</div>
-    <div class="tab" onclick="switchTab('tn',this)">@technews_tw</div>
+    {tf_tab}
+    {tn_tab}
   </div>
 </div>
 
-{page('tf', tf, active='active')}
-{page('tn', tn)}
+{pages_html}
 
 <script>
 function switchTab(id, el) {{
