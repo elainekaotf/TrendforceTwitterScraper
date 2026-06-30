@@ -27,20 +27,27 @@ def account_data(key):
         handle       = d['handle'],
         tweet_count  = d['tweet_count'],
         summary      = d['summary'],
-        all_hours    = d.get('all_hours', []),
-        best_days    = d.get('best_days', []),
+        all_hours    = sorted(
+                           sorted(d.get('all_hours', []), key=lambda x: x.get('tweet_count',0), reverse=True)[:12],
+                           key=lambda x: x.get('hour', 0)
+                       ),
+        best_days    = sorted(d.get('best_days', []), key=lambda x: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'].index(x['day']) if x['day'] in ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'] else 7),
         images       = d.get('images', {}),
         top_keywords = d.get('top_keywords', [])[:10],
         best_image_keywords = d.get('best_image_keywords', []),
         top_hashtags_by_interaction = d.get('top_hashtags_by_interaction', [])[:10],
         top_hashtags_by_usage       = d.get('top_hashtags_by_usage', [])[:10],
         top_tweets   = d.get('top_tweets', [])[:10],
+        language     = d.get('language'),
     )
 
-ACCOUNTS_IN_JSON = list(data.keys())
-
-tf = account_data('TrendForce') if 'TrendForce' in data else None
-tn = account_data('technews_tw') if 'technews_tw' in data else None
+# Ordered list of accounts to show — skip 'combined' key
+ACCOUNT_ORDER = ['TrendForce', 'technews_tw', 'dylan522p', 'jukan05', 'QQ_Timmy', 'SemiAnalysis_']
+accounts = [(k, account_data(k)) for k in ACCOUNT_ORDER if k in data]
+# fallback: add any extra accounts in JSON not in the order list
+for k in data:
+    if k != 'combined' and k not in ACCOUNT_ORDER and isinstance(data[k], dict) and 'handle' in data[k]:
+        accounts.append((k, account_data(k)))
 
 def kpi_row(d):
     s = d['summary']
@@ -54,6 +61,127 @@ def kpi_row(d):
       <div class="kpi"><div class="kpi-label">Max Views</div><div class="kpi-value">{int(s.get('max_views',0)):,}</div></div>
     </div>"""
 
+def mini_tweets(tweets):
+    cards = []
+    for t in tweets:
+        original = str(t.get('text','')).replace('<','&lt;').replace('>','&gt;')
+        short = original[:120] + ('...' if len(original) > 120 else '')
+        cards.append(f'<div class="lang-tweet"><span class="num">{t["interaction"]:,}</span> &middot; {short}</div>')
+    return '\n'.join(cards)
+
+def lang_bars(pid, suffix, items, color, val_key, label_key, count_key=None):
+    return f'<div id="{pid}-{suffix}" class="lang-bar-container" data-pid="{pid}" data-suffix="{suffix}"></div>'
+
+def language_section(d, pid):
+    lang = d.get('language')
+    if not lang:
+        return ''
+    zh = lang.get('chinese', {})
+    en = lang.get('english', {})
+    zh_color = 'var(--gold)' if zh.get('avg_interaction',0) >= en.get('avg_interaction',0) else 'var(--muted)'
+    en_color = 'var(--teal)' if en.get('avg_interaction',0) > zh.get('avg_interaction',0) else 'var(--muted)'
+
+    zh_img_w = zh.get('img_with', {})
+    zh_img_wo = zh.get('img_without', {})
+    en_img_w = en.get('img_with', {})
+    en_img_wo = en.get('img_without', {})
+
+    return f"""
+  <div class="section">
+    <div class="section-title">Chinese vs English &mdash; Overview</div>
+    <div class="img-compare">
+      <div class="img-card">
+        <div class="img-card-label">Chinese</div>
+        <div class="img-card-val" style="color:{zh_color}">{zh.get('avg_interaction','')}</div>
+        <div class="img-card-sub">avg interaction &middot; {zh.get('tweet_count','')} tweets</div>
+        <div class="img-card-sub">avg views {int(zh.get('avg_views',0)):,}</div>
+      </div>
+      <div class="img-card">
+        <div class="img-card-label">English</div>
+        <div class="img-card-val" style="color:{en_color}">{en.get('avg_interaction','')}</div>
+        <div class="img-card-sub">avg interaction &middot; {en.get('tweet_count','')} tweets</div>
+        <div class="img-card-sub">avg views {int(en.get('avg_views',0)):,}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="two-col">
+    <div class="section">
+      <div class="section-title">Chinese &mdash; Best Hours</div>
+      <div id="{pid}-zh-hours"></div>
+    </div>
+    <div class="section">
+      <div class="section-title">English &mdash; Best Hours</div>
+      <div id="{pid}-en-hours"></div>
+    </div>
+  </div>
+
+  <div class="two-col">
+    <div class="section">
+      <div class="section-title">Chinese &mdash; Best Days</div>
+      <div id="{pid}-zh-days"></div>
+    </div>
+    <div class="section">
+      <div class="section-title">English &mdash; Best Days</div>
+      <div id="{pid}-en-days"></div>
+    </div>
+  </div>
+
+  <div class="two-col">
+    <div class="section">
+      <div class="section-title">Chinese &mdash; Images vs No Images</div>
+      <div class="img-compare">
+        <div class="img-card">
+          <div class="img-card-label">With Image</div>
+          <div class="img-card-val" style="color:var(--green)">{zh_img_w.get('avg','')}</div>
+          <div class="img-card-sub">{zh_img_w.get('count','')} tweets</div>
+        </div>
+        <div class="img-card">
+          <div class="img-card-label">No Image</div>
+          <div class="img-card-val" style="color:var(--muted)">{zh_img_wo.get('avg','')}</div>
+          <div class="img-card-sub">{zh_img_wo.get('count','')} tweets</div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-title">English &mdash; Images vs No Images</div>
+      <div class="img-compare">
+        <div class="img-card">
+          <div class="img-card-label">With Image</div>
+          <div class="img-card-val" style="color:var(--green)">{en_img_w.get('avg','')}</div>
+          <div class="img-card-sub">{en_img_w.get('count','')} tweets</div>
+        </div>
+        <div class="img-card">
+          <div class="img-card-label">No Image</div>
+          <div class="img-card-val" style="color:var(--muted)">{en_img_wo.get('avg','')}</div>
+          <div class="img-card-sub">{en_img_wo.get('count','')} tweets</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="two-col">
+    <div class="section">
+      <div class="section-title">Chinese &mdash; Top Hashtags</div>
+      <div id="{pid}-zh-ht"></div>
+    </div>
+    <div class="section">
+      <div class="section-title">English &mdash; Top Hashtags</div>
+      <div id="{pid}-en-ht"></div>
+    </div>
+  </div>
+
+  <div class="two-col">
+    <div class="section">
+      <div class="section-title">Top Chinese Tweets</div>
+      <div class="lang-tweets">{mini_tweets(zh.get('top_tweets',[]))}</div>
+    </div>
+    <div class="section">
+      <div class="section-title">Top English Tweets</div>
+      <div class="lang-tweets">{mini_tweets(en.get('top_tweets',[]))}</div>
+    </div>
+  </div>"""
+
 def images_section(d):
     img = d['images']
     wi  = img.get('with_image', {})
@@ -61,19 +189,23 @@ def images_section(d):
     return f"""
       <div class="section">
         <div class="section-title">Images vs No Images</div>
-        <div class="img-compare">
-          <div class="img-card">
-            <div class="img-card-label">With Image</div>
-            <div class="img-card-val" style="color:var(--green)">{wi.get('avg_interaction','')}</div>
-            <div class="img-card-sub">avg interaction &middot; {wi.get('count','')} tweets</div>
+        <div class="img-row">
+          <div class="img-stat">
+            <div class="img-stat-label">With Image</div>
+            <div class="img-stat-val" style="color:var(--green)">{wi.get('avg_interaction','')}</div>
+            <div class="img-stat-sub">{wi.get('count','')} tweets</div>
           </div>
-          <div class="img-card">
-            <div class="img-card-label">Without Image</div>
-            <div class="img-card-val" style="color:var(--muted)">{wo.get('avg_interaction','')}</div>
-            <div class="img-card-sub">avg interaction &middot; {wo.get('count','')} tweets</div>
+          <div class="img-stat">
+            <div class="img-stat-label">No Image</div>
+            <div class="img-stat-val" style="color:var(--muted)">{wo.get('avg_interaction','')}</div>
+            <div class="img-stat-sub">{wo.get('count','')} tweets</div>
+          </div>
+          <div class="img-stat">
+            <div class="img-stat-label">Winner</div>
+            <div class="img-stat-val" style="color:var(--blue);font-size:14px">{img.get('winner','').capitalize()}</div>
+            <div class="img-stat-sub">{img.get('pct_difference','')}% better</div>
           </div>
         </div>
-        <div class="img-winner">{img.get('winner','').capitalize()} perform {img.get('pct_difference','')}% better</div>
       </div>"""
 
 def tweet_cards(tweets):
@@ -91,7 +223,7 @@ def tweet_cards(tweets):
           <div class="tweet-stat"><span class="num">{t['likes']:,}</span><span class="lbl">likes</span></div>
           <div class="tweet-stat"><span class="num">{t['retweets']:,}</span><span class="lbl">retweets</span></div>
           <div class="tweet-stat"><span class="num">{t['replies']:,}</span><span class="lbl">replies</span></div>
-          <div class="tweet-stat"><span class="num">{int(t.get('views',0)):,}</span><span class="lbl">views</span></div>
+          {'<div class="tweet-stat"><span class="num">' + f"{int(t.get('views',0)):,}" + '</span><span class="lbl">views</span></div>' if t.get('views') else ''}
         </div>
         <div class="tweet-text">{text}</div>
         <a class="tweet-link" href="{url}" target="_blank" rel="noopener">{url}</a>
@@ -106,48 +238,86 @@ def page(pid, d, active=''):
     hti    = d['top_hashtags_by_interaction']
     htu    = d['top_hashtags_by_usage']
 
-    return f"""
-<div class="page {'active' if active else ''}" id="page-{pid}">
-  <p class="updated">Based on {d['tweet_count']:,} tweets scraped from @{handle} &middot; Updated {now_tw}</p>
-  {kpi_row(d)}
-  <div class="two-col">
-    <div class="section">
-      <div class="section-title">Best Hours to Post (Taiwan Time)</div>
-      <div id="{pid}-hours" data-items='{js(hours)}' data-color="gold" data-val="avg_interaction" data-count="tweet_count" data-label="hour_label"></div>
-    </div>
-    <div class="section">
-      <div class="section-title">Avg Interaction by Day</div>
-      <div id="{pid}-days" data-items='{js(days)}' data-color="" data-val="avg_interaction" data-label="day"></div>
-    </div>
-  </div>
-  <div class="two-col">
-    {images_section(d)}
-    <div class="section">
-      <div class="section-title">Top Keywords by Avg Interaction</div>
-      <div id="{pid}-kws" data-items='{js(kws)}' data-color="teal" data-val="avg_interaction" data-count="tweet_count" data-label="keyword"></div>
-    </div>
-  </div>
-  <div class="two-col">
+    lang = d.get('language') or {}
+    zh = lang.get('chinese', {})
+    en = lang.get('english', {})
+
+    no_hashtags = handle in ('dylan522p', 'jukan05', 'QQ_Timmy', 'SemiAnalysis_')
+    hashtag_section_html = '' if no_hashtags else f"""<div class="two-col">
     <div class="section">
       <div class="section-title">Top Hashtags by Avg Interaction</div>
-      <div id="{pid}-hti" data-items='{js(hti)}' data-color="" data-val="avg_interaction" data-count="tweet_count" data-label="hashtag"></div>
+      <div id="{pid}-hti"></div>
     </div>
     <div class="section">
       <div class="section-title">Most Used Hashtags</div>
-      <div id="{pid}-htu" data-items='{js(htu)}' data-color="green" data-val="tweet_count" data-count2="avg_interaction" data-label="hashtag"></div>
+      <div id="{pid}-htu"></div>
+    </div>
+  </div>"""
+
+    # Embed data as JS variables to avoid HTML attribute quoting issues
+    data_script = f"""<script>
+window._data = window._data || {{}};
+window._data['{pid}'] = {{
+  hours:    {js(hours)},
+  days:     {js(days)},
+  kws:      {js(kws)},
+  kws_views: {js(sorted(kws, key=lambda x: x.get('avg_views', 0), reverse=True))},
+  hti:      {js(hti)},
+  htu:      {js(htu)},
+  zh_hours: {js(zh.get('best_hours',[]))},
+  en_hours: {js(en.get('best_hours',[]))},
+  zh_days:  {js(zh.get('best_days',[]))},
+  en_days:  {js(en.get('best_days',[]))},
+  zh_ht:    {js(zh.get('top_hashtags',[]))},
+  en_ht:    {js(en.get('top_hashtags',[]))}
+}};
+</script>"""
+
+    return f"""
+{data_script}
+<div class="page {'active' if active else ''}" id="page-{pid}">
+  <p class="updated">Based on {d['tweet_count']:,} tweets scraped from @{handle} &middot; Updated {now_tw}</p>
+  {kpi_row(d)}
+  <div class="bar-legend"><span><span class="dot" style="background:var(--gold)"></span>Interaction</span><span><span class="dot" style="background:var(--blue)"></span>Views</span></div>
+  <div class="two-col">
+    <div class="section">
+      <div class="section-title">Best Hours to Post (Taiwan Time)</div>
+      <div id="{pid}-hours"></div>
+    </div>
+    <div class="section">
+      <div class="section-title">Avg Interaction &amp; Views by Day</div>
+      <div id="{pid}-days"></div>
     </div>
   </div>
+  {images_section(d)}
+  <div class="two-col">
+    <div class="section">
+      <div class="section-title">Top Topics by Avg Interaction</div>
+      <div id="{pid}-kws"></div>
+    </div>
+    <div class="section">
+      <div class="section-title">Top Topics by Avg Views</div>
+      <div id="{pid}-kws-views"></div>
+    </div>
+  </div>
+  {hashtag_section_html}
+  {language_section(d, pid) if d.get('language') and d['handle'] == 'technews_tw' else ''}
   <div class="section">
     <div class="section-title">Top 10 Tweets by Interaction</div>
     {tweet_cards(d['top_tweets'])}
   </div>
 </div>"""
 
-tf_tab = '<div class="tab active" onclick="switchTab(\'tf\',this)">@TrendForce</div>' if tf else ''
-tn_tab = '<div class="tab" onclick="switchTab(\'tn\',this)">@technews_tw</div>' if tn else ''
+def pid_for(key):
+    return key.lower().replace('_', '')
+
+tabs_html = ''.join([
+    f'<div class="tab{" active" if i==0 else ""}" onclick="switchTab(\'{pid_for(k)}\',this)">@{d["handle"]}</div>'
+    for i, (k, d) in enumerate(accounts)
+])
 pages_html = ''.join([
-    page('tf', tf, active='active') if tf else '',
-    page('tn', tn) if tn else '',
+    page(pid_for(k), d, active='active' if i == 0 else '')
+    for i, (k, d) in enumerate(accounts)
 ])
 
 html = f"""<!doctype html>
@@ -184,20 +354,38 @@ body{{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:1
 .section-title{{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:16px}}
 .two-col{{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}}
 @media(max-width:700px){{.two-col{{grid-template-columns:1fr}}}}
-.bar-row{{display:flex;align-items:center;gap:10px;margin-bottom:7px;font-size:12px}}
+.bar-row{{display:flex;align-items:center;gap:10px;margin-bottom:4px;font-size:12px}}
 .bar-label{{width:110px;color:var(--muted);text-align:right;flex-shrink:0;font-family:var(--mono);font-size:11px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}}
-.bar-label.left{{text-align:left;width:140px}}
-.bar-track{{flex:1;height:6px;background:var(--border);border-radius:3px;overflow:hidden}}
+.bar-label.left{{text-align:left;width:200px}}
+.bar-track{{flex:1;height:4px;background:var(--border);border-radius:3px;overflow:hidden}}
 .bar-fill{{height:100%;border-radius:3px;background:var(--blue);transition:width .4s ease}}
-.bar-fill.gold{{background:var(--gold)}}.bar-fill.teal{{background:var(--teal)}}.bar-fill.green{{background:var(--green)}}
+.bar-fill.gold{{background:var(--gold)}}.bar-fill.teal{{background:var(--teal)}}.bar-fill.green{{background:var(--green)}}.bar-fill.blue{{background:#1a6fd4}}
 .bar-val{{font-family:var(--mono);font-size:11px;color:var(--text);min-width:42px;font-variant-numeric:tabular-nums}}
 .bar-count{{font-family:var(--mono);font-size:10px;color:var(--muted);min-width:60px}}
+.bar-group{{margin-bottom:5px}}
+.bar-group-highlight{{background:rgba(255,255,255,0.04);border-radius:5px;padding:3px 6px;margin-left:-6px}}
+.bar-row-views{{margin-top:2px;opacity:.65}}
+.bar-row-best-interact{{opacity:1}}
+.bar-row-best-views{{opacity:1}}
+.bar-fill-best{{filter:brightness(1.25)}}
+.best-badge{{font-size:9px;font-weight:700;color:var(--gold);margin-left:4px;letter-spacing:0.03em}}
+.best-badge-views{{color:#5baeff}}
+.views-val{{font-family:var(--mono);font-size:10px;color:var(--blue);min-width:42px}}
+.bar-metric{{font-size:9px;color:var(--muted);min-width:44px;font-family:var(--mono);opacity:.7}}
+.bar-legend{{display:flex;gap:16px;margin-bottom:10px;font-size:11px;color:var(--muted)}}
+.bar-legend span{{display:flex;align-items:center;gap:5px}}
+.dot{{width:8px;height:8px;border-radius:50%;display:inline-block}}
 .img-compare{{display:grid;grid-template-columns:1fr 1fr;gap:12px}}
 .img-card{{background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:14px;text-align:center}}
 .img-card-label{{font-size:11px;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:.07em}}
 .img-card-val{{font-family:var(--mono);font-size:26px;font-weight:700}}
 .img-card-sub{{font-size:11px;color:var(--muted);margin-top:4px}}
 .img-winner{{margin-top:12px;font-size:12px;color:var(--green);text-align:center}}
+.img-row{{display:flex;gap:16px;align-items:flex-start}}
+.img-stat{{flex:1;background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:10px 12px;text-align:center}}
+.img-stat-label{{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.07em;margin-bottom:4px}}
+.img-stat-val{{font-family:var(--mono);font-size:20px;font-weight:700}}
+.img-stat-sub{{font-size:10px;color:var(--muted);margin-top:3px}}
 .tweet-card{{background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:14px 16px;margin-bottom:10px}}
 .tweet-rank{{font-family:var(--mono);font-size:10px;color:var(--muted);margin-bottom:6px}}
 .tweet-stats{{display:flex;gap:16px;margin-bottom:8px;flex-wrap:wrap}}
@@ -208,6 +396,10 @@ body{{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:1
 .tweet-link{{font-size:11px;color:var(--blue);text-decoration:none;word-break:break-all}}
 .tweet-link:hover{{text-decoration:underline}}
 .updated{{font-size:11px;color:var(--muted);margin-bottom:24px}}
+.lang-tweet{{font-size:12px;color:var(--text);padding:6px 0;border-bottom:1px solid var(--border);line-height:1.5}}
+.lang-tweet:last-child{{border-bottom:none}}
+.lang-tweet .num{{color:var(--blue);font-family:var(--mono);font-weight:600}}
+.lang-translated{{font-size:11px;color:var(--muted);margin-top:2px;font-style:italic}}
 </style>
 </head>
 <body>
@@ -215,8 +407,7 @@ body{{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:1
 <div class="header">
   <div class="logo">X Analytics &middot; <span>TrendForce Research</span></div>
   <div class="tabs">
-    {tf_tab}
-    {tn_tab}
+    {tabs_html}
   </div>
 </div>
 
@@ -230,41 +421,76 @@ function switchTab(id, el) {{
   document.getElementById('page-' + id).classList.add('active');
 }}
 
-function renderBars(containerId) {{
-  const el = document.getElementById(containerId);
+function renderBars(pid, key, color, valKey, labelKey, opts) {{
+  opts = opts || {{}};
+  const el = document.getElementById(pid + '-' + key);
   if (!el) return;
-  const items   = JSON.parse(el.dataset.items || '[]');
-  const color   = el.dataset.color || '';
-  const valKey  = el.dataset.val;
-  const countKey= el.dataset.count;
-  const count2  = el.dataset.count2;
-  const labelKey= el.dataset.label;
-  const max = Math.max(...items.map(i => +i[valKey] || 0)) || 1;
+  const dataKey = key.replace(/-/g, '_');
+  const items = (window._data[pid] || {{}})[dataKey] || [];
+  const viewKey = opts.viewKey || 'avg_views';
+  const isLeft = labelKey === 'hashtag' || labelKey === 'keyword';
+
+  const maxI = Math.max(...items.map(i => +i[valKey] || 0), 1);
+  const maxV = Math.max(...items.map(i => +i[viewKey] || 0), 1);
+  const isTimeDayChart = key === 'hours' || key === 'days' || key.endsWith('-hours') || key.endsWith('-days');
+  const bestIVal = isTimeDayChart ? maxI : null;
+  const bestVVal = isTimeDayChart ? maxV : null;
 
   items.forEach(item => {{
-    const label = labelKey === 'hour_label'
+    const label = labelKey === 'hour'
       ? String(item.hour).padStart(2,'0') + ':00'
-      : (item[labelKey] || '');
-    const val = +item[valKey] || 0;
-    const pct = (val / max * 100).toFixed(1);
-    const countStr = countKey
-      ? `<div class="bar-count">${{item[countKey] ? item[countKey] + (countKey==='tweet_count'?' tweets':'') : ''}}</div>`
-      : (count2 ? `<div class="bar-count">avg ${{item[count2]}}</div>` : '');
+      : String(item[labelKey] || '');
+    const val  = +item[valKey]  || 0;
+    const views = +item[viewKey] || 0;
+    const pctI = (val   / maxI * 100).toFixed(1);
+    const pctV = (views / maxV * 100).toFixed(1);
+    const countStr = opts.countKey
+      ? `<div class="bar-count">${{item[opts.countKey] != null ? item[opts.countKey] + ' tweets' : ''}}</div>`
+      : '';
+
+    const isBestI = isTimeDayChart && val === bestIVal;
+    const isBestV = isTimeDayChart && views === bestVVal;
 
     const div = document.createElement('div');
-    div.className = 'bar-row';
+    div.className = 'bar-group';
+    if (isBestI || isBestV) div.classList.add('bar-group-highlight');
+    const viewsStr = views >= 1000 ? (views/1000).toFixed(1)+'K' : views;
+    const bestIBadge = isBestI ? ' <span class="best-badge">★ interactions</span>' : '';
+    const bestVBadge = isBestV ? ' <span class="best-badge best-badge-views">★ views</span>' : '';
+    const secondRow = opts.dualBar !== false ? `
+      <div class="bar-row bar-row-views${{isBestV?' bar-row-best-views':''}}">
+        <div class="bar-label ${{isLeft?'left':''}}"></div>
+        <div class="bar-track"><div class="bar-fill blue${{isBestV?' bar-fill-best':''}}" style="width:${{pctV}}%"></div></div>
+        <div class="bar-val views-val">${{viewsStr}}${{bestVBadge}}</div>
+        <div class="bar-metric">views</div>
+      </div>` : '';
     div.innerHTML = `
-      <div class="bar-label ${{labelKey==='hashtag'||labelKey==='keyword'?'left':''}}">${{label}}</div>
-      <div class="bar-track"><div class="bar-fill ${{color}}" style="width:${{pct}}%"></div></div>
-      <div class="bar-val">${{val}}</div>
-      ${{countStr}}
-    `;
+      <div class="bar-row${{isBestI?' bar-row-best-interact':''}}">
+        <div class="bar-label ${{isLeft?'left':''}}">${{label}}</div>
+        <div class="bar-track"><div class="bar-fill ${{color}}${{isBestI?' bar-fill-best':''}}" style="width:${{pctI}}%"></div></div>
+        <div class="bar-val">${{val}}${{bestIBadge}}</div>
+        <div class="bar-metric">${{valKey==='avg_views'?'views':'interact'}}</div>
+        ${{countStr}}
+      </div>
+      ${{secondRow}}`;
     el.appendChild(div);
   }});
 }}
 
-['tf-hours','tf-days','tf-kws','tf-hti','tf-htu',
- 'tn-hours','tn-days','tn-kws','tn-hti','tn-htu'].forEach(renderBars);
+{js([pid_for(k) for k, _ in accounts])}.forEach(pid => {{
+  renderBars(pid, 'hours',    'gold',  'avg_interaction', 'hour',    {{countKey:'tweet_count'}});
+  renderBars(pid, 'days',     '',      'avg_interaction', 'day',     {{}});
+  renderBars(pid, 'kws',       'teal',  'avg_interaction', 'keyword', {{countKey:'tweet_count', dualBar:false}});
+  renderBars(pid, 'kws-views', 'blue',  'avg_views',       'keyword', {{countKey:'tweet_count', dualBar:false}});
+  renderBars(pid, 'hti',      '',      'avg_interaction', 'hashtag', {{countKey:'tweet_count'}});
+  renderBars(pid, 'htu',      'green', 'tweet_count',     'hashtag', {{}});
+  renderBars(pid, 'zh-hours', 'gold',  'avg_interaction', 'hour',    {{countKey:'tweet_count'}});
+  renderBars(pid, 'en-hours', 'teal',  'avg_interaction', 'hour',    {{countKey:'tweet_count'}});
+  renderBars(pid, 'zh-days',  'gold',  'avg_interaction', 'day',     {{}});
+  renderBars(pid, 'en-days',  'teal',  'avg_interaction', 'day',     {{}});
+  renderBars(pid, 'zh-ht',    'gold',  'avg_interaction', 'hashtag', {{countKey:'tweet_count'}});
+  renderBars(pid, 'en-ht',    'teal',  'avg_interaction', 'hashtag', {{countKey:'tweet_count'}});
+}});
 </script>
 </body>
 </html>"""
