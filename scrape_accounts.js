@@ -184,7 +184,9 @@ async function main() {
         if (!t.tweetUrl) return false;
         const urlHandle = t.tweetUrl.split('/')[3]?.toLowerCase();
         if (urlHandle !== cleanHandle.toLowerCase()) return false;
-        return !existingUrls.has(t.tweetUrl);
+        if (existingUrls.has(t.tweetUrl)) return false;
+        existingUrls.add(t.tweetUrl); // dedup within this scrape batch too
+        return true;
       });
 
       console.log(`  ${newTweets.length} new tweets to add.`);
