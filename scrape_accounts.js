@@ -8,7 +8,7 @@ const SESSION_FILE = path.join(__dirname, 'session.json');
 const CSV_DIR = path.join(__dirname, 'csv');
 fs.mkdirSync(CSV_DIR, { recursive: true });
 
-const INDIVIDUAL_ACCOUNTS = ['@technews_tw'];
+const INDIVIDUAL_ACCOUNTS = ['@TrendForce', '@technews_tw', '@dylan522p', '@jukan05', '@QQ_Timmy', '@SemiAnalysis_'];
 
 function enrichTweets(tweets) {
   try {
@@ -154,39 +154,60 @@ async function main() {
 
     for (const handle of INDIVIDUAL_ACCOUNTS) {
       const cleanHandle = handle.replace('@', '');
-      const cacheFile = path.join(__dirname, `cache_${cleanHandle}.json`);
+      const csvFile = path.join(CSV_DIR, `${cleanHandle}.csv`);
 
-      let tweets;
-      if (fs.existsSync(cacheFile)) {
-        tweets = JSON.parse(fs.readFileSync(cacheFile, 'utf8'));
-        console.log(`${handle}: loaded ${tweets.length} tweets from cache. Delete cache_${cleanHandle}.json to re-scrape.`);
-      } else {
-        tweets = await scrapeTimeline(page, handle, 200);
-        fs.writeFileSync(cacheFile, JSON.stringify(tweets, null, 2));
+      // Load existing tweet URLs from CSV so we don't re-enrich duplicates
+      const existingUrls = new Set();
+      let existingRows = '';
+      if (fs.existsSync(csvFile)) {
+        const lines = fs.readFileSync(csvFile, 'utf8').split('\n');
+        existingRows = lines.slice(1).filter(l => l.trim()).join('\n'); // skip header
+        for (const line of lines.slice(1)) {
+          // tweetUrl is column 8 (index 7), quoted
+          const match = line.match(/(?:^|,)"?(https?:\/\/[^",\n]+)"?/);
+          // more robust: split by comma respecting quotes
+          const cols = line.match(/("(?:[^"]|"")*"|[^,]*)/g) || [];
+          const url = cols[7] ? cols[7].replace(/^"|"$/g, '') : '';
+          if (url) existingUrls.add(url);
+        }
+        console.log(`${handle}: ${existingUrls.size} existing tweets in CSV.`);
       }
 
-      // Keep only tweets where the URL contains the account's own handle (filters replies + others' tweets)
-      const originalTweets = tweets.filter(t => {
+      // Scrape recent timeline (fewer scrolls for daily top-up)
+      console.log(`${handle}: scraping recent tweets...`);
+      const tweets = await scrapeTimeline(page, handle, 15);
+
+      // Filter to own original tweets not already in CSV
+      const newTweets = tweets.filter(t => {
         if (t.isRetweet) return false;
         if (!t.tweetUrl) return false;
-        // Tweet URL format: https://x.com/handle/status/...
         const urlHandle = t.tweetUrl.split('/')[3]?.toLowerCase();
-        return urlHandle === cleanHandle.toLowerCase();
+        if (urlHandle !== cleanHandle.toLowerCase()) return false;
+        return !existingUrls.has(t.tweetUrl);
       });
-      console.log(`  Filtered out ${tweets.length - originalTweets.length} retweets. ${originalTweets.length} original tweets remain.`);
-      console.log(`  Enriching ${originalTweets.length} tweets (translation + keywords)...`);
-      const enriched = enrichTweets(originalTweets);
 
-      const header = 'timestamp,views,likes,retweets,replies,hasImages,keywords,tweetUrl,text\n';
-      const rows = enriched.map(t =>
+      console.log(`  ${newTweets.length} new tweets to add.`);
+      if (newTweets.length === 0) {
+        console.log(`  Nothing new for ${handle}, skipping.`);
+        continue;
+      }
+
+      console.log(`  Enriching ${newTweets.length} new tweets...`);
+      const enriched = enrichTweets(newTweets);
+
+      const header = 'timestamp,views,likes,retweets,replies,hasImages,keywords,tweetUrl,text,translated_text\n';
+      const newRows = enriched.map(t =>
         [t.timestamp, t.views ?? '0', t.likes, t.retweets, t.replies,
          t.hasImages ? 'yes' : 'no',
-         safe(t.keywords), safe(t.tweetUrl), safe(t.text)].join(',')
+         safe(t.keywords), safe(t.tweetUrl), safe(t.text), safe(t.translatedText ?? '')].join(',')
       ).join('\n');
 
-      const csvFile = path.join(CSV_DIR, `${cleanHandle}.csv`);
-      fs.writeFileSync(csvFile, header + rows);
-      console.log(`Saved csv/${cleanHandle}.csv (${tweets.length} tweets)`);
+      // Prepend new rows (newest first) then existing rows
+      const combined = existingRows
+        ? header + newRows + '\n' + existingRows
+        : header + newRows;
+      fs.writeFileSync(csvFile, combined);
+      console.log(`Updated csv/${cleanHandle}.csv (+${newTweets.length} new, ${existingUrls.size + newTweets.length} total)`);
     }
 
   } catch (err) {
