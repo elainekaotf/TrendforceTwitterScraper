@@ -41,18 +41,49 @@ except Exception:
     print('[enrich_accounts] nltk not available — noun extraction disabled', file=sys.stderr)
 
 TECH_KEYWORDS = [
-    'nand', 'dram', 'hbm', 'hbm2', 'hbm3', 'ddr5', 'lpddr', 'qlc', 'tlc',
-    'semiconductor', 'chip', 'chips', 'wafer', 'foundry', 'tsmc', 'samsung',
-    'sk hynix', 'hynix', 'micron', 'intel', 'nvidia', 'amd', 'qualcomm',
-    'apple', 'mediatek', 'memory', 'storage', 'ssd', 'server', 'ai server',
-    'datacenter', 'data center', 'gpu', 'cpu', 'arm', 'supply chain', 'panel',
-    'oled', 'lcd', 'display', 'smartphone', 'iphone', 'shipment', 'capacity',
-    'demand', 'price', 'contract price', 'spot price', 'inventory', 'oversupply',
-    'shortage', 'trendforce', 'semianalysis', 'semivision', 'packaging', 'cowos',
-    'ai', 'llm', 'inference', 'training', 'hyperscaler', 'capex', 'earnings',
-    'revenue', 'forecast', 'guidance', 'margin', 'wafer', 'node', 'nm',
-    'advanced packaging', 'on device', 'edge ai', 'fab', 'yield',
+    # Memory
+    'nand', 'dram', 'hbm', 'hbm2', 'hbm3', 'hbm4', 'ddr5', 'lpddr', 'lpddr5',
+    'qlc', 'tlc', 'mlc', 'gddr', 'rdimm', 'dimm',
+    # Storage
+    'ssd', 'emmc', 'ufs', 'nand flash',
+    # Companies
+    'tsmc', 'samsung', 'sk hynix', 'hynix', 'micron', 'intel', 'nvidia',
+    'amd', 'qualcomm', 'apple', 'mediatek', 'broadcom', 'arm', 'asml',
+    'western digital', 'kioxia', 'seagate', 'trendforce', 'semianalysis',
+    # Chips & semiconductor
+    'semiconductor', 'wafer', 'foundry', 'chip', 'chiplet', 'node',
+    'advanced packaging', 'cowos', 'soic', 'packaging', 'fab', 'yield',
+    'process node', 'gate-all-around', 'backside power',
+    # AI & servers
+    'ai server', 'ai accelerator', 'data center', 'datacenter', 'hyperscaler',
+    'gpu', 'cpu', 'tpu', 'llm', 'inference', 'training', 'edge ai',
+    'on device', 'hpc', 'csp', 'rack', 'capex',
+    # Memory types & products
+    'memory', 'storage', 'server', 'ai chip', 'supply chain',
+    # Display
+    'oled', 'amoled', 'lcd', 'mini led', 'micro led', 'display', 'panel',
+    # Phones
+    'smartphone', 'iphone', 'handset', 'snapdragon',
+    # Market terms (specific)
+    'contract price', 'spot price', 'oversupply', 'shortage',
+    'inventory correction', 'capacity utilization', 'bit shipment',
+    'lead time', 'wafer starts',
 ]
+
+# Keywords to always exclude from analysis (too generic or noisy)
+KEYWORD_BLACKLIST = {
+    'nm', 'earnings', 'announce', 'announced', 'announces', 'announcement',
+    '2024', '2025', '2026', '2027', 'q1', 'q2', 'q3', 'q4',
+    'report', 'reports', 'reported', 'share', 'shares', 'stock',
+    'said', 'says', 'new', 'first', 'next', 'last', 'still', 'also',
+    'guidance', 'margin', 'revenue', 'forecast', 'analyst',
+    'company', 'market', 'industry', 'growth', 'increase', 'decrease',
+    'quarter', 'year', 'month', 'week', 'day', 'time',
+    'price', 'demand', 'capacity', 'shipment', 'billion', 'million',
+    'percent', 'strong', 'weak', 'high', 'low', 'good', 'bad',
+    'dominate', 'dominates', 'dominating', 'global', 'world', 'worldwide',
+    'supply chain', 'supply', 'chain', 'cost', 'costs', 'ai chip', 'ai chips',
+}
 
 # Stopwords to exclude from noun fallback
 EXTRA_STOPWORDS = {
@@ -75,7 +106,22 @@ def extract_keybert(text):
             use_mmr=True,   # diversity — avoids near-duplicate phrases
             diversity=0.5,
         )
-        return [kw for kw, score in results if score > 0.2]
+        filtered = []
+        for kw, score in results:
+            if score <= 0.2:
+                continue
+            words = kw.lower().split()
+            # skip if any word is blacklisted
+            if any(w in KEYWORD_BLACKLIST for w in words):
+                continue
+            # skip bigrams made of two unrelated company names (e.g. "samsung sk")
+            if len(words) == 2:
+                companies = {'samsung', 'sk', 'hynix', 'micron', 'tsmc', 'nvidia',
+                             'intel', 'amd', 'apple', 'qualcomm', 'mediatek', 'arm'}
+                if words[0] in companies and words[1] in companies:
+                    continue
+            filtered.append(kw)
+        return filtered
     except Exception:
         return []
 
@@ -139,13 +185,13 @@ for tweet in tweets:
     lang = detect_lang(original_text)
     tweet['language'] = lang
 
-    # Translate if non-English
+    # Translate for keyword extraction only — original text is preserved
     if lang != 'en':
         translated = translate_to_english(original_text, lang)
         tweet['translatedText'] = translated
         working_text = translated
     else:
-        tweet['translatedText'] = ''
+        tweet['translatedText'] = original_text
         working_text = original_text
 
     # Hashtags from original text (language-agnostic)

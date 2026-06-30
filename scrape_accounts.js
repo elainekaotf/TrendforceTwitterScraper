@@ -175,7 +175,8 @@ async function main() {
 
       // Scrape recent timeline (fewer scrolls for daily top-up)
       console.log(`${handle}: scraping recent tweets...`);
-      const tweets = await scrapeTimeline(page, handle, 15);
+      const maxScrolls = 15;
+      const tweets = await scrapeTimeline(page, handle, maxScrolls);
 
       // Filter to own original tweets not already in CSV
       const newTweets = tweets.filter(t => {
