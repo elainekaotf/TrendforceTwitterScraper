@@ -373,32 +373,6 @@ async function main() {
     const csvDir = path.join(__dirname, 'csv');
     fs.mkdirSync(csvDir, { recursive: true });
 
-    // --- Individual account sheets for @QQ_Timmy and @jukan05 ---
-    const INDIVIDUAL_ACCOUNTS = ['@QQ_Timmy', '@jukan05'];
-
-    for (const handle of INDIVIDUAL_ACCOUNTS) {
-      const cleanHandle = handle.replace('@', '');
-      const cacheFile = path.join(__dirname, `cache_${cleanHandle}.json`);
-      let accountTweets;
-
-      if (fs.existsSync(cacheFile)) {
-        accountTweets = JSON.parse(fs.readFileSync(cacheFile, 'utf8'));
-        console.log(`${handle}: loaded ${accountTweets.length} tweets from cache. Delete cache_${cleanHandle}.json to refresh.`);
-      } else {
-        accountTweets = await scrapeAccountTimeline(page, handle, 15);
-        fs.writeFileSync(cacheFile, JSON.stringify(accountTweets, null, 2));
-      }
-
-      const acctHeader = 'timestamp,likes,retweets,replies,keywords,tweetUrl,text\n';
-      const acctRows = accountTweets.map(t =>
-        [t.timestamp, t.likes, t.retweets, t.replies,
-         safe(extractKeywords(t.text)), safe(t.tweetUrl), safe(t.text)].join(',')
-      ).join('\n');
-      const acctCsvFile = path.join(csvDir, `${cleanHandle}.csv`);
-      fs.writeFileSync(acctCsvFile, acctHeader + acctRows);
-      console.log(`  Saved csv/${cleanHandle}.csv (${accountTweets.length} tweets)`);
-    }
-
     // --- TrendForce reference tweets ---
     const tfReference = await scrapeTFReference(page);
 
