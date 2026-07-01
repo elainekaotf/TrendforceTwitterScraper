@@ -78,8 +78,14 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:14
 .lang-tweet:last-child{border-bottom:none}
 .lang-tweet .num{color:var(--blue);font-family:var(--mono);font-weight:600}
 .lang-translated{font-size:11px;color:var(--muted);margin-top:2px;font-style:italic}
-.day-picker{background:var(--bg);color:var(--text);border:1px solid var(--border);border-radius:6px;padding:8px 12px;font-family:var(--mono);font-size:13px;cursor:pointer;min-width:160px}
+.day-nav{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.day-picker{background:var(--bg);color:var(--text);border:1px solid var(--border);border-radius:6px;padding:8px 12px;font-family:var(--mono);font-size:13px;cursor:pointer;color-scheme:dark}
 .day-picker:focus{outline:1px solid var(--blue)}
+.day-nav-btn{background:var(--bg);color:var(--text);border:1px solid var(--border);border-radius:6px;width:32px;height:32px;font-size:14px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:border-color .15s,color .15s}
+.day-nav-btn:hover{border-color:var(--blue);color:var(--blue)}
+.day-nav-btn:disabled{opacity:.35;cursor:default}
+.day-nav-btn:disabled:hover{border-color:var(--border);color:var(--text)}
+.day-nav-note{font-size:11px;color:var(--muted)}
 </style>
 </head>
 <body>
@@ -112,7 +118,7 @@ window._data['trendforce'] = {
 };
 </script>
 <div class="page active" id="page-trendforce">
-  <p class="updated">Based on 516 tweets scraped from @TrendForce &middot; Updated July 01, 2026 17:53 Taiwan Time</p>
+  <p class="updated">Based on 516 tweets scraped from @TrendForce &middot; Updated July 01, 2026 18:01 Taiwan Time</p>
   
     <div class="kpi-row">
       <div class="kpi"><div class="kpi-label">Total Tweets</div><div class="kpi-value blue">516</div></div>
@@ -182,7 +188,12 @@ window._data['trendforce'] = {
   
   <div class="section">
     <div class="section-title">Top 3 Tweets by Day</div>
-    <select class="day-picker" id="trendforce-daypicker" onchange="renderDailyTop('trendforce')"></select>
+    <div class="day-nav">
+      <button class="day-nav-btn" id="trendforce-prevday" onclick="stepDay('trendforce',-1)" aria-label="Previous day with tweets">&larr;</button>
+      <input type="date" class="day-picker" id="trendforce-daypicker" onchange="renderDailyTop('trendforce')">
+      <button class="day-nav-btn" id="trendforce-nextday" onclick="stepDay('trendforce',1)" aria-label="Next day with tweets">&rarr;</button>
+      <span class="day-nav-note" id="trendforce-daynote"></span>
+    </div>
     <div id="trendforce-daily-tweets" style="margin-top:14px"></div>
   </div>
   <div class="two-col">
@@ -474,7 +485,7 @@ window._data['technewstw'] = {
 };
 </script>
 <div class="page " id="page-technewstw">
-  <p class="updated">Based on 854 tweets scraped from @technews_tw &middot; Updated July 01, 2026 17:53 Taiwan Time</p>
+  <p class="updated">Based on 854 tweets scraped from @technews_tw &middot; Updated July 01, 2026 18:01 Taiwan Time</p>
   
     <div class="kpi-row">
       <div class="kpi"><div class="kpi-label">Total Tweets</div><div class="kpi-value blue">854</div></div>
@@ -646,7 +657,12 @@ window._data['technewstw'] = {
   </div>
   <div class="section">
     <div class="section-title">Top 3 Tweets by Day</div>
-    <select class="day-picker" id="technewstw-daypicker" onchange="renderDailyTop('technewstw')"></select>
+    <div class="day-nav">
+      <button class="day-nav-btn" id="technewstw-prevday" onclick="stepDay('technewstw',-1)" aria-label="Previous day with tweets">&larr;</button>
+      <input type="date" class="day-picker" id="technewstw-daypicker" onchange="renderDailyTop('technewstw')">
+      <button class="day-nav-btn" id="technewstw-nextday" onclick="stepDay('technewstw',1)" aria-label="Next day with tweets">&rarr;</button>
+      <span class="day-nav-note" id="technewstw-daynote"></span>
+    </div>
     <div id="technewstw-daily-tweets" style="margin-top:14px"></div>
   </div>
   <div class="two-col">
@@ -938,7 +954,7 @@ window._data['dylan522p'] = {
 };
 </script>
 <div class="page " id="page-dylan522p">
-  <p class="updated">Based on 590 tweets scraped from @dylan522p &middot; Updated July 01, 2026 17:53 Taiwan Time</p>
+  <p class="updated">Based on 590 tweets scraped from @dylan522p &middot; Updated July 01, 2026 18:01 Taiwan Time</p>
   
     <div class="kpi-row">
       <div class="kpi"><div class="kpi-label">Total Tweets</div><div class="kpi-value blue">590</div></div>
@@ -999,7 +1015,12 @@ window._data['dylan522p'] = {
   
   <div class="section">
     <div class="section-title">Top 3 Tweets by Day</div>
-    <select class="day-picker" id="dylan522p-daypicker" onchange="renderDailyTop('dylan522p')"></select>
+    <div class="day-nav">
+      <button class="day-nav-btn" id="dylan522p-prevday" onclick="stepDay('dylan522p',-1)" aria-label="Previous day with tweets">&larr;</button>
+      <input type="date" class="day-picker" id="dylan522p-daypicker" onchange="renderDailyTop('dylan522p')">
+      <button class="day-nav-btn" id="dylan522p-nextday" onclick="stepDay('dylan522p',1)" aria-label="Next day with tweets">&rarr;</button>
+      <span class="day-nav-note" id="dylan522p-daynote"></span>
+    </div>
     <div id="dylan522p-daily-tweets" style="margin-top:14px"></div>
   </div>
   <div class="two-col">
@@ -1291,7 +1312,7 @@ window._data['jukan05'] = {
 };
 </script>
 <div class="page " id="page-jukan05">
-  <p class="updated">Based on 603 tweets scraped from @jukan05 &middot; Updated July 01, 2026 17:53 Taiwan Time</p>
+  <p class="updated">Based on 603 tweets scraped from @jukan05 &middot; Updated July 01, 2026 18:01 Taiwan Time</p>
   
     <div class="kpi-row">
       <div class="kpi"><div class="kpi-label">Total Tweets</div><div class="kpi-value blue">603</div></div>
@@ -1352,7 +1373,12 @@ window._data['jukan05'] = {
   
   <div class="section">
     <div class="section-title">Top 3 Tweets by Day</div>
-    <select class="day-picker" id="jukan05-daypicker" onchange="renderDailyTop('jukan05')"></select>
+    <div class="day-nav">
+      <button class="day-nav-btn" id="jukan05-prevday" onclick="stepDay('jukan05',-1)" aria-label="Previous day with tweets">&larr;</button>
+      <input type="date" class="day-picker" id="jukan05-daypicker" onchange="renderDailyTop('jukan05')">
+      <button class="day-nav-btn" id="jukan05-nextday" onclick="stepDay('jukan05',1)" aria-label="Next day with tweets">&rarr;</button>
+      <span class="day-nav-note" id="jukan05-daynote"></span>
+    </div>
     <div id="jukan05-daily-tweets" style="margin-top:14px"></div>
   </div>
   <div class="two-col">
@@ -1644,7 +1670,7 @@ window._data['qqtimmy'] = {
 };
 </script>
 <div class="page " id="page-qqtimmy">
-  <p class="updated">Based on 343 tweets scraped from @QQ_Timmy &middot; Updated July 01, 2026 17:53 Taiwan Time</p>
+  <p class="updated">Based on 343 tweets scraped from @QQ_Timmy &middot; Updated July 01, 2026 18:01 Taiwan Time</p>
   
     <div class="kpi-row">
       <div class="kpi"><div class="kpi-label">Total Tweets</div><div class="kpi-value blue">343</div></div>
@@ -1705,7 +1731,12 @@ window._data['qqtimmy'] = {
   
   <div class="section">
     <div class="section-title">Top 3 Tweets by Day</div>
-    <select class="day-picker" id="qqtimmy-daypicker" onchange="renderDailyTop('qqtimmy')"></select>
+    <div class="day-nav">
+      <button class="day-nav-btn" id="qqtimmy-prevday" onclick="stepDay('qqtimmy',-1)" aria-label="Previous day with tweets">&larr;</button>
+      <input type="date" class="day-picker" id="qqtimmy-daypicker" onchange="renderDailyTop('qqtimmy')">
+      <button class="day-nav-btn" id="qqtimmy-nextday" onclick="stepDay('qqtimmy',1)" aria-label="Next day with tweets">&rarr;</button>
+      <span class="day-nav-note" id="qqtimmy-daynote"></span>
+    </div>
     <div id="qqtimmy-daily-tweets" style="margin-top:14px"></div>
   </div>
   <div class="two-col">
@@ -1997,7 +2028,7 @@ window._data['semianalysis'] = {
 };
 </script>
 <div class="page " id="page-semianalysis">
-  <p class="updated">Based on 720 tweets scraped from @SemiAnalysis_ &middot; Updated July 01, 2026 17:53 Taiwan Time</p>
+  <p class="updated">Based on 720 tweets scraped from @SemiAnalysis_ &middot; Updated July 01, 2026 18:01 Taiwan Time</p>
   
     <div class="kpi-row">
       <div class="kpi"><div class="kpi-label">Total Tweets</div><div class="kpi-value blue">720</div></div>
@@ -2058,7 +2089,12 @@ window._data['semianalysis'] = {
   
   <div class="section">
     <div class="section-title">Top 3 Tweets by Day</div>
-    <select class="day-picker" id="semianalysis-daypicker" onchange="renderDailyTop('semianalysis')"></select>
+    <div class="day-nav">
+      <button class="day-nav-btn" id="semianalysis-prevday" onclick="stepDay('semianalysis',-1)" aria-label="Previous day with tweets">&larr;</button>
+      <input type="date" class="day-picker" id="semianalysis-daypicker" onchange="renderDailyTop('semianalysis')">
+      <button class="day-nav-btn" id="semianalysis-nextday" onclick="stepDay('semianalysis',1)" aria-label="Next day with tweets">&rarr;</button>
+      <span class="day-nav-note" id="semianalysis-daynote"></span>
+    </div>
     <div id="semianalysis-daily-tweets" style="margin-top:14px"></div>
   </div>
   <div class="two-col">
@@ -2484,28 +2520,59 @@ function tweetCardHtml(t) {
 }
 
 function populateDayPicker(pid) {
-  const sel = document.getElementById(pid + '-daypicker');
-  if (!sel) return;
+  const input = document.getElementById(pid + '-daypicker');
+  if (!input) return;
   const daily = (window._data[pid] || {}).daily_top_tweets || {};
-  const days = Object.keys(daily).sort().reverse();
+  const days = Object.keys(daily).sort();
   if (!days.length) {
-    sel.innerHTML = '<option>No data yet</option>';
-    sel.disabled = true;
+    input.disabled = true;
+    const note = document.getElementById(pid + '-daynote');
+    if (note) note.textContent = 'No data yet';
     return;
   }
-  sel.innerHTML = days.map(d => `<option value="${d}">${d}</option>`).join('');
+  input.min = days[0];
+  input.max = days[days.length - 1];
+  input.value = days[days.length - 1];
+  renderDailyTop(pid);
+}
+
+function stepDay(pid, dir) {
+  const input = document.getElementById(pid + '-daypicker');
+  const daily = (window._data[pid] || {}).daily_top_tweets || {};
+  const days = Object.keys(daily).sort();
+  if (!input || !days.length) return;
+  let idx = days.indexOf(input.value);
+  if (idx === -1) {
+    // Current value has no data — jump to nearest available day in that direction
+    idx = days.findIndex(d => dir > 0 ? d > input.value : d < input.value);
+    if (dir < 0) {
+      const rev = [...days].reverse();
+      idx = days.length - 1 - rev.findIndex(d => d < input.value);
+    }
+  } else {
+    idx += dir;
+  }
+  if (idx < 0 || idx >= days.length) return;
+  input.value = days[idx];
   renderDailyTop(pid);
 }
 
 function renderDailyTop(pid) {
-  const sel = document.getElementById(pid + '-daypicker');
+  const input = document.getElementById(pid + '-daypicker');
   const container = document.getElementById(pid + '-daily-tweets');
-  if (!sel || !container) return;
+  const note = document.getElementById(pid + '-daynote');
+  const prevBtn = document.getElementById(pid + '-prevday');
+  const nextBtn = document.getElementById(pid + '-nextday');
+  if (!input || !container) return;
   const daily = (window._data[pid] || {}).daily_top_tweets || {};
-  const tweets = daily[sel.value] || [];
+  const days = Object.keys(daily).sort();
+  const tweets = daily[input.value] || [];
   container.innerHTML = tweets.length
     ? tweets.map(tweetCardHtml).join('')
-    : '<div style="color:var(--muted);font-size:12px;padding:8px">No tweets for this day.</div>';
+    : '<div style="color:var(--muted);font-size:12px;padding:8px">No tweets scraped for this day.</div>';
+  if (note) note.textContent = `${days.length} day${days.length===1?'':'s'} with data (${days[0]} to ${days[days.length-1]})`;
+  if (prevBtn) prevBtn.disabled = !days.length || input.value <= days[0];
+  if (nextBtn) nextBtn.disabled = !days.length || input.value >= days[days.length-1];
 }
 
 ["trendforce", "technewstw", "dylan522p", "jukan05", "qqtimmy", "semianalysis"].forEach(pid => {
