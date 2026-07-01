@@ -112,10 +112,16 @@ def load_csv(handle):
     with open(filepath, newline='', encoding='utf-8') as f:
         reader = csv.DictReader(f)
         for row in reader:
+            # Skip tweets not from this account
+            url = row.get('tweetUrl', '') or ''
+            if url and f'x.com/{handle.lower()}/' not in url.lower():
+                continue
+
             likes    = parse_count(row.get('likes', '0'))
             retweets = parse_count(row.get('retweets', '0'))
             replies  = parse_count(row.get('replies', '0'))
-            views    = parse_count(row.get('views', '0'))
+            raw_views = row.get('views', '').strip()
+            views    = parse_count(raw_views) if raw_views else None
             interaction = likes + retweets + replies
 
             ts = row.get('timestamp', '')
@@ -130,7 +136,7 @@ def load_csv(handle):
             keywords = [k.strip() for k in row.get('keywords', '').split(';')
                         if k.strip() and not is_bad_keyword(k.strip())]
             has_images = row.get('hasImages', 'no').strip().lower() == 'yes'
-            text = row.get('text', '')
+            text = row.get('text', '') or ''
             translated_text = row.get('translated_text', '') or text
             hashtags = [h.lower() for h in re.findall(r'#\w+', text)]
 
@@ -191,7 +197,7 @@ def analyze(handle, tweets):
     hour_views = defaultdict(list)
     for t in tweets:
         if t['hour'] is not None:
-            hour_views[t['hour']].append(t['views'])
+            if t['views'] is not None: hour_views[t['hour']].append(t['views'])
 
     hour_avg = {h: avg(v) for h, v in hour_interactions.items()}
     best_hours = sorted(hour_avg.items(), key=lambda x: x[1], reverse=True)[:5]
@@ -214,7 +220,7 @@ def analyze(handle, tweets):
     day_views = defaultdict(list)
     for t in tweets:
         if t['weekday']:
-            day_views[t['weekday']].append(t['views'])
+            if t['views'] is not None: day_views[t['weekday']].append(t['views'])
 
     day_avg = {d: avg(v) for d, v in day_interactions.items()}
     day_order = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday']
@@ -253,7 +259,7 @@ def analyze(handle, tweets):
         cats = classify_tweet(t['text'] + ' ' + t.get('translated_text', ''))
         for cat in cats:
             cat_interactions[cat].append(t['interaction'])
-            cat_views[cat].append(t['views'])
+            if t['views'] is not None: cat_views[cat].append(t['views'])
 
     cat_avg = {cat: avg(v) for cat, v in cat_interactions.items() if len(v) >= 5}
     cat_count = {cat: len(v) for cat, v in cat_interactions.items()}
@@ -278,10 +284,44 @@ def analyze(handle, tweets):
     results['top_tweets'] = [{
         'rank': i+1, 'interaction': t['interaction'],
         'likes': t['likes'], 'retweets': t['retweets'], 'replies': t['replies'],
-        'views': t['views'],
+        'views': t['views'] or 0,
         'text': t['text'], 'url': t['tweetUrl'], 'timestamp': t['timestamp'],
         'keywords': t['keywords'], 'has_images': t['has_images'],
     } for i, t in enumerate(top_tweets)]
+
+    top_tweets_by_views = sorted([t for t in tweets if t['views']], key=lambda x: x['views'], reverse=True)[:10]
+    results['top_tweets_by_views'] = [{
+        'rank': i+1, 'interaction': t['interaction'],
+        'likes': t['likes'], 'retweets': t['retweets'], 'replies': t['replies'],
+        'views': t['views'] or 0,
+        'text': t['text'], 'url': t['tweetUrl'], 'timestamp': t['timestamp'],
+        'keywords': t['keywords'], 'has_images': t['has_images'],
+    } for i, t in enumerate(top_tweets_by_views)]
+
+    # ── 5b. Top 3 tweets per day (Taiwan date) ────────────
+    daily_groups = defaultdict(list)
+    for t in tweets:
+        ts = t.get('timestamp', '').strip()
+        if not ts:
+            continue
+        try:
+            dt = datetime.fromisoformat(ts.replace('Z', '+00:00')).astimezone(TAIWAN_TZ)
+        except Exception:
+            continue
+        daily_groups[dt.strftime('%Y-%m-%d')].append(t)
+
+    daily_top_tweets = {}
+    for day, day_tweets in daily_groups.items():
+        top3 = sorted(day_tweets, key=lambda x: x['interaction'], reverse=True)[:3]
+        daily_top_tweets[day] = [{
+            'rank': i+1, 'interaction': t['interaction'],
+            'likes': t['likes'], 'retweets': t['retweets'], 'replies': t['replies'],
+            'views': t['views'] or 0,
+            'text': t['text'], 'url': t['tweetUrl'], 'timestamp': t['timestamp'],
+            'keywords': t['keywords'], 'has_images': t['has_images'],
+        } for i, t in enumerate(top3)]
+
+    results['daily_top_tweets'] = daily_top_tweets
 
     # ── 6. Keyword + image combo ──────────────────────────
     img_kw_interactions = defaultdict(list)
@@ -304,7 +344,7 @@ def analyze(handle, tweets):
     for t in tweets:
         for ht in t['hashtags']:
             hashtag_interactions[ht].append(t['interaction'])
-            if t['views']:
+            if t['views'] is not None:
                 hashtag_views[ht].append(t['views'])
 
     ht_avg = {ht: avg(v) for ht, v in hashtag_interactions.items() if len(v) >= 5}
@@ -349,7 +389,7 @@ def analyze(handle, tweets):
 
     def lang_stats(group):
         interactions = [t['interaction'] for t in group]
-        views = [t['views'] for t in group]
+        views = [t['views'] for t in group if t['views'] is not None]
         img_yes = [t['interaction'] for t in group if t['has_images']]
         img_no  = [t['interaction'] for t in group if not t['has_images']]
 
@@ -359,10 +399,11 @@ def analyze(handle, tweets):
         for t in group:
             if t['hour'] is not None:
                 hour_map[t['hour']].append(t['interaction'])
-                hour_view_map[t['hour']].append(t['views'])
-        best_hours = sorted([{'hour': h, 'avg_interaction': avg(v), 'avg_views': avg(hour_view_map[h]), 'tweet_count': len(v)}
-                              for h, v in hour_map.items()],
-                             key=lambda x: x['avg_interaction'], reverse=True)[:5]
+                if t['views'] is not None: hour_view_map[t['hour']].append(t['views'])
+        top_hours = sorted([{'hour': h, 'avg_interaction': avg(v), 'avg_views': avg(hour_view_map[h]), 'tweet_count': len(v)}
+                             for h, v in hour_map.items()],
+                            key=lambda x: x['avg_interaction'], reverse=True)[:12]
+        best_hours = sorted(top_hours, key=lambda x: x['hour'])
 
         # best days
         day_map = defaultdict(list)
@@ -370,10 +411,11 @@ def analyze(handle, tweets):
         for t in group:
             if t['weekday']:
                 day_map[t['weekday']].append(t['interaction'])
-                day_view_map[t['weekday']].append(t['views'])
+                if t['views'] is not None: day_view_map[t['weekday']].append(t['views'])
+        _dow = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday']
         best_days = sorted([{'day': d, 'avg_interaction': avg(v), 'avg_views': avg(day_view_map[d])}
                              for d, v in day_map.items()],
-                            key=lambda x: x['avg_interaction'], reverse=True)
+                            key=lambda x: _dow.index(x['day']) if x['day'] in _dow else 7)
 
         # top hashtags
         ht_map = defaultdict(list)
@@ -381,7 +423,7 @@ def analyze(handle, tweets):
         for t in group:
             for ht in t['hashtags']:
                 ht_map[ht].append(t['interaction'])
-                ht_view_map[ht].append(t['views'])
+                if t['views'] is not None: ht_view_map[ht].append(t['views'])
         top_ht = sorted([{'hashtag': ht, 'avg_interaction': avg(v), 'avg_views': avg(ht_view_map[ht]), 'tweet_count': len(v)}
                           for ht, v in ht_map.items() if len(v) >= 5],
                          key=lambda x: x['avg_interaction'], reverse=True)[:8]
@@ -421,7 +463,7 @@ def analyze(handle, tweets):
     print(f'  Median interaction:{sorted(all_interactions)[len(all_interactions)//2]}')
     print(f'  Max interaction:   {max(all_interactions) if all_interactions else 0}')
 
-    all_views = [t['views'] for t in tweets]
+    all_views = [t['views'] for t in tweets if t['views'] is not None]
     print(f'  Avg views:         {avg(all_views)}')
     print(f'  Max views:         {max(all_views) if all_views else 0}')
 

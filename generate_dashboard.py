@@ -45,6 +45,7 @@ def account_data(key):
         top_hashtags_by_usage       = d.get('top_hashtags_by_usage', [])[:10],
         top_tweets   = d.get('top_tweets', [])[:10],
         top_tweets_by_views = d.get('top_tweets_by_views', [])[:10],
+        daily_top_tweets = d.get('daily_top_tweets', {}),
         language     = d.get('language'),
     )
 
@@ -277,7 +278,8 @@ window._data['{pid}'] = {{
   en_days:  {js(en.get('best_days',[]))},
   zh_ht:    {js(zh.get('top_hashtags',[]))},
   en_ht:    {js(en.get('top_hashtags',[]))},
-  follower_history: {js(follower_history.get(handle, []))}
+  follower_history: {js(follower_history.get(handle, []))},
+  daily_top_tweets: {js(d.get('daily_top_tweets', {}))}
 }};
 </script>"""
 
@@ -315,6 +317,11 @@ window._data['{pid}'] = {{
   </div>
   {hashtag_section_html}
   {language_section(d, pid) if d.get('language') and d['handle'] == 'technews_tw' else ''}
+  <div class="section">
+    <div class="section-title">Top 3 Tweets by Day</div>
+    <select class="day-picker" id="{pid}-daypicker" onchange="renderDailyTop('{pid}')"></select>
+    <div id="{pid}-daily-tweets" style="margin-top:14px"></div>
+  </div>
   <div class="two-col">
     <div class="section">
       <div class="section-title">Top 10 Tweets by Interaction</div>
@@ -419,6 +426,8 @@ body{{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:1
 .lang-tweet:last-child{{border-bottom:none}}
 .lang-tweet .num{{color:var(--blue);font-family:var(--mono);font-weight:600}}
 .lang-translated{{font-size:11px;color:var(--muted);margin-top:2px;font-style:italic}}
+.day-picker{{background:var(--bg);color:var(--text);border:1px solid var(--border);border-radius:6px;padding:8px 12px;font-family:var(--mono);font-size:13px;cursor:pointer;min-width:160px}}
+.day-picker:focus{{outline:1px solid var(--blue)}}
 </style>
 </head>
 <body>
@@ -564,8 +573,54 @@ function renderFollowerChart(pid) {{
   ctx.fillText(counts[counts.length-1].toLocaleString(), last.x + 6, last.y + 4);
 }}
 
+function tweetCardHtml(t) {{
+  const esc = s => String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  let text = esc(t.text).slice(0, 200);
+  if (String(t.text || '').length > 200) text += '...';
+  const viewsStat = t.views ? `<div class="tweet-stat"><span class="num">${{Number(t.views).toLocaleString()}}</span><span class="lbl">views</span></div>` : '';
+  return `
+      <div class="tweet-card">
+        <div class="tweet-rank">#${{t.rank}}</div>
+        <div class="tweet-stats">
+          <div class="tweet-stat"><span class="num">${{Number(t.interaction).toLocaleString()}}</span><span class="lbl">total</span></div>
+          <div class="tweet-stat"><span class="num">${{Number(t.likes).toLocaleString()}}</span><span class="lbl">likes</span></div>
+          <div class="tweet-stat"><span class="num">${{Number(t.retweets).toLocaleString()}}</span><span class="lbl">retweets</span></div>
+          <div class="tweet-stat"><span class="num">${{Number(t.replies).toLocaleString()}}</span><span class="lbl">replies</span></div>
+          ${{viewsStat}}
+        </div>
+        <div class="tweet-text">${{text}}</div>
+        <a class="tweet-link" href="${{t.url}}" target="_blank" rel="noopener">${{t.url}}</a>
+      </div>`;
+}}
+
+function populateDayPicker(pid) {{
+  const sel = document.getElementById(pid + '-daypicker');
+  if (!sel) return;
+  const daily = (window._data[pid] || {{}}).daily_top_tweets || {{}};
+  const days = Object.keys(daily).sort().reverse();
+  if (!days.length) {{
+    sel.innerHTML = '<option>No data yet</option>';
+    sel.disabled = true;
+    return;
+  }}
+  sel.innerHTML = days.map(d => `<option value="${{d}}">${{d}}</option>`).join('');
+  renderDailyTop(pid);
+}}
+
+function renderDailyTop(pid) {{
+  const sel = document.getElementById(pid + '-daypicker');
+  const container = document.getElementById(pid + '-daily-tweets');
+  if (!sel || !container) return;
+  const daily = (window._data[pid] || {{}}).daily_top_tweets || {{}};
+  const tweets = daily[sel.value] || [];
+  container.innerHTML = tweets.length
+    ? tweets.map(tweetCardHtml).join('')
+    : '<div style="color:var(--muted);font-size:12px;padding:8px">No tweets for this day.</div>';
+}}
+
 {js([pid_for(k) for k, _ in accounts])}.forEach(pid => {{
   renderFollowerChart(pid);
+  populateDayPicker(pid);
   renderBars(pid, 'hours',    'gold',  'avg_interaction', 'hour',    {{countKey:'tweet_count'}});
   renderBars(pid, 'days',     '',      'avg_interaction', 'day',     {{}});
   renderBars(pid, 'kws',       'teal',  'avg_interaction', 'keyword', {{countKey:'tweet_count', dualBar:false}});

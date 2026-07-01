@@ -1,67 +1,63 @@
 SUMMARY -- @dylan522p
-  Total tweets:       586
-  Avg interaction:    592.23
-  Median interaction: 285
+  Total tweets:       590
+  Avg interaction:    595.3
+  Median interaction: 288
   Max interaction:    26372
-  Avg views:          110819.54
+  Avg views:          111190.57
   Max views:          6654201
 ""
 "BEST HOURS TO POST (Taiwan Time, avg total interaction):"
-  00:00  █████  343.23  (35 tweets)
+  00:00  █████  343.34  (35 tweets)
   01:00  ██████████  617.33  (30 tweets)
-  02:00  ██████████  608.44  (36 tweets)
+  02:00  ██████████  612.24  (37 tweets)
   03:00  ████████  468.6  (35 tweets)
-  04:00  ███████  438.66  (32 tweets)
-  05:00  ███████  453.61  (44 tweets)
-  06:00  ████████████  757.78  (49 tweets)
-  07:00  █████████████████  1000.66  (50 tweets)
-  08:00  ██████  391.5  (34 tweets)
-  09:00  ████████████  716.81  (36 tweets)
-  10:00  ███████████  666.52  (33 tweets)
+  04:00  ███████  459.33  (33 tweets)
+  05:00  ███████  453.27  (44 tweets)
+  06:00  █████████████  774.32  (50 tweets)
+  07:00  █████████████████  1000.62  (50 tweets)
+  08:00  ██████  391.44  (34 tweets)
+  09:00  ████████████  716.78  (36 tweets)
+  10:00  ███████████  666.42  (33 tweets)
   11:00  █████████  525.57  (28 tweets)
-  12:00  ████████████████████  1166.14  (28 tweets)
-  13:00  ███████  427.55  (22 tweets)
+  12:00  ████████████████████  1166.18  (28 tweets)
+  13:00  ███████  441.17  (23 tweets)
   14:00  ███████  455.69  (13 tweets)
   15:00  █████  321.08  (12 tweets)
   16:00  ████  273.14  (7 tweets)
   17:00  █████  323.12  (8 tweets)
   18:00  ████████  510.29  (7 tweets)
   19:00  ███  226.86  (7 tweets)
-  20:00  ██████  369.67  (6 tweets)
+  20:00  ██████  369.5  (6 tweets)
   21:00  ███  192.88  (8 tweets)
-  22:00  ████████  514.0  (10 tweets)
-  23:00  ███████████  676.81  (16 tweets)
+  22:00  ████████  513.9  (10 tweets)
+  23:00  ███████████  677.12  (16 tweets)
 ""
 AVG INTERACTION BY DAY OF WEEK:
-  Monday      ████████████  566.21
-  Tuesday     █████████████  591.41
-  Wednesday   ██████████  448.4
-  Thursday    ████████████████████  893.08
-  Friday      ████████████  556.67
-  Saturday    █████████  424.96
-  Sunday      ███████████████  702.37
+  Monday      ████████████  578.45
+  Tuesday     █████████████  593.19
+  Wednesday   ██████████  448.44
+  Thursday    ████████████████████  893.06
+  Friday      ████████████  562.8
+  Saturday    █████████  428.12
+  Sunday      ███████████████  702.28
 ""
 IMAGES VS NO IMAGES:
-  With image:    avg 588.8  (299 tweets)
-  Without image: avg 595.8  (287 tweets)
-  -> no images perform 1.2% better
+  With image:    avg 588.77  (299 tweets)
+  Without image: avg 602.02  (291 tweets)
+  -> no images perform 2.2% better
 ""
 TOP KEYWORDS BY AVG INTERACTION (min 3 tweets):
-  capex                          avg 1681.75  (4 tweets)
-  claude code                    avg 1662.4   (5 tweets)
-  qualcomm                       avg 1409.25  (8 tweets)
-  microsoft                      avg 1376.33  (3 tweets)
-  tsmc                           avg 992.17   (12 tweets)
-  intel                          avg 893.78   (23 tweets)
-  amd                            avg 724.65   (20 tweets)
-  ai                             avg 653.56   (224 tweets)
-  chips                          avg 644.73   (11 tweets)
-  semiconductor                  avg 628.25   (16 tweets)
-  nvidia                         avg 624.16   (43 tweets)
-  llm                            avg 616.38   (13 tweets)
-  openai                         avg 593.5    (4 tweets)
-  inference                      avg 588.57   (21 tweets)
-  supply chain                   avg 584.5    (8 tweets)
+  Supermicro                     avg 1102.6   (5 tweets)
+  LLM / Foundation Model         avg 851.42   (99 tweets)
+  TSMC / Foundry                 avg 842.27   (15 tweets)
+  AMD AI                         avg 694.87   (23 tweets)
+  Wafer Fab Equipment            avg 674.0    (9 tweets)
+  ASIC / Custom Chip             avg 664.67   (6 tweets)
+  NVIDIA AI                      avg 535.15   (60 tweets)
+  Samsung                        avg 478.6    (5 tweets)
+  AI Server ODM                  avg 452.29   (7 tweets)
+  Advanced Packaging             avg 214.6    (5 tweets)
+  DRAM / NAND / SSD              avg 212.8    (5 tweets)
 ""
 BEST KEYWORD + IMAGE COMBOS:
   volleyball tournament          avg 4935.0
@@ -71,10 +67,9 @@ BEST KEYWORD + IMAGE COMBOS:
   jensen                         avg 1465.0
 ""
 TOP HASHTAGS BY AVG INTERACTION (min 2 tweets):
-  #tech                     avg 227.0    (2 tweets)  ████████████████████  views avg: 95833.0
 ""
 MOST USED HASHTAGS:
-  #tech                        2 tweets  ████████████████████  avg interaction: 227.0
+  #tech                        2 tweets  ████████████████████  avg interaction: 0
   #microsoft                   1 tweets  ██████████  avg interaction: 0
   #nvidia                      1 tweets  ██████████  avg interaction: 0
   #cost                        1 tweets  ██████████  avg interaction: 0

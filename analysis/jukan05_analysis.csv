@@ -1,104 +1,109 @@
 SUMMARY -- @jukan05
-  Total tweets:       221
-  Avg interaction:    692.35
-  Median interaction: 411
-  Max interaction:    14633
-  Avg views:          0.0
-  Max views:          0
+  Total tweets:       603
+  Avg interaction:    587.89
+  Median interaction: 435
+  Max interaction:    7306
+  Avg views:          126688.77
+  Max views:          1485860
 ""
 "BEST HOURS TO POST (Taiwan Time, avg total interaction):"
-  00:00  ██  309.0  (1 tweets)
-  02:00  █████  888.0  (1 tweets)
-  04:00  ████████████████████  3067.67  (3 tweets)
-  06:00  ████  615.32  (19 tweets)
-  07:00  ██  398.09  (22 tweets)
-  08:00  ██  337.88  (16 tweets)
-  09:00  ████  688.52  (23 tweets)
-  10:00  ████████  1287.54  (13 tweets)
-  11:00  █████  777.32  (19 tweets)
-  12:00  ███  471.43  (21 tweets)
-  13:00  ████  642.75  (20 tweets)
-  14:00  ███  566.4  (5 tweets)
-  15:00  ██  397.11  (9 tweets)
-  16:00  ███  577.6  (15 tweets)
-  17:00  █  247.5  (4 tweets)
-  18:00  ██████  1033.5  (4 tweets)
-  19:00  ██  401.38  (8 tweets)
-  20:00  █████████████  2030.67  (9 tweets)
-  21:00  ████  696.0  (6 tweets)
-  22:00  ██  310.0  (1 tweets)
-  23:00  █  244.5  (2 tweets)
+  00:00  █████████  506.5  (6 tweets)
+  01:00  ██████  363.0  (2 tweets)
+  02:00  ████████████████████  1047.0  (1 tweets)
+  04:00  ███████  385.33  (3 tweets)
+  05:00  █████████  520.0  (1 tweets)
+  06:00  ███████  395.56  (34 tweets)
+  07:00  █████████  517.03  (58 tweets)
+  08:00  ██████████  535.0  (46 tweets)
+  09:00  ███████████  622.91  (46 tweets)
+  10:00  ███████████████  817.5  (46 tweets)
+  11:00  ████████████  631.98  (43 tweets)
+  12:00  █████████  478.86  (35 tweets)
+  13:00  ██████████████  775.95  (39 tweets)
+  14:00  ████████  441.3  (23 tweets)
+  15:00  ███████████  598.13  (39 tweets)
+  16:00  █████████████  729.1  (40 tweets)
+  17:00  █████████  486.72  (25 tweets)
+  18:00  ██████████  572.75  (32 tweets)
+  19:00  ██████████  537.17  (24 tweets)
+  20:00  ███████████  584.13  (15 tweets)
+  21:00  █████████  487.88  (32 tweets)
+  22:00  ███████████████  801.4  (10 tweets)
+  23:00  ██████  364.0  (3 tweets)
 ""
 AVG INTERACTION BY DAY OF WEEK:
-  Monday      ████████████  672.73
-  Tuesday     ███████████  595.53
-  Wednesday   ████████████████████  1074.0
-  Thursday    █████████  501.79
-  Friday      ████████  473.5
-  Saturday    ███████████████  813.88
-  Sunday      ███████████  605.05
+  Monday      ████████████████  593.58
+  Tuesday     ██████████████  524.9
+  Wednesday   ███████████████  537.14
+  Thursday    █████████████████  621.33
+  Friday      ███████████████  554.04
+  Saturday    ████████████████████  713.49
+  Sunday      █████████████████  636.59
 ""
 IMAGES VS NO IMAGES:
-  With image:    avg 0  (0 tweets)
-  Without image: avg 692.35  (221 tweets)
-  -> no images perform 100.0% better
+  With image:    avg 783.14  (250 tweets)
+  Without image: avg 449.61  (353 tweets)
+  -> images perform 74.2% better
 ""
 TOP KEYWORDS BY AVG INTERACTION (min 3 tweets):
-  micron                         avg 1621.2   (5 tweets)
-  cpu                            avg 1106.33  (3 tweets)
-  semianalysis                   avg 1100.0   (4 tweets)
-  apple                          avg 882.75   (4 tweets)
-  memory                         avg 769.69   (26 tweets)
-  amd                            avg 751.5    (4 tweets)
-  data center                    avg 725.25   (4 tweets)
-  sk hynix                       avg 674.56   (18 tweets)
-  ai                             avg 669.09   (68 tweets)
-  dram                           avg 664.7    (10 tweets)
-  intel                          avg 648.33   (6 tweets)
-  price                          avg 626.32   (22 tweets)
-  samsung                        avg 613.71   (17 tweets)
-  chip                           avg 613.43   (14 tweets)
-  nand                           avg 607.6    (5 tweets)
+  Micron                         avg 1252.69  (13 tweets)
+  Kioxia                         avg 965.1    (10 tweets)
+  SK Hynix                       avg 955.76   (45 tweets)
+  ASIC / Custom Chip             avg 842.58   (12 tweets)
+  LLM / Foundation Model         avg 830.83   (24 tweets)
+  DRAM / NAND / SSD              avg 818.67   (45 tweets)
+  Samsung                        avg 798.18   (60 tweets)
+  Optical / Silicon Photonics    avg 773.6    (10 tweets)
+  HBM Memory                     avg 711.67   (18 tweets)
+  AI Server ODM                  avg 698.57   (7 tweets)
+  NVIDIA AI                      avg 675.05   (61 tweets)
+  TSMC / Foundry                 avg 554.38   (37 tweets)
+  CCL                            avg 519.29   (7 tweets)
+  AMD AI                         avg 496.33   (6 tweets)
+  PCB / Substrate                avg 483.57   (7 tweets)
 ""
 BEST KEYWORD + IMAGE COMBOS:
+  hynix                          avg 1129.28
+  micron                         avg 1102.5
+  trendforce                     avg 1100.67
+  yield                          avg 1084.5
+  kioxia                         avg 975.88
 ""
 TOP HASHTAGS BY AVG INTERACTION (min 2 tweets):
 ""
 MOST USED HASHTAGS:
-  #hbm4e                       1 tweets  ████████████████████  avg interaction: 0
-  #ai                          1 tweets  ████████████████████  avg interaction: 0
-  #skhynix                     1 tweets  ████████████████████  avg interaction: 0
-  #hbm                         1 tweets  ████████████████████  avg interaction: 0
-  #aimemory                    1 tweets  ████████████████████  avg interaction: 0
+  #from                        1 tweets  ████████████████████  avg interaction: 0
+  #1                           1 tweets  ████████████████████  avg interaction: 0
+  #2                           1 tweets  ████████████████████  avg interaction: 0
 ""
 TOP 10 TWEETS BY INTERACTION:
-  1. [14633 total | 12000 likes  2400 retweets  233 replies  views: 0]
-     
-     https://x.com/itsreallyvivek/status/2064686372737454155
-  2. [8744 total | 7600 likes  882 retweets  262 replies  views: 0]
-"     this is my personal singularity moment  this post may sound like a paid ad. I only wish. I'm concerned, more so than hap..."
-     https://x.com/VictorTaelin/status/2064448425936994742
-  3. [6170 total | 5600 likes  298 retweets  272 replies  views: 0]
-     I think we’ve reached the point where normal people can’t really determine whether new models are better than previous o...
-     https://x.com/citrini/status/2064480613852201336
-  4. [5787 total | 5000 likes  507 retweets  280 replies  views: 0]
+  1. [7306 total | 6400 likes  778 retweets  128 replies  views: 1485860]
+     Just in: Employees at high-end and supercar dealerships in Korea say their showrooms are packed with Samsung and SK hyni...
+     https://x.com/jukan05/status/2057634950636241129
+  2. [6232 total | 4400 likes  1400 retweets  432 replies  views: 621663]
+"     As a Korean, this is very sad.  According to a local Korean media report released today, LG Electronics has reportedly e..."
+     https://x.com/jukan05/status/2059822967648030996
+  3. [5945 total | 5600 likes  288 retweets  57 replies  views: 671529]
+     Why you should be on X:  You can see real-time supply-chain information shared directly by Korean semiconductor engineer...
+     https://x.com/jukan05/status/2063860067649380675
+  4. [5789 total | 5000 likes  509 retweets  280 replies  views: 884469]
      SOURCES: ANTHROPIC WILL RELEASE THE PUBLIC VERSION OF MYTHOS TOMORROW
      https://x.com/jukan05/status/2064170300452098183
-  5. [5421 total | 4200 likes  962 retweets  259 replies  views: 0]
-     
-     https://x.com/AndrewCurran_/status/2066332670817456584
-  6. [3615 total | 3300 likes  243 retweets  72 replies  views: 0]
+  5. [5381 total | 4900 likes  313 retweets  168 replies  views: 904339]
+     JENSEN HUANG: “WE HAVE A SURPRISING NEW PRODUCT THAT WE HAVEN’T TOLD ANYONE ABOUT YET. WE WILL ANNOUNCE IT LATER.”
+     https://x.com/jukan05/status/2059911848334618668
+  6. [3615 total | 3300 likes  243 retweets  72 replies  views: 790696]
      Shared without comment.
      https://x.com/jukan05/status/2066369086842605996
-  7. [3577 total | 3000 likes  453 retweets  124 replies  views: 0]
+  7. [3584 total | 3000 likes  459 retweets  125 replies  views: 637161]
      Why did the KOSPI fall today?  1. Korean leverage trading has climbed to excessively high levels. 2. Ahead of Micron's e...
      https://x.com/jukan05/status/2069368311146815885
-  8. [2528 total | 2200 likes  187 retweets  141 replies  views: 0]
-"     Mr. President, since the U.S. has imposed export controls on Fable 5 exports to Korea, Korea should impose memory export..."
-     https://x.com/jukan05/status/2065619139671331291
-  9. [2026 total | 1900 likes  52 retweets  74 replies  views: 0]
-     …..I didn’t expect this to become a meme.
-     https://x.com/jukan05/status/2065300245798588668
-  10. [1869 total | 1600 likes  193 retweets  76 replies  views: 0]
-     Breaking: President Donald Trump says Apple is working with Intel.
-     https://x.com/jukan05/status/2067471416140964199
+  8. [3076 total | 2800 likes  166 retweets  110 replies  views: 650881]
+     So JPM is using my tweets in their reports — I just found out today.
+     https://x.com/jukan05/status/2059782862661210172
+  9. [3042 total | 2300 likes  176 retweets  566 replies  views: 417327]
+     Do these damn Chinese media outlets have so little news to cover that they’re treating my exit from A shares as breaking...
+     https://x.com/jukan05/status/2069677144285032884
+  10. [3025 total | 2600 likes  292 retweets  133 replies  views: 792411]
+"     Yes, MU is not Nvidia.  But going forward, it may become even more important than Nvidia.  Think about it. Inference is ..."
+     https://x.com/jukan05/status/2071139712082022855
