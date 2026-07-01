@@ -319,7 +319,12 @@ window._data['{pid}'] = {{
   {language_section(d, pid) if d.get('language') and d['handle'] == 'technews_tw' else ''}
   <div class="section">
     <div class="section-title">Top 3 Tweets by Day</div>
-    <select class="day-picker" id="{pid}-daypicker" onchange="renderDailyTop('{pid}')"></select>
+    <div class="day-nav">
+      <button class="day-nav-btn" id="{pid}-prevday" onclick="stepDay('{pid}',-1)" aria-label="Previous day with tweets">&larr;</button>
+      <input type="date" class="day-picker" id="{pid}-daypicker" onchange="renderDailyTop('{pid}')">
+      <button class="day-nav-btn" id="{pid}-nextday" onclick="stepDay('{pid}',1)" aria-label="Next day with tweets">&rarr;</button>
+      <span class="day-nav-note" id="{pid}-daynote"></span>
+    </div>
     <div id="{pid}-daily-tweets" style="margin-top:14px"></div>
   </div>
   <div class="two-col">
@@ -426,8 +431,14 @@ body{{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:1
 .lang-tweet:last-child{{border-bottom:none}}
 .lang-tweet .num{{color:var(--blue);font-family:var(--mono);font-weight:600}}
 .lang-translated{{font-size:11px;color:var(--muted);margin-top:2px;font-style:italic}}
-.day-picker{{background:var(--bg);color:var(--text);border:1px solid var(--border);border-radius:6px;padding:8px 12px;font-family:var(--mono);font-size:13px;cursor:pointer;min-width:160px}}
+.day-nav{{display:flex;align-items:center;gap:8px;flex-wrap:wrap}}
+.day-picker{{background:var(--bg);color:var(--text);border:1px solid var(--border);border-radius:6px;padding:8px 12px;font-family:var(--mono);font-size:13px;cursor:pointer;color-scheme:dark}}
 .day-picker:focus{{outline:1px solid var(--blue)}}
+.day-nav-btn{{background:var(--bg);color:var(--text);border:1px solid var(--border);border-radius:6px;width:32px;height:32px;font-size:14px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:border-color .15s,color .15s}}
+.day-nav-btn:hover{{border-color:var(--blue);color:var(--blue)}}
+.day-nav-btn:disabled{{opacity:.35;cursor:default}}
+.day-nav-btn:disabled:hover{{border-color:var(--border);color:var(--text)}}
+.day-nav-note{{font-size:11px;color:var(--muted)}}
 </style>
 </head>
 <body>
@@ -594,28 +605,59 @@ function tweetCardHtml(t) {{
 }}
 
 function populateDayPicker(pid) {{
-  const sel = document.getElementById(pid + '-daypicker');
-  if (!sel) return;
+  const input = document.getElementById(pid + '-daypicker');
+  if (!input) return;
   const daily = (window._data[pid] || {{}}).daily_top_tweets || {{}};
-  const days = Object.keys(daily).sort().reverse();
+  const days = Object.keys(daily).sort();
   if (!days.length) {{
-    sel.innerHTML = '<option>No data yet</option>';
-    sel.disabled = true;
+    input.disabled = true;
+    const note = document.getElementById(pid + '-daynote');
+    if (note) note.textContent = 'No data yet';
     return;
   }}
-  sel.innerHTML = days.map(d => `<option value="${{d}}">${{d}}</option>`).join('');
+  input.min = days[0];
+  input.max = days[days.length - 1];
+  input.value = days[days.length - 1];
+  renderDailyTop(pid);
+}}
+
+function stepDay(pid, dir) {{
+  const input = document.getElementById(pid + '-daypicker');
+  const daily = (window._data[pid] || {{}}).daily_top_tweets || {{}};
+  const days = Object.keys(daily).sort();
+  if (!input || !days.length) return;
+  let idx = days.indexOf(input.value);
+  if (idx === -1) {{
+    // Current value has no data — jump to nearest available day in that direction
+    idx = days.findIndex(d => dir > 0 ? d > input.value : d < input.value);
+    if (dir < 0) {{
+      const rev = [...days].reverse();
+      idx = days.length - 1 - rev.findIndex(d => d < input.value);
+    }}
+  }} else {{
+    idx += dir;
+  }}
+  if (idx < 0 || idx >= days.length) return;
+  input.value = days[idx];
   renderDailyTop(pid);
 }}
 
 function renderDailyTop(pid) {{
-  const sel = document.getElementById(pid + '-daypicker');
+  const input = document.getElementById(pid + '-daypicker');
   const container = document.getElementById(pid + '-daily-tweets');
-  if (!sel || !container) return;
+  const note = document.getElementById(pid + '-daynote');
+  const prevBtn = document.getElementById(pid + '-prevday');
+  const nextBtn = document.getElementById(pid + '-nextday');
+  if (!input || !container) return;
   const daily = (window._data[pid] || {{}}).daily_top_tweets || {{}};
-  const tweets = daily[sel.value] || [];
+  const days = Object.keys(daily).sort();
+  const tweets = daily[input.value] || [];
   container.innerHTML = tweets.length
     ? tweets.map(tweetCardHtml).join('')
-    : '<div style="color:var(--muted);font-size:12px;padding:8px">No tweets for this day.</div>';
+    : '<div style="color:var(--muted);font-size:12px;padding:8px">No tweets scraped for this day.</div>';
+  if (note) note.textContent = `${{days.length}} day${{days.length===1?'':'s'}} with data (${{days[0]}} to ${{days[days.length-1]}})`;
+  if (prevBtn) prevBtn.disabled = !days.length || input.value <= days[0];
+  if (nextBtn) nextBtn.disabled = !days.length || input.value >= days[days.length-1];
 }}
 
 {js([pid_for(k) for k, _ in accounts])}.forEach(pid => {{
