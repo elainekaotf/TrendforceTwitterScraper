@@ -104,11 +104,12 @@ window._data['trendforce'] = {
   zh_days:  [],
   en_days:  [{"day": "Monday", "avg_interaction": 37.07, "avg_views": 7841.21}, {"day": "Tuesday", "avg_interaction": 41.22, "avg_views": 9218.64}, {"day": "Wednesday", "avg_interaction": 36.78, "avg_views": 10571.49}, {"day": "Thursday", "avg_interaction": 32.95, "avg_views": 5072.15}, {"day": "Friday", "avg_interaction": 31.42, "avg_views": 6460.27}, {"day": "Saturday", "avg_interaction": 22.0, "avg_views": 6320.38}, {"day": "Sunday", "avg_interaction": 26.46, "avg_views": 7056.0}],
   zh_ht:    [],
-  en_ht:    [{"hashtag": "#amd", "avg_interaction": 84.0, "avg_views": 50820.0, "tweet_count": 7}, {"hashtag": "#sandisk", "avg_interaction": 73.12, "avg_views": 16484.88, "tweet_count": 8}, {"hashtag": "#kioxia", "avg_interaction": 56.22, "avg_views": 12789.22, "tweet_count": 9}, {"hashtag": "#intel", "avg_interaction": 53.7, "avg_views": 17144.04, "tweet_count": 27}, {"hashtag": "#dram", "avg_interaction": 50.17, "avg_views": 11549.33, "tweet_count": 12}, {"hashtag": "#micron", "avg_interaction": 48.03, "avg_views": 9490.58, "tweet_count": 31}, {"hashtag": "#skhynix", "avg_interaction": 41.63, "avg_views": 9648.12, "tweet_count": 41}, {"hashtag": "#hbm", "avg_interaction": 40.08, "avg_views": 9633.38, "tweet_count": 13}]
+  en_ht:    [{"hashtag": "#amd", "avg_interaction": 84.0, "avg_views": 50820.0, "tweet_count": 7}, {"hashtag": "#sandisk", "avg_interaction": 73.12, "avg_views": 16484.88, "tweet_count": 8}, {"hashtag": "#kioxia", "avg_interaction": 56.22, "avg_views": 12789.22, "tweet_count": 9}, {"hashtag": "#intel", "avg_interaction": 53.7, "avg_views": 17144.04, "tweet_count": 27}, {"hashtag": "#dram", "avg_interaction": 50.17, "avg_views": 11549.33, "tweet_count": 12}, {"hashtag": "#micron", "avg_interaction": 48.03, "avg_views": 9490.58, "tweet_count": 31}, {"hashtag": "#skhynix", "avg_interaction": 41.63, "avg_views": 9648.12, "tweet_count": 41}, {"hashtag": "#hbm", "avg_interaction": 40.08, "avg_views": 9633.38, "tweet_count": 13}],
+  follower_history: []
 };
 </script>
 <div class="page active" id="page-trendforce">
-  <p class="updated">Based on 529 tweets scraped from @TrendForce &middot; Updated July 01, 2026 10:42 Taiwan Time</p>
+  <p class="updated">Based on 529 tweets scraped from @TrendForce &middot; Updated July 01, 2026 10:54 Taiwan Time</p>
   
     <div class="kpi-row">
       <div class="kpi"><div class="kpi-label">Total Tweets</div><div class="kpi-value blue">529</div></div>
@@ -118,6 +119,11 @@ window._data['trendforce'] = {
       <div class="kpi"><div class="kpi-label">Avg Views</div><div class="kpi-value teal">7,972</div></div>
       <div class="kpi"><div class="kpi-label">Max Views</div><div class="kpi-value">339,041</div></div>
     </div>
+  <div class="section">
+    <div class="section-title">Follower Growth</div>
+    <canvas id="trendforce-followers" height="80" style="width:100%;max-width:100%"></canvas>
+    <div id="trendforce-followers-note" style="font-size:10px;color:var(--muted);margin-top:4px"></div>
+  </div>
   <div class="bar-legend"><span><span class="dot" style="background:var(--gold)"></span>Interaction</span><span><span class="dot" style="background:var(--blue)"></span>Views</span></div>
   <div class="two-col">
     <div class="section">
@@ -454,11 +460,12 @@ window._data['technewstw'] = {
   zh_days:  [{"day": "Monday", "avg_interaction": 4.17, "avg_views": 373.51}, {"day": "Tuesday", "avg_interaction": 5.45, "avg_views": 356.42}, {"day": "Wednesday", "avg_interaction": 6.33, "avg_views": 426.89}, {"day": "Thursday", "avg_interaction": 3.97, "avg_views": 313.56}, {"day": "Friday", "avg_interaction": 2.84, "avg_views": 214.66}, {"day": "Saturday", "avg_interaction": 4.32, "avg_views": 300.98}, {"day": "Sunday", "avg_interaction": 5.51, "avg_views": 406.29}],
   en_days:  [{"day": "Tuesday", "avg_interaction": 4.57, "avg_views": 619.14}, {"day": "Wednesday", "avg_interaction": 24.0, "avg_views": 1644.0}, {"day": "Thursday", "avg_interaction": 5.43, "avg_views": 488.86}, {"day": "Sunday", "avg_interaction": 2.0, "avg_views": 159.0}],
   zh_ht:    [{"hashtag": "#mlcc", "avg_interaction": 26.67, "avg_views": 1462.67, "tweet_count": 6}, {"hashtag": "#國巨", "avg_interaction": 25.17, "avg_views": 1423.67, "tweet_count": 6}, {"hashtag": "#台達電", "avg_interaction": 9.6, "avg_views": 602.0, "tweet_count": 5}, {"hashtag": "#台積電", "avg_interaction": 6.49, "avg_views": 370.81, "tweet_count": 47}, {"hashtag": "#半導體", "avg_interaction": 5.92, "avg_views": 348.69, "tweet_count": 13}, {"hashtag": "#ai基礎設施", "avg_interaction": 5.33, "avg_views": 262.67, "tweet_count": 6}, {"hashtag": "#英特爾", "avg_interaction": 5.2, "avg_views": 363.24, "tweet_count": 25}, {"hashtag": "#供應鏈", "avg_interaction": 5.0, "avg_views": 376.83, "tweet_count": 6}],
-  en_ht:    [{"hashtag": "#tech", "avg_interaction": 6.0, "avg_views": 557.86, "tweet_count": 7}, {"hashtag": "#ai", "avg_interaction": 4.3, "avg_views": 516.0, "tweet_count": 10}]
+  en_ht:    [{"hashtag": "#tech", "avg_interaction": 6.0, "avg_views": 557.86, "tweet_count": 7}, {"hashtag": "#ai", "avg_interaction": 4.3, "avg_views": 516.0, "tweet_count": 10}],
+  follower_history: [{"date": "2026-07-01", "followers": 4913}]
 };
 </script>
 <div class="page " id="page-technewstw">
-  <p class="updated">Based on 999 tweets scraped from @technews_tw &middot; Updated July 01, 2026 10:42 Taiwan Time</p>
+  <p class="updated">Based on 999 tweets scraped from @technews_tw &middot; Updated July 01, 2026 10:54 Taiwan Time</p>
   
     <div class="kpi-row">
       <div class="kpi"><div class="kpi-label">Total Tweets</div><div class="kpi-value blue">999</div></div>
@@ -468,6 +475,11 @@ window._data['technewstw'] = {
       <div class="kpi"><div class="kpi-label">Avg Views</div><div class="kpi-value teal">347</div></div>
       <div class="kpi"><div class="kpi-label">Max Views</div><div class="kpi-value">10,021</div></div>
     </div>
+  <div class="section">
+    <div class="section-title">Follower Growth</div>
+    <canvas id="technewstw-followers" height="80" style="width:100%;max-width:100%"></canvas>
+    <div id="technewstw-followers-note" style="font-size:10px;color:var(--muted);margin-top:4px"></div>
+  </div>
   <div class="bar-legend"><span><span class="dot" style="background:var(--gold)"></span>Interaction</span><span><span class="dot" style="background:var(--blue)"></span>Views</span></div>
   <div class="two-col">
     <div class="section">
@@ -906,11 +918,12 @@ window._data['dylan522p'] = {
   zh_days:  [],
   en_days:  [{"day": "Monday", "avg_interaction": 601.47, "avg_views": 127063.07}, {"day": "Tuesday", "avg_interaction": 605.56, "avg_views": 92448.57}, {"day": "Wednesday", "avg_interaction": 483.72, "avg_views": 100894.07}, {"day": "Thursday", "avg_interaction": 896.04, "avg_views": 140791.56}, {"day": "Friday", "avg_interaction": 555.57, "avg_views": 89540.27}, {"day": "Saturday", "avg_interaction": 456.73, "avg_views": 80112.75}, {"day": "Sunday", "avg_interaction": 672.65, "avg_views": 202071.72}],
   zh_ht:    [],
-  en_ht:    []
+  en_ht:    [],
+  follower_history: [{"date": "2026-07-01", "followers": 140000}]
 };
 </script>
 <div class="page " id="page-dylan522p">
-  <p class="updated">Based on 624 tweets scraped from @dylan522p &middot; Updated July 01, 2026 10:42 Taiwan Time</p>
+  <p class="updated">Based on 624 tweets scraped from @dylan522p &middot; Updated July 01, 2026 10:54 Taiwan Time</p>
   
     <div class="kpi-row">
       <div class="kpi"><div class="kpi-label">Total Tweets</div><div class="kpi-value blue">624</div></div>
@@ -920,6 +933,11 @@ window._data['dylan522p'] = {
       <div class="kpi"><div class="kpi-label">Avg Views</div><div class="kpi-value teal">114,525</div></div>
       <div class="kpi"><div class="kpi-label">Max Views</div><div class="kpi-value">6,654,201</div></div>
     </div>
+  <div class="section">
+    <div class="section-title">Follower Growth</div>
+    <canvas id="dylan522p-followers" height="80" style="width:100%;max-width:100%"></canvas>
+    <div id="dylan522p-followers-note" style="font-size:10px;color:var(--muted);margin-top:4px"></div>
+  </div>
   <div class="bar-legend"><span><span class="dot" style="background:var(--gold)"></span>Interaction</span><span><span class="dot" style="background:var(--blue)"></span>Views</span></div>
   <div class="two-col">
     <div class="section">
@@ -1247,11 +1265,12 @@ window._data['jukan05'] = {
   zh_days:  [],
   en_days:  [{"day": "Monday", "avg_interaction": 615.06, "avg_views": 141705.73}, {"day": "Tuesday", "avg_interaction": 513.68, "avg_views": 97626.44}, {"day": "Wednesday", "avg_interaction": 562.03, "avg_views": 122531.59}, {"day": "Thursday", "avg_interaction": 617.76, "avg_views": 115509.49}, {"day": "Friday", "avg_interaction": 490.62, "avg_views": 102637.69}, {"day": "Saturday", "avg_interaction": 773.1, "avg_views": 178038.62}, {"day": "Sunday", "avg_interaction": 631.26, "avg_views": 157580.04}],
   zh_ht:    [],
-  en_ht:    []
+  en_ht:    [],
+  follower_history: [{"date": "2026-07-01", "followers": 155300}]
 };
 </script>
 <div class="page " id="page-jukan05">
-  <p class="updated">Based on 1,009 tweets scraped from @jukan05 &middot; Updated July 01, 2026 10:42 Taiwan Time</p>
+  <p class="updated">Based on 1,009 tweets scraped from @jukan05 &middot; Updated July 01, 2026 10:54 Taiwan Time</p>
   
     <div class="kpi-row">
       <div class="kpi"><div class="kpi-label">Total Tweets</div><div class="kpi-value blue">1,009</div></div>
@@ -1261,6 +1280,11 @@ window._data['jukan05'] = {
       <div class="kpi"><div class="kpi-label">Avg Views</div><div class="kpi-value teal">126,343</div></div>
       <div class="kpi"><div class="kpi-label">Max Views</div><div class="kpi-value">1,513,996</div></div>
     </div>
+  <div class="section">
+    <div class="section-title">Follower Growth</div>
+    <canvas id="jukan05-followers" height="80" style="width:100%;max-width:100%"></canvas>
+    <div id="jukan05-followers-note" style="font-size:10px;color:var(--muted);margin-top:4px"></div>
+  </div>
   <div class="bar-legend"><span><span class="dot" style="background:var(--gold)"></span>Interaction</span><span><span class="dot" style="background:var(--blue)"></span>Views</span></div>
   <div class="two-col">
     <div class="section">
@@ -1588,11 +1612,12 @@ window._data['qqtimmy'] = {
   zh_days:  [{"day": "Monday", "avg_interaction": 87.71, "avg_views": 12787.18}, {"day": "Tuesday", "avg_interaction": 88.73, "avg_views": 16969.56}, {"day": "Wednesday", "avg_interaction": 62.24, "avg_views": 10178.8}, {"day": "Thursday", "avg_interaction": 69.46, "avg_views": 11818.95}, {"day": "Friday", "avg_interaction": 63.92, "avg_views": 19200.88}, {"day": "Saturday", "avg_interaction": 92.2, "avg_views": 12494.74}, {"day": "Sunday", "avg_interaction": 113.59, "avg_views": 16034.11}],
   en_days:  [{"day": "Monday", "avg_interaction": 14.0, "avg_views": 4470.82}, {"day": "Tuesday", "avg_interaction": 20.14, "avg_views": 4740.0}, {"day": "Wednesday", "avg_interaction": 39.14, "avg_views": 9719.14}, {"day": "Thursday", "avg_interaction": 21.2, "avg_views": 5697.6}, {"day": "Friday", "avg_interaction": 23.0, "avg_views": 5787.83}, {"day": "Saturday", "avg_interaction": 29.0, "avg_views": 5220.83}, {"day": "Sunday", "avg_interaction": 4.0, "avg_views": 2914.5}],
   zh_ht:    [{"hashtag": "#每日導讀", "avg_interaction": 27.33, "avg_views": 5662.58, "tweet_count": 12}, {"hashtag": "#經濟日報", "avg_interaction": 27.33, "avg_views": 5662.58, "tweet_count": 12}],
-  en_ht:    []
+  en_ht:    [],
+  follower_history: [{"date": "2026-07-01", "followers": 28600}]
 };
 </script>
 <div class="page " id="page-qqtimmy">
-  <p class="updated">Based on 343 tweets scraped from @QQ_Timmy &middot; Updated July 01, 2026 10:42 Taiwan Time</p>
+  <p class="updated">Based on 343 tweets scraped from @QQ_Timmy &middot; Updated July 01, 2026 10:54 Taiwan Time</p>
   
     <div class="kpi-row">
       <div class="kpi"><div class="kpi-label">Total Tweets</div><div class="kpi-value blue">343</div></div>
@@ -1602,6 +1627,11 @@ window._data['qqtimmy'] = {
       <div class="kpi"><div class="kpi-label">Avg Views</div><div class="kpi-value teal">13,353</div></div>
       <div class="kpi"><div class="kpi-label">Max Views</div><div class="kpi-value">487,534</div></div>
     </div>
+  <div class="section">
+    <div class="section-title">Follower Growth</div>
+    <canvas id="qqtimmy-followers" height="80" style="width:100%;max-width:100%"></canvas>
+    <div id="qqtimmy-followers-note" style="font-size:10px;color:var(--muted);margin-top:4px"></div>
+  </div>
   <div class="bar-legend"><span><span class="dot" style="background:var(--gold)"></span>Interaction</span><span><span class="dot" style="background:var(--blue)"></span>Views</span></div>
   <div class="two-col">
     <div class="section">
@@ -1929,11 +1959,12 @@ window._data['semianalysis'] = {
   zh_days:  [{"day": "Monday", "avg_interaction": 232.0, "avg_views": 39454.0}],
   en_days:  [{"day": "Monday", "avg_interaction": 235.63, "avg_views": 47079.2}, {"day": "Tuesday", "avg_interaction": 291.14, "avg_views": 71529.46}, {"day": "Wednesday", "avg_interaction": 332.17, "avg_views": 67029.4}, {"day": "Thursday", "avg_interaction": 364.23, "avg_views": 57070.1}, {"day": "Friday", "avg_interaction": 262.21, "avg_views": 60501.84}, {"day": "Saturday", "avg_interaction": 263.65, "avg_views": 45676.98}, {"day": "Sunday", "avg_interaction": 505.07, "avg_views": 108402.62}],
   zh_ht:    [],
-  en_ht:    []
+  en_ht:    [],
+  follower_history: [{"date": "2026-07-01", "followers": 111400}]
 };
 </script>
 <div class="page " id="page-semianalysis">
-  <p class="updated">Based on 840 tweets scraped from @SemiAnalysis_ &middot; Updated July 01, 2026 10:42 Taiwan Time</p>
+  <p class="updated">Based on 840 tweets scraped from @SemiAnalysis_ &middot; Updated July 01, 2026 10:54 Taiwan Time</p>
   
     <div class="kpi-row">
       <div class="kpi"><div class="kpi-label">Total Tweets</div><div class="kpi-value blue">840</div></div>
@@ -1943,6 +1974,11 @@ window._data['semianalysis'] = {
       <div class="kpi"><div class="kpi-label">Avg Views</div><div class="kpi-value teal">63,163</div></div>
       <div class="kpi"><div class="kpi-label">Max Views</div><div class="kpi-value">2,145,700</div></div>
     </div>
+  <div class="section">
+    <div class="section-title">Follower Growth</div>
+    <canvas id="semianalysis-followers" height="80" style="width:100%;max-width:100%"></canvas>
+    <div id="semianalysis-followers-note" style="font-size:10px;color:var(--muted);margin-top:4px"></div>
+  </div>
   <div class="bar-legend"><span><span class="dot" style="background:var(--gold)"></span>Interaction</span><span><span class="dot" style="background:var(--blue)"></span>Views</span></div>
   <div class="two-col">
     <div class="section">
@@ -2321,7 +2357,76 @@ function renderBars(pid, key, color, valKey, labelKey, opts) {
   });
 }
 
+function renderFollowerChart(pid) {
+  const data = ((window._data[pid] || {}).follower_history || []);
+  const canvas = document.getElementById(pid + '-followers');
+  const note = document.getElementById(pid + '-followers-note');
+  if (!canvas) return;
+  if (data.length < 2) {
+    canvas.style.display = 'none';
+    if (note) note.textContent = data.length === 1
+      ? 'Tracking started ' + data[0].date + ' — check back tomorrow for a trend line.'
+      : 'No follower data yet — will appear after the first daily scrape.';
+    return;
+  }
+  const W = canvas.offsetWidth || 800, H = canvas.height;
+  canvas.width = W;
+  const ctx = canvas.getContext('2d');
+  const counts = data.map(d => d.followers);
+  const minC = Math.min(...counts), maxC = Math.max(...counts);
+  const pad = { l: 60, r: 16, t: 12, b: 28 };
+  const gw = W - pad.l - pad.r, gh = H - pad.t - pad.b;
+  const range = maxC - minC || 1;
+
+  ctx.clearRect(0, 0, W, H);
+
+  // Grid lines
+  ctx.strokeStyle = 'rgba(255,255,255,0.06)'; ctx.lineWidth = 1;
+  [0, 0.25, 0.5, 0.75, 1].forEach(f => {
+    const y = pad.t + gh * (1 - f);
+    ctx.beginPath(); ctx.moveTo(pad.l, y); ctx.lineTo(pad.l + gw, y); ctx.stroke();
+    const val = Math.round(minC + range * f);
+    ctx.fillStyle = 'rgba(255,255,255,0.35)'; ctx.font = '10px monospace'; ctx.textAlign = 'right';
+    ctx.fillText(val >= 1000 ? (val/1000).toFixed(1)+'K' : val, pad.l - 4, y + 3);
+  });
+
+  // Line + fill
+  const pts = data.map((d, i) => ({
+    x: pad.l + (i / (data.length - 1)) * gw,
+    y: pad.t + gh * (1 - (d.followers - minC) / range)
+  }));
+  ctx.beginPath(); ctx.moveTo(pts[0].x, pts[0].y);
+  pts.slice(1).forEach(p => ctx.lineTo(p.x, p.y));
+  ctx.strokeStyle = '#5baeff'; ctx.lineWidth = 2; ctx.stroke();
+
+  // Fill under line
+  ctx.lineTo(pts[pts.length-1].x, pad.t + gh);
+  ctx.lineTo(pts[0].x, pad.t + gh);
+  ctx.closePath();
+  const grad = ctx.createLinearGradient(0, pad.t, 0, pad.t + gh);
+  grad.addColorStop(0, 'rgba(91,174,255,0.25)'); grad.addColorStop(1, 'rgba(91,174,255,0)');
+  ctx.fillStyle = grad; ctx.fill();
+
+  // Dots + date labels
+  ctx.fillStyle = '#5baeff';
+  const step = Math.max(1, Math.floor(data.length / 8));
+  pts.forEach((p, i) => {
+    ctx.beginPath(); ctx.arc(p.x, p.y, 3, 0, Math.PI*2); ctx.fill();
+    if (i % step === 0 || i === data.length - 1) {
+      ctx.fillStyle = 'rgba(255,255,255,0.4)'; ctx.font = '9px monospace'; ctx.textAlign = 'center';
+      ctx.fillText(data[i].date.slice(5), p.x, pad.t + gh + 14);
+      ctx.fillStyle = '#5baeff';
+    }
+  });
+
+  // Latest count label
+  const last = pts[pts.length - 1];
+  ctx.fillStyle = '#fff'; ctx.font = 'bold 11px monospace'; ctx.textAlign = 'left';
+  ctx.fillText(counts[counts.length-1].toLocaleString(), last.x + 6, last.y + 4);
+}
+
 ["trendforce", "technewstw", "dylan522p", "jukan05", "qqtimmy", "semianalysis"].forEach(pid => {
+  renderFollowerChart(pid);
   renderBars(pid, 'hours',    'gold',  'avg_interaction', 'hour',    {countKey:'tweet_count'});
   renderBars(pid, 'days',     '',      'avg_interaction', 'day',     {});
   renderBars(pid, 'kws',       'teal',  'avg_interaction', 'keyword', {countKey:'tweet_count', dualBar:false});

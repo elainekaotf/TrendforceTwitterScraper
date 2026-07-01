@@ -16,6 +16,12 @@ os.makedirs(os.path.join(BASE, 'docs'), exist_ok=True)
 with open(JSON_FILE, encoding='utf-8') as f:
     data = json.load(f)
 
+FOLLOWER_HISTORY_FILE = os.path.join(BASE, 'follower_history.json')
+follower_history = {}
+if os.path.exists(FOLLOWER_HISTORY_FILE):
+    with open(FOLLOWER_HISTORY_FILE, encoding='utf-8') as f:
+        follower_history = json.load(f)
+
 now_tw = datetime.now(TAIWAN_TZ).strftime('%B %d, %Y %H:%M Taiwan Time')
 
 def js(val):
@@ -38,6 +44,7 @@ def account_data(key):
         top_hashtags_by_interaction = d.get('top_hashtags_by_interaction', [])[:10],
         top_hashtags_by_usage       = d.get('top_hashtags_by_usage', [])[:10],
         top_tweets   = d.get('top_tweets', [])[:10],
+        top_tweets_by_views = d.get('top_tweets_by_views', [])[:10],
         language     = d.get('language'),
     )
 
@@ -269,7 +276,8 @@ window._data['{pid}'] = {{
   zh_days:  {js(zh.get('best_days',[]))},
   en_days:  {js(en.get('best_days',[]))},
   zh_ht:    {js(zh.get('top_hashtags',[]))},
-  en_ht:    {js(en.get('top_hashtags',[]))}
+  en_ht:    {js(en.get('top_hashtags',[]))},
+  follower_history: {js(follower_history.get(handle, []))}
 }};
 </script>"""
 
@@ -278,6 +286,11 @@ window._data['{pid}'] = {{
 <div class="page {'active' if active else ''}" id="page-{pid}">
   <p class="updated">Based on {d['tweet_count']:,} tweets scraped from @{handle} &middot; Updated {now_tw}</p>
   {kpi_row(d)}
+  <div class="section">
+    <div class="section-title">Follower Growth</div>
+    <canvas id="{pid}-followers" height="80" style="width:100%;max-width:100%"></canvas>
+    <div id="{pid}-followers-note" style="font-size:10px;color:var(--muted);margin-top:4px"></div>
+  </div>
   <div class="bar-legend"><span><span class="dot" style="background:var(--gold)"></span>Interaction</span><span><span class="dot" style="background:var(--blue)"></span>Views</span></div>
   <div class="two-col">
     <div class="section">
@@ -302,9 +315,15 @@ window._data['{pid}'] = {{
   </div>
   {hashtag_section_html}
   {language_section(d, pid) if d.get('language') and d['handle'] == 'technews_tw' else ''}
-  <div class="section">
-    <div class="section-title">Top 10 Tweets by Interaction</div>
-    {tweet_cards(d['top_tweets'])}
+  <div class="two-col">
+    <div class="section">
+      <div class="section-title">Top 10 Tweets by Interaction</div>
+      {tweet_cards(d['top_tweets'])}
+    </div>
+    <div class="section">
+      <div class="section-title">Top 10 Tweets by Views</div>
+      {tweet_cards(d['top_tweets_by_views']) if d['top_tweets_by_views'] else '<div style="color:var(--muted);font-size:12px;padding:8px">No view data available yet</div>'}
+    </div>
   </div>
 </div>"""
 
@@ -477,7 +496,76 @@ function renderBars(pid, key, color, valKey, labelKey, opts) {{
   }});
 }}
 
+function renderFollowerChart(pid) {{
+  const data = ((window._data[pid] || {{}}).follower_history || []);
+  const canvas = document.getElementById(pid + '-followers');
+  const note = document.getElementById(pid + '-followers-note');
+  if (!canvas) return;
+  if (data.length < 2) {{
+    canvas.style.display = 'none';
+    if (note) note.textContent = data.length === 1
+      ? 'Tracking started ' + data[0].date + ' — check back tomorrow for a trend line.'
+      : 'No follower data yet — will appear after the first daily scrape.';
+    return;
+  }}
+  const W = canvas.offsetWidth || 800, H = canvas.height;
+  canvas.width = W;
+  const ctx = canvas.getContext('2d');
+  const counts = data.map(d => d.followers);
+  const minC = Math.min(...counts), maxC = Math.max(...counts);
+  const pad = {{ l: 60, r: 16, t: 12, b: 28 }};
+  const gw = W - pad.l - pad.r, gh = H - pad.t - pad.b;
+  const range = maxC - minC || 1;
+
+  ctx.clearRect(0, 0, W, H);
+
+  // Grid lines
+  ctx.strokeStyle = 'rgba(255,255,255,0.06)'; ctx.lineWidth = 1;
+  [0, 0.25, 0.5, 0.75, 1].forEach(f => {{
+    const y = pad.t + gh * (1 - f);
+    ctx.beginPath(); ctx.moveTo(pad.l, y); ctx.lineTo(pad.l + gw, y); ctx.stroke();
+    const val = Math.round(minC + range * f);
+    ctx.fillStyle = 'rgba(255,255,255,0.35)'; ctx.font = '10px monospace'; ctx.textAlign = 'right';
+    ctx.fillText(val >= 1000 ? (val/1000).toFixed(1)+'K' : val, pad.l - 4, y + 3);
+  }});
+
+  // Line + fill
+  const pts = data.map((d, i) => ({{
+    x: pad.l + (i / (data.length - 1)) * gw,
+    y: pad.t + gh * (1 - (d.followers - minC) / range)
+  }}));
+  ctx.beginPath(); ctx.moveTo(pts[0].x, pts[0].y);
+  pts.slice(1).forEach(p => ctx.lineTo(p.x, p.y));
+  ctx.strokeStyle = '#5baeff'; ctx.lineWidth = 2; ctx.stroke();
+
+  // Fill under line
+  ctx.lineTo(pts[pts.length-1].x, pad.t + gh);
+  ctx.lineTo(pts[0].x, pad.t + gh);
+  ctx.closePath();
+  const grad = ctx.createLinearGradient(0, pad.t, 0, pad.t + gh);
+  grad.addColorStop(0, 'rgba(91,174,255,0.25)'); grad.addColorStop(1, 'rgba(91,174,255,0)');
+  ctx.fillStyle = grad; ctx.fill();
+
+  // Dots + date labels
+  ctx.fillStyle = '#5baeff';
+  const step = Math.max(1, Math.floor(data.length / 8));
+  pts.forEach((p, i) => {{
+    ctx.beginPath(); ctx.arc(p.x, p.y, 3, 0, Math.PI*2); ctx.fill();
+    if (i % step === 0 || i === data.length - 1) {{
+      ctx.fillStyle = 'rgba(255,255,255,0.4)'; ctx.font = '9px monospace'; ctx.textAlign = 'center';
+      ctx.fillText(data[i].date.slice(5), p.x, pad.t + gh + 14);
+      ctx.fillStyle = '#5baeff';
+    }}
+  }});
+
+  // Latest count label
+  const last = pts[pts.length - 1];
+  ctx.fillStyle = '#fff'; ctx.font = 'bold 11px monospace'; ctx.textAlign = 'left';
+  ctx.fillText(counts[counts.length-1].toLocaleString(), last.x + 6, last.y + 4);
+}}
+
 {js([pid_for(k) for k, _ in accounts])}.forEach(pid => {{
+  renderFollowerChart(pid);
   renderBars(pid, 'hours',    'gold',  'avg_interaction', 'hour',    {{countKey:'tweet_count'}});
   renderBars(pid, 'days',     '',      'avg_interaction', 'day',     {{}});
   renderBars(pid, 'kws',       'teal',  'avg_interaction', 'keyword', {{countKey:'tweet_count', dualBar:false}});

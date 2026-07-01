@@ -6,7 +6,50 @@ const { execSync } = require('child_process');
 
 const SESSION_FILE = path.join(__dirname, 'session.json');
 const CSV_DIR = path.join(__dirname, 'csv');
+const FOLLOWER_HISTORY_FILE = path.join(__dirname, 'follower_history.json');
 fs.mkdirSync(CSV_DIR, { recursive: true });
+
+function parseFollowerCount(str) {
+  if (!str || str === 'unknown') return null;
+  str = str.replace(/,/g, '').trim();
+  if (str.endsWith('K')) return Math.round(parseFloat(str) * 1000);
+  if (str.endsWith('M')) return Math.round(parseFloat(str) * 1000000);
+  return parseInt(str) || null;
+}
+
+function recordFollowers(handle, count) {
+  const history = fs.existsSync(FOLLOWER_HISTORY_FILE)
+    ? JSON.parse(fs.readFileSync(FOLLOWER_HISTORY_FILE, 'utf8'))
+    : {};
+  if (!history[handle]) history[handle] = [];
+  const today = new Date().toISOString().slice(0, 10);
+  // Only record once per day
+  if (!history[handle].length || history[handle][history[handle].length - 1].date !== today) {
+    history[handle].push({ date: today, followers: count });
+    fs.writeFileSync(FOLLOWER_HISTORY_FILE, JSON.stringify(history, null, 2));
+    console.log(`  Followers recorded: ${count.toLocaleString()}`);
+  }
+}
+
+async function scrapeFollowers(page, handle) {
+  const cleanHandle = handle.replace('@', '');
+  try {
+    await page.goto(`https://x.com/${cleanHandle}`, { waitUntil: 'domcontentloaded' });
+    await page.waitForTimeout(3000);
+    const count = await page.evaluate(() => {
+      const links = Array.from(document.querySelectorAll('a[href*="/followers"]'));
+      for (const link of links) {
+        const text = link.innerText.trim().split(/\s+/)[0];
+        if (text && text !== 'Followers') return text;
+      }
+      return null;
+    });
+    return parseFollowerCount(count);
+  } catch (e) {
+    console.warn(`  Could not scrape followers for ${handle}:`, e.message);
+    return null;
+  }
+}
 
 const INDIVIDUAL_ACCOUNTS = ['@TrendForce', '@technews_tw', '@dylan522p', '@jukan05', '@QQ_Timmy', '@SemiAnalysis_'];
 
@@ -188,6 +231,10 @@ async function main() {
         existingUrls.add(t.tweetUrl); // dedup within this scrape batch too
         return true;
       });
+
+      // Always record follower count regardless of new tweets
+      const followerCount = await scrapeFollowers(page, handle);
+      if (followerCount) recordFollowers(cleanHandle, followerCount);
 
       console.log(`  ${newTweets.length} new tweets to add.`);
       if (newTweets.length === 0) {
