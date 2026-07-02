@@ -86,6 +86,15 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:14
 .day-nav-btn:disabled{opacity:.35;cursor:default}
 .day-nav-btn:disabled:hover{border-color:var(--border);color:var(--text)}
 .day-nav-note{font-size:11px;color:var(--muted)}
+.followers-wrap{position:relative}
+.followers-wrap canvas{cursor:crosshair;display:block}
+.chart-tooltip{position:absolute;pointer-events:none;opacity:0;transform:translate(-50%,-100%);transition:opacity .1s;background:#1c2129;border:1px solid var(--border);border-radius:6px;padding:8px 11px;font-family:var(--mono);font-size:11px;white-space:nowrap;box-shadow:0 4px 16px rgba(0,0,0,.4);z-index:5}
+.chart-tooltip.visible{opacity:1}
+.chart-tooltip .tt-date{color:var(--muted);font-size:10px;margin-bottom:3px;letter-spacing:.03em}
+.chart-tooltip .tt-val{color:var(--text);font-weight:700;font-size:14px;font-variant-numeric:tabular-nums}
+.chart-tooltip .tt-delta{margin-left:6px;font-size:10px;font-variant-numeric:tabular-nums}
+.chart-tooltip .tt-delta.up{color:var(--green)}
+.chart-tooltip .tt-delta.down{color:var(--red)}
 </style>
 </head>
 <body>
@@ -118,7 +127,7 @@ window._data['trendforce'] = {
 };
 </script>
 <div class="page active" id="page-trendforce">
-  <p class="updated">Based on 570 tweets scraped from @TrendForce &middot; Updated July 02, 2026 10:28 Taiwan Time</p>
+  <p class="updated">Based on 570 tweets scraped from @TrendForce &middot; Updated July 02, 2026 10:33 Taiwan Time</p>
   
     <div class="kpi-row">
       <div class="kpi"><div class="kpi-label">Total Tweets</div><div class="kpi-value blue">570</div></div>
@@ -130,7 +139,10 @@ window._data['trendforce'] = {
     </div>
   <div class="section">
     <div class="section-title">Follower Growth</div>
-    <canvas id="trendforce-followers" height="80" style="width:100%;max-width:100%"></canvas>
+    <div class="followers-wrap">
+      <canvas id="trendforce-followers" height="220" style="width:100%;max-width:100%"></canvas>
+      <div class="chart-tooltip" id="trendforce-followers-tooltip"></div>
+    </div>
     <div id="trendforce-followers-note" style="font-size:10px;color:var(--muted);margin-top:4px"></div>
   </div>
   <div class="bar-legend"><span><span class="dot" style="background:var(--gold)"></span>Interaction</span><span><span class="dot" style="background:var(--blue)"></span>Views</span></div>
@@ -485,7 +497,7 @@ window._data['technewstw'] = {
 };
 </script>
 <div class="page " id="page-technewstw">
-  <p class="updated">Based on 1,002 tweets scraped from @technews_tw &middot; Updated July 02, 2026 10:28 Taiwan Time</p>
+  <p class="updated">Based on 1,002 tweets scraped from @technews_tw &middot; Updated July 02, 2026 10:33 Taiwan Time</p>
   
     <div class="kpi-row">
       <div class="kpi"><div class="kpi-label">Total Tweets</div><div class="kpi-value blue">1,002</div></div>
@@ -497,7 +509,10 @@ window._data['technewstw'] = {
     </div>
   <div class="section">
     <div class="section-title">Follower Growth</div>
-    <canvas id="technewstw-followers" height="80" style="width:100%;max-width:100%"></canvas>
+    <div class="followers-wrap">
+      <canvas id="technewstw-followers" height="220" style="width:100%;max-width:100%"></canvas>
+      <div class="chart-tooltip" id="technewstw-followers-tooltip"></div>
+    </div>
     <div id="technewstw-followers-note" style="font-size:10px;color:var(--muted);margin-top:4px"></div>
   </div>
   <div class="bar-legend"><span><span class="dot" style="background:var(--gold)"></span>Interaction</span><span><span class="dot" style="background:var(--blue)"></span>Views</span></div>
@@ -954,7 +969,7 @@ window._data['dylan522p'] = {
 };
 </script>
 <div class="page " id="page-dylan522p">
-  <p class="updated">Based on 668 tweets scraped from @dylan522p &middot; Updated July 02, 2026 10:28 Taiwan Time</p>
+  <p class="updated">Based on 668 tweets scraped from @dylan522p &middot; Updated July 02, 2026 10:33 Taiwan Time</p>
   
     <div class="kpi-row">
       <div class="kpi"><div class="kpi-label">Total Tweets</div><div class="kpi-value blue">668</div></div>
@@ -966,7 +981,10 @@ window._data['dylan522p'] = {
     </div>
   <div class="section">
     <div class="section-title">Follower Growth</div>
-    <canvas id="dylan522p-followers" height="80" style="width:100%;max-width:100%"></canvas>
+    <div class="followers-wrap">
+      <canvas id="dylan522p-followers" height="220" style="width:100%;max-width:100%"></canvas>
+      <div class="chart-tooltip" id="dylan522p-followers-tooltip"></div>
+    </div>
     <div id="dylan522p-followers-note" style="font-size:10px;color:var(--muted);margin-top:4px"></div>
   </div>
   <div class="bar-legend"><span><span class="dot" style="background:var(--gold)"></span>Interaction</span><span><span class="dot" style="background:var(--blue)"></span>Views</span></div>
@@ -1312,7 +1330,7 @@ window._data['jukan05'] = {
 };
 </script>
 <div class="page " id="page-jukan05">
-  <p class="updated">Based on 739 tweets scraped from @jukan05 &middot; Updated July 02, 2026 10:28 Taiwan Time</p>
+  <p class="updated">Based on 739 tweets scraped from @jukan05 &middot; Updated July 02, 2026 10:33 Taiwan Time</p>
   
     <div class="kpi-row">
       <div class="kpi"><div class="kpi-label">Total Tweets</div><div class="kpi-value blue">739</div></div>
@@ -1324,7 +1342,10 @@ window._data['jukan05'] = {
     </div>
   <div class="section">
     <div class="section-title">Follower Growth</div>
-    <canvas id="jukan05-followers" height="80" style="width:100%;max-width:100%"></canvas>
+    <div class="followers-wrap">
+      <canvas id="jukan05-followers" height="220" style="width:100%;max-width:100%"></canvas>
+      <div class="chart-tooltip" id="jukan05-followers-tooltip"></div>
+    </div>
     <div id="jukan05-followers-note" style="font-size:10px;color:var(--muted);margin-top:4px"></div>
   </div>
   <div class="bar-legend"><span><span class="dot" style="background:var(--gold)"></span>Interaction</span><span><span class="dot" style="background:var(--blue)"></span>Views</span></div>
@@ -1670,7 +1691,7 @@ window._data['qqtimmy'] = {
 };
 </script>
 <div class="page " id="page-qqtimmy">
-  <p class="updated">Based on 469 tweets scraped from @QQ_Timmy &middot; Updated July 02, 2026 10:28 Taiwan Time</p>
+  <p class="updated">Based on 469 tweets scraped from @QQ_Timmy &middot; Updated July 02, 2026 10:33 Taiwan Time</p>
   
     <div class="kpi-row">
       <div class="kpi"><div class="kpi-label">Total Tweets</div><div class="kpi-value blue">469</div></div>
@@ -1682,7 +1703,10 @@ window._data['qqtimmy'] = {
     </div>
   <div class="section">
     <div class="section-title">Follower Growth</div>
-    <canvas id="qqtimmy-followers" height="80" style="width:100%;max-width:100%"></canvas>
+    <div class="followers-wrap">
+      <canvas id="qqtimmy-followers" height="220" style="width:100%;max-width:100%"></canvas>
+      <div class="chart-tooltip" id="qqtimmy-followers-tooltip"></div>
+    </div>
     <div id="qqtimmy-followers-note" style="font-size:10px;color:var(--muted);margin-top:4px"></div>
   </div>
   <div class="bar-legend"><span><span class="dot" style="background:var(--gold)"></span>Interaction</span><span><span class="dot" style="background:var(--blue)"></span>Views</span></div>
@@ -2028,7 +2052,7 @@ window._data['semianalysis'] = {
 };
 </script>
 <div class="page " id="page-semianalysis">
-  <p class="updated">Based on 857 tweets scraped from @SemiAnalysis_ &middot; Updated July 02, 2026 10:28 Taiwan Time</p>
+  <p class="updated">Based on 857 tweets scraped from @SemiAnalysis_ &middot; Updated July 02, 2026 10:33 Taiwan Time</p>
   
     <div class="kpi-row">
       <div class="kpi"><div class="kpi-label">Total Tweets</div><div class="kpi-value blue">857</div></div>
@@ -2040,7 +2064,10 @@ window._data['semianalysis'] = {
     </div>
   <div class="section">
     <div class="section-title">Follower Growth</div>
-    <canvas id="semianalysis-followers" height="80" style="width:100%;max-width:100%"></canvas>
+    <div class="followers-wrap">
+      <canvas id="semianalysis-followers" height="220" style="width:100%;max-width:100%"></canvas>
+      <div class="chart-tooltip" id="semianalysis-followers-tooltip"></div>
+    </div>
     <div id="semianalysis-followers-note" style="font-size:10px;color:var(--muted);margin-top:4px"></div>
   </div>
   <div class="bar-legend"><span><span class="dot" style="background:var(--gold)"></span>Interaction</span><span><span class="dot" style="background:var(--blue)"></span>Views</span></div>
@@ -2431,10 +2458,80 @@ function renderBars(pid, key, color, valKey, labelKey, opts) {
   });
 }
 
+window._followerChartState = window._followerChartState || {};
+
+function drawFollowerChart(pid, hoverIdx) {
+  const s = window._followerChartState[pid];
+  if (!s) return;
+  const { ctx, W, H, pad, gw, gh, pts, data, minC, range } = s;
+
+  ctx.clearRect(0, 0, W, H);
+
+  // Grid lines + y-axis labels
+  ctx.strokeStyle = 'rgba(255,255,255,0.055)'; ctx.lineWidth = 1;
+  [0, 0.25, 0.5, 0.75, 1].forEach(f => {
+    const y = pad.t + gh * (1 - f);
+    ctx.beginPath(); ctx.moveTo(pad.l, y); ctx.lineTo(pad.l + gw, y); ctx.stroke();
+    const val = Math.round(minC + range * f);
+    ctx.fillStyle = 'rgba(255,255,255,0.38)'; ctx.font = '11px "SF Mono","Fira Code",monospace'; ctx.textAlign = 'right';
+    ctx.fillText(val >= 1000 ? (val/1000).toFixed(1)+'K' : val, pad.l - 10, y + 4);
+  });
+
+  // Fill under line
+  ctx.beginPath(); ctx.moveTo(pts[0].x, pts[0].y);
+  pts.slice(1).forEach(p => ctx.lineTo(p.x, p.y));
+  ctx.lineTo(pts[pts.length-1].x, pad.t + gh);
+  ctx.lineTo(pts[0].x, pad.t + gh);
+  ctx.closePath();
+  const grad = ctx.createLinearGradient(0, pad.t, 0, pad.t + gh);
+  grad.addColorStop(0, 'rgba(91,174,255,0.28)'); grad.addColorStop(1, 'rgba(91,174,255,0)');
+  ctx.fillStyle = grad; ctx.fill();
+
+  // Vertical hover guide (drawn under the line/dots)
+  if (hoverIdx != null) {
+    const hp = pts[hoverIdx];
+    ctx.beginPath(); ctx.moveTo(hp.x, pad.t); ctx.lineTo(hp.x, pad.t + gh);
+    ctx.strokeStyle = 'rgba(255,255,255,0.15)'; ctx.lineWidth = 1; ctx.setLineDash([4,3]);
+    ctx.stroke(); ctx.setLineDash([]);
+  }
+
+  // Line
+  ctx.beginPath(); ctx.moveTo(pts[0].x, pts[0].y);
+  pts.slice(1).forEach(p => ctx.lineTo(p.x, p.y));
+  ctx.strokeStyle = '#5baeff'; ctx.lineWidth = 2.25; ctx.lineJoin = 'round'; ctx.lineCap = 'round';
+  ctx.shadowColor = 'rgba(91,174,255,0.35)'; ctx.shadowBlur = 6;
+  ctx.stroke();
+  ctx.shadowBlur = 0;
+
+  // Dots + sparse date labels
+  const step = Math.max(1, Math.ceil(data.length / 8));
+  pts.forEach((p, i) => {
+    const isHover = i === hoverIdx;
+    const isLast = i === pts.length - 1;
+    ctx.beginPath(); ctx.arc(p.x, p.y, isHover ? 5 : (isLast ? 3.5 : 2.5), 0, Math.PI*2);
+    ctx.fillStyle = isHover ? '#fff' : '#5baeff';
+    ctx.fill();
+    if (isHover) {
+      ctx.beginPath(); ctx.arc(p.x, p.y, 8, 0, Math.PI*2);
+      ctx.strokeStyle = 'rgba(91,174,255,0.5)'; ctx.lineWidth = 1.5; ctx.stroke();
+    }
+    if (i % step === 0 || isLast) {
+      ctx.fillStyle = 'rgba(255,255,255,0.42)'; ctx.font = '10px "SF Mono","Fira Code",monospace'; ctx.textAlign = 'center';
+      ctx.fillText(data[i].date.slice(5), p.x, pad.t + gh + 18);
+    }
+  });
+
+  // Latest count label
+  const last = pts[pts.length - 1];
+  ctx.fillStyle = '#fff'; ctx.font = 'bold 12px "SF Mono","Fira Code",monospace'; ctx.textAlign = 'left';
+  ctx.fillText(data[data.length-1].followers.toLocaleString(), Math.min(last.x + 8, W - pad.r - 55), last.y + 4);
+}
+
 function renderFollowerChart(pid) {
   const data = ((window._data[pid] || {}).follower_history || []);
   const canvas = document.getElementById(pid + '-followers');
   const note = document.getElementById(pid + '-followers-note');
+  const tooltip = document.getElementById(pid + '-followers-tooltip');
   if (!canvas) return;
   if (data.length < 2) {
     canvas.style.display = 'none';
@@ -2443,60 +2540,65 @@ function renderFollowerChart(pid) {
       : 'No follower data yet — will appear after the first daily scrape.';
     return;
   }
-  const W = canvas.offsetWidth || 800, H = canvas.height;
-  canvas.width = W;
+
+  const dpr = window.devicePixelRatio || 1;
+  const W = canvas.offsetWidth || 800, H = canvas.offsetHeight || 220;
+  canvas.width = W * dpr;
+  canvas.height = H * dpr;
   const ctx = canvas.getContext('2d');
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
   const counts = data.map(d => d.followers);
   const minC = Math.min(...counts), maxC = Math.max(...counts);
-  const pad = { l: 60, r: 16, t: 12, b: 28 };
+  const padRange = (maxC - minC) * 0.15 || Math.max(maxC * 0.02, 1);
+  const dispMin = minC - padRange, dispMax = maxC + padRange;
+  const range = dispMax - dispMin || 1;
+  const pad = { l: 64, r: 16, t: 14, b: 30 };
   const gw = W - pad.l - pad.r, gh = H - pad.t - pad.b;
-  const range = maxC - minC || 1;
 
-  ctx.clearRect(0, 0, W, H);
-
-  // Grid lines
-  ctx.strokeStyle = 'rgba(255,255,255,0.06)'; ctx.lineWidth = 1;
-  [0, 0.25, 0.5, 0.75, 1].forEach(f => {
-    const y = pad.t + gh * (1 - f);
-    ctx.beginPath(); ctx.moveTo(pad.l, y); ctx.lineTo(pad.l + gw, y); ctx.stroke();
-    const val = Math.round(minC + range * f);
-    ctx.fillStyle = 'rgba(255,255,255,0.35)'; ctx.font = '10px monospace'; ctx.textAlign = 'right';
-    ctx.fillText(val >= 1000 ? (val/1000).toFixed(1)+'K' : val, pad.l - 4, y + 3);
-  });
-
-  // Line + fill
   const pts = data.map((d, i) => ({
-    x: pad.l + (i / (data.length - 1)) * gw,
-    y: pad.t + gh * (1 - (d.followers - minC) / range)
+    x: pad.l + (data.length === 1 ? 0 : (i / (data.length - 1)) * gw),
+    y: pad.t + gh * (1 - (d.followers - dispMin) / range)
   }));
-  ctx.beginPath(); ctx.moveTo(pts[0].x, pts[0].y);
-  pts.slice(1).forEach(p => ctx.lineTo(p.x, p.y));
-  ctx.strokeStyle = '#5baeff'; ctx.lineWidth = 2; ctx.stroke();
 
-  // Fill under line
-  ctx.lineTo(pts[pts.length-1].x, pad.t + gh);
-  ctx.lineTo(pts[0].x, pad.t + gh);
-  ctx.closePath();
-  const grad = ctx.createLinearGradient(0, pad.t, 0, pad.t + gh);
-  grad.addColorStop(0, 'rgba(91,174,255,0.25)'); grad.addColorStop(1, 'rgba(91,174,255,0)');
-  ctx.fillStyle = grad; ctx.fill();
+  window._followerChartState[pid] = { ctx, W, H, pad, gw, gh, pts, data, minC: dispMin, range };
+  drawFollowerChart(pid, null);
 
-  // Dots + date labels
-  ctx.fillStyle = '#5baeff';
-  const step = Math.max(1, Math.floor(data.length / 8));
-  pts.forEach((p, i) => {
-    ctx.beginPath(); ctx.arc(p.x, p.y, 3, 0, Math.PI*2); ctx.fill();
-    if (i % step === 0 || i === data.length - 1) {
-      ctx.fillStyle = 'rgba(255,255,255,0.4)'; ctx.font = '9px monospace'; ctx.textAlign = 'center';
-      ctx.fillText(data[i].date.slice(5), p.x, pad.t + gh + 14);
-      ctx.fillStyle = '#5baeff';
+  if (canvas.dataset.hoverBound) return;
+  canvas.dataset.hoverBound = '1';
+
+  const fmtDelta = (cur, prev) => {
+    const d = cur - prev;
+    if (d === 0) return '';
+    const cls = d > 0 ? 'up' : 'down';
+    const sign = d > 0 ? '+' : '';
+    return `<span class="tt-delta ${cls}">${sign}${d.toLocaleString()}</span>`;
+  };
+
+  canvas.addEventListener('mousemove', (e) => {
+    const s = window._followerChartState[pid];
+    if (!s) return;
+    const rect = canvas.getBoundingClientRect();
+    const mx = e.clientX - rect.left;
+    let idx = 0, best = Infinity;
+    s.pts.forEach((p, i) => {
+      const dist = Math.abs(p.x - mx);
+      if (dist < best) { best = dist; idx = i; }
+    });
+    drawFollowerChart(pid, idx);
+    if (tooltip) {
+      const point = s.pts[idx], d = s.data[idx];
+      const prev = idx > 0 ? s.data[idx-1].followers : null;
+      tooltip.innerHTML = `<div class="tt-date">${d.date}</div><span class="tt-val">${d.followers.toLocaleString()}</span>${prev != null ? fmtDelta(d.followers, prev) : ''}`;
+      tooltip.style.left = point.x + 'px';
+      tooltip.style.top = (point.y - 10) + 'px';
+      tooltip.classList.add('visible');
     }
   });
-
-  // Latest count label
-  const last = pts[pts.length - 1];
-  ctx.fillStyle = '#fff'; ctx.font = 'bold 11px monospace'; ctx.textAlign = 'left';
-  ctx.fillText(counts[counts.length-1].toLocaleString(), last.x + 6, last.y + 4);
+  canvas.addEventListener('mouseleave', () => {
+    drawFollowerChart(pid, null);
+    if (tooltip) tooltip.classList.remove('visible');
+  });
 }
 
 function tweetCardHtml(t) {
