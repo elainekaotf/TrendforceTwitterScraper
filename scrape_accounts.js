@@ -37,12 +37,10 @@ async function scrapeFollowers(page, handle) {
     await page.goto(`https://x.com/${cleanHandle}`, { waitUntil: 'domcontentloaded' });
     await page.waitForTimeout(3000);
     const count = await page.evaluate(() => {
-      const links = Array.from(document.querySelectorAll('a[href*="/followers"]'));
-      for (const link of links) {
-        const text = link.innerText.trim().split(/\s+/)[0];
-        if (text && text !== 'Followers') return text;
-      }
-      return null;
+      // X no longer wraps the follower count in an <a href="/followers"> link —
+      // it's now plain text like "5,242 Followers" (link target is /verified_followers).
+      const match = document.body.innerText.match(/([\d,.]+[KMB]?)\s*Followers/i);
+      return match ? match[1] : null;
     });
     return parseFollowerCount(count);
   } catch (e) {
