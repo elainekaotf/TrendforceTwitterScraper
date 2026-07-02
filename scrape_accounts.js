@@ -67,6 +67,36 @@ function enrichTweets(tweets) {
 
 const safe = (s) => `"${String(s ?? '').replace(/"/g, '""').replace(/\n/g, ' ')}"`;
 
+// Parses one CSV line into raw fields, preserving quotes so a field can be
+// reassigned and the row rejoined with `.join(',')` without re-escaping.
+function parseCsvLine(line) {
+  const cols = [];
+  let i = 0;
+  const n = line.length;
+  while (i <= n) {
+    if (line[i] === '"') {
+      let j = i + 1, val = '"';
+      while (j < n) {
+        if (line[j] === '"' && line[j + 1] === '"') { val += '""'; j += 2; }
+        else if (line[j] === '"') { val += '"'; j++; break; }
+        else { val += line[j]; j++; }
+      }
+      cols.push(val);
+      i = j + 1;
+    } else {
+      let j = line.indexOf(',', i);
+      if (j === -1) j = n;
+      cols.push(line.slice(i, j));
+      i = j + 1;
+    }
+  }
+  return cols;
+}
+
+const unquote = (s) => (s || '').replace(/^"|"$/g, '').replace(/""/g, '"');
+
+const UPDATE_WINDOW_MS = 7 * 24 * 60 * 60 * 1000;
+
 async function scrapeTimeline(page, handle, maxScrolls = 15) {
   const cleanHandle = handle.replace('@', '');
   console.log(`\nScraping timeline for ${handle}...`);
@@ -197,21 +227,18 @@ async function main() {
       const cleanHandle = handle.replace('@', '');
       const csvFile = path.join(CSV_DIR, `${cleanHandle}.csv`);
 
-      // Load existing tweet URLs from CSV so we don't re-enrich duplicates
-      const existingUrls = new Set();
-      let existingRows = '';
+      // Load existing rows, keyed by tweetUrl, so we can refresh stats in place
+      const existingByUrl = new Map(); // url -> { cols, idx }
+      const existingLines = [];
       if (fs.existsSync(csvFile)) {
-        const lines = fs.readFileSync(csvFile, 'utf8').split('\n');
-        existingRows = lines.slice(1).filter(l => l.trim()).join('\n'); // skip header
+        const lines = fs.readFileSync(csvFile, 'utf8').split('\n').filter(l => l.trim());
         for (const line of lines.slice(1)) {
-          // tweetUrl is column 8 (index 7), quoted
-          const match = line.match(/(?:^|,)"?(https?:\/\/[^",\n]+)"?/);
-          // more robust: split by comma respecting quotes
-          const cols = line.match(/("(?:[^"]|"")*"|[^,]*)/g) || [];
-          const url = cols[7] ? cols[7].replace(/^"|"$/g, '') : '';
-          if (url) existingUrls.add(url);
+          const cols = parseCsvLine(line);
+          const idx = existingLines.push(line) - 1;
+          const url = unquote(cols[7]);
+          if (url) existingByUrl.set(url, { cols, idx });
         }
-        console.log(`${handle}: ${existingUrls.size} existing tweets in CSV.`);
+        console.log(`${handle}: ${existingByUrl.size} existing tweets in CSV.`);
       }
 
       // Scrape recent timeline (fewer scrolls for daily top-up)
@@ -219,43 +246,68 @@ async function main() {
       const maxScrolls = 15;
       const tweets = await scrapeTimeline(page, handle, maxScrolls);
 
-      // Filter to own original tweets not already in CSV
-      const newTweets = tweets.filter(t => {
-        if (t.isRetweet) return false;
-        if (!t.tweetUrl) return false;
-        const urlHandle = t.tweetUrl.split('/')[3]?.toLowerCase();
-        if (urlHandle !== cleanHandle.toLowerCase()) return false;
-        if (existingUrls.has(t.tweetUrl)) return false;
-        existingUrls.add(t.tweetUrl); // dedup within this scrape batch too
-        return true;
-      });
+      // Split into: brand-new tweets to enrich+append, and existing tweets
+      // (posted within the last 7 days) whose stats we refresh in place —
+      // views/likes keep climbing for days after posting, so a one-time
+      // scrape at first sight was undercounting them.
+      const now = Date.now();
+      const seenThisBatch = new Set();
+      const newTweets = [];
+      let updatedCount = 0;
 
-      // Always record follower count regardless of new tweets
+      for (const t of tweets) {
+        if (t.isRetweet) continue;
+        if (!t.tweetUrl) continue;
+        const urlHandle = t.tweetUrl.split('/')[3]?.toLowerCase();
+        if (urlHandle !== cleanHandle.toLowerCase()) continue;
+        if (seenThisBatch.has(t.tweetUrl)) continue;
+        seenThisBatch.add(t.tweetUrl);
+
+        const existing = existingByUrl.get(t.tweetUrl);
+        if (existing) {
+          const age = now - new Date(t.timestamp).getTime();
+          if (age <= UPDATE_WINDOW_MS) {
+            existing.cols[1] = t.views || '0';
+            existing.cols[2] = t.likes;
+            existing.cols[3] = t.retweets;
+            existing.cols[4] = t.replies;
+            existing.cols[5] = t.hasImages ? 'yes' : 'no';
+            existingLines[existing.idx] = existing.cols.join(',');
+            updatedCount++;
+          }
+          continue;
+        }
+        newTweets.push(t);
+      }
+
+      // Always record follower count regardless of new/updated tweets
       const followerCount = await scrapeFollowers(page, handle);
       if (followerCount) recordFollowers(cleanHandle, followerCount);
 
-      console.log(`  ${newTweets.length} new tweets to add.`);
-      if (newTweets.length === 0) {
-        console.log(`  Nothing new for ${handle}, skipping.`);
+      console.log(`  ${newTweets.length} new tweets, ${updatedCount} existing tweets refreshed.`);
+      if (newTweets.length === 0 && updatedCount === 0) {
+        console.log(`  Nothing new or updated for ${handle}, skipping write.`);
         continue;
       }
 
-      console.log(`  Enriching ${newTweets.length} new tweets...`);
-      const enriched = enrichTweets(newTweets);
+      let newRows = '';
+      if (newTweets.length) {
+        console.log(`  Enriching ${newTweets.length} new tweets...`);
+        const enriched = enrichTweets(newTweets);
+        newRows = enriched.map(t =>
+          [t.timestamp, t.views ?? '0', t.likes, t.retweets, t.replies,
+           t.hasImages ? 'yes' : 'no',
+           safe(t.keywords), safe(t.tweetUrl), safe(t.text), safe(t.translatedText ?? '')].join(',')
+        ).join('\n');
+      }
 
       const header = 'timestamp,views,likes,retweets,replies,hasImages,keywords,tweetUrl,text,translated_text\n';
-      const newRows = enriched.map(t =>
-        [t.timestamp, t.views ?? '0', t.likes, t.retweets, t.replies,
-         t.hasImages ? 'yes' : 'no',
-         safe(t.keywords), safe(t.tweetUrl), safe(t.text), safe(t.translatedText ?? '')].join(',')
-      ).join('\n');
-
-      // Prepend new rows (newest first) then existing rows
-      const combined = existingRows
-        ? header + newRows + '\n' + existingRows
-        : header + newRows;
+      // Prepend new rows (newest first) then existing rows (refreshed in place)
+      const combined = header
+        + (newRows ? newRows + '\n' : '')
+        + existingLines.join('\n') + (existingLines.length ? '\n' : '');
       fs.writeFileSync(csvFile, combined);
-      console.log(`Updated csv/${cleanHandle}.csv (+${newTweets.length} new, ${existingUrls.size + newTweets.length} total)`);
+      console.log(`Updated csv/${cleanHandle}.csv (+${newTweets.length} new, ${updatedCount} refreshed, ${existingByUrl.size + newTweets.length} total)`);
     }
 
   } catch (err) {
