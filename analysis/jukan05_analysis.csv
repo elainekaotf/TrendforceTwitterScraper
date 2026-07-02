@@ -1,9 +1,9 @@
 SUMMARY -- @jukan05
-  Total tweets:       603
-  Avg interaction:    587.89
-  Median interaction: 435
+  Total tweets:       739
+  Avg interaction:    572.22
+  Median interaction: 406
   Max interaction:    7306
-  Avg views:          126688.77
+  Avg views:          125321.9
   Max views:          1485860
 ""
 "BEST HOURS TO POST (Taiwan Time, avg total interaction):"
@@ -12,62 +12,62 @@ SUMMARY -- @jukan05
   02:00  ████████████████████  1047.0  (1 tweets)
   04:00  ███████  385.33  (3 tweets)
   05:00  █████████  520.0  (1 tweets)
-  06:00  ███████  395.56  (34 tweets)
-  07:00  █████████  517.03  (58 tweets)
-  08:00  ██████████  535.0  (46 tweets)
-  09:00  ███████████  622.91  (46 tweets)
-  10:00  ███████████████  817.5  (46 tweets)
+  06:00  ██████  347.67  (48 tweets)
+  07:00  █████████  472.89  (72 tweets)
+  08:00  ██████████  569.5  (50 tweets)
+  09:00  ██████████  546.14  (56 tweets)
+  10:00  ██████████████  777.81  (64 tweets)
   11:00  ████████████  631.98  (43 tweets)
-  12:00  █████████  478.86  (35 tweets)
-  13:00  ██████████████  775.95  (39 tweets)
-  14:00  ████████  441.3  (23 tweets)
-  15:00  ███████████  598.13  (39 tweets)
-  16:00  █████████████  729.1  (40 tweets)
-  17:00  █████████  486.72  (25 tweets)
-  18:00  ██████████  572.75  (32 tweets)
-  19:00  ██████████  537.17  (24 tweets)
-  20:00  ███████████  584.13  (15 tweets)
-  21:00  █████████  487.88  (32 tweets)
+  12:00  ████████  430.3  (43 tweets)
+  13:00  ██████████████  756.81  (47 tweets)
+  14:00  ███████  382.52  (31 tweets)
+  15:00  ██████████████  745.09  (47 tweets)
+  16:00  ███████████  617.13  (52 tweets)
+  17:00  ███████████  624.22  (27 tweets)
+  18:00  █████████  486.09  (44 tweets)
+  19:00  ██████████  540.81  (32 tweets)
+  20:00  ████████████  638.83  (23 tweets)
+  21:00  █████████  507.21  (34 tweets)
   22:00  ███████████████  801.4  (10 tweets)
   23:00  ██████  364.0  (3 tweets)
 ""
 AVG INTERACTION BY DAY OF WEEK:
-  Monday      ████████████████  593.58
-  Tuesday     ██████████████  524.9
-  Wednesday   ███████████████  537.14
-  Thursday    █████████████████  621.33
-  Friday      ███████████████  554.04
-  Saturday    ████████████████████  713.49
-  Sunday      █████████████████  636.59
+  Monday      ██████████████  569.94
+  Tuesday     ████████████  490.66
+  Wednesday   ███████████  481.68
+  Thursday    ██████████████  585.69
+  Friday      █████████████  554.04
+  Saturday    ████████████████████  804.2
+  Sunday      ████████████████  652.77
 ""
 IMAGES VS NO IMAGES:
-  With image:    avg 783.14  (250 tweets)
-  Without image: avg 449.61  (353 tweets)
-  -> images perform 74.2% better
+  With image:    avg 788.64  (298 tweets)
+  Without image: avg 425.98  (441 tweets)
+  -> images perform 85.1% better
 ""
 TOP KEYWORDS BY AVG INTERACTION (min 3 tweets):
   Micron                         avg 1252.69  (13 tweets)
   Kioxia                         avg 965.1    (10 tweets)
-  SK Hynix                       avg 955.76   (45 tweets)
-  ASIC / Custom Chip             avg 842.58   (12 tweets)
-  LLM / Foundation Model         avg 830.83   (24 tweets)
-  DRAM / NAND / SSD              avg 818.67   (45 tweets)
-  Samsung                        avg 798.18   (60 tweets)
+  SK Hynix                       avg 947.62   (47 tweets)
+  DRAM / NAND / SSD              avg 898.03   (65 tweets)
+  LLM / Foundation Model         avg 887.38   (26 tweets)
   Optical / Silicon Photonics    avg 773.6    (10 tweets)
-  HBM Memory                     avg 711.67   (18 tweets)
+  NVIDIA AI                      avg 731.76   (67 tweets)
+  Samsung                        avg 722.33   (76 tweets)
   AI Server ODM                  avg 698.57   (7 tweets)
-  NVIDIA AI                      avg 675.05   (61 tweets)
-  TSMC / Foundry                 avg 554.38   (37 tweets)
+  ASIC / Custom Chip             avg 684.81   (16 tweets)
+  HBM Memory                     avg 653.5    (22 tweets)
   CCL                            avg 519.29   (7 tweets)
+  TSMC / Foundry                 avg 512.71   (45 tweets)
   AMD AI                         avg 496.33   (6 tweets)
-  PCB / Substrate                avg 483.57   (7 tweets)
+  Glass Substrate                avg 495.89   (9 tweets)
 ""
 BEST KEYWORD + IMAGE COMBOS:
-  hynix                          avg 1129.28
-  micron                         avg 1102.5
-  trendforce                     avg 1100.67
-  yield                          avg 1084.5
-  kioxia                         avg 975.88
+  dram etf                       avg 2027.0
+  cxmt parent                    avg 2027.0
+  added cxmt                     avg 2027.0
+  etf added                      avg 2027.0
+  memory cxmt                    avg 2013.0
 ""
 TOP HASHTAGS BY AVG INTERACTION (min 2 tweets):
 ""
@@ -98,12 +98,12 @@ TOP 10 TWEETS BY INTERACTION:
   7. [3584 total | 3000 likes  459 retweets  125 replies  views: 637161]
      Why did the KOSPI fall today?  1. Korean leverage trading has climbed to excessively high levels. 2. Ahead of Micron's e...
      https://x.com/jukan05/status/2069368311146815885
-  8. [3076 total | 2800 likes  166 retweets  110 replies  views: 650881]
-     So JPM is using my tweets in their reports — I just found out today.
-     https://x.com/jukan05/status/2059782862661210172
-  9. [3042 total | 2300 likes  176 retweets  566 replies  views: 417327]
-     Do these damn Chinese media outlets have so little news to cover that they’re treating my exit from A shares as breaking...
-     https://x.com/jukan05/status/2069677144285032884
-  10. [3025 total | 2600 likes  292 retweets  133 replies  views: 792411]
+  8. [3133 total | 2700 likes  299 retweets  134 replies  views: 808502]
 "     Yes, MU is not Nvidia.  But going forward, it may become even more important than Nvidia.  Think about it. Inference is ..."
      https://x.com/jukan05/status/2071139712082022855
+  9. [3133 total | 2700 likes  299 retweets  134 replies  views: 808457]
+"     Yes, MU is not Nvidia.  But going forward, it may become even more important than Nvidia.  Think about it. Inference is ..."
+     https://x.com/jukan05/status/2071139712082022855
+  10. [3076 total | 2800 likes  166 retweets  110 replies  views: 650881]
+     So JPM is using my tweets in their reports — I just found out today.
+     https://x.com/jukan05/status/2059782862661210172

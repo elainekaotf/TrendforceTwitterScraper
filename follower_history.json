@@ -3,30 +3,56 @@
     {
       "date": "2026-07-01",
       "followers": 4913
+    },
+    {
+      "date": "2026-07-02",
+      "followers": 5242
     }
   ],
   "dylan522p": [
     {
       "date": "2026-07-01",
       "followers": 140000
+    },
+    {
+      "date": "2026-07-02",
+      "followers": 145500
     }
   ],
   "jukan05": [
     {
       "date": "2026-07-01",
       "followers": 155300
+    },
+    {
+      "date": "2026-07-02",
+      "followers": 167300
     }
   ],
   "QQ_Timmy": [
     {
       "date": "2026-07-01",
       "followers": 28600
+    },
+    {
+      "date": "2026-07-02",
+      "followers": 28900
     }
   ],
   "SemiAnalysis_": [
     {
       "date": "2026-07-01",
       "followers": 111400
+    },
+    {
+      "date": "2026-07-02",
+      "followers": 123600
+    }
+  ],
+  "TrendForce": [
+    {
+      "date": "2026-07-02",
+      "followers": 20300
     }
   ]
 }

@@ -1,0 +1,2 @@
+timestamp,handle,displayName,followers,knownAccount,accountType,country,sentiment,sentimentScore,creditFlag,cited,textSimilarity,imageMatch,ocrFoundTF,likes,retweets,replies,tweetUrl,text
+2026-07-02T01:15:46.000Z,"@Ferhat31162","股票散户知心老林","111",no,"unknown","Unknown",neutral,0,"no_tf_content",no,0,no,no,,,,"https://x.com/Ferhat31162/status/2072489374126874795",""

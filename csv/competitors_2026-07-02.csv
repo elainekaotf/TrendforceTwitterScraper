@@ -1,0 +1,2 @@
+timestamp,handle,displayName,followers,competitorMentioned,sentiment,sentimentScore,likes,retweets,replies,tweetUrl,text
+2026-07-02T00:51:00.000Z,"@PodcastAlphaX","Podcast Alpha","11.2K","SemiAnalysis",positive,6.369,1,1,1,"https://x.com/PodcastAlphaX/status/2072483140439068902","Google runs three separate TPU design programs at once. Dylan Patel says that is a tell.   @dylan522p   of SemiAnalysis: one TPU with Broadcom, one with MediaTek, one fundamentally different. It is insurance against a local minimum, where a chip tuned perfectly for today's model"
