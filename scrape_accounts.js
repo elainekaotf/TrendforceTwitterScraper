@@ -227,17 +227,37 @@ async function main() {
       const cleanHandle = handle.replace('@', '');
       const csvFile = path.join(CSV_DIR, `${cleanHandle}.csv`);
 
-      // Load existing rows, keyed by tweetUrl, so we can refresh stats in place
+      // Load existing rows, keyed by tweetUrl, so we can refresh stats in place.
+      // Self-heals duplicate rows left behind by prior overlapping scrape runs:
+      // if a URL already appeared, keep whichever row has higher views and
+      // drop the other instead of silently leaving both in the file.
       const existingByUrl = new Map(); // url -> { cols, idx }
       const existingLines = [];
+      const droppedIdx = new Set();
       if (fs.existsSync(csvFile)) {
         const lines = fs.readFileSync(csvFile, 'utf8').split('\n').filter(l => l.trim());
+        let dupesFound = 0;
         for (const line of lines.slice(1)) {
           const cols = parseCsvLine(line);
           const idx = existingLines.push(line) - 1;
           const url = unquote(cols[7]);
-          if (url) existingByUrl.set(url, { cols, idx });
+          if (!url) continue;
+          const prior = existingByUrl.get(url);
+          if (!prior) {
+            existingByUrl.set(url, { cols, idx });
+            continue;
+          }
+          dupesFound++;
+          const priorViews = parseFollowerCount(prior.cols[1]) || 0;
+          const thisViews = parseFollowerCount(cols[1]) || 0;
+          if (thisViews > priorViews) {
+            droppedIdx.add(prior.idx);
+            existingByUrl.set(url, { cols, idx });
+          } else {
+            droppedIdx.add(idx);
+          }
         }
+        if (dupesFound) console.log(`  ${handle}: cleaned up ${dupesFound} duplicate row(s) found in CSV.`);
         console.log(`${handle}: ${existingByUrl.size} existing tweets in CSV.`);
       }
 
@@ -285,8 +305,8 @@ async function main() {
       if (followerCount) recordFollowers(cleanHandle, followerCount);
 
       console.log(`  ${newTweets.length} new tweets, ${updatedCount} existing tweets refreshed.`);
-      if (newTweets.length === 0 && updatedCount === 0) {
-        console.log(`  Nothing new or updated for ${handle}, skipping write.`);
+      if (newTweets.length === 0 && updatedCount === 0 && droppedIdx.size === 0) {
+        console.log(`  Nothing new, updated, or duplicated for ${handle}, skipping write.`);
         continue;
       }
 
@@ -302,12 +322,13 @@ async function main() {
       }
 
       const header = 'timestamp,views,likes,retweets,replies,hasImages,keywords,tweetUrl,text,translated_text\n';
+      const survivingLines = existingLines.filter((_, i) => !droppedIdx.has(i));
       // Prepend new rows (newest first) then existing rows (refreshed in place)
       const combined = header
         + (newRows ? newRows + '\n' : '')
-        + existingLines.join('\n') + (existingLines.length ? '\n' : '');
+        + survivingLines.join('\n') + (survivingLines.length ? '\n' : '');
       fs.writeFileSync(csvFile, combined);
-      console.log(`Updated csv/${cleanHandle}.csv (+${newTweets.length} new, ${updatedCount} refreshed, ${existingByUrl.size + newTweets.length} total)`);
+      console.log(`Updated csv/${cleanHandle}.csv (+${newTweets.length} new, ${updatedCount} refreshed, ${droppedIdx.size} duplicates removed, ${existingByUrl.size + newTweets.length} total)`);
     }
 
   } catch (err) {

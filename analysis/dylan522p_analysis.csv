@@ -1,59 +1,59 @@
 SUMMARY -- @dylan522p
-  Total tweets:       668
-  Avg interaction:    620.08
-  Median interaction: 313
+  Total tweets:       593
+  Avg interaction:    596.01
+  Median interaction: 290
   Max interaction:    26372
-  Avg views:          118139.2
+  Avg views:          111426.47
   Max views:          6654201
 ""
 "BEST HOURS TO POST (Taiwan Time, avg total interaction):"
-  00:00  ███████  430.9  (39 tweets)
-  01:00  ███████████  617.33  (30 tweets)
-  02:00  ████████████  689.04  (49 tweets)
-  03:00  ████████  480.84  (37 tweets)
-  04:00  ████████  474.62  (39 tweets)
-  05:00  █████████  513.5  (52 tweets)
-  06:00  ██████████████  805.5  (52 tweets)
-  07:00  █████████████████  958.61  (54 tweets)
-  08:00  ████████  470.64  (36 tweets)
-  09:00  █████████████  763.65  (46 tweets)
-  10:00  ███████████  621.86  (37 tweets)
+  00:00  █████  343.34  (35 tweets)
+  01:00  ██████████  612.47  (32 tweets)
+  02:00  ██████████  612.49  (37 tweets)
+  03:00  ████████  486.28  (36 tweets)
+  04:00  ███████  459.42  (33 tweets)
+  05:00  ███████  453.27  (44 tweets)
+  06:00  █████████████  774.34  (50 tweets)
+  07:00  █████████████████  1000.6  (50 tweets)
+  08:00  ██████  391.44  (34 tweets)
+  09:00  ████████████  716.69  (36 tweets)
+  10:00  ███████████  666.42  (33 tweets)
   11:00  █████████  525.57  (28 tweets)
-  12:00  ████████████████████  1113.72  (32 tweets)
-  13:00  ███████  398.42  (31 tweets)
-  14:00  ████████  455.69  (13 tweets)
+  12:00  ████████████████████  1166.18  (28 tweets)
+  13:00  ███████  441.61  (23 tweets)
+  14:00  ███████  455.69  (13 tweets)
   15:00  █████  321.08  (12 tweets)
   16:00  ████  273.14  (7 tweets)
   17:00  █████  323.12  (8 tweets)
-  18:00  █████████  510.29  (7 tweets)
-  19:00  ████  226.86  (7 tweets)
-  20:00  ███████  437.5  (10 tweets)
+  18:00  ████████  510.29  (7 tweets)
+  19:00  ███  226.86  (7 tweets)
+  20:00  ██████  369.5  (6 tweets)
   21:00  ███  192.88  (8 tweets)
-  22:00  ██████████  558.07  (14 tweets)
-  23:00  ███████████████  876.1  (20 tweets)
+  22:00  ████████  514.0  (10 tweets)
+  23:00  ███████████  677.12  (16 tweets)
 ""
 AVG INTERACTION BY DAY OF WEEK:
-  Monday      ██████████████  642.18
-  Tuesday     █████████████  619.98
-  Wednesday   ███████████  514.45
-  Thursday    ████████████████████  894.63
-  Friday      ████████████  560.1
-  Saturday    ██████████  486.79
-  Sunday      ██████████████  647.1
+  Monday      ████████████  578.48
+  Tuesday     █████████████  593.3
+  Wednesday   ██████████  448.43
+  Thursday    ████████████████████  895.41
+  Friday      ████████████  562.33
+  Saturday    █████████  428.19
+  Sunday      ███████████████  702.28
 ""
 IMAGES VS NO IMAGES:
-  With image:    avg 607.32  (335 tweets)
-  Without image: avg 632.92  (333 tweets)
-  -> no images perform 4.0% better
+  With image:    avg 590.15  (302 tweets)
+  Without image: avg 602.08  (291 tweets)
+  -> no images perform 2.0% better
 ""
 TOP KEYWORDS BY AVG INTERACTION (min 3 tweets):
   Supermicro                     avg 1102.6   (5 tweets)
-  LLM / Foundation Model         avg 872.14   (113 tweets)
+  LLM / Foundation Model         avg 851.63   (101 tweets)
   TSMC / Foundry                 avg 842.27   (15 tweets)
-  ASIC / Custom Chip             avg 792.5    (8 tweets)
-  Wafer Fab Equipment            avg 668.36   (11 tweets)
-  AMD AI                         avg 650.8    (25 tweets)
-  NVIDIA AI                      avg 533.98   (66 tweets)
+  AMD AI                         avg 694.83   (23 tweets)
+  Wafer Fab Equipment            avg 674.0    (9 tweets)
+  ASIC / Custom Chip             avg 664.5    (6 tweets)
+  NVIDIA AI                      avg 535.13   (60 tweets)
   Samsung                        avg 478.6    (5 tweets)
   AI Server ODM                  avg 452.29   (7 tweets)
   Advanced Packaging             avg 214.6    (5 tweets)
@@ -62,9 +62,9 @@ TOP KEYWORDS BY AVG INTERACTION (min 3 tweets):
 BEST KEYWORD + IMAGE COMBOS:
   volleyball tournament          avg 4935.0
   newsletter semianalysis        avg 2992.5
-  despite mythos                 avg 2461.0
-  fable launch                   avg 2461.0
-  codex legitimate               avg 2461.0
+  deepseek v3                    avg 2445.0
+  claude code                    avg 1762.0
+  jensen                         avg 1465.0
 ""
 TOP HASHTAGS BY AVG INTERACTION (min 2 tweets):
 ""
