@@ -17,10 +17,15 @@ with open(JSON_FILE, encoding='utf-8') as f:
     data = json.load(f)
 
 FOLLOWER_HISTORY_FILE = os.path.join(BASE, 'follower_history.json')
+FOLLOWER_CHART_START = '2026-07-02'  # align all accounts to the same start date on the chart
 follower_history = {}
 if os.path.exists(FOLLOWER_HISTORY_FILE):
     with open(FOLLOWER_HISTORY_FILE, encoding='utf-8') as f:
-        follower_history = json.load(f)
+        raw_follower_history = json.load(f)
+    follower_history = {
+        handle: [p for p in points if p['date'] >= FOLLOWER_CHART_START]
+        for handle, points in raw_follower_history.items()
+    }
 
 now_tw = datetime.now(TAIWAN_TZ).strftime('%B %d, %Y %H:%M Taiwan Time')
 
