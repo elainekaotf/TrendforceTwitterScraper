@@ -1,9 +1,9 @@
 SUMMARY -- @jukan05
-  Total tweets:       648
-  Avg interaction:    576.35
-  Median interaction: 419
+  Total tweets:       655
+  Avg interaction:    572.8
+  Median interaction: 416
   Max interaction:    7306
-  Avg views:          124370.78
+  Avg views:          123427.05
   Max views:          1485860
 ""
 "BEST HOURS TO POST (Taiwan Time, avg total interaction):"
@@ -11,53 +11,53 @@ SUMMARY -- @jukan05
   01:00  ██████  363.0  (2 tweets)
   02:00  ████████████████████  1047.0  (1 tweets)
   04:00  ███████  385.33  (3 tweets)
-  05:00  ██████  356.25  (4 tweets)
-  06:00  ███████  380.11  (38 tweets)
+  05:00  ███████  418.25  (4 tweets)
+  06:00  ███████  380.32  (38 tweets)
   07:00  █████████  503.16  (62 tweets)
   08:00  ██████████  564.34  (47 tweets)
   09:00  ███████████  627.46  (46 tweets)
-  10:00  ███████████████  798.31  (49 tweets)
+  10:00  ███████████████  790.66  (50 tweets)
   11:00  ████████████  631.98  (43 tweets)
-  12:00  ████████  448.23  (44 tweets)
-  13:00  ██████████████  765.51  (43 tweets)
-  14:00  ███████  408.12  (26 tweets)
+  12:00  ████████  435.53  (47 tweets)
+  13:00  ██████████████  736.67  (45 tweets)
+  14:00  ███████  393.41  (27 tweets)
   15:00  ███████████  601.87  (39 tweets)
   16:00  █████████████  696.4  (43 tweets)
-  17:00  ████████  471.04  (28 tweets)
+  17:00  █████████  472.61  (28 tweets)
   18:00  ██████████  549.74  (34 tweets)
-  19:00  █████████  513.0  (26 tweets)
+  19:00  █████████  513.04  (26 tweets)
   20:00  ███████████  621.94  (18 tweets)
-  21:00  █████████  502.24  (33 tweets)
+  21:00  █████████  502.33  (33 tweets)
   22:00  ███████████████  801.4  (10 tweets)
   23:00  ██████  364.0  (3 tweets)
 ""
 AVG INTERACTION BY DAY OF WEEK:
   Monday      ████████████████  595.34
-  Tuesday     ██████████████  523.96
-  Wednesday   ██████████████  509.87
-  Thursday    ████████████████  597.07
-  Friday      ███████████████  545.33
+  Tuesday     ██████████████  523.97
+  Wednesday   ██████████████  509.9
+  Thursday    ████████████████  597.73
+  Friday      ██████████████  522.1
   Saturday    ████████████████████  713.58
   Sunday      █████████████████  640.09
 ""
 IMAGES VS NO IMAGES:
-  With image:    avg 778.54  (266 tweets)
-  Without image: avg 435.55  (382 tweets)
-  -> images perform 78.7% better
+  With image:    avg 775.43  (268 tweets)
+  Without image: avg 432.48  (387 tweets)
+  -> images perform 79.3% better
 ""
 TOP KEYWORDS BY AVG INTERACTION (min 3 tweets):
   Micron                         avg 1252.69  (13 tweets)
   SK Hynix                       avg 976.57   (46 tweets)
   Kioxia                         avg 965.1    (10 tweets)
-  LLM / Foundation Model         avg 812.2    (25 tweets)
-  DRAM / NAND / SSD              avg 810.02   (48 tweets)
+  LLM / Foundation Model         avg 816.0    (25 tweets)
   Optical / Silicon Photonics    avg 773.6    (10 tweets)
-  Samsung                        avg 765.34   (67 tweets)
-  ASIC / Custom Chip             avg 760.71   (14 tweets)
+  DRAM / NAND / SSD              avg 765.63   (52 tweets)
+  ASIC / Custom Chip             avg 760.79   (14 tweets)
+  Samsung                        avg 755.28   (69 tweets)
   AI Server ODM                  avg 698.57   (7 tweets)
   HBM Memory                     avg 680.6    (20 tweets)
-  NVIDIA AI                      avg 675.81   (62 tweets)
-  TSMC / Foundry                 avg 538.5    (40 tweets)
+  NVIDIA AI                      avg 675.92   (62 tweets)
+  TSMC / Foundry                 avg 540.88   (40 tweets)
   CCL                            avg 519.29   (7 tweets)
   AMD AI                         avg 496.33   (6 tweets)
   PCB / Substrate                avg 483.57   (7 tweets)

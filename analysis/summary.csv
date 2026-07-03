@@ -1,70 +1,70 @@
 ,QQ_Timmy,jukan05,TrendForce,dylan522p,SemiAnalysis_,technews_tw,combined
 OVERVIEW
-Tweet count,353,648,522,593,737,936,3789
-Avg interaction,73.48,576.35,35.58,596.01,299.53,4.67,263.01
-Median interaction,63,419,25,290,125,2,52
+Tweet count,383,655,527,593,737,954,3849
+Avg interaction,71.19,572.8,35.61,596.24,299.76,4.63,259.84
+Median interaction,60,416,25,290,125,2,51
 Max interaction,493,7306,488,26372,14700,174,26372
 
 BEST HOURS TO POST (Taiwan Time)
 Hour,QQ_Timmy avg interaction,QQ_Timmy chart,jukan05 avg interaction,jukan05 chart,TrendForce avg interaction,TrendForce chart,dylan522p avg interaction,dylan522p chart,SemiAnalysis_ avg interaction,SemiAnalysis_ chart,technews_tw avg interaction,technews_tw chart,combined avg interaction,combined chart
-00:00,77.58,████████████,506.5,█████████,32.65,█████████,343.34,█████,425.0,██████████,0,,147.87,████
-01:00,66.31,██████████,363.0,██████,20.38,██████,612.47,██████████,340.51,████████,0,,314.77,█████████
-02:00,37.0,██████,1047.0,████████████████████,0,,612.49,██████████,813.59,████████████████████,0,,682.7,████████████████████
+00:00,75.79,██████████████,506.5,█████████,32.73,█████████,343.34,█████,425.0,██████████,0,,145.91,████
+01:00,64.49,████████████,363.0,██████,20.38,██████,616.91,██████████,341.1,████████,0,,313.33,█████████
+02:00,37.0,██████,1047.0,████████████████████,0,,612.46,██████████,813.59,████████████████████,0,,682.69,████████████████████
 03:00,0,,0,,0,,486.28,████████,272.41,██████,0,,390.86,███████████
-04:00,0,,385.33,███████,0,,459.42,███████,327.9,████████,0,,396.27,███████████
-05:00,0,,356.25,██████,0,,453.27,███████,283.56,██████,0,,334.94,█████████
-06:00,0,,380.11,███████,0,,774.34,█████████████,221.28,█████,0,,492.96,██████████████
-07:00,82.0,█████████████,503.16,█████████,10.0,██,1000.6,█████████████████,439.73,██████████,8.32,█████████████,572.63,████████████████
-08:00,51.7,████████,564.34,██████████,48.75,██████████████,391.44,██████,197.87,████,12.66,████████████████████,260.82,███████
-09:00,76.22,████████████,627.46,███████████,36.55,██████████,716.69,████████████,214.8,█████,2.94,████,304.6,████████
-10:00,65.32,██████████,798.31,███████████████,48.4,██████████████,666.42,███████████,338.6,████████,7.01,███████████,334.58,█████████
-11:00,100.45,████████████████,631.98,████████████,39.58,███████████,525.57,█████████,364.8,████████,5.95,█████████,257.33,███████
-12:00,75.33,████████████,448.23,████████,45.34,█████████████,1166.18,████████████████████,319.61,███████,3.79,█████,323.61,█████████
-13:00,120.93,████████████████████,765.51,██████████████,56.57,████████████████,441.61,███████,210.25,█████,3.21,█████,265.69,███████
-14:00,62.71,██████████,408.12,███████,43.14,████████████,455.69,███████,762.33,██████████████████,5.36,████████,138.73,████
-15:00,80.52,█████████████,601.87,███████████,47.87,██████████████,321.08,█████,223.0,█████,4.14,██████,195.55,█████
-16:00,78.55,████████████,696.4,█████████████,67.57,████████████████████,273.14,████,0,,5.77,█████████,196.65,█████
-17:00,66.78,███████████,471.04,████████,50.55,██████████████,323.12,█████,748.0,██████████████████,3.88,██████,114.85,███
-18:00,60.0,█████████,549.74,██████████,38.5,███████████,510.29,████████,0,,3.52,█████,166.52,████
-19:00,96.67,███████████████,513.0,█████████,12.45,███,226.86,███,59.5,█,3.32,█████,140.01,████
-20:00,75.0,████████████,621.94,███████████,18.53,█████,369.5,██████,382.67,█████████,3.02,████,100.75,██
-21:00,90.36,██████████████,502.24,█████████,29.1,████████,192.88,███,135.89,███,3.88,██████,128.89,███
-22:00,81.25,█████████████,801.4,███████████████,42.15,████████████,514.0,████████,137.6,███,1.5,██,162.71,████
-23:00,84.83,██████████████,364.0,██████,35.0,██████████,677.12,███████████,221.4,█████,3.89,██████,297.88,████████
+04:00,0,,385.33,███████,0,,459.42,███████,328.2,████████,0,,396.41,███████████
+05:00,0,,418.25,███████,0,,453.27,███████,283.56,██████,0,,336.58,█████████
+06:00,0,,380.32,███████,0,,774.34,█████████████,223.08,█████,0,,493.55,██████████████
+07:00,85.0,███████████████,503.16,█████████,10.0,██,1000.6,█████████████████,439.85,██████████,8.42,█████████████,572.69,████████████████
+08:00,50.5,█████████,564.34,██████████,48.75,██████████████,391.44,██████,197.87,████,12.69,████████████████████,258.27,███████
+09:00,78.56,██████████████,627.46,███████████,36.55,██████████,716.69,████████████,214.77,█████,3.0,████,303.55,████████
+10:00,65.32,████████████,790.66,███████████████,48.55,██████████████,666.42,███████████,338.68,████████,6.75,██████████,326.77,█████████
+11:00,100.45,██████████████████,631.98,████████████,39.58,███████████,525.57,█████████,364.8,████████,5.81,█████████,253.7,███████
+12:00,75.33,██████████████,435.53,████████,45.93,█████████████,1166.18,████████████████████,319.64,███████,3.69,█████,314.9,█████████
+13:00,106.82,████████████████████,736.67,██████████████,56.57,████████████████,441.61,███████,210.25,█████,3.06,████,253.41,███████
+14:00,57.86,██████████,393.41,███████,43.18,████████████,455.69,███████,762.67,██████████████████,5.36,████████,134.14,███
+15:00,78.9,██████████████,601.87,███████████,46.06,█████████████,321.08,█████,223.0,█████,4.14,██████,192.01,█████
+16:00,75.42,██████████████,696.4,█████████████,67.57,████████████████████,273.14,████,0,,5.77,█████████,194.83,█████
+17:00,68.95,████████████,472.61,█████████,50.59,██████████████,323.12,█████,748.0,██████████████████,3.88,██████,115.07,███
+18:00,54.12,██████████,549.74,██████████,38.5,███████████,510.29,████████,0,,3.52,█████,162.96,████
+19:00,66.33,████████████,513.04,█████████,12.45,███,226.86,███,59.5,█,3.33,█████,137.31,████
+20:00,75.0,██████████████,621.94,███████████,18.48,█████,369.5,██████,382.67,█████████,3.02,████,100.24,██
+21:00,92.55,█████████████████,502.33,█████████,29.1,████████,192.88,███,135.89,███,3.88,██████,129.0,███
+22:00,81.25,███████████████,801.4,███████████████,42.5,████████████,514.0,████████,137.71,███,1.5,██,162.86,████
+23:00,84.83,███████████████,364.0,██████,33.71,█████████,677.12,███████████,221.4,█████,3.89,██████,292.55,████████
 
 BEST DAYS TO POST
 Day,QQ_Timmy avg interaction,QQ_Timmy chart,jukan05 avg interaction,jukan05 chart,TrendForce avg interaction,TrendForce chart,dylan522p avg interaction,dylan522p chart,SemiAnalysis_ avg interaction,SemiAnalysis_ chart,technews_tw avg interaction,technews_tw chart,combined avg interaction,combined chart
-Monday,71.67,█████████████,595.34,████████████████,36.3,█████████████████,578.48,████████████,217.24,██████████,4.41,███████████,231.39,███████████
-Tuesday,82.45,███████████████,523.96,██████████████,41.07,████████████████████,593.3,█████████████,280.73,█████████████,5.3,██████████████,248.94,████████████
-Wednesday,64.87,████████████,509.87,██████████████,37.84,██████████████████,448.43,██████████,336.19,███████████████,7.56,████████████████████,224.2,██████████
-Thursday,61.58,███████████,597.07,████████████████,32.7,███████████████,895.41,████████████████████,347.88,████████████████,3.9,██████████,270.13,█████████████
-Friday,59.69,███████████,545.33,███████████████,31.45,███████████████,562.33,████████████,237.5,███████████,2.79,███████,238.35,███████████
-Saturday,82.98,███████████████,713.58,████████████████████,22.0,██████████,428.19,█████████,276.26,████████████,4.32,███████████,313.13,███████████████
-Sunday,106.24,████████████████████,640.09,█████████████████,26.46,████████████,702.28,███████████████,428.67,████████████████████,5.49,██████████████,407.77,████████████████████
+Monday,71.67,█████████████,595.34,████████████████,36.31,█████████████████,578.48,████████████,217.21,██████████,4.41,███████████,231.38,███████████
+Tuesday,82.48,███████████████,523.97,██████████████,41.06,████████████████████,593.29,█████████████,280.77,█████████████,5.3,██████████████,248.95,████████████
+Wednesday,67.56,████████████,509.9,██████████████,38.01,██████████████████,448.43,██████████,336.27,███████████████,7.56,████████████████████,224.53,███████████
+Thursday,54.88,██████████,597.73,████████████████,32.79,███████████████,895.41,████████████████████,347.95,████████████████,3.93,██████████,262.45,████████████
+Friday,56.26,██████████,522.1,██████████████,31.44,███████████████,563.81,████████████,238.55,███████████,2.7,███████,229.27,███████████
+Saturday,82.98,███████████████,713.58,████████████████████,22.0,██████████,428.19,█████████,276.27,████████████,4.32,███████████,313.13,███████████████
+Sunday,106.24,████████████████████,640.09,█████████████████,26.46,████████████,702.28,███████████████,428.76,████████████████████,5.49,██████████████,407.78,████████████████████
 
 IMAGES VS NO IMAGES
 ,QQ_Timmy avg interaction,QQ_Timmy chart,jukan05 avg interaction,jukan05 chart,TrendForce avg interaction,TrendForce chart,dylan522p avg interaction,dylan522p chart,SemiAnalysis_ avg interaction,SemiAnalysis_ chart,technews_tw avg interaction,technews_tw chart,combined avg interaction,combined chart
-With image,81.19,████████████████████,778.54,████████████████████,48.6,████████████████████,590.15,███████████████████,371.05,████████████████████,22.66,████████████████████,378.89,████████████████████
-Without image,66.16,████████████████,435.55,███████████,23.62,█████████,602.08,████████████████████,149.58,████████,2.74,██,180.13,█████████
-Winner,images,22.7% better,images,78.7% better,images,105.8% better,no images,2.0% better,images,148.1% better,images,727.0% better,images,110.3% better
+With image,79.09,████████████████████,775.43,████████████████████,48.52,████████████████████,590.62,███████████████████,371.1,████████████████████,22.71,████████████████████,375.49,████████████████████
+Without image,63.73,████████████████,432.48,███████████,23.7,█████████,602.08,████████████████████,150.2,████████,2.72,██,177.65,█████████
+Winner,images,24.1% better,images,79.3% better,images,104.7% better,no images,1.9% better,images,147.1% better,images,734.9% better,images,111.4% better
 
 TOP KEYWORDS BY AVG INTERACTION
 Rank,QQ_Timmy keyword,QQ_Timmy avg,QQ_Timmy chart,jukan05 keyword,jukan05 avg,jukan05 chart,TrendForce keyword,TrendForce avg,TrendForce chart,dylan522p keyword,dylan522p avg,dylan522p chart,SemiAnalysis_ keyword,SemiAnalysis_ avg,SemiAnalysis_ chart,technews_tw keyword,technews_tw avg,technews_tw chart,combined keyword,combined avg,combined chart
-#1,Thermal Management,128.6,████████████████████,Micron,1252.69,████████████████████,Kioxia,69.08,████████████████████,Supermicro,1102.6,████████████████████,Micron,752.27,████████████████████,Glass Substrate,38.6,████████████████████,Supermicro,920.67,████████████████████
-#2,Glass Substrate,127.38,███████████████████,SK Hynix,976.57,███████████████,AMD AI,67.5,███████████████████,LLM / Foundation Model,851.63,███████████████,Google TPU,594.8,███████████████,PCB / Substrate,21.64,███████████,LLM / Foundation Model,506.27,██████████
-#3,Power Supply,113.67,█████████████████,Kioxia,965.1,███████████████,Micron,59.45,█████████████████,TSMC / Foundry,842.27,███████████████,Advanced Packaging,529.8,██████████████,Advanced Packaging,16.45,████████,Kioxia,437.21,█████████
-#4,PCB / Substrate,113.53,█████████████████,LLM / Foundation Model,812.2,████████████,PLP Packaging,53.6,███████████████,AMD AI,694.83,████████████,LLM / Foundation Model,400.11,██████████,Power Supply,12.86,██████,SK Hynix,379.99,████████
-#5,NVIDIA AI,104.03,████████████████,DRAM / NAND / SSD,810.02,████████████,SK Hynix,52.29,███████████████,Wafer Fab Equipment,674.0,████████████,SK Hynix,382.88,██████████,TSMC / Foundry,10.64,█████,Foxconn / Inventec,338.87,███████
-#6,CCL,102.86,███████████████,Optical / Silicon Photonics,773.6,████████████,DRAM / NAND / SSD,52.23,███████████████,ASIC / Custom Chip,664.5,████████████,NVIDIA AI,341.49,█████████,Optical / Silicon Photonics,7.91,████,Micron,313.42,██████
-#7,Optical / Silicon Photonics,97.38,███████████████,Samsung,765.34,████████████,HBM Memory,44.65,████████████,NVIDIA AI,535.13,█████████,AMD AI,297.38,███████,Samsung,5.87,███,NVIDIA AI,308.03,██████
-#8,Advanced Packaging,96.68,███████████████,ASIC / Custom Chip,760.71,████████████,Samsung,37.99,██████████,Samsung,478.6,████████,DRAM / NAND / SSD,291.3,███████,SK Hynix,5.5,██,AMD AI,306.47,██████
-#9,Micron,88.83,█████████████,AI Server ODM,698.57,███████████,NVIDIA AI,36.75,██████████,AI Server ODM,452.29,████████,HBM Memory,278.2,███████,ASIC / Custom Chip,5.11,██,AI Server ODM,290.11,██████
-#10,Samsung,87.91,█████████████,HBM Memory,680.6,██████████,LLM / Foundation Model,32.33,█████████,Advanced Packaging,214.6,███,TSMC / Foundry,255.22,██████,HBM Memory,5.03,██,Google TPU,288.05,██████
-#11,TSMC / Foundry,84.59,█████████████,NVIDIA AI,675.81,██████████,Optical / Silicon Photonics,30.79,████████,DRAM / NAND / SSD,212.8,███,Samsung,252.62,██████,AMD AI,4.78,██,Samsung,267.66,█████
-#12,Wafer Fab Equipment,81.0,████████████,TSMC / Foundry,538.5,████████,Advanced Packaging,29.8,████████,,,,Optical / Silicon Photonics,224.1,█████,NVIDIA AI,4.74,██,CCL,262.26,█████
-#13,SK Hynix,79.0,████████████,CCL,519.29,████████,TSMC / Foundry,26.54,███████,,,,AI Server ODM,151.77,████,DRAM / NAND / SSD,4.12,██,DRAM / NAND / SSD,228.84,████
-#14,DRAM / NAND / SSD,76.0,███████████,AMD AI,496.33,███████,ASIC / Custom Chip,22.35,██████,,,,ASIC / Custom Chip,70.2,█,Wafer Fab Equipment,4.08,██,ASIC / Custom Chip,224.71,████
-#15,Google TPU,70.0,██████████,PCB / Substrate,483.57,███████,Wafer Fab Equipment,21.93,██████,,,,PCB / Substrate,55.86,█,Google TPU,3.6,█,Wafer Fab Equipment,193.98,████
+#1,Thermal Management,128.6,████████████████████,Micron,1252.69,████████████████████,Kioxia,69.08,████████████████████,Supermicro,1102.6,████████████████████,Micron,754.0,████████████████████,Glass Substrate,39.0,████████████████████,Supermicro,920.67,████████████████████
+#2,Glass Substrate,127.75,███████████████████,SK Hynix,976.57,███████████████,AMD AI,67.5,███████████████████,LLM / Foundation Model,852.63,███████████████,Google TPU,594.8,███████████████,PCB / Substrate,21.64,███████████,LLM / Foundation Model,503.51,██████████
+#3,PCB / Substrate,113.73,█████████████████,Kioxia,965.1,███████████████,Micron,59.4,█████████████████,TSMC / Foundry,842.27,███████████████,Advanced Packaging,530.0,██████████████,Advanced Packaging,16.0,████████,Kioxia,437.21,█████████
+#4,Power Supply,113.67,█████████████████,LLM / Foundation Model,816.0,█████████████,PLP Packaging,53.6,███████████████,AMD AI,694.83,████████████,LLM / Foundation Model,400.15,██████████,Power Supply,12.86,██████,SK Hynix,377.83,████████
+#5,CCL,102.86,███████████████,Optical / Silicon Photonics,773.6,████████████,SK Hynix,52.46,███████████████,Wafer Fab Equipment,674.0,████████████,SK Hynix,385.25,██████████,TSMC / Foundry,10.6,█████,Foxconn / Inventec,317.69,██████
+#6,NVIDIA AI,101.0,███████████████,DRAM / NAND / SSD,765.63,████████████,DRAM / NAND / SSD,52.23,███████████████,ASIC / Custom Chip,664.5,████████████,NVIDIA AI,341.52,█████████,Optical / Silicon Photonics,8.05,████,Micron,307.13,██████
+#7,Optical / Silicon Photonics,97.94,███████████████,ASIC / Custom Chip,760.79,████████████,HBM Memory,44.96,█████████████,NVIDIA AI,535.13,█████████,AMD AI,297.41,███████,Samsung,5.77,██,AMD AI,306.48,██████
+#8,Advanced Packaging,88.0,█████████████,Samsung,755.28,████████████,Samsung,37.79,██████████,Samsung,478.6,████████,DRAM / NAND / SSD,291.2,███████,SK Hynix,5.5,██,NVIDIA AI,305.25,██████
+#9,Micron,81.43,████████████,AI Server ODM,698.57,███████████,NVIDIA AI,36.62,██████████,AI Server ODM,452.29,████████,HBM Memory,279.55,███████,HBM Memory,4.94,██,Google TPU,283.62,██████
+#10,Wafer Fab Equipment,81.0,████████████,HBM Memory,680.6,██████████,LLM / Foundation Model,32.33,█████████,Advanced Packaging,214.6,███,TSMC / Foundry,256.09,██████,ASIC / Custom Chip,4.9,██,AI Server ODM,283.36,██████
+#11,TSMC / Foundry,80.29,████████████,NVIDIA AI,675.92,██████████,Optical / Silicon Photonics,30.79,████████,DRAM / NAND / SSD,212.8,███,Samsung,254.08,██████,AMD AI,4.78,██,Samsung,264.78,█████
+#12,SK Hynix,79.0,████████████,TSMC / Foundry,540.88,████████,Advanced Packaging,29.69,████████,,,,Optical / Silicon Photonics,224.1,█████,NVIDIA AI,4.65,██,CCL,262.26,█████
+#13,Samsung,78.15,████████████,CCL,519.29,████████,TSMC / Foundry,26.46,███████,,,,AI Server ODM,151.69,████,Wafer Fab Equipment,4.08,██,DRAM / NAND / SSD,226.14,████
+#14,DRAM / NAND / SSD,75.11,███████████,AMD AI,496.33,███████,ASIC / Custom Chip,22.35,██████,,,,ASIC / Custom Chip,74.2,█,DRAM / NAND / SSD,3.92,██,ASIC / Custom Chip,219.12,████
+#15,Google TPU,74.4,███████████,PCB / Substrate,483.57,███████,Wafer Fab Equipment,21.93,██████,,,,PCB / Substrate,55.86,█,Google TPU,3.6,█,Wafer Fab Equipment,193.98,████
 
 TOP 10 TWEETS PER ACCOUNT
 Rank,Account,Interaction,Views,Likes,Retweets,Replies,Has Images,Keywords,Timestamp,URL,Text
@@ -97,7 +97,7 @@ Rank,Account,Interaction,Views,Likes,Retweets,Replies,Has Images,Keywords,Timest
 #5,TrendForce,199,53880,159,40,0,yes,#copos; tsmc; panel; ai; tsmc copos; carrier square; taiwan suppliers; round glass; utilization rates,2026-06-12T14:08:51.000Z,https://x.com/trendforce/status/2065436170428035281,"TSMC's #CoPoS is moving fast, and the opportunities for Taiwan suppliers are taking shape. CoPoS replaces traditional round glass carrier with a square panel format, pushing utilization rates above 75%. More on glass material development:  https:// pse.is/977q8c "
 #6,TrendForce,197,29759,157,39,1,yes,samsung; hynix; micron; kioxia; memory; agreements ltas; memory cycle; kioxia rewriting; long term,2026-06-25T09:11:27.000Z,https://x.com/trendforce/status/2070072369541218721,"Micron, Samsung, SK hynix, and Kioxia are rewriting the rules of the memory cycle with new long-term agreements (LTAs)."
 #7,TrendForce,164,21493,141,22,1,yes,#intel; foundry; intel; packaging; node; advanced packaging; intel foundry; 18a node; turnaround coming,2026-04-29T04:07:05.000Z,https://x.com/trendforce/status/2049339662964289700,#Intel Foundry's turnaround may be coming sooner than expected — with big tech now reportedly betting on its 18A node and advanced packaging.
-#8,TrendForce,146,31410,126,19,1,yes,dram; micron; trendforce; shortage; dram shortage; hardware prices; micron cautioned; 2028,2026-06-30T05:59:08.000Z,https://x.com/trendforce/status/2071835911017627981,"The global DRAM shortage and elevated hardware prices are expected to persist through 2028 thanks to surging AI demand. Despite delivering record fiscal third-quarter results, Micron cautioned that supply will take considerable time to catch up with demand. TrendForce attributes"
+#8,TrendForce,145,31604,125,19,1,yes,dram; micron; trendforce; shortage; dram shortage; hardware prices; micron cautioned; 2028,2026-06-30T05:59:08.000Z,https://x.com/trendforce/status/2071835911017627981,"The global DRAM shortage and elevated hardware prices are expected to persist through 2028 thanks to surging AI demand. Despite delivering record fiscal third-quarter results, Micron cautioned that supply will take considerable time to catch up with demand. TrendForce attributes"
 #9,TrendForce,143,10719,108,34,1,no,#hbm; #trendforce; dram; hbm; trendforce; hbm prices; negotiations underway,2026-06-02T16:00:51.000Z,https://x.com/trendforce/status/2061840478081867881," #HBM prices may surge in 2027. HBM4 negotiations are underway, with suppliers holding the upper hand amid tight DRAM supply and rising costs.More analysis from #TrendForce:   https:// buff.ly/EM8TOV3 "
 #10,TrendForce,140,56367,117,22,1,no,#hbf; semiconductor; memory; ai; inference; hbf emerging; hanmi semiconductor; tc bonders; memory ai; customers 2h26,2026-06-05T13:00:30.000Z,https://x.com/trendforce/status/2062882253630271695," #HBF is emerging as the next-gen memory for AI inference, and the equipment race is already underway — Hanmi Semiconductor reportedly set to deliver the first batch of HBF TC bonders to customers in 2H26. More:  https:// buff.ly/8LliD7m "
 
@@ -131,7 +131,7 @@ Rank,Account,Interaction,Views,Likes,Retweets,Replies,Has Images,Keywords,Timest
 #6,technews_tw,57,4085,48,9,0,yes,#小摩點名ai供應鏈五大贏家; ai; 小摩點名ai供應鏈五大贏家; ccl 到高階載板; 到高階載板 substrate; morgan 發布產業報告指出; mlcc,2026-06-16T08:38:21.000Z,https://x.com/technews_tw/status/2066802549764829202,小摩點名 4 大台廠！ #小摩點名AI供應鏈五大贏家 AI 浪潮席捲全球硬體供應鏈，積層陶瓷電容（MLCC）、銅箔基板（CCL）到高階載板（Substrate）產能全面吃緊。外資券商摩根大通（J.P. Morgan）發布產業報告指出，AI…  http:// dlvr.it/TT3lyV
 #7,technews_tw,53,3151,43,7,3,yes,#tsmc; #samsung; #intel; tsmc; samsung; intel; 台積電已將 奈米廠區改規劃以擴充; 億美元 tsmc; 888 在先進製程方面,2026-06-30T10:01:54.000Z,https://x.com/technews_tw/status/2071897003286786431,"大摩調高台積電目標價至新台幣 2,888 元。在先進製程方面，大摩強調台積電在 2 奈米仍是唯一贏家。產業調查顯示 2 奈米需求強勁，台積電已將 3 奈米廠區改規劃以擴充 2 奈米產能，需求較一年前多出每月 6 萬片，並預估其 2027、2028 年資本支出各達 750 億美元。 $TSMC #TSMC #Samsung #Intel"
 #8,technews_tw,53,5094,47,5,1,yes,#功率元件vs被動元件差異一次看懂; 資料中心的電力效率焦慮 功率元件vs被動元件差異一次看懂; 000 億韓元國家資金; 南韓政府啟動 超級創新經濟計畫; 把過去偏重記憶體的產業結構 轉向開闢第二成長曲線; gan,2026-06-22T00:06:17.000Z,https://x.com/technews_tw/status/2068848009501360145,"AI 資料中心的電力效率焦慮！ #功率元件vs被動元件差異一次看懂 南韓政府啟動「超級創新經濟計畫」，將投入逾 5,000 億韓元國家資金，主攻碳化矽（SiC）、氮化鎵（GaN）等次世代功率半導體，把過去偏重記憶體的產業結構，轉向開闢第二成長曲線。三星電子採「晶圓代工＋IDM…  http:// dlvr.it/TT8Lzn"
-#9,technews_tw,49,7500,46,3,0,yes,#大摩點名三大面板廠切入玻璃基板先進封裝; hpc; 三大面板廠誰領先 大摩點名三大面板廠切入玻璃基板先進封裝; 低翹曲及高機械強度等特性 但實際應用於高效能運算; stanley 最新研究報告指出; 摩根士丹利 morgan; morgan stanley,2026-07-02T03:31:18.000Z,https://x.com/technews_tw/status/2072523481485599053,三大面板廠誰領先？ #大摩點名三大面板廠切入玻璃基板先進封裝 摩根士丹利（Morgan Stanley）最新研究報告指出，玻璃面板在半導體先進封裝領域具備大尺寸成本優勢、低訊號損耗、低翹曲及高機械強度等特性，但實際應用於高效能運算（HPC）預計要到 2028 至 2029 年。…  http:// dlvr.it/TTJpfC
+#9,technews_tw,51,7651,48,3,0,yes,#大摩點名三大面板廠切入玻璃基板先進封裝; hpc; 三大面板廠誰領先 大摩點名三大面板廠切入玻璃基板先進封裝; 低翹曲及高機械強度等特性 但實際應用於高效能運算; stanley 最新研究報告指出; 摩根士丹利 morgan; morgan stanley,2026-07-02T03:31:18.000Z,https://x.com/technews_tw/status/2072523481485599053,三大面板廠誰領先？ #大摩點名三大面板廠切入玻璃基板先進封裝 摩根士丹利（Morgan Stanley）最新研究報告指出，玻璃面板在半導體先進封裝領域具備大尺寸成本優勢、低訊號損耗、低翹曲及高機械強度等特性，但實際應用於高效能運算（HPC）預計要到 2028 至 2029 年。…  http:// dlvr.it/TTJpfC
 #10,technews_tw,49,2712,46,3,0,no,#mlcc; #國巨; mlc; 被動元件超級週期; mlcc 高達傳統伺服器的; 日韓高端產能被搶訂一空 更同步調升; mlcc; 515,2026-06-23T02:01:13.000Z,https://x.com/technews_tw/status/2069239320096178207,"單台 AI 伺服器狂吃 44 萬顆 #MLCC，高達傳統伺服器的 15 倍。外資預告「被動元件超級週期」提前爆發，日韓高端產能被搶訂一空，更同步調升 #國巨 目標價至 1,515 元。"
 
 #1,combined,26372,2219969,24000,2300,72,yes,korea tteokbokki; cigarettes bought; went 11; served meal; elder ladies,2025-04-30T23:16:36.000Z,https://x.com/dylan522p/status/1917719768066363629,"In Korea, found this Tteokbokki spot ran by 2 elder ladies I asked if they took card She shook her head, spoke some Korean, walked out, waved me to follow We went to a 7/11 She pointed at some cigarettes, which I bought for her, 3500 won, $2.46 Went back and got served this meal"
