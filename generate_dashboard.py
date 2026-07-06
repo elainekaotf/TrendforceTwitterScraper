@@ -4,6 +4,7 @@ Run after analyze_engagement.py. The docs/ folder is served via GitHub Pages.
 """
 import json
 import os
+import urllib.parse
 from datetime import datetime, timezone, timedelta
 
 TAIWAN_TZ = timezone(timedelta(hours=8))
@@ -12,6 +13,16 @@ JSON_FILE = os.path.join(BASE, 'analysis', 'engagement_analysis.json')
 OUT_FILE  = os.path.join(BASE, 'docs', 'index.html')
 
 os.makedirs(os.path.join(BASE, 'docs'), exist_ok=True)
+
+# Tab-bar favicon: a rounded badge with an ascending bar chart, matching the
+# dashboard's own palette (dark surface, blue bars, gold accent on the peak).
+_FAVICON_SVG_RAW = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<rect width="32" height="32" rx="7" fill="#0d1117"/>
+<rect x="6" y="18" width="4" height="9" rx="1" fill="#3b9eff"/>
+<rect x="13" y="13" width="4" height="14" rx="1" fill="#3b9eff"/>
+<rect x="20" y="6" width="4" height="21" rx="1" fill="#f0b429"/>
+</svg>'''
+FAVICON_SVG = urllib.parse.quote(_FAVICON_SVG_RAW)
 
 with open(JSON_FILE, encoding='utf-8') as f:
     data = json.load(f)
@@ -369,6 +380,11 @@ html = f"""<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>X Analytics Dashboard &mdash; TrendForce Research</title>
+<meta name="description" content="Daily engagement analytics for TrendForce and industry accounts on X: best posting times, top hashtags, follower growth, and top tweets by day.">
+<meta property="og:title" content="X Analytics Dashboard — TrendForce Research">
+<meta property="og:description" content="Daily engagement analytics for TrendForce and industry accounts on X.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,{FAVICON_SVG}">
 <style>
 *,*::before,*::after{{box-sizing:border-box;margin:0;padding:0}}
 :root{{
@@ -379,9 +395,12 @@ html = f"""<!doctype html>
   --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;
 }}
 body{{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:14px;line-height:1.6;min-height:100vh}}
-.header{{border-bottom:1px solid var(--border);padding:20px 32px 0;display:flex;align-items:flex-end;gap:32px;position:sticky;top:0;background:rgba(13,17,23,.92);backdrop-filter:blur(8px);z-index:10}}
-.logo{{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding-bottom:18px;white-space:nowrap}}
-.logo span{{color:var(--blue)}}
+.header{{border-bottom:1px solid var(--border);padding:16px 32px 0;display:flex;align-items:flex-end;gap:32px;position:sticky;top:0;background:rgba(13,17,23,.92);backdrop-filter:blur(8px);z-index:10}}
+.logo{{display:flex;align-items:center;gap:10px;padding-bottom:14px;white-space:nowrap}}
+.logo-mark{{width:26px;height:26px;flex-shrink:0}}
+.logo-text{{display:flex;flex-direction:column;line-height:1.25}}
+.logo-brand{{font-size:13px;font-weight:700;color:var(--text);letter-spacing:.01em}}
+.logo-sub{{font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--blue)}}
 .tabs{{display:flex;gap:0}}
 .tab{{padding:10px 22px 14px;font-size:13px;font-weight:500;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;transition:color .15s,border-color .15s;white-space:nowrap;user-select:none}}
 .tab:hover{{color:var(--text)}}
@@ -460,18 +479,37 @@ body{{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:1
 .chart-tooltip .tt-delta{{margin-left:6px;font-size:10px;font-variant-numeric:tabular-nums}}
 .chart-tooltip .tt-delta.up{{color:var(--green)}}
 .chart-tooltip .tt-delta.down{{color:var(--red)}}
+.site-footer{{max-width:1200px;margin:0 auto;padding:20px 32px 32px;font-size:11px;color:var(--muted);display:flex;gap:8px;justify-content:center;border-top:1px solid var(--border);margin-top:8px}}
+.footer-dot{{opacity:.6}}
 </style>
 </head>
 <body>
 
 <div class="header">
-  <div class="logo">X Analytics &middot; <span>TrendForce Research</span></div>
+  <div class="logo">
+    <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
+      <rect width="32" height="32" rx="7" fill="#161b22"/>
+      <rect x="6" y="18" width="4" height="9" rx="1" fill="#3b9eff"/>
+      <rect x="13" y="13" width="4" height="14" rx="1" fill="#3b9eff"/>
+      <rect x="20" y="6" width="4" height="21" rx="1" fill="#f0b429"/>
+    </svg>
+    <div class="logo-text">
+      <div class="logo-brand">TrendForce Research</div>
+      <div class="logo-sub">X Analytics</div>
+    </div>
+  </div>
   <div class="tabs">
     {tabs_html}
   </div>
 </div>
 
 {pages_html}
+
+<footer class="site-footer">
+  <span>Powered by TrendForce Research</span>
+  <span class="footer-dot">&middot;</span>
+  <span>Data refreshed daily</span>
+</footer>
 
 <script>
 function switchTab(id, el) {{
