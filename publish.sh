@@ -90,7 +90,11 @@ wait_for_run_conclusion() {
   for i in $(seq 1 12); do
     sleep 15
     local raw
-    raw=$(curl -s "https://api.github.com/repos/${REPO}/actions/runs?per_page=10&event=push")
+    # No &event=push filter here on purpose: GitHub's Pages build-and-deploy
+    # workflow runs under event type "dynamic", not "push" — filtering by
+    # push silently excluded every run and made this always time out, even
+    # on deploys that had actually succeeded (found 2026-07-06).
+    raw=$(curl -s "https://api.github.com/repos/${REPO}/actions/runs?per_page=10")
     if echo "$raw" | grep -qi "API rate limit exceeded"; then
       echo "ratelimited"
       return
