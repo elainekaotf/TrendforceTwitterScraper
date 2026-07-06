@@ -255,6 +255,11 @@ def page(pid, d, active=''):
     zh = lang.get('chinese', {})
     en = lang.get('english', {})
 
+    # TrendForce's follower count barely moves day to day, so the auto-scaled
+    # y-axis zooms in tight and the chart reads as an oversized, near-vertical
+    # spike — a shorter canvas keeps it proportional to how little it's saying.
+    follower_chart_height = 140 if handle == 'TrendForce' else 220
+
     no_hashtags = handle in ('dylan522p', 'jukan05', 'QQ_Timmy', 'SemiAnalysis_')
     hashtag_section_html = '' if no_hashtags else f"""<div class="two-col">
     <div class="section">
@@ -296,7 +301,7 @@ window._data['{pid}'] = {{
   <div class="section">
     <div class="section-title">Follower Growth</div>
     <div class="followers-wrap">
-      <canvas id="{pid}-followers" height="220" style="width:100%;max-width:100%"></canvas>
+      <canvas id="{pid}-followers" height="{follower_chart_height}" data-chart-height="{follower_chart_height}" style="width:100%;max-width:100%"></canvas>
       <div class="chart-tooltip" id="{pid}-followers-tooltip"></div>
     </div>
     <div id="{pid}-followers-note" style="font-size:10px;color:var(--muted);margin-top:4px"></div>
@@ -617,7 +622,13 @@ function renderFollowerChart(pid) {{
   }}
 
   const dpr = window.devicePixelRatio || 1;
-  const W = canvas.offsetWidth || 800, H = canvas.offsetHeight || 220;
+  // Read the intended CSS size from the height attribute (set server-side
+  // per account), not offsetHeight — offsetHeight reflects whatever the
+  // canvas box currently measures, which becomes circular once the buffer
+  // below is resized: each render would read back its own inflated height
+  // and grow further on every re-render, ballooning the chart over time.
+  const W = canvas.offsetWidth || 800, H = parseInt(canvas.dataset.chartHeight, 10) || 220;
+  canvas.style.height = H + 'px';  // pin the CSS/layout size independent of the buffer
   canvas.width = W * dpr;
   canvas.height = H * dpr;
   const ctx = canvas.getContext('2d');
