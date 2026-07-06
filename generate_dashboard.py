@@ -255,10 +255,9 @@ def page(pid, d, active=''):
     zh = lang.get('chinese', {})
     en = lang.get('english', {})
 
-    # TrendForce's follower count barely moves day to day, so the auto-scaled
-    # y-axis zooms in tight and the chart reads as an oversized, near-vertical
-    # spike — a shorter canvas keeps it proportional to how little it's saying.
-    follower_chart_height = 140 if handle == 'TrendForce' else 220
+    # All accounts share the same compact follower-chart height for visual
+    # consistency across tabs.
+    follower_chart_height = 140
 
     no_hashtags = handle in ('dylan522p', 'jukan05', 'QQ_Timmy', 'SemiAnalysis_')
     hashtag_section_html = '' if no_hashtags else f"""<div class="two-col">
