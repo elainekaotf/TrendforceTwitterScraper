@@ -4,6 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>X Analytics Dashboard &mdash; TrendForce Research</title>
+<meta name="description" content="Daily engagement analytics for TrendForce and industry accounts on X: best posting times, top hashtags, follower growth, and top tweets by day.">
+<meta property="og:title" content="X Analytics Dashboard — TrendForce Research">
+<meta property="og:description" content="Daily engagement analytics for TrendForce and industry accounts on X.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2032%2032%22%3E%0A%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%227%22%20fill%3D%22%230d1117%22/%3E%0A%3Crect%20x%3D%226%22%20y%3D%2218%22%20width%3D%224%22%20height%3D%229%22%20rx%3D%221%22%20fill%3D%22%233b9eff%22/%3E%0A%3Crect%20x%3D%2213%22%20y%3D%2213%22%20width%3D%224%22%20height%3D%2214%22%20rx%3D%221%22%20fill%3D%22%233b9eff%22/%3E%0A%3Crect%20x%3D%2220%22%20y%3D%226%22%20width%3D%224%22%20height%3D%2221%22%20rx%3D%221%22%20fill%3D%22%23f0b429%22/%3E%0A%3C/svg%3E">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -14,9 +19,12 @@
   --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;
 }
 body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:14px;line-height:1.6;min-height:100vh}
-.header{border-bottom:1px solid var(--border);padding:20px 32px 0;display:flex;align-items:flex-end;gap:32px;position:sticky;top:0;background:rgba(13,17,23,.92);backdrop-filter:blur(8px);z-index:10}
-.logo{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding-bottom:18px;white-space:nowrap}
-.logo span{color:var(--blue)}
+.header{border-bottom:1px solid var(--border);padding:16px 32px 0;display:flex;align-items:flex-end;gap:32px;position:sticky;top:0;background:rgba(13,17,23,.92);backdrop-filter:blur(8px);z-index:10}
+.logo{display:flex;align-items:center;gap:10px;padding-bottom:14px;white-space:nowrap}
+.logo-mark{width:26px;height:26px;flex-shrink:0}
+.logo-text{display:flex;flex-direction:column;line-height:1.25}
+.logo-brand{font-size:13px;font-weight:700;color:var(--text);letter-spacing:.01em}
+.logo-sub{font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--blue)}
 .tabs{display:flex;gap:0}
 .tab{padding:10px 22px 14px;font-size:13px;font-weight:500;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;transition:color .15s,border-color .15s;white-space:nowrap;user-select:none}
 .tab:hover{color:var(--text)}
@@ -95,12 +103,25 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:14
 .chart-tooltip .tt-delta{margin-left:6px;font-size:10px;font-variant-numeric:tabular-nums}
 .chart-tooltip .tt-delta.up{color:var(--green)}
 .chart-tooltip .tt-delta.down{color:var(--red)}
+.site-footer{max-width:1200px;margin:0 auto;padding:20px 32px 32px;font-size:11px;color:var(--muted);display:flex;gap:8px;justify-content:center;border-top:1px solid var(--border);margin-top:8px}
+.footer-dot{opacity:.6}
 </style>
 </head>
 <body>
 
 <div class="header">
-  <div class="logo">X Analytics &middot; <span>TrendForce Research</span></div>
+  <div class="logo">
+    <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
+      <rect width="32" height="32" rx="7" fill="#161b22"/>
+      <rect x="6" y="18" width="4" height="9" rx="1" fill="#3b9eff"/>
+      <rect x="13" y="13" width="4" height="14" rx="1" fill="#3b9eff"/>
+      <rect x="20" y="6" width="4" height="21" rx="1" fill="#f0b429"/>
+    </svg>
+    <div class="logo-text">
+      <div class="logo-brand">TrendForce Research</div>
+      <div class="logo-sub">X Analytics</div>
+    </div>
+  </div>
   <div class="tabs">
     <div class="tab active" onclick="switchTab('trendforce',this)">@TrendForce</div><div class="tab" onclick="switchTab('technewstw',this)">@technews_tw</div><div class="tab" onclick="switchTab('dylan522p',this)">@dylan522p</div><div class="tab" onclick="switchTab('jukan05',this)">@jukan05</div><div class="tab" onclick="switchTab('qqtimmy',this)">@QQ_Timmy</div><div class="tab" onclick="switchTab('semianalysis',this)">@SemiAnalysis_</div>
   </div>
@@ -127,7 +148,7 @@ window._data['trendforce'] = {
 };
 </script>
 <div class="page active" id="page-trendforce">
-  <p class="updated">Based on 534 tweets scraped from @TrendForce &middot; Updated July 06, 2026 10:17 Taiwan Time</p>
+  <p class="updated">Based on 534 tweets scraped from @TrendForce &middot; Updated July 06, 2026 13:38 Taiwan Time</p>
   
     <div class="kpi-row">
       <div class="kpi"><div class="kpi-label">Total Tweets</div><div class="kpi-value blue">534</div></div>
@@ -497,7 +518,7 @@ window._data['technewstw'] = {
 };
 </script>
 <div class="page " id="page-technewstw">
-  <p class="updated">Based on 1,014 tweets scraped from @technews_tw &middot; Updated July 06, 2026 10:17 Taiwan Time</p>
+  <p class="updated">Based on 1,014 tweets scraped from @technews_tw &middot; Updated July 06, 2026 13:38 Taiwan Time</p>
   
     <div class="kpi-row">
       <div class="kpi"><div class="kpi-label">Total Tweets</div><div class="kpi-value blue">1,014</div></div>
@@ -969,7 +990,7 @@ window._data['dylan522p'] = {
 };
 </script>
 <div class="page " id="page-dylan522p">
-  <p class="updated">Based on 593 tweets scraped from @dylan522p &middot; Updated July 06, 2026 10:17 Taiwan Time</p>
+  <p class="updated">Based on 593 tweets scraped from @dylan522p &middot; Updated July 06, 2026 13:38 Taiwan Time</p>
   
     <div class="kpi-row">
       <div class="kpi"><div class="kpi-label">Total Tweets</div><div class="kpi-value blue">593</div></div>
@@ -1330,7 +1351,7 @@ window._data['jukan05'] = {
 };
 </script>
 <div class="page " id="page-jukan05">
-  <p class="updated">Based on 686 tweets scraped from @jukan05 &middot; Updated July 06, 2026 10:17 Taiwan Time</p>
+  <p class="updated">Based on 686 tweets scraped from @jukan05 &middot; Updated July 06, 2026 13:38 Taiwan Time</p>
   
     <div class="kpi-row">
       <div class="kpi"><div class="kpi-label">Total Tweets</div><div class="kpi-value blue">686</div></div>
@@ -1691,7 +1712,7 @@ window._data['qqtimmy'] = {
 };
 </script>
 <div class="page " id="page-qqtimmy">
-  <p class="updated">Based on 401 tweets scraped from @QQ_Timmy &middot; Updated July 06, 2026 10:17 Taiwan Time</p>
+  <p class="updated">Based on 401 tweets scraped from @QQ_Timmy &middot; Updated July 06, 2026 13:38 Taiwan Time</p>
   
     <div class="kpi-row">
       <div class="kpi"><div class="kpi-label">Total Tweets</div><div class="kpi-value blue">401</div></div>
@@ -2052,7 +2073,7 @@ window._data['semianalysis'] = {
 };
 </script>
 <div class="page " id="page-semianalysis">
-  <p class="updated">Based on 748 tweets scraped from @SemiAnalysis_ &middot; Updated July 06, 2026 10:17 Taiwan Time</p>
+  <p class="updated">Based on 748 tweets scraped from @SemiAnalysis_ &middot; Updated July 06, 2026 13:38 Taiwan Time</p>
   
     <div class="kpi-row">
       <div class="kpi"><div class="kpi-label">Total Tweets</div><div class="kpi-value blue">748</div></div>
@@ -2393,6 +2414,12 @@ window._data['semianalysis'] = {
     </div>
   </div>
 </div>
+
+<footer class="site-footer">
+  <span>Powered by TrendForce Research</span>
+  <span class="footer-dot">&middot;</span>
+  <span>Data refreshed daily</span>
+</footer>
 
 <script>
 function switchTab(id, el) {
