@@ -199,19 +199,37 @@ async function scrapeTimeline(page, handle, maxScrolls = 15) {
 }
 
 async function main() {
-  const browser = await chromium.launch({
-    headless: false,
-    args: ['--no-sandbox', '--disable-blink-features=AutomationControlled'],
-  });
-
   const contextOptions = {
     userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
     viewport: { width: 1280, height: 900 },
   };
   if (fs.existsSync(SESSION_FILE)) contextOptions.storageState = SESSION_FILE;
 
-  const context = await browser.newContext(contextOptions);
-  const page = await context.newPage();
+  let browser = await chromium.launch({
+    headless: false,
+    args: ['--no-sandbox', '--disable-blink-features=AutomationControlled'],
+  });
+  let context = await browser.newContext(contextOptions);
+  let page = await context.newPage();
+
+  // If the browser/page dies mid-run (observed 2026-07-07: an X error mid-scroll
+  // triggered a reload that never came back, closing the page entirely and taking
+  // the whole script down with it — nothing after that account ever scraped, and
+  // the daily run silently stopped before watchlist/competitors/publish ever ran),
+  // relaunch a fresh browser so the remaining accounts still get processed instead
+  // of one account's crash aborting everything downstream.
+  async function relaunchBrowser() {
+    console.log('  Browser/page appears dead — relaunching a fresh one...');
+    try { await browser.close(); } catch {}
+    browser = await chromium.launch({
+      headless: false,
+      args: ['--no-sandbox', '--disable-blink-features=AutomationControlled'],
+    });
+    context = await browser.newContext(contextOptions);
+    page = await context.newPage();
+  }
+
+  const failedAccounts = [];
 
   try {
     // Verify logged in
@@ -224,119 +242,146 @@ async function main() {
     }
 
     for (const handle of INDIVIDUAL_ACCOUNTS) {
-      const cleanHandle = handle.replace('@', '');
-      const csvFile = path.join(CSV_DIR, `${cleanHandle}.csv`);
-
-      // Load existing rows, keyed by tweetUrl, so we can refresh stats in place.
-      // Self-heals duplicate rows left behind by prior overlapping scrape runs:
-      // if a URL already appeared, keep whichever row has higher views and
-      // drop the other instead of silently leaving both in the file.
-      const existingByUrl = new Map(); // url -> { cols, idx }
-      const existingLines = [];
-      const droppedIdx = new Set();
-      if (fs.existsSync(csvFile)) {
-        const lines = fs.readFileSync(csvFile, 'utf8').split('\n').filter(l => l.trim());
-        let dupesFound = 0;
-        for (const line of lines.slice(1)) {
-          const cols = parseCsvLine(line);
-          const idx = existingLines.push(line) - 1;
-          const url = unquote(cols[7]);
-          if (!url) continue;
-          const prior = existingByUrl.get(url);
-          if (!prior) {
-            existingByUrl.set(url, { cols, idx });
-            continue;
-          }
-          dupesFound++;
-          const priorViews = parseFollowerCount(prior.cols[1]) || 0;
-          const thisViews = parseFollowerCount(cols[1]) || 0;
-          if (thisViews > priorViews) {
-            droppedIdx.add(prior.idx);
-            existingByUrl.set(url, { cols, idx });
-          } else {
-            droppedIdx.add(idx);
+      try {
+        await scrapeOneAccount(page, handle);
+      } catch (err) {
+        console.error(`  [!] ${handle} failed: ${err.message}`);
+        failedAccounts.push(handle);
+        // A page/browser closure kills every subsequent page.* call the same
+        // way, so detect that specifically and recover instead of letting it
+        // silently take out every account after this one.
+        if (page.isClosed() || /Target page|context or browser has been closed/i.test(err.message)) {
+          try {
+            await relaunchBrowser();
+          } catch (relaunchErr) {
+            console.error(`  [!] Could not relaunch browser: ${relaunchErr.message}. Aborting remaining accounts.`);
+            break;
           }
         }
-        if (dupesFound) console.log(`  ${handle}: cleaned up ${dupesFound} duplicate row(s) found in CSV.`);
-        console.log(`${handle}: ${existingByUrl.size} existing tweets in CSV.`);
       }
-
-      // Scrape recent timeline (fewer scrolls for daily top-up)
-      console.log(`${handle}: scraping recent tweets...`);
-      const maxScrolls = 15;
-      const tweets = await scrapeTimeline(page, handle, maxScrolls);
-
-      // Split into: brand-new tweets to enrich+append, and existing tweets
-      // (posted within the last 7 days) whose stats we refresh in place —
-      // views/likes keep climbing for days after posting, so a one-time
-      // scrape at first sight was undercounting them.
-      const now = Date.now();
-      const seenThisBatch = new Set();
-      const newTweets = [];
-      let updatedCount = 0;
-
-      for (const t of tweets) {
-        if (t.isRetweet) continue;
-        if (!t.tweetUrl) continue;
-        const urlHandle = t.tweetUrl.split('/')[3]?.toLowerCase();
-        if (urlHandle !== cleanHandle.toLowerCase()) continue;
-        if (seenThisBatch.has(t.tweetUrl)) continue;
-        seenThisBatch.add(t.tweetUrl);
-
-        const existing = existingByUrl.get(t.tweetUrl);
-        if (existing) {
-          const age = now - new Date(t.timestamp).getTime();
-          if (age <= UPDATE_WINDOW_MS) {
-            existing.cols[1] = t.views || '0';
-            existing.cols[2] = t.likes;
-            existing.cols[3] = t.retweets;
-            existing.cols[4] = t.replies;
-            existing.cols[5] = t.hasImages ? 'yes' : 'no';
-            existingLines[existing.idx] = existing.cols.join(',');
-            updatedCount++;
-          }
-          continue;
-        }
-        newTweets.push(t);
-      }
-
-      // Always record follower count regardless of new/updated tweets
-      const followerCount = await scrapeFollowers(page, handle);
-      if (followerCount) recordFollowers(cleanHandle, followerCount);
-
-      console.log(`  ${newTweets.length} new tweets, ${updatedCount} existing tweets refreshed.`);
-      if (newTweets.length === 0 && updatedCount === 0 && droppedIdx.size === 0) {
-        console.log(`  Nothing new, updated, or duplicated for ${handle}, skipping write.`);
-        continue;
-      }
-
-      let newRows = '';
-      if (newTweets.length) {
-        console.log(`  Enriching ${newTweets.length} new tweets...`);
-        const enriched = enrichTweets(newTweets);
-        newRows = enriched.map(t =>
-          [t.timestamp, t.views ?? '0', t.likes, t.retweets, t.replies,
-           t.hasImages ? 'yes' : 'no',
-           safe(t.keywords), safe(t.tweetUrl), safe(t.text), safe(t.translatedText ?? '')].join(',')
-        ).join('\n');
-      }
-
-      const header = 'timestamp,views,likes,retweets,replies,hasImages,keywords,tweetUrl,text,translated_text\n';
-      const survivingLines = existingLines.filter((_, i) => !droppedIdx.has(i));
-      // Prepend new rows (newest first) then existing rows (refreshed in place)
-      const combined = header
-        + (newRows ? newRows + '\n' : '')
-        + survivingLines.join('\n') + (survivingLines.length ? '\n' : '');
-      fs.writeFileSync(csvFile, combined);
-      console.log(`Updated csv/${cleanHandle}.csv (+${newTweets.length} new, ${updatedCount} refreshed, ${droppedIdx.size} duplicates removed, ${existingByUrl.size + newTweets.length} total)`);
     }
 
+    if (failedAccounts.length) {
+      console.log(`\nCompleted with failures on: ${failedAccounts.join(', ')}`);
+    }
   } catch (err) {
     console.error('Error:', err.message);
-    await page.screenshot({ path: 'error-screenshot.png' });
+    if (!page.isClosed()) {
+      await page.screenshot({ path: 'error-screenshot.png' }).catch(() => {});
+    }
   } finally {
-    await browser.close();
+    await browser.close().catch(() => {});
   }
+
+  if (failedAccounts.length) process.exitCode = 1;
+}
+
+async function scrapeOneAccount(page, handle) {
+  const cleanHandle = handle.replace('@', '');
+  const csvFile = path.join(CSV_DIR, `${cleanHandle}.csv`);
+
+  // Load existing rows, keyed by tweetUrl, so we can refresh stats in place.
+  // Self-heals duplicate rows left behind by prior overlapping scrape runs:
+  // if a URL already appeared, keep whichever row has higher views and
+  // drop the other instead of silently leaving both in the file.
+  const existingByUrl = new Map(); // url -> { cols, idx }
+  const existingLines = [];
+  const droppedIdx = new Set();
+  if (fs.existsSync(csvFile)) {
+    const lines = fs.readFileSync(csvFile, 'utf8').split('\n').filter(l => l.trim());
+    let dupesFound = 0;
+    for (const line of lines.slice(1)) {
+      const cols = parseCsvLine(line);
+      const idx = existingLines.push(line) - 1;
+      const url = unquote(cols[7]);
+      if (!url) continue;
+      const prior = existingByUrl.get(url);
+      if (!prior) {
+        existingByUrl.set(url, { cols, idx });
+        continue;
+      }
+      dupesFound++;
+      const priorViews = parseFollowerCount(prior.cols[1]) || 0;
+      const thisViews = parseFollowerCount(cols[1]) || 0;
+      if (thisViews > priorViews) {
+        droppedIdx.add(prior.idx);
+        existingByUrl.set(url, { cols, idx });
+      } else {
+        droppedIdx.add(idx);
+      }
+    }
+    if (dupesFound) console.log(`  ${handle}: cleaned up ${dupesFound} duplicate row(s) found in CSV.`);
+    console.log(`${handle}: ${existingByUrl.size} existing tweets in CSV.`);
+  }
+
+  // Scrape recent timeline (fewer scrolls for daily top-up)
+  console.log(`${handle}: scraping recent tweets...`);
+  const maxScrolls = 15;
+  const tweets = await scrapeTimeline(page, handle, maxScrolls);
+
+  // Split into: brand-new tweets to enrich+append, and existing tweets
+  // (posted within the last 7 days) whose stats we refresh in place —
+  // views/likes keep climbing for days after posting, so a one-time
+  // scrape at first sight was undercounting them.
+  const now = Date.now();
+  const seenThisBatch = new Set();
+  const newTweets = [];
+  let updatedCount = 0;
+
+  for (const t of tweets) {
+    if (t.isRetweet) continue;
+    if (!t.tweetUrl) continue;
+    const urlHandle = t.tweetUrl.split('/')[3]?.toLowerCase();
+    if (urlHandle !== cleanHandle.toLowerCase()) continue;
+    if (seenThisBatch.has(t.tweetUrl)) continue;
+    seenThisBatch.add(t.tweetUrl);
+
+    const existing = existingByUrl.get(t.tweetUrl);
+    if (existing) {
+      const age = now - new Date(t.timestamp).getTime();
+      if (age <= UPDATE_WINDOW_MS) {
+        existing.cols[1] = t.views || '0';
+        existing.cols[2] = t.likes;
+        existing.cols[3] = t.retweets;
+        existing.cols[4] = t.replies;
+        existing.cols[5] = t.hasImages ? 'yes' : 'no';
+        existingLines[existing.idx] = existing.cols.join(',');
+        updatedCount++;
+      }
+      continue;
+    }
+    newTweets.push(t);
+  }
+
+  // Always record follower count regardless of new/updated tweets
+  const followerCount = await scrapeFollowers(page, handle);
+  if (followerCount) recordFollowers(cleanHandle, followerCount);
+
+  console.log(`  ${newTweets.length} new tweets, ${updatedCount} existing tweets refreshed.`);
+  if (newTweets.length === 0 && updatedCount === 0 && droppedIdx.size === 0) {
+    console.log(`  Nothing new, updated, or duplicated for ${handle}, skipping write.`);
+    return;
+  }
+
+  let newRows = '';
+  if (newTweets.length) {
+    console.log(`  Enriching ${newTweets.length} new tweets...`);
+    const enriched = enrichTweets(newTweets);
+    newRows = enriched.map(t =>
+      [t.timestamp, t.views ?? '0', t.likes, t.retweets, t.replies,
+       t.hasImages ? 'yes' : 'no',
+       safe(t.keywords), safe(t.tweetUrl), safe(t.text), safe(t.translatedText ?? '')].join(',')
+    ).join('\n');
+  }
+
+  const header = 'timestamp,views,likes,retweets,replies,hasImages,keywords,tweetUrl,text,translated_text\n';
+  const survivingLines = existingLines.filter((_, i) => !droppedIdx.has(i));
+  // Prepend new rows (newest first) then existing rows (refreshed in place)
+  const combined = header
+    + (newRows ? newRows + '\n' : '')
+    + survivingLines.join('\n') + (survivingLines.length ? '\n' : '');
+  fs.writeFileSync(csvFile, combined);
+  console.log(`Updated csv/${cleanHandle}.csv (+${newTweets.length} new, ${updatedCount} refreshed, ${droppedIdx.size} duplicates removed, ${existingByUrl.size + newTweets.length} total)`);
 }
 
 main();
