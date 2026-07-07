@@ -374,6 +374,7 @@ pages_html = ''.join([
     for i, (k, d) in enumerate(accounts)
 ])
 
+
 html = f"""<!doctype html>
 <html lang="en">
 <head>
