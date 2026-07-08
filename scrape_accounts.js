@@ -325,9 +325,11 @@ async function scrapeOneAccount(page, handle) {
     console.log(`${handle}: ${existingByUrl.size} existing tweets in CSV.`);
   }
 
-  // Scrape recent timeline (fewer scrolls for daily top-up)
+  // Scrape recent timeline (fewer scrolls for daily top-up; override via
+  // MAX_SCROLLS env var for a deeper one-off pass, e.g. onboarding a
+  // brand-new account with no history yet)
   console.log(`${handle}: scraping recent tweets...`);
-  const maxScrolls = 15;
+  const maxScrolls = parseInt(process.env.MAX_SCROLLS, 10) || 15;
   const tweets = await scrapeTimeline(page, handle, maxScrolls);
 
   // Split into: brand-new tweets to enrich+append, and existing tweets
