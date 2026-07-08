@@ -3,6 +3,7 @@ const { chromium } = require('playwright');
 const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
+const { toTaiwanISOString } = require('./tz_util');
 
 const sinceDate = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString().slice(0, 10);
 
@@ -135,7 +136,7 @@ async function scrapeTweets(page, query, label, maxScrolls = 15) {
     await page.waitForTimeout(2500);
   }
 
-  return tweets.map(t => ({ ...t, competitorMentioned: label }));
+  return tweets.map(t => ({ ...t, timestamp: toTaiwanISOString(t.timestamp), competitorMentioned: label }));
 }
 
 const safe = (s) => `"${String(s ?? '').replace(/"/g, '""').replace(/\n/g, ' ')}"`;

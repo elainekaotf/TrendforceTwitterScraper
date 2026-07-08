@@ -4,6 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const https = require('https');
 const { execSync } = require('child_process');
+const { toTaiwanISOString } = require('./tz_util');
 
 const sinceArg = process.argv.includes('--since') ? process.argv[process.argv.indexOf('--since') + 1] : null;
 const sinceDate = sinceArg || new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString().slice(0, 10);
@@ -198,6 +199,7 @@ async function scrapeTweets(page, query, maxScrolls = 15) {
     await page.waitForTimeout(2500);
   }
 
+  tweets.forEach(t => { t.timestamp = toTaiwanISOString(t.timestamp); });
   return tweets;
 }
 

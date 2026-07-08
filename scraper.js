@@ -4,6 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const https = require('https');
 const { execSync } = require('child_process');
+const { toTaiwanISOString } = require('./tz_util');
 
 // Build since date — pass --since YYYY-MM-DD to override, defaults to last 24h
 const sinceArg = process.argv.includes('--since') ? process.argv[process.argv.indexOf('--since') + 1] : null;
@@ -241,6 +242,7 @@ async function scrapeAccountTimeline(page, handle, maxScrolls = 15) {
     await page.waitForTimeout(2500);
   }
 
+  tweets.forEach(t => { t.timestamp = toTaiwanISOString(t.timestamp); });
   return tweets;
 }
 
@@ -308,6 +310,7 @@ async function scrapeTweets(page, query, maxScrolls = 15) {
     await page.waitForTimeout(2500);
   }
 
+  tweets.forEach(t => { t.timestamp = toTaiwanISOString(t.timestamp); });
   return tweets;
 }
 

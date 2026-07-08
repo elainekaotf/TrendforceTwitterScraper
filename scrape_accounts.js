@@ -3,6 +3,7 @@ const { chromium } = require('playwright');
 const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
+const { toTaiwanISOString } = require('./tz_util');
 
 const SESSION_FILE = path.join(__dirname, 'session.json');
 const CSV_DIR = path.join(__dirname, 'csv');
@@ -199,6 +200,11 @@ async function scrapeTimeline(page, handle, maxScrolls = 15) {
     });
     await page.waitForTimeout(4000);
   }
+
+  // Convert from X's raw UTC timestamp to Taiwan time so everything
+  // downstream (CSV rows, 7-day refresh window, top-tweets-by-day grouping)
+  // reflects Taiwan wall-clock time consistently.
+  tweets.forEach(t => { t.timestamp = toTaiwanISOString(t.timestamp); });
 
   return tweets;
 }
