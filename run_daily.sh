@@ -10,7 +10,30 @@ FAILURES=()
 rm -f raw_tweets.json tf_reference.json
 
 npm run scrape || { echo "[WARN] scrape failed"; FAILURES+=("mention scrape"); }
-npm run scrape:accounts || { echo "[WARN] scrape:accounts failed"; FAILURES+=("account scrape"); }
+
+# Capture scrape:accounts output (while still streaming it to cron.log as
+# before) so we can verify @TrendForce was actually attempted — checking
+# "did the CSV change" isn't reliable, since a run with genuinely nothing
+# new/updated for TrendForce in that window won't touch the file at all
+# even though it scraped successfully.
+ACCOUNTS_LOG=$(mktemp)
+npm run scrape:accounts 2>&1 | tee "$ACCOUNTS_LOG"
+ACCOUNTS_EXIT=${PIPESTATUS[0]:-$?}
+if [ "$ACCOUNTS_EXIT" -ne 0 ]; then
+  echo "[WARN] scrape:accounts failed"
+  FAILURES+=("account scrape")
+fi
+
+if ! grep -q "@TrendForce: scraping recent tweets" "$ACCOUNTS_LOG" || grep -q "\[!\] @TrendForce failed" "$ACCOUNTS_LOG"; then
+  echo "[WARN] @TrendForce wasn't successfully scraped this run — retrying it specifically..."
+  node scrape_accounts.js @TrendForce
+  if [ $? -ne 0 ]; then
+    echo "[WARN] @TrendForce retry failed"
+    FAILURES+=("TrendForce not scraped")
+  fi
+fi
+rm -f "$ACCOUNTS_LOG"
+
 npm run scrape:watchlist || { echo "[WARN] scrape:watchlist failed"; FAILURES+=("watchlist scrape"); }
 npm run scrape:competitors || { echo "[WARN] scrape:competitors failed"; FAILURES+=("competitor scrape"); }
 

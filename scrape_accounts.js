@@ -49,7 +49,12 @@ async function scrapeFollowers(page, handle) {
   }
 }
 
-const INDIVIDUAL_ACCOUNTS = ['@TrendForce', '@technews_tw', '@dylan522p', '@jukan05', '@QQ_Timmy', '@SemiAnalysis_'];
+const ALL_ACCOUNTS = ['@TrendForce', '@technews_tw', '@dylan522p', '@jukan05', '@QQ_Timmy', '@SemiAnalysis_'];
+// Optional: `node scrape_accounts.js @Handle1 @Handle2` scrapes only those
+// accounts (used by run_daily.sh to retry just @TrendForce if it got missed
+// earlier in a run). No handle args = scrape everything, as before.
+const requestedHandles = process.argv.slice(2).filter(a => a.startsWith('@'));
+const INDIVIDUAL_ACCOUNTS = requestedHandles.length ? requestedHandles : ALL_ACCOUNTS;
 
 function enrichTweets(tweets) {
   try {
