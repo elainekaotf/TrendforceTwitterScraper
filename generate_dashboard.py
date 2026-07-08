@@ -518,6 +518,14 @@ function switchTab(id, el) {{
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   el.classList.add('active');
   document.getElementById('page-' + id).classList.add('active');
+  // The follower chart's canvas has zero width while its page is hidden
+  // (display:none), so its very first render — which happens for every
+  // tab on page load, before the user has switched to most of them —
+  // falls back to a default width instead of the real one. That stale,
+  // wrong-scale point layout then desyncs from mouse-position math forever
+  // after, since nothing else ever re-renders it. Re-render now that this
+  // tab's canvas is actually visible and has its real width.
+  if (typeof renderFollowerChart === 'function') renderFollowerChart(id);
 }}
 
 function renderBars(pid, key, color, valKey, labelKey, opts) {{
