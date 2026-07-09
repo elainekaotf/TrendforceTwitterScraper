@@ -42,6 +42,14 @@ npm run scrape:competitors || { echo "[WARN] scrape:competitors failed"; FAILURE
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] Running publish..."
 bash /Users/elainekao/TrendforceTwitterScraper/publish.sh || { echo "[ERROR] publish failed"; FAILURES+=("publish"); }
 
+# TrendForceDash runs on its own independent schedule (0/4/6/8/12/16/18/20),
+# not this repo's :30-past-the-hour schedule - a fresh scrape here could sit
+# unsynced for hours until TrendForceDash's own next scheduled run. Sync and
+# push it immediately after every run here instead of waiting.
+echo "[$(date '+%Y-%m-%d %H:%M:%S')] Syncing TrendForceDash..."
+bash /Users/elainekao/TrendForceDash/run_pipeline.sh core || { echo "[WARN] TrendForceDash core sync failed"; FAILURES+=("TrendForceDash core sync"); }
+bash /Users/elainekao/TrendForceDash/run_pipeline.sh accounts || { echo "[WARN] TrendForceDash accounts sync failed"; FAILURES+=("TrendForceDash accounts sync"); }
+
 if [ ${#FAILURES[@]} -gt 0 ]; then
   JOINED=$(IFS=', '; echo "${FAILURES[*]}")
   bash alert.sh "TrendForce Daily Run — Issues" "Steps that failed: ${JOINED}. Check cron.log."
