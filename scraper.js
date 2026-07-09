@@ -27,6 +27,8 @@ const KNOWN_ACCOUNTS = {
   '@sssjeffpu':        { name: 'Jeff Pu',             type: 'amplifier',  region: 'Asia' },
   '@LinQingV':         { name: 'Macro_Lin',           type: 'amplifier',  region: 'China' },
   '@antiAIvo':         { name: '纳米AI',              type: 'amplifier',  region: 'China' },
+  '@tphuang':          { name: 'tphuang',             type: 'competitor', region: 'International' },
+  '@tengyanAI':        { name: 'tengyanAI',           type: 'competitor', region: 'International' },
   '@dylan522p':        { name: 'Dylan Patel',         type: 'competitor', region: 'International' },
   '@SemiAnalysis_':    { name: 'SemiAnalysis',        type: 'competitor', region: 'International' },
   '@ChipsandWafers':   { name: 'Chips & Wafers',      type: 'competitor', region: 'International' },
