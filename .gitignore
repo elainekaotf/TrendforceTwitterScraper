@@ -4,3 +4,5 @@ session.json
 results.json
 results.csv
 error-screenshot.png
+cron.log
+.DS_Store
