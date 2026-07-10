@@ -50,7 +50,8 @@ async function scrapeFollowers(page, handle) {
   }
 }
 
-const ALL_ACCOUNTS = ['@TrendForce', '@technews_tw', '@dylan522p', '@jukan05', '@QQ_Timmy', '@SemiAnalysis_'];
+const ALL_ACCOUNTS = ['@TrendForce', '@technews_tw', '@dylan522p', '@jukan05', '@QQ_Timmy', '@SemiAnalysis_',
+  '@tphuang', '@tengyanAI'];
 // Optional: `node scrape_accounts.js @Handle1 @Handle2` scrapes only those
 // accounts (used by run_daily.sh to retry just @TrendForce if it got missed
 // earlier in a run). No handle args = scrape everything, as before.
