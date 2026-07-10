@@ -157,9 +157,12 @@ async function main() {
   const page = await context.newPage();
 
   try {
+    // A fixed wait after only 'domcontentloaded' (not full render/hydration)
+    // intermittently misfired as "not logged in" against a genuinely fresh,
+    // valid session (reproduced 2026-07-10, same as scrape_accounts.js) -
+    // wait for the actual login-only element instead of guessing a delay.
     await page.goto('https://x.com/home', { waitUntil: 'domcontentloaded' });
-    await page.waitForTimeout(2000);
-    const isLoggedIn = await page.$('[data-testid="SideNav_AccountSwitcher_Button"]');
+    const isLoggedIn = await page.waitForSelector('[data-testid="SideNav_AccountSwitcher_Button"]', { timeout: 15000 }).catch(() => null);
     if (!isLoggedIn) {
       console.log('Not logged in. Please run the main scraper first to save a session.');
       process.exit(1);
