@@ -1,101 +1,102 @@
 SUMMARY -- @technews_tw
-  Total tweets:       954
-  Avg interaction:    4.63
+  Total tweets:       1245
+  Avg interaction:    4.92
   Median interaction: 2
   Max interaction:    174
-  Avg views:          380.95
+  Avg views:          422.49
   Max views:          31167
 ""
 "BEST HOURS TO POST (Taiwan Time, avg total interaction):"
-  07:00  █████████████  8.42  (19 tweets)
-  08:00  ████████████████████  12.69  (29 tweets)
-  09:00  ████  3.0  (51 tweets)
-  10:00  ██████████  6.75  (79 tweets)
-  11:00  █████████  5.81  (80 tweets)
-  12:00  █████  3.69  (67 tweets)
-  13:00  ████  3.06  (77 tweets)
-  14:00  ████████  5.36  (64 tweets)
-  15:00  ██████  4.14  (63 tweets)
-  16:00  █████████  5.77  (82 tweets)
-  17:00  ██████  3.88  (86 tweets)
-  18:00  █████  3.52  (79 tweets)
-  19:00  █████  3.33  (63 tweets)
-  20:00  ████  3.02  (43 tweets)
-  21:00  ██████  3.88  (41 tweets)
-  22:00  ██  1.5  (22 tweets)
-  23:00  ██████  3.89  (9 tweets)
+  00:00  ████████████████████  18.0  (1 tweets)
+  07:00  ████████  7.41  (27 tweets)
+  08:00  ██████████████  13.13  (39 tweets)
+  09:00  ███  3.57  (72 tweets)
+  10:00  ███████  6.65  (98 tweets)
+  11:00  ███████  7.17  (102 tweets)
+  12:00  █████  5.13  (90 tweets)
+  13:00  ███  3.46  (94 tweets)
+  14:00  █████  5.05  (87 tweets)
+  15:00  ████  4.12  (84 tweets)
+  16:00  █████  5.35  (105 tweets)
+  17:00  ████  3.96  (106 tweets)
+  18:00  ███  3.54  (99 tweets)
+  19:00  ███  3.51  (84 tweets)
+  20:00  ████  3.86  (58 tweets)
+  21:00  ████  3.88  (52 tweets)
+  22:00  ██  1.9  (30 tweets)
+  23:00  ████  4.0  (17 tweets)
 ""
 AVG INTERACTION BY DAY OF WEEK:
-  Monday      ███████████  4.41
-  Tuesday     ██████████████  5.3
-  Wednesday   ████████████████████  7.56
-  Thursday    ██████████  3.93
-  Friday      ███████  2.7
-  Saturday    ███████████  4.32
-  Sunday      ██████████████  5.49
+  Monday      ████████████  4.68
+  Tuesday     █████████████  5.0
+  Wednesday   ████████████████████  7.26
+  Thursday    ███████████  4.16
+  Friday      █████████  3.41
+  Saturday    ████████████  4.53
+  Sunday      ███████████████████  7.09
 ""
 IMAGES VS NO IMAGES:
-  With image:    avg 22.71  (91 tweets)
-  Without image: avg 2.72  (863 tweets)
-  -> images perform 734.9% better
+  With image:    avg 22.34  (114 tweets)
+  Without image: avg 3.16  (1131 tweets)
+  -> images perform 607.0% better
 ""
 TOP KEYWORDS BY AVG INTERACTION (min 3 tweets):
   Glass Substrate                avg 39.0     (5 tweets)
-  PCB / Substrate                avg 21.64    (14 tweets)
-  Advanced Packaging             avg 16.0     (21 tweets)
-  Power Supply                   avg 12.86    (14 tweets)
-  TSMC / Foundry                 avg 10.6     (92 tweets)
-  Optical / Silicon Photonics    avg 8.05     (22 tweets)
-  Samsung                        avg 5.77     (39 tweets)
+  PCB / Substrate                avg 22.56    (18 tweets)
+  Semiconductor Materials        avg 17.6     (5 tweets)
+  Advanced Packaging             avg 13.78    (27 tweets)
+  Power Supply                   avg 10.84    (19 tweets)
+  Optical / Silicon Photonics    avg 9.93     (30 tweets)
+  TSMC / Foundry                 avg 9.74     (112 tweets)
+  AMD AI                         avg 9.0      (22 tweets)
+  Thermal Management             avg 7.62     (8 tweets)
+  ASIC / Custom Chip             avg 6.41     (29 tweets)
+  DRAM / NAND / SSD              avg 6.32     (44 tweets)
+  NVIDIA AI                      avg 5.66     (67 tweets)
   SK Hynix                       avg 5.5      (20 tweets)
-  HBM Memory                     avg 4.94     (36 tweets)
-  ASIC / Custom Chip             avg 4.9      (21 tweets)
-  AMD AI                         avg 4.78     (18 tweets)
-  NVIDIA AI                      avg 4.65     (54 tweets)
-  Wafer Fab Equipment            avg 4.08     (13 tweets)
-  DRAM / NAND / SSD              avg 3.92     (26 tweets)
-  Google TPU                     avg 3.6      (5 tweets)
+  Samsung                        avg 5.19     (53 tweets)
+  Wafer Fab Equipment            avg 5.13     (15 tweets)
 ""
 BEST KEYWORD + IMAGE COMBOS:
-  morgan stanley                 avg 112.5
+  morgan stanley                 avg 62.25
+  iphone                         avg 37.5
   #tsmc                          avg 37.0
   #samsung                       avg 37.0
   #intel                         avg 37.0
-  tsmc                           avg 37.0
 ""
 TOP HASHTAGS BY AVG INTERACTION (min 2 tweets):
-  #mlcc                     avg 12.4     (5 tweets)  ████████████████████  views avg: 767.0
-  #台達電                      avg 9.6      (5 tweets)  ███████████████  views avg: 602.0
+  #國巨                       avg 11.86    (7 tweets)  ████████████████████  views avg: 806.0
+  #mlcc                     avg 11.12    (8 tweets)  ██████████████████  views avg: 817.25
+  #台達電                      avg 9.43     (7 tweets)  ███████████████  views avg: 593.86
   #供應鏈                      avg 7.62     (8 tweets)  ████████████  views avg: 604.75
-  #半導體                      avg 7.46     (13 tweets)  ████████████  views avg: 501.69
-  #台積電                      avg 6.36     (50 tweets)  ██████████  views avg: 370.6
-  #cpo                      avg 5.5      (10 tweets)  ████████  views avg: 333.2
-  #英特爾                      avg 5.0      (23 tweets)  ████████  views avg: 338.26
-  #聯電                       avg 5.0      (5 tweets)  ████████  views avg: 378.6
+  #半導體                      avg 7.14     (14 tweets)  ████████████  views avg: 487.29
+  #台積電                      avg 5.98     (64 tweets)  ██████████  views avg: 388.36
+  #先進封裝                     avg 5.62     (8 tweets)  █████████  views avg: 422.88
+  #dram                     avg 5.57     (7 tweets)  █████████  views avg: 489.14
+  #nand                     avg 5.43     (7 tweets)  █████████  views avg: 356.86
+  #cpo                      avg 5.33     (15 tweets)  ████████  views avg: 344.93
+  #amd                      avg 5.33     (15 tweets)  ████████  views avg: 574.27
+  #被動元件                     avg 5.2      (5 tweets)  ████████  views avg: 423.6
+  #鎧俠                       avg 5.0      (6 tweets)  ████████  views avg: 301.83
   #晶圓代工                     avg 5.0      (5 tweets)  ████████  views avg: 293.0
-  #ai基礎設施                   avg 4.86     (7 tweets)  ███████  views avg: 260.0
-  #nand                     avg 4.8      (5 tweets)  ███████  views avg: 320.4
-  #台股                       avg 4.67     (9 tweets)  ███████  views avg: 306.11
-  #ai伺服器                    avg 4.29     (7 tweets)  ██████  views avg: 292.0
-  #trendforce               avg 4.29     (7 tweets)  ██████  views avg: 300.29
-  #記憶體                      avg 4.23     (13 tweets)  ██████  views avg: 338.54
+  #英特爾                      avg 4.97     (32 tweets)  ████████  views avg: 400.31
 ""
 MOST USED HASHTAGS:
-  #ai                         86 tweets  ████████████████████  avg interaction: 3.01
-  #台積電                        50 tweets  ███████████  avg interaction: 6.36
-  #spacex                     38 tweets  ████████  avg interaction: 1.92
-  #蘋果                         37 tweets  ████████  avg interaction: 2.92
-  #輝達                         32 tweets  ███████  avg interaction: 3.53
-  #openai                     24 tweets  █████  avg interaction: 1.58
-  #英特爾                        23 tweets  █████  avg interaction: 5.0
-  #anthropic                  23 tweets  █████  avg interaction: 1.7
-  #三星                         16 tweets  ███  avg interaction: 3.19
-  #google                     16 tweets  ███  avg interaction: 3.69
-  #黃仁勳                        15 tweets  ███  avg interaction: 2.67
-  #川普                         15 tweets  ███  avg interaction: 2.2
-  #sk海力士                      14 tweets  ███  avg interaction: 2.64
-  #記憶體                        13 tweets  ███  avg interaction: 4.23
-  #微軟                         13 tweets  ███  avg interaction: 1.69
+  #ai                        139 tweets  ████████████████████  avg interaction: 3.91
+  #台積電                        64 tweets  █████████  avg interaction: 5.98
+  #蘋果                         47 tweets  ██████  avg interaction: 3.13
+  #spacex                     44 tweets  ██████  avg interaction: 2.41
+  #輝達                         43 tweets  ██████  avg interaction: 3.51
+  #英特爾                        32 tweets  ████  avg interaction: 4.97
+  #三星                         29 tweets  ████  avg interaction: 3.41
+  #openai                     28 tweets  ████  avg interaction: 1.75
+  #anthropic                  25 tweets  ███  avg interaction: 1.8
+  #川普                         22 tweets  ███  avg interaction: 2.5
+  #sk海力士                      22 tweets  ███  avg interaction: 3.18
+  #google                     21 tweets  ███  avg interaction: 3.71
+  #美光                         20 tweets  ██  avg interaction: 4.7
+  #馬斯克                        19 tweets  ██  avg interaction: 2.68
+  #記憶體                        19 tweets  ██  avg interaction: 4.74
 ""
 TOP 10 TWEETS BY INTERACTION:
   1. [174 total | 136 likes  13 retweets  25 replies  views: 31167]
@@ -113,18 +114,18 @@ TOP 10 TWEETS BY INTERACTION:
   5. [71 total | 62 likes  9 retweets  0 replies  views: 9064]
      800V HVDC 成 AI 資料中心新供電標準！ #AI資料中心價值鏈 AI 運算競賽正從晶片延伸至電力基礎設施。市場傳出，台達電布局多年的 ±400V 及 800V 高壓直流供電（HVDC）方案，已分別獲得兩家美系 AI 指標客戶採用，...
      https://x.com/technews_tw/status/2062324291346313413
-  6. [57 total | 48 likes  9 retweets  0 replies  views: 4085]
+  6. [60 total | 49 likes  11 retweets  0 replies  views: 5092]
+     這次 A20 Pro 採 WMCM 封裝！ #iPhone18Pro主機板高解析照片流出 蘋果 iPhone 18 Pro 系列預計約兩個月後登場，近日疑似新機主機板的高解析照片曝光，顯示首款 2 奈米晶片 A20 Pro 採用晶圓級多晶片...
+     https://x.com/technews_tw/status/2074700404030599657
+  7. [58 total | 54 likes  4 retweets  0 replies  views: 4198]
+     高盛稱國巨居於絕佳的受惠戰略位置！ #高盛調高國巨目標假至1490元 受到 AI 需求爆發所引發的「產能排擠效應」，預估將為標準型積層陶瓷電容（MLCC）帶來驚人的漲價循環，高盛維持對國巨的「買進」評等，並將目標價從原本的 346 元，一口...
+     https://x.com/technews_tw/status/2073982075037008112
+  8. [57 total | 51 likes  4 retweets  2 replies  views: 10051]
+     AMD 執行長蘇姿丰也曾是苦主！ #SemiAnalysis遭爆球員兼裁判 研究機構 SemiAnalysis 近日陷入「球員兼裁判」爭議。該機構 6 月初發布報告，以良率偏低、交付延誤為由，質疑 CPO 量產時程恐延至 2028、2029...
+     https://x.com/technews_tw/status/2073610638702842166
+  9. [57 total | 48 likes  9 retweets  0 replies  views: 4085]
      小摩點名 4 大台廠！ #小摩點名AI供應鏈五大贏家 AI 浪潮席捲全球硬體供應鏈，積層陶瓷電容（MLCC）、銅箔基板（CCL）到高階載板（Substrate）產能全面吃緊。外資券商摩根大通（J.P. Morgan）發布產業報告指出，AI…...
      https://x.com/technews_tw/status/2066802549764829202
-  7. [53 total | 43 likes  7 retweets  3 replies  views: 3151]
+  10. [53 total | 43 likes  7 retweets  3 replies  views: 3151]
 "     大摩調高台積電目標價至新台幣 2,888 元。在先進製程方面，大摩強調台積電在 2 奈米仍是唯一贏家。產業調查顯示 2 奈米需求強勁，台積電已將 3 奈米廠區改規劃以擴充 2 奈米產能，需求較一年前多出每月 6 萬片，並預估其 2027、2..."
      https://x.com/technews_tw/status/2071897003286786431
-  8. [53 total | 47 likes  5 retweets  1 replies  views: 5094]
-"     AI 資料中心的電力效率焦慮！ #功率元件vs被動元件差異一次看懂 南韓政府啟動「超級創新經濟計畫」，將投入逾 5,000 億韓元國家資金，主攻碳化矽（SiC）、氮化鎵（GaN）等次世代功率半導體，把過去偏重記憶體的產業結構，轉向開闢第二成..."
-     https://x.com/technews_tw/status/2068848009501360145
-  9. [51 total | 48 likes  3 retweets  0 replies  views: 7651]
-     三大面板廠誰領先？ #大摩點名三大面板廠切入玻璃基板先進封裝 摩根士丹利（Morgan Stanley）最新研究報告指出，玻璃面板在半導體先進封裝領域具備大尺寸成本優勢、低訊號損耗、低翹曲及高機械強度等特性，但實際應用於高效能運算（HPC）...
-     https://x.com/technews_tw/status/2072523481485599053
-  10. [49 total | 46 likes  3 retweets  0 replies  views: 2712]
-"     單台 AI 伺服器狂吃 44 萬顆 #MLCC，高達傳統伺服器的 15 倍。外資預告「被動元件超級週期」提前爆發，日韓高端產能被搶訂一空，更同步調升 #國巨 目標價至 1,515 元。"
-     https://x.com/technews_tw/status/2069239320096178207

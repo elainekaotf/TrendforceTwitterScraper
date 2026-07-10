@@ -1,19 +1,19 @@
 SUMMARY -- @dylan522p
-  Total tweets:       593
-  Avg interaction:    596.24
-  Median interaction: 290
+  Total tweets:       594
+  Avg interaction:    596.39
+  Median interaction: 291
   Max interaction:    26372
-  Avg views:          111491.59
+  Avg views:          111667.72
   Max views:          6654201
 ""
 "BEST HOURS TO POST (Taiwan Time, avg total interaction):"
   00:00  █████  343.34  (35 tweets)
-  01:00  ██████████  616.91  (32 tweets)
-  02:00  ██████████  612.46  (37 tweets)
-  03:00  ████████  486.28  (36 tweets)
+  01:00  ██████████  624.47  (32 tweets)
+  02:00  ██████████  612.54  (37 tweets)
+  03:00  ████████  486.39  (36 tweets)
   04:00  ███████  459.42  (33 tweets)
   05:00  ███████  453.27  (44 tweets)
-  06:00  █████████████  774.34  (50 tweets)
+  06:00  █████████████  767.67  (51 tweets)
   07:00  █████████████████  1000.6  (50 tweets)
   08:00  ██████  391.44  (34 tweets)
   09:00  ████████████  716.69  (36 tweets)
@@ -34,21 +34,21 @@ SUMMARY -- @dylan522p
 ""
 AVG INTERACTION BY DAY OF WEEK:
   Monday      ████████████  578.48
-  Tuesday     █████████████  593.29
+  Tuesday     █████████████  591.49
   Wednesday   ██████████  448.43
-  Thursday    ████████████████████  895.41
-  Friday      ████████████  563.81
+  Thursday    ████████████████████  895.46
+  Friday      ████████████  566.33
   Saturday    █████████  428.19
   Sunday      ███████████████  702.28
 ""
 IMAGES VS NO IMAGES:
-  With image:    avg 590.62  (302 tweets)
-  Without image: avg 602.08  (291 tweets)
-  -> no images perform 1.9% better
+  With image:    avg 591.44  (302 tweets)
+  Without image: avg 601.51  (292 tweets)
+  -> no images perform 1.7% better
 ""
 TOP KEYWORDS BY AVG INTERACTION (min 3 tweets):
   Supermicro                     avg 1102.6   (5 tweets)
-  LLM / Foundation Model         avg 852.63   (101 tweets)
+  LLM / Foundation Model         avg 850.01   (102 tweets)
   TSMC / Foundry                 avg 842.27   (15 tweets)
   AMD AI                         avg 694.83   (23 tweets)
   Wafer Fab Equipment            avg 674.0    (9 tweets)

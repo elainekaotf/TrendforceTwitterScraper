@@ -1,72 +1,73 @@
 SUMMARY -- @SemiAnalysis_
-  Total tweets:       737
-  Avg interaction:    299.76
-  Median interaction: 125
+  Total tweets:       797
+  Avg interaction:    293.0
+  Median interaction: 124
   Max interaction:    14700
-  Avg views:          59187.99
-  Max views:          2145700
+  Avg views:          61594.75
+  Max views:          2223564
 ""
 "BEST HOURS TO POST (Taiwan Time, avg total interaction):"
-  00:00  ██████████  425.0  (14 tweets)
-  01:00  ████████  341.1  (147 tweets)
-  02:00  ████████████████████  813.59  (22 tweets)
-  03:00  ██████  272.41  (29 tweets)
-  04:00  ████████  328.2  (30 tweets)
-  05:00  ██████  283.56  (103 tweets)
-  06:00  █████  223.08  (36 tweets)
-  07:00  ██████████  439.85  (40 tweets)
-  08:00  ████  197.87  (23 tweets)
-  09:00  █████  214.77  (84 tweets)
-  10:00  ████████  338.68  (40 tweets)
+  00:00  ██████████  428.47  (15 tweets)
+  01:00  ████████  329.46  (164 tweets)
+  02:00  ████████████████████  813.73  (22 tweets)
+  03:00  ██████  274.73  (30 tweets)
+  04:00  ████████  328.53  (30 tweets)
+  05:00  ███████  288.13  (118 tweets)
+  06:00  █████  226.03  (36 tweets)
+  07:00  ██████████  440.12  (40 tweets)
+  08:00  ████  196.54  (24 tweets)
+  09:00  █████  209.9  (88 tweets)
+  10:00  ████████  326.45  (42 tweets)
   11:00  ████████  364.8  (25 tweets)
   12:00  ███████  319.64  (28 tweets)
   13:00  █████  210.25  (4 tweets)
-  14:00  ██████████████████  762.67  (3 tweets)
+  14:00  ██████████████████  762.0  (3 tweets)
   15:00  █████  223.0  (1 tweets)
-  17:00  ██████████████████  748.0  (1 tweets)
+  17:00  ██████  277.67  (3 tweets)
+  18:00  ██████████  423.0  (1 tweets)
   19:00  █  59.5  (2 tweets)
   20:00  █████████  382.67  (3 tweets)
-  21:00  ███  135.89  (57 tweets)
-  22:00  ███  137.71  (35 tweets)
+  21:00  ███  137.0  (67 tweets)
+  22:00  ███  123.98  (41 tweets)
   23:00  █████  221.4  (10 tweets)
 ""
 AVG INTERACTION BY DAY OF WEEK:
-  Monday      ██████████  217.21
-  Tuesday     █████████████  280.77
-  Wednesday   ███████████████  336.27
-  Thursday    ████████████████  347.95
-  Friday      ███████████  238.55
-  Saturday    ████████████  276.27
-  Sunday      ████████████████████  428.76
+  Monday      ██████████  234.58
+  Tuesday     ████████████  263.8
+  Wednesday   ██████████████  312.25
+  Thursday    ███████████████  338.89
+  Friday      ██████████  234.33
+  Saturday    █████████████  283.18
+  Sunday      ████████████████████  431.8
 ""
 IMAGES VS NO IMAGES:
-  With image:    avg 371.1  (499 tweets)
-  Without image: avg 150.2  (238 tweets)
-  -> images perform 147.1% better
+  With image:    avg 365.75  (534 tweets)
+  Without image: avg 145.29  (263 tweets)
+  -> images perform 151.7% better
 ""
 TOP KEYWORDS BY AVG INTERACTION (min 3 tweets):
-  Micron                         avg 754.0    (11 tweets)
-  Google TPU                     avg 594.8    (10 tweets)
-  Advanced Packaging             avg 530.0    (5 tweets)
-  LLM / Foundation Model         avg 400.15   (93 tweets)
-  SK Hynix                       avg 385.25   (8 tweets)
-  NVIDIA AI                      avg 341.52   (122 tweets)
-  AMD AI                         avg 297.41   (32 tweets)
-  DRAM / NAND / SSD              avg 291.2    (10 tweets)
-  HBM Memory                     avg 279.55   (20 tweets)
-  TSMC / Foundry                 avg 256.09   (23 tweets)
-  Samsung                        avg 254.08   (13 tweets)
+  Micron                         avg 757.82   (11 tweets)
+  Google TPU                     avg 546.0    (11 tweets)
+  LLM / Foundation Model         avg 396.19   (100 tweets)
+  SK Hynix                       avg 390.5    (8 tweets)
+  NVIDIA AI                      avg 346.67   (131 tweets)
+  AMD AI                         avg 297.03   (33 tweets)
+  Advanced Packaging             avg 294.45   (11 tweets)
+  DRAM / NAND / SSD              avg 263.0    (14 tweets)
+  TSMC / Foundry                 avg 239.04   (27 tweets)
+  HBM Memory                     avg 230.04   (28 tweets)
+  Samsung                        avg 226.31   (16 tweets)
   Optical / Silicon Photonics    avg 224.1    (10 tweets)
   AI Server ODM                  avg 151.69   (13 tweets)
-  ASIC / Custom Chip             avg 74.2     (5 tweets)
-  PCB / Substrate                avg 55.86    (7 tweets)
+  ASIC / Custom Chip             avg 74.0     (6 tweets)
+  PCB / Substrate                avg 71.67    (9 tweets)
 ""
 BEST KEYWORD + IMAGE COMBOS:
-  image                          avg 3432.6
+  image                          avg 3434.2
   smartphone                     avg 1715.33
-  tpu                            avg 1308.0
   apple                          avg 1175.2
   ai value                       avg 1102.0
+  micron                         avg 984.6
 ""
 TOP HASHTAGS BY AVG INTERACTION (min 2 tweets):
 ""
