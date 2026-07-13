@@ -152,7 +152,16 @@ async function scrapeTimeline(page, handle, maxScrolls = 15) {
 
         const hasImages = el.querySelectorAll('[data-testid="tweetPhoto"] img').length > 0;
 
-        const isRetweet = text.startsWith('RT @');
+        // text.startsWith('RT @') only ever caught X's old-style retweet
+        // syntax, which the modern Repost button doesn't produce at all -
+        // a repost renders as the identical original tweet with no text
+        // change, distinguished only by a small "<handle> reposted" label
+        // above the tweet (data-testid="socialContext"). Checked zero
+        // historical rows matched the old text-only check despite reposts
+        // clearly existing in practice - this is why.
+        const socialContextEl = el.querySelector('[data-testid="socialContext"]');
+        const socialContextText = socialContextEl ? socialContextEl.innerText : '';
+        const isRetweet = text.startsWith('RT @') || /repost|retweet/i.test(socialContextText);
 
         const userEl = el.querySelector('[data-testid="User-Name"]');
         const userLinks = userEl ? Array.from(userEl.querySelectorAll('a')) : [];
