@@ -46,9 +46,25 @@ bash /Users/elainekao/TrendforceTwitterScraper/publish.sh || { echo "[ERROR] pub
 # not this repo's :30-past-the-hour schedule - a fresh scrape here could sit
 # unsynced for hours until TrendForceDash's own next scheduled run. Sync and
 # push it immediately after every run here instead of waiting.
-echo "[$(date '+%Y-%m-%d %H:%M:%S')] Syncing TrendForceDash..."
-bash /Users/elainekao/TrendForceDash/run_pipeline.sh core || { echo "[WARN] TrendForceDash core sync failed"; FAILURES+=("TrendForceDash core sync"); }
-bash /Users/elainekao/TrendForceDash/run_pipeline.sh accounts || { echo "[WARN] TrendForceDash accounts sync failed"; FAILURES+=("TrendForceDash accounts sync"); }
+#
+# Backgrounded (not awaited): trendforce-daily is a single launchd Label with
+# a fixed StartCalendarInterval (0:30/4:30/8:30/...) - launchd does NOT queue
+# a missed firing while the previous instance of the same Label is still
+# running, it just skips it. This chained sync occasionally took several
+# hours (observed 2026-07-14: a run starting 00:44 didn't finish until
+# ~09:32), which silently ate the 4:30 AND 8:30 firings entirely - nothing
+# re-scraped tphuang (or anyone else) for ~9 hours, purely because this
+# script itself hadn't returned yet. Running it detached lets run_daily.sh
+# (and therefore the next scheduled scrape) finish on time regardless of how
+# long the sync takes. run_pipeline.sh has its own independent
+# FAILURES/alert.sh handling and logs to TrendForceDash/pipeline.log, so
+# nothing here needs to wait for or re-check its result.
+echo "[$(date '+%Y-%m-%d %H:%M:%S')] Syncing TrendForceDash (backgrounded)..."
+nohup bash -c '
+  bash /Users/elainekao/TrendForceDash/run_pipeline.sh core
+  bash /Users/elainekao/TrendForceDash/run_pipeline.sh accounts
+' >> /Users/elainekao/TrendForceDash/pipeline.log 2>&1 &
+disown
 
 if [ ${#FAILURES[@]} -gt 0 ]; then
   JOINED=$(IFS=', '; echo "${FAILURES[*]}")
