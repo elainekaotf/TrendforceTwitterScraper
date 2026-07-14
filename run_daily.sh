@@ -59,6 +59,17 @@ bash /Users/elainekao/TrendforceTwitterScraper/publish.sh || { echo "[ERROR] pub
 # long the sync takes. run_pipeline.sh has its own independent
 # FAILURES/alert.sh handling and logs to TrendForceDash/pipeline.log, so
 # nothing here needs to wait for or re-check its result.
+#
+# nohup + disown alone are NOT enough under launchd (found the hard way,
+# same day: the 16:30 run's backgrounded sync never even logged its first
+# line). nohup only blocks SIGHUP; launchd's default behavior on a user
+# LaunchAgent is to kill the ENTIRE process group the moment the tracked
+# process (this script) exits, which kills the backgrounded child too since
+# disown doesn't move it to a different process group. The actual fix is
+# the plist's own <key>AbandonProcessGroup</key><true/> (added to
+# com.elainekao.trendforce-daily.plist), which tells launchd to leave
+# stragglers alone - nothing to change here, just don't remove the
+# backgrounding above assuming it's self-sufficient without that plist key.
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] Syncing TrendForceDash (backgrounded)..."
 nohup bash -c '
   bash /Users/elainekao/TrendForceDash/run_pipeline.sh core
