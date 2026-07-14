@@ -62,6 +62,7 @@ def account_data(key):
         top_tweets   = d.get('top_tweets', [])[:10],
         top_tweets_by_views = d.get('top_tweets_by_views', [])[:10],
         daily_top_tweets = d.get('daily_top_tweets', {}),
+        daily_top_tweets_by_views = d.get('daily_top_tweets_by_views', {}),
         language     = d.get('language'),
     )
 
@@ -299,7 +300,8 @@ window._data['{pid}'] = {{
   zh_ht:    {js(zh.get('top_hashtags',[]))},
   en_ht:    {js(en.get('top_hashtags',[]))},
   follower_history: {js(follower_history.get(handle, []))},
-  daily_top_tweets: {js(d.get('daily_top_tweets', {}))}
+  daily_top_tweets: {js(d.get('daily_top_tweets', {}))},
+  daily_top_tweets_by_views: {js(d.get('daily_top_tweets_by_views', {}))}
 }};
 </script>"""
 
@@ -348,7 +350,16 @@ window._data['{pid}'] = {{
       <button class="day-nav-btn" id="{pid}-nextday" onclick="stepDay('{pid}',1)" aria-label="Next day with tweets">&rarr;</button>
       <span class="day-nav-note" id="{pid}-daynote"></span>
     </div>
-    <div id="{pid}-daily-tweets" style="margin-top:14px"></div>
+    <div class="two-col" style="margin-top:14px">
+      <div>
+        <div class="subsection-title">By Interaction</div>
+        <div id="{pid}-daily-tweets"></div>
+      </div>
+      <div>
+        <div class="subsection-title">By Views</div>
+        <div id="{pid}-daily-tweets-views"></div>
+      </div>
+    </div>
   </div>
   <div class="two-col">
     <div class="section">
@@ -415,6 +426,7 @@ body{{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:1
 .kpi-value.blue{{color:var(--blue)}}.kpi-value.gold{{color:var(--gold)}}.kpi-value.green{{color:var(--green)}}.kpi-value.teal{{color:var(--teal)}}
 .section{{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:20px 22px;margin-bottom:16px}}
 .section-title{{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:16px}}
+.subsection-title{{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:10px}}
 .two-col{{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}}
 @media(max-width:700px){{.two-col{{grid-template-columns:1fr}}}}
 .bar-row{{display:flex;align-items:center;gap:10px;margin-bottom:4px;font-size:12px}}
@@ -794,16 +806,19 @@ function stepDay(pid, dir) {{
 function renderDailyTop(pid) {{
   const input = document.getElementById(pid + '-daypicker');
   const container = document.getElementById(pid + '-daily-tweets');
+  const viewsContainer = document.getElementById(pid + '-daily-tweets-views');
   const note = document.getElementById(pid + '-daynote');
   const prevBtn = document.getElementById(pid + '-prevday');
   const nextBtn = document.getElementById(pid + '-nextday');
   if (!input || !container) return;
   const daily = (window._data[pid] || {{}}).daily_top_tweets || {{}};
+  const dailyViews = (window._data[pid] || {{}}).daily_top_tweets_by_views || {{}};
   const days = Object.keys(daily).sort();
   const tweets = daily[input.value] || [];
-  container.innerHTML = tweets.length
-    ? tweets.map(tweetCardHtml).join('')
-    : '<div style="color:var(--muted);font-size:12px;padding:8px">No tweets scraped for this day.</div>';
+  const tweetsByViews = dailyViews[input.value] || [];
+  const emptyMsg = '<div style="color:var(--muted);font-size:12px;padding:8px">No tweets scraped for this day.</div>';
+  container.innerHTML = tweets.length ? tweets.map(tweetCardHtml).join('') : emptyMsg;
+  if (viewsContainer) viewsContainer.innerHTML = tweetsByViews.length ? tweetsByViews.map(tweetCardHtml).join('') : emptyMsg;
   if (note) note.textContent = `${{days.length}} day${{days.length===1?'':'s'}} with data (${{days[0]}} to ${{days[days.length-1]}})`;
   if (prevBtn) prevBtn.disabled = !days.length || input.value <= days[0];
   if (nextBtn) nextBtn.disabled = !days.length || input.value >= days[days.length-1];

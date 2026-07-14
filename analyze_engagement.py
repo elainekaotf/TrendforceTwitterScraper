@@ -310,10 +310,9 @@ def analyze(handle, tweets):
             continue
         daily_groups[dt.strftime('%Y-%m-%d')].append(t)
 
-    daily_top_tweets = {}
-    for day, day_tweets in daily_groups.items():
-        top3 = sorted(day_tweets, key=lambda x: x['interaction'], reverse=True)[:3]
-        daily_top_tweets[day] = [{
+    def top3_cards(day_tweets, sort_key):
+        top3 = sorted(day_tweets, key=sort_key, reverse=True)[:3]
+        return [{
             'rank': i+1, 'interaction': t['interaction'],
             'likes': t['likes'], 'retweets': t['retweets'], 'replies': t['replies'],
             'views': t['views'] or 0,
@@ -321,7 +320,14 @@ def analyze(handle, tweets):
             'keywords': t['keywords'], 'has_images': t['has_images'],
         } for i, t in enumerate(top3)]
 
+    daily_top_tweets = {}
+    daily_top_tweets_by_views = {}
+    for day, day_tweets in daily_groups.items():
+        daily_top_tweets[day] = top3_cards(day_tweets, lambda x: x['interaction'])
+        daily_top_tweets_by_views[day] = top3_cards(day_tweets, lambda x: x['views'] or 0)
+
     results['daily_top_tweets'] = daily_top_tweets
+    results['daily_top_tweets_by_views'] = daily_top_tweets_by_views
 
     # ── 6. Keyword + image combo ──────────────────────────
     img_kw_interactions = defaultdict(list)
