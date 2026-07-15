@@ -1,78 +1,80 @@
 SUMMARY -- @QQ_Timmy
-  Total tweets:       451
-  Avg interaction:    70.8
+  Total tweets:       494
+  Avg interaction:    72.01
   Median interaction: 60
   Max interaction:    493
-  Avg views:          13639.08
+  Avg views:          13639.09
   Max views:          487534
 ""
 "BEST HOURS TO POST (Taiwan Time, avg total interaction):"
-  00:00  ███████████████  75.43  (61 tweets)
+  00:00  ███████████████  75.98  (62 tweets)
   01:00  █████████████  65.49  (37 tweets)
   02:00  ███████  37.0  (1 tweets)
-  07:00  ████████████████  85.0  (1 tweets)
-  08:00  ██████████  52.53  (51 tweets)
-  09:00  ██████████████  71.35  (20 tweets)
-  10:00  ██████████████  71.29  (31 tweets)
+  07:00  ██████████  54.0  (2 tweets)
+  08:00  ███████████  55.72  (61 tweets)
+  09:00  ██████████████  73.0  (22 tweets)
+  10:00  ███████████████  79.66  (32 tweets)
   11:00  ████████████████████  100.08  (12 tweets)
-  12:00  ███████████████  75.33  (3 tweets)
-  13:00  ██████████████████  91.75  (24 tweets)
-  14:00  ███████████  59.62  (39 tweets)
-  15:00  ███████████████  77.16  (32 tweets)
-  16:00  ███████████████  76.66  (35 tweets)
+  12:00  █████████████  66.0  (7 tweets)
+  13:00  ██████████████████  91.96  (24 tweets)
+  14:00  ████████████  61.17  (41 tweets)
+  15:00  ███████████████  77.28  (32 tweets)
+  16:00  ███████████████  76.19  (36 tweets)
   17:00  █████████████  69.32  (19 tweets)
-  18:00  ████████████  62.89  (18 tweets)
-  19:00  ██████████████  71.0  (10 tweets)
-  20:00  ████████████  62.52  (21 tweets)
-  21:00  █████████████████  87.2  (15 tweets)
-  22:00  ███████████████  79.75  (12 tweets)
-  23:00  █████████████  69.78  (9 tweets)
+  18:00  ████████████  63.0  (18 tweets)
+  19:00  ██████████████  70.64  (14 tweets)
+  20:00  ██████████████  73.47  (30 tweets)
+  21:00  ████████████████  82.89  (18 tweets)
+  22:00  ████████████████  84.33  (15 tweets)
+  23:00  █████████████  67.73  (11 tweets)
 ""
 AVG INTERACTION BY DAY OF WEEK:
-  Monday      █████████████  71.98
-  Tuesday     ███████████████  78.57
-  Wednesday   ████████████  65.41
-  Thursday    ███████████  56.87
-  Friday      ███████████  58.05
-  Saturday    ████████████████  85.46
-  Sunday      ████████████████████  102.85
+  Monday      ██████████████  72.39
+  Tuesday     ███████████████  75.91
+  Wednesday   █████████████  63.5
+  Thursday    ████████████  60.13
+  Friday      █████████████  68.11
+  Saturday    ████████████████  81.77
+  Sunday      ████████████████████  97.31
 ""
 IMAGES VS NO IMAGES:
-  With image:    avg 76.43  (235 tweets)
-  Without image: avg 64.69  (216 tweets)
-  -> images perform 18.1% better
+  With image:    avg 78.51  (261 tweets)
+  Without image: avg 64.73  (233 tweets)
+  -> images perform 21.3% better
 ""
 TOP KEYWORDS BY AVG INTERACTION (min 3 tweets):
   Thermal Management             avg 128.6    (5 tweets)
   Glass Substrate                avg 123.56   (9 tweets)
-  PCB / Substrate                avg 108.89   (19 tweets)
+  PCB / Substrate                avg 120.68   (22 tweets)
+  Power Supply                   avg 104.73   (11 tweets)
   CCL                            avg 104.38   (8 tweets)
-  Power Supply                   avg 104.27   (11 tweets)
-  NVIDIA AI                      avg 97.0     (50 tweets)
-  Optical / Silicon Photonics    avg 96.39    (18 tweets)
-  Advanced Packaging             avg 90.84    (31 tweets)
-  TSMC / Foundry                 avg 81.98    (48 tweets)
-  SK Hynix                       avg 79.0     (6 tweets)
-  Wafer Fab Equipment            avg 78.64    (11 tweets)
+  NVIDIA AI                      avg 99.13    (52 tweets)
+  Advanced Packaging             avg 89.84    (32 tweets)
+  Optical / Silicon Photonics    avg 89.29    (24 tweets)
+  Micron                         avg 83.11    (9 tweets)
+  TSMC / Foundry                 avg 80.37    (52 tweets)
+  Wafer Fab Equipment            avg 79.83    (12 tweets)
   Google TPU                     avg 76.6     (10 tweets)
-  Micron                         avg 75.33    (9 tweets)
-  DRAM / NAND / SSD              avg 74.38    (39 tweets)
-  Samsung                        avg 71.95    (19 tweets)
+  DRAM / NAND / SSD              avg 73.8     (41 tweets)
+  SK Hynix                       avg 72.5     (8 tweets)
+  Samsung                        avg 71.0     (21 tweets)
 ""
 BEST KEYWORD + IMAGE COMBOS:
   nvidia rubin                   avg 166.5
-  mlc                            avg 135.62
-  cowos                          avg 132.0
+  cowos                          avg 133.0
+  rack                           avg 130.5
+  mlc                            avg 130.33
   pcb                            avg 128.0
-  ddr5                           avg 123.33
 ""
 TOP HASHTAGS BY AVG INTERACTION (min 2 tweets):
-  #每日導讀                     avg 27.4     (15 tweets)  ████████████████████  views avg: 6305.13
-  #經濟日報                     avg 26.75    (16 tweets)  ███████████████████  views avg: 6200.0
+  #每日導讀                     avg 26.44    (16 tweets)  ████████████████████  views avg: 6333.81
+  #經濟日報                     avg 25.88    (17 tweets)  ███████████████████  views avg: 6406.18
 ""
 MOST USED HASHTAGS:
-  #經濟日報                       16 tweets  ████████████████████  avg interaction: 26.75
-  #每日導讀                       15 tweets  ██████████████████  avg interaction: 27.4
+  #經濟日報                       17 tweets  ████████████████████  avg interaction: 25.88
+  #每日導讀                       16 tweets  ██████████████████  avg interaction: 26.44
+  #20260715                    1 tweets  █  avg interaction: 0
+  #1領導廠商                       1 tweets  █  avg interaction: 0
   #20260709                    1 tweets  █  avg interaction: 0
   #20260708                    1 tweets  █  avg interaction: 0
   #20260703                    1 tweets  █  avg interaction: 0
@@ -84,37 +86,35 @@ MOST USED HASHTAGS:
   #20260618                    1 tweets  █  avg interaction: 0
   #20260617                    1 tweets  █  avg interaction: 0
   #20260616                    1 tweets  █  avg interaction: 0
-  #20260612                    1 tweets  █  avg interaction: 0
-  #20260610                    1 tweets  █  avg interaction: 0
 ""
 TOP 10 TWEETS BY INTERACTION:
   1. [493 total | 426 likes  46 retweets  21 replies  views: 182364]
      如果對台灣股市有興趣的話 免費AI法說會逐字稿 Memo網站  https:// alphamemo.ai/free-transcrip ts … 可以試試看
      https://x.com/QQ_Timmy/status/1988115973610598903
-  2. [336 total | 265 likes  48 retweets  23 replies  views: 51218]
+  2. [339 total | 296 likes  30 retweets  13 replies  views: 71518]
+     勝宏科技近期製造端出現問題，打亂了供應鏈格局，導致台灣重量級廠商欣興電子與臻鼎科技明顯市占率提升。  與此同時，因上游材料嚴重短缺，南亞塑膠已被納入 Switch Tray 供應鏈，成為新驗證通過的供應商，以確保原料供應穩定。
+     https://x.com/QQ_Timmy/status/2075414196989399401
+  3. [336 total | 265 likes  48 retweets  23 replies  views: 51218]
      艦長 程正樺 論壇演講重點整理 (錄音檔經Grok STT處理，並由Claude整理總結) 一句話總結: AI 基本面持續上修、算力依然短缺，真正的結構性大事是 NVIDIA 下一代架構讓光元件需求暴增六倍，CPO 量產時程比空方想的近（2...
      https://x.com/QQ_Timmy/status/2066556377276010990
-  3. [292 total | 217 likes  45 retweets  30 replies  views: 72267]
+  4. [292 total | 217 likes  45 retweets  30 replies  views: 72267]
 "     Semianalysis:  Power Off, Lights Out. 800VDC Push-In and CPO Delay Authors: Konrad Wang, Nigel Chiang, Nick Doyle, Doug ..."
      https://x.com/QQ_Timmy/status/2064384794570666409
-  4. [254 total | 207 likes  29 retweets  18 replies  views: 18083]
+  5. [254 total | 207 likes  29 retweets  18 replies  views: 18083]
      JNTC 成功開發全球首創 2.0mmT TGV 玻璃基板  JNTC（KOSDAQ: 204270）於6月19日宣布，成功開發全球首創厚度達2.0mmT的高難度TGV（Through Glass Via）玻璃基板，目前已擁有從0.3mmT...
      https://x.com/QQ_Timmy/status/2068179784836808868
-  5. [252 total | 213 likes  10 retweets  29 replies  views: 22894]
+  6. [252 total | 213 likes  10 retweets  29 replies  views: 22894]
      尊敬的客戶：  感謝您一直以來與聯發科技的合作。我們非常重視您對我們的信任，以及對雙方業務關係的持續承諾。
      https://x.com/QQ_Timmy/status/2069050921783525707
-  6. [236 total | 204 likes  23 retweets  9 replies  views: 40590]
+  7. [237 total | 221 likes  14 retweets  2 replies  views: 19656]
+     「2026 年下半年，您自己會看好哪三大產業？」 艦長：其實只有一個大方向 —— AI，但在 AI 裡面，他會再細分成三個次產業：  1. 光通訊（最看好，景氣展望最好） 理由 - 原本光通訊主要用在 Scale-out（跨機櫃之間的連接）...
+     https://x.com/QQ_Timmy/status/2075190725202026896
+  8. [236 total | 204 likes  23 retweets  9 replies  views: 40590]
      AI基礎設施擴大最大的瓶頸已轉移至DRAM。超大規模資料中心業者為了確保AI競爭力，仍有意願支付高價；在供給面，由於潔淨室確保與EUV裝置不足，導致生產擴大受到限制。這些因素疊加之下，美光（Micron）認為供給不足將比原先預期更長期化，可...
      https://x.com/QQ_Timmy/status/2063313924473426347
-  7. [228 total | 189 likes  29 retweets  10 replies  views: 20790]
+  9. [228 total | 189 likes  29 retweets  10 replies  views: 20790]
      AI 電源半導體報告 1. 市場規模與成長預測 - 2025 年：約 27 億美元 - 2028 年：約 160 億美元 - 三年 CAGR ≈ 82%  2. 主要成長驅動因素 - 架構轉型：資料中心全面轉向 800V HVDC 高壓直流...
      https://x.com/QQ_Timmy/status/2070700754990694873
-  8. [224 total | 176 likes  20 retweets  28 replies  views: 52371]
+  10. [224 total | 176 likes  20 retweets  28 replies  views: 52371]
      玻璃基板突破AI晶片封裝瓶頸  隨著AI晶片尺寸持續放大，傳統有機基板因翹曲（warpage）問題導致良率下降。具備熱膨脹係數（CTE）接近矽（3-9 ppm/°C）、優異介電性能（低Dk/Df）與極致平整表面的玻璃基板，成為下一代先進封裝...
      https://x.com/QQ_Timmy/status/2063633120017186976
-  9. [222 total | 186 likes  35 retweets  1 replies  views: 275249]
-"     Analog Devices, Inc. 2026年7月3日 尊敬的客戶， 希望此信件到達時您一切安好。我在此與您聯繫，說明目前半導體供應正因需求全面增加而持續緊縮。此供應緊縮現已影響ADI部分產品組合，導致交期延長至最長六個月。"
-     https://x.com/QQ_Timmy/status/2073229944029913108
-  10. [222 total | 164 likes  26 retweets  32 replies  views: 30345]
-     台積電正積極準備正式量產下一代半導體封裝技術「面板級封裝（PLP）」，將與三星電子展開激烈競爭。  https:// x.com/dmjk001/status /dmjk001/status/2066391857060606409 …
-     https://x.com/QQ_Timmy/status/2066396544748908581

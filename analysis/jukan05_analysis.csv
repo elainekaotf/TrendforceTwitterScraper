@@ -1,10 +1,10 @@
 SUMMARY -- @jukan05
-  Total tweets:       733
-  Avg interaction:    595.5
-  Median interaction: 419
-  Max interaction:    10811
-  Avg views:          131935.35
-  Max views:          2609765
+  Total tweets:       794
+  Avg interaction:    596.28
+  Median interaction: 420
+  Max interaction:    10806
+  Avg views:          132101.47
+  Max views:          2634175
 ""
 "BEST HOURS TO POST (Taiwan Time, avg total interaction):"
   00:00  █████████  506.5  (6 tweets)
@@ -12,72 +12,73 @@ SUMMARY -- @jukan05
   02:00  ████████████████████  1047.0  (1 tweets)
   04:00  ███████  385.33  (3 tweets)
   05:00  █████████  521.8  (5 tweets)
-  06:00  ████████  437.15  (47 tweets)
-  07:00  ████████████  657.92  (64 tweets)
-  08:00  ███████████  582.42  (48 tweets)
-  09:00  ███████████  611.48  (50 tweets)
-  10:00  ██████████████  771.98  (57 tweets)
-  11:00  ███████████  619.37  (52 tweets)
-  12:00  ████████  452.02  (48 tweets)
-  13:00  █████████████  690.49  (51 tweets)
-  14:00  ███████  406.6  (30 tweets)
-  15:00  ███████████  588.84  (43 tweets)
-  16:00  ████████████  673.76  (49 tweets)
-  17:00  ████████  463.44  (34 tweets)
-  18:00  █████████████  698.2  (40 tweets)
-  19:00  ██████████  543.67  (27 tweets)
-  20:00  ████████████  639.0  (20 tweets)
-  21:00  ██████████  523.79  (38 tweets)
-  22:00  ███████████████  801.4  (10 tweets)
-  23:00  █████████  502.88  (8 tweets)
+  06:00  ████████  460.9  (52 tweets)
+  07:00  ████████████  638.31  (70 tweets)
+  08:00  ███████████  601.86  (57 tweets)
+  09:00  ███████████  596.25  (53 tweets)
+  10:00  ██████████████  769.03  (59 tweets)
+  11:00  ███████████  585.55  (58 tweets)
+  12:00  ████████  442.64  (50 tweets)
+  13:00  ████████████  667.75  (57 tweets)
+  14:00  ████████  451.45  (31 tweets)
+  15:00  ███████████  623.16  (49 tweets)
+  16:00  ████████████  679.29  (51 tweets)
+  17:00  ████████  458.11  (36 tweets)
+  18:00  █████████████  699.9  (42 tweets)
+  19:00  ███████████  579.21  (28 tweets)
+  20:00  ███████████  597.77  (22 tweets)
+  21:00  ██████████  543.36  (42 tweets)
+  22:00  ███████████████  791.25  (12 tweets)
+  23:00  █████████  504.88  (8 tweets)
 ""
 AVG INTERACTION BY DAY OF WEEK:
-  Monday      ████████████████  587.08
-  Tuesday     █████████████████  631.58
-  Wednesday   ██████████████  515.6
-  Thursday    ████████████████  591.61
-  Friday      ███████████████  567.37
-  Saturday    ████████████████████  722.19
-  Sunday      ████████████████  611.59
+  Monday      ███████████████  596.54
+  Tuesday     ████████████████  621.77
+  Wednesday   ████████████  492.81
+  Thursday    ███████████████  592.05
+  Friday      ███████████████  585.45
+  Saturday    ████████████████████  761.2
+  Sunday      ███████████████  598.43
 ""
 IMAGES VS NO IMAGES:
-  With image:    avg 812.5  (293 tweets)
-  Without image: avg 450.99  (440 tweets)
-  -> images perform 80.2% better
+  With image:    avg 804.87  (312 tweets)
+  Without image: avg 461.27  (482 tweets)
+  -> images perform 74.5% better
 ""
 TOP KEYWORDS BY AVG INTERACTION (min 3 tweets):
   Micron                         avg 1252.69  (13 tweets)
-  SK Hynix                       avg 983.0    (50 tweets)
+  SK Hynix                       avg 988.86   (58 tweets)
   Kioxia                         avg 965.1    (10 tweets)
-  Samsung                        avg 870.89   (83 tweets)
-  LLM / Foundation Model         avg 858.87   (31 tweets)
-  NVIDIA AI                      avg 842.63   (68 tweets)
-  DRAM / NAND / SSD              avg 832.83   (59 tweets)
-  Optical / Silicon Photonics    avg 790.55   (11 tweets)
+  Samsung                        avg 861.7    (87 tweets)
+  LLM / Foundation Model         avg 854.97   (38 tweets)
+  NVIDIA AI                      avg 838.76   (74 tweets)
+  DRAM / NAND / SSD              avg 805.51   (63 tweets)
+  Optical / Silicon Photonics    avg 790.73   (11 tweets)
   ASIC / Custom Chip             avg 761.0    (14 tweets)
   AI Server ODM                  avg 698.57   (7 tweets)
-  HBM Memory                     avg 652.39   (23 tweets)
-  Wafer Fab Equipment            avg 565.5    (8 tweets)
-  AMD AI                         avg 562.57   (7 tweets)
-  TSMC / Foundry                 avg 544.38   (45 tweets)
+  HBM Memory                     avg 673.12   (24 tweets)
+  Wafer Fab Equipment            avg 565.75   (8 tweets)
+  AMD AI                         avg 562.86   (7 tweets)
+  TSMC / Foundry                 avg 534.67   (48 tweets)
   CCL                            avg 519.29   (7 tweets)
 ""
 BEST KEYWORD + IMAGE COMBOS:
   ai                             avg 1807.5
-  nvidia                         avg 1150.35
-  hynix                          avg 1144.04
+  nvidia h200                    avg 1225.5
+  hynix                          avg 1117.32
+  nvidia                         avg 1106.78
   micron                         avg 1102.5
-  trendforce                     avg 1100.67
 ""
 TOP HASHTAGS BY AVG INTERACTION (min 2 tweets):
 ""
 MOST USED HASHTAGS:
+  #skhynix                     1 tweets  ████████████████████  avg interaction: 0
   #from                        1 tweets  ████████████████████  avg interaction: 0
   #1                           1 tweets  ████████████████████  avg interaction: 0
   #2                           1 tweets  ████████████████████  avg interaction: 0
 ""
 TOP 10 TWEETS BY INTERACTION:
-  1. [10811 total | 10000 likes  635 retweets  176 replies  views: 1409669]
+  1. [10806 total | 10000 likes  632 retweets  174 replies  views: 1415169]
      OFFICIAL: SAMSUNG OVERTAKES NVIDIA TO BECOME THE MOST PROFITABLE COMPANY IN THE WORLD
      https://x.com/jukan05/status/2074271893956558914
   2. [7306 total | 6400 likes  778 retweets  128 replies  views: 1485860]
@@ -95,7 +96,7 @@ TOP 10 TWEETS BY INTERACTION:
   6. [5381 total | 4900 likes  313 retweets  168 replies  views: 904339]
      JENSEN HUANG: “WE HAVE A SURPRISING NEW PRODUCT THAT WE HAVEN’T TOLD ANYONE ABOUT YET. WE WILL ANNOUNCE IT LATER.”
      https://x.com/jukan05/status/2059911848334618668
-  7. [4852 total | 3200 likes  1300 retweets  352 replies  views: 2609765]
+  7. [4751 total | 3200 likes  1200 retweets  351 replies  views: 2634175]
      CHINA CONSIDERS RESTRICTING OVERSEAS ACCESS TO CUTTING-EDGE AI MODELS  China’s Ministry of Commerce has led meetings ove...
      https://x.com/jukan05/status/2074443936865960205
   8. [3615 total | 3300 likes  243 retweets  72 replies  views: 790696]

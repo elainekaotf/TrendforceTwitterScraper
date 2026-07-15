@@ -1,67 +1,67 @@
 SUMMARY -- @combined
-  Total tweets:       4382
-  Avg interaction:    247.03
-  Median interaction: 44
+  Total tweets:       4816
+  Avg interaction:    236.81
+  Median interaction: 39
   Max interaction:    26372
-  Avg views:          50958.01
+  Avg views:          48961.17
   Max views:          6654201
 ""
 "BEST HOURS TO POST (Taiwan Time, avg total interaction):"
-  00:00  ████  143.75  (201 tweets)
-  01:00  █████████  308.73  (251 tweets)
+  00:00  ████  147.57  (211 tweets)
+  01:00  ████████  301.97  (262 tweets)
   02:00  ████████████████████  682.79  (61 tweets)
-  03:00  ███████████  390.18  (66 tweets)
+  03:00  ███████████  400.91  (66 tweets)
   04:00  ███████████  396.56  (66 tweets)
-  05:00  █████████  338.63  (167 tweets)
-  06:00  ██████████████  506.22  (134 tweets)
-  07:00  █████████████████  601.3  (183 tweets)
-  08:00  ███████  240.87  (206 tweets)
-  09:00  ████████  277.73  (277 tweets)
-  10:00  ████████  303.49  (274 tweets)
-  11:00  ███████  241.88  (244 tweets)
-  12:00  ████████  286.08  (229 tweets)
-  13:00  ██████  229.15  (218 tweets)
-  14:00  ███  123.79  (195 tweets)
-  15:00  █████  173.84  (190 tweets)
-  16:00  █████  182.44  (217 tweets)
-  17:00  ███  112.46  (199 tweets)
-  18:00  █████  193.09  (175 tweets)
-  19:00  ███  121.01  (145 tweets)
-  20:00  ██  94.97  (206 tweets)
-  21:00  ███  130.68  (264 tweets)
-  22:00  ████  145.44  (147 tweets)
-  23:00  ███████  268.81  (67 tweets)
+  05:00  █████████  324.91  (179 tweets)
+  06:00  ██████████████  505.44  (142 tweets)
+  07:00  ████████████████  575.08  (196 tweets)
+  08:00  ███████  253.41  (235 tweets)
+  09:00  ███████  266.45  (297 tweets)
+  10:00  ████████  301.08  (289 tweets)
+  11:00  ██████  230.69  (264 tweets)
+  12:00  ███████  262.02  (253 tweets)
+  13:00  ██████  220.3  (240 tweets)
+  14:00  ███  121.01  (217 tweets)
+  15:00  █████  183.9  (218 tweets)
+  16:00  ████  170.03  (244 tweets)
+  17:00  ███  104.9  (221 tweets)
+  18:00  █████  178.58  (198 tweets)
+  19:00  ███  111.43  (175 tweets)
+  20:00  ██  88.87  (236 tweets)
+  21:00  ███  130.74  (296 tweets)
+  22:00  ████  138.92  (171 tweets)
+  23:00  ██████  230.89  (79 tweets)
 ""
 AVG INTERACTION BY DAY OF WEEK:
-  Monday      ███████████  214.17
-  Tuesday     █████████████  252.0
-  Wednesday   ██████████  207.51
-  Thursday    ████████████  236.88
-  Friday      ███████████  229.53
-  Saturday    ███████████████  304.52
-  Sunday      ████████████████████  383.64
+  Monday      ███████████  198.02
+  Tuesday     █████████████  230.44
+  Wednesday   ███████████  203.22
+  Thursday    █████████████  237.45
+  Friday      ████████████  222.39
+  Saturday    ████████████████  295.35
+  Sunday      ████████████████████  352.83
 ""
 IMAGES VS NO IMAGES:
-  With image:    avg 369.62  (1747 tweets)
-  Without image: avg 165.76  (2635 tweets)
-  -> images perform 123.0% better
+  With image:    avg 364.31  (1851 tweets)
+  Without image: avg 157.22  (2965 tweets)
+  -> images perform 131.7% better
 ""
 TOP KEYWORDS BY AVG INTERACTION (min 3 tweets):
-  Supermicro                     avg 920.67   (6 tweets)
-  LLM / Foundation Model         avg 488.19   (315 tweets)
-  SK Hynix                       avg 392.13   (144 tweets)
-  Kioxia                         avg 349.26   (31 tweets)
-  NVIDIA AI                      avg 323.01   (441 tweets)
-  Samsung                        avg 302.28   (277 tweets)
-  AMD AI                         avg 297.24   (105 tweets)
-  Google TPU                     avg 295.32   (41 tweets)
-  AI Server ODM                  avg 276.86   (37 tweets)
-  Micron                         avg 274.11   (103 tweets)
-  Foxconn / Inventec             avg 273.37   (19 tweets)
+  Supermicro                     avg 820.0    (7 tweets)
+  LLM / Foundation Model         avg 473.07   (343 tweets)
+  SK Hynix                       avg 393.12   (165 tweets)
+  Kioxia                         avg 328.76   (33 tweets)
+  NVIDIA AI                      avg 322.82   (463 tweets)
+  Samsung                        avg 296.62   (292 tweets)
+  AMD AI                         avg 286.88   (113 tweets)
+  Google TPU                     avg 282.37   (43 tweets)
+  Foxconn / Inventec             avg 273.89   (19 tweets)
+  AI Server ODM                  avg 272.71   (38 tweets)
+  Micron                         avg 272.27   (104 tweets)
   CCL                            avg 245.24   (21 tweets)
-  DRAM / NAND / SSD              avg 227.52   (278 tweets)
-  Wafer Fab Equipment            avg 207.08   (61 tweets)
-  ASIC / Custom Chip             avg 188.75   (88 tweets)
+  DRAM / NAND / SSD              avg 218.34   (300 tweets)
+  Wafer Fab Equipment            avg 196.32   (65 tweets)
+  Glass Substrate                avg 187.68   (25 tweets)
 ""
 BEST KEYWORD + IMAGE COMBOS:
   volleyball tournament          avg 4935.0
@@ -72,37 +72,37 @@ BEST KEYWORD + IMAGE COMBOS:
 ""
 TOP HASHTAGS BY AVG INTERACTION (min 2 tweets):
   #tech                     avg 78.57    (7 tweets)  ████████████████████  views avg: 30376.57
+  #skhynix                  avg 65.69    (45 tweets)  ████████████████  views avg: 15289.62
   #kioxia                   avg 55.3     (10 tweets)  ██████████████  views avg: 12340.1
-  #intel                    avg 48.6     (35 tweets)  ████████████  views avg: 14282.14
+  #intel                    avg 47.61    (36 tweets)  ████████████  views avg: 14022.53
   #sandisk                  avg 46.15    (13 tweets)  ███████████  views avg: 10242.69
   #micron                   avg 45.87    (31 tweets)  ███████████  views avg: 9262.84
-  #nvidia                   avg 45.38    (37 tweets)  ███████████  views avg: 10988.59
-  #skhynix                  avg 41.23    (43 tweets)  ██████████  views avg: 9748.88
-  #dram                     avg 35.45    (20 tweets)  █████████  views avg: 7443.05
-  #samsung                  avg 31.4     (68 tweets)  ███████  views avg: 7168.04
-  #amd                      avg 30.36    (22 tweets)  ███████  views avg: 16561.55
-  #trendforce               avg 28.46    (103 tweets)  ███████  views avg: 6269.79
-  #nand                     avg 27.42    (19 tweets)  ██████  views avg: 3198.21
-  #每日導讀                     avg 27.4     (15 tweets)  ██████  views avg: 6305.13
-  #經濟日報                     avg 26.75    (16 tweets)  ██████  views avg: 6200.0
-  #hbm                      avg 25.5     (22 tweets)  ██████  views avg: 5992.5
+  #nvidia                   avg 44.5     (38 tweets)  ███████████  views avg: 10774.11
+  #dram                     avg 32.33    (24 tweets)  ████████  views avg: 6449.33
+  #samsung                  avg 31.32    (69 tweets)  ███████  views avg: 7178.19
+  #amd                      avg 29.13    (23 tweets)  ███████  views avg: 15846.13
+  #trendforce               avg 28.54    (105 tweets)  ███████  views avg: 6546.77
+  #每日導讀                     avg 26.44    (16 tweets)  ██████  views avg: 6333.81
+  #經濟日報                     avg 25.88    (17 tweets)  ██████  views avg: 6406.18
+  #nand                     avg 25.55    (22 tweets)  ██████  views avg: 4487.95
+  #ddr5                     avg 25.29    (7 tweets)  ██████  views avg: 3700.71
 ""
 MOST USED HASHTAGS:
-  #ai                        163 tweets  ████████████████████  avg interaction: 6.98
-  #trendforce                103 tweets  ████████████  avg interaction: 28.46
-  #samsung                    68 tweets  ████████  avg interaction: 31.4
-  #台積電                        64 tweets  ███████  avg interaction: 5.98
-  #蘋果                         47 tweets  █████  avg interaction: 3.13
-  #tsmc                       46 tweets  █████  avg interaction: 24.33
-  #spacex                     45 tweets  █████  avg interaction: 2.67
-  #skhynix                    43 tweets  █████  avg interaction: 41.23
-  #輝達                         43 tweets  █████  avg interaction: 3.51
-  #nvidia                     37 tweets  ████  avg interaction: 45.38
-  #intel                      35 tweets  ████  avg interaction: 48.6
-  #英特爾                        32 tweets  ███  avg interaction: 4.97
-  #micron                     31 tweets  ███  avg interaction: 45.87
-  #openai                     29 tweets  ███  avg interaction: 2.03
-  #三星                         29 tweets  ███  avg interaction: 3.41
+  #ai                        176 tweets  ████████████████████  avg interaction: 6.68
+  #trendforce                105 tweets  ███████████  avg interaction: 28.54
+  #台積電                        73 tweets  ████████  avg interaction: 6.0
+  #samsung                    69 tweets  ███████  avg interaction: 31.32
+  #蘋果                         59 tweets  ██████  avg interaction: 2.95
+  #輝達                         54 tweets  ██████  avg interaction: 3.65
+  #spacex                     51 tweets  █████  avg interaction: 2.73
+  #tsmc                       47 tweets  █████  avg interaction: 25.13
+  #skhynix                    45 tweets  █████  avg interaction: 65.69
+  #nvidia                     38 tweets  ████  avg interaction: 44.5
+  #openai                     37 tweets  ████  avg interaction: 2.16
+  #intel                      36 tweets  ████  avg interaction: 47.61
+  #三星                         36 tweets  ████  avg interaction: 3.83
+  #英特爾                        35 tweets  ███  avg interaction: 5.74
+  #sk海力士                      32 tweets  ███  avg interaction: 3.62
 ""
 TOP 10 TWEETS BY INTERACTION:
   1. [26372 total | 24000 likes  2300 retweets  72 replies  views: 2219969]
@@ -111,7 +111,7 @@ TOP 10 TWEETS BY INTERACTION:
   2. [14700 total | 14000 likes  608 retweets  92 replies  views: 351178]
      Elon rn
      https://x.com/SemiAnalysis_/status/2052085238856093973
-  3. [10811 total | 10000 likes  635 retweets  176 replies  views: 1409669]
+  3. [10806 total | 10000 likes  632 retweets  174 replies  views: 1415169]
      OFFICIAL: SAMSUNG OVERTAKES NVIDIA TO BECOME THE MOST PROFITABLE COMPANY IN THE WORLD
      https://x.com/jukan05/status/2074271893956558914
   4. [10797 total | 10000 likes  767 retweets  30 replies  views: 772473]
