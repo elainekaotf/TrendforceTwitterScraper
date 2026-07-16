@@ -5,4 +5,5 @@ results.json
 results.csv
 error-screenshot.png
 cron.log
+cron.log.old
 .DS_Store

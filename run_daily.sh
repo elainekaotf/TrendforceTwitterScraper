@@ -2,6 +2,16 @@
 export PATH="/usr/local/bin:/usr/bin:/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:$PATH"
 cd /Users/elainekao/TrendforceTwitterScraper
 
+# launchd's StandardOutPath/StandardErrorPath (com.elainekao.trendforce-daily)
+# just append to cron.log forever with no rotation of its own - same gap
+# TrendforceFacebookScraper/run_all.sh had before it got this same fix.
+# Six runs/day here (every 4h) adds up; rotate once it crosses 5MB, keeping
+# one prior generation rather than growing unbounded.
+CRON_LOG="$(dirname "$0")/cron.log"
+if [ -f "$CRON_LOG" ] && [ "$(stat -f%z "$CRON_LOG" 2>/dev/null || stat -c%s "$CRON_LOG" 2>/dev/null)" -gt 5242880 ]; then
+  mv "$CRON_LOG" "$CRON_LOG.old"
+fi
+
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] Starting daily run..."
 
 FAILURES=()
