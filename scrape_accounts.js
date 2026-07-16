@@ -10,6 +10,52 @@ const CSV_DIR = path.join(__dirname, 'csv');
 const FOLLOWER_HISTORY_FILE = path.join(__dirname, 'follower_history.json');
 fs.mkdirSync(CSV_DIR, { recursive: true });
 
+// Locking: scrapeOneAccount() reads a whole CSV, computes changes, then
+// writes the whole file back with fs.writeFileSync - a classic
+// read-modify-write race if two invocations run concurrently against the
+// same account. Observed directly 2026-07-16: a manual `node
+// scrape_accounts.js @TrendForce` overlapped with the scheduled run's own
+// (unscoped) invocation, both starting from the same "591 existing
+// tweets" baseline and each writing csv/TrendForce.csv independently -
+// whichever finished last silently discarded the other's update, with no
+// error or warning either way. A lock on run_daily.sh itself wouldn't
+// have caught this: launchd already guarantees a single Label can't
+// overlap with itself (confirmed earlier the same day - a missed
+// StartCalendarInterval firing is skipped, not queued), so two *scheduled*
+// runs can't collide - the actual gap is a manual/ad-hoc invocation (like
+// this one) running alongside a scheduled one, which bypasses run_daily.sh
+// entirely. Locking here instead, at the actual point of collision,
+// covers every caller (manual or scheduled) the same mkdir-mutex way as
+// TrendForceDash's run_pipeline.sh and TrendforceFacebookScraper's
+// run_all.sh.
+const LOCK_DIR = path.join(__dirname, '.scrape_accounts.lock');
+const LOCK_STALE_AFTER_MS = 30 * 60 * 1000; // 30min - a full 8-account run normally takes a few minutes
+
+function releaseLock() {
+  try { fs.rmdirSync(LOCK_DIR); } catch {}
+}
+// process.exit() (used below on a failed login check) skips any pending
+// try/finally - this is the safety net that still releases the lock then.
+process.on('exit', releaseLock);
+
+async function acquireLock() {
+  const start = Date.now();
+  while (true) {
+    try {
+      fs.mkdirSync(LOCK_DIR);
+      return;
+    } catch (err) {
+      if (err.code !== 'EEXIST') throw err;
+      if (Date.now() - start >= LOCK_STALE_AFTER_MS) {
+        console.log(`[WARN] scrape_accounts: lock held for ${LOCK_STALE_AFTER_MS / 1000}s - assuming a crashed run left it behind, taking over`);
+        releaseLock();
+        try { fs.mkdirSync(LOCK_DIR); return; } catch {}
+      }
+      await new Promise((resolve) => setTimeout(resolve, 3000));
+    }
+  }
+}
+
 function parseFollowerCount(str) {
   if (!str || str === 'unknown') return null;
   str = str.replace(/,/g, '').trim();
@@ -430,4 +476,11 @@ async function scrapeOneAccount(page, handle) {
   console.log(`Updated csv/${cleanHandle}.csv (+${newTweets.length} new, ${updatedCount} refreshed, ${droppedIdx.size} duplicates removed, ${existingByUrl.size + newTweets.length} total)`);
 }
 
-main();
+(async () => {
+  await acquireLock();
+  try {
+    await main();
+  } finally {
+    releaseLock();
+  }
+})();
