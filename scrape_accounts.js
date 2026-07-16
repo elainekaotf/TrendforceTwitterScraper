@@ -258,8 +258,28 @@ async function main() {
     // a genuinely fresh, valid session (reproduced 2026-07-10 right after
     // the main scraper had just saved a working session.json). Wait for
     // the actual login-only element to appear instead of a fixed delay.
-    await page.goto('https://x.com/home', { waitUntil: 'domcontentloaded' });
-    const isLoggedIn = await page.waitForSelector('[data-testid="SideNav_AccountSwitcher_Button"]', { timeout: 15000 }).catch(() => null);
+    //
+    // One retry (fresh reload + a second wait) before giving up entirely:
+    // observed 2026-07-14 20:35 - this exact check failed here, but
+    // run_daily.sh's own "retry just @TrendForce" fallback (a brand-new
+    // process invocation moments later, re-running this identical check)
+    // succeeded - proving the session itself was fine and this was a
+    // transient render-timing miss, not a dead session. That fallback only
+    // ever covered @TrendForce specifically, silently skipping every
+    // competitor account for the whole run on the same transient failure -
+    // retrying the check itself here covers all of them, not just one.
+    let isLoggedIn = await (async () => {
+      await page.goto('https://x.com/home', { waitUntil: 'domcontentloaded' });
+      return page.waitForSelector('[data-testid="SideNav_AccountSwitcher_Button"]', { timeout: 15000 }).catch(() => null);
+    })();
+    if (!isLoggedIn) {
+      console.log('Login check failed once, retrying after a fresh reload...');
+      await page.waitForTimeout(3000);
+      isLoggedIn = await (async () => {
+        await page.goto('https://x.com/home', { waitUntil: 'domcontentloaded' });
+        return page.waitForSelector('[data-testid="SideNav_AccountSwitcher_Button"]', { timeout: 20000 }).catch(() => null);
+      })();
+    }
     if (!isLoggedIn) {
       console.log('Not logged in. Please run the main scraper first to save a session.');
       process.exit(1);
