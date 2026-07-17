@@ -39,15 +39,22 @@ function releaseLock() {
 process.on('exit', releaseLock);
 
 async function acquireLock() {
-  const start = Date.now();
+  // Staleness must be judged by the lock DIRECTORY's own age (its mtime
+  // from when mkdirSync created it), not by how long THIS waiter has been
+  // polling - a per-waiter timer conflates "how long have I waited" (which
+  // can span several different legitimate holders in sequence) with "how
+  // long has the CURRENT holder had it" (found as a real bug in
+  // TrendForceDash's run_pipeline.sh lock 2026-07-17: a long-queued waiter
+  // stole the lock from a still-actively-running job).
   while (true) {
     try {
       fs.mkdirSync(LOCK_DIR);
       return;
     } catch (err) {
       if (err.code !== 'EEXIST') throw err;
-      if (Date.now() - start >= LOCK_STALE_AFTER_MS) {
-        console.log(`[WARN] scrape_accounts: lock held for ${LOCK_STALE_AFTER_MS / 1000}s - assuming a crashed run left it behind, taking over`);
+      const lockAgeMs = Date.now() - fs.statSync(LOCK_DIR).mtimeMs;
+      if (lockAgeMs >= LOCK_STALE_AFTER_MS) {
+        console.log(`[WARN] scrape_accounts: lock directory is ${Math.round(lockAgeMs / 1000)}s old - assuming a crashed run left it behind, taking over`);
         releaseLock();
         try { fs.mkdirSync(LOCK_DIR); return; } catch {}
       }
