@@ -69,7 +69,11 @@ function recordFollowers(handle, count) {
     ? JSON.parse(fs.readFileSync(FOLLOWER_HISTORY_FILE, 'utf8'))
     : {};
   if (!history[handle]) history[handle] = [];
-  const today = new Date().toISOString().slice(0, 10);
+  // Taiwan date, not UTC — using UTC here meant the once-per-day guard
+  // treated "today" as still the previous day until 8 AM Taiwan time
+  // (UTC+8), so the very first run of the Taiwan morning would silently
+  // skip recording, thinking it already had today's entry.
+  const today = toTaiwanISOString(new Date().toISOString()).slice(0, 10);
   // Only record once per day
   if (!history[handle].length || history[handle][history[handle].length - 1].date !== today) {
     history[handle].push({ date: today, followers: count });

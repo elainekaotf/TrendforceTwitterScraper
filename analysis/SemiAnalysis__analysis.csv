@@ -1,23 +1,23 @@
 SUMMARY -- @SemiAnalysis_
-  Total tweets:       843
-  Avg interaction:    289.72
+  Total tweets:       850
+  Avg interaction:    288.44
   Median interaction: 123
   Max interaction:    14700
-  Avg views:          61254.2
+  Avg views:          61026.99
   Max views:          2264757
 ""
 "BEST HOURS TO POST (Taiwan Time, avg total interaction):"
-  00:00  █████████  377.21  (19 tweets)
-  01:00  ███████  318.05  (175 tweets)
+  00:00  █████████  382.42  (19 tweets)
+  01:00  ███████  316.2  (177 tweets)
   02:00  ████████████████████  813.73  (22 tweets)
   03:00  ███████  298.33  (30 tweets)
   04:00  ████████  328.53  (30 tweets)
-  05:00  ██████  273.89  (130 tweets)
-  06:00  █████  221.54  (39 tweets)
+  05:00  ██████  270.2  (133 tweets)
+  06:00  █████  221.64  (39 tweets)
   07:00  ██████████  440.12  (40 tweets)
   08:00  █████  238.67  (24 tweets)
-  09:00  █████  215.8  (90 tweets)
-  10:00  ████████  359.45  (44 tweets)
+  09:00  █████  215.86  (90 tweets)
+  10:00  ████████  359.89  (44 tweets)
   11:00  ████████  364.8  (25 tweets)
   12:00  ███████  319.64  (28 tweets)
   13:00  █████  210.25  (4 tweets)
@@ -27,53 +27,53 @@ SUMMARY -- @SemiAnalysis_
   18:00  ██████████  431.0  (1 tweets)
   19:00  █  59.5  (2 tweets)
   20:00  █████████  382.67  (3 tweets)
-  21:00  ███  139.21  (73 tweets)
-  22:00  ██  118.11  (47 tweets)
+  21:00  ███  136.36  (75 tweets)
+  22:00  ██  120.36  (47 tweets)
   23:00  █████  221.4  (10 tweets)
 ""
 AVG INTERACTION BY DAY OF WEEK:
-  Monday      ██████████  232.35
-  Tuesday     ████████████  261.82
-  Wednesday   █████████████  289.63
-  Thursday    ███████████████  339.73
-  Friday      ███████████  242.18
-  Saturday    █████████████  279.78
-  Sunday      ████████████████████  427.55
+  Monday      ██████████  232.36
+  Tuesday     ████████████  259.66
+  Wednesday   █████████████  291.23
+  Thursday    ███████████████  337.5
+  Friday      ███████████  241.51
+  Saturday    ████████████  275.58
+  Sunday      ████████████████████  427.64
 ""
 IMAGES VS NO IMAGES:
-  With image:    avg 362.56  (564 tweets)
-  Without image: avg 142.48  (279 tweets)
-  -> images perform 154.5% better
+  With image:    avg 360.22  (570 tweets)
+  Without image: avg 142.31  (280 tweets)
+  -> images perform 153.1% better
 ""
 TOP KEYWORDS BY AVG INTERACTION (min 3 tweets):
   Micron                         avg 757.82   (11 tweets)
   Google TPU                     avg 546.91   (11 tweets)
-  LLM / Foundation Model         avg 391.91   (103 tweets)
   SK Hynix                       avg 390.5    (8 tweets)
-  NVIDIA AI                      avg 339.64   (139 tweets)
+  LLM / Foundation Model         avg 389.78   (104 tweets)
+  NVIDIA AI                      avg 338.76   (140 tweets)
   Advanced Packaging             avg 295.0    (11 tweets)
-  AMD AI                         avg 288.18   (38 tweets)
+  AMD AI                         avg 290.53   (38 tweets)
   TSMC / Foundry                 avg 231.79   (28 tweets)
   Samsung                        avg 226.81   (16 tweets)
-  HBM Memory                     avg 224.93   (29 tweets)
-  DRAM / NAND / SSD              avg 219.94   (18 tweets)
-  Optical / Silicon Photonics    avg 219.31   (13 tweets)
-  AI Server ODM                  avg 149.29   (14 tweets)
+  DRAM / NAND / SSD              avg 220.11   (18 tweets)
+  Optical / Silicon Photonics    avg 219.46   (13 tweets)
+  HBM Memory                     avg 218.47   (30 tweets)
+  AI Server ODM                  avg 149.43   (14 tweets)
   ASIC / Custom Chip             avg 74.33    (6 tweets)
   PCB / Substrate                avg 67.4     (10 tweets)
 ""
 BEST KEYWORD + IMAGE COMBOS:
   image                          avg 3434.2
   smartphone                     avg 1715.33
-  apple                          avg 1175.2
   nvl72x2 rack                   avg 1161.5
-  capture                        avg 1068.5
+  capture                        avg 1105.0
+  apple                          avg 1004.0
 ""
 TOP HASHTAGS BY AVG INTERACTION (min 2 tweets):
 ""
 MOST USED HASHTAGS:
+  #2                           3 tweets  ████████████████████  avg interaction: 0
   #1                           3 tweets  ████████████████████  avg interaction: 0
-  #2                           2 tweets  █████████████  avg interaction: 0
   #ai                          2 tweets  █████████████  avg interaction: 0
   #startup                     1 tweets  ██████  avg interaction: 0
   #chips                       1 tweets  ██████  avg interaction: 0

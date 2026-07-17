@@ -1,60 +1,60 @@
 SUMMARY -- @technews_tw
-  Total tweets:       1507
-  Avg interaction:    4.94
-  Median interaction: 2
+  Total tweets:       1596
+  Avg interaction:    4.97
+  Median interaction: 3
   Max interaction:    174
-  Avg views:          431.19
+  Avg views:          430.25
   Max views:          31167
 ""
 "BEST HOURS TO POST (Taiwan Time, avg total interaction):"
-  00:00  ████████████████  9.5  (2 tweets)
-  07:00  ██████████████  8.52  (33 tweets)
-  08:00  ████████████████████  11.54  (48 tweets)
-  09:00  ██████  3.59  (85 tweets)
-  10:00  ███████████  6.42  (108 tweets)
-  11:00  ████████████  7.34  (115 tweets)
-  12:00  █████████  5.26  (108 tweets)
-  13:00  ██████  3.54  (110 tweets)
-  14:00  ████████  4.91  (105 tweets)
-  15:00  ███████  4.06  (105 tweets)
-  16:00  █████████  5.42  (127 tweets)
-  17:00  ██████  3.83  (126 tweets)
-  18:00  ██████  3.58  (119 tweets)
-  19:00  ██████  3.96  (106 tweets)
-  20:00  ██████  4.0  (74 tweets)
-  21:00  ██████  3.93  (68 tweets)
-  22:00  ████  2.46  (41 tweets)
-  23:00  ██████████  6.11  (27 tweets)
+  00:00  █████████████████  10.0  (2 tweets)
+  07:00  ██████████████  8.65  (34 tweets)
+  08:00  ████████████████████  11.71  (49 tweets)
+  09:00  ██████  3.73  (94 tweets)
+  10:00  ███████████  6.51  (118 tweets)
+  11:00  ████████████  7.24  (123 tweets)
+  12:00  ████████  5.22  (116 tweets)
+  13:00  ██████  3.64  (117 tweets)
+  14:00  ████████  5.09  (112 tweets)
+  15:00  ██████  4.04  (113 tweets)
+  16:00  █████████  5.31  (133 tweets)
+  17:00  ██████  3.81  (134 tweets)
+  18:00  █████  3.48  (125 tweets)
+  19:00  ██████  3.92  (110 tweets)
+  20:00  ██████  3.97  (76 tweets)
+  21:00  ███████  4.13  (70 tweets)
+  22:00  ████  2.52  (42 tweets)
+  23:00  ███████████  6.93  (28 tweets)
 ""
 AVG INTERACTION BY DAY OF WEEK:
   Monday      ██████████████  5.04
-  Tuesday     █████████████  4.58
-  Wednesday   ████████████████████  7.01
-  Thursday    ████████████  4.31
-  Friday      ██████████  3.8
-  Saturday    █████████████  4.81
+  Tuesday     █████████████  4.62
+  Wednesday   ████████████████████  6.76
+  Thursday    ████████████  4.39
+  Friday      ███████████  3.8
+  Saturday    ██████████████  4.81
   Sunday      ██████████████████  6.4
 ""
 IMAGES VS NO IMAGES:
-  With image:    avg 22.77  (132 tweets)
-  Without image: avg 3.23  (1375 tweets)
-  -> images perform 605.0% better
+  With image:    avg 21.93  (144 tweets)
+  Without image: avg 3.29  (1452 tweets)
+  -> images perform 566.6% better
 ""
 TOP KEYWORDS BY AVG INTERACTION (min 3 tweets):
-  Glass Substrate                avg 39.0     (5 tweets)
+  Glass Substrate                avg 33.0     (6 tweets)
   PCB / Substrate                avg 21.87    (23 tweets)
-  Semiconductor Materials        avg 14.5     (8 tweets)
-  Optical / Silicon Photonics    avg 12.42    (36 tweets)
-  Advanced Packaging             avg 12.06    (35 tweets)
-  Power Supply                   avg 10.45    (22 tweets)
-  TSMC / Foundry                 avg 9.73     (133 tweets)
-  ASIC / Custom Chip             avg 9.19     (31 tweets)
-  AMD AI                         avg 8.96     (24 tweets)
-  NVIDIA AI                      avg 7.19     (72 tweets)
-  DRAM / NAND / SSD              avg 6.45     (51 tweets)
-  Thermal Management             avg 6.27     (11 tweets)
+  Semiconductor Materials        avg 14.62    (8 tweets)
+  Optical / Silicon Photonics    avg 12.16    (38 tweets)
+  Advanced Packaging             avg 12.03    (36 tweets)
+  Power Supply                   avg 10.07    (27 tweets)
+  TSMC / Foundry                 avg 9.48     (147 tweets)
+  ASIC / Custom Chip             avg 8.97     (33 tweets)
+  AMD AI                         avg 8.96     (25 tweets)
+  NVIDIA AI                      avg 7.42     (83 tweets)
+  DRAM / NAND / SSD              avg 6.44     (57 tweets)
+  Thermal Management             avg 6.08     (13 tweets)
   AI PC                          avg 5.83     (6 tweets)
-  Wafer Fab Equipment            avg 5.82     (17 tweets)
+  Google TPU                     avg 5.78     (9 tweets)
   Kioxia                         avg 5.75     (8 tweets)
 ""
 BEST KEYWORD + IMAGE COMBOS:
@@ -67,36 +67,36 @@ BEST KEYWORD + IMAGE COMBOS:
 TOP HASHTAGS BY AVG INTERACTION (min 2 tweets):
   #國巨                       avg 11.86    (7 tweets)  ████████████████████  views avg: 806.0
   #mlcc                     avg 10.11    (9 tweets)  █████████████████  views avg: 767.11
-  #台達電                      avg 9.57     (7 tweets)  ████████████████  views avg: 603.86
-  #南亞科                      avg 7.4      (5 tweets)  ████████████  views avg: 449.4
+  #台達電                      avg 8.11     (9 tweets)  █████████████  views avg: 525.56
   #供應鏈                      avg 7.0      (9 tweets)  ███████████  views avg: 567.44
+  #群聯                       avg 6.8      (5 tweets)  ███████████  views avg: 546.6
   #cpo                      avg 6.72     (18 tweets)  ███████████  views avg: 417.06
-  #先進封裝                     avg 6.36     (14 tweets)  ██████████  views avg: 708.0
+  #南亞科                      avg 6.67     (6 tweets)  ███████████  views avg: 446.0
+  #先進封裝                     avg 6.5      (14 tweets)  ██████████  views avg: 718.14
   #大立光                      avg 6.33     (6 tweets)  ██████████  views avg: 332.33
-  #dram                     avg 6.27     (11 tweets)  ██████████  views avg: 477.64
-  #鎧俠                       avg 6.0      (7 tweets)  ██████████  views avg: 336.43
-  #nand                     avg 6.0      (9 tweets)  ██████████  views avg: 375.22
-  #台積電                      avg 6.0      (73 tweets)  ██████████  views avg: 426.25
-  #半導體                      avg 5.83     (23 tweets)  █████████  views avg: 430.3
-  #英特爾                      avg 5.74     (35 tweets)  █████████  views avg: 527.77
-  #ai基礎設施                   avg 5.38     (8 tweets)  █████████  views avg: 265.25
+  #鎧俠                       avg 6.0      (7 tweets)  ██████████  views avg: 340.14
+  #nand                     avg 6.0      (9 tweets)  ██████████  views avg: 378.11
+  #台積電                      avg 5.98     (84 tweets)  ██████████  views avg: 420.42
+  #dram                     avg 5.86     (14 tweets)  █████████  views avg: 485.07
+  #半導體                      avg 5.83     (23 tweets)  █████████  views avg: 430.83
+  #英特爾                      avg 5.79     (39 tweets)  █████████  views avg: 515.79
 ""
 MOST USED HASHTAGS:
-  #ai                        152 tweets  ████████████████████  avg interaction: 3.83
-  #台積電                        73 tweets  █████████  avg interaction: 6.0
-  #蘋果                         59 tweets  ███████  avg interaction: 2.95
-  #輝達                         54 tweets  ███████  avg interaction: 3.65
-  #spacex                     50 tweets  ██████  avg interaction: 2.5
-  #openai                     36 tweets  ████  avg interaction: 1.94
-  #三星                         36 tweets  ████  avg interaction: 3.83
-  #英特爾                        35 tweets  ████  avg interaction: 5.74
-  #sk海力士                      32 tweets  ████  avg interaction: 3.62
-  #記憶體                        32 tweets  ████  avg interaction: 5.25
-  #anthropic                  28 tweets  ███  avg interaction: 1.93
-  #川普                         26 tweets  ███  avg interaction: 2.65
-  #google                     25 tweets  ███  avg interaction: 3.76
-  #半導體                        23 tweets  ███  avg interaction: 5.83
-  #馬斯克                        22 tweets  ██  avg interaction: 2.82
+  #ai                        171 tweets  ████████████████████  avg interaction: 3.88
+  #台積電                        84 tweets  █████████  avg interaction: 5.98
+  #輝達                         64 tweets  ███████  avg interaction: 4.2
+  #蘋果                         62 tweets  ███████  avg interaction: 3.0
+  #spacex                     51 tweets  █████  avg interaction: 2.51
+  #三星                         40 tweets  ████  avg interaction: 4.12
+  #英特爾                        39 tweets  ████  avg interaction: 5.79
+  #openai                     38 tweets  ████  avg interaction: 1.95
+  #sk海力士                      35 tweets  ████  avg interaction: 3.49
+  #記憶體                        32 tweets  ███  avg interaction: 5.25
+  #anthropic                  31 tweets  ███  avg interaction: 2.26
+  #google                     30 tweets  ███  avg interaction: 4.23
+  #川普                         28 tweets  ███  avg interaction: 2.93
+  #美光                         23 tweets  ██  avg interaction: 4.87
+  #半導體                        23 tweets  ██  avg interaction: 5.83
 ""
 TOP 10 TWEETS BY INTERACTION:
   1. [174 total | 136 likes  13 retweets  25 replies  views: 31167]

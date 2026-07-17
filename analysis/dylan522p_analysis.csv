@@ -1,13 +1,13 @@
 SUMMARY -- @dylan522p
   Total tweets:       597
-  Avg interaction:    601.55
+  Avg interaction:    602.23
   Median interaction: 292
   Max interaction:    26372
-  Avg views:          112628.63
+  Avg views:          112767.64
   Max views:          6654201
 ""
 "BEST HOURS TO POST (Taiwan Time, avg total interaction):"
-  00:00  ██████  369.89  (36 tweets)
+  00:00  ██████  381.17  (36 tweets)
   01:00  ██████████  624.47  (32 tweets)
   02:00  ██████████  612.54  (37 tweets)
   03:00  ████████  486.39  (36 tweets)
@@ -35,16 +35,16 @@ SUMMARY -- @dylan522p
 AVG INTERACTION BY DAY OF WEEK:
   Monday      ████████████  578.48
   Tuesday     █████████████  591.67
-  Wednesday   ██████████  458.93
+  Wednesday   ██████████  463.94
   Thursday    ████████████████████  895.46
   Friday      ████████████  566.33
   Saturday    █████████  441.91
   Sunday      ████████████████  719.59
 ""
 IMAGES VS NO IMAGES:
-  With image:    avg 597.74  (304 tweets)
+  With image:    avg 599.08  (304 tweets)
   Without image: avg 605.51  (293 tweets)
-  -> no images perform 1.3% better
+  -> no images perform 1.1% better
 ""
 TOP KEYWORDS BY AVG INTERACTION (min 3 tweets):
   Supermicro                     avg 1102.6   (5 tweets)
