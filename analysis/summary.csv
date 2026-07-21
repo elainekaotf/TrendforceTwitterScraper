@@ -1,70 +1,70 @@
 ,QQ_Timmy,jukan05,TrendForce,dylan522p,SemiAnalysis_,technews_tw,combined
 OVERVIEW
-Tweet count,517,826,596,597,850,1596,4982
-Avg interaction,71.69,591.71,35.32,602.23,288.44,4.97,232.74
-Median interaction,60,416,25,292,123,3,37
+Tweet count,553,873,609,597,885,1793,5310
+Avg interaction,72.27,598.4,34.94,602.24,298.21,4.81,228.95
+Median interaction,62,419,24,292,123,3,34
 Max interaction,493,10806,488,26372,14700,174,26372
 
 BEST HOURS TO POST (Taiwan Time)
 Hour,QQ_Timmy avg interaction,QQ_Timmy chart,jukan05 avg interaction,jukan05 chart,TrendForce avg interaction,TrendForce chart,dylan522p avg interaction,dylan522p chart,SemiAnalysis_ avg interaction,SemiAnalysis_ chart,technews_tw avg interaction,technews_tw chart,combined avg interaction,combined chart
-00:00,76.11,███████████████,506.5,█████████,33.24,██████████,381.17,██████,382.42,█████████,10.0,█████████████████,149.33,████
-01:00,65.49,█████████████,363.0,██████,20.38,██████,624.47,██████████,316.2,███████,0,,300.85,████████
-02:00,37.0,███████,1047.0,████████████████████,0,,612.54,██████████,813.73,████████████████████,0,,682.79,████████████████████
+00:00,76.15,███████████████,506.5,█████████,33.09,██████████,381.25,██████,383.05,█████████,7.33,█████████████,148.12,████
+01:00,65.49,█████████████,363.0,██████,20.38,██████,624.47,██████████,317.92,███████,0,,302.13,████████
+02:00,37.0,███████,1047.0,████████████████████,2.0,,612.54,██████████,813.73,████████████████████,0,,671.81,████████████████████
 03:00,0,,0,,0,,486.39,████████,298.33,███████,0,,400.91,███████████
-04:00,0,,385.33,███████,0,,459.42,███████,328.53,████████,0,,396.56,███████████
-05:00,0,,521.8,█████████,0,,453.27,███████,270.2,██████,0,,321.37,█████████
-06:00,0,,474.77,█████████,0,,767.96,█████████████,221.64,█████,0,,510.55,██████████████
-07:00,83.5,████████████████,633.99,████████████,10.0,███,1000.6,█████████████████,440.12,██████████,8.65,██████████████,571.62,████████████████
-08:00,56.72,███████████,605.41,███████████,45.6,██████████████,431.69,███████,238.67,█████,11.71,████████████████████,253.19,███████
-09:00,73.0,██████████████,596.32,███████████,36.55,███████████,716.69,████████████,215.86,█████,3.73,██████,258.8,███████
-10:00,79.12,███████████████,748.34,██████████████,45.31,██████████████,666.42,███████████,359.89,████████,6.51,███████████,289.55,████████
-11:00,100.08,████████████████████,581.64,███████████,38.96,████████████,525.57,█████████,364.8,████████,7.24,████████████,223.04,██████
-12:00,66.29,█████████████,432.15,████████,46.61,███████████████,1166.18,████████████████████,319.64,███████,5.22,████████,253.94,███████
-13:00,91.96,██████████████████,668.43,████████████,52.88,█████████████████,441.61,███████,210.25,█████,3.64,██████,217.62,██████
-14:00,60.82,████████████,440.11,████████,42.92,█████████████,455.69,███████,762.0,██████████████████,5.09,████████,123.48,███
-15:00,76.09,███████████████,623.82,███████████,45.95,██████████████,431.62,███████,223.0,█████,4.04,██████,175.62,█████
-16:00,76.39,███████████████,668.19,████████████,61.52,████████████████████,273.14,████,0,,5.31,█████████,167.86,████
-17:00,65.82,█████████████,443.11,████████,50.62,████████████████,323.12,█████,279.67,██████,3.81,██████,101.23,██
-18:00,63.0,████████████,693.89,█████████████,36.36,███████████,510.29,████████,431.0,██████████,3.48,█████,182.17,█████
-19:00,67.69,█████████████,579.18,███████████,9.5,███,226.86,███,59.5,█,3.92,██████,107.26,███
-20:00,75.83,███████████████,596.35,███████████,19.19,██████,369.5,██████,382.67,█████████,3.97,██████,89.77,██
-21:00,75.91,███████████████,536.56,██████████,27.76,█████████,192.88,███,136.36,███,4.13,███████,128.58,███
-22:00,81.62,████████████████,791.83,███████████████,48.7,███████████████,514.0,████████,120.36,██,2.52,████,137.93,████
-23:00,71.09,██████████████,546.0,██████████,34.71,███████████,677.12,███████████,221.4,█████,6.93,███████████,236.8,██████
+04:00,0,,385.33,███████,0.0,,459.42,███████,351.18,████████,0,,397.99,███████████
+05:00,0,,521.8,█████████,0,,453.27,███████,264.07,██████,0,,314.14,█████████
+06:00,0,,480.04,█████████,0,,767.96,█████████████,319.02,███████,0,,525.5,███████████████
+07:00,83.5,████████████████,632.79,████████████,10.0,███,1000.6,█████████████████,440.12,██████████,8.3,███████████████,563.8,████████████████
+08:00,59.46,███████████,616.23,███████████,45.6,██████████████,431.69,███████,238.67,█████,10.8,████████████████████,248.82,███████
+09:00,73.13,██████████████,601.63,███████████,36.55,███████████,716.69,████████████,222.47,█████,3.8,███████,253.96,███████
+10:00,81.03,████████████████,742.32,██████████████,45.31,██████████████,666.42,███████████,360.0,████████,6.22,███████████,275.57,████████
+11:00,100.08,████████████████████,620.05,███████████,39.07,████████████,525.57,█████████,380.27,█████████,6.95,████████████,227.75,██████
+12:00,66.29,█████████████,420.71,████████,46.24,███████████████,1166.18,████████████████████,387.31,█████████,5.08,█████████,249.04,███████
+13:00,94.57,██████████████████,663.28,████████████,52.96,█████████████████,441.61,███████,210.25,█████,3.59,██████,207.77,██████
+14:00,63.42,████████████,443.38,████████,42.88,█████████████,455.69,███████,762.0,██████████████████,4.98,█████████,117.26,███
+15:00,77.67,███████████████,600.74,███████████,46.47,███████████████,431.69,███████,223.0,█████,3.84,███████,170.43,█████
+16:00,74.0,██████████████,654.18,████████████,61.56,████████████████████,273.14,████,0,,5.21,█████████,167.57,████
+17:00,65.25,█████████████,457.61,████████,49.53,████████████████,323.12,█████,279.67,██████,3.74,██████,100.02,██
+18:00,62.9,████████████,678.44,████████████,36.33,███████████,510.29,████████,431.0,██████████,3.4,██████,172.85,█████
+19:00,69.59,█████████████,596.8,███████████,9.09,██,226.86,███,395.67,█████████,3.94,███████,111.08,███
+20:00,76.06,███████████████,725.04,█████████████,19.31,██████,369.5,██████,382.67,█████████,3.78,███████,105.76,███
+21:00,72.73,██████████████,529.58,██████████,27.56,████████,192.88,███,136.39,███,3.98,███████,127.18,███
+22:00,80.41,████████████████,786.85,███████████████,47.37,███████████████,514.0,████████,130.84,███,2.98,█████,136.26,████
+23:00,71.09,██████████████,774.9,██████████████,34.71,███████████,677.12,███████████,221.4,█████,6.39,███████████,253.25,███████
 
 BEST DAYS TO POST
 Day,QQ_Timmy avg interaction,QQ_Timmy chart,jukan05 avg interaction,jukan05 chart,TrendForce avg interaction,TrendForce chart,dylan522p avg interaction,dylan522p chart,SemiAnalysis_ avg interaction,SemiAnalysis_ chart,technews_tw avg interaction,technews_tw chart,combined avg interaction,combined chart
-Monday,72.77,██████████████,596.77,███████████████,34.84,█████████████████,578.48,████████████,232.36,██████████,5.04,██████████████,198.09,███████████
-Tuesday,77.83,███████████████,622.62,████████████████,39.75,████████████████████,591.67,█████████████,259.66,████████████,4.62,█████████████,230.52,█████████████
-Wednesday,64.9,█████████████,496.45,█████████████,37.83,███████████████████,463.94,██████████,291.23,█████████████,6.76,████████████████████,195.35,███████████
-Thursday,57.45,███████████,569.28,██████████████,31.03,███████████████,895.46,████████████████████,337.5,███████████████,4.39,████████████,226.3,████████████
-Friday,68.11,█████████████,585.5,███████████████,33.82,█████████████████,566.33,████████████,241.51,███████████,3.8,███████████,222.28,████████████
-Saturday,81.82,████████████████,761.2,████████████████████,31.89,████████████████,441.91,█████████,275.58,████████████,4.81,██████████████,294.22,████████████████
-Sunday,97.33,████████████████████,598.43,███████████████,29.47,██████████████,719.59,████████████████,427.64,████████████████████,6.4,██████████████████,352.85,████████████████████
+Monday,69.08,██████████████,581.42,███████████████,33.78,█████████████████,578.48,████████████,241.66,███████████,4.72,█████████████,188.44,███████████
+Tuesday,77.83,███████████████,622.68,████████████████,39.05,████████████████████,591.67,█████████████,252.83,████████████,4.62,█████████████,229.04,█████████████
+Wednesday,65.19,█████████████,496.72,█████████████,37.82,███████████████████,463.98,██████████,287.07,█████████████,6.76,████████████████████,195.0,███████████
+Thursday,59.35,████████████,578.25,███████████████,31.24,████████████████,895.46,████████████████████,337.71,████████████████,4.47,█████████████,227.81,█████████████
+Friday,69.02,██████████████,605.97,███████████████,33.19,████████████████,566.33,████████████,260.08,████████████,3.6,██████████,210.19,████████████
+Saturday,82.94,████████████████,761.68,████████████████████,31.89,████████████████,441.91,█████████,330.9,███████████████,4.69,█████████████,297.66,█████████████████
+Sunday,97.6,████████████████████,621.45,████████████████,29.47,███████████████,719.61,████████████████,419.07,████████████████████,5.83,█████████████████,332.67,████████████████████
 
 IMAGES VS NO IMAGES
 ,QQ_Timmy avg interaction,QQ_Timmy chart,jukan05 avg interaction,jukan05 chart,TrendForce avg interaction,TrendForce chart,dylan522p avg interaction,dylan522p chart,SemiAnalysis_ avg interaction,SemiAnalysis_ chart,technews_tw avg interaction,technews_tw chart,combined avg interaction,combined chart
-With image,78.32,████████████████████,795.91,████████████████████,48.21,████████████████████,599.08,███████████████████,360.22,████████████████████,21.93,████████████████████,358.92,████████████████████
-Without image,64.33,████████████████,461.92,███████████,23.35,█████████,605.51,████████████████████,142.31,███████,3.29,███,155.08,████████
-Winner,images,21.7% better,images,72.3% better,images,106.5% better,no images,1.1% better,images,153.1% better,images,566.6% better,images,131.4% better
+With image,78.37,████████████████████,791.42,████████████████████,47.85,████████████████████,599.09,███████████████████,375.85,████████████████████,20.28,████████████████████,359.44,████████████████████
+Without image,65.5,████████████████,477.62,████████████,23.05,█████████,605.52,████████████████████,141.35,███████,3.27,███,151.55,████████
+Winner,images,19.6% better,images,65.7% better,images,107.6% better,no images,1.1% better,images,165.9% better,images,520.2% better,images,137.2% better
 
 TOP KEYWORDS BY AVG INTERACTION
 Rank,QQ_Timmy keyword,QQ_Timmy avg,QQ_Timmy chart,jukan05 keyword,jukan05 avg,jukan05 chart,TrendForce keyword,TrendForce avg,TrendForce chart,dylan522p keyword,dylan522p avg,dylan522p chart,SemiAnalysis_ keyword,SemiAnalysis_ avg,SemiAnalysis_ chart,technews_tw keyword,technews_tw avg,technews_tw chart,combined keyword,combined avg,combined chart
-#1,Thermal Management,128.6,████████████████████,Micron,1252.69,████████████████████,Kioxia,67.38,████████████████████,Supermicro,1102.6,████████████████████,Micron,757.82,████████████████████,Glass Substrate,33.0,████████████████████,Supermicro,830.71,████████████████████
-#2,Glass Substrate,123.56,███████████████████,SK Hynix,996.6,███████████████,AMD AI,63.36,██████████████████,LLM / Foundation Model,858.97,███████████████,Google TPU,546.91,██████████████,PCB / Substrate,21.87,█████████████,LLM / Foundation Model,465.35,███████████
-#3,PCB / Substrate,118.48,██████████████████,Kioxia,965.1,███████████████,Micron,58.86,█████████████████,TSMC / Foundry,842.27,███████████████,SK Hynix,390.5,██████████,Semiconductor Materials,14.62,████████,SK Hynix,391.3,█████████
-#4,CCL,104.38,████████████████,NVIDIA AI,839.07,█████████████,PLP Packaging,53.6,███████████████,AMD AI,694.83,████████████,LLM / Foundation Model,389.78,██████████,Optical / Silicon Photonics,12.16,███████,Kioxia,328.76,███████
-#5,Power Supply,100.17,███████████████,Samsung,838.56,█████████████,DRAM / NAND / SSD,51.96,███████████████,Wafer Fab Equipment,674.0,████████████,NVIDIA AI,338.76,████████,Advanced Packaging,12.03,███████,NVIDIA AI,313.71,███████
-#6,NVIDIA AI,97.89,███████████████,LLM / Foundation Model,835.61,█████████████,SK Hynix,51.51,███████████████,ASIC / Custom Chip,664.5,████████████,Advanced Packaging,295.0,███████,Power Supply,10.07,██████,Samsung,291.63,███████
-#7,PLP Packaging,97.6,███████████████,DRAM / NAND / SSD,804.52,████████████,HBM Memory,47.66,██████████████,NVIDIA AI,535.13,█████████,AMD AI,290.53,███████,TSMC / Foundry,9.48,█████,AMD AI,285.22,██████
-#8,Optical / Silicon Photonics,92.96,██████████████,Optical / Silicon Photonics,790.73,████████████,Samsung,37.1,███████████,Samsung,478.6,████████,TSMC / Foundry,231.79,██████,ASIC / Custom Chip,8.97,█████,Google TPU,270.76,██████
-#9,Advanced Packaging,88.61,█████████████,ASIC / Custom Chip,761.0,████████████,NVIDIA AI,36.21,██████████,AI Server ODM,452.29,████████,Samsung,226.81,█████,AMD AI,8.96,█████,AI Server ODM,266.21,██████
-#10,TSMC / Foundry,78.47,████████████,AI Server ODM,698.57,███████████,Optical / Silicon Photonics,32.38,█████████,Advanced Packaging,214.6,███,DRAM / NAND / SSD,220.11,█████,NVIDIA AI,7.42,████,Foxconn / Inventec,260.3,██████
-#11,Micron,76.64,███████████,HBM Memory,673.25,██████████,Advanced Packaging,29.96,████████,DRAM / NAND / SSD,212.8,███,Optical / Silicon Photonics,219.46,█████,DRAM / NAND / SSD,6.44,███,Micron,256.36,██████
-#12,Google TPU,76.6,███████████,AMD AI,562.86,████████,LLM / Foundation Model,28.44,████████,,,,HBM Memory,218.47,█████,Thermal Management,6.08,███,CCL,245.24,█████
-#13,DRAM / NAND / SSD,73.5,███████████,Wafer Fab Equipment,538.73,████████,TSMC / Foundry,26.73,███████,,,,AI Server ODM,149.43,███,AI PC,5.83,███,DRAM / NAND / SSD,214.23,█████
-#14,SK Hynix,73.38,███████████,TSMC / Foundry,525.19,████████,AI Server ODM,24.0,███████,,,,ASIC / Custom Chip,74.33,█,Google TPU,5.78,███,Wafer Fab Equipment,183.41,████
-#15,Wafer Fab Equipment,72.24,███████████,CCL,519.29,████████,Semiconductor Materials,24.0,███████,,,,PCB / Substrate,67.4,█,Kioxia,5.75,███,Glass Substrate,180.58,████
+#1,Glass Substrate,123.56,████████████████████,Micron,1252.69,████████████████████,Kioxia,64.36,████████████████████,Supermicro,1102.6,████████████████████,Micron,757.82,████████████████████,Glass Substrate,33.33,████████████████████,Supermicro,878.75,████████████████████
+#2,Thermal Management,120.67,███████████████████,SK Hynix,996.64,███████████████,AMD AI,63.36,███████████████████,LLM / Foundation Model,858.98,███████████████,Google TPU,546.91,██████████████,CCL,25.33,███████████████,LLM / Foundation Model,464.15,██████████
+#3,PCB / Substrate,118.42,███████████████████,Kioxia,927.09,██████████████,Micron,58.86,██████████████████,TSMC / Foundry,842.27,███████████████,LLM / Foundation Model,436.57,███████████,PCB / Substrate,21.87,█████████████,SK Hynix,391.32,████████
+#4,Power Supply,106.69,█████████████████,LLM / Foundation Model,853.8,█████████████,PLP Packaging,53.6,████████████████,AMD AI,694.83,████████████,DRAM / NAND / SSD,406.76,██████████,Semiconductor Materials,14.62,████████,NVIDIA AI,322.36,███████
+#5,CCL,106.5,█████████████████,NVIDIA AI,840.61,█████████████,SK Hynix,51.51,████████████████,Wafer Fab Equipment,674.0,████████████,SK Hynix,390.5,██████████,Optical / Silicon Photonics,11.9,███████,Kioxia,309.65,███████
+#6,PLP Packaging,101.2,████████████████,Samsung,829.65,█████████████,DRAM / NAND / SSD,51.23,███████████████,ASIC / Custom Chip,664.5,████████████,NVIDIA AI,374.97,█████████,Advanced Packaging,11.49,██████,AI Server ODM,306.9,██████
+#7,NVIDIA AI,98.63,███████████████,DRAM / NAND / SSD,793.55,████████████,HBM Memory,47.66,██████████████,NVIDIA AI,535.13,█████████,HBM Memory,332.82,████████,Power Supply,9.79,█████,AMD AI,296.18,██████
+#8,Optical / Silicon Photonics,92.23,██████████████,Optical / Silicon Photonics,790.73,████████████,Samsung,36.83,███████████,Samsung,478.6,████████,AMD AI,330.2,████████,TSMC / Foundry,9.17,█████,Foxconn / Inventec,295.27,██████
+#9,Advanced Packaging,89.12,██████████████,ASIC / Custom Chip,761.0,████████████,NVIDIA AI,35.97,███████████,AI Server ODM,452.29,████████,Advanced Packaging,295.0,███████,AMD AI,8.96,█████,Samsung,286.43,██████
+#10,TSMC / Foundry,81.37,█████████████,AI Server ODM,698.57,███████████,Optical / Silicon Photonics,32.34,██████████,Advanced Packaging,214.6,███,Wafer Fab Equipment,293.6,███████,ASIC / Custom Chip,8.71,█████,Google TPU,270.89,██████
+#11,Micron,80.45,█████████████,HBM Memory,669.96,██████████,Advanced Packaging,29.96,█████████,DRAM / NAND / SSD,212.8,███,AI Server ODM,286.56,███████,NVIDIA AI,7.54,████,Micron,252.24,█████
+#12,Google TPU,76.6,████████████,AMD AI,562.86,████████,LLM / Foundation Model,27.4,████████,,,,TSMC / Foundry,241.3,██████,DRAM / NAND / SSD,6.4,███,DRAM / NAND / SSD,229.22,█████
+#13,DRAM / NAND / SSD,75.8,████████████,Wafer Fab Equipment,543.45,████████,TSMC / Foundry,26.94,████████,,,,Samsung,226.81,█████,Thermal Management,6.08,███,CCL,215.68,████
+#14,Wafer Fab Equipment,74.53,████████████,TSMC / Foundry,526.58,████████,Semiconductor Materials,24.0,███████,,,,Optical / Silicon Photonics,219.46,█████,Google TPU,5.89,███,Glass Substrate,204.48,████
+#15,SK Hynix,73.5,███████████,CCL,519.29,████████,ASIC / Custom Chip,23.32,███████,,,,ASIC / Custom Chip,159.71,████,SK Hynix,5.62,███,Wafer Fab Equipment,188.31,████
 
 TOP 10 TWEETS PER ACCOUNT
 Rank,Account,Interaction,Views,Likes,Retweets,Replies,Has Images,Keywords,Timestamp,URL,Text
@@ -118,10 +118,10 @@ Rank,Account,Interaction,Views,Likes,Retweets,Replies,Has Images,Keywords,Timest
 #4,SemiAnalysis_,4521,891296,4000,423,98,yes,ai; qwen model; city rio; space reasoning; thought latent; swireasoning base,2026-06-13T20:30:04.000Z,https://x.com/SemiAnalysis_/status/2065894494935933191,"SITUATION DETECTED: The city of Rio de Janerio has post-trained a model.  Based on Qwen 7/2, Rio 3.5 Open 397B adds SwiReasoning on top of the base Qwen model — a framework that dynamically switches between standard chain-of-thought and latent-space reasoning, guided by"
 #5,SemiAnalysis_,4110,605300,3300,717,93,yes,apple; smartphone; foxconn china; smartphone imports; centrality eroded; apple hardware; assembly network,2026-04-13T17:00:27.000Z,https://x.com/SemiAnalysis_/status/2043736083641373057,"US smartphone imports from China have collapsed from 90% to 25%.  The Foxconn China assembly network, once the undisputed backbone of Apple's hardware empire, is seeing its centrality eroded in real time. This is the clearest data point yet of a forced, systematic derisking of"
 #6,SemiAnalysis_,3788,2145700,2900,611,277,yes,micron; fab; micron 100b; megafab ny; frivolous lawsuit; risk delay; concerned citizens,2026-02-25T18:01:21.000Z,https://x.com/SemiAnalysis_/status/2026719180284666046,Micron’s $100B megafab in NY is at risk of delay due to just 6 “concerned citizens” and their frivolous lawsuit. (1/10) 
-#7,SemiAnalysis_,3568,619835,2900,496,172,yes,ai; public commits; github; claude code; software development,2026-02-27T18:00:26.000Z,https://x.com/SemiAnalysis_/status/2027443723362042308,"4% of GitHub public commits are being authored by Claude Code right now. At the current trajectory, we believe that Claude Code will be 20%+ of all daily commits by the end of 2026. While you blinked, AI consumed all of software development."
-#8,SemiAnalysis_,3268,427540,3100,125,43,yes,fab; anthropic believe; mythos class; commercial fable; class models; outside government,2026-06-13T18:40:49.000Z,https://x.com/SemiAnalysis_/status/2065866999188898080,"I’ve had a number of conversations with folks inside and outside government about the current situation with Anthropic, and here is what I believe to be true:   — As we know, Anthropic publicly released its Mythos class models earlier this week under the commercial name Fable."
-#9,SemiAnalysis_,3068,282211,2700,279,89,yes,nvidia; nvidia car; clear nvidia; car,2026-04-16T04:12:14.000Z,https://x.com/SemiAnalysis_/status/2044629920035295307,"to be clear, NVIDIA is NOT a car"
-#10,SemiAnalysis_,2781,361685,2200,498,83,yes,agentic traffic; cloudflare radar; internet html; surpassed human; news according,2026-06-04T17:00:47.000Z,https://x.com/SemiAnalysis_/status/2062580333770408231,"BREAKING NEWS: according to CloudFlare Radar Data, Agentic traffic has SURPASSED human traffic across the worldwide internet for HTML webpages."
+#7,SemiAnalysis_,3779,668221,3100,599,80,yes,dram; hbm; nvidia; attention kda; nvidia hbm; cache requirements; networking relatively; deepseek r1,2026-07-18T06:49:11.000+08:00,https://x.com/SemiAnalysis_/status/2078250693010309260,"Similar to the panic over DeepSeek R1, some uneducated people think Kimi K3’s use of linear attention (KDA) is bad for NVIDIA, HBM, DRAM, and networking because it has relatively lower KV-cache requirements. The opposite is true, and we explain why below.  1/8"
+#8,SemiAnalysis_,3568,619835,2900,496,172,yes,ai; public commits; github; claude code; software development,2026-02-27T18:00:26.000Z,https://x.com/SemiAnalysis_/status/2027443723362042308,"4% of GitHub public commits are being authored by Claude Code right now. At the current trajectory, we believe that Claude Code will be 20%+ of all daily commits by the end of 2026. While you blinked, AI consumed all of software development."
+#9,SemiAnalysis_,3268,427540,3100,125,43,yes,fab; anthropic believe; mythos class; commercial fable; class models; outside government,2026-06-13T18:40:49.000Z,https://x.com/SemiAnalysis_/status/2065866999188898080,"I’ve had a number of conversations with folks inside and outside government about the current situation with Anthropic, and here is what I believe to be true:   — As we know, Anthropic publicly released its Mythos class models earlier this week under the commercial name Fable."
+#10,SemiAnalysis_,3068,282211,2700,279,89,yes,nvidia; nvidia car; clear nvidia; car,2026-04-16T04:12:14.000Z,https://x.com/SemiAnalysis_/status/2044629920035295307,"to be clear, NVIDIA is NOT a car"
 
 #1,technews_tw,174,31167,136,13,25,yes,#大摩重申加碼旺矽穎崴; pin 產能出現嚴重短缺; 大摩重申加碼旺矽穎崴 隨著貴金屬價格持續攀升; 半導體供應鏈預計將迎接新一波的成本轉嫁 根據摩根士丹利; probe; morgan stanley,2026-07-01T08:56:18.000Z,https://x.com/technews_tw/status/2072242883932147732,大摩警告探針產能出現嚴重短缺！ #大摩重申加碼旺矽穎崴 隨著貴金屬價格持續攀升，以及測試探針（test pin）產能出現嚴重短缺，半導體供應鏈預計將迎接新一波的成本轉嫁。根據摩根士丹利（Morgan Stanley，大摩）最新發布報告指出，供應鏈調查顯示，探針卡（probe…  http:// dlvr.it/TTJ2Y6
 #2,technews_tw,148,10021,125,19,4,yes,#磷化銦inp磊晶供應鏈; 計畫在今後 年最高投資; 日發布新聞稿宣布 為了因應資料中心用光通訊基礎設施需求擴大; 10 磷化銦inp磊晶供應鏈; jx 金屬; inp,2026-06-17T02:34:17.000Z,https://x.com/technews_tw/status/2067073313957146678,"磷化銦基板產能 4 年內擴增至 10 倍！ #磷化銦InP磊晶供應鏈 JX 金屬 16 日發布新聞稿宣布，為了因應資料中心用光通訊基礎設施需求擴大，將進一步擴增 InP 基板產能，計畫在今後 4 年最高投資 1,200 億日圓（包含之前公布的投資計畫計算、總投資額將達 1,500…  http:// dlvr.it/TT4WKF"

@@ -7,6 +7,7 @@
     "scrape": "node scraper.js",
     "scrape:watchlist": "node scrape_watchlist.js",
     "scrape:accounts": "node scrape_accounts.js",
+    "rescrape:full": "node rescrape_full.js",
     "scrape:competitors": "node scrape_competitors.js",
     "scrape:plagiarism": "node scrape_plagiarism.js",
     "analyze": "python3 analyze_engagement.py",

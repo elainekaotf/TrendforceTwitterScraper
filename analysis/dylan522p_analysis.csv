@@ -1,13 +1,13 @@
 SUMMARY -- @dylan522p
   Total tweets:       597
-  Avg interaction:    602.23
+  Avg interaction:    602.24
   Median interaction: 292
   Max interaction:    26372
-  Avg views:          112767.64
+  Avg views:          112791.35
   Max views:          6654201
 ""
 "BEST HOURS TO POST (Taiwan Time, avg total interaction):"
-  00:00  ██████  381.17  (36 tweets)
+  00:00  ██████  381.25  (36 tweets)
   01:00  ██████████  624.47  (32 tweets)
   02:00  ██████████  612.54  (37 tweets)
   03:00  ████████  486.39  (36 tweets)
@@ -22,7 +22,7 @@ SUMMARY -- @dylan522p
   12:00  ████████████████████  1166.18  (28 tweets)
   13:00  ███████  441.61  (23 tweets)
   14:00  ███████  455.69  (13 tweets)
-  15:00  ███████  431.62  (13 tweets)
+  15:00  ███████  431.69  (13 tweets)
   16:00  ████  273.14  (7 tweets)
   17:00  █████  323.12  (8 tweets)
   18:00  ████████  510.29  (7 tweets)
@@ -35,20 +35,20 @@ SUMMARY -- @dylan522p
 AVG INTERACTION BY DAY OF WEEK:
   Monday      ████████████  578.48
   Tuesday     █████████████  591.67
-  Wednesday   ██████████  463.94
+  Wednesday   ██████████  463.98
   Thursday    ████████████████████  895.46
   Friday      ████████████  566.33
   Saturday    █████████  441.91
-  Sunday      ████████████████  719.59
+  Sunday      ████████████████  719.61
 ""
 IMAGES VS NO IMAGES:
-  With image:    avg 599.08  (304 tweets)
-  Without image: avg 605.51  (293 tweets)
+  With image:    avg 599.09  (304 tweets)
+  Without image: avg 605.52  (293 tweets)
   -> no images perform 1.1% better
 ""
 TOP KEYWORDS BY AVG INTERACTION (min 3 tweets):
   Supermicro                     avg 1102.6   (5 tweets)
-  LLM / Foundation Model         avg 858.97   (103 tweets)
+  LLM / Foundation Model         avg 858.98   (103 tweets)
   TSMC / Foundry                 avg 842.27   (15 tweets)
   AMD AI                         avg 694.83   (23 tweets)
   Wafer Fab Equipment            avg 674.0    (9 tweets)

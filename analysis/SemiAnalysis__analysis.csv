@@ -1,73 +1,73 @@
 SUMMARY -- @SemiAnalysis_
-  Total tweets:       850
-  Avg interaction:    288.44
+  Total tweets:       885
+  Avg interaction:    298.21
   Median interaction: 123
   Max interaction:    14700
-  Avg views:          61026.99
+  Avg views:          62779.37
   Max views:          2264757
 ""
 "BEST HOURS TO POST (Taiwan Time, avg total interaction):"
-  00:00  █████████  382.42  (19 tweets)
-  01:00  ███████  316.2  (177 tweets)
+  00:00  █████████  383.05  (19 tweets)
+  01:00  ███████  317.92  (179 tweets)
   02:00  ████████████████████  813.73  (22 tweets)
   03:00  ███████  298.33  (30 tweets)
-  04:00  ████████  328.53  (30 tweets)
-  05:00  ██████  270.2  (133 tweets)
-  06:00  █████  221.64  (39 tweets)
+  04:00  ████████  351.18  (34 tweets)
+  05:00  ██████  264.07  (143 tweets)
+  06:00  ███████  319.02  (48 tweets)
   07:00  ██████████  440.12  (40 tweets)
   08:00  █████  238.67  (24 tweets)
-  09:00  █████  215.86  (90 tweets)
-  10:00  ████████  359.89  (44 tweets)
-  11:00  ████████  364.8  (25 tweets)
-  12:00  ███████  319.64  (28 tweets)
+  09:00  █████  222.47  (91 tweets)
+  10:00  ████████  360.0  (44 tweets)
+  11:00  █████████  380.27  (30 tweets)
+  12:00  █████████  387.31  (29 tweets)
   13:00  █████  210.25  (4 tweets)
   14:00  ██████████████████  762.0  (3 tweets)
   15:00  █████  223.0  (1 tweets)
   17:00  ██████  279.67  (3 tweets)
   18:00  ██████████  431.0  (1 tweets)
-  19:00  █  59.5  (2 tweets)
+  19:00  █████████  395.67  (3 tweets)
   20:00  █████████  382.67  (3 tweets)
-  21:00  ███  136.36  (75 tweets)
-  22:00  ██  120.36  (47 tweets)
+  21:00  ███  136.39  (75 tweets)
+  22:00  ███  130.84  (49 tweets)
   23:00  █████  221.4  (10 tweets)
 ""
 AVG INTERACTION BY DAY OF WEEK:
-  Monday      ██████████  232.36
-  Tuesday     ████████████  259.66
-  Wednesday   █████████████  291.23
-  Thursday    ███████████████  337.5
-  Friday      ███████████  241.51
-  Saturday    ████████████  275.58
-  Sunday      ████████████████████  427.64
+  Monday      ███████████  241.66
+  Tuesday     ████████████  252.83
+  Wednesday   █████████████  287.07
+  Thursday    ████████████████  337.71
+  Friday      ████████████  260.08
+  Saturday    ███████████████  330.9
+  Sunday      ████████████████████  419.07
 ""
 IMAGES VS NO IMAGES:
-  With image:    avg 360.22  (570 tweets)
-  Without image: avg 142.31  (280 tweets)
-  -> images perform 153.1% better
+  With image:    avg 375.85  (592 tweets)
+  Without image: avg 141.35  (293 tweets)
+  -> images perform 165.9% better
 ""
 TOP KEYWORDS BY AVG INTERACTION (min 3 tweets):
   Micron                         avg 757.82   (11 tweets)
   Google TPU                     avg 546.91   (11 tweets)
+  LLM / Foundation Model         avg 436.57   (110 tweets)
+  DRAM / NAND / SSD              avg 406.76   (21 tweets)
   SK Hynix                       avg 390.5    (8 tweets)
-  LLM / Foundation Model         avg 389.78   (104 tweets)
-  NVIDIA AI                      avg 338.76   (140 tweets)
+  NVIDIA AI                      avg 374.97   (144 tweets)
+  HBM Memory                     avg 332.82   (34 tweets)
+  AMD AI                         avg 330.2    (45 tweets)
   Advanced Packaging             avg 295.0    (11 tweets)
-  AMD AI                         avg 290.53   (38 tweets)
-  TSMC / Foundry                 avg 231.79   (28 tweets)
+  Wafer Fab Equipment            avg 293.6    (5 tweets)
+  AI Server ODM                  avg 286.56   (16 tweets)
+  TSMC / Foundry                 avg 241.3    (30 tweets)
   Samsung                        avg 226.81   (16 tweets)
-  DRAM / NAND / SSD              avg 220.11   (18 tweets)
   Optical / Silicon Photonics    avg 219.46   (13 tweets)
-  HBM Memory                     avg 218.47   (30 tweets)
-  AI Server ODM                  avg 149.43   (14 tweets)
-  ASIC / Custom Chip             avg 74.33    (6 tweets)
-  PCB / Substrate                avg 67.4     (10 tweets)
+  ASIC / Custom Chip             avg 159.71   (7 tweets)
 ""
 BEST KEYWORD + IMAGE COMBOS:
-  image                          avg 3434.2
+  image                          avg 2998.0
+  attention kda                  avg 1940.0
+  kimi k3                        avg 1825.67
   smartphone                     avg 1715.33
   nvl72x2 rack                   avg 1161.5
-  capture                        avg 1105.0
-  apple                          avg 1004.0
 ""
 TOP HASHTAGS BY AVG INTERACTION (min 2 tweets):
 ""
@@ -104,15 +104,15 @@ TOP 10 TWEETS BY INTERACTION:
   6. [3788 total | 2900 likes  611 retweets  277 replies  views: 2145700]
      Micron’s $100B megafab in NY is at risk of delay due to just 6 “concerned citizens” and their frivolous lawsuit. (1/10) 
      https://x.com/SemiAnalysis_/status/2026719180284666046
-  7. [3568 total | 2900 likes  496 retweets  172 replies  views: 619835]
+  7. [3779 total | 3100 likes  599 retweets  80 replies  views: 668221]
+"     Similar to the panic over DeepSeek R1, some uneducated people think Kimi K3’s use of linear attention (KDA) is bad for N..."
+     https://x.com/SemiAnalysis_/status/2078250693010309260
+  8. [3568 total | 2900 likes  496 retweets  172 replies  views: 619835]
 "     4% of GitHub public commits are being authored by Claude Code right now. At the current trajectory, we believe that Clau..."
      https://x.com/SemiAnalysis_/status/2027443723362042308
-  8. [3268 total | 3100 likes  125 retweets  43 replies  views: 427540]
+  9. [3268 total | 3100 likes  125 retweets  43 replies  views: 427540]
 "     I’ve had a number of conversations with folks inside and outside government about the current situation with Anthropic, ..."
      https://x.com/SemiAnalysis_/status/2065866999188898080
-  9. [3068 total | 2700 likes  279 retweets  89 replies  views: 282211]
+  10. [3068 total | 2700 likes  279 retweets  89 replies  views: 282211]
 "     to be clear, NVIDIA is NOT a car"
      https://x.com/SemiAnalysis_/status/2044629920035295307
-  10. [2781 total | 2200 likes  498 retweets  83 replies  views: 361685]
-"     BREAKING NEWS: according to CloudFlare Radar Data, Agentic traffic has SURPASSED human traffic across the worldwide inte..."
-     https://x.com/SemiAnalysis_/status/2062580333770408231
