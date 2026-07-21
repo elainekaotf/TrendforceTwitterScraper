@@ -24,11 +24,14 @@ set -e
 # 1. Re-run engagement analysis so the JSON is fresh
 python3 analyze_engagement.py
 
+# 1a. FR-01: recluster competitor topics and update the gap list
+python3 cluster_topics.py
+
 # 2. Generate docs/index.html from the JSON
 python3 generate_dashboard.py
 
-# 3. Stage and commit only the dashboard HTML
-git add docs/index.html
+# 3. Stage and commit the dashboard HTML and topic-cluster output
+git add docs/index.html analysis/topic_clusters.json
 if git diff --cached --quiet; then
   echo "Nothing changed in docs/index.html, skipping push."
   exit 0
@@ -54,8 +57,20 @@ for attempt in 1 2 3; do
     echo "[ERROR] Authentication failure — not retrying, this needs manual credential setup."
     exit 1
   fi
-  echo "[WARN] git push failed (attempt $attempt/3), retrying after rebase..."
-  git pull --rebase 2>&1
+  # Only rebase if the remote actually moved on (rejected/non-fast-forward).
+  # A plain network/DNS failure needs nothing but a retry — attempting
+  # `git pull --rebase` unconditionally fails whenever the working tree has
+  # any of the scraped-data files (csv/, analysis/) sitting uncommitted,
+  # which is most of the time since publish.sh only ever commits
+  # docs/index.html. That masked the real error behind a useless "you have
+  # unstaged changes" on every retry, guaranteeing failure regardless of
+  # whether the outage had cleared (seen repeatedly: 2026-07-09, 07-17, 07-21).
+  if echo "$PUSH_OUTPUT" | grep -qi "rejected\|non-fast-forward\|fetch first"; then
+    echo "[WARN] git push failed (attempt $attempt/3), remote has diverged — rebasing and retrying..."
+    git pull --rebase 2>&1
+  else
+    echo "[WARN] git push failed (attempt $attempt/3), likely transient (network) — retrying without rebase..."
+  fi
   sleep $((attempt * 5))
 done
 

@@ -4,6 +4,10 @@ session.json
 results.json
 results.csv
 error-screenshot.png
+error-*.png
+debug_*.png
 cron.log
 cron.log.old
 .DS_Store
+images/
+own_comments.json
