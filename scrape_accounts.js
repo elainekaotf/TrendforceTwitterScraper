@@ -208,6 +208,10 @@ async function scrapeTimeline(page, handle, maxScrolls = 15) {
         };
 
         const hasImages = el.querySelectorAll('[data-testid="tweetPhoto"] img').length > 0;
+        // videoPlayer covers native video; videoComponent covers GIFs (X
+        // renders both through the same player chrome) - either counts as
+        // video for ranking purposes.
+        const hasVideo = el.querySelectorAll('[data-testid="videoPlayer"], [data-testid="videoComponent"]').length > 0;
 
         // text.startsWith('RT @') only ever caught X's old-style retweet
         // syntax, which the modern Repost button doesn't produce at all -
@@ -238,7 +242,7 @@ async function scrapeTimeline(page, handle, maxScrolls = 15) {
         }
 
         return {
-          text, timestamp, tweetUrl, hasImages, isRetweet, tweetHandle, views,
+          text, timestamp, tweetUrl, hasImages, hasVideo, isRetweet, tweetHandle, views,
           likes: getStatText('like'),
           retweets: getStatText('retweet'),
           replies: getStatText('reply'),
@@ -448,6 +452,13 @@ async function scrapeOneAccount(page, handle) {
         existing.cols[3] = t.retweets;
         existing.cols[4] = t.replies;
         existing.cols[5] = t.hasImages ? 'yes' : 'no';
+        // hasVideo is appended as column 10 (added after every other column
+        // was already in place) - assigning past the end of an older row's
+        // shorter cols array is safe in JS (it just extends the array), so
+        // this refresh is what backfills hasVideo onto pre-existing rows
+        // within their first 7 days (UPDATE_WINDOW_MS) rather than needing
+        // a separate one-off backfill pass.
+        existing.cols[10] = t.hasVideo ? 'yes' : 'no';
         existingLines[existing.idx] = existing.cols.join(',');
         updatedCount++;
       }
@@ -473,11 +484,12 @@ async function scrapeOneAccount(page, handle) {
     newRows = enriched.map(t =>
       [t.timestamp, t.views ?? '0', t.likes, t.retweets, t.replies,
        t.hasImages ? 'yes' : 'no',
-       safe(t.keywords), safe(t.tweetUrl), safe(t.text), safe(t.translatedText ?? '')].join(',')
+       safe(t.keywords), safe(t.tweetUrl), safe(t.text), safe(t.translatedText ?? ''),
+       t.hasVideo ? 'yes' : 'no'].join(',')
     ).join('\n');
   }
 
-  const header = 'timestamp,views,likes,retweets,replies,hasImages,keywords,tweetUrl,text,translated_text\n';
+  const header = 'timestamp,views,likes,retweets,replies,hasImages,keywords,tweetUrl,text,translated_text,hasVideo\n';
   const survivingLines = existingLines.filter((_, i) => !droppedIdx.has(i));
   // Prepend new rows (newest first) then existing rows (refreshed in place)
   const combined = header
