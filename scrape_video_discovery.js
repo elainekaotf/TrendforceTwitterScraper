@@ -1,10 +1,24 @@
 /**
  * Platform-wide video discovery — unlike scrape_accounts.js/scrape_watchlist.js
  * (which only ever see tracked accounts' own timelines), this searches X's
- * public search with filter:videos across a fixed set of industry keywords,
- * so ANY account's video post can surface, not just ones already tracked in
- * accounts_config.json. Feeds TrendForceDash's cross-platform X Video
- * Ranking section (see video_ranking.py on the dashboard side).
+ * public search with filter:videos so ANY account's video post can surface,
+ * not just ones already tracked in accounts_config.json. Feeds
+ * TrendForceDash's cross-platform X Video Ranking section (see
+ * video_ranking.py on the dashboard side).
+ *
+ * Two query sources, both combined into one flat list each run:
+ *  - KEYWORD_BATCHES: a fixed set of TrendForce's own industry terms
+ *    (semiconductor/AI hardware), so that coverage never depends on
+ *    whether those topics happen to be trending right now.
+ *  - Rising Topics: read live from TrendForceDash's own FR-02 output
+ *    (analysis/fuzzy_trends_1d.json - see getRisingTopicQueries()), not
+ *    X's generic platform-wide Trending tab. That was tried first and
+ *    rejected: it surfaces whatever's popular on X overall (K-pop,
+ *    celebrity gossip, Bitcoin, ...), which has nothing to do with
+ *    TrendForce's own coverage. Rising Topics is already scoped to our
+ *    tracked accounts' actual domain, so searching video for whatever's
+ *    rising there stays broader than the fixed keyword list (follows
+ *    whatever's actually heating up right now) while staying relevant.
  *
  * Reuses session.json - the same login session scrape_watchlist.js expects,
  * saved by the main mention-tracker scraper. Run that first if this errors
@@ -37,6 +51,54 @@ const SEARCH_QUERIES = KEYWORD_BATCHES.map((terms) => {
   const orPart = terms.map((t) => (t.includes(' ') ? `"${t}"` : t)).join(' OR ');
   return `(${orPart}) filter:videos since:${sinceDate}`;
 });
+
+// TrendForceDash is a sibling repo at a fixed local path - run_daily.sh
+// already reaches across to it by absolute path (calls its run_pipeline.sh
+// directly), so reading its analysis output the same way isn't a new kind
+// of cross-repo dependency, just the reverse direction of an existing one.
+const RISING_TOPICS_FILE = '/Users/elainekao/TrendForceDash/analysis/fuzzy_trends_1d.json';
+const MAX_RISING_TOPICS = 10;
+
+// Each topic's label is already an OR-able keyword set (topic_clusters.py's
+// label_cluster() joins a cluster's top terms with " / ", e.g.
+// "sk / hynix / samsung / hbm") - one query per topic, no extra batching
+// needed since a topic's own keywords already fill that role.
+function getRisingTopicQueries() {
+  let data;
+  try {
+    data = JSON.parse(fs.readFileSync(RISING_TOPICS_FILE, 'utf8'));
+  } catch (err) {
+    console.log(`  [!] Could not read ${RISING_TOPICS_FILE} (${err.message}).`);
+    return [];
+  }
+
+  // Same topic can legitimately show up on more than one platform (e.g.
+  // "sk / hynix / samsung / hbm" rising on both Facebook and X) - dedup by
+  // label and keep the higher rising_score seen, then take the top N
+  // overall so one platform having many topics can't crowd out the rest.
+  const byLabel = new Map();
+  for (const platformData of Object.values(data.platforms || {})) {
+    for (const topic of platformData.top_rising_topics || []) {
+      if (!topic.label) continue;
+      const existing = byLabel.get(topic.label);
+      if (!existing || topic.rising_score > existing.rising_score) {
+        byLabel.set(topic.label, topic);
+      }
+    }
+  }
+
+  const topTopics = Array.from(byLabel.values())
+    .sort((a, b) => b.rising_score - a.rising_score)
+    .slice(0, MAX_RISING_TOPICS);
+
+  console.log(`  Found ${topTopics.length} rising topic(s): ${topTopics.map((t) => t.label).join(' | ')}`);
+
+  return topTopics.map((t) => {
+    const terms = t.label.split(' / ').map((s) => s.trim()).filter(Boolean);
+    const orPart = terms.map((term) => (/\s/.test(term) ? `"${term}"` : term)).join(' OR ');
+    return `(${orPart}) filter:videos since:${sinceDate}`;
+  });
+}
 
 const SESSION_FILE = path.join(__dirname, 'session.json');
 const CSV_DIR = path.join(__dirname, 'csv');
@@ -195,11 +257,15 @@ async function main() {
       console.log(`\nResuming — loaded ${allTweets.length} video posts from raw_video_discovery.json`);
       console.log('Delete raw_video_discovery.json to start a fresh scrape.\n');
     } else {
-      for (let qi = 0; qi < SEARCH_QUERIES.length; qi++) {
-        const tweets = await scrapeVideoTweets(page, SEARCH_QUERIES[qi], 15);
+      console.log('\nReading Rising Topics from TrendForceDash...');
+      const risingTopicQueries = getRisingTopicQueries();
+      const allQueries = SEARCH_QUERIES.concat(risingTopicQueries);
+
+      for (let qi = 0; qi < allQueries.length; qi++) {
+        const tweets = await scrapeVideoTweets(page, allQueries[qi], 15);
         allTweets.push(...tweets);
         fs.writeFileSync(RAW_FILE, JSON.stringify(allTweets, null, 2));
-        if (qi < SEARCH_QUERIES.length - 1) {
+        if (qi < allQueries.length - 1) {
           console.log('  Cooling down 10s before next batch...');
           await page.waitForTimeout(10000);
         }
