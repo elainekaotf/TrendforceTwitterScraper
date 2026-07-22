@@ -15,7 +15,11 @@ import sys
 BASE = os.path.dirname(__file__)
 CSV_DIR = os.path.join(BASE, 'csv')
 ACCOUNTS = ['TrendForce', 'technews_tw', 'dylan522p', 'jukan05', 'QQ_Timmy', 'SemiAnalysis_']
-EXPECTED_COLUMNS = 10
+# hasVideo was added 2026-07-22 as a new trailing column - rows scraped
+# before that change are exactly one field short until their next refresh
+# (scrape_accounts.js backfills it in place within each row's 7-day
+# refresh window), so being short by exactly 1 is expected, not corrupt.
+EXPECTED_COLUMNS = 11
 # Row count is allowed to shrink a little (in-place stat refreshes don't
 # change count, but the self-healing dedup can legitimately drop a few
 # duplicate rows). A bigger drop than this means something is actually broken.
@@ -61,7 +65,7 @@ def check_csv(handle):
         row_count = 0
         for i, row in enumerate(reader, start=2):
             row_count += 1
-            if len(row) < len(header):
+            if len(row) < len(header) - 1:
                 malformed_lines.append(i)
             elif len(row) > len(header) and any(f.strip() for f in row[len(header):]):
                 # Extra columns only count as malformed if they hold real
