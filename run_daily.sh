@@ -46,6 +46,7 @@ rm -f "$ACCOUNTS_LOG"
 
 npm run scrape:watchlist || { echo "[WARN] scrape:watchlist failed"; FAILURES+=("watchlist scrape"); }
 npm run scrape:competitors || { echo "[WARN] scrape:competitors failed"; FAILURES+=("competitor scrape"); }
+npm run scrape:video-discovery || { echo "[WARN] scrape:video-discovery failed"; FAILURES+=("video discovery scrape"); }
 
 # Update and publish the dashboard to GitHub Pages
 # (publish.sh sends its own alert on CSV-validation/push/deploy failures)
