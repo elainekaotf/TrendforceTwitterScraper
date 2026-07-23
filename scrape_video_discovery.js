@@ -284,14 +284,28 @@ async function main() {
         // as its own term, and "sk" is a substring of "Haskell") - a
         // word-boundary regex for pure-ASCII terms avoids that; multi-word
         // and CJK terms (no spaces to bound on) keep plain substring.
-        const termMatches = (term, lower) => {
-          if (/^[a-z0-9]+$/.test(term)) return new RegExp(`\\b${term}\\b`).test(lower);
-          return lower.includes(term);
+        //
+        // Word-boundary alone still isn't enough for all-caps industry
+        // acronyms (NAND, DRAM, HBM, EUV, ...) - "Injured Inspector Nand
+        // Kishor Singh" case-insensitively matched "NAND" as a whole word,
+        // tagging an unrelated news video (found 2026-07-23). Industry
+        // acronyms are almost always written ALL CAPS in real posts, while
+        // a name/word that happens to collide is typically title-case - so
+        // when the TERM ITSELF (before lowercasing) is all-uppercase,
+        // require a case-SENSITIVE match against the original tweet text.
+        const termMatches = (term, text, textLower) => {
+          if (/^[a-zA-Z0-9]+$/.test(term)) {
+            if (term === term.toUpperCase() && term.length > 1) {
+              return new RegExp(`\\b${term}\\b`).test(text);
+            }
+            return new RegExp(`\\b${term.toLowerCase()}\\b`).test(textLower);
+          }
+          return textLower.includes(term.toLowerCase());
         };
-        const terms = topic.split(' / ').map((s) => s.trim().toLowerCase()).filter(Boolean);
+        const terms = topic.split(' / ').map((s) => s.trim()).filter(Boolean);
         const relevant = tweets.filter((t) => {
           const lower = t.text.toLowerCase();
-          return terms.some((term) => termMatches(term, lower));
+          return terms.some((term) => termMatches(term, t.text, lower));
         });
         const dropped = tweets.length - relevant.length;
         if (dropped) console.log(`  Dropped ${dropped} result(s) matching the search but not the tweet's own text (likely a username match).`);
