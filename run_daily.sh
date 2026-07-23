@@ -12,6 +12,45 @@ if [ -f "$CRON_LOG" ] && [ "$(stat -f%z "$CRON_LOG" 2>/dev/null || stat -c%s "$C
   mv "$CRON_LOG" "$CRON_LOG.old"
 fi
 
+# The Mac sleeps between scheduled runs (nothing here ever disabled system
+# sleep), so launchd's own StartCalendarInterval silently SKIPS a firing
+# whenever the Mac is asleep at that exact time - found 2026-07-23 when the
+# 04:30 run never appeared in this log at all. `pmset repeat` only holds
+# ONE daily wake time, not all six of this job's slots, so instead each run
+# schedules a ONE-TIME wake for whichever of the six slots comes next -
+# scheduled right at the START of the run (before any scraping) so it
+# still happens even if this run itself fails or crashes partway through.
+# Requires passwordless sudo for `pmset schedule` (see sudoers setup note
+# in the project's own docs/history) - without that, this just logs a
+# warning and the run continues normally; it only affects whether the
+# NEXT slot gets a wake scheduled, not this run.
+schedule_next_wake() {
+  local slots=("00:30:00" "04:30:00" "08:30:00" "12:30:00" "16:30:00" "20:30:00")
+  local now_epoch today next_epoch candidate_epoch
+  now_epoch=$(date +%s)
+  today=$(date +%Y-%m-%d)
+  for slot in "${slots[@]}"; do
+    candidate_epoch=$(date -j -f "%Y-%m-%d %H:%M:%S" "$today $slot" "+%s" 2>/dev/null)
+    if [ -n "$candidate_epoch" ] && [ "$candidate_epoch" -gt "$now_epoch" ]; then
+      next_epoch="$candidate_epoch"
+      break
+    fi
+  done
+  if [ -z "$next_epoch" ]; then
+    local tomorrow
+    tomorrow=$(date -v+1d +%Y-%m-%d)
+    next_epoch=$(date -j -f "%Y-%m-%d %H:%M:%S" "$tomorrow 00:30:00" "+%s")
+  fi
+  local wake_str
+  wake_str=$(date -j -f "%s" "$next_epoch" "+%m/%d/%y %H:%M:%S")
+  if sudo -n pmset schedule wake "$wake_str" 2>/dev/null; then
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] Scheduled next wake at $wake_str"
+  else
+    echo "[WARN] Could not schedule next wake ($wake_str) - passwordless sudo for pmset isn't set up. See docs/history for the sudoers line needed."
+  fi
+}
+schedule_next_wake
+
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] Starting daily run..."
 
 FAILURES=()
