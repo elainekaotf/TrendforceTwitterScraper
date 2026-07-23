@@ -270,8 +270,33 @@ async function main() {
 
       for (let qi = 0; qi < allQueries.length; qi++) {
         const tweets = await scrapeVideoTweets(page, allQueries[qi].query, 15);
-        tweets.forEach((t) => { t.topic = allQueries[qi].topic; });
-        allTweets.push(...tweets);
+        const topic = allQueries[qi].topic;
+        // X's search can return a result that matches the QUERY but not
+        // the tweet's own TEXT - found 2026-07-23: @ChipGotIt_'s account
+        // name contains "Chip", so an unrelated video got tagged "Intel /
+        // AMD / semiconductor / chip / foundry" purely from a username
+        // match. Keep only results where one of the topic's own terms
+        // actually appears in the tweet text, same content-verification
+        // spirit as the hasVideo double-check above.
+        //
+        // Plain substring alone still false-positives on short ASCII terms
+        // (a Rising Topic label like "sk / hynix / samsung / hbm" has "sk"
+        // as its own term, and "sk" is a substring of "Haskell") - a
+        // word-boundary regex for pure-ASCII terms avoids that; multi-word
+        // and CJK terms (no spaces to bound on) keep plain substring.
+        const termMatches = (term, lower) => {
+          if (/^[a-z0-9]+$/.test(term)) return new RegExp(`\\b${term}\\b`).test(lower);
+          return lower.includes(term);
+        };
+        const terms = topic.split(' / ').map((s) => s.trim().toLowerCase()).filter(Boolean);
+        const relevant = tweets.filter((t) => {
+          const lower = t.text.toLowerCase();
+          return terms.some((term) => termMatches(term, lower));
+        });
+        const dropped = tweets.length - relevant.length;
+        if (dropped) console.log(`  Dropped ${dropped} result(s) matching the search but not the tweet's own text (likely a username match).`);
+        relevant.forEach((t) => { t.topic = topic; });
+        allTweets.push(...relevant);
         fs.writeFileSync(RAW_FILE, JSON.stringify(allTweets, null, 2));
         if (qi < allQueries.length - 1) {
           console.log('  Cooling down 10s before next batch...');
