@@ -47,9 +47,13 @@ const KEYWORD_BATCHES = [
   ['Intel', 'AMD', 'semiconductor', 'chip', 'foundry'],
   ['DRAM', 'NAND', 'HBM', 'EUV', 'AI chip'],
 ];
+// Each query now carries a display "topic" label alongside it (same
+// " / "-joined shape as a Rising Topic's own label) so every discovered
+// video can be tagged with which topic surfaced it - shown as a Topics
+// column on the dashboard.
 const SEARCH_QUERIES = KEYWORD_BATCHES.map((terms) => {
   const orPart = terms.map((t) => (t.includes(' ') ? `"${t}"` : t)).join(' OR ');
-  return `(${orPart}) filter:videos since:${sinceDate}`;
+  return { query: `(${orPart}) filter:videos since:${sinceDate}`, topic: terms.join(' / ') };
 });
 
 // TrendForceDash is a sibling repo at a fixed local path - run_daily.sh
@@ -96,7 +100,7 @@ function getRisingTopicQueries() {
   return topTopics.map((t) => {
     const terms = t.label.split(' / ').map((s) => s.trim()).filter(Boolean);
     const orPart = terms.map((term) => (/\s/.test(term) ? `"${term}"` : term)).join(' OR ');
-    return `(${orPart}) filter:videos since:${sinceDate}`;
+    return { query: `(${orPart}) filter:videos since:${sinceDate}`, topic: t.label };
   });
 }
 
@@ -201,7 +205,10 @@ const safe = (s) => `"${String(s ?? '').replace(/"/g, '""').replace(/\n/g, ' ')}
 
 function writeDiscoveryCsv(tweets) {
   const outFile = path.join(CSV_DIR, 'video_discovery.csv');
-  const header = 'timestamp,handle,views,likes,retweets,tweetUrl,text\n';
+  // topic appended at the end rather than inserted among the existing
+  // columns, so the existing-row re-parse below (keyed off a fixed index
+  // for tweetUrl) doesn't need to change.
+  const header = 'timestamp,handle,views,likes,retweets,tweetUrl,text,topic\n';
 
   // Merge with whatever's already on disk (keyed by tweetUrl), same
   // refresh-in-place reasoning as scrape_accounts.js - views/likes keep
@@ -219,7 +226,7 @@ function writeDiscoveryCsv(tweets) {
   }
 
   for (const t of tweets) {
-    const row = [t.timestamp, safe(t.handle), t.views || '0', t.likes, t.retweets, safe(t.tweetUrl), safe(t.text)].join(',');
+    const row = [t.timestamp, safe(t.handle), t.views || '0', t.likes, t.retweets, safe(t.tweetUrl), safe(t.text), safe(t.topic || '')].join(',');
     existingByUrl.set(t.tweetUrl, row);
   }
 
@@ -262,7 +269,8 @@ async function main() {
       const allQueries = SEARCH_QUERIES.concat(risingTopicQueries);
 
       for (let qi = 0; qi < allQueries.length; qi++) {
-        const tweets = await scrapeVideoTweets(page, allQueries[qi], 15);
+        const tweets = await scrapeVideoTweets(page, allQueries[qi].query, 15);
+        tweets.forEach((t) => { t.topic = allQueries[qi].topic; });
         allTweets.push(...tweets);
         fs.writeFileSync(RAW_FILE, JSON.stringify(allTweets, null, 2));
         if (qi < allQueries.length - 1) {
