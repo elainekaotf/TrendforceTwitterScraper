@@ -36,6 +36,16 @@ const sinceArg = process.argv.includes('--since') ? process.argv[process.argv.in
 const sinceDate = sinceArg || new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString().slice(0, 10);
 if (sinceArg) console.log(`Running with custom since date: ${sinceDate}`);
 
+// 13 query batches (3 fixed + up to 10 Rising Topics) at 15 scrolls each
+// was adding 60-130+ min to the shared run_daily.sh schedule (found
+// 2026-07-24: daily runs went from ~35min to 69min-4h after this script
+// was added to it) - 10 is enough to catch what's genuinely new on a 4h
+// cadence without re-walking as deep into each query's results every
+// time. Override via --scrolls for a deeper one-off pass:
+// `node scrape_video_discovery.js --scrolls 20`.
+const scrollsArg = process.argv.includes('--scrolls') ? process.argv[process.argv.indexOf('--scrolls') + 1] : null;
+const MAX_SCROLLS_PER_QUERY = scrollsArg ? parseInt(scrollsArg, 10) : 10;
+
 // Batched industry keywords (TrendForce's own coverage domain - semiconductor
 // / AI hardware news), each combined with filter:videos so results are
 // video posts from ANY account, not a fixed list. Kept to ~5 terms per
@@ -269,7 +279,7 @@ async function main() {
       const allQueries = SEARCH_QUERIES.concat(risingTopicQueries);
 
       for (let qi = 0; qi < allQueries.length; qi++) {
-        const tweets = await scrapeVideoTweets(page, allQueries[qi].query, 15);
+        const tweets = await scrapeVideoTweets(page, allQueries[qi].query, MAX_SCROLLS_PER_QUERY);
         const topic = allQueries[qi].topic;
         // X's search can return a result that matches the QUERY but not
         // the tweet's own TEXT - found 2026-07-23: @ChipGotIt_'s account
